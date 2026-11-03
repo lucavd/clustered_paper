@@ -9,7 +9,8 @@ This repository is a public copy of the authors' working repository, updated in 
 The R package written for the study, *fewclust*, is at <https://github.com/lucavd/fewclust>.
 
 Archived versions on Zenodo: this repository, release 1.0, <https://doi.org/10.5281/zenodo.23917381>;
-*fewclust* 0.4.2, <https://doi.org/10.5281/zenodo.23917406>.
+*fewclust* 0.4.2, <https://doi.org/10.5281/zenodo.23917406>; per-replicate results of the simulation study,
+<https://doi.org/10.5281/zenodo.23917763>.
 
 ## Contents
 
@@ -29,7 +30,8 @@ Archived versions on Zenodo: this repository, release 1.0, <https://doi.org/10.5
 
 - The neonatal cohort data are not publicly available (see the data availability statement of the paper);
   the scripts that read them are included, and the plasmode results are in `tables/` and in the supplement.
-- The per-replicate model fits are not in this repository because of their size; they will be archived separately on Zenodo (DOI to be added).
+- The per-replicate model fits are not in this repository because of their size; they are on Zenodo,
+  <https://doi.org/10.5281/zenodo.23917763> (extract the two archives in the root of this repository).
 
 ## Licence
 

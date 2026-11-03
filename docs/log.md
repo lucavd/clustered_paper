@@ -1,5 +1,9 @@
 # Registro delle modifiche
 
+## 2026-11-03 (risultati per replicato su Zenodo)
+
+* Dataset dei risultati per replicato pubblicato su Zenodo, DOI 10.5281/zenodo.23917763 ([D-92](decisions/D-92.md)): `results_full/` (28.800 file, 1,83 GB) e i file per replicato di `results_v4/` letti dalla catena delle tabelle (7,82 GB); md5 verificati sul server e su Zenodo. DOI nella title page e nel README pubblico.
+
 ## 2026-11-03 (DOI di Zenodo)
 
 * **Rilasci del PI**: `lucavd/clustered_paper` release 1.0 (tag su 2ef746a, dal commit privato 019bc30), DOI 10.5281/zenodo.23917381; `lucavd/fewclust` release 0.4.2 (tag su 2bfaa6e, da f05c914), DOI 10.5281/zenodo.23917406 ([D-92](decisions/D-92.md)). DOI aggiunti alla title page e al README pubblico; resta da depositare il dataset dei risultati per replicato.
