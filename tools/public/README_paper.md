@@ -8,6 +8,9 @@ in Medical Research*).
 This repository is a public copy of the authors' working repository, updated in parallel with it.
 The R package written for the study, *fewclust*, is at <https://github.com/lucavd/fewclust>.
 
+Archived versions on Zenodo: this repository, release 1.0, <https://doi.org/10.5281/zenodo.23917381>;
+*fewclust* 0.4.2, <https://doi.org/10.5281/zenodo.23917406>.
+
 ## Contents
 
 - `R/`, `py/`, `tools/`: simulation, analysis, aggregation and manuscript pipeline. The closing pipeline of the

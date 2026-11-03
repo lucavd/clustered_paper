@@ -1,5 +1,9 @@
 # Registro delle modifiche
 
+## 2026-11-03 (DOI di Zenodo)
+
+* **Rilasci del PI**: `lucavd/clustered_paper` release 1.0 (tag su 2ef746a, dal commit privato 019bc30), DOI 10.5281/zenodo.23917381; `lucavd/fewclust` release 0.4.2 (tag su 2bfaa6e, da f05c914), DOI 10.5281/zenodo.23917406 ([D-92](decisions/D-92.md)). DOI aggiunti alla title page e al README pubblico; resta da depositare il dataset dei risultati per replicato.
+
 ## 2026-11-03 (codice pubblico)
 
 * **Decisione del PI**: [D-92](decisions/D-92.md). Pubblicati `lucavd/clustered_paper` (commit d15be8d, dal commit privato 9237bcc) e `lucavd/fewclust` (commit 2bfaa6e, da fewclust 0.4.2, f05c914) con `tools/public_sync.sh`; controlli superati (nessun file della coorte, nessuna credenziale, nessun file oltre 50 MB).
