@@ -1,0 +1,22 @@
+key,value,mcse,kind,source,how
+mdkc|gee_ar1_avgvar|N - p|n_hi,41,"",int,tables/V5_S8b_sub_mdkc_s26.csv,"design points of the three study mechanisms (1896), exact 95% interval, N - p df"
+mdkc|gee_ar1_avgvar|N - p|n_lo,74,"",int,tables/V5_S8b_sub_mdkc_s26.csv,"design points of the three study mechanisms (1896), exact 95% interval, N - p df"
+mdkc|gee_ar1_avgvar|N - p|n_lo_N10,3,"",int,tables/V5_S8b_sub_mdkc_s26.csv,"design points of the three study mechanisms (1896), exact 95% interval, N - p df"
+mdkc|gee_ar1_avgvar|N - 2|n_hi,69,"",int,tables/V5_S8b_sub_mdkc_s26.csv,"design points of the three study mechanisms (1896), exact 95% interval, N - 2 df"
+mdkc|gee_ar1_avgvar|N - 2|n_lo,71,"",int,tables/V5_S8b_sub_mdkc_s26.csv,"design points of the three study mechanisms (1896), exact 95% interval, N - 2 df"
+mdkc|gee_ar1_avgvar|N - 2|n_lo_N10,3,"",int,tables/V5_S8b_sub_mdkc_s26.csv,"design points of the three study mechanisms (1896), exact 95% interval, N - 2 df"
+mdkc|gee_ar1_avgvar|pu,91.8442499880858,"",sig2,tables/V5_S8b_sub_mdkc_s26.csv,"mean usable share (%) over the 1,896 points (same for both df)"
+mdkc|gee_ar1_avgvar|hi_all,56,"",int,tables/V5_S8b_mdkc_avg.csv,"design points clearly above 7.5% over the 2,376 points of the four mechanisms, N - p (Table 4 basis)"
+mdkc|gee_ar1_avgvar|pu_all,91.6970587851489,"",sig2,tables/V5_S8b_mdkc_avg.csv,"mean usable share (%) over the 2,376 points of the four mechanisms"
+mdkc|gee_ar1_avgvar|hi_copula,15,"",int,tables/V5_S8b_mdkc_avg.csv,of which Copula-AR1
+mdkc|gee_exch_avgvar|N - p|n_hi,80,"",int,tables/V5_S8b_sub_mdkc_s26.csv,"design points of the three study mechanisms (1896), exact 95% interval, N - p df"
+mdkc|gee_exch_avgvar|N - p|n_lo,74,"",int,tables/V5_S8b_sub_mdkc_s26.csv,"design points of the three study mechanisms (1896), exact 95% interval, N - p df"
+mdkc|gee_exch_avgvar|N - p|n_lo_N10,3,"",int,tables/V5_S8b_sub_mdkc_s26.csv,"design points of the three study mechanisms (1896), exact 95% interval, N - p df"
+mdkc|gee_exch_avgvar|N - 2|n_hi,108,"",int,tables/V5_S8b_sub_mdkc_s26.csv,"design points of the three study mechanisms (1896), exact 95% interval, N - 2 df"
+mdkc|gee_exch_avgvar|N - 2|n_lo,71,"",int,tables/V5_S8b_sub_mdkc_s26.csv,"design points of the three study mechanisms (1896), exact 95% interval, N - 2 df"
+mdkc|gee_exch_avgvar|N - 2|n_lo_N10,3,"",int,tables/V5_S8b_sub_mdkc_s26.csv,"design points of the three study mechanisms (1896), exact 95% interval, N - 2 df"
+mdkc|gee_exch_avgvar|pu,91.9251850312131,"",sig2,tables/V5_S8b_sub_mdkc_s26.csv,"mean usable share (%) over the 1,896 points (same for both df)"
+mdkc|gee_exch_avgvar|hi_all,121,"",int,tables/V5_S8b_mdkc_avg.csv,"design points clearly above 7.5% over the 2,376 points of the four mechanisms, N - p (Table 4 basis)"
+mdkc|gee_exch_avgvar|pu_all,91.783044351218,"",sig2,tables/V5_S8b_mdkc_avg.csv,"mean usable share (%) over the 2,376 points of the four mechanisms"
+mdkc|gee_exch_avgvar|hi_copula,41,"",int,tables/V5_S8b_mdkc_avg.csv,of which Copula-AR1
+mdkc|ndp_three,1896,"",int,results_v4/S7d/rows,design points of the three study mechanisms

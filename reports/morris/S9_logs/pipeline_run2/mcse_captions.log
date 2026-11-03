@@ -1,0 +1,216 @@
+/mnt/micron/MMM/py/s8b/s8b_mcse_captions.py:76: UserWarning: This pattern is interpreted as a regular expression, and has match groups. To actually get the groups, use str.extract.
+  d = D[D.col.str.contains(rx, regex=True)]
+/mnt/micron/MMM/py/s8b/s8b_mcse_captions.py:76: UserWarning: This pattern is interpreted as a regular expression, and has match groups. To actually get the groups, use str.extract.
+  d = D[D.col.str.contains(rx, regex=True)]
+/mnt/micron/MMM/py/s8b/s8b_mcse_captions.py:76: UserWarning: This pattern is interpreted as a regular expression, and has match groups. To actually get the groups, use str.extract.
+  d = D[D.col.str.contains(rx, regex=True)]
+/mnt/micron/MMM/py/s8b/s8b_mcse_captions.py:76: UserWarning: This pattern is interpreted as a regular expression, and has match groups. To actually get the groups, use str.extract.
+  d = D[D.col.str.contains(rx, regex=True)]
+/mnt/micron/MMM/py/s8b/s8b_mcse_captions.py:97: UserWarning: This pattern is interpreted as a regular expression, and has match groups. To actually get the groups, use str.extract.
+  d = D[D.q.str.contains(rx, regex=True)]
+[PASS] S3 rate: every registry id carries an mcse 24/24 ids
+[PASS] S3 worst: every registry id carries an mcse 24/24 ids
+[PASS] S3 mad: every registry id carries an mcse 24/24 ids
+[PASS] S16 rate: every registry id carries an mcse 24/24 ids
+[PASS] S16 worst: every registry id carries an mcse 24/24 ids
+[PASS] S16 mad: every registry id carries an mcse 24/24 ids
+[PASS] S4 mad: every registry id carries an mcse 24/24 ids
+[PASS] S17 mad: every registry id carries an mcse 24/24 ids
+[PASS] S5 share: every registry id carries an mcse 16/16 ids
+[PASS] S18 share: every registry id carries an mcse 16/16 ids
+[PASS] S6 rate: every registry id carries an mcse 48/48 ids
+[PASS] S6 shift: every registry id carries an mcse 24/24 ids
+[PASS] S19 rate: every registry id carries an mcse 48/48 ids
+[PASS] S19 shift: every registry id carries an mcse 24/24 ids
+[PASS] S7 usable: every registry id carries an mcse 96/96 ids
+[PASS] S20 usable: every registry id carries an mcse 32/32 ids
+[PASS] S8 usable: every registry id carries an mcse 8/8 ids
+[PASS] S8 uncond: every registry id carries an mcse 8/8 ids
+[PASS] S21 usable: every registry id carries an mcse 8/8 ids
+[PASS] S21 uncond: every registry id carries an mcse 8/8 ids
+[PASS] S9 mad: every registry id carries an mcse 40/40 ids
+[PASS] S22 mad: every registry id carries an mcse 40/40 ids
+[PASS] S10 raw: every registry id carries an mcse 24/24 ids
+[PASS] S10 sa: every registry id carries an mcse 24/24 ids
+[PASS] S23 raw: every registry id carries an mcse 24/24 ids
+[PASS] S23 sa: every registry id carries an mcse 24/24 ids
+[PASS] S11 rate: every registry id carries an mcse 42/42 ids
+[PASS] S11 shift: every registry id carries an mcse 28/28 ids
+[PASS] S24 rate: every registry id carries an mcse 42/42 ids
+[PASS] S24 shift: every registry id carries an mcse 28/28 ids
+[PASS] S12 cov: every registry id carries an mcse 20/20 ids
+[PASS] S25 cov: every registry id carries an mcse 20/20 ids
+[PASS] S30 usable: every registry id carries an mcse 30/30 ids
+[PASS] S30 bias: every registry id carries an mcse 30/30 ids
+[PASS] S30 SE ratio: one row of V5_S7f_seratio_fpc.csv per id 30
+[PASS] S31: every id found in V5_S7f_h2h_boot.csv 90
+[PASS] H1 estimable-design count found for every point 
+[PASS] pu = 100 n / nd on every row 
+[PASS] 2,376 points per strategy (480 Copula-AR1 points for the model without the check) 
+[PASS] Table 4 pu: recomputed means equal V5_S7f_table4.csv 14 strategies
+[PASS] Table 4 upow: recomputed means equal V5_S7f_table4.csv 14 strategies
+[PASS] Table 4 pu_small: recomputed means equal V5_S7f_table4.csv 14 strategies
+[PASS] S26 usable: recomputed means equal V5_S7f_rule_t2.csv on 1,896 points ['gee_ar1_fg', 'gee_ar1_md', 'gee_exch_fg', 'gee_exch_kc', 'gee_exch_md', 'gee_ind_fg', 'glmer', 'mmm_cc']
+[PASS] S28 mean_type1: recomputed means equal V5_S7f_cp_S7e_summary.csv ['flip', 'gee_ar1_fg', 'gee_exch_fg', 'gee_exch_kc', 'gee_exch_md', 'gee_exch_unc', 'gee_ind_fg', 'glmer', 'glmer_lrt', 'mmm_cc', 'mmm_study', 'shrink']
+[PASS] S28 mean_usable: recomputed means equal V5_S7f_cp_S7e_summary.csv ['flip', 'gee_ar1_fg', 'gee_exch_fg', 'gee_exch_kc', 'gee_exch_md', 'gee_exch_unc', 'gee_ind_fg', 'glmer', 'glmer_lrt', 'mmm_cc', 'mmm_study', 'shrink']
+[PASS] S28 mean_power: recomputed means equal V5_S7f_cp_S7e_summary.csv ['flip', 'gee_ar1_fg', 'gee_exch_fg', 'gee_exch_kc', 'gee_exch_md', 'gee_exch_unc', 'gee_ind_fg', 'glmer', 'glmer_lrt', 'mmm_cc', 'mmm_study', 'shrink']
+[PASS] S28 mean_bias_rel: recomputed means equal V4_S7e_bias_summary.csv ['gee_ar1_fg', 'gee_exch_fg', 'gee_exch_kc', 'gee_exch_md', 'gee_exch_unc', 'gee_ind_fg', 'mmm_cc', 'mmm_study']
+[PASS] S28 mean_cov_n: recomputed means equal V4_S7e_bias_summary.csv ['gee_ar1_fg', 'gee_exch_fg', 'gee_exch_kc', 'gee_exch_md', 'gee_exch_unc', 'gee_ind_fg', 'mmm_cc', 'mmm_study']
+[PASS] S28 mean_cov_t: recomputed means equal V4_S7e_bias_summary.csv ['gee_ar1_fg', 'gee_exch_fg', 'gee_exch_kc', 'gee_exch_md', 'gee_exch_unc', 'gee_ind_fg', 'mmm_cc', 'mmm_study']
+[PASS] S14 largest rate mmm|t GenBinaryY M6 equals the table 
+[PASS] S14 usable mmm|t GenBinaryY M6 equals the table 
+[PASS] S14 largest rate mmm|n GenBinaryY M6 equals the table 
+[PASS] S14 usable mmm|n GenBinaryY M6 equals the table 
+[PASS] S14 largest rate mmm_nocc|t GenBinaryY M6 equals the table 
+[PASS] S14 usable mmm_nocc|t GenBinaryY M6 equals the table 
+[PASS] S14 largest rate gee_fg|t GenBinaryY M6 equals the table 
+[PASS] S14 usable gee_fg|t GenBinaryY M6 equals the table 
+[PASS] S14 largest rate gee_md|t GenBinaryY M6 equals the table 
+[PASS] S14 usable gee_md|t GenBinaryY M6 equals the table 
+[PASS] S14 largest rate glmer_lrt|n GenBinaryY M6 equals the table 
+[PASS] S14 usable glmer_lrt|n GenBinaryY M6 equals the table 
+[PASS] S14 largest rate mmm|t GenBinaryY M7 equals the table 
+[PASS] S14 usable mmm|t GenBinaryY M7 equals the table 
+[PASS] S14 largest rate mmm|n GenBinaryY M7 equals the table 
+[PASS] S14 usable mmm|n GenBinaryY M7 equals the table 
+[PASS] S14 largest rate mmm_nocc|t GenBinaryY M7 equals the table 
+[PASS] S14 usable mmm_nocc|t GenBinaryY M7 equals the table 
+[PASS] S14 largest rate gee_fg|t GenBinaryY M7 equals the table 
+[PASS] S14 usable gee_fg|t GenBinaryY M7 equals the table 
+[PASS] S14 largest rate gee_md|t GenBinaryY M7 equals the table 
+[PASS] S14 usable gee_md|t GenBinaryY M7 equals the table 
+[PASS] S14 largest rate glmer_lrt|n GenBinaryY M7 equals the table 
+[PASS] S14 usable glmer_lrt|n GenBinaryY M7 equals the table 
+[PASS] S14 largest rate mmm|t GLMM-native M6 equals the table 
+[PASS] S14 usable mmm|t GLMM-native M6 equals the table 
+[PASS] S14 largest rate mmm|n GLMM-native M6 equals the table 
+[PASS] S14 usable mmm|n GLMM-native M6 equals the table 
+[PASS] S14 largest rate mmm_nocc|t GLMM-native M6 equals the table 
+[PASS] S14 usable mmm_nocc|t GLMM-native M6 equals the table 
+[PASS] S14 largest rate gee_fg|t GLMM-native M6 equals the table 
+[PASS] S14 usable gee_fg|t GLMM-native M6 equals the table 
+[PASS] S14 largest rate gee_md|t GLMM-native M6 equals the table 
+[PASS] S14 usable gee_md|t GLMM-native M6 equals the table 
+[PASS] S14 largest rate glmer_lrt|n GLMM-native M6 equals the table 
+[PASS] S14 usable glmer_lrt|n GLMM-native M6 equals the table 
+[PASS] S14 largest rate mmm|t GLMM-native M7 equals the table 
+[PASS] S14 usable mmm|t GLMM-native M7 equals the table 
+[PASS] S14 largest rate mmm|n GLMM-native M7 equals the table 
+[PASS] S14 usable mmm|n GLMM-native M7 equals the table 
+[PASS] S14 largest rate mmm_nocc|t GLMM-native M7 equals the table 
+[PASS] S14 usable mmm_nocc|t GLMM-native M7 equals the table 
+[PASS] S14 largest rate gee_fg|t GLMM-native M7 equals the table 
+[PASS] S14 usable gee_fg|t GLMM-native M7 equals the table 
+[PASS] S14 largest rate gee_md|t GLMM-native M7 equals the table 
+[PASS] S14 usable gee_md|t GLMM-native M7 equals the table 
+[PASS] S14 largest rate glmer_lrt|n GLMM-native M7 equals the table 
+[PASS] S14 usable glmer_lrt|n GLMM-native M7 equals the table 
+[PASS] S15: every cell found once 120
+[PASS] S32: max_mc = 100 sqrt(p(1-p)/n) at the highest rate 19
+[PASS] S33: recomputed mean usable equals V5_S7g_filter_t4.csv 51 strategy x limit
+[PASS] S34 AR1 T=2 lap: mean rate and usable equal V5_S7g_agq_tab.csv 11
+[PASS] S34 AR1 T=2 agq: mean rate and usable equal V5_S7g_agq_tab.csv 11
+[PASS] S34 AR1 T=4 lap: mean rate and usable equal V5_S7g_agq_tab.csv 11
+[PASS] S34 AR1 T=4 agq: mean rate and usable equal V5_S7g_agq_tab.csv 11
+[PASS] S34 AR1 T=6 lap: mean rate and usable equal V5_S7g_agq_tab.csv 3
+[PASS] S34 AR1 T=6 agq: mean rate and usable equal V5_S7g_agq_tab.csv 3
+[PASS] S34 AR1 T=10 lap: mean rate and usable equal V5_S7g_agq_tab.csv 8
+[PASS] S34 AR1 T=10 agq: mean rate and usable equal V5_S7g_agq_tab.csv 8
+[PASS] S34 COP T=2 lap: mean rate and usable equal V5_S7g_agq_tab.csv 8
+[PASS] S34 COP T=2 agq: mean rate and usable equal V5_S7g_agq_tab.csv 8
+[PASS] S34 COP T=4 lap: mean rate and usable equal V5_S7g_agq_tab.csv 8
+[PASS] S34 COP T=4 agq: mean rate and usable equal V5_S7g_agq_tab.csv 8
+[PASS] S34 COP T=10 lap: mean rate and usable equal V5_S7g_agq_tab.csv 8
+[PASS] S34 COP T=10 agq: mean rate and usable equal V5_S7g_agq_tab.csv 8
+[PASS] S34 GB T=2 lap: mean rate and usable equal V5_S7g_agq_tab.csv 11
+[PASS] S34 GB T=2 agq: mean rate and usable equal V5_S7g_agq_tab.csv 11
+[PASS] S34 GB T=4 lap: mean rate and usable equal V5_S7g_agq_tab.csv 11
+[PASS] S34 GB T=4 agq: mean rate and usable equal V5_S7g_agq_tab.csv 11
+[PASS] S34 GB T=6 lap: mean rate and usable equal V5_S7g_agq_tab.csv 3
+[PASS] S34 GB T=6 agq: mean rate and usable equal V5_S7g_agq_tab.csv 3
+[PASS] S34 GB T=10 lap: mean rate and usable equal V5_S7g_agq_tab.csv 8
+[PASS] S34 GB T=10 agq: mean rate and usable equal V5_S7g_agq_tab.csv 8
+[PASS] S34 NAT T=2 lap: mean rate and usable equal V5_S7g_agq_tab.csv 11
+[PASS] S34 NAT T=2 agq: mean rate and usable equal V5_S7g_agq_tab.csv 11
+[PASS] S34 NAT T=4 lap: mean rate and usable equal V5_S7g_agq_tab.csv 11
+[PASS] S34 NAT T=4 agq: mean rate and usable equal V5_S7g_agq_tab.csv 11
+[PASS] S34 NAT T=6 lap: mean rate and usable equal V5_S7g_agq_tab.csv 3
+[PASS] S34 NAT T=6 agq: mean rate and usable equal V5_S7g_agq_tab.csv 3
+[PASS] S34 NAT T=10 lap: mean rate and usable equal V5_S7g_agq_tab.csv 8
+[PASS] S34 NAT T=10 agq: mean rate and usable equal V5_S7g_agq_tab.csv 8
+[PASS] S35 GLMM-native M6 H0: recomputed means equal V5_S7g_m67_cc.csv 96
+[PASS] S35 GLMM-native M6 H1: recomputed means equal V5_S7g_m67_cc.csv 96
+[PASS] S35 GLMM-native M7 H0: recomputed means equal V5_S7g_m67_cc.csv 96
+[PASS] S35 GLMM-native M7 H1: recomputed means equal V5_S7g_m67_cc.csv 96
+[PASS] S35 GenBinaryY M6 H0: recomputed means equal V5_S7g_m67_cc.csv 96
+[PASS] S35 GenBinaryY M6 H1: recomputed means equal V5_S7g_m67_cc.csv 96
+[PASS] S35 GenBinaryY M7 H0: recomputed means equal V5_S7g_m67_cc.csv 96
+[PASS] S35 GenBinaryY M7 H1: recomputed means equal V5_S7g_m67_cc.csv 96
+[PASS] Figure 2: registry id x:mcse_5pct exists 0.69
+                  key                 value                                                                                                                                                                                                                                                                       how
+0         cap|S3|rate    0.0471941303254473                                                                                                                                        registry: max of column mcse over the 24 registry ids of columns ['Rate AR1', 'Rate GB', 'Rate NAT'] of Table S3 (block bootstrap)
+1        cap|S3|worst    0.3151791064346989                                                                                                                                     registry: max of column mcse over the 24 registry ids of columns ['Worst AR1', 'Worst GB', 'Worst NAT'] of Table S3 (block bootstrap)
+2          cap|S3|mad    0.0471240785396113                                                                                                                                           registry: max of column mcse over the 24 registry ids of columns ['MAD AR1', 'MAD GB', 'MAD NAT'] of Table S3 (block bootstrap)
+3        cap|S16|rate     0.216170829566151                                                                                                                                       registry: max of column mcse over the 24 registry ids of columns ['Rate AR1', 'Rate GB', 'Rate NAT'] of Table S16 (block bootstrap)
+4       cap|S16|worst    0.6506459911947229                                                                                                                                    registry: max of column mcse over the 24 registry ids of columns ['Worst AR1', 'Worst GB', 'Worst NAT'] of Table S16 (block bootstrap)
+5         cap|S16|mad      0.21564580822306                                                                                                                                          registry: max of column mcse over the 24 registry ids of columns ['MAD AR1', 'MAD GB', 'MAD NAT'] of Table S16 (block bootstrap)
+6          cap|S4|mad     0.496574178607454                                                                                                                                                registry: max of column mcse over the 24 registry ids of columns ['T = 2', 'T = 3', 'T ≥ 4'] of Table S4 (block bootstrap)
+7         cap|S17|mad    0.2841687029765039                                                                                                                                               registry: max of column mcse over the 24 registry ids of columns ['T = 2', 'T = 3', 'T ≥ 4'] of Table S17 (block bootstrap)
+8        cap|S5|share      1.10559443386529                                                                                                                                                               registry: max of column mcse over the 16 registry ids of columns ['BH', 'BY'] of Table S5 (block bootstrap)
+9       cap|S18|share      5.02429876668564                                                                                                                                                              registry: max of column mcse over the 16 registry ids of columns ['BH', 'BY'] of Table S18 (block bootstrap)
+10        cap|S6|rate    0.0471941303254473                                                                                                  registry: max of column mcse over the 48 registry ids of columns ['Common AR1', 'Common GB', 'Common NAT', 'Own AR1', 'Own GB', 'Own NAT'] of Table S6 (block bootstrap)
+11       cap|S6|shift    0.0203788584518379                                                                                                                                     registry: max of column mcse over the 24 registry ids of columns ['Shift AR1', 'Shift GB', 'Shift NAT'] of Table S6 (block bootstrap)
+12       cap|S19|rate     0.216170829566151                                                                                                 registry: max of column mcse over the 48 registry ids of columns ['Common AR1', 'Common GB', 'Common NAT', 'Own AR1', 'Own GB', 'Own NAT'] of Table S19 (block bootstrap)
+13      cap|S19|shift     0.131599023026329                                                                                                                                    registry: max of column mcse over the 24 registry ids of columns ['Shift AR1', 'Shift GB', 'Shift NAT'] of Table S19 (block bootstrap)
+14      cap|S7|usable     0.126261001004289   registry: max of column mcse over the 96 registry ids of columns ['GEE, Fay-Graubard', 'GEE, Kauermann-Carroll', 'GEE, Mancl-DeRouen', 'GEE, uncorrected', 'GLMM, Wald', 'GLMM, likelihood ratio', 'Marginalized model', 'Shrinkage GLM'] of Table S7 (block bootstrap)
+15     cap|S20|usable     0.349940003318224  registry: max of column mcse over the 32 registry ids of columns ['GEE, Fay-Graubard', 'GEE, Kauermann-Carroll', 'GEE, Mancl-DeRouen', 'GEE, uncorrected', 'GLMM, Wald', 'GLMM, likelihood ratio', 'Marginalized model', 'Shrinkage GLM'] of Table S20 (block bootstrap)
+16      cap|S8|usable    0.0962589473250264                                                                                                                                                                  registry: max of column mcse over the 8 registry ids of columns ['Usable'] of Table S8 (block bootstrap)
+17      cap|S8|uncond     0.104049635973042                                                                                                                                                  registry: max of column mcse over the 8 registry ids of columns ['Unconditional validity'] of Table S8 (block bootstrap)
+18     cap|S21|usable     0.259589480343746                                                                                                                                                                 registry: max of column mcse over the 8 registry ids of columns ['Usable'] of Table S21 (block bootstrap)
+19     cap|S21|uncond     0.276635378790899                                                                                                                                                 registry: max of column mcse over the 8 registry ids of columns ['Unconditional validity'] of Table S21 (block bootstrap)
+20         cap|S9|mad      1.36189554931159                                                                                                     registry: max of column mcse over the 40 registry ids of columns ['x:hdr_T9_1', 'x:hdr_T9_2', 'x:hdr_T9_3', 'x:hdr_T9_4', 'x:hdr_T9_5'] of Table S9 (block bootstrap)
+21        cap|S22|mad     0.909176121282504                                                                                                    registry: max of column mcse over the 40 registry ids of columns ['x:hdr_T9_1', 'x:hdr_T9_2', 'x:hdr_T9_3', 'x:hdr_T9_4', 'x:hdr_T9_5'] of Table S22 (block bootstrap)
+22        cap|S10|raw    0.0632386745881545                                                                                                                                                                   registry: max of column mcse over the 24 registry ids of columns ['Raw'] of Table S10 (block bootstrap)
+23         cap|S10|sa     0.264057311896992                                                                                                                                                         registry: max of column mcse over the 24 registry ids of columns ['Size-adjusted'] of Table S10 (block bootstrap)
+24        cap|S23|raw     0.236004822806548                                                                                                                                                                   registry: max of column mcse over the 24 registry ids of columns ['Raw'] of Table S23 (block bootstrap)
+25         cap|S23|sa    0.2850988680966249                                                                                                                                                         registry: max of column mcse over the 24 registry ids of columns ['Size-adjusted'] of Table S23 (block bootstrap)
+26       cap|S11|rate    0.0471941303254473                                                                                                       registry: max of column mcse over the 42 registry ids of columns ['Normal AR1', 'Normal GB', 'Normal NAT', 't AR1', 't GB', 't NAT'] of Table S11 (block bootstrap)
+27      cap|S11|shift    0.0353302124443478                                                                             registry: max of column mcse over the 28 registry ids of columns ['Normal minus t at N ≤ 25', 't minus normal AR1', 't minus normal GB', 't minus normal NAT'] of Table S11 (block bootstrap)
+28       cap|S24|rate     0.216170829566151                                                                                                       registry: max of column mcse over the 42 registry ids of columns ['Normal AR1', 'Normal GB', 'Normal NAT', 't AR1', 't GB', 't NAT'] of Table S24 (block bootstrap)
+29      cap|S24|shift     0.104015997508892                                                                             registry: max of column mcse over the 28 registry ids of columns ['Normal minus t at N ≤ 25', 't minus normal AR1', 't minus normal GB', 't minus normal NAT'] of Table S24 (block bootstrap)
+30        cap|S12|cov    0.0490260358915671                                                                                                                                 registry: max of column mcse over the 20 registry ids of columns ['GLMM-AR1', 'GLMM-native', 'GenBinaryY'] of Table S12 (block bootstrap)
+31        cap|S25|cov      0.20293094008208                                                                                                                                 registry: max of column mcse over the 20 registry ids of columns ['GLMM-AR1', 'GLMM-native', 'GenBinaryY'] of Table S25 (block bootstrap)
+32     cap|S30|usable      2.23605008888442                                                                                                                                                            registry: max of column mcse over the 30 registry ids of columns ['Usable (%)'] of Table S30 (block bootstrap)
+33       cap|S30|bias    0.2146875190599039                                                                                                                                                                  registry: max of column mcse over the 30 registry ids of columns ['Bias'] of Table S30 (block bootstrap)
+34    cap|S30|seratio     0.152362631176855                                                                                                         registry: max of mcse_ratio over the 30 rows of the respiratory trial in Table S30 (ratio before the finite-population factor, which is below 1, so conservative)
+35       cap|S31|rate     0.470123140082634                                                                                                                                                                                                       bootstrap: max of the block-bootstrap mcse over the 20 cells (rate)
+36        cap|S31|mad     0.421863343004918                                                                                                                                                                                                        bootstrap: max of the block-bootstrap mcse over the 20 cells (mad)
+37       cap|S31|diff     0.436174899021648                                                                                                                                                                                                       bootstrap: max of the block-bootstrap mcse over the 10 cells (diff)
+38         cap|S31|pu     0.298774453744622                                                                                                                                                                                                         bootstrap: max of the block-bootstrap mcse over the 20 cells (pu)
+39       cap|S31|upow    0.0690815691648106                                                                                                                                                                                                       bootstrap: max of the block-bootstrap mcse over the 20 cells (upow)
+40          cap|t4|pu   0.40069024130900416                                                                                                                       bound: max over the 14 strategies of Table 4 of the mean over design points of 100 sqrt(p(1-p)/nd) (at mmm_cc; power with the H1 estimable designs)
+41        cap|t4|upow    1.0338872706805926                                                                                                                 bound: max over the 14 strategies of Table 4 of the mean over design points of 100 sqrt(p(1-p)/nd) (at gee_exch_unc; power with the H1 estimable designs)
+42    cap|t4|pu_small    1.3985019998358839                                                                                                                 bound: max over the 14 strategies of Table 4 of the mean over design points of 100 sqrt(p(1-p)/nd) (at gee_exch_unc; power with the H1 estimable designs)
+43         cap|S26|pu   0.39711955556035017                                                                                                                                                                    bound: max over the 8 strategies of Table S26 of the mean over the 1,896 points of 100 sqrt(p(1-p)/nd)
+44      cap|S28|type1    1.1040023014147546                                                                                                                                                                 bound: max over the strategies of the mean over the 480 points of the per-point binomial MCSE of the rate
+45     cap|S28|usable   0.49381583443183563                                                                                                                                                                                     bound: max over the strategies of the mean over the 480 points of 100 sqrt(p(1-p)/nd)
+46      cap|S28|power    1.0522504269505548                                                                                                                                                                                  bound: max over the strategies of the mean over the 480 points of 100 sqrt(q(1-q)/nd_H1)
+47     cap|S28|biasse   0.03590775624300687                                                                                                                                                                                      bound: max over the marginal estimators of the mean over points of mcse_bias / empse
+48        cap|S28|cov    0.9080308370264292                                                                                                                                                                        bound: max over estimators and references of the mean over points of the binomial MCSE of coverage
+49    cap|S14|maxrate    1.2828880501708395                                                                                                                                                                            binomial: max over the 24 rows of 100 sqrt(p(1-p)/n) at the design point with the largest rate
+50         cap|S14|pu    0.5522955178780596                                                                                                                                                                                         bound: max over the 24 rows of the mean over the 96 points of 100 sqrt(p(1-p)/nd)
+51      cap|S15|share    2.2356207191739834                                                                                                                                                                                     binomial: max over the 120 cells of 100 sqrt(p(1-p)/500), 500 subsamples (x:lus_nsub)
+52     cap|S27|finite    0.3226523597331494                                                                                                                                            binomial: max over the 24 rows of 100 sqrt(p(1-p)/datasets); approximate, the datasets of a row share replicate seeds across N
+53        cap|S27|gee    0.3023636210561903                                                                                                                                                                                        binomial: max over the 24 rows of 100 sqrt(p(1-p)/datasets); approximate, as above
+54    cap|S32|maxrate      5.96065548112562                                                                                                                                                            binomial: max of max_mc over the 19 strategies (binomial MCSE at the point of the highest rate, at gee_ar1_kc)
+55         cap|S33|pu   0.40145510511117666                                                                                                                                                                              bound: max over the 51 strategy x limit cells of the mean over points of 100 sqrt(p(1-p)/nd)
+56      cap|S34|type1     3.092033150570126                                                                                                                                                     bound: max over the 30 cells (mechanism x T x method) of the mean over points of the binomial MCSE of the rate (mc_t)
+57         cap|S34|pu    1.0076390186844248                                                                                                                                                                                               bound: max over the 30 cells of the mean over points of 100 sqrt(p(1-p)/nd)
+58         cap|S35|rb  0.036128704783895856                                                                                                                                         approx: max over the 8 rows of the mean over points of 1 / sqrt(n) (bias / SE, empirical SE treated as known; bound for the mean)
+59      cap|S35|rbmax   0.19245008972987526                                                                                                                                                                                            approx: max over rows of 1 / sqrt(n) at the point with the largest |bias / SE|
+60        cap|S35|ser    2.1920071909018515                                                                     approx: max over the 8 rows of the median over points of 100 (1 + ratio) / sqrt(2 (n - 1)) (typical per-point MCSE of the ratio, empirical-SE component only; not a bound for the median over points)
+61        cap|S35|cov    0.7400375465801389                                                                                                                                                                                             bound: max over rows of the mean over points of the binomial MCSE of coverage
+62     cap|S35|covmin    0.8918647218585221                                                                                                                                                                                      binomial: max over rows of the binomial MCSE at the point with the smallest coverage
+63         cap|S35|sh     1.710768435112417                                                                                                                                                      bound: max over rows of the mean over points of the binomial MCSE of the share of fits in which the check intervened
+64  cap|fig2|mcse_max      6.36030377172783                                                                                                                                                                           binomial: largest per-point MCSE of a drawn rate (n_obs >= 20), all methods (percentage points)
+keys 65 | checks 139 | failed 0

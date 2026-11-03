@@ -1,0 +1,10 @@
+OK   s11_thr_cv_build 122 s
+OK   agg_v4 612 s
+OK   s5_build 622 s
+OK   s5_run 398 s
+OK   s6_run 407 s
+FAIL s6_dp_rates (see reports/morris/variant_t4cv/logs/s6_dp_rates.log)
+Error in fread(file.path(TABDIR, "V4_S6_nestedloop.csv")) : 
+  File '/home/user/MMM/tables/variant_t4cv/V4_S6_nestedloop.csv' does not exist or is non-readable. getwd()=='/mnt/micron/MMM'
+Calls: fread -> stopf -> raise_condition -> signal
+Execution halted

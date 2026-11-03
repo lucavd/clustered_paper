@@ -1,0 +1,440 @@
+---
+title: "Supplementary material: choosing an analysis for clustered binary outcomes when clusters are few and series are short"
+format:
+  docx:
+    number-sections: false
+    reference-doc: reference.docx
+  html:
+    embed-resources: true
+lang: en-GB
+execute:
+  echo: false
+  warning: false
+---
+
+```{r setup}
+.libPaths(path.expand("~/MMM/renv/library/linux-ubuntu-noble/R-4.6/x86_64-pc-linux-gnu"))
+REG <- read.csv(path.expand("~/MMM/tables/V4_S7_numbers.csv"), colClasses = "character", na.strings = NULL)
+TRACE <- nzchar(Sys.getenv("MMM_S7_TRACE"))
+n <- function(id) {
+  i <- which(REG$id == id)
+  if (length(i) != 1) stop("registry id not found once: ", id)
+  if (TRACE) "\u00a7" else REG$text[i]
+}
+```
+
+This supplement accompanies the manuscript. Every number is read from the same registry of values as the main text. GB = GenBinaryY, NAT = GLMM-native, AR1 = GLMM-AR1; MMM = marginalized multilevel model.
+
+## S1. Parameters of the data-generating mechanisms
+
+**Table S1.** Parameters under the alternative, read from the table extracted from the executed code. Under the null only the interaction coefficient is set to zero. Coefficients are in the order (Intercept), time, trt, covariate if any, time:trt; they are marginal for GenBinaryY, conditional for GLMM-native and the marginal target for GLMM-AR1, whose conditional coefficients are calibrated on each replicate.
+
+| Mechanism | Scenario | Mean model | Coefficients | Dependence |
+|---|---|---|---|---|
+| GenBinaryY | M1 | `r n("x:par_GenBinaryY_1_H1_mean_formula")` | `r n("x:par_GenBinaryY_1_H1_beta")` | lv `r n("x:par_GenBinaryY_1_H1_lv_formula")`, σ = (`r n("x:par_GenBinaryY_1_H1_sigma")`); transition `r n("x:par_GenBinaryY_1_H1_t_formula")`, γ = (`r n("x:par_GenBinaryY_1_H1_gamma")`) |
+| GenBinaryY | M2 | `r n("x:par_GenBinaryY_2_H1_mean_formula")` | `r n("x:par_GenBinaryY_2_H1_beta")` | lv `r n("x:par_GenBinaryY_2_H1_lv_formula")`, σ = (`r n("x:par_GenBinaryY_2_H1_sigma")`); transition `r n("x:par_GenBinaryY_2_H1_t_formula")`, γ = (`r n("x:par_GenBinaryY_2_H1_gamma")`) |
+| GenBinaryY | M3 | `r n("x:par_GenBinaryY_3_H1_mean_formula")` | `r n("x:par_GenBinaryY_3_H1_beta")` | lv `r n("x:par_GenBinaryY_3_H1_lv_formula")`, σ = (`r n("x:par_GenBinaryY_3_H1_sigma")`); transition `r n("x:par_GenBinaryY_3_H1_t_formula")`, γ = (`r n("x:par_GenBinaryY_3_H1_gamma")`) |
+| GenBinaryY | M4 | `r n("x:par_GenBinaryY_4_H1_mean_formula")` | `r n("x:par_GenBinaryY_4_H1_beta")` | lv `r n("x:par_GenBinaryY_4_H1_lv_formula")`, σ = (`r n("x:par_GenBinaryY_4_H1_sigma")`); transition `r n("x:par_GenBinaryY_4_H1_t_formula")`, γ = (`r n("x:par_GenBinaryY_4_H1_gamma")`) |
+| GenBinaryY | M5 | `r n("x:par_GenBinaryY_5_H1_mean_formula")` | `r n("x:par_GenBinaryY_5_H1_beta")` | lv `r n("x:par_GenBinaryY_5_H1_lv_formula")`, σ = (`r n("x:par_GenBinaryY_5_H1_sigma")`); transition `r n("x:par_GenBinaryY_5_H1_t_formula")`, γ = (`r n("x:par_GenBinaryY_5_H1_gamma")`) |
+| GLMM-native | M1 | `r n("x:par_GLMMnative_1_H1_mean_formula")` | `r n("x:par_GLMMnative_1_H1_beta_c")` | random effects `r n("x:par_GLMMnative_1_H1_re_formula")`, D = [`r n("x:par_GLMMnative_1_H1_D")`] |
+| GLMM-native | M2 | `r n("x:par_GLMMnative_2_H1_mean_formula")` | `r n("x:par_GLMMnative_2_H1_beta_c")` | random effects `r n("x:par_GLMMnative_2_H1_re_formula")`, D = [`r n("x:par_GLMMnative_2_H1_D")`] |
+| GLMM-native | M3 | `r n("x:par_GLMMnative_3_H1_mean_formula")` | `r n("x:par_GLMMnative_3_H1_beta_c")` | random effects `r n("x:par_GLMMnative_3_H1_re_formula")`, D = [`r n("x:par_GLMMnative_3_H1_D")`] |
+| GLMM-native | M4 | `r n("x:par_GLMMnative_4_H1_mean_formula")` | `r n("x:par_GLMMnative_4_H1_beta_c")` | random effects `r n("x:par_GLMMnative_4_H1_re_formula")`, D = [`r n("x:par_GLMMnative_4_H1_D")`] |
+| GLMM-native | M5 | `r n("x:par_GLMMnative_5_H1_mean_formula")` | `r n("x:par_GLMMnative_5_H1_beta_c")` | random effects `r n("x:par_GLMMnative_5_H1_re_formula")`, D = [`r n("x:par_GLMMnative_5_H1_D")`] |
+| GLMM-AR1 | M1 | `r n("x:par_GLMMAR1_1_H1_mean_formula")` | `r n("x:par_GLMMAR1_1_H1_target_beta_m")` | random effects `r n("x:par_GLMMAR1_1_H1_re_formula")`, D = [`r n("x:par_GLMMAR1_1_H1_D")`]; AR(1) ρ = `r n("x:par_GLMMAR1_1_H1_rho")`, variance `r n("x:par_GLMMAR1_1_H1_sigma2_ar")` |
+| GLMM-AR1 | M2 | `r n("x:par_GLMMAR1_2_H1_mean_formula")` | `r n("x:par_GLMMAR1_2_H1_target_beta_m")` | random effects `r n("x:par_GLMMAR1_2_H1_re_formula")`, D = [`r n("x:par_GLMMAR1_2_H1_D")`]; AR(1) ρ = `r n("x:par_GLMMAR1_2_H1_rho")`, variance `r n("x:par_GLMMAR1_2_H1_sigma2_ar")` |
+| GLMM-AR1 | M3 | `r n("x:par_GLMMAR1_3_H1_mean_formula")` | `r n("x:par_GLMMAR1_3_H1_target_beta_m")` | random effects `r n("x:par_GLMMAR1_3_H1_re_formula")`, D = [`r n("x:par_GLMMAR1_3_H1_D")`]; AR(1) ρ = `r n("x:par_GLMMAR1_3_H1_rho")`, variance `r n("x:par_GLMMAR1_3_H1_sigma2_ar")` |
+| GLMM-AR1 | M4 | `r n("x:par_GLMMAR1_4_H1_mean_formula")` | `r n("x:par_GLMMAR1_4_H1_target_beta_m")` | random effects `r n("x:par_GLMMAR1_4_H1_re_formula")`, D = [`r n("x:par_GLMMAR1_4_H1_D")`]; AR(1) ρ = `r n("x:par_GLMMAR1_4_H1_rho")`, variance `r n("x:par_GLMMAR1_4_H1_sigma2_ar")` |
+| GLMM-AR1 | M5 | `r n("x:par_GLMMAR1_5_H1_mean_formula")` | `r n("x:par_GLMMAR1_5_H1_target_beta_m")` | random effects `r n("x:par_GLMMAR1_5_H1_re_formula")`, D = [`r n("x:par_GLMMAR1_5_H1_D")`]; AR(1) ρ = `r n("x:par_GLMMAR1_5_H1_rho")`, variance `r n("x:par_GLMMAR1_5_H1_sigma2_ar")` |
+
+## S2. Software
+
+**Table S2.** Versions in the project library used for every rerun and for the tables of this paper. The original run was executed under an earlier patch release of R; its datasets were reproduced bit for bit under the current release. The full `sessionInfo()` is provided with the code (`results_v4/S7/sessionInfo.txt`).
+
+| Software | Version |
+|---|---|
+| R | `r n("x:sw_R")` |
+| MMLB | `r n("x:sw_MMLB")` |
+| lme4 | `r n("x:sw_lme4")` |
+| geepack | `r n("x:sw_geepack")` |
+| geesmv | `r n("x:sw_geesmv")` |
+| data.table | `r n("x:sw_data_table")` |
+| crew | `r n("x:sw_crew")` |
+| mirai | `r n("x:sw_mirai")` |
+| Matrix | `r n("x:sw_Matrix")` |
+
+## S3. Tables of the main grid
+
+**Table S3.** Type I error at the nominal 5% (%): pooled rate, worst case and mean absolute departure (MAD) over cluster counts (percentage points), main grid, with the marginalized model analysed as in the original study, without the convergence check (sensitivity analysis). Only the row of the marginalized model differs from Table 2. GB = GenBinaryY, NAT = GLMM-native, AR1 = GLMM-AR1.
+
+| | rate GB | rate NAT | rate AR1 | worst GB | worst NAT | worst AR1 | MAD GB | MAD NAT | MAD AR1 |
+|---|---|---|---|---|---|---|---|---|---|
+| GEE, Fay-Graubard | `r n("x:ts_T3|1|1@tab")` | `r n("x:ts_T3|1|2@tab")` | `r n("x:ts_T3|1|3@tab")` | `r n("x:ts_T3|1|4@tab")` | `r n("x:ts_T3|1|5@tab")` | `r n("x:ts_T3|1|6@tab")` | `r n("x:ts_T3|1|7@tab")` | `r n("x:ts_T3|1|8@tab")` | `r n("x:ts_T3|1|9@tab")` |
+| GEE, Mancl-DeRouen | `r n("x:ts_T3|2|1@tab")` | `r n("x:ts_T3|2|2@tab")` | `r n("x:ts_T3|2|3@tab")` | `r n("x:ts_T3|2|4@tab")` | `r n("x:ts_T3|2|5@tab")` | `r n("x:ts_T3|2|6@tab")` | `r n("x:ts_T3|2|7@tab")` | `r n("x:ts_T3|2|8@tab")` | `r n("x:ts_T3|2|9@tab")` |
+| Marginalized model | `r n("x:ts_T3|3|1@tab")` | `r n("x:ts_T3|3|2@tab")` | `r n("x:ts_T3|3|3@tab")` | `r n("x:ts_T3|3|4@tab")` | `r n("x:ts_T3|3|5@tab")` | `r n("x:ts_T3|3|6@tab")` | `r n("x:ts_T3|3|7@tab")` | `r n("x:ts_T3|3|8@tab")` | `r n("x:ts_T3|3|9@tab")` |
+| GLMM, Wald | `r n("x:ts_T3|4|1@tab")` | `r n("x:ts_T3|4|2@tab")` | `r n("x:ts_T3|4|3@tab")` | `r n("x:ts_T3|4|4@tab")` | `r n("x:ts_T3|4|5@tab")` | `r n("x:ts_T3|4|6@tab")` | `r n("x:ts_T3|4|7@tab")` | `r n("x:ts_T3|4|8@tab")` | `r n("x:ts_T3|4|9@tab")` |
+| Shrinkage GLM | `r n("x:ts_T3|5|1@tab")` | `r n("x:ts_T3|5|2@tab")` | `r n("x:ts_T3|5|3@tab")` | `r n("x:ts_T3|5|4@tab")` | `r n("x:ts_T3|5|5@tab")` | `r n("x:ts_T3|5|6@tab")` | `r n("x:ts_T3|5|7@tab")` | `r n("x:ts_T3|5|8@tab")` | `r n("x:ts_T3|5|9@tab")` |
+| GEE, uncorrected | `r n("x:ts_T3|6|1@tab")` | `r n("x:ts_T3|6|2@tab")` | `r n("x:ts_T3|6|3@tab")` | `r n("x:ts_T3|6|4@tab")` | `r n("x:ts_T3|6|5@tab")` | `r n("x:ts_T3|6|6@tab")` | `r n("x:ts_T3|6|7@tab")` | `r n("x:ts_T3|6|8@tab")` | `r n("x:ts_T3|6|9@tab")` |
+| GLMM, likelihood ratio | `r n("x:ts_T3|7|1@tab")` | `r n("x:ts_T3|7|2@tab")` | `r n("x:ts_T3|7|3@tab")` | `r n("x:ts_T3|7|4@tab")` | `r n("x:ts_T3|7|5@tab")` | `r n("x:ts_T3|7|6@tab")` | `r n("x:ts_T3|7|7@tab")` | `r n("x:ts_T3|7|8@tab")` | `r n("x:ts_T3|7|9@tab")` |
+| GEE, Kauermann-Carroll | `r n("x:ts_T3|8|1@tab")` | `r n("x:ts_T3|8|2@tab")` | `r n("x:ts_T3|8|3@tab")` | `r n("x:ts_T3|8|4@tab")` | `r n("x:ts_T3|8|5@tab")` | `r n("x:ts_T3|8|6@tab")` | `r n("x:ts_T3|8|7@tab")` | `r n("x:ts_T3|8|8@tab")` | `r n("x:ts_T3|8|9@tab")` |
+
+**Table S4.** Mean absolute departure from 5% by number of occasions (percentage points), cell-weighted, main grid, marginalized model with the convergence check. Monte Carlo standard errors by block bootstrap; values given to the digit they support.
+
+| | T = 2 | T = 3 | T >= 4 |
+|---|---|---|---|
+| GEE, Fay-Graubard | `r n("x:tc_T4|1|1@tab")` | `r n("x:tc_T4|1|2@tab")` | `r n("x:tc_T4|1|3@tab")` |
+| GEE, Mancl-DeRouen | `r n("x:tc_T4|2|1@tab")` | `r n("x:tc_T4|2|2@tab")` | `r n("x:tc_T4|2|3@tab")` |
+| Marginalized model | `r n("x:tc_T4|3|1@tab")` | `r n("x:tc_T4|3|2@tab")` | `r n("x:tc_T4|3|3@tab")` |
+| GLMM, Wald | `r n("x:tc_T4|4|1@tab")` | `r n("x:tc_T4|4|2@tab")` | `r n("x:tc_T4|4|3@tab")` |
+| Shrinkage GLM | `r n("x:tc_T4|5|1@tab")` | `r n("x:tc_T4|5|2@tab")` | `r n("x:tc_T4|5|3@tab")` |
+| GEE, uncorrected | `r n("x:tc_T4|6|1@tab")` | `r n("x:tc_T4|6|2@tab")` | `r n("x:tc_T4|6|3@tab")` |
+| GLMM, likelihood ratio | `r n("x:tc_T4|7|1@tab")` | `r n("x:tc_T4|7|2@tab")` | `r n("x:tc_T4|7|3@tab")` |
+| GEE, Kauermann-Carroll | `r n("x:tc_T4|8|1@tab")` | `r n("x:tc_T4|8|2@tab")` | `r n("x:tc_T4|8|3@tab")` |
+
+**Table S5.** Method-cells detectably off nominal (%), exact binomial test with Benjamini-Hochberg (BH) and Benjamini-Yekutieli (BY) corrections within method, main grid, marginalized model with the convergence check. Monte Carlo standard errors by block bootstrap; values given to the digit they support.
+
+| | BH | BY |
+|---|---|---|
+| GEE, Fay-Graubard | `r n("x:tc_T5|1|1@tab")` | `r n("x:tc_T5|1|2@tab")` |
+| GEE, Mancl-DeRouen | `r n("x:tc_T5|2|1@tab")` | `r n("x:tc_T5|2|2@tab")` |
+| Marginalized model | `r n("x:tc_T5|3|1@tab")` | `r n("x:tc_T5|3|2@tab")` |
+| GLMM, Wald | `r n("x:tc_T5|4|1@tab")` | `r n("x:tc_T5|4|2@tab")` |
+| Shrinkage GLM | `r n("x:tc_T5|5|1@tab")` | `r n("x:tc_T5|5|2@tab")` |
+| GEE, uncorrected | `r n("x:tc_T5|6|1@tab")` | `r n("x:tc_T5|6|2@tab")` |
+| GLMM, likelihood ratio | `r n("x:tc_T5|7|1@tab")` | `r n("x:tc_T5|7|2@tab")` |
+| GEE, Kauermann-Carroll | `r n("x:tc_T5|8|1@tab")` | `r n("x:tc_T5|8|2@tab")` |
+
+**Table S6.** Type I error on each method's own usable replicates and on the replicates usable for all methods (common set) (%), main grid, marginalized model with the convergence check. Monte Carlo standard errors by block bootstrap; values given to the digit they support.
+
+| | own GB | own NAT | own AR1 | common GB | common NAT | common AR1 | shift GB | shift NAT | shift AR1 |
+|---|---|---|---|---|---|---|---|---|---|
+| GEE, Fay-Graubard | `r n("x:tc_T6|1|1@tab")` | `r n("x:tc_T6|1|2@tab")` | `r n("x:tc_T6|1|3@tab")` | `r n("x:tc_T6|1|4@tab")` | `r n("x:tc_T6|1|5@tab")` | `r n("x:tc_T6|1|6@tab")` | `r n("x:tc_T6|1|7@tab")` | `r n("x:tc_T6|1|8@tab")` | `r n("x:tc_T6|1|9@tab")` |
+| GEE, Mancl-DeRouen | `r n("x:tc_T6|2|1@tab")` | `r n("x:tc_T6|2|2@tab")` | `r n("x:tc_T6|2|3@tab")` | `r n("x:tc_T6|2|4@tab")` | `r n("x:tc_T6|2|5@tab")` | `r n("x:tc_T6|2|6@tab")` | `r n("x:tc_T6|2|7@tab")` | `r n("x:tc_T6|2|8@tab")` | `r n("x:tc_T6|2|9@tab")` |
+| Marginalized model | `r n("x:tc_T6|3|1@tab")` | `r n("x:tc_T6|3|2@tab")` | `r n("x:tc_T6|3|3@tab")` | `r n("x:tc_T6|3|4@tab")` | `r n("x:tc_T6|3|5@tab")` | `r n("x:tc_T6|3|6@tab")` | `r n("x:tc_T6|3|7@tab")` | `r n("x:tc_T6|3|8@tab")` | `r n("x:tc_T6|3|9@tab")` |
+| GLMM, Wald | `r n("x:tc_T6|4|1@tab")` | `r n("x:tc_T6|4|2@tab")` | `r n("x:tc_T6|4|3@tab")` | `r n("x:tc_T6|4|4@tab")` | `r n("x:tc_T6|4|5@tab")` | `r n("x:tc_T6|4|6@tab")` | `r n("x:tc_T6|4|7@tab")` | `r n("x:tc_T6|4|8@tab")` | `r n("x:tc_T6|4|9@tab")` |
+| Shrinkage GLM | `r n("x:tc_T6|5|1@tab")` | `r n("x:tc_T6|5|2@tab")` | `r n("x:tc_T6|5|3@tab")` | `r n("x:tc_T6|5|4@tab")` | `r n("x:tc_T6|5|5@tab")` | `r n("x:tc_T6|5|6@tab")` | `r n("x:tc_T6|5|7@tab")` | `r n("x:tc_T6|5|8@tab")` | `r n("x:tc_T6|5|9@tab")` |
+| GEE, uncorrected | `r n("x:tc_T6|6|1@tab")` | `r n("x:tc_T6|6|2@tab")` | `r n("x:tc_T6|6|3@tab")` | `r n("x:tc_T6|6|4@tab")` | `r n("x:tc_T6|6|5@tab")` | `r n("x:tc_T6|6|6@tab")` | `r n("x:tc_T6|6|7@tab")` | `r n("x:tc_T6|6|8@tab")` | `r n("x:tc_T6|6|9@tab")` |
+| GLMM, likelihood ratio | `r n("x:tc_T6|7|1@tab")` | `r n("x:tc_T6|7|2@tab")` | `r n("x:tc_T6|7|3@tab")` | `r n("x:tc_T6|7|4@tab")` | `r n("x:tc_T6|7|5@tab")` | `r n("x:tc_T6|7|6@tab")` | `r n("x:tc_T6|7|7@tab")` | `r n("x:tc_T6|7|8@tab")` | `r n("x:tc_T6|7|9@tab")` |
+| GEE, Kauermann-Carroll | `r n("x:tc_T6|8|1@tab")` | `r n("x:tc_T6|8|2@tab")` | `r n("x:tc_T6|8|3@tab")` | `r n("x:tc_T6|8|4@tab")` | `r n("x:tc_T6|8|5@tab")` | `r n("x:tc_T6|8|6@tab")` | `r n("x:tc_T6|8|7@tab")` | `r n("x:tc_T6|8|8@tab")` | `r n("x:tc_T6|8|9@tab")` |
+
+**Table S7.** Replicates returning a usable result by number of occasions (%), every attempted replicate in the denominator, main grid, marginalized model with the convergence check. Monte Carlo standard errors by block bootstrap; values given to the digit they support.
+
+| | GEE, Fay-Graubard | GEE, Mancl-DeRouen | Marginalized model | GLMM, Wald | Shrinkage GLM | GEE, uncorrected | GLMM, likelihood ratio | GEE, Kauermann-Carroll |
+|---|---|---|---|---|---|---|---|---|
+| random intercept, T = 2 | `r n("x:tc_T7|1|1@tab")` | `r n("x:tc_T7|1|2@tab")` | `r n("x:tc_T7|1|3@tab")` | `r n("x:tc_T7|1|4@tab")` | `r n("x:tc_T7|1|5@tab")` | `r n("x:tc_T7|1|6@tab")` | `r n("x:tc_T7|1|7@tab")` | `r n("x:tc_T7|1|8@tab")` |
+| random intercept, T = 3 | `r n("x:tc_T7|2|1@tab")` | `r n("x:tc_T7|2|2@tab")` | `r n("x:tc_T7|2|3@tab")` | `r n("x:tc_T7|2|4@tab")` | `r n("x:tc_T7|2|5@tab")` | `r n("x:tc_T7|2|6@tab")` | `r n("x:tc_T7|2|7@tab")` | `r n("x:tc_T7|2|8@tab")` |
+| random intercept, T = 4 | `r n("x:tc_T7|3|1@tab")` | `r n("x:tc_T7|3|2@tab")` | `r n("x:tc_T7|3|3@tab")` | `r n("x:tc_T7|3|4@tab")` | `r n("x:tc_T7|3|5@tab")` | `r n("x:tc_T7|3|6@tab")` | `r n("x:tc_T7|3|7@tab")` | `r n("x:tc_T7|3|8@tab")` |
+| random intercept, T = 6 | `r n("x:tc_T7|4|1@tab")` | `r n("x:tc_T7|4|2@tab")` | `r n("x:tc_T7|4|3@tab")` | `r n("x:tc_T7|4|4@tab")` | `r n("x:tc_T7|4|5@tab")` | `r n("x:tc_T7|4|6@tab")` | `r n("x:tc_T7|4|7@tab")` | `r n("x:tc_T7|4|8@tab")` |
+| random intercept, T = 8 | `r n("x:tc_T7|5|1@tab")` | `r n("x:tc_T7|5|2@tab")` | `r n("x:tc_T7|5|3@tab")` | `r n("x:tc_T7|5|4@tab")` | `r n("x:tc_T7|5|5@tab")` | `r n("x:tc_T7|5|6@tab")` | `r n("x:tc_T7|5|7@tab")` | `r n("x:tc_T7|5|8@tab")` |
+| random intercept, T = 10 | `r n("x:tc_T7|6|1@tab")` | `r n("x:tc_T7|6|2@tab")` | `r n("x:tc_T7|6|3@tab")` | `r n("x:tc_T7|6|4@tab")` | `r n("x:tc_T7|6|5@tab")` | `r n("x:tc_T7|6|6@tab")` | `r n("x:tc_T7|6|7@tab")` | `r n("x:tc_T7|6|8@tab")` |
+| random slopes, T = 2 | `r n("x:tc_T7|7|1@tab")` | `r n("x:tc_T7|7|2@tab")` | `r n("x:tc_T7|7|3@tab")` | `r n("x:tc_T7|7|4@tab")` | `r n("x:tc_T7|7|5@tab")` | `r n("x:tc_T7|7|6@tab")` | `r n("x:tc_T7|7|7@tab")` | `r n("x:tc_T7|7|8@tab")` |
+| random slopes, T = 3 | `r n("x:tc_T7|8|1@tab")` | `r n("x:tc_T7|8|2@tab")` | `r n("x:tc_T7|8|3@tab")` | `r n("x:tc_T7|8|4@tab")` | `r n("x:tc_T7|8|5@tab")` | `r n("x:tc_T7|8|6@tab")` | `r n("x:tc_T7|8|7@tab")` | `r n("x:tc_T7|8|8@tab")` |
+| random slopes, T = 4 | `r n("x:tc_T7|9|1@tab")` | `r n("x:tc_T7|9|2@tab")` | `r n("x:tc_T7|9|3@tab")` | `r n("x:tc_T7|9|4@tab")` | `r n("x:tc_T7|9|5@tab")` | `r n("x:tc_T7|9|6@tab")` | `r n("x:tc_T7|9|7@tab")` | `r n("x:tc_T7|9|8@tab")` |
+| random slopes, T = 6 | `r n("x:tc_T7|10|1@tab")` | `r n("x:tc_T7|10|2@tab")` | `r n("x:tc_T7|10|3@tab")` | `r n("x:tc_T7|10|4@tab")` | `r n("x:tc_T7|10|5@tab")` | `r n("x:tc_T7|10|6@tab")` | `r n("x:tc_T7|10|7@tab")` | `r n("x:tc_T7|10|8@tab")` |
+| random slopes, T = 8 | `r n("x:tc_T7|11|1@tab")` | `r n("x:tc_T7|11|2@tab")` | `r n("x:tc_T7|11|3@tab")` | `r n("x:tc_T7|11|4@tab")` | `r n("x:tc_T7|11|5@tab")` | `r n("x:tc_T7|11|6@tab")` | `r n("x:tc_T7|11|7@tab")` | `r n("x:tc_T7|11|8@tab")` |
+| random slopes, T = 10 | `r n("x:tc_T7|12|1@tab")` | `r n("x:tc_T7|12|2@tab")` | `r n("x:tc_T7|12|3@tab")` | `r n("x:tc_T7|12|4@tab")` | `r n("x:tc_T7|12|5@tab")` | `r n("x:tc_T7|12|6@tab")` | `r n("x:tc_T7|12|7@tab")` | `r n("x:tc_T7|12|8@tab")` |
+
+**Table S8.** Usable result and unconditional validity at 20 clusters or fewer (%), main grid, marginalized model with the convergence check. Monte Carlo standard errors by block bootstrap; values given to the digit they support.
+
+| | usable | unconditional validity | design points with a usable replicate |
+|---|---|---|---|
+| GEE, Fay-Graubard | `r n("x:tc_T8|1|1@tab")` | `r n("x:tc_T8|1|2@tab")` | `r n("x:tc_T8|1|3@tab")` |
+| GEE, Mancl-DeRouen | `r n("x:tc_T8|2|1@tab")` | `r n("x:tc_T8|2|2@tab")` | `r n("x:tc_T8|2|3@tab")` |
+| Marginalized model | `r n("x:tc_T8|3|1@tab")` | `r n("x:tc_T8|3|2@tab")` | `r n("x:tc_T8|3|3@tab")` |
+| GLMM, Wald | `r n("x:tc_T8|4|1@tab")` | `r n("x:tc_T8|4|2@tab")` | `r n("x:tc_T8|4|3@tab")` |
+| Shrinkage GLM | `r n("x:tc_T8|5|1@tab")` | `r n("x:tc_T8|5|2@tab")` | `r n("x:tc_T8|5|3@tab")` |
+| GEE, uncorrected | `r n("x:tc_T8|6|1@tab")` | `r n("x:tc_T8|6|2@tab")` | `r n("x:tc_T8|6|3@tab")` |
+| GLMM, likelihood ratio | `r n("x:tc_T8|7|1@tab")` | `r n("x:tc_T8|7|2@tab")` | `r n("x:tc_T8|7|3@tab")` |
+| GEE, Kauermann-Carroll | `r n("x:tc_T8|8|1@tab")` | `r n("x:tc_T8|8|2@tab")` | `r n("x:tc_T8|8|3@tab")` |
+
+**Table S9.** Mean absolute departure from 5% by estimability stratum (percentage points); strata by the mean usable proportion of the five marginal methods, main grid, marginalized model with the convergence check. Monte Carlo standard errors by block bootstrap; values given to the digit they support.
+
+| | `r n("x:hdr_T9_1")` | `r n("x:hdr_T9_2")` | `r n("x:hdr_T9_3")` | `r n("x:hdr_T9_4")` | `r n("x:hdr_T9_5")` |
+|---|---|---|---|---|---|
+| GEE, Fay-Graubard | `r n("x:tc_T9|1|1@tab")` | `r n("x:tc_T9|1|2@tab")` | `r n("x:tc_T9|1|3@tab")` | `r n("x:tc_T9|1|4@tab")` | `r n("x:tc_T9|1|5@tab")` |
+| GEE, Mancl-DeRouen | `r n("x:tc_T9|2|1@tab")` | `r n("x:tc_T9|2|2@tab")` | `r n("x:tc_T9|2|3@tab")` | `r n("x:tc_T9|2|4@tab")` | `r n("x:tc_T9|2|5@tab")` |
+| Marginalized model | `r n("x:tc_T9|3|1@tab")` | `r n("x:tc_T9|3|2@tab")` | `r n("x:tc_T9|3|3@tab")` | `r n("x:tc_T9|3|4@tab")` | `r n("x:tc_T9|3|5@tab")` |
+| GLMM, Wald | `r n("x:tc_T9|4|1@tab")` | `r n("x:tc_T9|4|2@tab")` | `r n("x:tc_T9|4|3@tab")` | `r n("x:tc_T9|4|4@tab")` | `r n("x:tc_T9|4|5@tab")` |
+| Shrinkage GLM | `r n("x:tc_T9|5|1@tab")` | `r n("x:tc_T9|5|2@tab")` | `r n("x:tc_T9|5|3@tab")` | `r n("x:tc_T9|5|4@tab")` | `r n("x:tc_T9|5|5@tab")` |
+| GEE, uncorrected | `r n("x:tc_T9|6|1@tab")` | `r n("x:tc_T9|6|2@tab")` | `r n("x:tc_T9|6|3@tab")` | `r n("x:tc_T9|6|4@tab")` | `r n("x:tc_T9|6|5@tab")` |
+| GLMM, likelihood ratio | `r n("x:tc_T9|7|1@tab")` | `r n("x:tc_T9|7|2@tab")` | `r n("x:tc_T9|7|3@tab")` | `r n("x:tc_T9|7|4@tab")` | `r n("x:tc_T9|7|5@tab")` |
+| GEE, Kauermann-Carroll | `r n("x:tc_T9|8|1@tab")` | `r n("x:tc_T9|8|2@tab")` | `r n("x:tc_T9|8|3@tab")` | `r n("x:tc_T9|8|4@tab")` | `r n("x:tc_T9|8|5@tab")` |
+| design points | `r n("x:tc_T9|9|1@tab")` | `r n("x:tc_T9|9|2@tab")` | `r n("x:tc_T9|9|3@tab")` | `r n("x:tc_T9|9|4@tab")` | `r n("x:tc_T9|9|5@tab")` |
+
+**Table S10.** Raw and size-adjusted power at the interaction contrast (%), main grid, marginalized model with the convergence check. Monte Carlo standard errors by block bootstrap; values given to the digit they support.
+
+| | raw | size-adjusted |
+|---|---|---|
+| GenBinaryY, GEE, Fay-Graubard | `r n("x:tc_T10|1|1@tab")` | `r n("x:tc_T10|1|2@tab")` |
+| GenBinaryY, GEE, Mancl-DeRouen | `r n("x:tc_T10|2|1@tab")` | `r n("x:tc_T10|2|2@tab")` |
+| GenBinaryY, Marginalized model | `r n("x:tc_T10|3|1@tab")` | `r n("x:tc_T10|3|2@tab")` |
+| GenBinaryY, GLMM, Wald | `r n("x:tc_T10|4|1@tab")` | `r n("x:tc_T10|4|2@tab")` |
+| GenBinaryY, Shrinkage GLM | `r n("x:tc_T10|5|1@tab")` | `r n("x:tc_T10|5|2@tab")` |
+| GenBinaryY, GEE, uncorrected | `r n("x:tc_T10|6|1@tab")` | `r n("x:tc_T10|6|2@tab")` |
+| GenBinaryY, GLMM, likelihood ratio | `r n("x:tc_T10|7|1@tab")` | `r n("x:tc_T10|7|2@tab")` |
+| GenBinaryY, GEE, Kauermann-Carroll | `r n("x:tc_T10|8|1@tab")` | `r n("x:tc_T10|8|2@tab")` |
+| GLMM-native, GEE, Fay-Graubard | `r n("x:tc_T10|9|1@tab")` | `r n("x:tc_T10|9|2@tab")` |
+| GLMM-native, GEE, Mancl-DeRouen | `r n("x:tc_T10|10|1@tab")` | `r n("x:tc_T10|10|2@tab")` |
+| GLMM-native, Marginalized model | `r n("x:tc_T10|11|1@tab")` | `r n("x:tc_T10|11|2@tab")` |
+| GLMM-native, GLMM, Wald | `r n("x:tc_T10|12|1@tab")` | `r n("x:tc_T10|12|2@tab")` |
+| GLMM-native, Shrinkage GLM | `r n("x:tc_T10|13|1@tab")` | `r n("x:tc_T10|13|2@tab")` |
+| GLMM-native, GEE, uncorrected | `r n("x:tc_T10|14|1@tab")` | `r n("x:tc_T10|14|2@tab")` |
+| GLMM-native, GLMM, likelihood ratio | `r n("x:tc_T10|15|1@tab")` | `r n("x:tc_T10|15|2@tab")` |
+| GLMM-native, GEE, Kauermann-Carroll | `r n("x:tc_T10|16|1@tab")` | `r n("x:tc_T10|16|2@tab")` |
+| GLMM-AR1, GEE, Fay-Graubard | `r n("x:tc_T10|17|1@tab")` | `r n("x:tc_T10|17|2@tab")` |
+| GLMM-AR1, GEE, Mancl-DeRouen | `r n("x:tc_T10|18|1@tab")` | `r n("x:tc_T10|18|2@tab")` |
+| GLMM-AR1, Marginalized model | `r n("x:tc_T10|19|1@tab")` | `r n("x:tc_T10|19|2@tab")` |
+| GLMM-AR1, GLMM, Wald | `r n("x:tc_T10|20|1@tab")` | `r n("x:tc_T10|20|2@tab")` |
+| GLMM-AR1, Shrinkage GLM | `r n("x:tc_T10|21|1@tab")` | `r n("x:tc_T10|21|2@tab")` |
+| GLMM-AR1, GEE, uncorrected | `r n("x:tc_T10|22|1@tab")` | `r n("x:tc_T10|22|2@tab")` |
+| GLMM-AR1, GLMM, likelihood ratio | `r n("x:tc_T10|23|1@tab")` | `r n("x:tc_T10|23|2@tab")` |
+| GLMM-AR1, GEE, Kauermann-Carroll | `r n("x:tc_T10|24|1@tab")` | `r n("x:tc_T10|24|2@tab")` |
+
+**Table S11.** Type I error under a normal and a t reference (%), shift in percentage points, main grid, marginalized model with the convergence check. Monte Carlo standard errors by block bootstrap; values given to the digit they support.
+
+| | normal GB | normal NAT | normal AR1 | t GB | t NAT | t AR1 | shift GB | shift NAT | shift AR1 | shift at N <= 25 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| GEE, Fay-Graubard | `r n("x:tc_T11|1|1@tab")` | `r n("x:tc_T11|1|2@tab")` | `r n("x:tc_T11|1|3@tab")` | `r n("x:tc_T11|1|4@tab")` | `r n("x:tc_T11|1|5@tab")` | `r n("x:tc_T11|1|6@tab")` | `r n("x:tc_T11|1|7@tab")` | `r n("x:tc_T11|1|8@tab")` | `r n("x:tc_T11|1|9@tab")` | `r n("x:tc_T11|1|10@tab")` |
+| GEE, Mancl-DeRouen | `r n("x:tc_T11|2|1@tab")` | `r n("x:tc_T11|2|2@tab")` | `r n("x:tc_T11|2|3@tab")` | `r n("x:tc_T11|2|4@tab")` | `r n("x:tc_T11|2|5@tab")` | `r n("x:tc_T11|2|6@tab")` | `r n("x:tc_T11|2|7@tab")` | `r n("x:tc_T11|2|8@tab")` | `r n("x:tc_T11|2|9@tab")` | `r n("x:tc_T11|2|10@tab")` |
+| Marginalized model | `r n("x:tc_T11|3|1@tab")` | `r n("x:tc_T11|3|2@tab")` | `r n("x:tc_T11|3|3@tab")` | `r n("x:tc_T11|3|4@tab")` | `r n("x:tc_T11|3|5@tab")` | `r n("x:tc_T11|3|6@tab")` | `r n("x:tc_T11|3|7@tab")` | `r n("x:tc_T11|3|8@tab")` | `r n("x:tc_T11|3|9@tab")` | `r n("x:tc_T11|3|10@tab")` |
+| GLMM, Wald | `r n("x:tc_T11|4|1@tab")` | `r n("x:tc_T11|4|2@tab")` | `r n("x:tc_T11|4|3@tab")` | `r n("x:tc_T11|4|4@tab")` | `r n("x:tc_T11|4|5@tab")` | `r n("x:tc_T11|4|6@tab")` | `r n("x:tc_T11|4|7@tab")` | `r n("x:tc_T11|4|8@tab")` | `r n("x:tc_T11|4|9@tab")` | `r n("x:tc_T11|4|10@tab")` |
+| Shrinkage GLM | `r n("x:tc_T11|5|1@tab")` | `r n("x:tc_T11|5|2@tab")` | `r n("x:tc_T11|5|3@tab")` | `r n("x:tc_T11|5|4@tab")` | `r n("x:tc_T11|5|5@tab")` | `r n("x:tc_T11|5|6@tab")` | `r n("x:tc_T11|5|7@tab")` | `r n("x:tc_T11|5|8@tab")` | `r n("x:tc_T11|5|9@tab")` | `r n("x:tc_T11|5|10@tab")` |
+| GEE, uncorrected | `r n("x:tc_T11|6|1@tab")` | `r n("x:tc_T11|6|2@tab")` | `r n("x:tc_T11|6|3@tab")` | `r n("x:tc_T11|6|4@tab")` | `r n("x:tc_T11|6|5@tab")` | `r n("x:tc_T11|6|6@tab")` | `r n("x:tc_T11|6|7@tab")` | `r n("x:tc_T11|6|8@tab")` | `r n("x:tc_T11|6|9@tab")` | `r n("x:tc_T11|6|10@tab")` |
+| GEE, Kauermann-Carroll | `r n("x:tc_T11|7|1@tab")` | `r n("x:tc_T11|7|2@tab")` | `r n("x:tc_T11|7|3@tab")` | `r n("x:tc_T11|7|4@tab")` | `r n("x:tc_T11|7|5@tab")` | `r n("x:tc_T11|7|6@tab")` | `r n("x:tc_T11|7|7@tab")` | `r n("x:tc_T11|7|8@tab")` | `r n("x:tc_T11|7|9@tab")` | `r n("x:tc_T11|7|10@tab")` |
+
+**Table S12.** Coverage of the 95% confidence interval against each method's own estimand (%); not available (n.a.) for the GLMM on GenBinaryY, main grid, marginalized model with the convergence check. Monte Carlo standard errors by block bootstrap; values given to the digit they support.
+
+| | GenBinaryY | GLMM-native | GLMM-AR1 |
+|---|---|---|---|
+| GEE, Fay-Graubard | `r n("x:tc_T12|1|1@tab")` | `r n("x:tc_T12|1|2@tab")` | `r n("x:tc_T12|1|3@tab")` |
+| GEE, Mancl-DeRouen | `r n("x:tc_T12|2|1@tab")` | `r n("x:tc_T12|2|2@tab")` | `r n("x:tc_T12|2|3@tab")` |
+| Marginalized model | `r n("x:tc_T12|3|1@tab")` | `r n("x:tc_T12|3|2@tab")` | `r n("x:tc_T12|3|3@tab")` |
+| GLMM, Wald | n.a. | `r n("x:tc_T12|4|2@tab")` | `r n("x:tc_T12|4|3@tab")` |
+| Shrinkage GLM | `r n("x:tc_T12|5|1@tab")` | `r n("x:tc_T12|5|2@tab")` | `r n("x:tc_T12|5|3@tab")` |
+| GEE, uncorrected | `r n("x:tc_T12|6|1@tab")` | `r n("x:tc_T12|6|2@tab")` | `r n("x:tc_T12|6|3@tab")` |
+| GEE, Kauermann-Carroll | `r n("x:tc_T12|7|1@tab")` | `r n("x:tc_T12|7|2@tab")` | `r n("x:tc_T12|7|3@tab")` |
+
+**Table S13.** Pooled type I error (%) on the main grid with fits that returned warnings kept (U0, primary) and excluded (U1), replicate-weighted over the null cells. Binomial Monte Carlo standard error at most `r n("x:u1_mcse_max")` points.
+
+| Method | GB, U0 | GB, U1 | NAT, U0 | NAT, U1 | AR1, U0 | AR1, U1 |
+|---|---|---|---|---|---|---|
+| GEE, Fay-Graubard | `r n("x:u1_GenBinaryY_gee_fg_rate_U0@tab")` | `r n("x:u1_GenBinaryY_gee_fg_rate_U1@tab")` | `r n("x:u1_GLMMnative_gee_fg_rate_U0@tab")` | `r n("x:u1_GLMMnative_gee_fg_rate_U1@tab")` | `r n("x:u1_GLMMAR1_gee_fg_rate_U0@tab")` | `r n("x:u1_GLMMAR1_gee_fg_rate_U1@tab")` |
+| GEE, Mancl-DeRouen | `r n("x:u1_GenBinaryY_gee_md_rate_U0@tab")` | `r n("x:u1_GenBinaryY_gee_md_rate_U1@tab")` | `r n("x:u1_GLMMnative_gee_md_rate_U0@tab")` | `r n("x:u1_GLMMnative_gee_md_rate_U1@tab")` | `r n("x:u1_GLMMAR1_gee_md_rate_U0@tab")` | `r n("x:u1_GLMMAR1_gee_md_rate_U1@tab")` |
+| Marginalized model, with check | `r n("x:u1_GenBinaryY_mmm_rate_U0@tab")` | `r n("x:u1_GenBinaryY_mmm_rate_U1@tab")` | `r n("x:u1_GLMMnative_mmm_rate_U0@tab")` | `r n("x:u1_GLMMnative_mmm_rate_U1@tab")` | `r n("x:u1_GLMMAR1_mmm_rate_U0@tab")` | `r n("x:u1_GLMMAR1_mmm_rate_U1@tab")` |
+| GLMM, Wald | `r n("x:u1_GenBinaryY_glmer_rate_U0@tab")` | `r n("x:u1_GenBinaryY_glmer_rate_U1@tab")` | `r n("x:u1_GLMMnative_glmer_rate_U0@tab")` | `r n("x:u1_GLMMnative_glmer_rate_U1@tab")` | `r n("x:u1_GLMMAR1_glmer_rate_U0@tab")` | `r n("x:u1_GLMMAR1_glmer_rate_U1@tab")` |
+| Shrinkage GLM | `r n("x:u1_GenBinaryY_shrink_rate_U0@tab")` | `r n("x:u1_GenBinaryY_shrink_rate_U1@tab")` | `r n("x:u1_GLMMnative_shrink_rate_U0@tab")` | `r n("x:u1_GLMMnative_shrink_rate_U1@tab")` | `r n("x:u1_GLMMAR1_shrink_rate_U0@tab")` | `r n("x:u1_GLMMAR1_shrink_rate_U1@tab")` |
+| GEE, uncorrected | `r n("x:u1_GenBinaryY_gee_rate_U0@tab")` | `r n("x:u1_GenBinaryY_gee_rate_U1@tab")` | `r n("x:u1_GLMMnative_gee_rate_U0@tab")` | `r n("x:u1_GLMMnative_gee_rate_U1@tab")` | `r n("x:u1_GLMMAR1_gee_rate_U0@tab")` | `r n("x:u1_GLMMAR1_gee_rate_U1@tab")` |
+| GLMM, likelihood ratio | `r n("x:u1_GenBinaryY_glmer_lrt_rate_U0@tab")` | `r n("x:u1_GenBinaryY_glmer_lrt_rate_U1@tab")` | `r n("x:u1_GLMMnative_glmer_lrt_rate_U0@tab")` | `r n("x:u1_GLMMnative_glmer_lrt_rate_U1@tab")` | `r n("x:u1_GLMMAR1_glmer_lrt_rate_U0@tab")` | `r n("x:u1_GLMMAR1_glmer_lrt_rate_U1@tab")` |
+| GEE, Kauermann-Carroll | `r n("x:u1_GenBinaryY_gee_kc_rate_U0@tab")` | `r n("x:u1_GenBinaryY_gee_kc_rate_U1@tab")` | `r n("x:u1_GLMMnative_gee_kc_rate_U0@tab")` | `r n("x:u1_GLMMnative_gee_kc_rate_U1@tab")` | `r n("x:u1_GLMMAR1_gee_kc_rate_U0@tab")` | `r n("x:u1_GLMMAR1_gee_kc_rate_U1@tab")` |
+
+**Table S14.** Scenarios M6-M7 (`r n("x:n_dp_ns_scen")` design points each): design points clearly above 7.5% and clearly below 2.5% under the null, largest rejection rate (%) and replicates returning a usable result (%).
+
+| Scenario | Strategy | Above 7.5% | Below 2.5% | Largest rate (%) | Usable (%) |
+|---|---|---|---|---|---|
+| GenBinaryY, slope `r n("x:m6_gby")` | Marginalized model with check, t | `r n("x:ns_GenBinaryY_M6_mmm_t_n_hi")` | `r n("x:ns_GenBinaryY_M6_mmm_t_n_lo")` | `r n("x:ns_GenBinaryY_M6_mmm_t_max_rate@tab")` | `r n("x:ns_GenBinaryY_M6_mmm_t_pu@tab")` |
+|  | Marginalized model with check, normal | `r n("x:ns_GenBinaryY_M6_mmm_n_n_hi")` | `r n("x:ns_GenBinaryY_M6_mmm_n_n_lo")` | `r n("x:ns_GenBinaryY_M6_mmm_n_max_rate@tab")` | `r n("x:ns_GenBinaryY_M6_mmm_n_pu@tab")` |
+|  | Marginalized model without check, t | `r n("x:ns_GenBinaryY_M6_mmm_nocc_t_n_hi")` | `r n("x:ns_GenBinaryY_M6_mmm_nocc_t_n_lo")` | `r n("x:ns_GenBinaryY_M6_mmm_nocc_t_max_rate@tab")` | `r n("x:ns_GenBinaryY_M6_mmm_nocc_t_pu@tab")` |
+|  | GEE, Fay-Graubard, t | `r n("x:ns_GenBinaryY_M6_gee_fg_t_n_hi")` | `r n("x:ns_GenBinaryY_M6_gee_fg_t_n_lo")` | `r n("x:ns_GenBinaryY_M6_gee_fg_t_max_rate@tab")` | `r n("x:ns_GenBinaryY_M6_gee_fg_t_pu@tab")` |
+|  | GEE, Mancl-DeRouen, t | `r n("x:ns_GenBinaryY_M6_gee_md_t_n_hi")` | `r n("x:ns_GenBinaryY_M6_gee_md_t_n_lo")` | `r n("x:ns_GenBinaryY_M6_gee_md_t_max_rate@tab")` | `r n("x:ns_GenBinaryY_M6_gee_md_t_pu@tab")` |
+|  | GLMM, likelihood ratio | `r n("x:ns_GenBinaryY_M6_glmer_lrt_n_n_hi")` | `r n("x:ns_GenBinaryY_M6_glmer_lrt_n_n_lo")` | `r n("x:ns_GenBinaryY_M6_glmer_lrt_n_max_rate@tab")` | `r n("x:ns_GenBinaryY_M6_glmer_lrt_n_pu@tab")` |
+| GenBinaryY, slope `r n("x:m7_gby")` | Marginalized model with check, t | `r n("x:ns_GenBinaryY_M7_mmm_t_n_hi")` | `r n("x:ns_GenBinaryY_M7_mmm_t_n_lo")` | `r n("x:ns_GenBinaryY_M7_mmm_t_max_rate@tab")` | `r n("x:ns_GenBinaryY_M7_mmm_t_pu@tab")` |
+|  | Marginalized model with check, normal | `r n("x:ns_GenBinaryY_M7_mmm_n_n_hi")` | `r n("x:ns_GenBinaryY_M7_mmm_n_n_lo")` | `r n("x:ns_GenBinaryY_M7_mmm_n_max_rate@tab")` | `r n("x:ns_GenBinaryY_M7_mmm_n_pu@tab")` |
+|  | Marginalized model without check, t | `r n("x:ns_GenBinaryY_M7_mmm_nocc_t_n_hi")` | `r n("x:ns_GenBinaryY_M7_mmm_nocc_t_n_lo")` | `r n("x:ns_GenBinaryY_M7_mmm_nocc_t_max_rate@tab")` | `r n("x:ns_GenBinaryY_M7_mmm_nocc_t_pu@tab")` |
+|  | GEE, Fay-Graubard, t | `r n("x:ns_GenBinaryY_M7_gee_fg_t_n_hi")` | `r n("x:ns_GenBinaryY_M7_gee_fg_t_n_lo")` | `r n("x:ns_GenBinaryY_M7_gee_fg_t_max_rate@tab")` | `r n("x:ns_GenBinaryY_M7_gee_fg_t_pu@tab")` |
+|  | GEE, Mancl-DeRouen, t | `r n("x:ns_GenBinaryY_M7_gee_md_t_n_hi")` | `r n("x:ns_GenBinaryY_M7_gee_md_t_n_lo")` | `r n("x:ns_GenBinaryY_M7_gee_md_t_max_rate@tab")` | `r n("x:ns_GenBinaryY_M7_gee_md_t_pu@tab")` |
+|  | GLMM, likelihood ratio | `r n("x:ns_GenBinaryY_M7_glmer_lrt_n_n_hi")` | `r n("x:ns_GenBinaryY_M7_glmer_lrt_n_n_lo")` | `r n("x:ns_GenBinaryY_M7_glmer_lrt_n_max_rate@tab")` | `r n("x:ns_GenBinaryY_M7_glmer_lrt_n_pu@tab")` |
+| GLMM-native, slope variance `r n("x:m6_nat")` | Marginalized model with check, t | `r n("x:ns_GLMMnative_M6_mmm_t_n_hi")` | `r n("x:ns_GLMMnative_M6_mmm_t_n_lo")` | `r n("x:ns_GLMMnative_M6_mmm_t_max_rate@tab")` | `r n("x:ns_GLMMnative_M6_mmm_t_pu@tab")` |
+|  | Marginalized model with check, normal | `r n("x:ns_GLMMnative_M6_mmm_n_n_hi")` | `r n("x:ns_GLMMnative_M6_mmm_n_n_lo")` | `r n("x:ns_GLMMnative_M6_mmm_n_max_rate@tab")` | `r n("x:ns_GLMMnative_M6_mmm_n_pu@tab")` |
+|  | Marginalized model without check, t | `r n("x:ns_GLMMnative_M6_mmm_nocc_t_n_hi")` | `r n("x:ns_GLMMnative_M6_mmm_nocc_t_n_lo")` | `r n("x:ns_GLMMnative_M6_mmm_nocc_t_max_rate@tab")` | `r n("x:ns_GLMMnative_M6_mmm_nocc_t_pu@tab")` |
+|  | GEE, Fay-Graubard, t | `r n("x:ns_GLMMnative_M6_gee_fg_t_n_hi")` | `r n("x:ns_GLMMnative_M6_gee_fg_t_n_lo")` | `r n("x:ns_GLMMnative_M6_gee_fg_t_max_rate@tab")` | `r n("x:ns_GLMMnative_M6_gee_fg_t_pu@tab")` |
+|  | GEE, Mancl-DeRouen, t | `r n("x:ns_GLMMnative_M6_gee_md_t_n_hi")` | `r n("x:ns_GLMMnative_M6_gee_md_t_n_lo")` | `r n("x:ns_GLMMnative_M6_gee_md_t_max_rate@tab")` | `r n("x:ns_GLMMnative_M6_gee_md_t_pu@tab")` |
+|  | GLMM, likelihood ratio | `r n("x:ns_GLMMnative_M6_glmer_lrt_n_n_hi")` | `r n("x:ns_GLMMnative_M6_glmer_lrt_n_n_lo")` | `r n("x:ns_GLMMnative_M6_glmer_lrt_n_max_rate@tab")` | `r n("x:ns_GLMMnative_M6_glmer_lrt_n_pu@tab")` |
+| GLMM-native, slope variance `r n("x:m7_nat")` | Marginalized model with check, t | `r n("x:ns_GLMMnative_M7_mmm_t_n_hi")` | `r n("x:ns_GLMMnative_M7_mmm_t_n_lo")` | `r n("x:ns_GLMMnative_M7_mmm_t_max_rate@tab")` | `r n("x:ns_GLMMnative_M7_mmm_t_pu@tab")` |
+|  | Marginalized model with check, normal | `r n("x:ns_GLMMnative_M7_mmm_n_n_hi")` | `r n("x:ns_GLMMnative_M7_mmm_n_n_lo")` | `r n("x:ns_GLMMnative_M7_mmm_n_max_rate@tab")` | `r n("x:ns_GLMMnative_M7_mmm_n_pu@tab")` |
+|  | Marginalized model without check, t | `r n("x:ns_GLMMnative_M7_mmm_nocc_t_n_hi")` | `r n("x:ns_GLMMnative_M7_mmm_nocc_t_n_lo")` | `r n("x:ns_GLMMnative_M7_mmm_nocc_t_max_rate@tab")` | `r n("x:ns_GLMMnative_M7_mmm_nocc_t_pu@tab")` |
+|  | GEE, Fay-Graubard, t | `r n("x:ns_GLMMnative_M7_gee_fg_t_n_hi")` | `r n("x:ns_GLMMnative_M7_gee_fg_t_n_lo")` | `r n("x:ns_GLMMnative_M7_gee_fg_t_max_rate@tab")` | `r n("x:ns_GLMMnative_M7_gee_fg_t_pu@tab")` |
+|  | GEE, Mancl-DeRouen, t | `r n("x:ns_GLMMnative_M7_gee_md_t_n_hi")` | `r n("x:ns_GLMMnative_M7_gee_md_t_n_lo")` | `r n("x:ns_GLMMnative_M7_gee_md_t_max_rate@tab")` | `r n("x:ns_GLMMnative_M7_gee_md_t_pu@tab")` |
+|  | GLMM, likelihood ratio | `r n("x:ns_GLMMnative_M7_glmer_lrt_n_n_hi")` | `r n("x:ns_GLMMnative_M7_glmer_lrt_n_n_lo")` | `r n("x:ns_GLMMnative_M7_glmer_lrt_n_max_rate@tab")` | `r n("x:ns_GLMMnative_M7_glmer_lrt_n_pu@tab")` |
+
+**Table S15.** Clinical application: outcome of the fits in `r n("x:lus_nsub")` subsamples of whole patients at each subsample size N (% of subsamples). Not returned: no point estimate; no SE: estimate without a standard error; separated: |estimate| or SE above `r n("x:usab_max")`; usable: the remainder. For each method and N the four columns add up to all subsamples.
+
+| Method | N | Not returned | No SE | Separated | Usable |
+|---|---|---|---|---|---|
+| GLMM | `r n("x:t5N_10")` | `r n("x:t5_GLMM_10_pct_not_returned@tab")` | `r n("x:t5_GLMM_10_pct_no_se_500@tab")` | `r n("x:t5_GLMM_10_pct_sep_500@tab")` | `r n("x:t5_GLMM_10_pct_usable_500@tab")` |
+|  | `r n("x:t5N_15")` | `r n("x:t5_GLMM_15_pct_not_returned@tab")` | `r n("x:t5_GLMM_15_pct_no_se_500@tab")` | `r n("x:t5_GLMM_15_pct_sep_500@tab")` | `r n("x:t5_GLMM_15_pct_usable_500@tab")` |
+|  | `r n("x:t5N_20")` | `r n("x:t5_GLMM_20_pct_not_returned@tab")` | `r n("x:t5_GLMM_20_pct_no_se_500@tab")` | `r n("x:t5_GLMM_20_pct_sep_500@tab")` | `r n("x:t5_GLMM_20_pct_usable_500@tab")` |
+|  | `r n("x:t5N_25")` | `r n("x:t5_GLMM_25_pct_not_returned@tab")` | `r n("x:t5_GLMM_25_pct_no_se_500@tab")` | `r n("x:t5_GLMM_25_pct_sep_500@tab")` | `r n("x:t5_GLMM_25_pct_usable_500@tab")` |
+|  | `r n("x:t5N_50")` | `r n("x:t5_GLMM_50_pct_not_returned@tab")` | `r n("x:t5_GLMM_50_pct_no_se_500@tab")` | `r n("x:t5_GLMM_50_pct_sep_500@tab")` | `r n("x:t5_GLMM_50_pct_usable_500@tab")` |
+| Marginalized model | `r n("x:t5N_10")` | `r n("x:t5_MMM_10_pct_not_returned@tab")` | `r n("x:t5_MMM_10_pct_no_se_500@tab")` | `r n("x:t5_MMM_10_pct_sep_500@tab")` | `r n("x:t5_MMM_10_pct_usable_500@tab")` |
+|  | `r n("x:t5N_15")` | `r n("x:t5_MMM_15_pct_not_returned@tab")` | `r n("x:t5_MMM_15_pct_no_se_500@tab")` | `r n("x:t5_MMM_15_pct_sep_500@tab")` | `r n("x:t5_MMM_15_pct_usable_500@tab")` |
+|  | `r n("x:t5N_20")` | `r n("x:t5_MMM_20_pct_not_returned@tab")` | `r n("x:t5_MMM_20_pct_no_se_500@tab")` | `r n("x:t5_MMM_20_pct_sep_500@tab")` | `r n("x:t5_MMM_20_pct_usable_500@tab")` |
+|  | `r n("x:t5N_25")` | `r n("x:t5_MMM_25_pct_not_returned@tab")` | `r n("x:t5_MMM_25_pct_no_se_500@tab")` | `r n("x:t5_MMM_25_pct_sep_500@tab")` | `r n("x:t5_MMM_25_pct_usable_500@tab")` |
+|  | `r n("x:t5N_50")` | `r n("x:t5_MMM_50_pct_not_returned@tab")` | `r n("x:t5_MMM_50_pct_no_se_500@tab")` | `r n("x:t5_MMM_50_pct_sep_500@tab")` | `r n("x:t5_MMM_50_pct_usable_500@tab")` |
+| GEE, uncorrected | `r n("x:t5N_10")` | `r n("x:t5_GEE_10_pct_not_returned@tab")` | `r n("x:t5_GEE_10_pct_no_se_500@tab")` | `r n("x:t5_GEE_10_pct_sep_500@tab")` | `r n("x:t5_GEE_10_pct_usable_500@tab")` |
+|  | `r n("x:t5N_15")` | `r n("x:t5_GEE_15_pct_not_returned@tab")` | `r n("x:t5_GEE_15_pct_no_se_500@tab")` | `r n("x:t5_GEE_15_pct_sep_500@tab")` | `r n("x:t5_GEE_15_pct_usable_500@tab")` |
+|  | `r n("x:t5N_20")` | `r n("x:t5_GEE_20_pct_not_returned@tab")` | `r n("x:t5_GEE_20_pct_no_se_500@tab")` | `r n("x:t5_GEE_20_pct_sep_500@tab")` | `r n("x:t5_GEE_20_pct_usable_500@tab")` |
+|  | `r n("x:t5N_25")` | `r n("x:t5_GEE_25_pct_not_returned@tab")` | `r n("x:t5_GEE_25_pct_no_se_500@tab")` | `r n("x:t5_GEE_25_pct_sep_500@tab")` | `r n("x:t5_GEE_25_pct_usable_500@tab")` |
+|  | `r n("x:t5N_50")` | `r n("x:t5_GEE_50_pct_not_returned@tab")` | `r n("x:t5_GEE_50_pct_no_se_500@tab")` | `r n("x:t5_GEE_50_pct_sep_500@tab")` | `r n("x:t5_GEE_50_pct_usable_500@tab")` |
+| GEE, Fay-Graubard | `r n("x:t5N_10")` | `r n("x:t5_GEEFG_10_pct_not_returned@tab")` | `r n("x:t5_GEEFG_10_pct_no_se_500@tab")` | `r n("x:t5_GEEFG_10_pct_sep_500@tab")` | `r n("x:t5_GEEFG_10_pct_usable_500@tab")` |
+|  | `r n("x:t5N_15")` | `r n("x:t5_GEEFG_15_pct_not_returned@tab")` | `r n("x:t5_GEEFG_15_pct_no_se_500@tab")` | `r n("x:t5_GEEFG_15_pct_sep_500@tab")` | `r n("x:t5_GEEFG_15_pct_usable_500@tab")` |
+|  | `r n("x:t5N_20")` | `r n("x:t5_GEEFG_20_pct_not_returned@tab")` | `r n("x:t5_GEEFG_20_pct_no_se_500@tab")` | `r n("x:t5_GEEFG_20_pct_sep_500@tab")` | `r n("x:t5_GEEFG_20_pct_usable_500@tab")` |
+|  | `r n("x:t5N_25")` | `r n("x:t5_GEEFG_25_pct_not_returned@tab")` | `r n("x:t5_GEEFG_25_pct_no_se_500@tab")` | `r n("x:t5_GEEFG_25_pct_sep_500@tab")` | `r n("x:t5_GEEFG_25_pct_usable_500@tab")` |
+|  | `r n("x:t5N_50")` | `r n("x:t5_GEEFG_50_pct_not_returned@tab")` | `r n("x:t5_GEEFG_50_pct_no_se_500@tab")` | `r n("x:t5_GEEFG_50_pct_sep_500@tab")` | `r n("x:t5_GEEFG_50_pct_usable_500@tab")` |
+| GEE, Kauermann-Carroll | `r n("x:t5N_10")` | `r n("x:t5_GEEKC_10_pct_not_returned@tab")` | `r n("x:t5_GEEKC_10_pct_no_se_500@tab")` | `r n("x:t5_GEEKC_10_pct_sep_500@tab")` | `r n("x:t5_GEEKC_10_pct_usable_500@tab")` |
+|  | `r n("x:t5N_15")` | `r n("x:t5_GEEKC_15_pct_not_returned@tab")` | `r n("x:t5_GEEKC_15_pct_no_se_500@tab")` | `r n("x:t5_GEEKC_15_pct_sep_500@tab")` | `r n("x:t5_GEEKC_15_pct_usable_500@tab")` |
+|  | `r n("x:t5N_20")` | `r n("x:t5_GEEKC_20_pct_not_returned@tab")` | `r n("x:t5_GEEKC_20_pct_no_se_500@tab")` | `r n("x:t5_GEEKC_20_pct_sep_500@tab")` | `r n("x:t5_GEEKC_20_pct_usable_500@tab")` |
+|  | `r n("x:t5N_25")` | `r n("x:t5_GEEKC_25_pct_not_returned@tab")` | `r n("x:t5_GEEKC_25_pct_no_se_500@tab")` | `r n("x:t5_GEEKC_25_pct_sep_500@tab")` | `r n("x:t5_GEEKC_25_pct_usable_500@tab")` |
+|  | `r n("x:t5N_50")` | `r n("x:t5_GEEKC_50_pct_not_returned@tab")` | `r n("x:t5_GEEKC_50_pct_no_se_500@tab")` | `r n("x:t5_GEEKC_50_pct_sep_500@tab")` | `r n("x:t5_GEEKC_50_pct_usable_500@tab")` |
+| GEE, Mancl-DeRouen | `r n("x:t5N_10")` | `r n("x:t5_GEEMD_10_pct_not_returned@tab")` | `r n("x:t5_GEEMD_10_pct_no_se_500@tab")` | `r n("x:t5_GEEMD_10_pct_sep_500@tab")` | `r n("x:t5_GEEMD_10_pct_usable_500@tab")` |
+|  | `r n("x:t5N_15")` | `r n("x:t5_GEEMD_15_pct_not_returned@tab")` | `r n("x:t5_GEEMD_15_pct_no_se_500@tab")` | `r n("x:t5_GEEMD_15_pct_sep_500@tab")` | `r n("x:t5_GEEMD_15_pct_usable_500@tab")` |
+|  | `r n("x:t5N_20")` | `r n("x:t5_GEEMD_20_pct_not_returned@tab")` | `r n("x:t5_GEEMD_20_pct_no_se_500@tab")` | `r n("x:t5_GEEMD_20_pct_sep_500@tab")` | `r n("x:t5_GEEMD_20_pct_usable_500@tab")` |
+|  | `r n("x:t5N_25")` | `r n("x:t5_GEEMD_25_pct_not_returned@tab")` | `r n("x:t5_GEEMD_25_pct_no_se_500@tab")` | `r n("x:t5_GEEMD_25_pct_sep_500@tab")` | `r n("x:t5_GEEMD_25_pct_usable_500@tab")` |
+|  | `r n("x:t5N_50")` | `r n("x:t5_GEEMD_50_pct_not_returned@tab")` | `r n("x:t5_GEEMD_50_pct_no_se_500@tab")` | `r n("x:t5_GEEMD_50_pct_sep_500@tab")` | `r n("x:t5_GEEMD_50_pct_usable_500@tab")` |
+
+## S4. Numerical behaviour of the small-sample corrections
+
+The corrections of Mancl and DeRouen, Kauermann and Carroll and Fay and Graubard were computed with `geesmv`. On sparse binary data with few clusters the three functions can loop indefinitely in compiled code, so each call ran in a separate process killed after `r n("x:geesmv_timeout")` seconds; the largest share of time-outs in a cell was `r n("x:to_max")`%. In the earlier version of this work the Kauermann-Carroll correction appeared to shrink rather than inflate the variance; recomputing the three corrections from the estimating-equation building blocks showed that this was a property of the implementation, which refits the model internally and applies a symmetric matrix square root to a non-symmetric matrix, and not of the estimator. The hand computation of Fay-Graubard agreed with the package at every grid point checked. These checks are documented with the code.
+
+## S5. Tables of the scenario anchored to the cohort (M1c)
+
+**Table S16.** Type I error at the nominal 5% (%): pooled rate, worst case and mean absolute departure (MAD) over cluster counts (percentage points), scenario M1c (`r n("x:ndp_m1c")` design points).
+
+| | rate GB | rate NAT | rate AR1 | worst GB | worst NAT | worst AR1 | MAD GB | MAD NAT | MAD AR1 |
+|---|---|---|---|---|---|---|---|---|---|
+| GEE, Fay-Graubard | `r n("x:tc_T3c|1|1@tab")` | `r n("x:tc_T3c|1|2@tab")` | `r n("x:tc_T3c|1|3@tab")` | `r n("x:tc_T3c|1|4@tab")` | `r n("x:tc_T3c|1|5@tab")` | `r n("x:tc_T3c|1|6@tab")` | `r n("x:tc_T3c|1|7@tab")` | `r n("x:tc_T3c|1|8@tab")` | `r n("x:tc_T3c|1|9@tab")` |
+| GEE, Mancl-DeRouen | `r n("x:tc_T3c|2|1@tab")` | `r n("x:tc_T3c|2|2@tab")` | `r n("x:tc_T3c|2|3@tab")` | `r n("x:tc_T3c|2|4@tab")` | `r n("x:tc_T3c|2|5@tab")` | `r n("x:tc_T3c|2|6@tab")` | `r n("x:tc_T3c|2|7@tab")` | `r n("x:tc_T3c|2|8@tab")` | `r n("x:tc_T3c|2|9@tab")` |
+| Marginalized model | `r n("x:tc_T3c|3|1@tab")` | `r n("x:tc_T3c|3|2@tab")` | `r n("x:tc_T3c|3|3@tab")` | `r n("x:tc_T3c|3|4@tab")` | `r n("x:tc_T3c|3|5@tab")` | `r n("x:tc_T3c|3|6@tab")` | `r n("x:tc_T3c|3|7@tab")` | `r n("x:tc_T3c|3|8@tab")` | `r n("x:tc_T3c|3|9@tab")` |
+| GLMM, Wald | `r n("x:tc_T3c|4|1@tab")` | `r n("x:tc_T3c|4|2@tab")` | `r n("x:tc_T3c|4|3@tab")` | `r n("x:tc_T3c|4|4@tab")` | `r n("x:tc_T3c|4|5@tab")` | `r n("x:tc_T3c|4|6@tab")` | `r n("x:tc_T3c|4|7@tab")` | `r n("x:tc_T3c|4|8@tab")` | `r n("x:tc_T3c|4|9@tab")` |
+| Shrinkage GLM | `r n("x:tc_T3c|5|1@tab")` | `r n("x:tc_T3c|5|2@tab")` | `r n("x:tc_T3c|5|3@tab")` | `r n("x:tc_T3c|5|4@tab")` | `r n("x:tc_T3c|5|5@tab")` | `r n("x:tc_T3c|5|6@tab")` | `r n("x:tc_T3c|5|7@tab")` | `r n("x:tc_T3c|5|8@tab")` | `r n("x:tc_T3c|5|9@tab")` |
+| GEE, uncorrected | `r n("x:tc_T3c|6|1@tab")` | `r n("x:tc_T3c|6|2@tab")` | `r n("x:tc_T3c|6|3@tab")` | `r n("x:tc_T3c|6|4@tab")` | `r n("x:tc_T3c|6|5@tab")` | `r n("x:tc_T3c|6|6@tab")` | `r n("x:tc_T3c|6|7@tab")` | `r n("x:tc_T3c|6|8@tab")` | `r n("x:tc_T3c|6|9@tab")` |
+| GLMM, likelihood ratio | `r n("x:tc_T3c|7|1@tab")` | `r n("x:tc_T3c|7|2@tab")` | `r n("x:tc_T3c|7|3@tab")` | `r n("x:tc_T3c|7|4@tab")` | `r n("x:tc_T3c|7|5@tab")` | `r n("x:tc_T3c|7|6@tab")` | `r n("x:tc_T3c|7|7@tab")` | `r n("x:tc_T3c|7|8@tab")` | `r n("x:tc_T3c|7|9@tab")` |
+| GEE, Kauermann-Carroll | `r n("x:tc_T3c|8|1@tab")` | `r n("x:tc_T3c|8|2@tab")` | `r n("x:tc_T3c|8|3@tab")` | `r n("x:tc_T3c|8|4@tab")` | `r n("x:tc_T3c|8|5@tab")` | `r n("x:tc_T3c|8|6@tab")` | `r n("x:tc_T3c|8|7@tab")` | `r n("x:tc_T3c|8|8@tab")` | `r n("x:tc_T3c|8|9@tab")` |
+
+**Table S17.** Mean absolute departure from 5% by number of occasions (percentage points), cell-weighted, scenario M1c (`r n("x:ndp_m1c")` design points).
+
+| | T = 2 | T = 3 | T >= 4 |
+|---|---|---|---|
+| GEE, Fay-Graubard | `r n("x:tc_T4c|1|1@tab")` | `r n("x:tc_T4c|1|2@tab")` | `r n("x:tc_T4c|1|3@tab")` |
+| GEE, Mancl-DeRouen | `r n("x:tc_T4c|2|1@tab")` | `r n("x:tc_T4c|2|2@tab")` | `r n("x:tc_T4c|2|3@tab")` |
+| Marginalized model | `r n("x:tc_T4c|3|1@tab")` | `r n("x:tc_T4c|3|2@tab")` | `r n("x:tc_T4c|3|3@tab")` |
+| GLMM, Wald | `r n("x:tc_T4c|4|1@tab")` | `r n("x:tc_T4c|4|2@tab")` | `r n("x:tc_T4c|4|3@tab")` |
+| Shrinkage GLM | `r n("x:tc_T4c|5|1@tab")` | `r n("x:tc_T4c|5|2@tab")` | `r n("x:tc_T4c|5|3@tab")` |
+| GEE, uncorrected | `r n("x:tc_T4c|6|1@tab")` | `r n("x:tc_T4c|6|2@tab")` | `r n("x:tc_T4c|6|3@tab")` |
+| GLMM, likelihood ratio | `r n("x:tc_T4c|7|1@tab")` | `r n("x:tc_T4c|7|2@tab")` | `r n("x:tc_T4c|7|3@tab")` |
+| GEE, Kauermann-Carroll | `r n("x:tc_T4c|8|1@tab")` | `r n("x:tc_T4c|8|2@tab")` | `r n("x:tc_T4c|8|3@tab")` |
+
+**Table S18.** Method-cells detectably off nominal (%), exact binomial test with Benjamini-Hochberg (BH) and Benjamini-Yekutieli (BY) corrections within method, scenario M1c (`r n("x:ndp_m1c")` design points).
+
+| | BH | BY |
+|---|---|---|
+| GEE, Fay-Graubard | `r n("x:tc_T5c|1|1@tab")` | `r n("x:tc_T5c|1|2@tab")` |
+| GEE, Mancl-DeRouen | `r n("x:tc_T5c|2|1@tab")` | `r n("x:tc_T5c|2|2@tab")` |
+| Marginalized model | `r n("x:tc_T5c|3|1@tab")` | `r n("x:tc_T5c|3|2@tab")` |
+| GLMM, Wald | `r n("x:tc_T5c|4|1@tab")` | `r n("x:tc_T5c|4|2@tab")` |
+| Shrinkage GLM | `r n("x:tc_T5c|5|1@tab")` | `r n("x:tc_T5c|5|2@tab")` |
+| GEE, uncorrected | `r n("x:tc_T5c|6|1@tab")` | `r n("x:tc_T5c|6|2@tab")` |
+| GLMM, likelihood ratio | `r n("x:tc_T5c|7|1@tab")` | `r n("x:tc_T5c|7|2@tab")` |
+| GEE, Kauermann-Carroll | `r n("x:tc_T5c|8|1@tab")` | `r n("x:tc_T5c|8|2@tab")` |
+
+**Table S19.** Type I error on each method's own usable replicates and on the replicates usable for all methods (common set) (%), scenario M1c (`r n("x:ndp_m1c")` design points).
+
+| | own GB | own NAT | own AR1 | common GB | common NAT | common AR1 | shift GB | shift NAT | shift AR1 |
+|---|---|---|---|---|---|---|---|---|---|
+| GEE, Fay-Graubard | `r n("x:tc_T6c|1|1@tab")` | `r n("x:tc_T6c|1|2@tab")` | `r n("x:tc_T6c|1|3@tab")` | `r n("x:tc_T6c|1|4@tab")` | `r n("x:tc_T6c|1|5@tab")` | `r n("x:tc_T6c|1|6@tab")` | `r n("x:tc_T6c|1|7@tab")` | `r n("x:tc_T6c|1|8@tab")` | `r n("x:tc_T6c|1|9@tab")` |
+| GEE, Mancl-DeRouen | `r n("x:tc_T6c|2|1@tab")` | `r n("x:tc_T6c|2|2@tab")` | `r n("x:tc_T6c|2|3@tab")` | `r n("x:tc_T6c|2|4@tab")` | `r n("x:tc_T6c|2|5@tab")` | `r n("x:tc_T6c|2|6@tab")` | `r n("x:tc_T6c|2|7@tab")` | `r n("x:tc_T6c|2|8@tab")` | `r n("x:tc_T6c|2|9@tab")` |
+| Marginalized model | `r n("x:tc_T6c|3|1@tab")` | `r n("x:tc_T6c|3|2@tab")` | `r n("x:tc_T6c|3|3@tab")` | `r n("x:tc_T6c|3|4@tab")` | `r n("x:tc_T6c|3|5@tab")` | `r n("x:tc_T6c|3|6@tab")` | `r n("x:tc_T6c|3|7@tab")` | `r n("x:tc_T6c|3|8@tab")` | `r n("x:tc_T6c|3|9@tab")` |
+| GLMM, Wald | `r n("x:tc_T6c|4|1@tab")` | `r n("x:tc_T6c|4|2@tab")` | `r n("x:tc_T6c|4|3@tab")` | `r n("x:tc_T6c|4|4@tab")` | `r n("x:tc_T6c|4|5@tab")` | `r n("x:tc_T6c|4|6@tab")` | `r n("x:tc_T6c|4|7@tab")` | `r n("x:tc_T6c|4|8@tab")` | `r n("x:tc_T6c|4|9@tab")` |
+| Shrinkage GLM | `r n("x:tc_T6c|5|1@tab")` | `r n("x:tc_T6c|5|2@tab")` | `r n("x:tc_T6c|5|3@tab")` | `r n("x:tc_T6c|5|4@tab")` | `r n("x:tc_T6c|5|5@tab")` | `r n("x:tc_T6c|5|6@tab")` | `r n("x:tc_T6c|5|7@tab")` | `r n("x:tc_T6c|5|8@tab")` | `r n("x:tc_T6c|5|9@tab")` |
+| GEE, uncorrected | `r n("x:tc_T6c|6|1@tab")` | `r n("x:tc_T6c|6|2@tab")` | `r n("x:tc_T6c|6|3@tab")` | `r n("x:tc_T6c|6|4@tab")` | `r n("x:tc_T6c|6|5@tab")` | `r n("x:tc_T6c|6|6@tab")` | `r n("x:tc_T6c|6|7@tab")` | `r n("x:tc_T6c|6|8@tab")` | `r n("x:tc_T6c|6|9@tab")` |
+| GLMM, likelihood ratio | `r n("x:tc_T6c|7|1@tab")` | `r n("x:tc_T6c|7|2@tab")` | `r n("x:tc_T6c|7|3@tab")` | `r n("x:tc_T6c|7|4@tab")` | `r n("x:tc_T6c|7|5@tab")` | `r n("x:tc_T6c|7|6@tab")` | `r n("x:tc_T6c|7|7@tab")` | `r n("x:tc_T6c|7|8@tab")` | `r n("x:tc_T6c|7|9@tab")` |
+| GEE, Kauermann-Carroll | `r n("x:tc_T6c|8|1@tab")` | `r n("x:tc_T6c|8|2@tab")` | `r n("x:tc_T6c|8|3@tab")` | `r n("x:tc_T6c|8|4@tab")` | `r n("x:tc_T6c|8|5@tab")` | `r n("x:tc_T6c|8|6@tab")` | `r n("x:tc_T6c|8|7@tab")` | `r n("x:tc_T6c|8|8@tab")` | `r n("x:tc_T6c|8|9@tab")` |
+
+**Table S20.** Replicates returning a usable result by number of occasions (%), every attempted replicate in the denominator, scenario M1c (`r n("x:ndp_m1c")` design points).
+
+| | GEE, Fay-Graubard | GEE, Mancl-DeRouen | Marginalized model | GLMM, Wald | Shrinkage GLM | GEE, uncorrected | GLMM, likelihood ratio | GEE, Kauermann-Carroll |
+|---|---|---|---|---|---|---|---|---|
+| random intercept, T = 2 | `r n("x:tc_T7c|1|1@tab")` | `r n("x:tc_T7c|1|2@tab")` | `r n("x:tc_T7c|1|3@tab")` | `r n("x:tc_T7c|1|4@tab")` | `r n("x:tc_T7c|1|5@tab")` | `r n("x:tc_T7c|1|6@tab")` | `r n("x:tc_T7c|1|7@tab")` | `r n("x:tc_T7c|1|8@tab")` |
+| random intercept, T = 3 | `r n("x:tc_T7c|2|1@tab")` | `r n("x:tc_T7c|2|2@tab")` | `r n("x:tc_T7c|2|3@tab")` | `r n("x:tc_T7c|2|4@tab")` | `r n("x:tc_T7c|2|5@tab")` | `r n("x:tc_T7c|2|6@tab")` | `r n("x:tc_T7c|2|7@tab")` | `r n("x:tc_T7c|2|8@tab")` |
+| random intercept, T = 4 | `r n("x:tc_T7c|3|1@tab")` | `r n("x:tc_T7c|3|2@tab")` | `r n("x:tc_T7c|3|3@tab")` | `r n("x:tc_T7c|3|4@tab")` | `r n("x:tc_T7c|3|5@tab")` | `r n("x:tc_T7c|3|6@tab")` | `r n("x:tc_T7c|3|7@tab")` | `r n("x:tc_T7c|3|8@tab")` |
+| random intercept, T = 6 | `r n("x:tc_T7c|4|1@tab")` | `r n("x:tc_T7c|4|2@tab")` | `r n("x:tc_T7c|4|3@tab")` | `r n("x:tc_T7c|4|4@tab")` | `r n("x:tc_T7c|4|5@tab")` | `r n("x:tc_T7c|4|6@tab")` | `r n("x:tc_T7c|4|7@tab")` | `r n("x:tc_T7c|4|8@tab")` |
+
+**Table S21.** Usable result and unconditional validity at 20 clusters or fewer (%), scenario M1c (`r n("x:ndp_m1c")` design points).
+
+| | usable | unconditional validity | design points with a usable replicate |
+|---|---|---|---|
+| GEE, Fay-Graubard | `r n("x:tc_T8c|1|1@tab")` | `r n("x:tc_T8c|1|2@tab")` | `r n("x:tc_T8c|1|3@tab")` |
+| GEE, Mancl-DeRouen | `r n("x:tc_T8c|2|1@tab")` | `r n("x:tc_T8c|2|2@tab")` | `r n("x:tc_T8c|2|3@tab")` |
+| Marginalized model | `r n("x:tc_T8c|3|1@tab")` | `r n("x:tc_T8c|3|2@tab")` | `r n("x:tc_T8c|3|3@tab")` |
+| GLMM, Wald | `r n("x:tc_T8c|4|1@tab")` | `r n("x:tc_T8c|4|2@tab")` | `r n("x:tc_T8c|4|3@tab")` |
+| Shrinkage GLM | `r n("x:tc_T8c|5|1@tab")` | `r n("x:tc_T8c|5|2@tab")` | `r n("x:tc_T8c|5|3@tab")` |
+| GEE, uncorrected | `r n("x:tc_T8c|6|1@tab")` | `r n("x:tc_T8c|6|2@tab")` | `r n("x:tc_T8c|6|3@tab")` |
+| GLMM, likelihood ratio | `r n("x:tc_T8c|7|1@tab")` | `r n("x:tc_T8c|7|2@tab")` | `r n("x:tc_T8c|7|3@tab")` |
+| GEE, Kauermann-Carroll | `r n("x:tc_T8c|8|1@tab")` | `r n("x:tc_T8c|8|2@tab")` | `r n("x:tc_T8c|8|3@tab")` |
+
+**Table S22.** Mean absolute departure from 5% by estimability stratum (percentage points); strata by the mean usable proportion of the five marginal methods, scenario M1c (`r n("x:ndp_m1c")` design points).
+
+| | `r n("x:hdr_T9_1")` | `r n("x:hdr_T9_2")` | `r n("x:hdr_T9_3")` | `r n("x:hdr_T9_4")` | `r n("x:hdr_T9_5")` |
+|---|---|---|---|---|---|
+| GEE, Fay-Graubard | `r n("x:tc_T9c|1|1@tab")` | `r n("x:tc_T9c|1|2@tab")` | `r n("x:tc_T9c|1|3@tab")` | `r n("x:tc_T9c|1|4@tab")` | `r n("x:tc_T9c|1|5@tab")` |
+| GEE, Mancl-DeRouen | `r n("x:tc_T9c|2|1@tab")` | `r n("x:tc_T9c|2|2@tab")` | `r n("x:tc_T9c|2|3@tab")` | `r n("x:tc_T9c|2|4@tab")` | `r n("x:tc_T9c|2|5@tab")` |
+| Marginalized model | `r n("x:tc_T9c|3|1@tab")` | `r n("x:tc_T9c|3|2@tab")` | `r n("x:tc_T9c|3|3@tab")` | `r n("x:tc_T9c|3|4@tab")` | `r n("x:tc_T9c|3|5@tab")` |
+| GLMM, Wald | `r n("x:tc_T9c|4|1@tab")` | `r n("x:tc_T9c|4|2@tab")` | `r n("x:tc_T9c|4|3@tab")` | `r n("x:tc_T9c|4|4@tab")` | `r n("x:tc_T9c|4|5@tab")` |
+| Shrinkage GLM | `r n("x:tc_T9c|5|1@tab")` | `r n("x:tc_T9c|5|2@tab")` | `r n("x:tc_T9c|5|3@tab")` | `r n("x:tc_T9c|5|4@tab")` | `r n("x:tc_T9c|5|5@tab")` |
+| GEE, uncorrected | `r n("x:tc_T9c|6|1@tab")` | `r n("x:tc_T9c|6|2@tab")` | `r n("x:tc_T9c|6|3@tab")` | `r n("x:tc_T9c|6|4@tab")` | `r n("x:tc_T9c|6|5@tab")` |
+| GLMM, likelihood ratio | `r n("x:tc_T9c|7|1@tab")` | `r n("x:tc_T9c|7|2@tab")` | `r n("x:tc_T9c|7|3@tab")` | `r n("x:tc_T9c|7|4@tab")` | `r n("x:tc_T9c|7|5@tab")` |
+| GEE, Kauermann-Carroll | `r n("x:tc_T9c|8|1@tab")` | `r n("x:tc_T9c|8|2@tab")` | `r n("x:tc_T9c|8|3@tab")` | `r n("x:tc_T9c|8|4@tab")` | `r n("x:tc_T9c|8|5@tab")` |
+| design points | `r n("x:tc_T9c|9|1@tab")` | `r n("x:tc_T9c|9|2@tab")` | `r n("x:tc_T9c|9|3@tab")` | `r n("x:tc_T9c|9|4@tab")` | `r n("x:tc_T9c|9|5@tab")` |
+
+**Table S23.** Raw and size-adjusted power at the interaction contrast (%), scenario M1c (`r n("x:ndp_m1c")` design points).
+
+| | raw | size-adjusted |
+|---|---|---|
+| GenBinaryY, GEE, Fay-Graubard | `r n("x:tc_T10c|1|1@tab")` | `r n("x:tc_T10c|1|2@tab")` |
+| GenBinaryY, GEE, Mancl-DeRouen | `r n("x:tc_T10c|2|1@tab")` | `r n("x:tc_T10c|2|2@tab")` |
+| GenBinaryY, Marginalized model | `r n("x:tc_T10c|3|1@tab")` | `r n("x:tc_T10c|3|2@tab")` |
+| GenBinaryY, GLMM, Wald | `r n("x:tc_T10c|4|1@tab")` | `r n("x:tc_T10c|4|2@tab")` |
+| GenBinaryY, Shrinkage GLM | `r n("x:tc_T10c|5|1@tab")` | `r n("x:tc_T10c|5|2@tab")` |
+| GenBinaryY, GEE, uncorrected | `r n("x:tc_T10c|6|1@tab")` | `r n("x:tc_T10c|6|2@tab")` |
+| GenBinaryY, GLMM, likelihood ratio | `r n("x:tc_T10c|7|1@tab")` | `r n("x:tc_T10c|7|2@tab")` |
+| GenBinaryY, GEE, Kauermann-Carroll | `r n("x:tc_T10c|8|1@tab")` | `r n("x:tc_T10c|8|2@tab")` |
+| GLMM-native, GEE, Fay-Graubard | `r n("x:tc_T10c|9|1@tab")` | `r n("x:tc_T10c|9|2@tab")` |
+| GLMM-native, GEE, Mancl-DeRouen | `r n("x:tc_T10c|10|1@tab")` | `r n("x:tc_T10c|10|2@tab")` |
+| GLMM-native, Marginalized model | `r n("x:tc_T10c|11|1@tab")` | `r n("x:tc_T10c|11|2@tab")` |
+| GLMM-native, GLMM, Wald | `r n("x:tc_T10c|12|1@tab")` | `r n("x:tc_T10c|12|2@tab")` |
+| GLMM-native, Shrinkage GLM | `r n("x:tc_T10c|13|1@tab")` | `r n("x:tc_T10c|13|2@tab")` |
+| GLMM-native, GEE, uncorrected | `r n("x:tc_T10c|14|1@tab")` | `r n("x:tc_T10c|14|2@tab")` |
+| GLMM-native, GLMM, likelihood ratio | `r n("x:tc_T10c|15|1@tab")` | `r n("x:tc_T10c|15|2@tab")` |
+| GLMM-native, GEE, Kauermann-Carroll | `r n("x:tc_T10c|16|1@tab")` | `r n("x:tc_T10c|16|2@tab")` |
+| GLMM-AR1, GEE, Fay-Graubard | `r n("x:tc_T10c|17|1@tab")` | `r n("x:tc_T10c|17|2@tab")` |
+| GLMM-AR1, GEE, Mancl-DeRouen | `r n("x:tc_T10c|18|1@tab")` | `r n("x:tc_T10c|18|2@tab")` |
+| GLMM-AR1, Marginalized model | `r n("x:tc_T10c|19|1@tab")` | `r n("x:tc_T10c|19|2@tab")` |
+| GLMM-AR1, GLMM, Wald | `r n("x:tc_T10c|20|1@tab")` | `r n("x:tc_T10c|20|2@tab")` |
+| GLMM-AR1, Shrinkage GLM | `r n("x:tc_T10c|21|1@tab")` | `r n("x:tc_T10c|21|2@tab")` |
+| GLMM-AR1, GEE, uncorrected | `r n("x:tc_T10c|22|1@tab")` | `r n("x:tc_T10c|22|2@tab")` |
+| GLMM-AR1, GLMM, likelihood ratio | `r n("x:tc_T10c|23|1@tab")` | `r n("x:tc_T10c|23|2@tab")` |
+| GLMM-AR1, GEE, Kauermann-Carroll | `r n("x:tc_T10c|24|1@tab")` | `r n("x:tc_T10c|24|2@tab")` |
+
+**Table S24.** Type I error under a normal and a t reference (%), shift in percentage points, scenario M1c (`r n("x:ndp_m1c")` design points).
+
+| | normal GB | normal NAT | normal AR1 | t GB | t NAT | t AR1 | shift GB | shift NAT | shift AR1 | shift at N <= 25 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| GEE, Fay-Graubard | `r n("x:tc_T11c|1|1@tab")` | `r n("x:tc_T11c|1|2@tab")` | `r n("x:tc_T11c|1|3@tab")` | `r n("x:tc_T11c|1|4@tab")` | `r n("x:tc_T11c|1|5@tab")` | `r n("x:tc_T11c|1|6@tab")` | `r n("x:tc_T11c|1|7@tab")` | `r n("x:tc_T11c|1|8@tab")` | `r n("x:tc_T11c|1|9@tab")` | `r n("x:tc_T11c|1|10@tab")` |
+| GEE, Mancl-DeRouen | `r n("x:tc_T11c|2|1@tab")` | `r n("x:tc_T11c|2|2@tab")` | `r n("x:tc_T11c|2|3@tab")` | `r n("x:tc_T11c|2|4@tab")` | `r n("x:tc_T11c|2|5@tab")` | `r n("x:tc_T11c|2|6@tab")` | `r n("x:tc_T11c|2|7@tab")` | `r n("x:tc_T11c|2|8@tab")` | `r n("x:tc_T11c|2|9@tab")` | `r n("x:tc_T11c|2|10@tab")` |
+| Marginalized model | `r n("x:tc_T11c|3|1@tab")` | `r n("x:tc_T11c|3|2@tab")` | `r n("x:tc_T11c|3|3@tab")` | `r n("x:tc_T11c|3|4@tab")` | `r n("x:tc_T11c|3|5@tab")` | `r n("x:tc_T11c|3|6@tab")` | `r n("x:tc_T11c|3|7@tab")` | `r n("x:tc_T11c|3|8@tab")` | `r n("x:tc_T11c|3|9@tab")` | `r n("x:tc_T11c|3|10@tab")` |
+| GLMM, Wald | `r n("x:tc_T11c|4|1@tab")` | `r n("x:tc_T11c|4|2@tab")` | `r n("x:tc_T11c|4|3@tab")` | `r n("x:tc_T11c|4|4@tab")` | `r n("x:tc_T11c|4|5@tab")` | `r n("x:tc_T11c|4|6@tab")` | `r n("x:tc_T11c|4|7@tab")` | `r n("x:tc_T11c|4|8@tab")` | `r n("x:tc_T11c|4|9@tab")` | `r n("x:tc_T11c|4|10@tab")` |
+| Shrinkage GLM | `r n("x:tc_T11c|5|1@tab")` | `r n("x:tc_T11c|5|2@tab")` | `r n("x:tc_T11c|5|3@tab")` | `r n("x:tc_T11c|5|4@tab")` | `r n("x:tc_T11c|5|5@tab")` | `r n("x:tc_T11c|5|6@tab")` | `r n("x:tc_T11c|5|7@tab")` | `r n("x:tc_T11c|5|8@tab")` | `r n("x:tc_T11c|5|9@tab")` | `r n("x:tc_T11c|5|10@tab")` |
+| GEE, uncorrected | `r n("x:tc_T11c|6|1@tab")` | `r n("x:tc_T11c|6|2@tab")` | `r n("x:tc_T11c|6|3@tab")` | `r n("x:tc_T11c|6|4@tab")` | `r n("x:tc_T11c|6|5@tab")` | `r n("x:tc_T11c|6|6@tab")` | `r n("x:tc_T11c|6|7@tab")` | `r n("x:tc_T11c|6|8@tab")` | `r n("x:tc_T11c|6|9@tab")` | `r n("x:tc_T11c|6|10@tab")` |
+| GEE, Kauermann-Carroll | `r n("x:tc_T11c|7|1@tab")` | `r n("x:tc_T11c|7|2@tab")` | `r n("x:tc_T11c|7|3@tab")` | `r n("x:tc_T11c|7|4@tab")` | `r n("x:tc_T11c|7|5@tab")` | `r n("x:tc_T11c|7|6@tab")` | `r n("x:tc_T11c|7|7@tab")` | `r n("x:tc_T11c|7|8@tab")` | `r n("x:tc_T11c|7|9@tab")` | `r n("x:tc_T11c|7|10@tab")` |
+
+**Table S25.** Coverage of the 95% confidence interval against each method's own estimand (%); not available (n.a.) for the GLMM on GenBinaryY, scenario M1c (`r n("x:ndp_m1c")` design points).
+
+| | GenBinaryY | GLMM-native | GLMM-AR1 |
+|---|---|---|---|
+| GEE, Fay-Graubard | `r n("x:tc_T12c|1|1@tab")` | `r n("x:tc_T12c|1|2@tab")` | `r n("x:tc_T12c|1|3@tab")` |
+| GEE, Mancl-DeRouen | `r n("x:tc_T12c|2|1@tab")` | `r n("x:tc_T12c|2|2@tab")` | `r n("x:tc_T12c|2|3@tab")` |
+| Marginalized model | `r n("x:tc_T12c|3|1@tab")` | `r n("x:tc_T12c|3|2@tab")` | `r n("x:tc_T12c|3|3@tab")` |
+| GLMM, Wald | n.a. | `r n("x:tc_T12c|4|2@tab")` | `r n("x:tc_T12c|4|3@tab")` |
+| Shrinkage GLM | `r n("x:tc_T12c|5|1@tab")` | `r n("x:tc_T12c|5|2@tab")` | `r n("x:tc_T12c|5|3@tab")` |
+| GEE, uncorrected | `r n("x:tc_T12c|6|1@tab")` | `r n("x:tc_T12c|6|2@tab")` | `r n("x:tc_T12c|6|3@tab")` |
+| GEE, Kauermann-Carroll | `r n("x:tc_T12c|7|1@tab")` | `r n("x:tc_T12c|7|2@tab")` | `r n("x:tc_T12c|7|3@tab")` |
+

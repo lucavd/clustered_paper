@@ -1,0 +1,15 @@
+check,value,pass
+datasets in the sample,9504,TRUE
+design points covered,2376,
+design points with fewer than 2 datasets,0,TRUE
+eligible after regeneration,9504,
+LP status not 0,0,
+detectseparation errors,0,
+LP separated,729,
+detectseparation separated,729,
+LP and detectseparation agree,9504,TRUE
+time:trt infinite (detectseparation),728,
+"glm: warning fitted 0/1 or not converged, among LP separated",218,
+"glm: warning fitted 0/1 or not converged, among LP not separated",0,
+"glm: |b time:trt| > 10, among LP separated",503,
+"glm: |b time:trt| > 10, among LP not separated",0,

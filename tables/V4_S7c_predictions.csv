@@ -1,0 +1,16 @@
+code,what,est,lo,hi,ra,rb,outcome
+PD1,"type I error A (flip), mean of 18 H0 cells",5.19017205103648,4.79607178727542,5.62613013023216,2.5,7.5,confermata
+PD2,"type I error B (subj_t), mean of 18 H0 cells",0.506938319932607,0.343926413325667,0.702447362719916,2.5,7.5,smentita
+PD3,"type I error C (subj_perm), mean of 18 H0 cells",1.92635481758613,1.63400009939393,2.24448222769846,2.5,7.5,smentita
+PD6,"type I error D - C, paired, mean of 18 H0 cells (points)",3.71050581049933,3.21040496421769,4.21003734786955,-1,1,smentita
+PD9_flip,"power A - GEE FG t, paired, mean of 18 H1 cells (points)",0.806164946756453,0.433209190270281,1.20310842990954,-5,5,confermata
+PD9_subj_t,"power B - GEE FG t, paired, mean of 18 H1 cells (points)",-8.08447097238205,-8.51221450859981,-7.66515754238279,-5,5,smentita
+PD9_subj_perm,"power C - GEE FG t, paired, mean of 18 H1 cells (points)",-8.07921726841729,-8.4936928224329,-7.67016254205232,-5,5,smentita
+PD4_flip,H0 cells clearly above 7.5% (count of 18),0,,,0,0,confermata
+PD4_subj_t,H0 cells clearly above 7.5% (count of 18),0,,,0,0,confermata
+PD4_subj_perm,H0 cells clearly above 7.5% (count of 18),0,,,0,0,confermata
+PD5_flip,"usable share minus GEE FG, worst of 36 cells (points); n_below = cells clearly below -2.5",0,-0.0458901559744106,0,-2.5,Inf,confermata
+PD5_subj_t,"usable share minus GEE FG, worst of 36 cells (points); n_below = cells clearly below -2.5",0,-1.35658047796161,0,-2.5,Inf,confermata
+PD5_subj_perm,"usable share minus GEE FG, worst of 36 cells (points); n_below = cells clearly below -2.5",0,-1.35658047796161,0,-2.5,Inf,confermata
+PD7,share of subjects without slope in E at T = 2 (%),29.8300715990453,,,25,35,confermata
+PD8,max expected excess rejection of E over 18 H0 cells (points),0.156646474379629,-0.304993222720217,0.618286171479476,0,1,indeterminata

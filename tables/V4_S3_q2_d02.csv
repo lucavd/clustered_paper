@@ -1,0 +1,9 @@
+"N","ntime","label","calib_differs","gen_differs","D_cells_changed","D33_v4","D33_orig","D_equal_glmmnative","D_gen_equal_calib","pass"
+10,2,"mmlb","D","D","9",0.001,0.01,TRUE,TRUE,TRUE
+10,2,"manual","D","D","9",0.001,0.01,TRUE,TRUE,TRUE
+25,4,"mmlb","D","D","9",0.001,0.01,TRUE,TRUE,TRUE
+25,4,"manual","D","D","9",0.001,0.01,TRUE,TRUE,TRUE
+45,6,"mmlb","D","D","9",0.001,0.01,TRUE,TRUE,TRUE
+45,6,"manual","D","D","9",0.001,0.01,TRUE,TRUE,TRUE
+145,10,"mmlb","D","D","9",0.001,0.01,TRUE,TRUE,TRUE
+145,10,"manual","D","D","9",0.001,0.01,TRUE,TRUE,TRUE

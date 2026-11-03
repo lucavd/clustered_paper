@@ -1,0 +1,12 @@
+There were 50 or more warnings (use warnings() to see the first 50)
+     gate   pass
+   <char> <lgcl>
+1:     G8   TRUE
+2:     G9   TRUE
+3:    G10   TRUE
+                                                                                                                         detail
+                                                                                                                         <char>
+1:                                           1685204 rows compared, 0 mismatches (estimate, SE, p); status identical in 1256567
+2: 17280 chunk files; stored time:trt keys 1685204, rerun 1685204; stored failures 42406, rerun 42406; fits without the term 66
+3:                                1685204 replicates recomputed, 0 mismatches; boundary 1178907, fit without slope used 1139699
+variant rows written: 26416021 | MMM rows replaced: 1685204 | using the fit without slope: 1139699 

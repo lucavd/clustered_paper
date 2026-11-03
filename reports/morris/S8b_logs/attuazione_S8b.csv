@@ -1,0 +1,65 @@
+id,level,target,esito,nota,anchor_check
+DEC-1,L5,PI,fatta,"D-70: MMM of both applications refitted with lv ~1, q = 20, model-based SE (R/s8b/s8b_clin_mmm.R, 10,500 fits, 17 min on 2 cores); robust SE in Section S9",no text anchor
+DEC-2,L5,PI,fatta,"D-71: 83 sentences moved to the supplement plus 12 more (list in reports/morris/S8b_logs/moves_S8b.csv); Table 5 out, its values in Table S10; main text 7,978 words (6,778 + 6 x 200; PB6 7,500-8,200)",no text anchor
+DEC-3,L5,PI,fatta,"D-72: abstract, 4.1/S7 interval sentence, conclusions",no text anchor
+DEC-T1,L4,script:R/s5/s5_build.R,fatta,"D-73: R/s5/s5_build.R (|z| rule, |z| kept before the columns are dropped), s7f_table5_recompute.R, agg_v4.R comment; chain R/s8b/s8b_chain_dect1.sh 6 cores 1.6 h; PB2 sentence in 3.8",no text anchor
+DEC-T2,L4,script:R/s7f/s7f_h2h_boot.R,fatta,D-74: R/s7f/s7f_h2h_boot.R denominators from the design records,no text anchor
+DEC-T3,L4,script:R/protocol/extract_dgm_params.R,fatta,"D-75: tables/V4_dgm_parameters.csv from R/v4/rundir (9 rows changed, 1 printed), counter-proof 240/240 against R/v4/rundir; note under Table S1",no text anchor
+DEC-T4,L3,supp: nuova tabella,fatta,"D-76: Table S36 (new Section S18) from tables/variant_kcfc/V4_perf_primary.csv, R/s8b/sub/s8b_table_s36.R; cited in Section 2.5",no text anchor
+DEC-T5,L3,supp: didascalie,fatta,"D-77: MCSE sentence in the captions of Table 4, Figure 2 and Tables S3-S12, S14-S28, S30-S35 (py/s8b/s8b_mcse_captions.py); Table S10 keeps the existing x:t5_mcse sentence",no text anchor
+P01,L1,qmd,fatta,,anchor gone
+P02,L1,qmd,fatta,,anchor gone
+P03,L3,qmd,fatta,,anchor gone
+P04,L2,qmd,fatta,,"anchor present (1/1); new text ""f:s8|ndp_short_m1c"" present=True"
+P05,L2,qmd,fatta,,"anchor present (1/1); new text ""f:s8|deg_m1c"" present=True"
+P06,L2,qmd,fatta,,anchor gone
+P07,L2,qmd,fatta,"aligned to Table 4 (fewclust); the geesmv value of Table S14 (3, max rate) no longer in the text",anchor gone
+P09,L1,qmd,fatta,,anchor gone
+P13,L3,qmd,fatta,,anchor gone
+P15,L2,qmd,fatta,,anchor gone
+P17,L2,qmd,fatta,,anchor gone
+P17b,L2,qmd,fatta,shift clause removed: no table or figure supports it,anchor present (1/1); new text check: phrase removed=True
+P18,L2,qmd,fatta,"D-70: both model-based; PB5 confirmed (differences 0.04 and 0.06, within the 0.10 margin)",anchor gone
+P19,L2,qmd,fatta,,"anchor present (1/1); new text ""including the recommended strategy"" present=True"
+P20,L2,qmd,fatta,"LIT-009: Thompson 2021 and Hemming 2025 (both read in full by the S8 review); I03481; I03482; I03486, I03487; closes doubt 5 of S8",anchor gone
+P21,L2,qmd,fatta,I03505 minimal version; MD/KC average in S26 (X03); I03497; LIT-008; LIT-004 minimal version; X02 table S37,anchor gone
+P22,L2,qmd,fatta,"I00017: usually -> may; I00018: [4] not read, removed here (orphan reference removed at renumbering); I00031; LIT-001: only Thompson 2021 (read in full); Ford-Westgate 2020 not cited (abstract only); LIT-002; LIT-002",anchor gone
+P23,L5,qmd,fatta,D-72 point 2; supersedes the D-58 sentence,anchor gone
+P24,L2,qmd,fatta,,"anchor present (1/1); new text ""f:t4|gee_ind_fg|hi_all"" present=True"
+P25,L2,qmd,fatta,,"anchor present (1/1); new text ""with the marginalized model highlighted"" present=True"
+P27,L2,qmd,fatta,,"anchor present (1/1); new text ""latent variable with an intercept only"" present=True"
+P30,L2,qmd,fatta,,"anchor present (1/1); new text ""Replicates were run in parallel"" present=True"
+P31,L1,qmd,fatta,,anchor gone
+P33,L3,qmd,fatta,,"anchor present (1/1); new text ""n_fits_total_m"" present=True"
+P34,L3,qmd,fatta,,anchor gone
+P40,L2,qmd,fatta,"abstract = abstract_proposal_qmd.txt (D-72), tag claim on the quadrature sentence; LIT-003: estimand also in the conclusions","anchor present (1/1); new text ""reg:agq as=descr"" present=True"
+P40b,L2,qmd,fatta,analogue in 4.1 of the D-72 wording; D-72 point 3,anchor gone
+P42,L1,qmd,fatta,text as D-61,"anchor present (1/1); new text ""reg:hb as=descr"" present=True"
+P43,L1,qmd,fatta,,anchor gone
+P44,L2,qmd,non applicata,"DEC-T3 adds the missing scenarios under Table S1, so ""the full parameter table"" is now true","anchor present (1/1); kept: the sentence is now true (note under Table S1 covers M1c, M6-M7 and Copula-AR1)"
+P45,L1,qmd,fatta,"[18] authors: Bie R, Haneuse S, Huey N, et al. (wrong fifth author removed by the three-author rule)",anchor gone
+P46,L1,qmd,fatta,[6] randomised,anchor gone
+P47,L1,qmd,fatta,"[7] randomised, et al.","anchor present (1/1); new text ""Barker D, D'Este C, Campbell MJ, et al."" present=True"
+P48,L1,qmd,fatta,"three authors then et al. on refs 7,15,17,18,19,21,26,29,30 (D-78)","anchor present (1/1); new text ""et al."" present=True"
+P49,L2,qmd,fatta,commit to update at submission,"anchor present (1/1); new text ""8538cad"" present=True"
+S01,L2,supp,fatta,S01 + LIT-012; the sessionInfo file is written by the S8b pipeline,anchor gone
+S02,L2,supp,fatta,"caption corrected; columns Not returned, No SE, Separated added as in Table S15",anchor gone
+S03,L2,supp,fatta,"S03: decided ""often"" (the count over 4.75 million rows is not needed for the sentence)",anchor gone
+S04,L2,supp,fatta,"value printed to one decimal (99.9), because the two-figure rounding of D-39 gives 100, read as always",anchor gone
+S05,L2,supp,fatta,"trial values to one decimal (99.9, 99.6) for the same reason; + D-70 robust SE in the supplement",anchor gone
+S06,L1,qmd,non applicata,as planned: no change (D-39 rounding),"anchor present (1/1); kept by design (non applicata, D-39 rounding)"
+F01,L3,script:py/s7f/s7f_figures.py,fatta,"py/s7f/s7f_figures.py: title of panel a removed, axis label c, comment of panel d",no text anchor
+F02,L3,script:proposta fig_typeI_m67.py,fatta,"Figure S1 (type I error at every design point of M6-M7, five strategies), py/s8b/s8b_figS1.py, placed in Section S13 after the sentence that cites it",no text anchor
+D01,L3,docs:docs/,corretta in parte,"D-80: 62 V-nn and 28 requirement documents generated, codes linked where the context is univocal (verification log 105 to 12 occurrences, Morris 235 to 218); residual warnings explained",no text anchor
+X01,L2,external,fatta,"Bradley 1978 read in full (Zotero, PI PDF 2026-11-01): liberal criterion |p - alpha| <= alpha/2 (0.5 to 1.5 alpha), as stated in Section 2.5",no text anchor
+X02,L2,supp: S11,fatta,"Table S37 (Section S18) and paragraph in Section S11, from tables/V5_S8b_rule_stability.csv",no text anchor
+X03,L2,supp: S26,fatta,"two rows of Table S26 (average of the Mancl-DeRouen and Kauermann-Carroll variances, N - p and N - 2 recomputed from stored results) and one sentence in Section S6 [13]",no text anchor
+P29,L3,qmd,fatta,,"anchor present (1/1); new text ""0.044"" present=True"
+P16a,L3,qmd,fatta,,anchor gone
+P16b,L1,qmd,fatta,,"anchor present (1/1); new text ""reg:cc_hi_study as=descr"" present=True"
+R01,L3,script:py/s7g_build_spec.py + R/s7f/s7f_extras.R,fatta,"new ids from R/s8b/s8b_keys.R (tables/V5_S8b_keys.csv) and the spec families f:s8, f:pd, f:rux; no number typed by hand",no text anchor
+P41,L5,qmd,fatta,"shortening (D-71), see DEC-2; support of abstract, 4.1 and conclusions checked (support_S8b.csv)",no text anchor
+B01,L3,qmd: References,fatta,"new refs Thompson 2021, Pepe-Anderson 1994, Schildcrout-Heagerty 2005; Heagerty-Kurland 2001 removed (no longer cited); renumbered by first citation, audit: 33 cited, 0 missing, 0 orphan",no text anchor
+N01,L3,qmd+supp: numerazione,fatta,"Table 5 to Table S10 (all four mentions were in moved sentences); new Tables S36, S37 and Figure S1; numbering checked on the render",no text anchor
+W01,L4,workflow,fatta,"D-79: work on ~/MMM, pipeline R/s8b/s8b_pipeline.sh, logs reports/morris/S8b_logs",no text anchor
+S07,L2,supp,fatta,D-72 point 2 in S7,no text anchor

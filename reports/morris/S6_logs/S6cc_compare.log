@@ -1,0 +1,28 @@
+       id
+   <char>
+1:     P9
+2:    P10
+3:    P11
+4:    P12
+                                                                          what
+                                                                        <char>
+1:                       type I, MMM with check, mean over 288 H0 cells T 8-10
+2:                    H0 design points clearly above 7.5% (of 864); study: 138
+3: power difference with check - study, mean over 288 H1 cells T 8-10 (points)
+4: type I difference with check - study, mean over 576 H0 cells T 2-6 (points)
+   n_cells        est       mcse    lo    hi       outcome
+     <int>      <num>      <num> <num> <num>        <char>
+1:     288  5.4518146 0.04443290   4.0     6    confermata
+2:     864  0.0000000 0.00000000   0.0     8    confermata
+3:     288  0.3074539 0.04318918  -2.5     1    confermata
+4:     576 -0.9685748 0.02812141  -1.0     1 indeterminata
+                                                                                       check
+                                                                                      <char>
+1:                                               row set identical outside MMM rows of M3-M5
+2: V4_perf_all identical outside M3-M5 and, in M3-M5, for the other methods in their own set
+3:                                                              boot_idx.rds identical (md5)
+     pass
+   <lgcl>
+1:   TRUE
+2:   TRUE
+3:   TRUE

@@ -1,0 +1,29 @@
+key,value,source,how
+cop_rho,0.6,R/v4/rundir/copula/copula_params.R,COPULA_RHO
+flip_B,1999,R/s7c/s7c_tests.R,B_FLIP (random sign vectors besides the identity)
+flip_enum_maxn,12,R/s7c/s7c_tests.R,all 2^N signs up to this N
+flip_coefmax,10,R/s7c/s7c_tests.R,COEF_MAX of the sensitivity filter
+guard_div,1000,R/s7d2/s7d2_ci.R,"CI_DIVERGE (D-57, D-59)"
+guard_u0,1e-06,R/s7d2/s7d2_ci.R,"CI_UZERO (D-57, D-59)"
+upow_small_ceiling,2,tables/V5_S7f_rule_dp.csv,"ceiling of the larger mean upow over T <= 3 and N <= 25, gee_ar1_fg and mmm_cc"
+ci_width_pct,16.674425436044,tables/V4_S7d2_boot_means.csv,100 (PG7 - 1)
+ci_width_pct_N75,6.40435173924401,tables/V4_S7d2_width_groups.csv,"100 (ratio - 1), N 75-145"
+cop_glmm_ser_min,0.642724919322579,tables/V4_S7e_glmm_se_ratio.csv,"min over (scen, T) of the mean ratio over N >= 85, M1-M2"
+cop_glmm_ser_max,0.807180127498632,tables/V4_S7e_glmm_se_ratio.csv,"max over (scen, T) of the mean ratio over N >= 85, M1-M2"
+cop_exfg_T,4,tables/V5_S7f_cp_S7e_dp_rates.csv,"most frequent ntime of the points clearly above, gee_exch_fg t"
+cop_exfg_nT,6,tables/V5_S7f_cp_S7e_dp_rates.csv,number of those points at that ntime
+cop_exfg_Nmin,10,tables/V5_S7f_cp_S7e_dp_rates.csv,min N of those points
+cop_exfg_Nmax,25,tables/V5_S7f_cp_S7e_dp_rates.csv,max N
+null_exc_main,0.0291994451501576,tables/V4_S7b_null_summary.csv,"max max_excess, M1-M5, normal, MMM and GEEs"
+null_exc_m67,0.259682282655516,tables/V4_S7b_null_summary.csv,"max max_excess, M6-M7, normal, MMM and GEEs"
+null_flips,0,tables/V5_S7f_cp_null_flips.csv,"flags (exact intervals) that change after subtraction, all rows"
+ge4_max,8.65055827881513e-13,tables/V4_S7d_GE4.csv,"max of max_md, max_kc, max_fg over working correlations"
+ndp_all5,2376,tables/V5_S7f_table4.csv,n_dp of the rule
+ndp_cop,480,tables/V5_S7f_table4.csv,copula points
+ndp_three,1896,tables/V5_S7f_table4.csv,points of the three study mechanisms
+git_commit,0e32cec,git,HEAD at registry build
+fg_bound,0.75,fewclust:::fewclust_control and fewclust:::gee_vcov (commit in tables/V5_S7f_software.csv),"default bound b of the Fay-Graubard correction, min(b, H_ii)"
+flip_upow_small,4.15265210106066,tables/V5_S7f_rule_dp.csv,"mean usable power of the sign-flip test, T <= 3 and N <= 25"
+lus_bias_mmm_50_mcse,0.0137180271482903,rev2/T3_subsample_rerun.csv,"MCSE of the MMM bias at N = 50, cohort (sd of usable estimates / sqrt n)"
+glmer_hi_native,55,tables/V5_S7f_rule_dp.csv,GLMM Wald t clearly above 7.5% (exact interval) on GLMM-native
+glmer_ndp_native,696,tables/V5_S7f_rule_dp.csv,GLMM-native design points

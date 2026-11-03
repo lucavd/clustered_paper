@@ -1,0 +1,49 @@
+Warning message:
+In fifelse(scen == "M1c", 1L, as.integer(sub("M", "", scen))) :
+  NAs introduced by coercion
+     label         version                             set points mean_pu
+    <char>          <char>                          <char>  <int>   <num>
+ 1:     H0       as in S7d                all 2,376 points   2376   99.98
+ 2:     H0 with D-57 rules                all 2,376 points   2376   96.51
+ 3:     H1       as in S7d                all 2,376 points   2376   99.98
+ 4:     H1 with D-57 rules                all 2,376 points   2376   96.85
+ 5:     H0       as in S7d             copula (480 points)    480   99.98
+ 6:     H0 with D-57 rules             copula (480 points)    480   96.07
+ 7:     H1       as in S7d             copula (480 points)    480   99.98
+ 8:     H1 with D-57 rules             copula (480 points)    480   96.47
+ 9:     H0       as in S7d  small designs (T 2-3, N <= 25)    216   99.88
+10:     H0 with D-57 rules  small designs (T 2-3, N <= 25)    216   72.27
+11:     H1       as in S7d  small designs (T 2-3, N <= 25)    216   99.89
+12:     H1 with D-57 rules  small designs (T 2-3, N <= 25)    216   74.01
+13:     H0       as in S7d study mechanisms (1,896 points)   1896   99.98
+14:     H0 with D-57 rules study mechanisms (1,896 points)   1896   96.62
+15:     H1       as in S7d study mechanisms (1,896 points)   1896   99.98
+16:     H1 with D-57 rules study mechanisms (1,896 points)   1896   96.95
+    mean_rate  n_hi  n_lo points_lt20
+        <num> <int> <int>       <int>
+ 1:     5.276     0     4           0
+ 2:     5.445     0     0           0
+ 3:    20.919  1181     4           0
+ 4:    21.087  1186     0           0
+ 5:     5.236     0     0           0
+ 6:     5.421     0     0           0
+ 7:    18.236   227     0           0
+ 8:    18.418   228     0           0
+ 9:     3.888     0     4           0
+10:     5.211     0     0           0
+11:     4.254     0     4           0
+12:     5.543     0     0           0
+13:     5.286     0     4           0
+14:     5.451     0     0           0
+15:    21.598   954     4           0
+16:    21.763   958     0           0
+       N ntime    pu  rate
+   <int> <int> <num> <num>
+1:    10     2  38.0  5.87
+2:    15     2  58.2  5.11
+3:    20     2  72.8  4.90
+4:    25     2  83.1  5.30
+5:    10     3  60.8  5.02
+6:    15     3  79.6  4.80
+7:    20     3  90.2  5.18
+8:    25     3  95.4  5.50

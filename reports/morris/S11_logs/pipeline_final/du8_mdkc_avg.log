@@ -1,0 +1,157 @@
+results_v4/S7d/rows: 37920 chunks read (1.7 min)
+results_v4/S7e/rows: 9600 chunks read (2.3 min)
+recs 4752000 unique 4752000 gee rows 9502840 
+D-82: gee_ar1_avgvar$use switched off on 7903 of 9711 constant-outcome rows
+D-82: gee_ar1_avgse$use switched off on 7903 of 9711 constant-outcome rows
+D-82: gee_ar1_md$use switched off on 8088 of 9711 constant-outcome rows
+D-82: gee_ar1_kc$use switched off on 8190 of 9711 constant-outcome rows
+D-82: gee_ar1_fg$use switched off on 9646 of 9711 constant-outcome rows
+D-82: gee_exch_avgvar$use switched off on 7903 of 9711 constant-outcome rows
+D-82: gee_exch_avgse$use switched off on 7903 of 9711 constant-outcome rows
+D-82: gee_exch_md$use switched off on 8109 of 9711 constant-outcome rows
+D-82: gee_exch_kc$use switched off on 8186 of 9711 constant-outcome rows
+D-82: gee_exch_fg$use switched off on 9642 of 9711 constant-outcome rows
+           strategy  n_dp hi_main hi_m67 hi_copula hi_all lo_all lo_N10 n_N10
+             <char> <int>   <int>  <int>     <int>  <int>  <int>  <int> <int>
+ 1:  gee_ar1_avgvar  2376      24     17        15     56     86      3   156
+ 2:   gee_ar1_avgse  2376      24     17        16     57     86      3   156
+ 3:      gee_ar1_md  2376       7      6         7     20    103      4   156
+ 4:      gee_ar1_kc  2376      62     38        38    138     70      3   156
+ 5:      gee_ar1_fg  2376       2      0         0      2    106      5   156
+ 6: gee_exch_avgvar  2376      47     33        41    121     86      3   156
+ 7:  gee_exch_avgse  2376      48     34        41    123     86      3   156
+ 8:     gee_exch_md  2376      17     18        28     63    101      3   156
+ 9:     gee_exch_kc  2376     102     44        61    207     70      3   156
+10:     gee_exch_fg  2376       3      4         8     15    104      3   156
+       pu  upow pu_small n_small n_main n_m67 n_copula hi_wald_all n_assessed
+    <num> <num>    <num>   <int>  <int> <int>    <int>       <int>      <int>
+ 1: 91.70 20.09    42.40     216   1512   384      480          49       2376
+ 2: 91.70 20.10    42.40     216   1512   384      480          49       2376
+ 3: 91.82 19.62    43.47     216   1512   384      480          16       2376
+ 4: 91.71 20.65    42.54     216   1512   384      480         127       2376
+ 5: 91.90 19.36    43.72     216   1512   384      480           2       2376
+ 6: 91.78 20.50    42.58     216   1512   384      480         108       2376
+ 7: 91.78 20.51    42.58     216   1512   384      480         112       2376
+ 8: 91.91 20.00    43.64     216   1512   384      480          56       2376
+ 9: 91.80 21.07    42.72     216   1512   384      480         196       2376
+10: 91.98 19.87    43.90     216   1512   384      480          10       2376
+    mean_rate max_rate   mad n_point_above
+        <num>    <num> <num>         <int>
+ 1:     4.982    20.75 1.295           188
+ 2:     4.990    20.75 1.299           190
+ 3:     4.644    18.97 1.192           103
+ 4:     5.393    22.45 1.510           285
+ 5:     4.379    19.67 1.076            20
+ 6:     5.277    20.75 1.478           265
+ 7:     5.285    20.75 1.483           267
+ 8:     4.923    18.97 1.333           188
+ 9:     5.702    22.45 1.741           353
+10:     4.714    19.67 1.121            73
+Key: <strategy>
+      strategy      maxdiff   pass
+        <char>        <num> <lgcl>
+1:  gee_ar1_fg 4.263256e-14   TRUE
+2:  gee_ar1_kc 4.973799e-14   TRUE
+3:  gee_ar1_md 2.842171e-14   TRUE
+4: gee_exch_fg 4.973799e-14   TRUE
+5: gee_exch_kc 2.842171e-14   TRUE
+6: gee_exch_md 4.973799e-14   TRUE
+      strategy n_points hi_diff lo_diff   pu_maxdiff upow_maxdiff
+        <char>    <int>   <int>   <int>        <num>        <num>
+1:  gee_ar1_fg     2376       0       0 5.684342e-14 1.421085e-14
+2:  gee_ar1_kc     2376       0       0 5.684342e-14 4.796163e-14
+3:  gee_ar1_md     2376       0       0 5.684342e-14 3.552714e-14
+4: gee_exch_fg     2376       0       0 5.684342e-14 1.776357e-14
+5: gee_exch_kc     2376       0       0 7.105427e-14 4.973799e-14
+6: gee_exch_md     2376       0       0 7.105427e-14 4.440892e-14
+           strategy         dgp     N
+             <char>      <char> <int>
+ 1:   gee_ar1_avgse  GenBinaryY    26
+ 2:   gee_ar1_avgse  Copula-AR1    16
+ 3:   gee_ar1_avgse GLMM-native     9
+ 4:   gee_ar1_avgse    GLMM-AR1     6
+ 5:  gee_ar1_avgvar  GenBinaryY    26
+ 6:  gee_ar1_avgvar  Copula-AR1    15
+ 7:  gee_ar1_avgvar GLMM-native     9
+ 8:  gee_ar1_avgvar    GLMM-AR1     6
+ 9:  gee_exch_avgse  GenBinaryY    55
+10:  gee_exch_avgse  Copula-AR1    41
+11:  gee_exch_avgse GLMM-native    17
+12:  gee_exch_avgse    GLMM-AR1    10
+13: gee_exch_avgvar  GenBinaryY    54
+14: gee_exch_avgvar  Copula-AR1    41
+15: gee_exch_avgvar GLMM-native    16
+16: gee_exch_avgvar    GLMM-AR1    10
+          strategy         dgp   scen     N ntime     n    kk     rate
+            <char>      <char> <char> <int> <int> <int> <int>    <num>
+ 1: gee_ar1_avgvar  GenBinaryY     M7    10     6   640    87 13.59375
+ 2: gee_ar1_avgvar  Copula-AR1     M1    10     6   690    93 13.47826
+ 3: gee_ar1_avgvar  GenBinaryY     M7    10     4   415    59 14.21687
+ 4: gee_ar1_avgvar  GenBinaryY     M6    10     6   693    93 13.41991
+ 5: gee_ar1_avgvar GLMM-native     M2    10     2    53    11 20.75472
+ 6: gee_ar1_avgvar  Copula-AR1     M1    10     4   429    59 13.75291
+ 7: gee_ar1_avgvar  GenBinaryY     M7    15     6   852   104 12.20657
+ 8: gee_ar1_avgvar  Copula-AR1     M3    10     6   689    85 12.33672
+ 9: gee_ar1_avgvar  GenBinaryY     M7    10    10   794    94 11.83879
+10: gee_ar1_avgvar  Copula-AR1     M1    10     3   266    36 13.53383
+11: gee_ar1_avgvar  GenBinaryY     M3    15     4   670    78 11.64179
+12: gee_ar1_avgvar GLMM-native     M6    10     6   806    92 11.41439
+13: gee_ar1_avgvar  Copula-AR1     M1    15     4   643    75 11.66407
+14: gee_ar1_avgvar  GenBinaryY     M1    15     4   697    79 11.33429
+15: gee_ar1_avgvar  GenBinaryY     M1    10     4   454    54 11.89427
+16: gee_ar1_avgvar    GLMM-AR1     M2    10     2    48     9 18.75000
+17: gee_ar1_avgvar  GenBinaryY     M3    10     4   490    57 11.63265
+18: gee_ar1_avgvar  Copula-AR1     M4    10     4   521    60 11.51631
+19: gee_ar1_avgvar  GenBinaryY     M7    15     8   924    99 10.71429
+20: gee_ar1_avgvar  Copula-AR1     M1    20     4   803    87 10.83437
+          strategy         dgp   scen     N ntime     n    kk     rate
+            <char>      <char> <char> <int> <int> <int> <int>    <num>
+         cp_l     cp_u
+        <num>    <num>
+ 1: 11.033319 16.49532
+ 2: 11.018359 16.25525
+ 3: 11.001879 17.95237
+ 4: 10.970030 16.18602
+ 5: 10.842282 34.10714
+ 6: 10.636895 17.37899
+ 7: 10.083476 14.59494
+ 8:  9.974164 15.02720
+ 9:  9.673705 14.29173
+10:  9.662191 18.24118
+11:  9.311946 14.31556
+12:  9.301416 13.81419
+13:  9.285913 14.40063
+14:  9.076816 13.92494
+15:  9.062900 15.23317
+16:  8.949838 32.62930
+17:  8.930552 14.80774
+18:  8.904132 14.57426
+19:  8.793644 12.88936
+20:  8.769287 13.19192
+         cp_l     cp_u
+        <num>    <num>
+           strategy        dgp   scen     N ntime     n    kk     rate     cp_l
+             <char>     <char> <char> <int> <int> <int> <int>    <num>    <num>
+ 1: gee_exch_avgvar GenBinaryY     M7    15     6   863   139 16.10660 13.71523
+ 2: gee_exch_avgvar GenBinaryY     M6    10     6   705   113 16.02837 13.39610
+ 3: gee_exch_avgvar GenBinaryY     M7    10    10   808   125 15.47030 13.04460
+ 4: gee_exch_avgvar GenBinaryY     M7    10     6   649   101 15.56240 12.85826
+ 5: gee_exch_avgvar Copula-AR1     M1    10     6   701   107 15.26391 12.68101
+ 6: gee_exch_avgvar GenBinaryY     M7    10     8   750   110 14.66667 12.21106
+ 7: gee_exch_avgvar Copula-AR1     M1    10     4   430    66 15.34884 12.07398
+ 8: gee_exch_avgvar GenBinaryY     M7    10     4   421    64 15.20190 11.90834
+ 9: gee_exch_avgvar GenBinaryY     M7    20     6   934   130 13.91863 11.76175
+10: gee_exch_avgvar Copula-AR1     M4    15     4   746   105 14.07507 11.65849
+        cp_u
+       <num>
+ 1: 18.73196
+ 2: 18.94853
+ 3: 18.15094
+ 4: 18.58407
+ 5: 18.14307
+ 6: 17.40382
+ 7: 19.10921
+ 8: 18.99372
+ 9: 16.30582
+10: 16.77962
+done 3.0 min

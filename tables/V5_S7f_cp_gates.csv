@@ -1,0 +1,26 @@
+gate,ok,detail
+S7d dp_rates: k integer,TRUE,""
+S7d dp_rates: Wald reproduces stored hi,TRUE,119448 rows
+S7d dp_rates: Wald reproduces stored lo,TRUE,""
+S7e dp_rates: k integer,TRUE,""
+S7e dp_rates: Wald reproduces stored hi,TRUE,21120 rows
+S7e dp_rates: Wald reproduces stored lo,TRUE,""
+S7b rule_dp: k integer,TRUE,""
+S7b rule_dp: Wald reproduces stored hi,TRUE,41712 rows
+S7b rule_dp: Wald reproduces stored lo,TRUE,""
+S7d2 flip_rules_dp: k integer,TRUE,""
+S7d2 flip_rules_dp: Wald reproduces stored hi,TRUE,9504 rows
+S7d2 flip_rules_dp: Wald reproduces stored lo,TRUE,""
+S28: every row matched,TRUE,""
+S28 flip: 480 points per arm,TRUE,""
+S6b ns rule_safety_dp: k integer,TRUE,""
+S6b ns rule_safety_dp: Wald reproduces stored hi,TRUE,6528 rows
+S6b ns rule_safety_dp: Wald reproduces stored lo,TRUE,""
+S6b ns: non-flag columns identical,TRUE,""
+kcfc rule_safety_dp: k integer,TRUE,""
+kcfc rule_safety_dp: Wald reproduces stored hi,TRUE,22680 rows
+kcfc rule_safety_dp: Wald reproduces stored lo,TRUE,""
+kcfc rule_safety: non-flag columns identical,TRUE,""
+S6cc c: Wald reproduces hi,TRUE,""
+S6cc s: Wald reproduces hi,TRUE,""
+S7d rule: rows matched,TRUE,""

@@ -1,0 +1,147 @@
+what,why,N
+cr2_exch,the leading minor of order 1 is not positive,65550
+cr2_exch,the leading minor of order 4 is not positive,7813
+cr2_exch,the leading minor of order 5 is not positive,1955
+cr2_exch,the leading minor of order 3 is not positive,1349
+cr2_exch,the leading minor of order 2 is not positive,672
+cr2_exch,infinite or missing values in 'x',164
+cr2_exch,the leading minor of order 7 is not positive,30
+cr2_exch,the leading minor of order 9 is not positive,13
+cr2_exch,the leading minor of order 6 is not positive,5
+cr2_ind,the leading minor of order 4 is not positive,7828
+cr2_ind,the leading minor of order 5 is not positive,2540
+cr2_ind,the leading minor of order 3 is not positive,1053
+fg_ar1,model-based information matrix is singular (aliased or degen,215421
+fg_ar1,the working covariance is singular for cluster '1': the esti,19077
+fg_ar1,the working covariance is singular for cluster '2': the esti,5652
+fg_ar1,the working covariance is singular for cluster '3': the esti,2012
+fg_ar1,the working covariance is singular for cluster '4': the esti,1164
+fg_ar1,the working covariance is singular for cluster '5': the esti,648
+fg_ar1,the working covariance is singular for cluster '6': the esti,491
+fg_ar1,the working covariance is singular for cluster '7': the esti,353
+fg_ar1,the working covariance is singular for cluster '8': the esti,192
+fg_ar1,the working covariance is singular for cluster '9': the esti,145
+fg_ar1,"the ""fg"" estimator produced a non-finite or non-positive var",112
+fg_ar1,the working covariance is singular for cluster '10': the est,81
+fg_ar1,the working covariance is singular for cluster '11': the est,40
+fg_ar1,the working covariance is singular for cluster '12': the est,37
+fg_ar1,the working covariance is singular for cluster '13': the est,22
+fg_ar1,the working covariance is singular for cluster '15': the est,20
+fg_ar1,the working covariance is singular for cluster '14': the est,18
+fg_ar1,the working covariance is singular for cluster '16': the est,9
+fg_ar1,the working covariance is singular for cluster '20': the est,2
+fg_ar1,the working covariance is singular for cluster '22': the est,2
+fg_ar1,the working covariance is singular for cluster '18': the est,2
+fg_ar1,the working covariance is singular for cluster '21': the est,1
+fg_ar1,the working covariance is singular for cluster '17': the est,1
+fg_ar1,the working covariance is singular for cluster '34': the est,1
+fg_exch,model-based information matrix is singular (aliased or degen,232687
+fg_exch,the working covariance is singular for cluster '1': the esti,358
+fg_exch,the working covariance is singular for cluster '2': the esti,212
+fg_exch,the working covariance is singular for cluster '3': the esti,177
+fg_exch,the working covariance is singular for cluster '4': the esti,152
+fg_exch,"the ""fg"" estimator produced a non-finite or non-positive var",140
+fg_exch,the working covariance is singular for cluster '5': the esti,88
+fg_exch,the working covariance is singular for cluster '6': the esti,67
+fg_exch,the working covariance is singular for cluster '7': the esti,50
+fg_exch,the working covariance is singular for cluster '8': the esti,34
+fg_exch,the working covariance is singular for cluster '9': the esti,16
+fg_exch,the working covariance is singular for cluster '10': the est,10
+fg_exch,the working covariance is singular for cluster '13': the est,5
+fg_exch,the working covariance is singular for cluster '15': the est,1
+fg_exch,the working covariance is singular for cluster '16': the est,1
+fg_ind,model-based information matrix is singular (aliased or degen,235214
+fg_ind,"the ""fg"" estimator produced a non-finite or non-positive var",129
+flip,information singular,593
+flip,reduced fit not converged,53
+flip,zero score variance,14
+kc_ar1,model-based information matrix is singular (aliased or degen,215421
+kc_ar1,the working covariance is singular for cluster '1': the esti,19077
+kc_ar1,Kauermann-Carroll correction undefined: the working covarian,7334
+kc_ar1,"the ""kc"" estimator produced a non-finite or non-positive var",6254
+kc_ar1,the working covariance is singular for cluster '2': the esti,5652
+kc_ar1,Kauermann-Carroll correction undefined: leverage at or above,4202
+kc_ar1,the working covariance is singular for cluster '3': the esti,2012
+kc_ar1,the working covariance is singular for cluster '4': the esti,1164
+kc_ar1,the working covariance is singular for cluster '5': the esti,648
+kc_ar1,the working covariance is singular for cluster '6': the esti,491
+kc_ar1,the working covariance is singular for cluster '7': the esti,353
+kc_ar1,the working covariance is singular for cluster '8': the esti,192
+kc_ar1,the working covariance is singular for cluster '9': the esti,145
+kc_ar1,the working covariance is singular for cluster '10': the est,81
+kc_ar1,the working covariance is singular for cluster '11': the est,40
+kc_ar1,the working covariance is singular for cluster '12': the est,37
+kc_ar1,the working covariance is singular for cluster '13': the est,22
+kc_ar1,the working covariance is singular for cluster '15': the est,20
+kc_ar1,the working covariance is singular for cluster '14': the est,18
+kc_ar1,the working covariance is singular for cluster '16': the est,9
+kc_ar1,the working covariance is singular for cluster '20': the est,2
+kc_ar1,the working covariance is singular for cluster '22': the est,2
+kc_ar1,the working covariance is singular for cluster '18': the est,2
+kc_ar1,the working covariance is singular for cluster '21': the est,1
+kc_ar1,the working covariance is singular for cluster '17': the est,1
+kc_ar1,the working covariance is singular for cluster '34': the est,1
+kc_exch,model-based information matrix is singular (aliased or degen,232687
+kc_exch,Kauermann-Carroll correction undefined: the working covarian,14004
+kc_exch,"the ""kc"" estimator produced a non-finite or non-positive var",5969
+kc_exch,Kauermann-Carroll correction undefined: leverage at or above,4448
+kc_exch,the working covariance is singular for cluster '1': the esti,358
+kc_exch,the working covariance is singular for cluster '2': the esti,212
+kc_exch,the working covariance is singular for cluster '3': the esti,177
+kc_exch,the working covariance is singular for cluster '4': the esti,152
+kc_exch,the working covariance is singular for cluster '5': the esti,88
+kc_exch,the working covariance is singular for cluster '6': the esti,67
+kc_exch,the working covariance is singular for cluster '7': the esti,50
+kc_exch,the working covariance is singular for cluster '8': the esti,34
+kc_exch,the working covariance is singular for cluster '9': the esti,16
+kc_exch,the working covariance is singular for cluster '10': the est,10
+kc_exch,the working covariance is singular for cluster '13': the est,5
+kc_exch,the working covariance is singular for cluster '15': the est,1
+kc_exch,the working covariance is singular for cluster '16': the est,1
+kc_ind,model-based information matrix is singular (aliased or degen,235214
+kc_ind,Kauermann-Carroll correction undefined: leverage at or above,4268
+kc_ind,"the ""kc"" estimator produced a non-finite or non-positive var",3692
+md_ar1,model-based information matrix is singular (aliased or degen,215421
+md_ar1,the working covariance is singular for cluster '1': the esti,19077
+md_ar1,Mancl-DeRouen correction undefined: leverage at or above 1 i,16132
+md_ar1,the working covariance is singular for cluster '2': the esti,5652
+md_ar1,"the ""md"" estimator produced a non-finite or non-positive var",4431
+md_ar1,the working covariance is singular for cluster '3': the esti,2012
+md_ar1,the working covariance is singular for cluster '4': the esti,1164
+md_ar1,the working covariance is singular for cluster '5': the esti,648
+md_ar1,the working covariance is singular for cluster '6': the esti,491
+md_ar1,the working covariance is singular for cluster '7': the esti,353
+md_ar1,the working covariance is singular for cluster '8': the esti,192
+md_ar1,the working covariance is singular for cluster '9': the esti,145
+md_ar1,the working covariance is singular for cluster '10': the est,81
+md_ar1,the working covariance is singular for cluster '11': the est,40
+md_ar1,the working covariance is singular for cluster '12': the est,37
+md_ar1,the working covariance is singular for cluster '13': the est,22
+md_ar1,the working covariance is singular for cluster '15': the est,20
+md_ar1,the working covariance is singular for cluster '14': the est,18
+md_ar1,the working covariance is singular for cluster '16': the est,9
+md_ar1,the working covariance is singular for cluster '20': the est,2
+md_ar1,the working covariance is singular for cluster '22': the est,2
+md_ar1,the working covariance is singular for cluster '18': the est,2
+md_ar1,the working covariance is singular for cluster '21': the est,1
+md_ar1,the working covariance is singular for cluster '17': the est,1
+md_ar1,the working covariance is singular for cluster '34': the est,1
+md_exch,model-based information matrix is singular (aliased or degen,232687
+md_exch,Mancl-DeRouen correction undefined: leverage at or above 1 i,14630
+md_exch,"the ""md"" estimator produced a non-finite or non-positive var",5075
+md_exch,the working covariance is singular for cluster '1': the esti,358
+md_exch,the working covariance is singular for cluster '2': the esti,212
+md_exch,the working covariance is singular for cluster '3': the esti,177
+md_exch,the working covariance is singular for cluster '4': the esti,152
+md_exch,the working covariance is singular for cluster '5': the esti,88
+md_exch,the working covariance is singular for cluster '6': the esti,67
+md_exch,the working covariance is singular for cluster '7': the esti,50
+md_exch,the working covariance is singular for cluster '8': the esti,34
+md_exch,the working covariance is singular for cluster '9': the esti,16
+md_exch,the working covariance is singular for cluster '10': the est,10
+md_exch,the working covariance is singular for cluster '13': the est,5
+md_exch,the working covariance is singular for cluster '15': the est,1
+md_exch,the working covariance is singular for cluster '16': the est,1
+md_ind,model-based information matrix is singular (aliased or degen,235214
+md_ind,Mancl-DeRouen correction undefined: leverage at or above 1 i,4122
+md_ind,"the ""md"" estimator produced a non-finite or non-positive var",3594

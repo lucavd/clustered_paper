@@ -1,0 +1,15 @@
+gate,check,pass,detail
+GD2,datasets,TRUE,"4752000 rows, 4752000 unique keys"
+GD2,"S7d: generated, design_degenerate, n_obs, sum_y equal to the recs",TRUE,"3792000 datasets; mismatches generated 0, degenerate 0, n_obs 0, sum_y 0"
+GD2,"S7e: generated, design_degenerate, n_obs, sum_y equal to the recs",TRUE,"960000 datasets; mismatches generated 0, degenerate 0, n_obs 0, sum_y 0"
+GD2,"constant-outcome datasets equal the 9,711 keys of results_v4/S9/const_keys.rds",TRUE,"rebuilt 9711, keys 9711, only rebuilt 0, only keys 0; constant among degenerate designs 136"
+GD2,non-degenerate datasets all generated,TRUE,0 not generated with an estimable design
+GD2,occasion coding 0..T-1 in every generated dataset,TRUE,0 datasets outside
+GD3 (population part),eligible datasets,,4739647
+GD3 (population part),LP solution status not 0 (NA),,0
+GD3 (population part),LP separated,,357701
+GD3 (population part),detectseparation run,,357701
+GD3 (population part),"LP separated, detectseparation not separated",,0
+GD3 (population part),detectseparation errors,,0
+GD3 (population part),Si (time:trt infinite),,357545
+GD3 (population part),LP separated but time:trt finite,,156

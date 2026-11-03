@@ -1,0 +1,17 @@
+('manuscript/v5/MMM_v5_supplement_trace.md', 'b-label') 34
+('manuscript/v5/MMM_v5_supplement_trace.md', 'c-grid-N') 75
+('manuscript/v5/MMM_v5_supplement_trace.md', 'c-grid-T') 61
+('manuscript/v5/MMM_v5_supplement_trace.md', 'd-nominal') 80
+('manuscript/v5/MMM_v5_supplement_trace.md', 'e-math') 6
+('manuscript/v5/MMM_v5_supplement_trace.md', 'identifier') 284
+('manuscript/v5/MMM_v5_trace.md', 'VIOLATION') 2
+('manuscript/v5/MMM_v5_trace.md', 'b-label') 83
+('manuscript/v5/MMM_v5_trace.md', 'c-grid-N') 49
+('manuscript/v5/MMM_v5_trace.md', 'c-grid-T') 36
+('manuscript/v5/MMM_v5_trace.md', 'd-nominal') 86
+('manuscript/v5/MMM_v5_trace.md', 'e-math') 2
+('manuscript/v5/MMM_v5_trace.md', 'identifier') 208
+GF2: 2 violations
+   ('manuscript/v5/MMM_v5_trace.md', 'VIOLATION', '0', ' in which the outcome was constant, all 0 or all 1, gave no usable resu')
+   ('manuscript/v5/MMM_v5_trace.md', 'VIOLATION', '1', ' the outcome was constant, all 0 or all 1, gave no usable result for an')
+GF2 exit 1

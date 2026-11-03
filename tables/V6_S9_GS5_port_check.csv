@@ -1,0 +1,15 @@
+document,units_render,identical,units_v6,side,unit,reason
+main,1042,1037,1039,render only,Choosing an analysis for clustered binary outcomes when clusters are,title line (not a paragraph in the docx)
+main,1042,1037,1039,render only,few and series are short: a simulation study and two clinical applications,title line (not a paragraph in the docx)
+main,1042,1037,1039,render only,"⟨(1+k^2sigma^2)^-1/2,k=frac16sqrt315pi,⟩",equation markup (pandoc rendering of the formula; widehat vs hat in the supplement)
+main,1042,1037,1039,render only,"<img src=""figures/fig1.png"" style=""width:100.0%"" />",figure path
+main,1042,1037,1039,render only,"<img src=""figures/fig2.png"" style=""width:100.0%"" />",figure path
+main,1042,1037,1039,v6 only,"<img src=""media/rId41.png"" style=""width:5.83333in;height:8.01046in"" />",figure path
+main,1042,1037,1039,v6 only,"<img src=""media/rId44.png"" style=""width:5.83333in;height:6.9619in"" />",figure path
+supplement,3452,3447,3449,render only,Supplementary material for:,title line (not a paragraph in the docx)
+supplement,3452,3447,3449,render only,Choosing an analysis for clustered binary,title line (not a paragraph in the docx)
+supplement,3452,3447,3449,render only,outcomes when clusters are few and series are short: a simulation study and two clinical applications,title line (not a paragraph in the docx)
+supplement,3452,3447,3449,render only,"Part of the size-adjusted power of the Wald test of the mixed model came from fits with a collapsed standard error (⟨|hatbeta/SE|>37⟩, a p-value numerically zero), which the usability limits keep: averaged over the 1,254 cells of the main grid with a size-adjusted value, they made up 2.3 of its 24 p",equation markup (pandoc rendering of the formula; widehat vs hat in the supplement)
+supplement,3452,3447,3449,render only,"<img src=""figures/figS1.png"" style=""width:100.0%"" />",figure path
+supplement,3452,3447,3449,v6 only,"Part of the size-adjusted power of the Wald test of the mixed model came from fits with a collapsed standard error (⟨|widehatbeta/SE|>37⟩, a p-value numerically zero), which the usability limits keep: averaged over the 1,254 cells of the main grid with a size-adjusted value, they made up 2.3 of its ",equation markup (pandoc rendering of the formula; widehat vs hat in the supplement)
+supplement,3452,3447,3449,v6 only,"<img src=""media/rId22.png"" style=""width:5.83333in;height:6.88607in"" />",figure path

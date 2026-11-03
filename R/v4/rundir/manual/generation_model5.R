@@ -1,0 +1,57 @@
+generate_data_model5 <- function(
+    N,
+    ntime,
+    sim_id,
+    methods = c("mmlb", "manual")
+) {
+  methods <- match.arg(methods)
+  # H0 differs from H1 in the tested parameter only (see generation_model1.R).
+  beta_c <- switch(
+    methods,
+    # (Intercept), time, trt, dose, time:trt -- conditional; interaction LAST.
+    # marginal ≈ (-2, 0.1, 0.2, 0.05, 0.2)
+    mmlb   = c(-2.32, 0.116, 0.232, 0.058, 0.232),
+    manual = c(-2.32, 0.116, 0.232, 0.058, 0)
+  )
+
+  # 70% dei pazienti con ntime, 30% con un valore inferiore
+  nclust <- ifelse(
+    runif(N) < 0.7,
+    ntime,
+    sample(seq_len(ntime - 1), N, replace = TRUE)
+  )
+  id <- rep(seq(N), nclust)
+  trt <- rep(rbinom(N, 1, 0.5), nclust)
+  time <- unlist(lapply(nclust, function(x) seq(x) - 1))
+  age_raw <- rep(rnorm(N, mean = 50, sd = 10), nclust)
+  age <- scale(age_raw)
+  sex = rep(rbinom(N, size = 1, prob = 0.5), nclust) # Binary sex variable
+  steroids = rep(sample(1:3, N, replace = TRUE), nclust) # Steroid treatment levels
+  # dose varies WITHIN subject; age and sex do not (see the note below).
+  dose <- as.numeric(scale(rnorm(length(id))))
+  data <- data.frame(id, time, trt, age, sex, steroids, dose) |> arrange(id, time)
+
+  # Random intercept + random slope on TIME, which varies within subject.
+  # An earlier version used `age`, drawn once per subject and repeated across
+  # occasions: its random-effects design matrix had two proportional columns,
+  # so the random slope WAS the random intercept rescaled -- not identified for
+  # any number of occasions. Same reason `sex` was dropped from scenario 5.
+  D <- matrix(c(
+    1.0,   0.01,  0.01,
+    0.01,  0.001, 0.0,
+    0.01,  0.0,   0.001
+  ), nrow = 3, byrow = TRUE)
+
+  gen_glmm_data(
+    mean.formula = ~ time*trt + dose,
+    re.formula = ~1 + time + dose,
+    beta_c = beta_c,
+    D = D,
+    id = id,
+    data = data,
+    Yname = "binY"
+  ) |>
+    dplyr::mutate(
+      sim_id = sim_id
+    )
+}

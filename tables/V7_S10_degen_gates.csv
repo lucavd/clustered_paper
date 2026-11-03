@@ -1,0 +1,34 @@
+gate,check,pass,detail
+GD2,datasets,TRUE,"4752000 rows, 4752000 unique keys"
+GD2,"S7d: generated, design_degenerate, n_obs, sum_y equal to the recs",TRUE,"3792000 datasets; mismatches generated 0, degenerate 0, n_obs 0, sum_y 0"
+GD2,"S7e: generated, design_degenerate, n_obs, sum_y equal to the recs",TRUE,"960000 datasets; mismatches generated 0, degenerate 0, n_obs 0, sum_y 0"
+GD2,"constant-outcome datasets equal the 9,711 keys of results_v4/S9/const_keys.rds",TRUE,"rebuilt 9711, keys 9711, only rebuilt 0, only keys 0; constant among degenerate designs 136"
+GD2,non-degenerate datasets all generated,TRUE,0 not generated with an estimable design
+GD2,occasion coding 0..T-1 in every generated dataset,TRUE,0 datasets outside
+GD3 (population part),eligible datasets,,4739647
+GD3 (population part),LP solution status not 0 (NA),,0
+GD3 (population part),LP separated,,357701
+GD3 (population part),detectseparation run,,357701
+GD3 (population part),"LP separated, detectseparation not separated",,0
+GD3 (population part),detectseparation errors,,0
+GD3 (population part),Si (time:trt infinite),,357545
+GD3 (population part),LP separated but time:trt finite,,156
+GD3,datasets in the sample,TRUE,9504
+GD3,design points covered,,2376
+GD3,design points with fewer than 2 datasets,TRUE,0
+GD3,eligible after regeneration,,9504
+GD3,LP status not 0,,0
+GD3,detectseparation errors,,0
+GD3,LP separated,,729
+GD3,detectseparation separated,,729
+GD3,LP and detectseparation agree,TRUE,9504
+GD3,time:trt infinite (detectseparation),,728
+GD3,"glm: warning fitted 0/1 or not converged, among LP separated",,218
+GD3,"glm: warning fitted 0/1 or not converged, among LP not separated",,0
+GD3,"glm: |b time:trt| > 10, among LP separated",,503
+GD3,"glm: |b time:trt| > 10, among LP not separated",,0
+baseline (step 2),"baseline Table 5: 19 strategies, every numeric column within 1e-9, flags identical",TRUE,"rows 19, max |diff| 5.68e-14"
+baseline (step 2),"baseline Table 5 per point: 45,144 rows, pu/upow within 1e-9, hi/lo identical",TRUE,"rows 45144, max |pu| 7.11e-14, max |upow| 1.01e-13, hi diff 0, lo diff 0"
+baseline (step 2),baseline rule: same chosen strategy,TRUE,mmm_cc
+baseline (step 2),"baseline Table 3: 72 values (rate, wc, mad x 3 mechanisms x 8 methods) within 1e-9",TRUE,"rows 72, max |diff| 4.26e-14"
+baseline (step 2),"baseline Table 4 (puT, all methods and T): values within 1e-9",TRUE,"rows 96, max |diff| 9.95e-14"

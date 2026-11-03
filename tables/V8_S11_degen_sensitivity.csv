@@ -1,0 +1,1509 @@
+version,table,row,column,base,new,diff,printed_base,printed_new,in_paper,version_label,printed_changes
+a,Table 5,flip,hi_main,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ar1_fg,hi_main,2,0,-2,2,0,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ar1_kc,hi_main,62,54,-8,62,54,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ar1_md,hi_main,7,3,-4,7,3,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ar1_unc,hi_main,214,158,-56,214,158,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_cr2,hi_main,133,88,-45,133,88,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_fg,hi_main,3,0,-3,3,0,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_kc,hi_main,102,95,-7,102,95,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_md,hi_main,17,14,-3,17,14,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_unc,hi_main,242,188,-54,242,188,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_cr2,hi_main,131,86,-45,131,86,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_fg,hi_main,3,0,-3,3,0,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_kc,hi_main,95,90,-5,95,90,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_md,hi_main,18,13,-5,18,13,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_unc,hi_main,223,182,-41,223,182,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,glmer,hi_main,206,203,-3,206,203,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,glmer_lrt,hi_main,223,223,0,223,223,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,mmm_cc,hi_main,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,shrink,hi_main,271,256,-15,271,256,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,flip,hi_m67,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ar1_fg,hi_m67,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ar1_kc,hi_m67,38,36,-2,38,36,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ar1_md,hi_m67,6,6,0,6,6,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ar1_unc,hi_m67,64,50,-14,64,50,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_cr2,hi_m67,52,40,-12,52,40,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_fg,hi_m67,4,3,-1,4,3,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_kc,hi_m67,44,42,-2,44,42,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_md,hi_m67,18,18,0,18,18,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_exch_unc,hi_m67,69,62,-7,69,62,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_cr2,hi_m67,52,38,-14,52,38,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_fg,hi_m67,1,1,0,1,1,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ind_kc,hi_m67,39,38,-1,39,38,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_md,hi_m67,18,18,0,18,18,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ind_unc,hi_m67,66,59,-7,66,59,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,glmer,hi_m67,86,83,-3,86,83,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,glmer_lrt,hi_m67,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,mmm_cc,hi_m67,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,shrink,hi_m67,93,91,-2,93,91,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,flip,hi_copula,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ar1_fg,hi_copula,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ar1_kc,hi_copula,38,36,-2,38,36,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ar1_md,hi_copula,7,6,-1,7,6,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ar1_unc,hi_copula,85,72,-13,85,72,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_cr2,hi_copula,69,56,-13,69,56,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_fg,hi_copula,8,5,-3,8,5,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_kc,hi_copula,61,57,-4,61,57,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_md,hi_copula,28,27,-1,28,27,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_unc,hi_copula,100,92,-8,100,92,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_cr2,hi_copula,68,52,-16,68,52,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_fg,hi_copula,1,1,0,1,1,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ind_kc,hi_copula,55,55,0,55,55,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ind_md,hi_copula,22,21,-1,22,21,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_unc,hi_copula,94,88,-6,94,88,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,glmer,hi_copula,223,221,-2,223,221,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,glmer_lrt,hi_copula,189,189,0,189,189,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,mmm_cc,hi_copula,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,shrink,hi_copula,244,235,-9,244,235,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,flip,hi_all,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ar1_fg,hi_all,2,0,-2,2,0,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ar1_kc,hi_all,138,126,-12,138,126,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ar1_md,hi_all,20,15,-5,20,15,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ar1_unc,hi_all,363,280,-83,363,280,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_cr2,hi_all,254,184,-70,254,184,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_fg,hi_all,15,8,-7,15,8,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_kc,hi_all,207,194,-13,207,194,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_md,hi_all,63,59,-4,63,59,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_unc,hi_all,411,342,-69,411,342,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_cr2,hi_all,251,176,-75,251,176,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_fg,hi_all,5,2,-3,5,2,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_kc,hi_all,189,183,-6,189,183,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_md,hi_all,58,52,-6,58,52,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_unc,hi_all,383,329,-54,383,329,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,glmer,hi_all,515,507,-8,515,507,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,glmer_lrt,hi_all,412,412,0,412,412,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,mmm_cc,hi_all,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,shrink,hi_all,608,582,-26,608,582,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,flip,lo_all,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ar1_fg,lo_all,106,105,-1,106,105,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ar1_kc,lo_all,70,81,11,70,81,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ar1_md,lo_all,103,108,5,103,108,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ar1_unc,lo_all,1,45,44,1,45,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_cr2,lo_all,10,76,66,10,76,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_fg,lo_all,104,102,-2,104,102,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_kc,lo_all,70,81,11,70,81,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_md,lo_all,101,105,4,101,105,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_unc,lo_all,1,45,44,1,45,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_cr2,lo_all,10,81,71,10,81,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_fg,lo_all,104,106,2,104,106,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_kc,lo_all,81,80,-1,81,80,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_md,lo_all,109,112,3,109,112,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_unc,lo_all,2,44,42,2,44,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,glmer,lo_all,15,15,0,15,15,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,glmer_lrt,lo_all,13,13,0,13,13,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,mmm_cc,lo_all,42,42,0,42,42,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,shrink,lo_all,6,12,6,6,12,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,flip,lo_N10,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ar1_fg,lo_N10,5,7,2,5,7,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ar1_kc,lo_N10,3,3,0,3,3,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ar1_md,lo_N10,4,5,1,4,5,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ar1_unc,lo_N10,0,3,3,0,3,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_cr2,lo_N10,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_exch_fg,lo_N10,3,4,1,3,4,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_kc,lo_N10,3,3,0,3,3,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_exch_md,lo_N10,3,3,0,3,3,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_exch_unc,lo_N10,0,3,3,0,3,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_cr2,lo_N10,0,3,3,0,3,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_fg,lo_N10,7,11,4,7,11,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_kc,lo_N10,3,3,0,3,3,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ind_md,lo_N10,4,6,2,4,6,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_unc,lo_N10,0,3,3,0,3,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,glmer,lo_N10,12,12,0,12,12,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,glmer_lrt,lo_N10,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,mmm_cc,lo_N10,32,32,0,32,32,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,shrink,lo_N10,5,11,6,5,11,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,flip,pu,96.5072858755117,96.5072858755117,0,96.5,96.5,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ar1_fg,pu,91.8974372240942,91.6911619841955,-0.206275239898787,91.9,91.7,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ar1_kc,pu,91.7140775954386,91.5308280066469,-0.183249588791725,91.7,91.5,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ar1_md,pu,91.8237828794894,91.6116091076825,-0.21217377180696,91.8,91.6,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ar1_unc,pu,93.6832391874025,91.6999280956205,-1.98331109178204,93.7,91.7,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_cr2,pu,93.4962621523889,91.707147947441,-1.78911420494782,93.5,91.7,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_fg,pu,91.9836409277378,91.7795184508657,-0.204122476872101,92.0,91.8,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_kc,pu,91.8012441446593,91.6199355633583,-0.181308581300996,91.8,91.6,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_md,pu,91.9092708569067,91.6996677491501,-0.209603107756635,91.9,91.7,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_unc,pu,93.7808613784155,91.7902270174384,-1.99063436097708,93.8,91.8,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_cr2,pu,93.879065845286,91.9654951117009,-1.91357073358516,93.9,92.0,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_fg,pu,92.107668595819,91.9542418655333,-0.153426730285645,92.1,92.0,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_kc,pu,92.0294850680076,91.874844252576,-0.154640815431506,92.0,91.9,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_md,pu,92.0302870331217,91.8761164409153,-0.154170592206327,92.0,91.9,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_unc,pu,93.9766046686343,91.9655392979778,-2.01106537065651,94.0,92.0,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,glmer,pu,80.3553158692921,80.3290387754726,-0.0262770938194592,80.4,80.3,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,glmer_lrt,pu,86.3679994168263,86.3679994168263,0,86.4,86.4,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,mmm_cc,pu,84.0148734723118,84.0147891282014,-8.4344110447887e-05,84.0,84.0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,shrink,pu,81.7268531243199,81.5179015996337,-0.208951524686285,81.7,81.5,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,flip,upow,20.9064343479589,20.9064343479589,0,20.9,20.9,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ar1_fg,upow,19.3633330830881,19.3471006617122,-0.0162324213759177,19.4,19.3,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ar1_kc,upow,20.6537791478297,20.6327818905978,-0.0209972572318193,20.7,20.6,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ar1_md,upow,19.6174890278085,19.5990771003317,-0.0184119274768761,19.6,19.6,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ar1_unc,upow,22.2291184959945,21.7893379165964,-0.439780579398075,22.2,21.8,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_cr2,upow,21.3904401950591,21.047513079979,-0.342927115080034,21.4,21.0,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_fg,upow,19.8728098679487,19.8553517356671,-0.0174581322815399,19.9,19.9,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_exch_kc,upow,21.0726718493755,21.0513770014385,-0.0212948479370247,21.1,21.1,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_exch_md,upow,19.9995651604594,19.9815353649554,-0.0180297955040274,20.0,20.0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_exch_unc,upow,22.6982960667652,22.2485093707391,-0.449786696026159,22.7,22.2,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_cr2,upow,21.1626825954347,20.8224797967472,-0.340202798687493,21.2,20.8,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_fg,upow,19.338744854543,19.3278423859285,-0.0109024686145318,19.3,19.3,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ind_kc,upow,20.8422813430621,20.8282140091991,-0.0140673338630002,20.8,20.8,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ind_md,upow,19.7691101985873,19.7580876925374,-0.0110225060499651,19.8,19.8,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ind_unc,upow,22.448295385512,22.0230664869841,-0.425228898527834,22.4,22.0,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,glmer,upow,23.1813901677897,23.1595306441519,-0.0218595236378292,23.2,23.2,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,glmer_lrt,upow,24.4801862027844,24.4801862027844,0,24.5,24.5,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,mmm_cc,upow,20.3089752762771,20.3089752762771,0,20.3,20.3,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,shrink,upow,23.7425790304421,23.6478866011846,-0.0946924292574387,23.7,23.6,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,flip,pu_small,72.2703772598972,72.2703772598972,0,72.3,72.3,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ar1_fg,pu_small,43.720315201475,41.9492821546409,-1.77103304683406,43.7,41.9,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ar1_kc,pu_small,42.5397878354377,41.0405498708863,-1.49923796455139,42.5,41.0,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ar1_md,pu_small,43.4682280680321,41.6638042652584,-1.80442380277378,43.5,41.7,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ar1_unc,pu_small,55.9601177414433,41.9779094263439,-13.9822083150994,56.0,42.0,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_cr2,pu_small,54.2887799139116,41.521455435089,-12.7673244788226,54.3,41.5,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_fg,pu_small,43.895202684254,42.1273982542608,-1.76780442999323,43.9,42.1,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_kc,pu_small,42.7169304748354,41.2195233256281,-1.49740714920735,42.7,41.2,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_md,pu_small,43.638955106457,41.8395813897909,-1.79937371666612,43.6,41.8,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_exch_unc,pu_small,56.1113291768061,42.1602211062187,-13.9511080705874,56.1,42.2,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_cr2,pu_small,57.169091323751,42.8999232284671,-14.2691680952839,57.2,42.9,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_fg,pu_small,44.1295250701983,42.8685172259082,-1.26100784429012,44.1,42.9,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_kc,pu_small,43.8364299989601,42.5722523836468,-1.26417761531328,43.8,42.6,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_md,pu_small,43.8461654388437,42.5894792627687,-1.25668617607504,43.8,42.6,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ind_unc,pu_small,57.3070420448963,42.8999463145508,-14.4070957303455,57.3,42.9,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,glmer,pu_small,28.2342056746725,28.111146626885,-0.123059047787564,28.2,28.1,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,glmer_lrt,pu_small,61.8981304611237,61.8981304611237,0,61.9,61.9,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,mmm_cc,pu_small,27.6377270741345,27.6372641111715,-0.000462962962963331,27.6,27.6,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,shrink,pu_small,33.6786054806549,32.3546497430434,-1.32395573761153,33.7,32.4,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,flip,chosen,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ar1_fg,chosen,0,1,1,0,1,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ar1_kc,chosen,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ar1_md,chosen,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ar1_unc,chosen,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_exch_cr2,chosen,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_exch_fg,chosen,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_exch_kc,chosen,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_exch_md,chosen,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_exch_unc,chosen,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ind_cr2,chosen,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ind_fg,chosen,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ind_kc,chosen,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ind_md,chosen,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ind_unc,chosen,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,glmer,chosen,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,glmer_lrt,chosen,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,mmm_cc,chosen,1,0,-1,1,0,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 5,shrink,chosen,0,0,0,0,0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 5,flip,eligible,0,0,0,0,0,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ar1_fg,eligible,0,1,1,0,1,FALSE,"Si removed, Wald strategies",TRUE
+a,Table 5,gee_ar1_kc,eligible,0,0,0,0,0,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ar1_md,eligible,0,0,0,0,0,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ar1_unc,eligible,0,0,0,0,0,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_exch_cr2,eligible,0,0,0,0,0,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_exch_fg,eligible,0,0,0,0,0,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_exch_kc,eligible,0,0,0,0,0,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_exch_md,eligible,0,0,0,0,0,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_exch_unc,eligible,0,0,0,0,0,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ind_cr2,eligible,0,0,0,0,0,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ind_fg,eligible,0,0,0,0,0,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ind_kc,eligible,0,0,0,0,0,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ind_md,eligible,0,0,0,0,0,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 5,gee_ind_unc,eligible,0,0,0,0,0,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 5,glmer,eligible,0,0,0,0,0,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 5,glmer_lrt,eligible,0,0,0,0,0,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 5,mmm_cc,eligible,1,1,0,1,1,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 5,shrink,eligible,0,0,0,0,0,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 3,gee,rate AR1,7.71749506071437,7.32637286049185,-0.391122200222515,7.7,7.3,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 3,gee_fg,rate AR1,5.34336284387783,5.34361514741242,0.00025230353458916,5.3,5.3,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,gee_kc,rate AR1,6.39727669584493,6.37238798023441,-0.0248887156105209,6.4,6.4,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,gee_md,rate AR1,5.56350820607834,5.56372343582576,0.000215229747415613,5.6,5.6,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,glmer,rate AR1,6.55274385078627,6.53388520574536,-0.0188586450409058,6.6,6.5,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 3,glmer_lrt,rate AR1,6.14199940247299,6.14199940247299,0,6.1,6.1,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,mmm,rate AR1,5.25569245983189,5.25569245983189,0,5.3,5.3,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,shrink,rate AR1,6.91019516161822,6.83360451822031,-0.0765906433979007,6.9,6.8,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 3,gee,rate NAT,7.62598911585109,7.27047689043897,-0.355512225412124,7.6,7.3,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 3,gee_fg,rate NAT,5.32219581170252,5.32140222817224,-0.000793583530280806,5.3,5.3,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,gee_kc,rate NAT,6.34172285724588,6.3199711087035,-0.0217517485423775,6.3,6.3,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,gee_md,rate NAT,5.5073032807786,5.50558729198594,-0.00171598879265211,5.5,5.5,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,glmer,rate NAT,6.29781487156008,6.27648034058579,-0.0213345309742881,6.3,6.3,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,glmer_lrt,rate NAT,5.77026372774067,5.77026372774067,0,5.8,5.8,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,mmm,rate NAT,5.09713984709077,5.09713984709077,0,5.1,5.1,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,shrink,rate NAT,6.64424631635503,6.56897795021278,-0.0752683661422502,6.6,6.6,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,gee,rate GB,8.36855019348863,7.87976717367622,-0.488783019812407,8.4,7.9,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 3,gee_fg,rate GB,5.82570543781156,5.82530472228305,-0.000400715528512841,5.8,5.8,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,gee_kc,rate GB,6.94964248373011,6.91542913237527,-0.0342133513548388,6.9,6.9,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,gee_md,rate GB,6.08874610982833,6.08830194362861,-0.000444166199722318,6.1,6.1,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,glmer,rate GB,8.61163506014761,8.58585726775671,-0.0257777923908993,8.6,8.6,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,glmer_lrt,rate GB,7.80045078163607,7.80045078163607,0,7.8,7.8,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,mmm,rate GB,5.34171209871129,5.34172540870254,1.33099912504875e-05,5.3,5.3,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,shrink,rate GB,9.28377756177419,9.18501908788638,-0.0987584738878091,9.3,9.2,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 3,gee,wc AR1,19.1121853163588,17.3997692529564,-1.71241606340232,19.1,17.4,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 3,gee_fg,wc AR1,2.8505214368482,2.86386339876873,0.0133419619205259,2.9,2.9,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,gee_kc,wc AR1,11.2199791159067,11.0155559483825,-0.204423167524183,11.2,11.0,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 3,gee_md,wc AR1,6.0307520432763,6.05610561056106,0.0253535672847587,6.0,6.1,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 3,glmer,wc AR1,2.17232869317086,2.17232869317086,0,2.2,2.2,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,glmer_lrt,wc AR1,1.84175243503293,1.84175243503293,0,1.8,1.8,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,mmm,wc AR1,0.428222571079714,0.428222571079714,0,0.4,0.4,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,shrink,wc AR1,2.43217129164412,2.41814527040087,-0.0140260212432555,2.4,2.4,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,gee,wc NAT,17.9961696694567,16.8137670111243,-1.18240265833237,18.0,16.8,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 3,gee_fg,wc NAT,2.83402301456834,2.84235668789809,0.0083336733297541,2.8,2.8,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,gee_kc,wc NAT,10.7406880864373,10.5746695145183,-0.166018571919034,10.7,10.6,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 3,gee_md,wc NAT,5.89695644669467,5.91045465035772,0.0134982036630529,5.9,5.9,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,glmer,wc NAT,1.8253290367667,1.8253290367667,0,1.8,1.8,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,glmer_lrt,wc NAT,1.75755313715476,1.75755313715476,0,1.8,1.8,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,mmm,wc NAT,0.487669795371073,0.487669795371073,0,0.5,0.5,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,shrink,wc NAT,2.30498406829,2.22867835335828,-0.0763057149317135,2.3,2.2,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 3,gee,wc GB,22.078662637684,20.546146293569,-1.53251634411501,22.1,20.5,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 3,gee_fg,wc GB,4.72205064854849,4.72996407779016,0.00791342924167715,4.7,4.7,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,gee_kc,wc GB,14.1244381503602,13.7997742522104,-0.324663898149751,14.1,13.8,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 3,gee_md,wc GB,8.55008457056944,8.56272761522039,0.012643044650952,8.6,8.6,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,glmer,wc GB,4.49110690998881,4.49110690998881,0,4.5,4.5,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,glmer_lrt,wc GB,3.64829497344315,3.64829497344315,0,3.6,3.6,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,mmm,wc GB,0.625683749894808,0.625683749894808,0,0.6,0.6,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,shrink,wc GB,4.89176652493235,4.87511116266481,-0.0166553622675441,4.9,4.9,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,gee,mad AR1,3.17945906497523,2.91620188816584,-0.263257176809397,3.2,2.9,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 3,gee_fg,mad AR1,0.550892228507482,0.551829009619452,0.000936781111970375,0.6,0.6,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,gee_kc,mad AR1,1.79347544401784,1.77144677363983,-0.0220286703780068,1.8,1.8,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,gee_md,mad AR1,0.954580787167344,0.956063180509744,0.00148239334239997,1.0,1.0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,glmer,mad AR1,1.58153631581742,1.58320606381393,0.00166974799651087,1.6,1.6,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,glmer_lrt,mad AR1,1.14338334137695,1.14338334137695,0,1.1,1.1,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,mmm,mad AR1,0.279248137513821,0.279248137513821,0,0.3,0.3,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,shrink,mad AR1,1.8542798249861,1.82272545271163,-0.0315543722744696,1.9,1.8,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 3,gee,mad NAT,3.04856298181065,2.81565128678494,-0.232911695025711,3.0,2.8,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 3,gee_fg,mad NAT,0.518624821208572,0.518405164512097,-0.000219656696474613,0.5,0.5,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,gee_kc,mad NAT,1.70510271130835,1.68690936763962,-0.0181933436687347,1.7,1.7,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,gee_md,mad NAT,0.88020911109287,0.87947914144103,-0.00072996965183969,0.9,0.9,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,glmer,mad NAT,1.3756155832883,1.38540030216803,0.00978471887973043,1.4,1.4,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,glmer_lrt,mad NAT,0.771764041118225,0.771764041118225,0,0.8,0.8,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,mmm,mad NAT,0.195468577312292,0.195468577312292,0,0.2,0.2,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,shrink,mad NAT,1.60508757507333,1.58221624814632,-0.0228713269270076,1.6,1.6,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,gee,mad GB,3.93361243395923,3.64053993849816,-0.29307249546107,3.9,3.6,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 3,gee_fg,mad GB,1.04306028839004,1.04356639517104,0.000506106780998827,1.0,1.0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,gee_kc,mad GB,2.48704563671687,2.45624455734402,-0.0308010793728513,2.5,2.5,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,gee_md,mad GB,1.46582521395825,1.46684163421619,0.00101642025794035,1.5,1.5,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,glmer,mad GB,3.47994346364855,3.4456938232982,-0.0342496403503456,3.5,3.4,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 3,glmer_lrt,mad GB,2.8005328011214,2.8005328011214,0,2.8,2.8,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,mmm,mad GB,0.326719060349194,0.326745639974144,2.65796249497852e-05,0.3,0.3,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 3,shrink,mad GB,4.20351186726724,4.07663280445685,-0.126879062810391,4.2,4.1,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 4,gee,RI T=2,77.8406005463992,72.7876909465782,-5.05290959982104,77.8,72.8,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 4,gee,RI T=3,91.4314681007516,88.335198734688,-3.09626936606362,91.4,88.3,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 4,gee,RI T=4,95.8449931137634,93.8322214707355,-2.0127716430279,95.8,93.8,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 4,gee,RI T=6,98.6364058545878,97.7535423153227,-0.88286353926506,98.6,97.8,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 4,gee,RI T=8,99.3680016914227,98.9509938473292,-0.417007844093419,99.4,99.0,FALSE,"Si removed, Wald strategies",TRUE
+a,Table 4,gee,RI T=10,99.6901895626821,99.5086085218033,-0.181581040878712,99.7,99.5,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 4,gee_fg,RI T=2,72.7307032928101,72.5985417076733,-0.132161585136771,72.7,72.6,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 4,gee_fg,RI T=3,88.2787312021215,88.2787312021215,0,88.3,88.3,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,gee_fg,RI T=4,93.770579929697,93.770579929697,0,93.8,93.8,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,gee_fg,RI T=6,97.6867262504782,97.6867262504782,0,97.7,97.7,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,gee_fg,RI T=8,98.8799564627719,98.8799564627719,0,98.9,98.9,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,gee_fg,RI T=10,99.4627209111067,99.4627209111067,0,99.5,99.5,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,gee_kc,RI T=2,72.9622861421527,72.5269227199807,-0.435363422172088,73.0,72.5,FALSE,"Si removed, Wald strategies",TRUE
+a,Table 4,gee_kc,RI T=3,88.6894062974984,88.1917729894042,-0.49763330809418,88.7,88.2,FALSE,"Si removed, Wald strategies",TRUE
+a,Table 4,gee_kc,RI T=4,93.857163891171,93.7381523863886,-0.119011504782407,93.9,93.7,FALSE,"Si removed, Wald strategies",TRUE
+a,Table 4,gee_kc,RI T=6,97.6814970797496,97.6710574379283,-0.0104396418212644,97.7,97.7,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,gee_kc,RI T=8,98.8610443190963,98.8568630147141,-0.0041813043821719,98.9,98.9,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,gee_kc,RI T=10,99.3979777608602,99.3969350514841,-0.00104270937605122,99.4,99.4,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,gee_md,RI T=2,72.7168710879572,72.5984914169854,-0.118379670971791,72.7,72.6,FALSE,"Si removed, Wald strategies",TRUE
+a,Table 4,gee_md,RI T=3,88.2545816568355,88.2545816568355,0,88.3,88.3,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,gee_md,RI T=4,93.7088830667043,93.7088830667043,0,93.7,93.7,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,gee_md,RI T=6,97.631389469427,97.631389469427,0,97.6,97.6,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,gee_md,RI T=8,98.8056989173131,98.8056989173131,0,98.8,98.8,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,gee_md,RI T=10,99.3625182929084,99.3625182929084,0,99.4,99.4,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,glmer,RI T=2,68.5594654419701,68.492632754608,-0.0668326873621226,68.6,68.5,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 4,glmer,RI T=3,87.7737079144629,87.7455199060734,-0.0281880083894919,87.8,87.7,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 4,glmer,RI T=4,93.7446295702434,93.7195898258007,-0.025039744442708,93.7,93.7,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,glmer,RI T=6,97.8140279451414,97.8056820804766,-0.00834586466478982,97.8,97.8,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,glmer,RI T=8,99.0355342199127,99.0303133489665,-0.00522087094617518,99.0,99.0,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,glmer,RI T=10,99.5763575521777,99.5711398219098,-0.00521773026790129,99.6,99.6,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,glmer_lrt,RI T=2,98.92714175185,98.92714175185,0,98.9,98.9,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,glmer_lrt,RI T=3,99.6382013628777,99.6382013628777,0,99.6,99.6,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,glmer_lrt,RI T=4,99.8630509724315,99.8630509724315,0,99.9,99.9,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,glmer_lrt,RI T=6,99.9832873704614,99.9832873704614,0,100.0,100.0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,glmer_lrt,RI T=8,99.9989530988275,99.9989530988275,0,100.0,100.0,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,glmer_lrt,RI T=10,100,100,0,100.0,100.0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,mmm,RI T=2,68.1610797118622,68.1610797118622,0,68.2,68.2,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,mmm,RI T=3,87.1024479234074,87.1024479234074,0,87.1,87.1,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,mmm,RI T=4,92.9003231480455,92.9003231480455,0,92.9,92.9,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,mmm,RI T=6,97.4219205566767,97.4219205566767,0,97.4,97.4,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,mmm,RI T=8,98.8517782409204,98.8517782409204,0,98.9,98.9,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,mmm,RI T=10,99.5085489618672,99.5085489618672,0,99.5,99.5,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,shrink,RI T=2,74.0150128120659,73.0454572081352,-0.969555603930701,74.0,73.0,FALSE,"Si removed, Wald strategies",TRUE
+a,Table 4,shrink,RI T=3,88.8656940967808,88.5084201606113,-0.357273936169463,88.9,88.5,FALSE,"Si removed, Wald strategies",TRUE
+a,Table 4,shrink,RI T=4,94.1108613004004,93.9730987298159,-0.137762570584442,94.1,94.0,FALSE,"Si removed, Wald strategies",TRUE
+a,Table 4,shrink,RI T=6,97.8620313030776,97.8390812174332,-0.0229500856443536,97.9,97.8,FALSE,"Si removed, Wald strategies",TRUE
+a,Table 4,shrink,RI T=8,99.0428415585954,99.0344894188428,-0.00835213975260274,99.0,99.0,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,shrink,RI T=10,99.5763575521777,99.5711398219098,-0.00521773026790129,99.6,99.6,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,gee,RS T=2,77.9751900974013,73.160501280526,-4.81468881687525,78.0,73.2,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 4,gee,RS T=3,91.477605468485,88.4330870077034,-3.04451846078167,91.5,88.4,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 4,gee,RS T=4,95.9957280170221,94.0652470643351,-1.93048095268695,96.0,94.1,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 4,gee,RS T=6,98.7648620173051,97.9708186432751,-0.794043374029982,98.8,98.0,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 4,gee,RS T=8,99.4679501371737,99.1431406089911,-0.32480952818257,99.5,99.1,FALSE,"Si removed, Wald strategies",TRUE
+a,Table 4,gee,RS T=10,99.7167737313764,99.5567972140217,-0.159976517354735,99.7,99.6,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 4,gee_fg,RS T=2,73.1196775734011,73.0198013954649,-0.0998761779361388,73.1,73.0,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 4,gee_fg,RS T=3,88.4072645386515,88.4065693990675,-0.000695139584024673,88.4,88.4,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,gee_fg,RS T=4,94.055482966066,94.0540905875065,-0.00139237855945851,94.1,94.1,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,gee_fg,RS T=6,97.9513288891301,97.9513288891301,0,98.0,98.0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,gee_fg,RS T=8,99.1146321893182,99.1146321893182,0,99.1,99.1,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,gee_fg,RS T=10,99.5338471011118,99.5338471011118,0,99.5,99.5,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,gee_kc,RS T=2,73.2339837622587,72.8901616056874,-0.34382215657125,73.2,72.9,FALSE,"Si removed, Wald strategies",TRUE
+a,Table 4,gee_kc,RS T=3,88.7923148136522,88.3200479826632,-0.472266830988986,88.8,88.3,FALSE,"Si removed, Wald strategies",TRUE
+a,Table 4,gee_kc,RS T=4,94.1222563030734,93.9989802589628,-0.123276044110582,94.1,94.0,FALSE,"Si removed, Wald strategies",TRUE
+a,Table 4,gee_kc,RS T=6,97.8872378570002,97.8747162574221,-0.012521599578136,97.9,97.9,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,gee_kc,RS T=8,99.0589443676297,99.0554665787144,-0.00347778891533324,99.1,99.1,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,gee_kc,RS T=10,99.4468512658987,99.4468512658987,0,99.4,99.4,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,gee_md,RS T=2,73.116114303792,73.022641927987,-0.0934723758050495,73.1,73.0,FALSE,"Si removed, Wald strategies",TRUE
+a,Table 4,gee_md,RS T=3,88.3862626543083,88.3820945973625,-0.00416805694582934,88.4,88.4,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,gee_md,RS T=4,94.0164153736321,94.0157174395171,-0.000697934115024168,94.0,94.0,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,gee_md,RS T=6,97.8740190240441,97.8740190240441,0,97.9,97.9,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,gee_md,RS T=8,99.0394825209884,99.0394825209884,0,99.0,99.0,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,gee_md,RS T=10,99.4343331545938,99.4343331545938,0,99.4,99.4,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,glmer,RS T=2,0.0021244292776842,0.0021244292776842,0,0.0,0.0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,glmer,RS T=3,56.6586894938711,56.5877325397361,-0.070956954134985,56.7,56.6,TRUE,"Si removed, Wald strategies",TRUE
+a,Table 4,glmer,RS T=4,90.8227890881244,90.7664127871496,-0.0563763009748044,90.8,90.8,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,glmer,RS T=6,97.7272731734412,97.7133564035923,-0.0139167698488336,97.7,97.7,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,glmer,RS T=8,99.1730233028838,99.1667593735988,-0.00626392928508324,99.2,99.2,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,glmer,RS T=10,99.617332318097,99.615941339606,-0.00139097849103109,99.6,99.6,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,glmer_lrt,RS T=2,0.136465278105719,0.136465278105719,0,0.1,0.1,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,glmer_lrt,RS T=3,66.465061870473,66.465061870473,0,66.5,66.5,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,glmer_lrt,RS T=4,99.4089597111875,99.4089597111875,0,99.4,99.4,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,glmer_lrt,RS T=6,99.9846720297942,99.9846720297942,0,100.0,100.0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,glmer_lrt,RS T=8,99.9979117923228,99.9979117923228,0,100.0,100.0,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,glmer_lrt,RS T=10,99.9993034659534,99.9993034659534,0,100.0,100.0,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,mmm,RS T=2,42.1910943386337,42.1910943386337,0,42.2,42.2,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,mmm,RS T=3,69.063948525008,69.063948525008,0,69.1,69.1,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,mmm,RS T=4,80.6413163939257,80.6413163939257,0,80.6,80.6,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,mmm,RS T=6,90.35484080131,90.35484080131,0,90.4,90.4,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,mmm,RS T=8,94.640140158964,94.640140158964,0,94.6,94.6,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,mmm,RS T=10,96.845058975726,96.844361742348,-0.000697233377962903,96.8,96.8,TRUE,"Si removed, Wald strategies",FALSE
+a,Table 4,shrink,RS T=2,0.016257125910492,0.00987877129551645,-0.00637835461497553,0.0,0.0,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,shrink,RS T=3,59.2914278368937,58.8516293647164,-0.439798472177323,59.3,58.9,FALSE,"Si removed, Wald strategies",TRUE
+a,Table 4,shrink,RS T=4,93.7096780117854,93.3658687299117,-0.343809281873718,93.7,93.4,FALSE,"Si removed, Wald strategies",TRUE
+a,Table 4,shrink,RS T=6,98.0570865711763,97.9895707286939,-0.0675158424823934,98.1,98.0,FALSE,"Si removed, Wald strategies",TRUE
+a,Table 4,shrink,RS T=8,99.2293784544148,99.2085047318722,-0.0208737225426034,99.2,99.2,FALSE,"Si removed, Wald strategies",FALSE
+a,Table 4,shrink,RS T=10,99.6284719885069,99.6215108272454,-0.00696116126155744,99.6,99.6,FALSE,"Si removed, Wald strategies",FALSE
+b,Table 5,flip,hi_main,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ar1_fg,hi_main,2,0,-2,2,0,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_kc,hi_main,62,54,-8,62,54,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_md,hi_main,7,3,-4,7,3,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_unc,hi_main,214,158,-56,214,158,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_cr2,hi_main,133,88,-45,133,88,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_fg,hi_main,3,0,-3,3,0,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_kc,hi_main,102,95,-7,102,95,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_md,hi_main,17,14,-3,17,14,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_unc,hi_main,242,188,-54,242,188,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_cr2,hi_main,131,86,-45,131,86,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_fg,hi_main,3,0,-3,3,0,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_kc,hi_main,95,90,-5,95,90,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_md,hi_main,18,13,-5,18,13,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_unc,hi_main,223,182,-41,223,182,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,glmer,hi_main,206,203,-3,206,203,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,glmer_lrt,hi_main,223,157,-66,223,157,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,mmm_cc,hi_main,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,shrink,hi_main,271,256,-15,271,256,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,flip,hi_m67,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ar1_fg,hi_m67,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ar1_kc,hi_m67,38,36,-2,38,36,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_md,hi_m67,6,6,0,6,6,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ar1_unc,hi_m67,64,50,-14,64,50,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_cr2,hi_m67,52,40,-12,52,40,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_fg,hi_m67,4,3,-1,4,3,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_kc,hi_m67,44,42,-2,44,42,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_md,hi_m67,18,18,0,18,18,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_exch_unc,hi_m67,69,62,-7,69,62,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_cr2,hi_m67,52,38,-14,52,38,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_fg,hi_m67,1,1,0,1,1,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ind_kc,hi_m67,39,38,-1,39,38,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_md,hi_m67,18,18,0,18,18,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ind_unc,hi_m67,66,59,-7,66,59,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,glmer,hi_m67,86,83,-3,86,83,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,glmer_lrt,hi_m67,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,mmm_cc,hi_m67,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,shrink,hi_m67,93,91,-2,93,91,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,flip,hi_copula,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ar1_fg,hi_copula,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ar1_kc,hi_copula,38,36,-2,38,36,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_md,hi_copula,7,6,-1,7,6,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_unc,hi_copula,85,72,-13,85,72,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_cr2,hi_copula,69,56,-13,69,56,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_fg,hi_copula,8,5,-3,8,5,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_kc,hi_copula,61,57,-4,61,57,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_md,hi_copula,28,27,-1,28,27,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_unc,hi_copula,100,92,-8,100,92,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_cr2,hi_copula,68,52,-16,68,52,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_fg,hi_copula,1,1,0,1,1,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ind_kc,hi_copula,55,55,0,55,55,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ind_md,hi_copula,22,21,-1,22,21,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_unc,hi_copula,94,88,-6,94,88,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,glmer,hi_copula,223,221,-2,223,221,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,glmer_lrt,hi_copula,189,180,-9,189,180,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,mmm_cc,hi_copula,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,shrink,hi_copula,244,235,-9,244,235,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,flip,hi_all,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ar1_fg,hi_all,2,0,-2,2,0,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_kc,hi_all,138,126,-12,138,126,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_md,hi_all,20,15,-5,20,15,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_unc,hi_all,363,280,-83,363,280,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_cr2,hi_all,254,184,-70,254,184,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_fg,hi_all,15,8,-7,15,8,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_kc,hi_all,207,194,-13,207,194,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_md,hi_all,63,59,-4,63,59,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_unc,hi_all,411,342,-69,411,342,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_cr2,hi_all,251,176,-75,251,176,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_fg,hi_all,5,2,-3,5,2,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_kc,hi_all,189,183,-6,189,183,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_md,hi_all,58,52,-6,58,52,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_unc,hi_all,383,329,-54,383,329,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,glmer,hi_all,515,507,-8,515,507,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,glmer_lrt,hi_all,412,337,-75,412,337,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,mmm_cc,hi_all,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,shrink,hi_all,608,582,-26,608,582,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,flip,lo_all,0,32,32,0,32,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_fg,lo_all,106,105,-1,106,105,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_kc,lo_all,70,81,11,70,81,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_md,lo_all,103,108,5,103,108,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_unc,lo_all,1,45,44,1,45,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_cr2,lo_all,10,76,66,10,76,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_fg,lo_all,104,102,-2,104,102,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_kc,lo_all,70,81,11,70,81,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_md,lo_all,101,105,4,101,105,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_unc,lo_all,1,45,44,1,45,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_cr2,lo_all,10,81,71,10,81,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_fg,lo_all,104,106,2,104,106,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_kc,lo_all,81,80,-1,81,80,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_md,lo_all,109,112,3,109,112,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_unc,lo_all,2,44,42,2,44,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,glmer,lo_all,15,15,0,15,15,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,glmer_lrt,lo_all,13,14,1,13,14,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,mmm_cc,lo_all,42,42,0,42,42,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,shrink,lo_all,6,12,6,6,12,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,flip,lo_N10,0,1,1,0,1,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_fg,lo_N10,5,7,2,5,7,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_kc,lo_N10,3,3,0,3,3,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ar1_md,lo_N10,4,5,1,4,5,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_unc,lo_N10,0,3,3,0,3,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_cr2,lo_N10,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_exch_fg,lo_N10,3,4,1,3,4,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_kc,lo_N10,3,3,0,3,3,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_exch_md,lo_N10,3,3,0,3,3,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_exch_unc,lo_N10,0,3,3,0,3,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_cr2,lo_N10,0,3,3,0,3,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_fg,lo_N10,7,11,4,7,11,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_kc,lo_N10,3,3,0,3,3,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ind_md,lo_N10,4,6,2,4,6,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_unc,lo_N10,0,3,3,0,3,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,glmer,lo_N10,12,12,0,12,12,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,glmer_lrt,lo_N10,0,1,1,0,1,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,mmm_cc,lo_N10,32,32,0,32,32,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,shrink,lo_N10,5,11,6,5,11,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,flip,pu,96.5072858755117,91.9642062710036,-4.54307960450815,96.5,92.0,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_fg,pu,91.8974372240942,91.6911619841955,-0.206275239898787,91.9,91.7,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_kc,pu,91.7140775954386,91.5308280066469,-0.183249588791725,91.7,91.5,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_md,pu,91.8237828794894,91.6116091076825,-0.21217377180696,91.8,91.6,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_unc,pu,93.6832391874025,91.6999280956205,-1.98331109178204,93.7,91.7,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_cr2,pu,93.4962621523889,91.707147947441,-1.78911420494782,93.5,91.7,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_fg,pu,91.9836409277378,91.7795184508657,-0.204122476872101,92.0,91.8,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_kc,pu,91.8012441446593,91.6199355633583,-0.181308581300996,91.8,91.6,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_md,pu,91.9092708569067,91.6996677491501,-0.209603107756635,91.9,91.7,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_unc,pu,93.7808613784155,91.7902270174384,-1.99063436097708,93.8,91.8,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_cr2,pu,93.879065845286,91.9654951117009,-1.91357073358516,93.9,92.0,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_fg,pu,92.107668595819,91.9542418655333,-0.153426730285645,92.1,92.0,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_kc,pu,92.0294850680076,91.874844252576,-0.154640815431506,92.0,91.9,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_md,pu,92.0302870331217,91.8761164409153,-0.154170592206327,92.0,91.9,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_unc,pu,93.9766046686343,91.9655392979778,-2.01106537065651,94.0,92.0,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,glmer,pu,80.3553158692921,80.3290387754726,-0.0262770938194592,80.4,80.3,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,glmer_lrt,pu,86.3679994168263,81.6573300623657,-4.71066935446058,86.4,81.7,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,mmm_cc,pu,84.0148734723118,84.0147891282014,-8.4344110447887e-05,84.0,84.0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,shrink,pu,81.7268531243199,81.5179015996337,-0.208951524686285,81.7,81.5,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,flip,upow,20.9064343479589,20.3860748741143,-0.520359473844597,20.9,20.4,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_fg,upow,19.3633330830881,19.3471006617122,-0.0162324213759177,19.4,19.3,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_kc,upow,20.6537791478297,20.6327818905978,-0.0209972572318193,20.7,20.6,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_md,upow,19.6174890278085,19.5990771003317,-0.0184119274768761,19.6,19.6,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ar1_unc,upow,22.2291184959945,21.7893379165964,-0.439780579398075,22.2,21.8,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_cr2,upow,21.3904401950591,21.047513079979,-0.342927115080034,21.4,21.0,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_fg,upow,19.8728098679487,19.8553517356671,-0.0174581322815399,19.9,19.9,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_exch_kc,upow,21.0726718493755,21.0513770014385,-0.0212948479370247,21.1,21.1,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_exch_md,upow,19.9995651604594,19.9815353649554,-0.0180297955040274,20.0,20.0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_exch_unc,upow,22.6982960667652,22.2485093707391,-0.449786696026159,22.7,22.2,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_cr2,upow,21.1626825954347,20.8224797967472,-0.340202798687493,21.2,20.8,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_fg,upow,19.338744854543,19.3278423859285,-0.0109024686145318,19.3,19.3,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ind_kc,upow,20.8422813430621,20.8282140091991,-0.0140673338630002,20.8,20.8,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ind_md,upow,19.7691101985873,19.7580876925374,-0.0110225060499651,19.8,19.8,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ind_unc,upow,22.448295385512,22.0230664869841,-0.425228898527834,22.4,22.0,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,glmer,upow,23.1813901677897,23.1595306441519,-0.0218595236378292,23.2,23.2,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,glmer_lrt,upow,24.4801862027844,23.8120968887826,-0.668089314001747,24.5,23.8,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,mmm_cc,upow,20.3089752762771,20.3089752762771,0,20.3,20.3,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,shrink,upow,23.7425790304421,23.6478866011846,-0.0946924292574387,23.7,23.6,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,flip,pu_small,72.2703772598972,42.8834223198832,-29.386954940014,72.3,42.9,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_fg,pu_small,43.720315201475,41.9492821546409,-1.77103304683406,43.7,41.9,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_kc,pu_small,42.5397878354377,41.0405498708863,-1.49923796455139,42.5,41.0,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_md,pu_small,43.4682280680321,41.6638042652584,-1.80442380277378,43.5,41.7,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_unc,pu_small,55.9601177414433,41.9779094263439,-13.9822083150994,56.0,42.0,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_cr2,pu_small,54.2887799139116,41.521455435089,-12.7673244788226,54.3,41.5,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_fg,pu_small,43.895202684254,42.1273982542608,-1.76780442999323,43.9,42.1,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_kc,pu_small,42.7169304748354,41.2195233256281,-1.49740714920735,42.7,41.2,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_md,pu_small,43.638955106457,41.8395813897909,-1.79937371666612,43.6,41.8,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_exch_unc,pu_small,56.1113291768061,42.1602211062187,-13.9511080705874,56.1,42.2,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_cr2,pu_small,57.169091323751,42.8999232284671,-14.2691680952839,57.2,42.9,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_fg,pu_small,44.1295250701983,42.8685172259082,-1.26100784429012,44.1,42.9,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_kc,pu_small,43.8364299989601,42.5722523836468,-1.26417761531328,43.8,42.6,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_md,pu_small,43.8461654388437,42.5894792627687,-1.25668617607504,43.8,42.6,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ind_unc,pu_small,57.3070420448963,42.8999463145508,-14.4070957303455,57.3,42.9,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,glmer,pu_small,28.2342056746725,28.111146626885,-0.123059047787564,28.2,28.1,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,glmer_lrt,pu_small,61.8981304611237,32.9349255359275,-28.9632049251962,61.9,32.9,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,mmm_cc,pu_small,27.6377270741345,27.6372641111715,-0.000462962962963331,27.6,27.6,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,shrink,pu_small,33.6786054806549,32.3546497430434,-1.32395573761153,33.7,32.4,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,flip,chosen,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ar1_fg,chosen,0,1,1,0,1,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_kc,chosen,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ar1_md,chosen,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ar1_unc,chosen,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_exch_cr2,chosen,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_exch_fg,chosen,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_exch_kc,chosen,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_exch_md,chosen,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_exch_unc,chosen,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ind_cr2,chosen,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ind_fg,chosen,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ind_kc,chosen,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ind_md,chosen,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ind_unc,chosen,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,glmer,chosen,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,glmer_lrt,chosen,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,mmm_cc,chosen,1,0,-1,1,0,TRUE,"Si removed, all strategies",TRUE
+b,Table 5,shrink,chosen,0,0,0,0,0,TRUE,"Si removed, all strategies",FALSE
+b,Table 5,flip,eligible,0,0,0,0,0,FALSE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ar1_fg,eligible,0,1,1,0,1,FALSE,"Si removed, all strategies",TRUE
+b,Table 5,gee_ar1_kc,eligible,0,0,0,0,0,FALSE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ar1_md,eligible,0,0,0,0,0,FALSE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ar1_unc,eligible,0,0,0,0,0,FALSE,"Si removed, all strategies",FALSE
+b,Table 5,gee_exch_cr2,eligible,0,0,0,0,0,FALSE,"Si removed, all strategies",FALSE
+b,Table 5,gee_exch_fg,eligible,0,0,0,0,0,FALSE,"Si removed, all strategies",FALSE
+b,Table 5,gee_exch_kc,eligible,0,0,0,0,0,FALSE,"Si removed, all strategies",FALSE
+b,Table 5,gee_exch_md,eligible,0,0,0,0,0,FALSE,"Si removed, all strategies",FALSE
+b,Table 5,gee_exch_unc,eligible,0,0,0,0,0,FALSE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ind_cr2,eligible,0,0,0,0,0,FALSE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ind_fg,eligible,0,0,0,0,0,FALSE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ind_kc,eligible,0,0,0,0,0,FALSE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ind_md,eligible,0,0,0,0,0,FALSE,"Si removed, all strategies",FALSE
+b,Table 5,gee_ind_unc,eligible,0,0,0,0,0,FALSE,"Si removed, all strategies",FALSE
+b,Table 5,glmer,eligible,0,0,0,0,0,FALSE,"Si removed, all strategies",FALSE
+b,Table 5,glmer_lrt,eligible,0,0,0,0,0,FALSE,"Si removed, all strategies",FALSE
+b,Table 5,mmm_cc,eligible,1,1,0,1,1,FALSE,"Si removed, all strategies",FALSE
+b,Table 5,shrink,eligible,0,0,0,0,0,FALSE,"Si removed, all strategies",FALSE
+b,Table 3,gee,rate AR1,7.71749506071437,7.32637286049185,-0.391122200222515,7.7,7.3,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,gee_fg,rate AR1,5.34336284387783,5.34361514741242,0.00025230353458916,5.3,5.3,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,gee_kc,rate AR1,6.39727669584493,6.37238798023441,-0.0248887156105209,6.4,6.4,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,gee_md,rate AR1,5.56350820607834,5.56372343582576,0.000215229747415613,5.6,5.6,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,glmer,rate AR1,6.55274385078627,6.53388520574536,-0.0188586450409058,6.6,6.5,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,glmer_lrt,rate AR1,6.14199940247299,5.62548483499714,-0.516514567475853,6.1,5.6,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,mmm,rate AR1,5.25569245983189,5.25569245983189,0,5.3,5.3,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,shrink,rate AR1,6.91019516161822,6.83360451822031,-0.0765906433979007,6.9,6.8,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,gee,rate NAT,7.62598911585109,7.27047689043897,-0.355512225412124,7.6,7.3,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,gee_fg,rate NAT,5.32219581170252,5.32140222817224,-0.000793583530280806,5.3,5.3,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,gee_kc,rate NAT,6.34172285724588,6.3199711087035,-0.0217517485423775,6.3,6.3,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,gee_md,rate NAT,5.5073032807786,5.50558729198594,-0.00171598879265211,5.5,5.5,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,glmer,rate NAT,6.29781487156008,6.27648034058579,-0.0213345309742881,6.3,6.3,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,glmer_lrt,rate NAT,5.77026372774067,5.24552325876325,-0.524740468977417,5.8,5.2,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,mmm,rate NAT,5.09713984709077,5.09713984709077,0,5.1,5.1,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,shrink,rate NAT,6.64424631635503,6.56897795021278,-0.0752683661422502,6.6,6.6,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,gee,rate GB,8.36855019348863,7.87976717367622,-0.488783019812407,8.4,7.9,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,gee_fg,rate GB,5.82570543781156,5.82530472228305,-0.000400715528512841,5.8,5.8,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,gee_kc,rate GB,6.94964248373011,6.91542913237527,-0.0342133513548388,6.9,6.9,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,gee_md,rate GB,6.08874610982833,6.08830194362861,-0.000444166199722318,6.1,6.1,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,glmer,rate GB,8.61163506014761,8.58585726775671,-0.0257777923908993,8.6,8.6,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,glmer_lrt,rate GB,7.80045078163607,7.36997882587289,-0.430471955763183,7.8,7.4,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,mmm,rate GB,5.34171209871129,5.34172540870254,1.33099912504875e-05,5.3,5.3,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,shrink,rate GB,9.28377756177419,9.18501908788638,-0.0987584738878091,9.3,9.2,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,gee,wc AR1,19.1121853163588,17.3997692529564,-1.71241606340232,19.1,17.4,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,gee_fg,wc AR1,2.8505214368482,2.86386339876873,0.0133419619205259,2.9,2.9,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,gee_kc,wc AR1,11.2199791159067,11.0155559483825,-0.204423167524183,11.2,11.0,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,gee_md,wc AR1,6.0307520432763,6.05610561056106,0.0253535672847587,6.0,6.1,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,glmer,wc AR1,2.17232869317086,2.17232869317086,0,2.2,2.2,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,glmer_lrt,wc AR1,1.84175243503293,0.927607031580567,-0.914145403452361,1.8,0.9,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,mmm,wc AR1,0.428222571079714,0.428222571079714,0,0.4,0.4,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,shrink,wc AR1,2.43217129164412,2.41814527040087,-0.0140260212432555,2.4,2.4,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,gee,wc NAT,17.9961696694567,16.8137670111243,-1.18240265833237,18.0,16.8,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,gee_fg,wc NAT,2.83402301456834,2.84235668789809,0.0083336733297541,2.8,2.8,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,gee_kc,wc NAT,10.7406880864373,10.5746695145183,-0.166018571919034,10.7,10.6,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,gee_md,wc NAT,5.89695644669467,5.91045465035772,0.0134982036630529,5.9,5.9,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,glmer,wc NAT,1.8253290367667,1.8253290367667,0,1.8,1.8,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,glmer_lrt,wc NAT,1.75755313715476,0.524008189438715,-1.23354494771604,1.8,0.5,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,mmm,wc NAT,0.487669795371073,0.487669795371073,0,0.5,0.5,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,shrink,wc NAT,2.30498406829,2.22867835335828,-0.0763057149317135,2.3,2.2,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,gee,wc GB,22.078662637684,20.546146293569,-1.53251634411501,22.1,20.5,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,gee_fg,wc GB,4.72205064854849,4.72996407779016,0.00791342924167715,4.7,4.7,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,gee_kc,wc GB,14.1244381503602,13.7997742522104,-0.324663898149751,14.1,13.8,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,gee_md,wc GB,8.55008457056944,8.56272761522039,0.012643044650952,8.6,8.6,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,glmer,wc GB,4.49110690998881,4.49110690998881,0,4.5,4.5,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,glmer_lrt,wc GB,3.64829497344315,2.79357556608742,-0.854719407355739,3.6,2.8,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,mmm,wc GB,0.625683749894808,0.625683749894808,0,0.6,0.6,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,shrink,wc GB,4.89176652493235,4.87511116266481,-0.0166553622675441,4.9,4.9,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,gee,mad AR1,3.17945906497523,2.91620188816584,-0.263257176809397,3.2,2.9,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,gee_fg,mad AR1,0.550892228507482,0.551829009619452,0.000936781111970375,0.6,0.6,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,gee_kc,mad AR1,1.79347544401784,1.77144677363983,-0.0220286703780068,1.8,1.8,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,gee_md,mad AR1,0.954580787167344,0.956063180509744,0.00148239334239997,1.0,1.0,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,glmer,mad AR1,1.58153631581742,1.58320606381393,0.00166974799651087,1.6,1.6,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,glmer_lrt,mad AR1,1.14338334137695,0.606904308344211,-0.536479033032739,1.1,0.6,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,mmm,mad AR1,0.279248137513821,0.279248137513821,0,0.3,0.3,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,shrink,mad AR1,1.8542798249861,1.82272545271163,-0.0315543722744696,1.9,1.8,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,gee,mad NAT,3.04856298181065,2.81565128678494,-0.232911695025711,3.0,2.8,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,gee_fg,mad NAT,0.518624821208572,0.518405164512097,-0.000219656696474613,0.5,0.5,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,gee_kc,mad NAT,1.70510271130835,1.68690936763962,-0.0181933436687347,1.7,1.7,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,gee_md,mad NAT,0.88020911109287,0.87947914144103,-0.00072996965183969,0.9,0.9,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,glmer,mad NAT,1.3756155832883,1.38540030216803,0.00978471887973043,1.4,1.4,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,glmer_lrt,mad NAT,0.771764041118225,0.325035439235867,-0.446728601882359,0.8,0.3,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,mmm,mad NAT,0.195468577312292,0.195468577312292,0,0.2,0.2,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,shrink,mad NAT,1.60508757507333,1.58221624814632,-0.0228713269270076,1.6,1.6,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,gee,mad GB,3.93361243395923,3.64053993849816,-0.29307249546107,3.9,3.6,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,gee_fg,mad GB,1.04306028839004,1.04356639517104,0.000506106780998827,1.0,1.0,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,gee_kc,mad GB,2.48704563671687,2.45624455734402,-0.0308010793728513,2.5,2.5,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,gee_md,mad GB,1.46582521395825,1.46684163421619,0.00101642025794035,1.5,1.5,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,glmer,mad GB,3.47994346364855,3.4456938232982,-0.0342496403503456,3.5,3.4,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,glmer_lrt,mad GB,2.8005328011214,2.33593896892179,-0.464593832199612,2.8,2.3,TRUE,"Si removed, all strategies",TRUE
+b,Table 3,mmm,mad GB,0.326719060349194,0.326745639974144,2.65796249497852e-05,0.3,0.3,TRUE,"Si removed, all strategies",FALSE
+b,Table 3,shrink,mad GB,4.20351186726724,4.07663280445685,-0.126879062810391,4.2,4.1,TRUE,"Si removed, all strategies",TRUE
+b,Table 4,gee,RI T=2,77.8406005463992,72.7876909465782,-5.05290959982104,77.8,72.8,TRUE,"Si removed, all strategies",TRUE
+b,Table 4,gee,RI T=3,91.4314681007516,88.335198734688,-3.09626936606362,91.4,88.3,TRUE,"Si removed, all strategies",TRUE
+b,Table 4,gee,RI T=4,95.8449931137634,93.8322214707355,-2.0127716430279,95.8,93.8,TRUE,"Si removed, all strategies",TRUE
+b,Table 4,gee,RI T=6,98.6364058545878,97.7535423153227,-0.88286353926506,98.6,97.8,TRUE,"Si removed, all strategies",TRUE
+b,Table 4,gee,RI T=8,99.3680016914227,98.9509938473292,-0.417007844093419,99.4,99.0,FALSE,"Si removed, all strategies",TRUE
+b,Table 4,gee,RI T=10,99.6901895626821,99.5086085218033,-0.181581040878712,99.7,99.5,TRUE,"Si removed, all strategies",TRUE
+b,Table 4,gee_fg,RI T=2,72.7307032928101,72.5985417076733,-0.132161585136771,72.7,72.6,TRUE,"Si removed, all strategies",TRUE
+b,Table 4,gee_fg,RI T=3,88.2787312021215,88.2787312021215,0,88.3,88.3,TRUE,"Si removed, all strategies",FALSE
+b,Table 4,gee_fg,RI T=4,93.770579929697,93.770579929697,0,93.8,93.8,TRUE,"Si removed, all strategies",FALSE
+b,Table 4,gee_fg,RI T=6,97.6867262504782,97.6867262504782,0,97.7,97.7,TRUE,"Si removed, all strategies",FALSE
+b,Table 4,gee_fg,RI T=8,98.8799564627719,98.8799564627719,0,98.9,98.9,FALSE,"Si removed, all strategies",FALSE
+b,Table 4,gee_fg,RI T=10,99.4627209111067,99.4627209111067,0,99.5,99.5,TRUE,"Si removed, all strategies",FALSE
+b,Table 4,gee_kc,RI T=2,72.9622861421527,72.5269227199807,-0.435363422172088,73.0,72.5,FALSE,"Si removed, all strategies",TRUE
+b,Table 4,gee_kc,RI T=3,88.6894062974984,88.1917729894042,-0.49763330809418,88.7,88.2,FALSE,"Si removed, all strategies",TRUE
+b,Table 4,gee_kc,RI T=4,93.857163891171,93.7381523863886,-0.119011504782407,93.9,93.7,FALSE,"Si removed, all strategies",TRUE
+b,Table 4,gee_kc,RI T=6,97.6814970797496,97.6710574379283,-0.0104396418212644,97.7,97.7,FALSE,"Si removed, all strategies",FALSE
+b,Table 4,gee_kc,RI T=8,98.8610443190963,98.8568630147141,-0.0041813043821719,98.9,98.9,FALSE,"Si removed, all strategies",FALSE
+b,Table 4,gee_kc,RI T=10,99.3979777608602,99.3969350514841,-0.00104270937605122,99.4,99.4,FALSE,"Si removed, all strategies",FALSE
+b,Table 4,gee_md,RI T=2,72.7168710879572,72.5984914169854,-0.118379670971791,72.7,72.6,FALSE,"Si removed, all strategies",TRUE
+b,Table 4,gee_md,RI T=3,88.2545816568355,88.2545816568355,0,88.3,88.3,FALSE,"Si removed, all strategies",FALSE
+b,Table 4,gee_md,RI T=4,93.7088830667043,93.7088830667043,0,93.7,93.7,FALSE,"Si removed, all strategies",FALSE
+b,Table 4,gee_md,RI T=6,97.631389469427,97.631389469427,0,97.6,97.6,FALSE,"Si removed, all strategies",FALSE
+b,Table 4,gee_md,RI T=8,98.8056989173131,98.8056989173131,0,98.8,98.8,FALSE,"Si removed, all strategies",FALSE
+b,Table 4,gee_md,RI T=10,99.3625182929084,99.3625182929084,0,99.4,99.4,FALSE,"Si removed, all strategies",FALSE
+b,Table 4,glmer,RI T=2,68.5594654419701,68.492632754608,-0.0668326873621226,68.6,68.5,TRUE,"Si removed, all strategies",TRUE
+b,Table 4,glmer,RI T=3,87.7737079144629,87.7455199060734,-0.0281880083894919,87.8,87.7,TRUE,"Si removed, all strategies",TRUE
+b,Table 4,glmer,RI T=4,93.7446295702434,93.7195898258007,-0.025039744442708,93.7,93.7,TRUE,"Si removed, all strategies",FALSE
+b,Table 4,glmer,RI T=6,97.8140279451414,97.8056820804766,-0.00834586466478982,97.8,97.8,TRUE,"Si removed, all strategies",FALSE
+b,Table 4,glmer,RI T=8,99.0355342199127,99.0303133489665,-0.00522087094617518,99.0,99.0,FALSE,"Si removed, all strategies",FALSE
+b,Table 4,glmer,RI T=10,99.5763575521777,99.5711398219098,-0.00521773026790129,99.6,99.6,TRUE,"Si removed, all strategies",FALSE
+b,Table 4,glmer_lrt,RI T=2,98.92714175185,73.113457856195,-25.813683895655,98.9,73.1,TRUE,"Si removed, all strategies",TRUE
+b,Table 4,glmer_lrt,RI T=3,99.6382013628777,88.5325350779317,-11.105666284946,99.6,88.5,TRUE,"Si removed, all strategies",TRUE
+b,Table 4,glmer_lrt,RI T=4,99.8630509724315,93.9824999023452,-5.8805510700863,99.9,94.0,TRUE,"Si removed, all strategies",TRUE
+b,Table 4,glmer_lrt,RI T=6,99.9832873704614,97.8401260185031,-2.14316135195834,100.0,97.8,TRUE,"Si removed, all strategies",TRUE
+b,Table 4,glmer_lrt,RI T=8,99.9989530988275,99.0365832211879,-0.962369877639617,100.0,99.0,FALSE,"Si removed, all strategies",TRUE
+b,Table 4,glmer_lrt,RI T=10,100,99.5721825312859,-0.427817468714125,100.0,99.6,TRUE,"Si removed, all strategies",TRUE
+b,Table 4,mmm,RI T=2,68.1610797118622,68.1610797118622,0,68.2,68.2,TRUE,"Si removed, all strategies",FALSE
+b,Table 4,mmm,RI T=3,87.1024479234074,87.1024479234074,0,87.1,87.1,TRUE,"Si removed, all strategies",FALSE
+b,Table 4,mmm,RI T=4,92.9003231480455,92.9003231480455,0,92.9,92.9,TRUE,"Si removed, all strategies",FALSE
+b,Table 4,mmm,RI T=6,97.4219205566767,97.4219205566767,0,97.4,97.4,TRUE,"Si removed, all strategies",FALSE
+b,Table 4,mmm,RI T=8,98.8517782409204,98.8517782409204,0,98.9,98.9,FALSE,"Si removed, all strategies",FALSE
+b,Table 4,mmm,RI T=10,99.5085489618672,99.5085489618672,0,99.5,99.5,TRUE,"Si removed, all strategies",FALSE
+b,Table 4,shrink,RI T=2,74.0150128120659,73.0454572081352,-0.969555603930701,74.0,73.0,FALSE,"Si removed, all strategies",TRUE
+b,Table 4,shrink,RI T=3,88.8656940967808,88.5084201606113,-0.357273936169463,88.9,88.5,FALSE,"Si removed, all strategies",TRUE
+b,Table 4,shrink,RI T=4,94.1108613004004,93.9730987298159,-0.137762570584442,94.1,94.0,FALSE,"Si removed, all strategies",TRUE
+b,Table 4,shrink,RI T=6,97.8620313030776,97.8390812174332,-0.0229500856443536,97.9,97.8,FALSE,"Si removed, all strategies",TRUE
+b,Table 4,shrink,RI T=8,99.0428415585954,99.0344894188428,-0.00835213975260274,99.0,99.0,FALSE,"Si removed, all strategies",FALSE
+b,Table 4,shrink,RI T=10,99.5763575521777,99.5711398219098,-0.00521773026790129,99.6,99.6,FALSE,"Si removed, all strategies",FALSE
+b,Table 4,gee,RS T=2,77.9751900974013,73.160501280526,-4.81468881687525,78.0,73.2,TRUE,"Si removed, all strategies",TRUE
+b,Table 4,gee,RS T=3,91.477605468485,88.4330870077034,-3.04451846078167,91.5,88.4,TRUE,"Si removed, all strategies",TRUE
+b,Table 4,gee,RS T=4,95.9957280170221,94.0652470643351,-1.93048095268695,96.0,94.1,TRUE,"Si removed, all strategies",TRUE
+b,Table 4,gee,RS T=6,98.7648620173051,97.9708186432751,-0.794043374029982,98.8,98.0,TRUE,"Si removed, all strategies",TRUE
+b,Table 4,gee,RS T=8,99.4679501371737,99.1431406089911,-0.32480952818257,99.5,99.1,FALSE,"Si removed, all strategies",TRUE
+b,Table 4,gee,RS T=10,99.7167737313764,99.5567972140217,-0.159976517354735,99.7,99.6,TRUE,"Si removed, all strategies",TRUE
+b,Table 4,gee_fg,RS T=2,73.1196775734011,73.0198013954649,-0.0998761779361388,73.1,73.0,TRUE,"Si removed, all strategies",TRUE
+b,Table 4,gee_fg,RS T=3,88.4072645386515,88.4065693990675,-0.000695139584024673,88.4,88.4,TRUE,"Si removed, all strategies",FALSE
+b,Table 4,gee_fg,RS T=4,94.055482966066,94.0540905875065,-0.00139237855945851,94.1,94.1,TRUE,"Si removed, all strategies",FALSE
+b,Table 4,gee_fg,RS T=6,97.9513288891301,97.9513288891301,0,98.0,98.0,TRUE,"Si removed, all strategies",FALSE
+b,Table 4,gee_fg,RS T=8,99.1146321893182,99.1146321893182,0,99.1,99.1,FALSE,"Si removed, all strategies",FALSE
+b,Table 4,gee_fg,RS T=10,99.5338471011118,99.5338471011118,0,99.5,99.5,TRUE,"Si removed, all strategies",FALSE
+b,Table 4,gee_kc,RS T=2,73.2339837622587,72.8901616056874,-0.34382215657125,73.2,72.9,FALSE,"Si removed, all strategies",TRUE
+b,Table 4,gee_kc,RS T=3,88.7923148136522,88.3200479826632,-0.472266830988986,88.8,88.3,FALSE,"Si removed, all strategies",TRUE
+b,Table 4,gee_kc,RS T=4,94.1222563030734,93.9989802589628,-0.123276044110582,94.1,94.0,FALSE,"Si removed, all strategies",TRUE
+b,Table 4,gee_kc,RS T=6,97.8872378570002,97.8747162574221,-0.012521599578136,97.9,97.9,FALSE,"Si removed, all strategies",FALSE
+b,Table 4,gee_kc,RS T=8,99.0589443676297,99.0554665787144,-0.00347778891533324,99.1,99.1,FALSE,"Si removed, all strategies",FALSE
+b,Table 4,gee_kc,RS T=10,99.4468512658987,99.4468512658987,0,99.4,99.4,FALSE,"Si removed, all strategies",FALSE
+b,Table 4,gee_md,RS T=2,73.116114303792,73.022641927987,-0.0934723758050495,73.1,73.0,FALSE,"Si removed, all strategies",TRUE
+b,Table 4,gee_md,RS T=3,88.3862626543083,88.3820945973625,-0.00416805694582934,88.4,88.4,FALSE,"Si removed, all strategies",FALSE
+b,Table 4,gee_md,RS T=4,94.0164153736321,94.0157174395171,-0.000697934115024168,94.0,94.0,FALSE,"Si removed, all strategies",FALSE
+b,Table 4,gee_md,RS T=6,97.8740190240441,97.8740190240441,0,97.9,97.9,FALSE,"Si removed, all strategies",FALSE
+b,Table 4,gee_md,RS T=8,99.0394825209884,99.0394825209884,0,99.0,99.0,FALSE,"Si removed, all strategies",FALSE
+b,Table 4,gee_md,RS T=10,99.4343331545938,99.4343331545938,0,99.4,99.4,FALSE,"Si removed, all strategies",FALSE
+b,Table 4,glmer,RS T=2,0.0021244292776842,0.0021244292776842,0,0.0,0.0,TRUE,"Si removed, all strategies",FALSE
+b,Table 4,glmer,RS T=3,56.6586894938711,56.5877325397361,-0.070956954134985,56.7,56.6,TRUE,"Si removed, all strategies",TRUE
+b,Table 4,glmer,RS T=4,90.8227890881244,90.7664127871496,-0.0563763009748044,90.8,90.8,TRUE,"Si removed, all strategies",FALSE
+b,Table 4,glmer,RS T=6,97.7272731734412,97.7133564035923,-0.0139167698488336,97.7,97.7,TRUE,"Si removed, all strategies",FALSE
+b,Table 4,glmer,RS T=8,99.1730233028838,99.1667593735988,-0.00626392928508324,99.2,99.2,FALSE,"Si removed, all strategies",FALSE
+b,Table 4,glmer,RS T=10,99.617332318097,99.615941339606,-0.00139097849103109,99.6,99.6,TRUE,"Si removed, all strategies",FALSE
+b,Table 4,glmer_lrt,RS T=2,0.136465278105719,0.0134105576370551,-0.123054720468664,0.1,0.0,TRUE,"Si removed, all strategies",TRUE
+b,Table 4,glmer_lrt,RS T=3,66.465061870473,59.298895687886,-7.16616618258699,66.5,59.3,TRUE,"Si removed, all strategies",TRUE
+b,Table 4,glmer_lrt,RS T=4,99.4089597111875,93.9103024093945,-5.498657301793,99.4,93.9,TRUE,"Si removed, all strategies",TRUE
+b,Table 4,glmer_lrt,RS T=6,99.9846720297942,98.0738117886963,-1.91086024109784,100.0,98.1,TRUE,"Si removed, all strategies",TRUE
+b,Table 4,glmer_lrt,RS T=8,99.9979117923228,99.2210277174957,-0.776884074827095,100.0,99.2,FALSE,"Si removed, all strategies",TRUE
+b,Table 4,glmer_lrt,RS T=10,99.9993034659534,99.6229038953385,-0.376399570614907,100.0,99.6,TRUE,"Si removed, all strategies",TRUE
+b,Table 4,mmm,RS T=2,42.1910943386337,42.1910943386337,0,42.2,42.2,TRUE,"Si removed, all strategies",FALSE
+b,Table 4,mmm,RS T=3,69.063948525008,69.063948525008,0,69.1,69.1,TRUE,"Si removed, all strategies",FALSE
+b,Table 4,mmm,RS T=4,80.6413163939257,80.6413163939257,0,80.6,80.6,TRUE,"Si removed, all strategies",FALSE
+b,Table 4,mmm,RS T=6,90.35484080131,90.35484080131,0,90.4,90.4,TRUE,"Si removed, all strategies",FALSE
+b,Table 4,mmm,RS T=8,94.640140158964,94.640140158964,0,94.6,94.6,FALSE,"Si removed, all strategies",FALSE
+b,Table 4,mmm,RS T=10,96.845058975726,96.844361742348,-0.000697233377962903,96.8,96.8,TRUE,"Si removed, all strategies",FALSE
+b,Table 4,shrink,RS T=2,0.016257125910492,0.00987877129551645,-0.00637835461497553,0.0,0.0,FALSE,"Si removed, all strategies",FALSE
+b,Table 4,shrink,RS T=3,59.2914278368937,58.8516293647164,-0.439798472177323,59.3,58.9,FALSE,"Si removed, all strategies",TRUE
+b,Table 4,shrink,RS T=4,93.7096780117854,93.3658687299117,-0.343809281873718,93.7,93.4,FALSE,"Si removed, all strategies",TRUE
+b,Table 4,shrink,RS T=6,98.0570865711763,97.9895707286939,-0.0675158424823934,98.1,98.0,FALSE,"Si removed, all strategies",TRUE
+b,Table 4,shrink,RS T=8,99.2293784544148,99.2085047318722,-0.0208737225426034,99.2,99.2,FALSE,"Si removed, all strategies",FALSE
+b,Table 4,shrink,RS T=10,99.6284719885069,99.6215108272454,-0.00696116126155744,99.6,99.6,FALSE,"Si removed, all strategies",FALSE
+c,Table 5,flip,hi_main,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ar1_fg,hi_main,2,0,-2,2,0,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ar1_kc,hi_main,62,54,-8,62,54,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ar1_md,hi_main,7,3,-4,7,3,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ar1_unc,hi_main,214,158,-56,214,158,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_cr2,hi_main,133,88,-45,133,88,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_fg,hi_main,3,0,-3,3,0,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_kc,hi_main,102,95,-7,102,95,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_md,hi_main,17,14,-3,17,14,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_unc,hi_main,242,188,-54,242,188,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_cr2,hi_main,131,87,-44,131,87,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_fg,hi_main,3,0,-3,3,0,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_kc,hi_main,95,90,-5,95,90,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_md,hi_main,18,13,-5,18,13,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_unc,hi_main,223,182,-41,223,182,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,glmer,hi_main,206,203,-3,206,203,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,glmer_lrt,hi_main,223,223,0,223,223,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,mmm_cc,hi_main,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,shrink,hi_main,271,256,-15,271,256,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,flip,hi_m67,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ar1_fg,hi_m67,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ar1_kc,hi_m67,38,36,-2,38,36,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ar1_md,hi_m67,6,6,0,6,6,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ar1_unc,hi_m67,64,50,-14,64,50,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_cr2,hi_m67,52,40,-12,52,40,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_fg,hi_m67,4,3,-1,4,3,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_kc,hi_m67,44,42,-2,44,42,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_md,hi_m67,18,18,0,18,18,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_exch_unc,hi_m67,69,62,-7,69,62,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_cr2,hi_m67,52,38,-14,52,38,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_fg,hi_m67,1,1,0,1,1,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ind_kc,hi_m67,39,38,-1,39,38,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_md,hi_m67,18,18,0,18,18,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ind_unc,hi_m67,66,59,-7,66,59,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,glmer,hi_m67,86,83,-3,86,83,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,glmer_lrt,hi_m67,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,mmm_cc,hi_m67,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,shrink,hi_m67,93,91,-2,93,91,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,flip,hi_copula,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ar1_fg,hi_copula,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ar1_kc,hi_copula,38,36,-2,38,36,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ar1_md,hi_copula,7,6,-1,7,6,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ar1_unc,hi_copula,85,72,-13,85,72,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_cr2,hi_copula,69,56,-13,69,56,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_fg,hi_copula,8,5,-3,8,5,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_kc,hi_copula,61,57,-4,61,57,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_md,hi_copula,28,27,-1,28,27,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_unc,hi_copula,100,92,-8,100,92,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_cr2,hi_copula,68,52,-16,68,52,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_fg,hi_copula,1,1,0,1,1,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ind_kc,hi_copula,55,55,0,55,55,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ind_md,hi_copula,22,21,-1,22,21,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_unc,hi_copula,94,88,-6,94,88,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,glmer,hi_copula,223,221,-2,223,221,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,glmer_lrt,hi_copula,189,189,0,189,189,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,mmm_cc,hi_copula,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,shrink,hi_copula,244,235,-9,244,235,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,flip,hi_all,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ar1_fg,hi_all,2,0,-2,2,0,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ar1_kc,hi_all,138,126,-12,138,126,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ar1_md,hi_all,20,15,-5,20,15,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ar1_unc,hi_all,363,280,-83,363,280,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_cr2,hi_all,254,184,-70,254,184,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_fg,hi_all,15,8,-7,15,8,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_kc,hi_all,207,194,-13,207,194,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_md,hi_all,63,59,-4,63,59,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_unc,hi_all,411,342,-69,411,342,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_cr2,hi_all,251,177,-74,251,177,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_fg,hi_all,5,2,-3,5,2,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_kc,hi_all,189,183,-6,189,183,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_md,hi_all,58,52,-6,58,52,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_unc,hi_all,383,329,-54,383,329,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,glmer,hi_all,515,507,-8,515,507,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,glmer_lrt,hi_all,412,412,0,412,412,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,mmm_cc,hi_all,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,shrink,hi_all,608,582,-26,608,582,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,flip,lo_all,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ar1_fg,lo_all,106,105,-1,106,105,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ar1_kc,lo_all,70,81,11,70,81,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ar1_md,lo_all,103,108,5,103,108,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ar1_unc,lo_all,1,45,44,1,45,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_cr2,lo_all,10,77,67,10,77,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_fg,lo_all,104,102,-2,104,102,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_kc,lo_all,70,81,11,70,81,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_md,lo_all,101,105,4,101,105,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_unc,lo_all,1,45,44,1,45,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_cr2,lo_all,10,81,71,10,81,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_fg,lo_all,104,106,2,104,106,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_kc,lo_all,81,80,-1,81,80,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_md,lo_all,109,112,3,109,112,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_unc,lo_all,2,44,42,2,44,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,glmer,lo_all,15,15,0,15,15,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,glmer_lrt,lo_all,13,13,0,13,13,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,mmm_cc,lo_all,42,42,0,42,42,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,shrink,lo_all,6,12,6,6,12,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,flip,lo_N10,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ar1_fg,lo_N10,5,7,2,5,7,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ar1_kc,lo_N10,3,3,0,3,3,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ar1_md,lo_N10,4,5,1,4,5,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ar1_unc,lo_N10,0,3,3,0,3,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_cr2,lo_N10,0,1,1,0,1,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_fg,lo_N10,3,4,1,3,4,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_kc,lo_N10,3,3,0,3,3,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_exch_md,lo_N10,3,3,0,3,3,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_exch_unc,lo_N10,0,3,3,0,3,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_cr2,lo_N10,0,3,3,0,3,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_fg,lo_N10,7,11,4,7,11,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_kc,lo_N10,3,3,0,3,3,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ind_md,lo_N10,4,6,2,4,6,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_unc,lo_N10,0,3,3,0,3,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,glmer,lo_N10,12,12,0,12,12,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,glmer_lrt,lo_N10,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,mmm_cc,lo_N10,32,32,0,32,32,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,shrink,lo_N10,5,11,6,5,11,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,flip,pu,96.5072858755117,96.5072858755117,0,96.5,96.5,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ar1_fg,pu,91.8974372240942,91.6909932540995,-0.206443969994794,91.9,91.7,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ar1_kc,pu,91.7140775954386,91.5308280066469,-0.183249588791725,91.7,91.5,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ar1_md,pu,91.8237828794894,91.6116091076825,-0.21217377180696,91.8,91.6,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ar1_unc,pu,93.6832391874025,91.6986492285896,-1.98458995881295,93.7,91.7,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_cr2,pu,93.4962621523889,91.7062900736663,-1.78997207872253,93.5,91.7,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_fg,pu,91.9836409277378,91.7793919349544,-0.204248992783477,92.0,91.8,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_kc,pu,91.8012441446593,91.6199355633583,-0.181308581300996,91.8,91.6,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_md,pu,91.9092708569067,91.6996677491501,-0.209603107756635,91.9,91.7,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_unc,pu,93.7808613784155,91.7889481504075,-1.99191322800799,93.8,91.8,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_cr2,pu,93.879065845286,91.963829452444,-1.91523639284198,93.9,92.0,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_fg,pu,92.107668595819,91.954115349622,-0.153553246197006,92.1,92.0,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_kc,pu,92.0294850680076,91.874844252576,-0.154640815431506,92.0,91.9,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_md,pu,92.0302870331217,91.8761164409153,-0.154170592206327,92.0,91.9,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_unc,pu,93.9766046686343,91.9639580868646,-2.01264658176976,94.0,92.0,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,glmer,pu,80.3553158692921,80.3285320773416,-0.026783791950507,80.4,80.3,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,glmer_lrt,pu,86.3679994168263,86.3679994168263,0,86.4,86.4,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,mmm_cc,pu,84.0148734723118,84.0144935858462,-0.000379886465637469,84.0,84.0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,shrink,pu,81.7268531243199,81.517352687318,-0.209500437001964,81.7,81.5,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,flip,upow,20.9064343479589,20.9064343479589,0,20.9,20.9,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ar1_fg,upow,19.3633330830881,19.3470163599855,-0.0163167231026478,19.4,19.3,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ar1_kc,upow,20.6537791478297,20.6327818905978,-0.0209972572318193,20.7,20.6,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ar1_md,upow,19.6174890278085,19.5990771003317,-0.0184119274768761,19.6,19.6,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ar1_unc,upow,22.2291184959945,21.7887416241551,-0.44037687183932,22.2,21.8,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_cr2,upow,21.3904401950591,21.0474270978652,-0.343013097193822,21.4,21.0,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_fg,upow,19.8728098679487,19.855309648125,-0.0175002198236278,19.9,19.9,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_exch_kc,upow,21.0726718493755,21.0513770014385,-0.0212948479370247,21.1,21.1,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_exch_md,upow,19.9995651604594,19.9815353649554,-0.0180297955040274,20.0,20.0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_exch_unc,upow,22.6982960667652,22.2479130782978,-0.4503829884674,22.7,22.2,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_cr2,upow,21.1626825954347,20.8222255184897,-0.340457076944979,21.2,20.8,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_fg,upow,19.338744854543,19.3277580842018,-0.0109867703412618,19.3,19.3,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ind_kc,upow,20.8422813430621,20.8282140091991,-0.0140673338630002,20.8,20.8,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ind_md,upow,19.7691101985873,19.7580876925374,-0.0110225060499651,19.8,19.8,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ind_unc,upow,22.448295385512,22.0226424749243,-0.425652910587697,22.4,22.0,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,glmer,upow,23.1813901677897,23.1595306441519,-0.0218595236378292,23.2,23.2,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,glmer_lrt,upow,24.4801862027844,24.4801862027844,0,24.5,24.5,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,mmm_cc,upow,20.3089752762771,20.3089752762771,0,20.3,20.3,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,shrink,upow,23.7425790304421,23.647844387,-0.0947346434420808,23.7,23.6,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,flip,pu_small,72.2703772598972,72.2703772598972,0,72.3,72.3,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ar1_fg,pu_small,43.720315201475,41.9492821546409,-1.77103304683406,43.7,41.9,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ar1_kc,pu_small,42.5397878354377,41.0405498708863,-1.49923796455139,42.5,41.0,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ar1_md,pu_small,43.4682280680321,41.6638042652584,-1.80442380277378,43.5,41.7,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ar1_unc,pu_small,55.9601177414433,41.9694155684454,-13.9907021729979,56.0,42.0,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_cr2,pu_small,54.2887799139116,41.5120188235672,-12.7767610903443,54.3,41.5,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_fg,pu_small,43.895202684254,42.1273982542608,-1.76780442999323,43.9,42.1,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_kc,pu_small,42.7169304748354,41.2195233256281,-1.49740714920735,42.7,41.2,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_md,pu_small,43.638955106457,41.8395813897909,-1.79937371666612,43.6,41.8,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_exch_unc,pu_small,56.1113291768061,42.1517272483202,-13.959601928486,56.1,42.2,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_cr2,pu_small,57.169091323751,42.8871746560835,-14.2819166676675,57.2,42.9,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_fg,pu_small,44.1295250701983,42.8685172259082,-1.26100784429012,44.1,42.9,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_kc,pu_small,43.8364299989601,42.5722523836468,-1.26417761531328,43.8,42.6,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_md,pu_small,43.8461654388437,42.5894792627687,-1.25668617607504,43.8,42.6,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ind_unc,pu_small,57.3070420448963,42.8881266717465,-14.4189153731498,57.3,42.9,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,glmer,pu_small,28.2342056746725,28.111146626885,-0.123059047787564,28.2,28.1,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,glmer_lrt,pu_small,61.8981304611237,61.8981304611237,0,61.9,61.9,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,mmm_cc,pu_small,27.6377270741345,27.6372641111715,-0.000462962962963331,27.6,27.6,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,shrink,pu_small,33.6786054806549,32.3541853870123,-1.32442009364258,33.7,32.4,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,flip,chosen,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ar1_fg,chosen,0,1,1,0,1,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ar1_kc,chosen,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ar1_md,chosen,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ar1_unc,chosen,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_exch_cr2,chosen,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_exch_fg,chosen,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_exch_kc,chosen,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_exch_md,chosen,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_exch_unc,chosen,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ind_cr2,chosen,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ind_fg,chosen,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ind_kc,chosen,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ind_md,chosen,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ind_unc,chosen,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,glmer,chosen,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,glmer_lrt,chosen,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,mmm_cc,chosen,1,0,-1,1,0,TRUE,"S removed, Wald strategies",TRUE
+c,Table 5,shrink,chosen,0,0,0,0,0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 5,flip,eligible,0,0,0,0,0,FALSE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ar1_fg,eligible,0,1,1,0,1,FALSE,"S removed, Wald strategies",TRUE
+c,Table 5,gee_ar1_kc,eligible,0,0,0,0,0,FALSE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ar1_md,eligible,0,0,0,0,0,FALSE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ar1_unc,eligible,0,0,0,0,0,FALSE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_exch_cr2,eligible,0,0,0,0,0,FALSE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_exch_fg,eligible,0,0,0,0,0,FALSE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_exch_kc,eligible,0,0,0,0,0,FALSE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_exch_md,eligible,0,0,0,0,0,FALSE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_exch_unc,eligible,0,0,0,0,0,FALSE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ind_cr2,eligible,0,0,0,0,0,FALSE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ind_fg,eligible,0,0,0,0,0,FALSE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ind_kc,eligible,0,0,0,0,0,FALSE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ind_md,eligible,0,0,0,0,0,FALSE,"S removed, Wald strategies",FALSE
+c,Table 5,gee_ind_unc,eligible,0,0,0,0,0,FALSE,"S removed, Wald strategies",FALSE
+c,Table 5,glmer,eligible,0,0,0,0,0,FALSE,"S removed, Wald strategies",FALSE
+c,Table 5,glmer_lrt,eligible,0,0,0,0,0,FALSE,"S removed, Wald strategies",FALSE
+c,Table 5,mmm_cc,eligible,1,1,0,1,1,FALSE,"S removed, Wald strategies",FALSE
+c,Table 5,shrink,eligible,0,0,0,0,0,FALSE,"S removed, Wald strategies",FALSE
+c,Table 3,gee,rate AR1,7.71749506071437,7.32471176583732,-0.392783294877043,7.7,7.3,TRUE,"S removed, Wald strategies",TRUE
+c,Table 3,gee_fg,rate AR1,5.34336284387783,5.34361514741242,0.00025230353458916,5.3,5.3,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,gee_kc,rate AR1,6.39727669584493,6.37238798023441,-0.0248887156105209,6.4,6.4,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,gee_md,rate AR1,5.56350820607834,5.56372343582576,0.000215229747415613,5.6,5.6,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,glmer,rate AR1,6.55274385078627,6.53396909029752,-0.0187747604887507,6.6,6.5,TRUE,"S removed, Wald strategies",TRUE
+c,Table 3,glmer_lrt,rate AR1,6.14199940247299,6.14199940247299,0,6.1,6.1,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,mmm,rate AR1,5.25569245983189,5.25573183431184,3.93744799564999e-05,5.3,5.3,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,shrink,rate AR1,6.91019516161822,6.83369152262704,-0.0765036389911762,6.9,6.8,TRUE,"S removed, Wald strategies",TRUE
+c,Table 3,gee,rate NAT,7.62598911585109,7.26967343395971,-0.356315681891382,7.6,7.3,TRUE,"S removed, Wald strategies",TRUE
+c,Table 3,gee_fg,rate NAT,5.32219581170252,5.32140222817224,-0.000793583530280806,5.3,5.3,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,gee_kc,rate NAT,6.34172285724588,6.3199711087035,-0.0217517485423775,6.3,6.3,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,gee_md,rate NAT,5.5073032807786,5.50558729198594,-0.00171598879265211,5.5,5.5,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,glmer,rate NAT,6.29781487156008,6.27654457441692,-0.0212702971431638,6.3,6.3,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,glmer_lrt,rate NAT,5.77026372774067,5.77026372774067,0,5.8,5.8,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,mmm,rate NAT,5.09713984709077,5.09716517707394,2.53299831642906e-05,5.1,5.1,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,shrink,rate NAT,6.64424631635503,6.56904466879279,-0.0752016475622446,6.6,6.6,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,gee,rate GB,8.36855019348863,7.87896329790144,-0.489586895587194,8.4,7.9,TRUE,"S removed, Wald strategies",TRUE
+c,Table 3,gee_fg,rate GB,5.82570543781156,5.82530472228305,-0.000400715528512841,5.8,5.8,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,gee_kc,rate GB,6.94964248373011,6.91542913237527,-0.0342133513548388,6.9,6.9,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,gee_md,rate GB,6.08874610982833,6.08830194362861,-0.000444166199722318,6.1,6.1,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,glmer,rate GB,8.61163506014761,8.58592449146836,-0.0257105686792478,8.6,8.6,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,glmer_lrt,rate GB,7.80045078163607,7.80045078163607,0,7.8,7.8,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,mmm,rate GB,5.34171209871129,5.34175202888403,3.9930172740732e-05,5.3,5.3,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,shrink,rate GB,9.28377756177419,9.18485678807098,-0.0989207737032096,9.3,9.2,TRUE,"S removed, Wald strategies",TRUE
+c,Table 3,gee,wc AR1,19.1121853163588,17.3697120101576,-1.74247330620121,19.1,17.4,TRUE,"S removed, Wald strategies",TRUE
+c,Table 3,gee_fg,wc AR1,2.8505214368482,2.86386339876873,0.0133419619205259,2.9,2.9,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,gee_kc,wc AR1,11.2199791159067,11.0155559483825,-0.204423167524183,11.2,11.0,TRUE,"S removed, Wald strategies",TRUE
+c,Table 3,gee_md,wc AR1,6.0307520432763,6.05610561056106,0.0253535672847587,6.0,6.1,TRUE,"S removed, Wald strategies",TRUE
+c,Table 3,glmer,wc AR1,2.17232869317086,2.17232869317086,0,2.2,2.2,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,glmer_lrt,wc AR1,1.84175243503293,1.84175243503293,0,1.8,1.8,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,mmm,wc AR1,0.428222571079714,0.428222571079714,0,0.4,0.4,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,shrink,wc AR1,2.43217129164412,2.41814527040087,-0.0140260212432555,2.4,2.4,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,gee,wc NAT,17.9961696694567,16.8017509178198,-1.19441875163684,18.0,16.8,TRUE,"S removed, Wald strategies",TRUE
+c,Table 3,gee_fg,wc NAT,2.83402301456834,2.84235668789809,0.0083336733297541,2.8,2.8,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,gee_kc,wc NAT,10.7406880864373,10.5746695145183,-0.166018571919034,10.7,10.6,TRUE,"S removed, Wald strategies",TRUE
+c,Table 3,gee_md,wc NAT,5.89695644669467,5.91045465035772,0.0134982036630529,5.9,5.9,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,glmer,wc NAT,1.8253290367667,1.8253290367667,0,1.8,1.8,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,glmer_lrt,wc NAT,1.75755313715476,1.75755313715476,0,1.8,1.8,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,mmm,wc NAT,0.487669795371073,0.487406716417911,-0.000263078953161688,0.5,0.5,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,shrink,wc NAT,2.30498406829,2.22867835335828,-0.0763057149317135,2.3,2.2,TRUE,"S removed, Wald strategies",TRUE
+c,Table 3,gee,wc GB,22.078662637684,20.529433429501,-1.54922920818303,22.1,20.5,TRUE,"S removed, Wald strategies",TRUE
+c,Table 3,gee_fg,wc GB,4.72205064854849,4.72996407779016,0.00791342924167715,4.7,4.7,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,gee_kc,wc GB,14.1244381503602,13.7997742522104,-0.324663898149751,14.1,13.8,TRUE,"S removed, Wald strategies",TRUE
+c,Table 3,gee_md,wc GB,8.55008457056944,8.56272761522039,0.012643044650952,8.6,8.6,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,glmer,wc GB,4.49110690998881,4.49110690998881,0,4.5,4.5,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,glmer_lrt,wc GB,3.64829497344315,3.64829497344315,0,3.6,3.6,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,mmm,wc GB,0.625683749894808,0.625683749894808,0,0.6,0.6,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,shrink,wc GB,4.89176652493235,4.87511116266481,-0.0166553622675441,4.9,4.9,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,gee,mad AR1,3.17945906497523,2.91407563062674,-0.265383434348493,3.2,2.9,TRUE,"S removed, Wald strategies",TRUE
+c,Table 3,gee_fg,mad AR1,0.550892228507482,0.551829009619452,0.000936781111970375,0.6,0.6,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,gee_kc,mad AR1,1.79347544401784,1.77144677363983,-0.0220286703780068,1.8,1.8,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,gee_md,mad AR1,0.954580787167344,0.956063180509744,0.00148239334239997,1.0,1.0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,glmer,mad AR1,1.58153631581742,1.5831320095366,0.00159569371918389,1.6,1.6,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,glmer_lrt,mad AR1,1.14338334137695,1.14338334137695,0,1.1,1.1,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,mmm,mad AR1,0.279248137513821,0.279178532959611,-6.96045542098456e-05,0.3,0.3,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,shrink,mad AR1,1.8542798249861,1.82264324860316,-0.0316365763829443,1.9,1.8,TRUE,"S removed, Wald strategies",TRUE
+c,Table 3,gee,mad NAT,3.04856298181065,2.8146963693554,-0.233866612455242,3.0,2.8,TRUE,"S removed, Wald strategies",TRUE
+c,Table 3,gee_fg,mad NAT,0.518624821208572,0.518405164512097,-0.000219656696474613,0.5,0.5,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,gee_kc,mad NAT,1.70510271130835,1.68690936763962,-0.0181933436687347,1.7,1.7,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,gee_md,mad NAT,0.88020911109287,0.87947914144103,-0.00072996965183969,0.9,0.9,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,glmer,mad NAT,1.3756155832883,1.38534414530725,0.00972856201894645,1.4,1.4,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,glmer_lrt,mad NAT,0.771764041118225,0.771764041118225,0,0.8,0.8,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,mmm,mad NAT,0.195468577312292,0.195428641640883,-3.99356714090304e-05,0.2,0.2,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,shrink,mad NAT,1.60508757507333,1.58218512054319,-0.0229024545301335,1.6,1.6,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,gee,mad GB,3.93361243395923,3.63954597293798,-0.294066461021247,3.9,3.6,TRUE,"S removed, Wald strategies",TRUE
+c,Table 3,gee_fg,mad GB,1.04306028839004,1.04356639517104,0.000506106780998827,1.0,1.0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,gee_kc,mad GB,2.48704563671687,2.45624455734402,-0.0308010793728513,2.5,2.5,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,gee_md,mad GB,1.46582521395825,1.46684163421619,0.00101642025794035,1.5,1.5,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,glmer,mad GB,3.47994346364855,3.44576162191966,-0.0341818417288851,3.5,3.4,TRUE,"S removed, Wald strategies",TRUE
+c,Table 3,glmer_lrt,mad GB,2.8005328011214,2.8005328011214,0,2.8,2.8,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,mmm,mad GB,0.326719060349194,0.326798812488432,7.97521392384981e-05,0.3,0.3,TRUE,"S removed, Wald strategies",FALSE
+c,Table 3,shrink,mad GB,4.20351186726724,4.07641550795338,-0.127096359313862,4.2,4.1,TRUE,"S removed, Wald strategies",TRUE
+c,Table 4,gee,RI T=2,77.8406005463992,72.7834278138914,-5.05717273250781,77.8,72.8,TRUE,"S removed, Wald strategies",TRUE
+c,Table 4,gee,RI T=3,91.4314681007516,88.3341486674837,-3.09731943326793,91.4,88.3,TRUE,"S removed, Wald strategies",TRUE
+c,Table 4,gee,RI T=4,95.8449931137634,93.8311798040688,-2.0138133096946,95.8,93.8,TRUE,"S removed, Wald strategies",TRUE
+c,Table 4,gee,RI T=6,98.6364058545878,97.7451839067637,-0.891221947824064,98.6,97.7,TRUE,"S removed, Wald strategies",TRUE
+c,Table 4,gee,RI T=8,99.3680016914227,98.9478531438117,-0.420148547611007,99.4,98.9,FALSE,"S removed, Wald strategies",TRUE
+c,Table 4,gee,RI T=10,99.6901895626821,99.5086085218033,-0.181581040878712,99.7,99.5,TRUE,"S removed, Wald strategies",TRUE
+c,Table 4,gee_fg,RI T=2,72.7307032928101,72.5985417076733,-0.132161585136771,72.7,72.6,TRUE,"S removed, Wald strategies",TRUE
+c,Table 4,gee_fg,RI T=3,88.2787312021215,88.2787312021215,0,88.3,88.3,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,gee_fg,RI T=4,93.770579929697,93.770579929697,0,93.8,93.8,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,gee_fg,RI T=6,97.6867262504782,97.6867262504782,0,97.7,97.7,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,gee_fg,RI T=8,98.8799564627719,98.8799564627719,0,98.9,98.9,FALSE,"S removed, Wald strategies",FALSE
+c,Table 4,gee_fg,RI T=10,99.4627209111067,99.4627209111067,0,99.5,99.5,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,gee_kc,RI T=2,72.9622861421527,72.5269227199807,-0.435363422172088,73.0,72.5,FALSE,"S removed, Wald strategies",TRUE
+c,Table 4,gee_kc,RI T=3,88.6894062974984,88.1917729894042,-0.49763330809418,88.7,88.2,FALSE,"S removed, Wald strategies",TRUE
+c,Table 4,gee_kc,RI T=4,93.857163891171,93.7381523863886,-0.119011504782407,93.9,93.7,FALSE,"S removed, Wald strategies",TRUE
+c,Table 4,gee_kc,RI T=6,97.6814970797496,97.6710574379283,-0.0104396418212644,97.7,97.7,FALSE,"S removed, Wald strategies",FALSE
+c,Table 4,gee_kc,RI T=8,98.8610443190963,98.8568630147141,-0.0041813043821719,98.9,98.9,FALSE,"S removed, Wald strategies",FALSE
+c,Table 4,gee_kc,RI T=10,99.3979777608602,99.3969350514841,-0.00104270937605122,99.4,99.4,FALSE,"S removed, Wald strategies",FALSE
+c,Table 4,gee_md,RI T=2,72.7168710879572,72.5984914169854,-0.118379670971791,72.7,72.6,FALSE,"S removed, Wald strategies",TRUE
+c,Table 4,gee_md,RI T=3,88.2545816568355,88.2545816568355,0,88.3,88.3,FALSE,"S removed, Wald strategies",FALSE
+c,Table 4,gee_md,RI T=4,93.7088830667043,93.7088830667043,0,93.7,93.7,FALSE,"S removed, Wald strategies",FALSE
+c,Table 4,gee_md,RI T=6,97.631389469427,97.631389469427,0,97.6,97.6,FALSE,"S removed, Wald strategies",FALSE
+c,Table 4,gee_md,RI T=8,98.8056989173131,98.8056989173131,0,98.8,98.8,FALSE,"S removed, Wald strategies",FALSE
+c,Table 4,gee_md,RI T=10,99.3625182929084,99.3625182929084,0,99.4,99.4,FALSE,"S removed, Wald strategies",FALSE
+c,Table 4,glmer,RI T=2,68.5594654419701,68.492632754608,-0.0668326873621226,68.6,68.5,TRUE,"S removed, Wald strategies",TRUE
+c,Table 4,glmer,RI T=3,87.7737079144629,87.7455199060734,-0.0281880083894919,87.8,87.7,TRUE,"S removed, Wald strategies",TRUE
+c,Table 4,glmer,RI T=4,93.7446295702434,93.718548159134,-0.0260814111093737,93.7,93.7,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,glmer,RI T=6,97.8140279451414,97.7973236719176,-0.0167042732238087,97.8,97.8,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,glmer,RI T=8,99.0355342199127,99.0271726454489,-0.00836157446376262,99.0,99.0,FALSE,"S removed, Wald strategies",FALSE
+c,Table 4,glmer,RI T=10,99.5763575521777,99.5711398219098,-0.00521773026790129,99.6,99.6,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,glmer_lrt,RI T=2,98.92714175185,98.92714175185,0,98.9,98.9,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,glmer_lrt,RI T=3,99.6382013628777,99.6382013628777,0,99.6,99.6,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,glmer_lrt,RI T=4,99.8630509724315,99.8630509724315,0,99.9,99.9,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,glmer_lrt,RI T=6,99.9832873704614,99.9832873704614,0,100.0,100.0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,glmer_lrt,RI T=8,99.9989530988275,99.9989530988275,0,100.0,100.0,FALSE,"S removed, Wald strategies",FALSE
+c,Table 4,glmer_lrt,RI T=10,100,100,0,100.0,100.0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,mmm,RI T=2,68.1610797118622,68.1610797118622,0,68.2,68.2,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,mmm,RI T=3,87.1024479234074,87.1024479234074,0,87.1,87.1,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,mmm,RI T=4,92.9003231480455,92.8992814813788,-0.00104166666666572,92.9,92.9,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,mmm,RI T=6,97.4219205566767,97.4177413523972,-0.00417920427950946,97.4,97.4,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,mmm,RI T=8,98.8517782409204,98.8496844385754,-0.00209380234505829,98.9,98.8,FALSE,"S removed, Wald strategies",TRUE
+c,Table 4,mmm,RI T=10,99.5085489618672,99.5085489618672,0,99.5,99.5,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,shrink,RI T=2,74.0150128120659,73.0444124070653,-0.970600405000582,74.0,73.0,FALSE,"S removed, Wald strategies",TRUE
+c,Table 4,shrink,RI T=3,88.8656940967808,88.5084201606113,-0.357273936169463,88.9,88.5,FALSE,"S removed, Wald strategies",TRUE
+c,Table 4,shrink,RI T=4,94.1108613004004,93.9720570631493,-0.138804237251122,94.1,94.0,FALSE,"S removed, Wald strategies",TRUE
+c,Table 4,shrink,RI T=6,97.8620313030776,97.8307228088742,-0.0313084942033584,97.9,97.8,FALSE,"S removed, Wald strategies",TRUE
+c,Table 4,shrink,RI T=8,99.0428415585954,99.0313487153252,-0.0114928432701902,99.0,99.0,FALSE,"S removed, Wald strategies",FALSE
+c,Table 4,shrink,RI T=10,99.5763575521777,99.5711398219098,-0.00521773026790129,99.6,99.6,FALSE,"S removed, Wald strategies",FALSE
+c,Table 4,gee,RS T=2,77.9751900974013,73.1576844683999,-4.8175056290013,78.0,73.2,TRUE,"S removed, Wald strategies",TRUE
+c,Table 4,gee,RS T=3,91.477605468485,88.4330870077034,-3.04451846078167,91.5,88.4,TRUE,"S removed, Wald strategies",TRUE
+c,Table 4,gee,RS T=4,95.9957280170221,94.0652470643351,-1.93048095268695,96.0,94.1,TRUE,"S removed, Wald strategies",TRUE
+c,Table 4,gee,RS T=6,98.7648620173051,97.9708186432751,-0.794043374029982,98.8,98.0,TRUE,"S removed, Wald strategies",TRUE
+c,Table 4,gee,RS T=8,99.4679501371737,99.1431406089911,-0.32480952818257,99.5,99.1,FALSE,"S removed, Wald strategies",TRUE
+c,Table 4,gee,RS T=10,99.7167737313764,99.5567972140217,-0.159976517354735,99.7,99.6,TRUE,"S removed, Wald strategies",TRUE
+c,Table 4,gee_fg,RS T=2,73.1196775734011,73.0198013954649,-0.0998761779361388,73.1,73.0,TRUE,"S removed, Wald strategies",TRUE
+c,Table 4,gee_fg,RS T=3,88.4072645386515,88.4065693990675,-0.000695139584024673,88.4,88.4,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,gee_fg,RS T=4,94.055482966066,94.0540905875065,-0.00139237855945851,94.1,94.1,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,gee_fg,RS T=6,97.9513288891301,97.9513288891301,0,98.0,98.0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,gee_fg,RS T=8,99.1146321893182,99.1146321893182,0,99.1,99.1,FALSE,"S removed, Wald strategies",FALSE
+c,Table 4,gee_fg,RS T=10,99.5338471011118,99.5338471011118,0,99.5,99.5,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,gee_kc,RS T=2,73.2339837622587,72.8901616056874,-0.34382215657125,73.2,72.9,FALSE,"S removed, Wald strategies",TRUE
+c,Table 4,gee_kc,RS T=3,88.7923148136522,88.3200479826632,-0.472266830988986,88.8,88.3,FALSE,"S removed, Wald strategies",TRUE
+c,Table 4,gee_kc,RS T=4,94.1222563030734,93.9989802589628,-0.123276044110582,94.1,94.0,FALSE,"S removed, Wald strategies",TRUE
+c,Table 4,gee_kc,RS T=6,97.8872378570002,97.8747162574221,-0.012521599578136,97.9,97.9,FALSE,"S removed, Wald strategies",FALSE
+c,Table 4,gee_kc,RS T=8,99.0589443676297,99.0554665787144,-0.00347778891533324,99.1,99.1,FALSE,"S removed, Wald strategies",FALSE
+c,Table 4,gee_kc,RS T=10,99.4468512658987,99.4468512658987,0,99.4,99.4,FALSE,"S removed, Wald strategies",FALSE
+c,Table 4,gee_md,RS T=2,73.116114303792,73.022641927987,-0.0934723758050495,73.1,73.0,FALSE,"S removed, Wald strategies",TRUE
+c,Table 4,gee_md,RS T=3,88.3862626543083,88.3820945973625,-0.00416805694582934,88.4,88.4,FALSE,"S removed, Wald strategies",FALSE
+c,Table 4,gee_md,RS T=4,94.0164153736321,94.0157174395171,-0.000697934115024168,94.0,94.0,FALSE,"S removed, Wald strategies",FALSE
+c,Table 4,gee_md,RS T=6,97.8740190240441,97.8740190240441,0,97.9,97.9,FALSE,"S removed, Wald strategies",FALSE
+c,Table 4,gee_md,RS T=8,99.0394825209884,99.0394825209884,0,99.0,99.0,FALSE,"S removed, Wald strategies",FALSE
+c,Table 4,gee_md,RS T=10,99.4343331545938,99.4343331545938,0,99.4,99.4,FALSE,"S removed, Wald strategies",FALSE
+c,Table 4,glmer,RS T=2,0.0021244292776842,0.0021244292776842,0,0.0,0.0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,glmer,RS T=3,56.6586894938711,56.5877325397361,-0.070956954134985,56.7,56.6,TRUE,"S removed, Wald strategies",TRUE
+c,Table 4,glmer,RS T=4,90.8227890881244,90.7664127871496,-0.0563763009748044,90.8,90.8,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,glmer,RS T=6,97.7272731734412,97.7133564035923,-0.0139167698488336,97.7,97.7,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,glmer,RS T=8,99.1730233028838,99.1667593735988,-0.00626392928508324,99.2,99.2,FALSE,"S removed, Wald strategies",FALSE
+c,Table 4,glmer,RS T=10,99.617332318097,99.615941339606,-0.00139097849103109,99.6,99.6,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,glmer_lrt,RS T=2,0.136465278105719,0.136465278105719,0,0.1,0.1,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,glmer_lrt,RS T=3,66.465061870473,66.465061870473,0,66.5,66.5,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,glmer_lrt,RS T=4,99.4089597111875,99.4089597111875,0,99.4,99.4,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,glmer_lrt,RS T=6,99.9846720297942,99.9846720297942,0,100.0,100.0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,glmer_lrt,RS T=8,99.9979117923228,99.9979117923228,0,100.0,100.0,FALSE,"S removed, Wald strategies",FALSE
+c,Table 4,glmer_lrt,RS T=10,99.9993034659534,99.9993034659534,0,100.0,100.0,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,mmm,RS T=2,42.1910943386337,42.1910943386337,0,42.2,42.2,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,mmm,RS T=3,69.063948525008,69.063948525008,0,69.1,69.1,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,mmm,RS T=4,80.6413163939257,80.6413163939257,0,80.6,80.6,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,mmm,RS T=6,90.35484080131,90.35484080131,0,90.4,90.4,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,mmm,RS T=8,94.640140158964,94.640140158964,0,94.6,94.6,FALSE,"S removed, Wald strategies",FALSE
+c,Table 4,mmm,RS T=10,96.845058975726,96.844361742348,-0.000697233377962903,96.8,96.8,TRUE,"S removed, Wald strategies",FALSE
+c,Table 4,shrink,RS T=2,0.016257125910492,0.00987877129551645,-0.00637835461497553,0.0,0.0,FALSE,"S removed, Wald strategies",FALSE
+c,Table 4,shrink,RS T=3,59.2914278368937,58.8516293647164,-0.439798472177323,59.3,58.9,FALSE,"S removed, Wald strategies",TRUE
+c,Table 4,shrink,RS T=4,93.7096780117854,93.3658687299117,-0.343809281873718,93.7,93.4,FALSE,"S removed, Wald strategies",TRUE
+c,Table 4,shrink,RS T=6,98.0570865711763,97.9895707286939,-0.0675158424823934,98.1,98.0,FALSE,"S removed, Wald strategies",TRUE
+c,Table 4,shrink,RS T=8,99.2293784544148,99.2085047318722,-0.0208737225426034,99.2,99.2,FALSE,"S removed, Wald strategies",FALSE
+c,Table 4,shrink,RS T=10,99.6284719885069,99.6215108272454,-0.00696116126155744,99.6,99.6,FALSE,"S removed, Wald strategies",FALSE
+d,Table 5,flip,hi_main,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ar1_fg,hi_main,2,0,-2,2,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ar1_kc,hi_main,62,53,-9,62,53,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ar1_md,hi_main,7,3,-4,7,3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ar1_unc,hi_main,214,154,-60,214,154,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_cr2,hi_main,133,85,-48,133,85,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_fg,hi_main,3,0,-3,3,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_kc,hi_main,102,91,-11,102,91,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_md,hi_main,17,14,-3,17,14,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_unc,hi_main,242,186,-56,242,186,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_cr2,hi_main,131,81,-50,131,81,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_fg,hi_main,3,0,-3,3,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_kc,hi_main,95,90,-5,95,90,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_md,hi_main,18,12,-6,18,12,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_unc,hi_main,223,179,-44,223,179,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,glmer,hi_main,206,203,-3,206,203,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,glmer_lrt,hi_main,223,223,0,223,223,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,mmm_cc,hi_main,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,shrink,hi_main,271,254,-17,271,254,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,flip,hi_m67,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ar1_fg,hi_m67,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ar1_kc,hi_m67,38,36,-2,38,36,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ar1_md,hi_m67,6,5,-1,6,5,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ar1_unc,hi_m67,64,50,-14,64,50,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_cr2,hi_m67,52,39,-13,52,39,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_fg,hi_m67,4,3,-1,4,3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_kc,hi_m67,44,41,-3,44,41,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_md,hi_m67,18,17,-1,18,17,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_unc,hi_m67,69,61,-8,69,61,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_cr2,hi_m67,52,37,-15,52,37,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_fg,hi_m67,1,1,0,1,1,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ind_kc,hi_m67,39,38,-1,39,38,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_md,hi_m67,18,18,0,18,18,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ind_unc,hi_m67,66,59,-7,66,59,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,glmer,hi_m67,86,83,-3,86,83,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,glmer_lrt,hi_m67,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,mmm_cc,hi_m67,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,shrink,hi_m67,93,88,-5,93,88,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,flip,hi_copula,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ar1_fg,hi_copula,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ar1_kc,hi_copula,38,34,-4,38,34,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ar1_md,hi_copula,7,6,-1,7,6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ar1_unc,hi_copula,85,69,-16,85,69,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_cr2,hi_copula,69,54,-15,69,54,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_fg,hi_copula,8,3,-5,8,3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_kc,hi_copula,61,55,-6,61,55,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_md,hi_copula,28,26,-2,28,26,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_unc,hi_copula,100,86,-14,100,86,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_cr2,hi_copula,68,51,-17,68,51,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_fg,hi_copula,1,1,0,1,1,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ind_kc,hi_copula,55,54,-1,55,54,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_md,hi_copula,22,20,-2,22,20,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_unc,hi_copula,94,85,-9,94,85,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,glmer,hi_copula,223,221,-2,223,221,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,glmer_lrt,hi_copula,189,189,0,189,189,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,mmm_cc,hi_copula,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,shrink,hi_copula,244,236,-8,244,236,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,flip,hi_all,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ar1_fg,hi_all,2,0,-2,2,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ar1_kc,hi_all,138,123,-15,138,123,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ar1_md,hi_all,20,14,-6,20,14,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ar1_unc,hi_all,363,273,-90,363,273,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_cr2,hi_all,254,178,-76,254,178,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_fg,hi_all,15,6,-9,15,6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_kc,hi_all,207,187,-20,207,187,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_md,hi_all,63,57,-6,63,57,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_unc,hi_all,411,333,-78,411,333,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_cr2,hi_all,251,169,-82,251,169,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_fg,hi_all,5,2,-3,5,2,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_kc,hi_all,189,182,-7,189,182,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_md,hi_all,58,50,-8,58,50,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_unc,hi_all,383,323,-60,383,323,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,glmer,hi_all,515,507,-8,515,507,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,glmer_lrt,hi_all,412,412,0,412,412,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,mmm_cc,hi_all,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,shrink,hi_all,608,578,-30,608,578,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,flip,lo_all,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ar1_fg,lo_all,106,100,-6,106,100,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ar1_kc,lo_all,70,77,7,70,77,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ar1_md,lo_all,103,106,3,103,106,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ar1_unc,lo_all,1,32,31,1,32,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_cr2,lo_all,10,76,66,10,76,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_fg,lo_all,104,97,-7,104,97,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_kc,lo_all,70,77,7,70,77,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_md,lo_all,101,103,2,101,103,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_unc,lo_all,1,32,31,1,32,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_cr2,lo_all,10,75,65,10,75,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_fg,lo_all,104,102,-2,104,102,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_kc,lo_all,81,75,-6,81,75,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_md,lo_all,109,106,-3,109,106,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_unc,lo_all,2,36,34,2,36,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,glmer,lo_all,15,14,-1,15,14,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,glmer_lrt,lo_all,13,13,0,13,13,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,mmm_cc,lo_all,42,38,-4,42,38,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,shrink,lo_all,6,11,5,6,11,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,flip,lo_N10,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ar1_fg,lo_N10,5,7,2,5,7,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ar1_kc,lo_N10,3,3,0,3,3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ar1_md,lo_N10,4,5,1,4,5,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ar1_unc,lo_N10,0,3,3,0,3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_cr2,lo_N10,0,3,3,0,3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_fg,lo_N10,3,4,1,3,4,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_kc,lo_N10,3,3,0,3,3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_exch_md,lo_N10,3,3,0,3,3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_exch_unc,lo_N10,0,3,3,0,3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_cr2,lo_N10,0,3,3,0,3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_fg,lo_N10,7,11,4,7,11,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_kc,lo_N10,3,3,0,3,3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ind_md,lo_N10,4,6,2,4,6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_unc,lo_N10,0,2,2,0,2,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,glmer,lo_N10,12,11,-1,12,11,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,glmer_lrt,lo_N10,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,mmm_cc,lo_N10,32,28,-4,32,28,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,shrink,lo_N10,5,10,5,5,10,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,flip,pu,96.5072858755117,96.5072858755117,0,96.5,96.5,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ar1_fg,pu,91.8974372240942,91.4303252744351,-0.46711194965917,91.9,91.4,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ar1_kc,pu,91.7140775954386,91.3873175598303,-0.326760035608345,91.7,91.4,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ar1_md,pu,91.8237828794894,91.411280273777,-0.412502605712447,91.8,91.4,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ar1_unc,pu,93.6832391874025,91.4379350006419,-2.24530418676059,93.7,91.4,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_cr2,pu,93.4962621523889,91.4981434225616,-1.9981187298273,93.5,91.5,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_fg,pu,91.9836409277378,91.5131031839386,-0.470537743799198,92.0,91.5,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_kc,pu,91.8012441446593,91.472792200081,-0.328451944578291,91.8,91.5,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_md,pu,91.9092708569067,91.4948586933703,-0.414412163536369,91.9,91.5,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_unc,pu,93.7808613784155,91.5224856574621,-2.25837572095334,93.8,91.5,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_cr2,pu,93.879065845286,91.673557048732,-2.20550879655404,93.9,91.7,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_fg,pu,92.107668595819,91.6632444466192,-0.444424149199747,92.1,91.7,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_kc,pu,92.0294850680076,91.6475783214074,-0.381906746600166,92.0,91.6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_md,pu,92.0302870331217,91.6484675601486,-0.381819472973049,92.0,91.6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_unc,pu,93.9766046686343,91.673598659884,-2.30300600875033,94.0,91.7,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,glmer,pu,80.3553158692921,80.2364261649693,-0.118889704322712,80.4,80.2,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,glmer_lrt,pu,86.3679994168263,86.3679994168263,0,86.4,86.4,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,mmm_cc,pu,84.0148734723118,83.9062263491408,-0.108647123171011,84.0,83.9,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,shrink,pu,81.7268531243199,81.3257197305118,-0.40113339380818,81.7,81.3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,flip,upow,20.9064343479589,20.9064343479589,0,20.9,20.9,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ar1_fg,upow,19.3633330830881,19.3286144582633,-0.0347186248248015,19.4,19.3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ar1_kc,upow,20.6537791478297,20.6224759241772,-0.0313032236525004,20.7,20.6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ar1_md,upow,19.6174890278085,19.5905909011913,-0.0268981266172368,19.6,19.6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ar1_unc,upow,22.2291184959945,21.7557269414881,-0.473391554506392,22.2,21.8,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_cr2,upow,21.3904401950591,21.0188746952407,-0.371565499818406,21.4,21.0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_fg,upow,19.8728098679487,19.8331516783872,-0.0396581895614858,19.9,19.8,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_kc,upow,21.0726718493755,21.0390032033294,-0.0336686460461344,21.1,21.0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_md,upow,19.9995651604594,19.9712751815349,-0.0282899789244979,20.0,20.0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_exch_unc,upow,22.6982960667652,22.2094930014933,-0.488803065271892,22.7,22.2,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_cr2,upow,21.1626825954347,20.7968132640802,-0.365869331354485,21.2,20.8,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_fg,upow,19.338744854543,19.3123995523199,-0.0263453022231346,19.3,19.3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ind_kc,upow,20.8422813430621,20.8178255721722,-0.0244557708898938,20.8,20.8,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ind_md,upow,19.7691101985873,19.7509963198395,-0.0181138787478083,19.8,19.8,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ind_unc,upow,22.448295385512,21.9855745264502,-0.462720859061733,22.4,22.0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,glmer,upow,23.1813901677897,23.1537009642499,-0.0276892035398291,23.2,23.2,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,glmer_lrt,upow,24.4801862027844,24.4801862027844,0,24.5,24.5,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,mmm_cc,upow,20.3089752762771,20.3074144859548,-0.00156079032233691,20.3,20.3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,shrink,upow,23.7425790304421,23.6329594672108,-0.109619563231288,23.7,23.6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,flip,pu_small,72.2703772598972,72.2703772598972,0,72.3,72.3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ar1_fg,pu_small,43.720315201475,40.0593909912071,-3.6609242102679,43.7,40.1,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ar1_kc,pu_small,42.5397878354377,39.7873110410037,-2.75247679443395,42.5,39.8,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ar1_md,pu_small,43.4682280680321,39.8795804488535,-3.58864761917859,43.5,39.9,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ar1_unc,pu_small,55.9601177414433,40.0762286043303,-15.883889137113,56.0,40.1,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_cr2,pu_small,54.2887799139116,40.1341722081031,-14.1546077058085,54.3,40.1,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_fg,pu_small,43.895202684254,40.2021455748101,-3.69305710944385,43.9,40.2,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_kc,pu_small,42.7169304748354,39.9416420480013,-2.7752884268341,42.7,39.9,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_md,pu_small,43.638955106457,40.0223257999132,-3.61662930654383,43.6,40.0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_exch_unc,pu_small,56.1113291768061,40.2213119820473,-15.8900171947588,56.1,40.2,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_cr2,pu_small,57.169091323751,40.7481557322686,-16.4209355914824,57.2,40.7,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_fg,pu_small,44.1295250701983,40.7257004789243,-3.40382459127406,44.1,40.7,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_kc,pu_small,43.8364299989601,40.5533754692441,-3.28305452971598,43.8,40.6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_md,pu_small,43.8461654388437,40.5673176805304,-3.2788477583133,43.8,40.6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ind_unc,pu_small,57.3070420448963,40.7481504919781,-16.5588915529182,57.3,40.7,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,glmer,pu_small,28.2342056746725,27.7544639837398,-0.479741690932745,28.2,27.8,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,glmer_lrt,pu_small,61.8981304611237,61.8981304611237,0,61.9,61.9,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,mmm_cc,pu_small,27.6377270741345,27.0253837172922,-0.612343356842263,27.6,27.0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,shrink,pu_small,33.6786054806549,31.0788436026801,-2.59976187797483,33.7,31.1,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,flip,chosen,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ar1_fg,chosen,0,1,1,0,1,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ar1_kc,chosen,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ar1_md,chosen,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ar1_unc,chosen,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_exch_cr2,chosen,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_exch_fg,chosen,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_exch_kc,chosen,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_exch_md,chosen,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_exch_unc,chosen,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ind_cr2,chosen,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ind_fg,chosen,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ind_kc,chosen,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ind_md,chosen,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ind_unc,chosen,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,glmer,chosen,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,glmer_lrt,chosen,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,mmm_cc,chosen,1,0,-1,1,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,shrink,chosen,0,0,0,0,0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,flip,eligible,0,0,0,0,0,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ar1_fg,eligible,0,1,1,0,1,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 5,gee_ar1_kc,eligible,0,0,0,0,0,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ar1_md,eligible,0,0,0,0,0,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ar1_unc,eligible,0,0,0,0,0,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_exch_cr2,eligible,0,0,0,0,0,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_exch_fg,eligible,0,0,0,0,0,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_exch_kc,eligible,0,0,0,0,0,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_exch_md,eligible,0,0,0,0,0,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_exch_unc,eligible,0,0,0,0,0,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ind_cr2,eligible,0,0,0,0,0,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ind_fg,eligible,0,0,0,0,0,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ind_kc,eligible,0,0,0,0,0,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ind_md,eligible,0,0,0,0,0,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,gee_ind_unc,eligible,0,0,0,0,0,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,glmer,eligible,0,0,0,0,0,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,glmer_lrt,eligible,0,0,0,0,0,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,mmm_cc,eligible,1,1,0,1,1,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 5,shrink,eligible,0,0,0,0,0,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,gee,rate AR1,7.71749506071437,7.30019963607771,-0.417295424636658,7.7,7.3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 3,gee_fg,rate AR1,5.34336284387783,5.33032267132775,-0.0130401725500748,5.3,5.3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,gee_kc,rate AR1,6.39727669584493,6.37024107719684,-0.0270356186480853,6.4,6.4,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,gee_md,rate AR1,5.56350820607834,5.56199120872146,-0.0015169973568856,5.6,5.6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,glmer,rate AR1,6.55274385078627,6.5348895775835,-0.0178542732027633,6.6,6.5,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 3,glmer_lrt,rate AR1,6.14199940247299,6.14199940247299,0,6.1,6.1,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,mmm,rate AR1,5.25569245983189,5.25829105540699,0.00259859557510644,5.3,5.3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,shrink,rate AR1,6.91019516161822,6.83306139098511,-0.0771337706331039,6.9,6.8,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 3,gee,rate NAT,7.62598911585109,7.24745644866733,-0.378532667183763,7.6,7.2,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 3,gee_fg,rate NAT,5.32219581170252,5.30667461640265,-0.0155211952998622,5.3,5.3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,gee_kc,rate NAT,6.34172285724588,6.31839470320707,-0.0233281540388095,6.3,6.3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,gee_md,rate NAT,5.5073032807786,5.50419143285578,-0.00311184792282049,5.5,5.5,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,glmer,rate NAT,6.29781487156008,6.27853442823599,-0.0192804433240861,6.3,6.3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,glmer_lrt,rate NAT,5.77026372774067,5.77026372774067,0,5.8,5.8,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,mmm,rate NAT,5.09713984709077,5.09997289629226,0.00283304920148897,5.1,5.1,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,shrink,rate NAT,6.64424631635503,6.571378459239,-0.0728678571160302,6.6,6.6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,gee,rate GB,8.36855019348863,7.84721492200319,-0.521335271485438,8.4,7.8,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 3,gee_fg,rate GB,5.82570543781156,5.80382561768977,-0.021879820121792,5.8,5.8,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,gee_kc,rate GB,6.94964248373011,6.90289848113827,-0.04674400259184,6.9,6.9,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,gee_md,rate GB,6.08874610982833,6.07630075779403,-0.0124453520343026,6.1,6.1,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,glmer,rate GB,8.61163506014761,8.58609474797874,-0.0255403121688733,8.6,8.6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,glmer_lrt,rate GB,7.80045078163607,7.80045078163607,0,7.8,7.8,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,mmm,rate GB,5.34171209871129,5.34657022597362,0.0048581272623256,5.3,5.3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,shrink,rate GB,9.28377756177419,9.18552524702084,-0.0982523147533438,9.3,9.2,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 3,gee,wc AR1,19.1121853163588,17.0214268895691,-2.09075842678966,19.1,17.0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 3,gee_fg,wc AR1,2.8505214368482,2.6061844677448,-0.244336969103403,2.9,2.6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 3,gee_kc,wc AR1,11.2199791159067,10.9808442710181,-0.239134844888627,11.2,11.0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 3,gee_md,wc AR1,6.0307520432763,6.03415615935595,0.00340411607964874,6.0,6.0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,glmer,wc AR1,2.17232869317086,2.17232869317086,0,2.2,2.2,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,glmer_lrt,wc AR1,1.84175243503293,1.84175243503293,0,1.8,1.8,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,mmm,wc AR1,0.428222571079714,0.428222571079714,0,0.4,0.4,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,shrink,wc AR1,2.43217129164412,2.41814527040087,-0.0140260212432555,2.4,2.4,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,gee,wc NAT,17.9961696694567,16.557438469076,-1.43873120038063,18.0,16.6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 3,gee_fg,wc NAT,2.83402301456834,2.55712794339404,-0.276895071174297,2.8,2.6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 3,gee_kc,wc NAT,10.7406880864373,10.5779476488302,-0.162740437607098,10.7,10.6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 3,gee_md,wc NAT,5.89695644669467,5.91035441278666,0.0133979660919916,5.9,5.9,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,glmer,wc NAT,1.8253290367667,1.8253290367667,0,1.8,1.8,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,glmer_lrt,wc NAT,1.75755313715476,1.75755313715476,0,1.8,1.8,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,mmm,wc NAT,0.487669795371073,0.477915400794578,-0.00975439457649419,0.5,0.5,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,shrink,wc NAT,2.30498406829,2.22924792183745,-0.0757361464525461,2.3,2.2,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 3,gee,wc GB,22.078662637684,20.1831733198585,-1.89548931782547,22.1,20.2,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 3,gee_fg,wc GB,4.72205064854849,4.32807330109443,-0.393977347454062,4.7,4.3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 3,gee_kc,wc GB,14.1244381503602,13.6497622820919,-0.474675868268282,14.1,13.6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 3,gee_md,wc GB,8.55008457056944,8.3969465648855,-0.153138005683946,8.6,8.4,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 3,glmer,wc GB,4.49110690998881,4.49110690998881,0,4.5,4.5,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,glmer_lrt,wc GB,3.64829497344315,3.64829497344315,0,3.6,3.6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,mmm,wc GB,0.625683749894808,0.633743468734199,0.00805971883939094,0.6,0.6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,shrink,wc GB,4.89176652493235,4.87549300131467,-0.0162735236176843,4.9,4.9,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,gee,mad AR1,3.17945906497523,2.89587931666202,-0.283579748313211,3.2,2.9,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 3,gee_fg,mad AR1,0.550892228507482,0.534415240486435,-0.0164769880210464,0.6,0.5,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 3,gee_kc,mad AR1,1.79347544401784,1.77088665814289,-0.0225887858749507,1.8,1.8,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,gee_md,mad AR1,0.954580787167344,0.955355862372675,0.000775075205331488,1.0,1.0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,glmer,mad AR1,1.58153631581742,1.58240336217062,0.000867046353207668,1.6,1.6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,glmer_lrt,mad AR1,1.14338334137695,1.14338334137695,0,1.1,1.1,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,mmm,mad AR1,0.279248137513821,0.275948551178719,-0.00329958633510186,0.3,0.3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,shrink,mad AR1,1.8542798249861,1.82365490049809,-0.0306249244880186,1.9,1.8,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 3,gee,mad NAT,3.04856298181065,2.80039142871703,-0.248171553093616,3.0,2.8,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 3,gee_fg,mad NAT,0.518624821208572,0.498803860581134,-0.0198209606274383,0.5,0.5,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,gee_kc,mad NAT,1.70510271130835,1.68748916452358,-0.0176135467847727,1.7,1.7,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,gee_md,mad NAT,0.88020911109287,0.879330300073353,-0.000878811019516368,0.9,0.9,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,glmer,mad NAT,1.3756155832883,1.38534798311629,0.00973239982799012,1.4,1.4,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,glmer_lrt,mad NAT,0.771764041118225,0.771764041118225,0,0.8,0.8,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,mmm,mad NAT,0.195468577312292,0.19221797528919,-0.00325060202310196,0.2,0.2,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,shrink,mad NAT,1.60508757507333,1.58044241166848,-0.0246451634048486,1.6,1.6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,gee,mad GB,3.93361243395923,3.62503600375154,-0.308576430207686,3.9,3.6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 3,gee_fg,mad GB,1.04306028839004,1.01672616755241,-0.026334120837624,1.0,1.0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,gee_kc,mad GB,2.48704563671687,2.44749720785379,-0.0395484288630841,2.5,2.4,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 3,gee_md,mad GB,1.46582521395825,1.45688585854475,-0.00893935541349578,1.5,1.5,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,glmer,mad GB,3.47994346364855,3.44284174405489,-0.0371017195936587,3.5,3.4,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 3,glmer_lrt,mad GB,2.8005328011214,2.8005328011214,0,2.8,2.8,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,mmm,mad GB,0.326719060349194,0.334199644963629,0.00748058461443518,0.3,0.3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 3,shrink,mad GB,4.20351186726724,4.07212494409059,-0.131386923176647,4.2,4.1,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee,RI T=2,77.8406005463992,72.3290614952458,-5.51153905115341,77.8,72.3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee,RI T=3,91.4314681007516,88.2011731997316,-3.23029490102007,91.4,88.2,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee,RI T=4,95.8449931137634,93.7370960820065,-2.10789703175691,95.8,93.7,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee,RI T=6,98.6364058545878,97.6835846006624,-0.952821253925421,98.6,97.7,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee,RI T=8,99.3680016914227,98.8694174283739,-0.498584263048784,99.4,98.9,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee,RI T=10,99.6901895626821,99.3990215192207,-0.291168043461397,99.7,99.4,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee_fg,RI T=2,72.7307032928101,72.2041422462823,-0.526561046527803,72.7,72.2,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee_fg,RI T=3,88.2787312021215,88.1541195335453,-0.124611668576222,88.3,88.2,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee_fg,RI T=4,93.770579929697,93.677548343313,-0.0930315863839581,93.8,93.7,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee_fg,RI T=6,97.6867262504782,97.6167685358179,-0.0699577146603332,97.7,97.6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee_fg,RI T=8,98.8799564627719,98.799426944989,-0.0805295177828356,98.9,98.8,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee_fg,RI T=10,99.4627209111067,99.3541766179001,-0.10854429320662,99.5,99.4,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee_kc,RI T=2,72.9622861421527,72.2433201082103,-0.718966033942451,73.0,72.2,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee_kc,RI T=3,88.6894062974984,88.1059866053614,-0.583419692137085,88.7,88.1,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee_kc,RI T=4,93.857163891171,93.7120353995403,-0.1451284916307,93.9,93.7,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee_kc,RI T=6,97.6814970797496,97.6637469711238,-0.0177501086258189,97.7,97.7,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,gee_kc,RI T=8,98.8610443190963,98.8558182136443,-0.00522610545203861,98.9,98.9,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,gee_kc,RI T=10,99.3979777608602,99.3969350514841,-0.00104270937605122,99.4,99.4,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,gee_md,RI T=2,72.7168710879572,72.2062287077312,-0.510642380226045,72.7,72.2,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee_md,RI T=3,88.2545816568355,88.1541184739417,-0.100463182893833,88.3,88.2,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee_md,RI T=4,93.7088830667043,93.6796295765437,-0.029253490160599,93.7,93.7,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,gee_md,RI T=6,97.631389469427,97.6230352484474,-0.00835422097955529,97.6,97.6,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,gee_md,RI T=8,98.8056989173131,98.8046541162432,-0.00104480106988092,98.8,98.8,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,gee_md,RI T=10,99.3625182929084,99.3614755835324,-0.00104270937605122,99.4,99.4,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,glmer,RI T=2,68.5594654419701,68.4611652634108,-0.0983001785592847,68.6,68.5,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,glmer,RI T=3,87.7737079144629,87.6606890641136,-0.113018850349292,87.8,87.7,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,glmer,RI T=4,93.7446295702434,93.633859309293,-0.110770260950332,93.7,93.6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,glmer,RI T=6,97.8140279451414,97.7357264533246,-0.0783014918167879,97.8,97.7,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,glmer,RI T=8,99.0355342199127,98.9487369300111,-0.0867972899015399,99.0,98.9,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,glmer,RI T=10,99.5763575521777,99.4605101099511,-0.115847442226581,99.6,99.5,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,glmer_lrt,RI T=2,98.92714175185,98.92714175185,0,98.9,98.9,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,glmer_lrt,RI T=3,99.6382013628777,99.6382013628777,0,99.6,99.6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,glmer_lrt,RI T=4,99.8630509724315,99.8630509724315,0,99.9,99.9,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,glmer_lrt,RI T=6,99.9832873704614,99.9832873704614,0,100.0,100.0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,glmer_lrt,RI T=8,99.9989530988275,99.9989530988275,0,100.0,100.0,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,glmer_lrt,RI T=10,100,100,0,100.0,100.0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,mmm,RI T=2,68.1610797118622,67.791926565019,-0.36915314684326,68.2,67.8,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,mmm,RI T=3,87.1024479234074,86.9747038545,-0.127744068907447,87.1,87.0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,mmm,RI T=4,92.9003231480455,92.8062352257778,-0.094087922267633,92.9,92.8,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,mmm,RI T=6,97.4219205566767,97.3519649295247,-0.0699556271519981,97.4,97.4,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,mmm,RI T=8,98.8517782409204,98.7712466230349,-0.0805316178854838,98.9,98.8,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,mmm,RI T=10,99.5085489618672,99.4000046686606,-0.108544293206606,99.5,99.4,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,shrink,RI T=2,74.0150128120659,72.5156085718276,-1.49940424023829,74.0,72.5,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,shrink,RI T=3,88.8656940967808,88.3545199538183,-0.511174142962489,88.9,88.4,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,shrink,RI T=4,94.1108613004004,93.8716940341544,-0.239167266246,94.1,93.9,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,shrink,RI T=6,97.8620313030776,97.7670370350363,-0.0949942680412619,97.9,97.8,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,shrink,RI T=8,99.0428415585954,98.9529129998874,-0.0899285587079675,99.0,99.0,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,shrink,RI T=10,99.5763575521777,99.4605101099511,-0.115847442226581,99.6,99.5,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee,RS T=2,77.9751900974013,72.6399473070645,-5.33524279033674,78.0,72.6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee,RS T=3,91.477605468485,88.2670952902691,-3.21051017821593,91.5,88.3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee,RS T=4,95.9957280170221,93.9829536427522,-2.01277437426991,96.0,94.0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee,RS T=6,98.7648620173051,97.8830586526955,-0.881803364609581,98.8,97.9,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee,RS T=8,99.4679501371737,99.0624228544708,-0.405527282702877,99.5,99.1,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee,RS T=10,99.7167737313764,99.4545006111902,-0.262273120186165,99.7,99.5,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee_fg,RS T=2,73.1196775734011,72.5447766245024,-0.574900948898673,73.1,72.5,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee_fg,RS T=3,88.4072645386515,88.2475570706455,-0.15970746800609,88.4,88.2,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee_fg,RS T=4,94.055482966066,93.9745854127131,-0.0808975533529264,94.1,94.0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee_fg,RS T=6,97.9513288891301,97.8635688985505,-0.0877599905796132,98.0,97.9,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee_fg,RS T=8,99.1146321893182,99.0339144347979,-0.0807177545202933,99.1,99.0,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee_fg,RS T=10,99.5338471011118,99.4322477316583,-0.101599369453467,99.5,99.4,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee_kc,RS T=2,73.2339837622587,72.5487951595293,-0.685188602729397,73.2,72.5,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee_kc,RS T=3,88.7923148136522,88.2029484848988,-0.589366328753357,88.8,88.2,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee_kc,RS T=4,94.1222563030734,93.9648254739176,-0.157430829155729,94.1,94.0,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee_kc,RS T=6,97.8872378570002,97.8691446717802,-0.0180931852200246,97.9,97.9,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,gee_kc,RS T=8,99.0589443676297,99.0547707425977,-0.00417362503202412,99.1,99.1,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,gee_kc,RS T=10,99.4468512658987,99.4468512658987,0,99.4,99.4,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,gee_md,RS T=2,73.116114303792,72.54972799947,-0.566386304322066,73.1,72.5,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee_md,RS T=3,88.3862626543083,88.2538357423081,-0.132426912000227,88.4,88.3,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,gee_md,RS T=4,94.0164153736321,93.9759840684667,-0.0404313051654128,94.0,94.0,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,gee_md,RS T=6,97.8740190240441,97.8684474384023,-0.00557158564187432,97.9,97.9,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,gee_md,RS T=8,99.0394825209884,99.0373950126384,-0.00208750835003002,99.0,99.0,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,gee_md,RS T=10,99.4343331545938,99.4329414767714,-0.00139167782238303,99.4,99.4,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,glmer,RS T=2,0.0021244292776842,0.00141797511243044,-0.000706454165253758,0.0,0.0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,glmer,RS T=3,56.6586894938711,56.5305063492487,-0.128183144622369,56.7,56.5,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,glmer,RS T=4,90.8227890881244,90.7071197703547,-0.115669317769715,90.8,90.7,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,glmer,RS T=6,97.7272731734412,97.6276881131466,-0.099585060294558,97.7,97.6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,glmer,RS T=8,99.1730233028838,99.0860409211486,-0.086982381735254,99.2,99.1,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,glmer,RS T=10,99.617332318097,99.5129461131259,-0.104386204971163,99.6,99.5,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,glmer_lrt,RS T=2,0.136465278105719,0.136465278105719,0,0.1,0.1,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,glmer_lrt,RS T=3,66.465061870473,66.465061870473,0,66.5,66.5,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,glmer_lrt,RS T=4,99.4089597111875,99.4089597111875,0,99.4,99.4,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,glmer_lrt,RS T=6,99.9846720297942,99.9846720297942,0,100.0,100.0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,glmer_lrt,RS T=8,99.9979117923228,99.9979117923228,0,100.0,100.0,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,glmer_lrt,RS T=10,99.9993034659534,99.9993034659534,0,100.0,100.0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,mmm,RS T=2,42.1910943386337,42.146458017307,-0.0446363213266494,42.2,42.1,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,mmm,RS T=3,69.063948525008,69.0277081395903,-0.0362403854176563,69.1,69.0,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,mmm,RS T=4,80.6413163939257,80.62458277884,-0.0167336150856983,80.6,80.6,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,mmm,RS T=6,90.35484080131,90.3290983001073,-0.0257425012026715,90.4,90.3,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,mmm,RS T=8,94.640140158964,94.594228882167,-0.0459112767969572,94.6,94.6,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,mmm,RS T=10,96.845058975726,96.7817655409216,-0.063293434804379,96.8,96.8,TRUE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,shrink,RS T=2,0.016257125910492,0.008460796183086,-0.00779632972740598,0.0,0.0,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",FALSE
+d,Table 4,shrink,RS T=3,59.2914278368937,58.7518981308103,-0.539529706083421,59.3,58.8,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,shrink,RS T=4,93.7096780117854,93.2884545699397,-0.421223441845669,93.7,93.3,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,shrink,RS T=6,98.0570865711763,97.8997190379804,-0.157367533195853,98.1,97.9,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,shrink,RS T=8,99.2293784544148,99.1270904433053,-0.102288011109479,99.2,99.1,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE
+d,Table 4,shrink,RS T=10,99.6284719885069,99.5178211563208,-0.110650832186153,99.6,99.5,FALSE,"Si, V1, E1, B0, B1 removed, Wald strategies",TRUE

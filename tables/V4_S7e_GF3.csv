@@ -1,0 +1,17 @@
+model,check,n_cells,max_abs_z,pass
+1,marginal cells,20,2.194324636751,TRUE
+1,pair cells,90,2.47191437716743,TRUE
+2,GEE independence coef (Intercept),1,0.866392315135787,TRUE
+2,GEE independence coef time,1,0.631132947477575,TRUE
+2,GEE independence coef trt,1,1.25465838622162,TRUE
+2,GEE independence coef age,1,0.492374260665816,TRUE
+2,GEE independence coef time:trt,1,1.48200098575648,TRUE
+3,marginal cells,20,2.30483339503686,TRUE
+3,pair cells,90,2.59848920858,TRUE
+4,marginal cells,20,2.74614507010771,TRUE
+4,pair cells,90,2.55123307555727,TRUE
+5,GEE independence coef (Intercept),1,0.376355589192065,TRUE
+5,GEE independence coef time,1,0.285753795320777,TRUE
+5,GEE independence coef trt,1,0.322870690898743,TRUE
+5,GEE independence coef dose,1,0.685211285386618,TRUE
+5,GEE independence coef time:trt,1,1.02083358607837,TRUE

@@ -1,0 +1,22 @@
+tables/V4_S2_corr_arms.csv 9726
+tables/V4_S2_corr_mechanisms.csv 19467
+tables/V4_S2_lost_replicates_by_mechanism.csv 494
+tables/V4_S2_lost_replicates_design.csv 247
+tables/V4_S2_lus_vs_dgm.csv 47
+tables/V4_S2_missing_ids.csv 494
+tables/V4_S2_missing_rerun.csv 494
+tables/V4_S2_partial_rerun.csv 1042
+tables/V4_S2_pilot_h0.csv 96
+tables/V4_S2_pilot_parity.csv 12
+tables/V4_S2_pilot_reproduction.csv 60
+tables/V4_S2_replicates_by_cell.csv 2880
+tables/V4_S2_series_length_check.csv 200
+tables/V4_S2_series_length.csv 480
+tables/V4_S2_truth_ar1_conditional.csv 240
+tables/V4_S2_truth_glmmnative.csv 60
+tables/V4_S2_truth_values.csv 130
+tables/V4_S2_unusable_reasons.csv 28
+tables/V4_S2_usable_by_cell.csv 22698
+tables/V4_S2_warning_classes_by_method.csv 8
+120
+b48dab8d62ae1cf086d51c4b2e91255a  -

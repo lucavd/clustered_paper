@@ -1,0 +1,117 @@
+---
+title: "S7: riscrittura del manoscritto"
+subtitle: "Roadmap Morris 2019, ramo morris-v4"
+date: 2026-10-21
+format:
+  html:
+    embed-resources: true
+    toc: true
+lang: it
+execute:
+  echo: false
+  warning: false
+---
+
+```{r setup}
+.libPaths(path.expand("~/MMM/renv/library/linux-ubuntu-noble/R-4.6/x86_64-pc-linux-gnu"))
+suppressMessages({ library(data.table) })
+REPO <- path.expand("~/MMM")
+md <- function(D) { h <- paste0("| ", paste(names(D), collapse = " | "), " |"); s <- paste0("|", paste(rep("---", ncol(D)), collapse = "|"), "|")
+  b <- apply(D, 1, function(r) paste0("| ", paste(gsub("|", "\\|", r, fixed = TRUE), collapse = " | "), " |")); cat(c(h, s, b, ""), sep = "\n") }
+sec <- function(file, head) {
+  x <- readLines(file.path(REPO, file)); i <- which(x == paste("#", head)); if (!length(i)) return("")
+  nxt <- which(grepl("^# ", x) & seq_along(x) > i); j <- if (length(nxt)) min(nxt) - 1 else length(x)
+  x <- x[(i + 1):j]; x <- x[!grepl("^\\[\\^", x)]
+  x <- gsub("\\]\\(/", "](../../docs/", gsub("\\]\\((\\.\\./)+", "](../../docs/", x))
+  gsub("\\]\\(S([0-9a-z]+)\\.md", "](../../docs/steps/S\\1.md", x) }
+REG <- fread(file.path(REPO, "tables/V4_S7_numbers.csv"), colClasses = "character")
+rl <- function(f) readLines(file.path(REPO, "reports/morris/S7_logs", f))
+```
+
+```{r inbreve, results='asis'}
+cat(sec("docs/steps/S7.md", "In breve"), sep = "\n")
+```
+
+## Dubbi rinviati {.unnumbered}
+
+```{r rinv, results='asis'}
+cat(sec("docs/steps/S7.md", "Dubbi rinviati"), sep = "\n")
+```
+
+## Cancelli e previsioni {.unnumbered}
+
+| | atteso | intervallo | osservato | esito | spiegazione |
+|---|---|---|---|---|---|
+| G1 integrita' | md5 identici | tolleranza 0 | 28.800 / 28.800 OK prima e dopo; 0 sorgenti del registro cambiati | superato | `S7_G1.log`, `results_v4/S7/md5_*.txt` |
+| G2 numeri attestati | 0 cifre fuori classe | 0 | 0 | superato | due correzioni dello strumento e tre del testo, vedi file dello step |
+| G3 ricevute | 100% voci riprodotte | 0 discordanze | 1.713 voci, 31 file, 0 discordanze | superato | `S7_G3.log` |
+| G4 affermazioni | 0 violazioni, 0 frasi senza etichetta | 0 | 86 etichette, 0 e 0 | superato | 5 formulazioni bobyqa corrette al primo passaggio |
+| G5 completezza | render, OKF, abstract <= 200, 7 commenti, 10 dubbi | | tutto presente; abstract 188 parole | superato | appendici A1 e A2 |
+| P1 lunghezza | 8.000 | 7.000-9.000 | 6.684 (conteggio esatto) | smentita | due mancanze dei metodi trovate e corrette; il resto e' lo spostamento al supplemento (A3) |
+| P2 frasi | mediana 20 | 14-24 | mediana 18 (p90 29) | confermata | prima stesura 27: frasi spezzate |
+
+```{r logs, results='asis'}
+cat("```\n"); cat(c(rl("S7_G3.log"), tail(rl("S7_G2.log"), 3), head(rl("S7_G4.log"), 1), rl("S7_P1P2.log")), sep = "\n"); cat("\n```\n")
+```
+
+## Cosa e' girato {.unnumbered}
+
+- Commit di pre-registrazione `7a7749c` (attese e decisioni D-36 - D-39 prima del registro e del testo).
+- Catena: `R/s7/s7_pipeline.sh` = `R/s7/s7_extras.R` (valori derivati, `tables/V4_S7_extra.csv`, `tables/V4_S7_u1.csv`, `tables/V4_S7_software.csv`, `results_v4/S7/sessionInfo.txt`) -> `R/s7/s7_numbers.R` (registro `tables/V4_S7_numbers.csv` dalla specifica `manuscript/v4/numbers_spec.csv`) -> `tools/s7_verify_registry.py` (G3) -> `quarto render` di `manuscript/v4/MMM_v4.qmd` e `MMM_v4_supplement.qmd` in docx, html e gfm, normale e in traccia -> `tools/s7_check_numbers.py` (G2), `tools/s7_check_claims.py` (G4), `tools/s7_wordcount.py` (P1, P2). Durata della catena: circa 2 minuti sul server, 1 processo.
+- Il testo e' scritto con segnaposto che la specifica traduce in voci del registro; la specifica, il registro e i sorgenti Quarto sono versionati.
+
+```{r md5, results='asis'}
+f <- c("tables/V4_S7_numbers.csv", "manuscript/v4/numbers_spec.csv", "manuscript/v4/MMM_v4.qmd", "manuscript/v4/MMM_v4_supplement.qmd", "manuscript/v4/MMM_v4.docx", "manuscript/v4/MMM_v4_supplement.docx", "tables/V4_S7_extra.csv")
+md(data.table(file = f, md5 = unname(tools::md5sum(file.path(REPO, f)))))
+```
+
+## Appendice {.unnumbered}
+
+### A1. I sette commenti del PI nel Word del 27 agosto
+
+| commento | dove | come |
+|---|---|---|
+| interlinea diversa fra frasi | tutto il documento | il Word nasce da un solo sorgente Quarto con stili uniformi |
+| "In the reference collection" stride | Introduzione, terzo paragrafo | frase rimossa; ora "In the clustered designs of these evaluations..." |
+| "that second axis", ultime frasi dell'abstract criptiche | Abstract | abstract riscritto, non strutturato, 188 parole, senza quelle frasi |
+| cifre significative (0,12; 9,1; 99) | testo e tabelle | [Testo a due cifre significative, tabelle alla cifra giustificata dalla MCSE (D-39)](../../docs/decisions/D-39.md), applicata dal registro |
+| conclusione fatta solo di raccomandazioni | Sezione 5 | un paragrafo di conclusione, poi due frasi di raccomandazione |
+| stessa frase dell'abstract | Introduzione, primo paragrafo | riscritta; l'abstract non la contiene piu' |
+| formula in linea | Introduzione, secondo paragrafo | equazione a parte |
+
+### A2. Esito dei dubbi ricevuti
+
+```{r dub, results='asis'}
+cat(sec("docs/steps/S7.md", "Esito dei dubbi ricevuti"), sep = "\n")
+```
+
+### A3. Controllo dei metodi contro Morris (per la previsione P1)
+
+| voce di Morris | dove nel testo |
+|---|---|
+| obiettivi | 2.1 |
+| meccanismi generatori, parametri e loro giustificazione | 2.2, Tabella 1, Tabella S1; giustificazione aggiunta in questo step |
+| numero di replicati e sua giustificazione con la MCSE | 2.2, 2.5 (frase aggiunta) |
+| generatore di numeri casuali, semi, numeri casuali comuni | 2.2 |
+| estimandi e valori veri | 2.3 |
+| metodi, opzioni, software e versioni | 2.4, Tabella S2 |
+| gestione dei fit falliti e definizione di utilizzabilita' | 2.4, 2.5 |
+| misure di prestazione e MCSE | 2.5 |
+| protocollo datato e modifiche successive | 2 (frase aggiunta), 2.6 |
+| codice disponibile | Code and data availability |
+
+### A4. Da dove vengono i numeri del riassunto
+
+```{r src, results='asis'}
+k <- c("x:ndp_all", "x:ns_fgt_max", "x:fgt_hi_Nmax", "x:ra_glmer_lrt_n_tutti_all_n_hi", "x:switch_GB", "m:rate|NAT|mmm", "m:rate|GB|mmm", "m:ratet|NAT|mmm", "m:ratet|GB|mmm")
+D <- REG[id %in% k, .(id, testo = text, valore = value, file)]
+md(D)
+md(data.table(frase = c("1.713 numeri, 0 discordanze", "86 frasi di confronto", "circa 6.700 parole (6.684)", "abstract 188 parole", "regola fissata 5 giorni dopo l'avvio"),
+              fonte = c("reports/morris/S7_logs/S7_G3.log", "reports/morris/S7_logs/S7_G4.log", "reports/morris/S7_logs/S7_P1P2.log", "reports/morris/S7_logs/S7_P1P2.log", "docs/PROTOCOL_ADEMP.md sez. 9 (commit 55a6363 del 2026-08-10, run dal 2026-08-05)")))
+```
+
+### A5. Documenti prodotti
+
+- `manuscript/v4/MMM_v4.docx` e `.html`: manoscritto.
+- `manuscript/v4/MMM_v4_supplement.docx` e `.html`: materiale supplementare (Tabelle S1-S25, sezioni S1-S5).
+- `tables/V4_S7_numbers.csv`: registro dei numeri (1.713 voci, con file sorgente, selettore e md5).

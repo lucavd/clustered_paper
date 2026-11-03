@@ -1,0 +1,114 @@
+H1 groups: 1440  with 10 chunks: 1440 
+failed: 0 
+cells: 9726  design points: 1440 
+
+##### coverage pooled by target #####
+Key: <method>
+   method GLMM-AR1 GLMM-native GenBinaryY
+   <char>    <num>       <num>      <num>
+1:    gee  92.4697     92.4414    91.9044
+2: gee_fg  94.9126     94.8299    94.5531
+3: gee_kc  88.8361     88.9424    86.3578
+4: gee_md  94.6410     94.5881    94.2360
+5:  glmer  92.2812     93.0311    88.3230
+6:    mmm  93.2447     93.2442    93.1675
+7: shrink  92.5891     92.9379    90.0608
+
+GLMM only, all four targets:
+   method         dgp cov_marg cov_margdgp cov_cond cov_plim      n
+   <char>      <char>    <num>       <num>    <num>    <num>  <int>
+1:  glmer  GenBinaryY  88.3230     88.3230  90.1849  91.4324 385639
+2:  glmer    GLMM-AR1  92.2812     92.2812  93.1930  93.2527 391773
+3:  glmer GLMM-native  93.0311     92.7275  93.5124  93.4857 392903
+
+MMM, all four targets:
+   method         dgp cov_marg cov_margdgp cov_cond cov_plim      n
+   <char>      <char>    <num>       <num>    <num>    <num>  <int>
+1:    mmm  GenBinaryY  93.1675     93.1675  92.6189  93.1675 434232
+2:    mmm    GLMM-AR1  93.2447     93.2447  91.0161  93.2447 437150
+3:    mmm GLMM-native  93.2442     93.3468  92.0933  93.2442 438541
+
+##### 3.13 bias / MAPE, GLMM, pooled over everything #####
+replicate-weighted bias vs marginal: 0.07979491  vs conditional: 0.04604758 
+cell-mean bias vs marginal: 0.09088879  vs conditional: 0.05718028 
+cell-mean ABS bias vs marginal: 0.1047645  vs conditional: 0.07623288 
+MAPE(%) vs marginal: 291.492  vs conditional: 242.0797 
+ratios: signed bias (marg-cond)/marg = 0.4229259 
+abs-bias reduction = 0.2723406 
+MAPE reduction = 0.1695151 
+coverage gap: marg vs plim per dgp:
+           dgp cov_marg cov_cond cov_plim   d_cond   d_plim
+        <char>    <num>    <num>    <num>    <num>    <num>
+1:  GenBinaryY  88.3230  90.1849  91.4324 1.861845 3.109385
+2:    GLMM-AR1  92.2812  93.1930  93.2527 0.911752 0.971481
+3: GLMM-native  93.0311  93.5124  93.4857 0.481289 0.454565
+
+##### 3.14 RMSE per cell, mean over cells #####
+Key: <method>
+   method GLMM-AR1 GLMM-native GenBinaryY
+   <char>    <num>       <num>      <num>
+1:    gee   0.4762      0.4772     0.4764
+2: gee_fg   0.4374      0.4381     0.4386
+3: gee_kc   0.4348      0.4373     0.4372
+4: gee_md   0.4373      0.4379     0.4384
+5:  glmer   0.6313      0.5987     0.8722
+6:    mmm   0.4492      0.4494     0.4474
+7: shrink   0.3915      0.3690     0.4086
+
+cells per method/dgp:
+Key: <method>
+   method GLMM-AR1 GLMM-native GenBinaryY
+   <char>    <int>       <int>      <int>
+1:    gee      480         480        480
+2: gee_fg      480         480        480
+3: gee_kc      480         480        480
+4: gee_md      480         480        480
+5:  glmer      420         419        421
+6:    mmm      480         480        480
+7: shrink      422         422        422
+
+GLMM rmse vs conditional truth:
+   method         dgp   rmse rmse_cond cells rmse_pooled
+   <char>      <char>  <num>     <num> <int>       <num>
+1:  glmer  GenBinaryY 0.8722    0.8639   421      1.1093
+2:  glmer    GLMM-AR1 0.6313    0.6254   420      0.8576
+3:  glmer GLMM-native 0.5987    0.5955   419      0.8056
+
+spread among {mmm,gee_fg,gee_md,gee_kc} (%):
+GenBinaryY : min 0.4372148 max 0.4473609 spread% 2.320607 
+GLMM-AR1 : min 0.4347868 max 0.4491727 spread% 3.308725 
+GLMM-native : min 0.4373154 max 0.4493515 spread% 2.752284 
+
+GLMM factor vs the four:
+GenBinaryY : glmer/min 1.995002  glmer/max 1.949756  (cond-scored glmer/min 1.975952 )
+GLMM-AR1 : glmer/min 1.451868  glmer/max 1.405368  (cond-scored glmer/min 1.438385 )
+GLMM-native : glmer/min 1.368974  glmer/max 1.332305  (cond-scored glmer/min 1.361663 )
+
+##### 3.15 glmer mean estimate at N=145, T=10 #####
+            dgp model     n mean_est t_marg   t_cond   t_plim
+         <char> <int> <int>    <num>  <num>    <num>    <num>
+ 1:  GenBinaryY     1  1000 0.278877   0.20 0.232000 0.278877
+ 2:  GenBinaryY     2  1000 0.271970   0.20 0.232000 0.271970
+ 3:  GenBinaryY     3  1000 0.312183   0.20 0.232000 0.312183
+ 4:  GenBinaryY     4  1000 0.086931   0.05 0.058000 0.086931
+ 5:  GenBinaryY     5  1000 0.329140   0.20 0.232000 0.329140
+ 6:    GLMM-AR1     1  1000 0.242451   0.20 0.260165 0.242451
+ 7:    GLMM-AR1     2  1000 0.244377   0.20 0.260249 0.244377
+ 8:    GLMM-AR1     3  1000 0.258421   0.20 0.260187 0.258421
+ 9:    GLMM-AR1     4  1000 0.066654   0.05 0.067955 0.066654
+10:    GLMM-AR1     5  1000 0.261144   0.20 0.260631 0.261144
+11: GLMM-native     1  1000 0.234333   0.20 0.232000 0.234333
+12: GLMM-native     2  1000 0.234806   0.20 0.232000 0.234806
+13: GLMM-native     3  1000 0.236103   0.20 0.232000 0.236103
+14: GLMM-native     4  1000 0.054597   0.05 0.058000 0.054597
+15: GLMM-native     5  1000 0.238746   0.20 0.232000 0.238746
+
+##### plim cells built on very few replicates #####
+           dgp model ntime       plim n_plim
+        <char> <int> <int>      <num>  <int>
+1:  GenBinaryY     4     2 -7.034e-01      1
+2:  GenBinaryY     5     3  9.458e+00      1
+3: GLMM-native     5     3 -1.949e-01      1
+4:    GLMM-AR1     3     2  8.292e-05      1
+5:    GLMM-AR1     5     3  2.392e+00      1
+6:  GenBinaryY     3     2 -1.454e+00      2

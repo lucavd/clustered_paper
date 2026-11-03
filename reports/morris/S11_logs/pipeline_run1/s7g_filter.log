@@ -1,0 +1,54 @@
+S7d H0: 18960 files, 1896000 recs, 5687130 rows (0.2 min)
+D-82: S7d H0 GEE rows$okc switched off on 11709 of 11709 constant-outcome rows
+D-82: study rows$ok switched off on 3884 of 3886 constant-outcome rows
+D-90: study rows$ok switched off on 161468 of 162910 rows of the MMM with the check on a no-result key
+D-82: copula study rows$ok switched off on 1374 of 1374 constant-outcome rows
+D-90: copula study rows$ok switched off on 43955 of 44432 rows of the MMM with the check on a no-result key
+D-82: copula GEE rows$okc switched off on 4134 of 4134 constant-outcome rows
+Key: <strategy>
+        strategy hi_all hi_pub      pu  pu_pub     ok
+          <char>  <int>  <int>   <num>   <num> <lgcl>
+ 1:   gee_ar1_fg      2      2 91.8974 91.8974   TRUE
+ 2:   gee_ar1_kc    138    138 91.7141 91.7141   TRUE
+ 3:   gee_ar1_md     20     20 91.8238 91.8238   TRUE
+ 4:  gee_ar1_unc    363    363 93.6832 93.6832   TRUE
+ 5: gee_exch_cr2    254    254 93.4963 93.4963   TRUE
+ 6:  gee_exch_fg     15     15 91.9836 91.9836   TRUE
+ 7:  gee_exch_kc    207    207 91.8012 91.8012   TRUE
+ 8:  gee_exch_md     63     63 91.9093 91.9093   TRUE
+ 9: gee_exch_unc    411    411 93.7809 93.7809   TRUE
+10:  gee_ind_cr2    251    251 93.8791 93.8791   TRUE
+11:   gee_ind_fg      5      5 92.1077 92.1077   TRUE
+12:   gee_ind_kc    189    189 92.0295 92.0295   TRUE
+13:   gee_ind_md     58     58 92.0303 92.0303   TRUE
+14:  gee_ind_unc    383    383 93.9766 93.9766   TRUE
+15:        glmer    515    515 80.3553 80.3553   TRUE
+16:       mmm_cc      0      0 84.0149 84.0149   TRUE
+17:       shrink    608    608 81.7269 81.7269   TRUE
+Key: <strategy>
+        strategy     5    10    20
+          <char> <int> <int> <int>
+ 1:   gee_ar1_fg     0     2     6
+ 2:   gee_ar1_kc   133   138   161
+ 3:   gee_ar1_md    19    20    29
+ 4:  gee_ar1_unc   331   363   400
+ 5: gee_exch_cr2   241   254   284
+ 6:  gee_exch_fg    13    15    23
+ 7:  gee_exch_kc   200   207   255
+ 8:  gee_exch_md    61    63    78
+ 9: gee_exch_unc   378   411   451
+10:  gee_ind_cr2   241   251   252
+11:   gee_ind_fg     2     5     8
+12:   gee_ind_kc   186   189   193
+13:   gee_ind_md    55    58    60
+14:  gee_ind_unc   376   383   394
+15:        glmer   434   515   553
+16:       mmm_cc     0     0     0
+17:       shrink   602   608   622
+     strategy     L hi_all       pu mean_rate eligible chosen
+       <char> <num>  <int>    <num>     <num>   <lgcl> <lgcl>
+1: gee_ar1_fg     5      0 91.87415  4.346298     TRUE   TRUE
+2:     mmm_cc     5      0 83.98896  4.410416     TRUE  FALSE
+3:     mmm_cc    10      0 84.01487  4.408159     TRUE   TRUE
+4:     mmm_cc    20      0 84.03315  4.412878     TRUE   TRUE
+check with L = 10: 17 of 17 strategies reproduce Table 4; 1.2 min

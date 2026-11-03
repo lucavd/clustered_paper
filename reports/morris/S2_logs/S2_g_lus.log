@@ -1,0 +1,79 @@
+Q7.1 rows 2296 (expected 2296), patients 207, patient-timepoints 230
+Q7.1 patient variance, patient level only: 3.5448 (expected 3.545 +/- 0.001: TRUE)
+$A
+      id 
+3.544825 
+$B
+          pt           id 
+3.783543e+00 4.476168e-12 
+$C
+        hemi           pt           id 
+0.000000e+00 3.782712e+00 1.918927e-10 
+$ciA
+      grp  sd_hat    sd_lo   sd_hi lr_at_sd1 dev_gain_vs_glmer
+   <char>   <num>    <num>   <num>     <num>             <num>
+1:     id 1.88277 1.617491 2.20757  66.89871      9.094947e-13
+$ciB
+      grp       sd_hat    sd_lo    sd_hi lr_at_sd1 dev_gain_vs_glmer
+   <char>        <num>    <num>    <num>     <num>             <num>
+1:     pt 1.945133e+00 1.293229 2.266250 8.8206889                 0
+2:     id 2.115696e-06 0.000000 1.522808 0.8379765                 0
+$ciC
+      grp       sd_hat    sd_lo     sd_hi  lr_at_sd1 dev_gain_vs_glmer
+   <char>        <num>    <num>     <num>      <num>             <num>
+1:   hemi 0.000000e+00 0.000000 0.4295124 35.7556440                 0
+2:     pt 1.944919e+00 1.293171 2.2662751  8.8199690                 0
+3:     id 1.385254e-05 0.000000 1.5228762  0.8382283                 0
+Q7.2 prevalence 0.5945 [0.5540, 0.6348] vs DGM 0.1192
+Q7.1 posterior vs anterior: MMM 0.3784 (SE 0.1675), expected 0.378 (0.168): TRUE; GEE 0.3807 (0.1655); GLMM 0.4756 (0.1195)
+                                 item      value      se     lo     hi     dgm                                                       note
+                               <char>      <num>   <num>  <num>  <num>   <num>                                                     <char>
+ 1:                        n_patients  2.070e+02      NA     NA     NA      NA                                                           
+ 2:              n_patient_timepoints  2.300e+02      NA     NA     NA      NA                                                           
+ 3:                   n_zone_outcomes  2.296e+03      NA     NA     NA      NA                                                           
+ 4:                     var_id_modelA  3.545e+00      NA 2.6163 4.8734  1.0000        scarto dichiarato; profile LR at variance 1 = 66.90
+ 5:              icc_latent_id_modelA  5.187e-01      NA     NA     NA  0.2331                                                           
+ 6:                     var_pt_modelB  3.784e+00      NA 1.6724 5.1359  1.0000         scarto dichiarato; profile LR at variance 1 = 8.82
+ 7:              icc_latent_pt_modelB  5.349e-01      NA     NA     NA  0.2331                                                           
+ 8:                     var_id_modelB  4.476e-12      NA 0.0000 2.3189  1.0000                  coerente; profile LR at variance 1 = 0.84
+ 9:              icc_latent_id_modelB  6.328e-13      NA     NA     NA  0.2331                                                           
+10:                   var_hemi_modelC  0.000e+00      NA 0.0000 0.1845  1.0000        scarto dichiarato; profile LR at variance 1 = 35.76
+11:            icc_latent_hemi_modelC  0.000e+00      NA     NA     NA  0.2331                                                           
+12:                     var_pt_modelC  3.783e+00      NA 1.6723 5.1360  1.0000         scarto dichiarato; profile LR at variance 1 = 8.82
+13:              icc_latent_pt_modelC  5.348e-01      NA     NA     NA  0.2331                                                           
+14:                     var_id_modelC  1.919e-10      NA 0.0000 2.3192  1.0000                  coerente; profile LR at variance 1 = 0.84
+15:              icc_latent_id_modelC  2.713e-11      NA     NA     NA  0.2331                                                           
+16:          LRT_pt_level_B_vs_A_chi2  4.674e+01      NA     NA     NA      NA  boundary mixture p = 0.5 * pchisq(chi2, 1, lower = FALSE)
+17:             prevalence_lus_severe  5.945e-01 0.02084 0.5540 0.6348  0.1192                                          scarto dichiarato
+18:                  logit_prevalence  3.827e-01      NA 0.2169 0.5530 -2.0000                                                           
+19:  dgm_marginal_prevalence_M1_H1_T2  1.411e-01      NA     NA     NA      NA                                                           
+20: dgm_marginal_prevalence_M1_H1_T10  2.793e-01      NA     NA     NA      NA                                                           
+21:        contrast_MMM_regionlateral  1.071e+00 0.15064     NA     NA      NA                                                   marginal
+22:        contrast_GEE_regionlateral  1.126e+00 0.14967     NA     NA      NA                                                   marginal
+23:       contrast_GLMM_regionlateral  1.404e+00 0.15676     NA     NA      NA                                                conditional
+24:      contrast_MMM_regionposterior  3.784e-01 0.16748     NA     NA      NA                                                   marginal
+25:      contrast_GEE_regionposterior  3.807e-01 0.16550     NA     NA      NA                                                   marginal
+26:     contrast_GLMM_regionposterior  4.756e-01 0.11953     NA     NA      NA                                                conditional
+27:             contrast_MMM_disease2 -7.513e-01 0.28126     NA     NA      NA                                                   marginal
+28:             contrast_GEE_disease2 -7.020e-01 0.28627     NA     NA      NA                                                   marginal
+29:            contrast_GLMM_disease2 -1.029e+00 0.33592     NA     NA      NA                                                conditional
+30:             contrast_MMM_disease3  2.108e+00 0.25628     NA     NA      NA                                                   marginal
+31:             contrast_GEE_disease3  2.125e+00 0.24678     NA     NA      NA                                                   marginal
+32:            contrast_GLMM_disease3  2.841e+00 0.29105     NA     NA      NA                                                conditional
+33:             contrast_MMM_disease4  8.241e-02 0.21094     NA     NA      NA                                                   marginal
+34:             contrast_GEE_disease4  2.516e-01 0.23309     NA     NA      NA                                                   marginal
+35:            contrast_GLMM_disease4  3.698e-01 0.24277     NA     NA      NA                                                conditional
+36:            contrast_MMM_invasive1 -5.903e-01 0.28277     NA     NA      NA                                                   marginal
+37:            contrast_GEE_invasive1 -6.584e-01 0.26992     NA     NA      NA                                                   marginal
+38:           contrast_GLMM_invasive1 -8.979e-01 0.29594     NA     NA      NA                                                conditional
+39:            contrast_MMM_age_weeks -2.074e-01 0.12816     NA     NA      NA                                                   marginal
+40:            contrast_GEE_age_weeks -1.740e-01 0.12918     NA     NA      NA                                                   marginal
+41:           contrast_GLMM_age_weeks -2.186e-01 0.13538     NA     NA      NA                                                conditional
+42:     dgm_cumulative_interaction_T2  2.000e-01      NA     NA     NA      NA 0.2 per occasion x (T - 1); no coherence criterion (D-10b)
+43:     dgm_cumulative_interaction_T3  4.000e-01      NA     NA     NA      NA 0.2 per occasion x (T - 1); no coherence criterion (D-10b)
+44:     dgm_cumulative_interaction_T4  6.000e-01      NA     NA     NA      NA 0.2 per occasion x (T - 1); no coherence criterion (D-10b)
+45:     dgm_cumulative_interaction_T6  1.000e+00      NA     NA     NA      NA 0.2 per occasion x (T - 1); no coherence criterion (D-10b)
+46:     dgm_cumulative_interaction_T8  1.400e+00      NA     NA     NA      NA 0.2 per occasion x (T - 1); no coherence criterion (D-10b)
+47:    dgm_cumulative_interaction_T10  1.800e+00      NA     NA     NA      NA 0.2 per occasion x (T - 1); no coherence criterion (D-10b)
+                                 item      value      se     lo     hi     dgm                                                       note
+                               <char>      <num>   <num>  <num>  <num>   <num>                                                     <char>

@@ -1,0 +1,26 @@
+      fit extreme     n code4 code_other   med_est sd_est med_lsig_time
+   <char>  <lgcl> <int> <int>      <int>     <num>  <num>         <num>
+1:    q20   FALSE   196    67        129 -0.000886 0.0603         -3.67
+2:    q50   FALSE   196    52        144 -0.002072 0.0591         -3.97
+3:    q20    TRUE     3     0          3 -0.264664 0.0686         -1.41
+4:    q50    TRUE     3     1          2 -0.001792 0.0304         -3.26
+   n_lsig_time_lt_m3 med_niter
+               <int>     <num>
+1:               138        94
+2:               144        93
+3:                 0         8
+4:                 3        93
+    code     n sd_est med_se   rej
+   <int> <int>  <num>  <num> <num>
+1:     4    67 0.0549 0.0554  4.48
+2:     1   117 0.0571 0.0540 10.26
+3:     5    15 0.1546 0.0528 40.00
+   extreme sd_q20 sd_q50 maxdiff
+    <lgcl>  <num>  <num>   <num>
+1:   FALSE 0.0603 0.0591   0.326
+2:    TRUE 0.0686 0.0304   0.362
+       i        est         se  code niter    gamma0       lsig0  lsig_time
+   <int>      <num>      <num> <int> <int>     <num>       <num>      <num>
+1:    91 -0.2253166 0.07375048     5    30 1.0582116 -5.08580476 -1.4127480
+2:   152 -0.3587598 0.11167685     5     7 0.8059745 -0.05575568 -1.4335198
+3:   174 -0.2646637 0.03776452     5     8 0.7541073 -1.24625812 -0.6264889

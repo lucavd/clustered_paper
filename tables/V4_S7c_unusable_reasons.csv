@@ -1,0 +1,10 @@
+test,why,N
+flip,null fit coefficient non-finite or >= 10,7928
+flip,zero score variance,2
+naive_perm,observed z non-finite,1206
+naive_slope,zero pooled variance,1906
+naive_slope,fewer than 2 subjects in an arm,1536
+subj_perm,null fit coefficient non-finite or >= 10,7928
+subj_perm,fewer than 2 subjects in an arm,125
+subj_t,null fit coefficient non-finite or >= 10,7928
+subj_t,fewer than 2 subjects in an arm,125

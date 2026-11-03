@@ -1,0 +1,10 @@
+check,value,pass
+rows identical outside gee_kc time:trt,0,TRUE
+gee_kc columns other than se/stat/p/converged/status/U identical,0,TRUE
+gee_kc estimate = S7d exchangeable estimate (max abs diff),0,TRUE
+study gee_kc p = normal p of estimate/se,1,TRUE
+gee_kc keys without an S7d row,0,TRUE
+gee_kc rows,3022223,TRUE
+usable (U0) study KC,2785541,TRUE
+usable (U0) fewclust KC,2792372,TRUE
+S7d exch rows read,3023420,TRUE

@@ -1,0 +1,5 @@
+id,what,n_cells,est,mcse,lo,hi,outcome
+P9,"type I, MMM with check, mean over 288 H0 cells T 8-10",288,5.42986686548794,0.0455885540532325,4,6,confermata
+P10,H0 design points clearly above 7.5% (of 864); study: 138,864,0,0,0,8,confermata
+P11,"power difference with check - study, mean over 288 H1 cells T 8-10 (points)",288,0.263080779515684,0.0448522128589012,-2.5,1,confermata
+P12,"type I difference with check - study, mean over 576 H0 cells T 2-6 (points)",576,-1.51789661804765,0.0382913358213397,-1,1,smentita

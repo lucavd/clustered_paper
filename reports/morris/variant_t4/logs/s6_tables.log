@@ -1,0 +1,12 @@
+Warning messages:
+1: In max(se, na.rm = TRUE) :
+  no non-missing arguments to max; returning -Inf
+2: In max(se, na.rm = TRUE) :
+  no non-missing arguments to max; returning -Inf
+3: In max(se, na.rm = TRUE) :
+  no non-missing arguments to max; returning -Inf
+912 cells in 20 tables; missing values 2; inline-MCSE columns 43 of 108
+   table_id        col     N
+     <char>     <char> <int>
+1:      T12 GenBinaryY     1
+2:     T12c GenBinaryY     1

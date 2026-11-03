@@ -1,0 +1,178 @@
+################ HUNT: which stratifying variable gives 502/608? ################
+*** EXACT HIT: H0|M5|nominal1000|mean|right=TRUE -> 83/100/147/502/608 
+*** EXACT HIT: H0|M5|nominal1000|pooledsum|right=TRUE -> 83/100/147/502/608 
+*** EXACT HIT: H0|M5|n_attempt|mean|right=TRUE -> 83/100/147/502/608 
+*** EXACT HIT: H0|M5|n_attempt|pooledsum|right=TRUE -> 83/100/147/502/608 
+
+combinazioni provate: 384  hit esatti: 4 
+
+################ LE DUE PARTIZIONI, terne e ranghi completi ################
+
+===== denominatore 1000 NOMINALE, 5 marginali, mean, right=TRUE =====
+conteggi: 83/100/147/502/608 
+MAD:
+Key: <method>
+      method    <50% 50-80% 80-95% 95-99.9%    100%
+      <char>   <num>  <num>  <num>    <num>   <num>
+1:       gee  8.3612 9.9497 8.6854   2.7913 1.04345
+2:    gee_fg  3.8908 2.8311 2.7509   1.1316 0.62948
+3:    gee_kc  3.0598 1.9503 3.0674   6.1455 8.15140
+4:    gee_md  4.2400 4.2480 4.1205   1.3210 0.61040
+5:     glmer  5.4612 2.2250 2.4697   2.6604 2.38488
+6: glmer_lrt  5.3539 8.7859 8.3610   4.3427 1.59243
+7:       mmm  2.6162 1.5596 1.9994   2.3406 1.02470
+8:    shrink 10.9169 5.3733 3.8759   2.9382 2.39692
+RANGHI:
+Key: <method>
+      method  <50% 50-80% 80-95% 95-99.9%  100%
+      <char> <int>  <int>  <int>    <int> <int>
+1:       gee     7      8      8        5     4
+2:    gee_fg     3      4      3        1     2
+3:    gee_kc     2      2      4        8     8
+4:    gee_md     4      5      6        2     1
+5:     glmer     6      3      2        4     6
+6: glmer_lrt     5      7      7        7     5
+7:       mmm     1      1      1        3     3
+8:    shrink     8      6      5        6     7
+MMM nello strato 100%: MAD 1.024703  rango 3 
+   <50%      gap(MMM-FG)=-1.2746 n=83 p=4.83e-08
+   50-80%    gap(MMM-FG)=-1.2716 n=100 p=1.34e-07
+   80-95%    gap(MMM-FG)=-0.7514 n=147 p=1.3e-05
+   95-99.9%  gap(MMM-FG)=+1.2090 n=502 p=0
+   100%      gap(MMM-FG)=+0.3952 n=608 p=0
+
+===== denominatore n_attempt EFFETTIVO, 5 marginali, mean, right=TRUE =====
+conteggi: 83/100/147/502/608 
+MAD:
+Key: <method>
+      method    <50% 50-80% 80-95% 95-99.9%    100%
+      <char>   <num>  <num>  <num>    <num>   <num>
+1:       gee  8.3612 9.9497 8.6854   2.7913 1.04345
+2:    gee_fg  3.8908 2.8311 2.7509   1.1316 0.62948
+3:    gee_kc  3.0598 1.9503 3.0674   6.1455 8.15140
+4:    gee_md  4.2400 4.2480 4.1205   1.3210 0.61040
+5:     glmer  5.4612 2.2250 2.4697   2.6604 2.38488
+6: glmer_lrt  5.3539 8.7859 8.3610   4.3427 1.59243
+7:       mmm  2.6162 1.5596 1.9994   2.3406 1.02470
+8:    shrink 10.9169 5.3733 3.8759   2.9382 2.39692
+RANGHI:
+Key: <method>
+      method  <50% 50-80% 80-95% 95-99.9%  100%
+      <char> <int>  <int>  <int>    <int> <int>
+1:       gee     7      8      8        5     4
+2:    gee_fg     3      4      3        1     2
+3:    gee_kc     2      2      4        8     8
+4:    gee_md     4      5      6        2     1
+5:     glmer     6      3      2        4     6
+6: glmer_lrt     5      7      7        7     5
+7:       mmm     1      1      1        3     3
+8:    shrink     8      6      5        6     7
+MMM nello strato 100%: MAD 1.024703  rango 3 
+   <50%      gap(MMM-FG)=-1.2746 n=83 p=4.83e-08
+   50-80%    gap(MMM-FG)=-1.2716 n=100 p=1.34e-07
+   80-95%    gap(MMM-FG)=-0.7514 n=147 p=1.3e-05
+   95-99.9%  gap(MMM-FG)=+1.2090 n=502 p=0
+   100%      gap(MMM-FG)=+0.3952 n=608 p=0
+
+===== denominatore n_present, 5 marginali, mean, right=TRUE =====
+conteggi: 81/98/143/486/632 
+MAD:
+Key: <method>
+      method    <50%  50-80% 80-95% 95-99.9%    100%
+      <char>   <num>   <num>  <num>    <num>   <num>
+1:       gee  8.0269 10.3929 8.7354   2.9320 1.04198
+2:    gee_fg  3.8761  2.9183 2.7448   1.1796 0.62570
+3:    gee_kc  3.0981  1.9568 3.0345   6.1727 8.01327
+4:    gee_md  4.1604  4.4005 4.1269   1.3874 0.60766
+5:     glmer  5.4917  2.2485 2.3814   2.5928 2.45492
+6: glmer_lrt  5.3295  8.6571 8.3994   4.4795 1.64873
+7:       mmm  2.6239  1.5978 2.0356   2.3686 1.03424
+8:    shrink 11.0241  5.4999 3.7434   2.8945 2.47632
+RANGHI:
+Key: <method>
+      method  <50% 50-80% 80-95% 95-99.9%  100%
+      <char> <int>  <int>  <int>    <int> <int>
+1:       gee     7      8      8        6     4
+2:    gee_fg     3      4      3        1     2
+3:    gee_kc     2      2      4        8     8
+4:    gee_md     4      5      6        2     1
+5:     glmer     6      3      2        4     6
+6: glmer_lrt     5      7      7        7     5
+7:       mmm     1      1      1        3     3
+8:    shrink     8      6      5        5     7
+MMM nello strato 100%: MAD 1.03424  rango 3 
+   <50%      gap(MMM-FG)=-1.2522 n=81 p=8.57e-08
+   50-80%    gap(MMM-FG)=-1.3205 n=98 p=1.32e-07
+   80-95%    gap(MMM-FG)=-0.7092 n=143 p=4.39e-05
+   95-99.9%  gap(MMM-FG)=+1.1890 n=486 p=0
+   100%      gap(MMM-FG)=+0.4085 n=632 p=0
+
+### i due pu5 differiscono? diagnostica sulla frontiera 0.999 ###
+max |pu_1000 - pu_att| = 0.004461307 
+celle con pu_att > 0.999 ma pu_1000 <= 0.999: 0 
+celle con pu_1000 > 0.999: 608   pu_att > 0.999: 608   pu_pres > 0.999: 632 
+quante celle hanno TUTTE le repliche usabili per tutti e 5 (pu==1): 372 / 372 / 434 
+
+################ 7. quante celle hanno n_attempt < 1000 ################
+celle H0: 1440  con n_attempt<1000: 132 
+    n_attempt     N
+        <int> <int>
+ 1:       971     3
+ 2:       975     3
+ 3:       976     6
+ 4:       983     3
+ 5:       991     3
+ 6:       992     9
+ 7:       994     3
+ 8:       995    15
+ 9:       996    15
+10:       997    21
+11:       998    18
+12:       999    33
+min n_attempt: 971  deficit totale repliche: 741 
+celle H1 con n_attempt<1000: 132  min: 971 
+
+-- tabella 3.8 sotto i due denominatori, differenza in pp --
+Key: <slope, ntime>
+     slope ntime  gee_fg    glmer glmer_lrt    mmm   shrink
+    <char> <int>   <num>    <num>     <num>  <num>    <num>
+ 1:   M1M2     2 0.01091 7.38e-03    0.1740 0.0090 0.013971
+ 2:   M1M2     3 0.01623 1.54e-02    0.0538 0.0160 0.017777
+ 3:   M1M2     4 0.01225 1.23e-02    0.0245 0.0118 0.012945
+ 4:   M1M2     6 0.01173 1.19e-02    0.0156 0.0115 0.012031
+ 5:   M1M2     8 0.02162 2.20e-02    0.0250 0.0216 0.022008
+ 6:   M1M2    10 0.01168 1.18e-02    0.0125 0.0117 0.011774
+ 7:   M3M5     2 0.00991 4.11e-05    0.1454 0.0074 0.000285
+ 8:   M3M5     3 0.01707 9.36e-03    0.0501 0.0161 0.012233
+ 9:   M3M5     4 0.01805 1.53e-02    0.0328 0.0170 0.018096
+10:   M3M5     6 0.01668 1.62e-02    0.0208 0.0157 0.016853
+11:   M3M5     8 0.01118 1.12e-02    0.0125 0.0105 0.011344
+12:   M3M5    10 0.01582 1.60e-02    0.0167 0.0150 0.015985
+max differenza: 0.1740168  -- casi in cui cambia la cifra a 1 decimale:
+     slope ntime    method  v1000   vatt        d
+    <char> <int>    <char>  <num>  <num>    <num>
+ 1:   M1M2     2 glmer_lrt 98.753 98.927 0.174017
+ 2:   M3M5     2 glmer_lrt 98.838 98.983 0.145430
+ 3:   M3M5     4 glmer_lrt 99.831 99.863 0.032782
+ 4:   M1M2     4 glmer_lrt 99.839 99.863 0.024509
+ 5:   M1M2     8       mmm 98.830 98.852 0.021570
+ 6:   M3M5     4    shrink 93.749 93.767 0.018096
+ 7:   M1M2     3    shrink 88.848 88.866 0.017777
+ 8:   M3M5    10    gee_fg 99.536 99.552 0.015822
+ 9:   M3M5     6       mmm 97.049 97.065 0.015679
+10:   M3M5     4     glmer 90.939 90.954 0.015260
+11:   M3M5     8       mmm 98.149 98.160 0.010508
+
+-- tabella 3.9 (N<=20) sotto i due denominatori --
+      method us1000  usatt  v1000   vatt     d_us      d_v
+      <char>  <num>  <num>  <num>  <num>    <num>    <num>
+1: glmer_lrt 98.413 98.668 89.054 89.287 0.254775 0.233527
+2:       gee 78.607 78.745 65.132 65.243 0.137673 0.110680
+3:    gee_fg 68.935 69.012 63.803 63.874 0.076443 0.070968
+4:    gee_kc 68.687 68.762 62.187 62.256 0.075100 0.069299
+5:    gee_md 68.645 68.721 62.291 62.360 0.075386 0.068086
+6:    shrink 66.830 66.902 62.626 62.693 0.072071 0.066878
+7:       mmm 66.487 66.559 62.196 62.264 0.071844 0.067589
+8:     glmer 64.455 64.520 60.980 61.042 0.065045 0.062005
+celle a N<=20: 270 
+cifre pubblicate che cambiano: usabilita' LRT 98.4 vs 98.7 

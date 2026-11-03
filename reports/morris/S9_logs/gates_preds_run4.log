@@ -1,0 +1,107 @@
+- One or more packages recorded in the lockfile are not installed.
+- Use `renv::status()` for more details.
+                                      table rows_new rows_old rows_matched
+                                     <char>    <int>    <int>        <int>
+1:                    V4_S7d_dp_rates (S7d)    39816    39816        39816
+2:                    V4_S7e_dp_rates (S7e)     7680     7680         7680
+3:                     V4_S7b_rule_dp (S7b)    36024    36024        36024
+4:         V4_S6b_ns_rule_safety_dp (M6-M7)     5760     5760         5760
+5:  variant_nc vs kcfc V4_S6_rule_safety_dp    16632    16632        16632
+6: variant_nc vs kcfc V4_perf_all (own set)    63504    63504        63504
+7:       V5_S7f_rule_dp (Table 5 per point)    16632    16632        16632
+8:      V4_S7d2_dp (sign-flip test columns)     4752     4752         4752
+   cells_differing   pass
+             <int> <lgcl>
+1:               0   TRUE
+2:               0   TRUE
+3:               0   TRUE
+4:               0   TRUE
+5:               0   TRUE
+6:               0   TRUE
+7:               0   TRUE
+8:               0   TRUE
+Key: <strategy>
+        strategy hi_corr lo_corr pu_corr pu_small_corr upow_corr hi_all lo_all
+          <char>   <int>   <int>   <num>         <num>     <num>  <int>  <int>
+ 1:         flip       0       0 96.5073       72.2704   20.9064      0      0
+ 2:   gee_ar1_fg       2     106 91.8974       43.7203   19.3633      2    106
+ 3:   gee_ar1_kc     138      70 91.7141       42.5398   20.6538    138     70
+ 4:   gee_ar1_md      20     103 91.8238       43.4682   19.6175     20    103
+ 5:  gee_ar1_unc     363       1 93.6832       55.9601   22.2291    363      1
+ 6: gee_exch_cr2     254      10 93.4963       54.2888   21.3904    254     10
+ 7:  gee_exch_fg      15     104 91.9836       43.8952   19.8728     15    104
+ 8:  gee_exch_kc     207      70 91.8012       42.7169   21.0727    207     70
+ 9:  gee_exch_md      63     101 91.9093       43.6390   19.9996     63    101
+10: gee_exch_unc     411       1 93.7809       56.1113   22.6983    411      1
+11:  gee_ind_cr2     251      10 93.8791       57.1691   21.1627    251     10
+12:   gee_ind_fg       5     104 92.1077       44.1295   19.3387      5    104
+13:   gee_ind_kc     189      81 92.0295       43.8364   20.8423    189     81
+14:   gee_ind_md      58     109 92.0303       43.8462   19.7691     58    109
+15:  gee_ind_unc     383       2 93.9766       57.3070   22.4483    383      2
+16:       mmm_cc       0      24 90.8948       39.1642   20.8002      0     24
+         pu pu_small    upow   pass
+      <num>    <num>   <num> <lgcl>
+ 1: 96.5073  72.2704 20.9064   TRUE
+ 2: 91.8974  43.7203 19.3633   TRUE
+ 3: 91.7141  42.5398 20.6538   TRUE
+ 4: 91.8238  43.4682 19.6175   TRUE
+ 5: 93.6832  55.9601 22.2291   TRUE
+ 6: 93.4963  54.2888 21.3904   TRUE
+ 7: 91.9836  43.8952 19.8728   TRUE
+ 8: 91.8012  42.7169 21.0727   TRUE
+ 9: 91.9093  43.6390 19.9996   TRUE
+10: 93.7809  56.1113 22.6983   TRUE
+11: 93.8791  57.1691 21.1627   TRUE
+12: 92.1077  44.1295 19.3387   TRUE
+13: 92.0295  43.8364 20.8423   TRUE
+14: 92.0303  43.8462 19.7691   TRUE
+15: 93.9766  57.3070 22.4483   TRUE
+16: 90.8948  39.1642 20.8002   TRUE
+GS3: 16 of 16 
+                   status     N
+                   <char> <int>
+1:                   same  2468
+2: same text, value moved   260
+3:           text changed   421
+4:                 new id    33
+5:             id removed     1
+           code
+         <char>
+1:          PS1
+2:          PS2
+3:          PS3
+4: PS3 (T >= 4)
+5:          PS4
+6:          PS5
+7:          PS6
+8:          PS7
+9:          PS8
+                                                                       what
+                                                                     <char>
+1:                 Table 3 rate and MAD, GEE uncorrected and KC (12 values)
+2:                    Table 3 worst case, GEE uncorrected and KC (6 values)
+3:                         Table 4 usable share, GEE uncorrected (10 cells)
+4:                                      same, T from 4 (expected -0.3 to 0)
+5:                                               Table S10 power cells (96)
+6:                  direct comparison, MAD difference GEE - MMM, 19 regions
+7: copula, mean coverage of the GEE strategies (t and normal, 9 strategies)
+8:          N - 2: GEE AR(1) FG clearly above = 2; strategy chosen = mmm_cc
+9:         fewest expected flags: boot=mmm_cc, plugin=mmm_cc, eb=gee_ar1_fg
+      d_min   d_max     a     b       verdict
+      <num>   <num> <num> <num>        <char>
+1:  0.00923  0.0836  -1.0   1.0    confermata
+2:  0.39531  1.0604  -2.5   2.5    confermata
+3: -0.87092  0.0000  -2.5   2.5    confermata
+4: -0.10245  0.0000  -2.5   2.5    confermata
+5:  0.00000  0.0608  -2.0   2.0    confermata
+6: -0.03979  1.4806  -1.0   1.0 indeterminata
+7: -0.11719 -0.0193  -1.0   1.0    confermata
+8:  1.00000      NA   1.0   1.0    confermata
+9:  0.00000      NA   1.0   1.0      smentita
+Figure 1a classes that changed:
+Key: <region, q>
+     region                 q   class.o          class.n
+     <char>            <char>    <char>           <char>
+1:  N10_T3p  pu_gee_minus_mmm different          similar
+2: Nb|10|3+  pu_gee_minus_mmm different          similar
+3:       T2 mad_gee_minus_mmm   similar about the margin

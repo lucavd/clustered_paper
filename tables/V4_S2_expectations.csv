@@ -1,0 +1,25 @@
+id,attesa,tolleranza,osservato,superato
+Q0,md5 di results_full/ prima e dopo,"28.800/28.800 OK, zero falliti",prima: 28800 OK; dopo: 28800 OK,si
+Q1.1,conteggi usabili = colonna n di O_level_all (H0) e O_coverage_all (H1),zero discordanze,"matched 11163, mismatched 0; matched 9726, mismatched 0",si
+Q1.2,status non NA classificati,"100%, classe altro vuota",usable rows with a warning: 1604131; classified: 1604131; 'other': 0,si
+Q2.1,design point con < 1.000 replicati generati in almeno un arm,"132 su 1.440, minimo 971","44 su 1.440 (solo GLMM-AR1), minimo 971; con la definizione del manoscritto (almeno una riga time:trt) 132, minimo 971",no
+Q2.2,replicati generati con meno di 5 tecniche,0,671,no
+Q2.3,mancanti rieseguiti riproducono un errore di generazione con messaggio,100%; vicini senza errore,494/494 (singular matrix 'a' in solve); vicini 494/494 senza errore,si
+Q3.1,verita' marginale GenBinaryY = beta del generatore,esatta,GenBinaryY marginal truth equals 0.2/0.05/0: 10/10,si
+Q3.2,verita' condizionale GLMM-native = beta_c,esatta,"M1 mmlb 0,232; M1 manual 0,000; M2 mmlb 0,232; M2 manual 0,000; M3 mmlb 0,232; M3 manual 0,000; M4 mmlb 0,058; M4 manual 0,000; M5 mmlb 0,232; M5 manual 0,000",si
+Q3.3,quadratura riproduce F_truth_glmmnative.csv,<= 1e-10,max |diff| = 1.3e-15,si
+Q3.4,errore di quadratura 40 contro 80 nodi,<= 1e-10,1.4e-14,si
+Q3.5a,verita' condizionale AR1 costante fra replicati,"sd < 1e-8 in ogni (M, arm, T, N)","24 su 240; sd massima 0,0048",no
+Q3.5b,riproduzione di F_truth_ar1.csv,<= 1e-8,M1 5.00 x 10^-16; M2 4.44 x 10^-16; M3 8.57 x 10^-03; M4 3.00 x 10^-03; M5 8.56 x 10^-03,no
+Q4.1,quota di serie piene aggregata,"0,70 +/- 0,01","0,70026 (MCSE 0,00008)",si
+Q4.2,quota per cella,"0,70 +/- 0,01; nessun superamento a N >= 25","0 superamenti su 480; |z| massimo 2,65",si
+Q4.3,T = 2: quota con una osservazione; media/T,"0,30 +/- 0,01; 0,85 +/- 0,02","0,2935 a 0,3062; 0,8462 a 0,8539",si
+Q4.4,nclust rigenerato = make_all_data; nclust e trt uguali fra meccanismi,150/150,148/148 valutabili identici (2 non valutabili: generazione AR1 fallita); fra meccanismi 50/50,no alla lettera: 148/150 valutabili
+Q5.1,"rho fra arm > 0,5 (mmm, gee, glmer, >= 100 coppie); IC > 0",>= 95%; tutte,"3955/4093 (96,6%); IC > 0 in 4093/4093",si
+Q5.2,"mediana rho native-AR1 > GenBinaryY-native (M1-M4); |mediana GB-native| < 0,3",gee e glmer,"gee 0,022 contro 0,004; glmer 0,019 contro 0,003; |GB-native| 0,005 e 0,003",si
+Q6.1,parita' H0 corretto / H1: differisce solo l'ultimo elemento di beta,12/12,"primo controllo 0/12 cells (strumento difettoso, vedi sez. 2); controllo corretto 12/12, controprova dello strumento 12/12",si (al secondo controllo)
+Q6.2,il banco riproduce results_full (i = 1-5),60/60,60/60,si
+Q6.3,disegno identico fra H0 corretto e H0 originale,100%,12000/12000 datasets,si
+Q6.4,M3-M4: differenza appaiata di usabilita' e di errore di I tipo entro 3 MCSE,"circa 0,2 superamenti su circa 70",usabilita' 64/64; I tipo 63/63 (1 NA; 14 confronti con MCSE appaiata 0),si
+Q7.1,"riproduzione della coorte: 2.296 esiti; varianza paziente 3,545; contrasto 0,378 (0,168)","+/- 0,001","2296 esiti; 3,5448; MMM 0,3784 (SE 0,1675)",si
+Q7.2,"DGM dentro l'IC 95% della coorte (prevalenza, varianze)",coerente / scarto dichiarato,"prevalenza 0,595 [0,554, 0,635] contro 0,119: scarto dichiarato; varianza paziente (solo paziente) 3,545 [2,616, 4,873] contro 1: scarto dichiarato",criterio applicato

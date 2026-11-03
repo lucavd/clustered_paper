@@ -1,0 +1,17 @@
+      src  label   fits boundary refit_used_v_i refit_converged
+   <char> <char>  <int>    <int>          <int>           <int>
+1:   main manual 842317   594593         573922          462847
+2:   main   mmlb 842887   584314         565777          460653
+3:    m67 manual 380183   172946         166227          141782
+4:    m67   mmlb 380253   166742         160760          137765
+5: copula manual 280046   214056         208547          169624
+6: copula   mmlb 280157   212529         207394          169833
+   no_result_not_converged no_result_not_finite   keys
+                     <int>                <int>  <int>
+1:                  111075                20671 131746
+2:                  105124                18537 123661
+3:                   24445                 6719  31164
+4:                   22995                 5982  28977
+5:                   38923                 5509  44432
+6:                   37561                 5135  42696
+keys written: 402676 

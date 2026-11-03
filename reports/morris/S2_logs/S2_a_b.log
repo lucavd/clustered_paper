@@ -1,0 +1,182 @@
+Q2 total generated 2879506 of 2880000; missing 494
+Q2.1 design points with < 1000 in at least one arm: 44 of 1440; min 971; max among those 999
+Q2.1 missing by dgp x arm:
+        dgp  label     N
+     <char> <char> <int>
+1: GLMM-AR1 manual   247
+2: GLMM-AR1   mmlb   247
+Q2.1 missing by dgp x model x ntime:
+Key: <dgp, model>
+        dgp model     2     3     4     6     8    10
+     <char> <int> <int> <int> <int> <int> <int> <int>
+1: GLMM-AR1     1    58    18     6     4     6     6
+2: GLMM-AR1     2    66    18    10     6    10     2
+3: GLMM-AR1     3    38    14     8     2     2     0
+4: GLMM-AR1     4    58    18    12     8     4     8
+5: GLMM-AR1     5    58    18    12    10     6     8
+Q2.1 cells where H0 and H1 miss the same sim_ids: 44 of 44 cells with any missing
+Q2.2 generated sim_ids with fewer than 5 techniques: 671 (of 2879506)
+Q2.2 gee_ss: replicates with 3 correction rows 2878518, with a 'fit returned NULL' row 988, other 0
+Q2.2 glmer: shrink row present iff glmer converged: TRUE
+Q1.2 usable rows with a warning: 1604131; classified: 1604131; 'other': 0
+Q1.2 primary class by method (usable rows with warning):
+Key: <method>
+      method glm_fitted_0_1 glm_not_converged lme4_convergence
+      <char>          <int>             <int>            <int>
+1:       gee           1597               265                0
+2:    gee_fg              4                 0                0
+3:    gee_kc              0                 0                0
+4:    gee_md             10                 0                0
+5:     glmer              0                 0           504973
+6: glmer_lrt              0                 0           209786
+7:       mmm             31                 0                0
+8:    shrink              0                 0           520311
+   nan_or_na_replaced
+                <int>
+1:               9811
+2:                  7
+3:                  6
+4:                 10
+5:                  0
+6:                  0
+7:             357320
+8:                  0
+Q1 pooled by method: share usable U0/U1/U2 and warn share among usable
+      method   n_gen     U0     U1     U2 warn_among_U0 cells_warn_gt_10pct
+      <char>   <int>  <num>  <num>  <num>         <num>               <int>
+1:       gee 2879506 0.9419 0.9378 0.9418     4.304e-03                  57
+2:    gee_fg 2879506 0.9221 0.9221 0.9221     4.143e-06                   0
+3:    gee_kc 2879506 0.9216 0.9216 0.9216     2.261e-06                   0
+4:    gee_md 2879506 0.9215 0.9215 0.9215     7.537e-06                   0
+5:     glmer 2879506 0.8107 0.6353 0.6353     2.163e-01                1111
+6: glmer_lrt 2879506 0.9973 0.9244 0.9244     7.305e-02                 683
+7:       mmm 2879506 0.9066 0.7825 0.9066     1.369e-01                1187
+8:    shrink 2537570 0.9318 0.7268 0.7268     2.200e-01                1152
+   cells_warn_gt_50pct
+                 <int>
+1:                   0
+2:                   0
+3:                   0
+4:                   0
+5:                 406
+6:                  32
+7:                 288
+8:                 414
+Q1 warn share among usable, by method x dgp:
+Key: <method>
+      method GLMM-AR1 GLMM-native GenBinaryY
+      <char>    <num>       <num>      <num>
+1:       gee     0.40        0.38       0.51
+2:    gee_fg     0.00        0.00       0.00
+3:    gee_kc     0.00        0.00       0.00
+4:    gee_md     0.00        0.00       0.00
+5:     glmer    21.53       21.43      21.95
+6: glmer_lrt     7.10        6.81       8.01
+7:       mmm    13.66       13.53      13.89
+8:    shrink    21.83       21.69      22.51
+unusable reasons:
+Key: <method>
+      method estimate_or_se_out_of_range fit_returned_NULL
+      <char>                       <int>             <int>
+1:       gee                      133714                 0
+2:    gee_fg                        8375                 0
+3:    gee_kc                        9224                 0
+4:    gee_md                        8475                 0
+5:     glmer                      144999                 0
+6: glmer_lrt                           0              7712
+7:       mmm                      165747                 0
+8:    shrink                      114905                 0
+   gee_fitted_value_near_1 geesmv_timeout glmer_more_RE_than_obs
+                     <int>          <int>                  <int>
+1:                       0              0                      0
+2:                  163793          41237                      0
+3:                  163793          41237                      0
+4:                  163793          41237                      0
+5:                       0              0                 384750
+6:                       0              0                      0
+7:                       0              0                      0
+8:                       0              0                      0
+   non_finite_estimate_se_p other_error singular_system
+                      <int>       <int>           <int>
+1:                    32696         988               0
+2:                        0          21            9986
+3:                        0         658            9986
+4:                        0         283           11245
+5:                        0       14780               0
+6:                        0         151               0
+7:                    39295         560           62943
+8:                        0           0               0
+other_error statuses (top 20):
+       method
+       <char>
+ 1:     glmer
+ 2:     glmer
+ 3:     glmer
+ 4:     glmer
+ 5:       gee
+ 6:    gee_kc
+ 7:       mmm
+ 8:    gee_md
+ 9: glmer_lrt
+10:       mmm
+11:       mmm
+12:    gee_kc
+13:     glmer
+14:    gee_fg
+15:    gee_kc
+16:       mmm
+17:       mmm
+18:       mmm
+19:      <NA>
+20:      <NA>
+       method
+       <char>
+                                                                               s
+                                                                          <char>
+ 1:                                       Downdated VtV is not positive definite
+ 2: (maxstephalfit) PIRLS step-halvings failed to reduce deviance in pwrssUpdate
+ 3:                                                         Response is constant
+ 4:                           pwrssUpdate did not converge in (maxit) iterations
+ 6:                                           argument x is not a numeric matrix
+ 7:                                   probable coding error in analytic gradient
+ 8:                                non-finite or non-positive corrected variance
+ 9:          no applicable method for `@` applied to an object of class "matrix"
+10:              'names' attribute [4] must be the same length as the vector [3]
+11:              'names' attribute [6] must be the same length as the vector [5]
+12:                                                    non-conformable arguments
+13:          no applicable method for `@` applied to an object of class "matrix"
+14:                                non-finite or non-positive corrected variance
+15:                                non-finite or non-positive corrected variance
+16:              'names' attribute [3] must be the same length as the vector [2]
+17:              'names' attribute [4] must be the same length as the vector [2]
+18:              'names' attribute [2] must be the same length as the vector [1]
+19:                                                                         <NA>
+20:                                                                         <NA>
+                                                                               s
+                                                                          <char>
+        N
+    <int>
+ 1:  7013
+ 2:  3616
+ 3:  2931
+ 4:  1141
+ 5:   988
+ 6:   562
+ 7:   326
+ 8:   283
+ 9:   151
+10:   108
+11:   104
+12:    81
+13:    79
+14:    21
+15:    15
+16:    10
+17:    10
+18:     2
+19:    NA
+20:    NA
+        N
+    <int>
+Q1.1 O_level_all (H0): rows 11163, n matched 11163, mismatched 0; absent in O with n_U0 > 0: 0; absent with 0: 186
+Q1.1 O_coverage_all (H1): rows 9726, n matched 9726, mismatched 0; absent in O with n_U0 > 0: 0; absent with 0: 183

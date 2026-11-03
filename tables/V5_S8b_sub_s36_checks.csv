@@ -1,0 +1,12 @@
+check,pass,detail
+same rows in kcfc and cc variants,TRUE,27216 rows
+"cv differs from cc only in gee_kc rows (fewclust KC, D-60), gee rows (constant outcomes, D-82) and mmm rows of M3-M5 (refit not converged, D-90)",TRUE,"gee,gee_kc,mmm"
+"cc differs from the study row set only in mmm rows of M3-M5 (convergence check, D-32)",TRUE,"mmm M3,mmm M4,mmm M5"
+kcfc build gate (V5_S7f_kcfc_gate.csv) all pass,TRUE,9 checks
+registry tables of the supplement read the cv variant,TRUE,""
+one row per design point and method,TRUE,""
+"relerr_modse is 100 (modse / empse - 1), in percent",TRUE,max abs diff 1.42e-12 over 10213 rows
+"cover is a proportion in [0, 1]",TRUE,""
+GLMM on GenBinaryY: bias and coverage missing in the source,TRUE,""
+"every cell defined except GLMM on GenBinaryY (bias, coverage)",TRUE,""
+design points per grid and mechanism,TRUE,M1c/AR1=24 M1c/GB=24 M1c/NAT=24 main/AR1=480 main/GB=480 main/NAT=480

@@ -1,0 +1,31 @@
+name,class_study,est_study,class_cc,est_cc,changed
+C01|AR1,trascurabile,0.240039013228795,"risolta, rilevanza indeterminata",1.27836742731532,TRUE
+C01|NAT,trascurabile,0.260127253966401,"risolta, rilevanza indeterminata",1.31917362049199,TRUE
+C02|AR1,trascurabile,0.403688558659862,smentita,-0.175999153666749,TRUE
+C02|GB,trascurabile,0.422764925568208,smentita,-0.506985693909358,TRUE
+C02|NAT,trascurabile,0.253139219909653,smentita,-0.278773696724385,TRUE
+C03b|AR1,trascurabile,0.818843299141022,smentita,-0.145542281200139,TRUE
+C03b|GB,trascurabile,0.471895473298979,smentita,-0.500784615222589,TRUE
+C03b|NAT,trascurabile,0.576593423718248,smentita,-0.298353111507537,TRUE
+C03|AR1,"risolta, rilevanza indeterminata",1.03438564740861,trascurabile,0.0180857079409993,TRUE
+C03|GB,trascurabile,0.728520289173677,smentita,-0.305154696158044,TRUE
+C03|NAT,trascurabile,0.847564832384567,smentita,-0.109928705988606,TRUE
+C06c|all,trascurabile,0.232319215980767,smentita,-0.488755883577742,TRUE
+C07|all,"risolta, rilevanza indeterminata",0.333333333333333,smentita,-0.238095238095238,TRUE
+C10b|BH,"risolta, rilevanza indeterminata",5.06944444444444,smentita e rilevante,-20.2083333333333,TRUE
+C10b|BY,"risolta, rilevanza indeterminata",6.11111111111111,smentita e rilevante,-13.0555555555556,TRUE
+C15a|s3,trascurabile,0.469039717634399,risolta e rilevante,1.60193654059754,TRUE
+C15c|s4,trascurabile,0.195240957903089,smentita,-0.465715931471943,TRUE
+C15d|s2,"risolta, rilevanza indeterminata",1.24746599894769,risolta e rilevante,1.69028580257706,TRUE
+C15d|s3,trascurabile,0.752289719892842,risolta e rilevante,1.84527971249181,TRUE
+C15d|s4,"risolta, rilevanza indeterminata",1.16616768275676,smentita,-0.465715931471943,TRUE
+C17c|GB,"risolta, rilevanza indeterminata",0.92668706474638,risolta e rilevante,2.03086007158562,TRUE
+C17d|GB,"risolta, rilevanza indeterminata",0.92668706474638,risolta e rilevante,2.03086007158562,TRUE
+C17e|AR1,"risolta, rilevanza indeterminata",1.06465645433296,risolta e rilevante,2.06740757127493,TRUE
+C17e|GB,"risolta, rilevanza indeterminata",1.34560679062905,trascurabile,0.241433783789808,TRUE
+C17e|NAT,"risolta, rilevanza indeterminata",1.33499238099746,risolta e rilevante,2.07806226247374,TRUE
+C23e|AR1,"risolta, rilevanza indeterminata",1.38313013250038,risolta e rilevante,2.40198224597773,TRUE
+C23e|NAT,"risolta, rilevanza indeterminata",1.33659713137998,risolta e rilevante,2.59333158140828,TRUE
+C25b|AR1,risolta e rilevante,1.43423840616908,trascurabile,0.421951498585347,TRUE
+C25b|GB,risolta e rilevante,1.48626421544586,trascurabile,0.525378616274321,TRUE
+C25b|NAT,risolta e rilevante,1.17294791084602,trascurabile,0.244852613405963,TRUE

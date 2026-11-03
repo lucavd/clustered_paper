@@ -1,0 +1,48 @@
+item,value,se,lo,hi,dgm,note
+n_patients,207,,,,,""
+n_patient_timepoints,230,,,,,""
+n_zone_outcomes,2296,,,,,""
+var_id_modelA,3.54482462536461,,2.6162781427262,4.87336596568801,1,scarto dichiarato; profile LR at variance 1 = 66.90
+icc_latent_id_modelA,0.518651642484598,,,,0.233107398370851,""
+var_pt_modelB,3.78354343285087,,1.67244045670732,5.13588781038906,1,scarto dichiarato; profile LR at variance 1 = 8.82
+icc_latent_pt_modelB,0.534896548469228,,,,0.233107398370851,""
+var_id_modelB,4.47616817594086e-12,,0,2.31894481434744,1,coerente; profile LR at variance 1 = 0.84
+icc_latent_id_modelB,6.3281602290858e-13,,,,0.233107398370851,""
+var_hemi_modelC,0,,0,0.18448086326995,1,scarto dichiarato; profile LR at variance 1 = 35.76
+icc_latent_hemi_modelC,0,,,,0.233107398370851,""
+var_pt_modelC,3.78271164952579,,1.67229095112038,5.1360029058946,1,scarto dichiarato; profile LR at variance 1 = 8.82
+icc_latent_pt_modelC,0.53484184913638,,,,0.233107398370851,""
+var_id_modelC,1.91892731579418e-10,,0,2.31915195399664,1,coerente; profile LR at variance 1 = 0.84
+icc_latent_id_modelC,2.71319288655357e-11,,,,0.233107398370851,""
+LRT_pt_level_B_vs_A_chi2,46.7350562229935,,,,,"boundary mixture p = 0.5 * pchisq(chi2, 1, lower = FALSE)"
+prevalence_lus_severe,0.594512195121951,0.0208402006731377,0.554008402064129,0.634822958455157,0.119202922022118,scarto dichiarato
+logit_prevalence,0.382650430341993,,0.216879739679213,0.552963873122393,-2,""
+dgm_marginal_prevalence_M1_H1_T2,0.141125819306222,,,,,""
+dgm_marginal_prevalence_M1_H1_T10,0.279333590212992,,,,,""
+contrast_MMM_regionlateral,1.07061661962633,0.150638643445987,,,,marginal
+contrast_GEE_regionlateral,1.12563081582889,0.149666830172786,,,,marginal
+contrast_GLMM_regionlateral,1.40393466157333,0.156762658903792,,,,conditional
+contrast_MMM_regionposterior,0.378383764872975,0.167481933061328,,,,marginal
+contrast_GEE_regionposterior,0.380650148000496,0.165497592058409,,,,marginal
+contrast_GLMM_regionposterior,0.47555195913432,0.119526679994749,,,,conditional
+contrast_MMM_disease2,-0.751281803561272,0.281261701056984,,,,marginal
+contrast_GEE_disease2,-0.701973411945661,0.286265932903273,,,,marginal
+contrast_GLMM_disease2,-1.02924421531742,0.33592472548038,,,,conditional
+contrast_MMM_disease3,2.10781739004312,0.256277171633838,,,,marginal
+contrast_GEE_disease3,2.12499040588292,0.246777228324692,,,,marginal
+contrast_GLMM_disease3,2.84073398260872,0.291049058993091,,,,conditional
+contrast_MMM_disease4,0.0824127451882536,0.210938834246556,,,,marginal
+contrast_GEE_disease4,0.251555644168397,0.23308829932656,,,,marginal
+contrast_GLMM_disease4,0.369783908557228,0.242771386785187,,,,conditional
+contrast_MMM_invasive1,-0.590328115830829,0.282767890956068,,,,marginal
+contrast_GEE_invasive1,-0.658399304812701,0.269917473275733,,,,marginal
+contrast_GLMM_invasive1,-0.897914878141626,0.295937461741257,,,,conditional
+contrast_MMM_age_weeks,-0.207409378794035,0.128158890554803,,,,marginal
+contrast_GEE_age_weeks,-0.174006519088046,0.129178357445734,,,,marginal
+contrast_GLMM_age_weeks,-0.218638422574096,0.135375957024143,,,,conditional
+dgm_cumulative_interaction_T2,0.2,,,,,0.2 per occasion x (T - 1); no coherence criterion (D-10b)
+dgm_cumulative_interaction_T3,0.4,,,,,0.2 per occasion x (T - 1); no coherence criterion (D-10b)
+dgm_cumulative_interaction_T4,0.6,,,,,0.2 per occasion x (T - 1); no coherence criterion (D-10b)
+dgm_cumulative_interaction_T6,1,,,,,0.2 per occasion x (T - 1); no coherence criterion (D-10b)
+dgm_cumulative_interaction_T8,1.4,,,,,0.2 per occasion x (T - 1); no coherence criterion (D-10b)
+dgm_cumulative_interaction_T10,1.8,,,,,0.2 per occasion x (T - 1); no coherence criterion (D-10b)

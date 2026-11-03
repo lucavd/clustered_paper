@@ -1,0 +1,9 @@
+# Large run logs kept on the server only (not in git). Written 2026-10-31 (S7g opening).
+== reports/morris/S7d_logs/run.txt  bytes=242204114  md5=848065b14a55dfa3c13707b216fc9dd8  lines=4573473
+4           1    1   1        1
+5           1    0   1        0
+6           1    1   1        1
+== reports/morris/S7e_logs/run.txt  bytes=65396581  md5=881491e12e6e21b732b4354c47c68f21  lines=1230289
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.6094379 -17.9566306   0.5108256  -0.5108256 

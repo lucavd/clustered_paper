@@ -1,0 +1,17 @@
+id,attesa,tolleranza,osservato,superato
+Q0,md5 di results_full/ e results_v4 (S2) invariati prima e dopo,zero falliti,prima: Q0 results_full OK 28800 files; prima: Q0 results_v4 (S2) OK 126 files; dopo: Q0 results_full OK 28800 files; dopo: Q0 results_v4 (S2) OK 126 files,si
+Q1,"parita' H0/H1: 15/15 + 3/3 (M1c); controprova sui generatori originali 12/15, falliti GenBinaryY M3-M5",esatta,"v4 15/15 + 3/3; originali 12/15, falliti: GenBinaryY M3, GenBinaryY M4, GenBinaryY M5",si
+Q2,"AR1 M5 v4 differisce dall'originale solo in D[3,3] (0,01 -> 0,001) e D = D di GLMM-native M5",esatta,8/8,si
+Q3,"banco con codice originale riproduce results_full/ bit per bit, 300 replicati",300/300,300/300 (righe di traccia escluse: 4),si
+Q4,"disegno identico al generatore di riferimento (F1, F2: originale; C: M1)",100%,F1 288.000/288.000; F2 191.888/191.888; C 143.914/143.914,si
+Q5,blocco L: gee rieseguita identica a results_full/,100%,12.480/12.480 chunk identici; sim_id uguali 12.480/12.480; righe 5.277.866 contro 5.277.866,si
+Q6,"18.720 chunk, zero errori, ogni sim_id con una traccia",zero,18.720/18.720 chunk; sim completi 18.720; errori di crew: vedi run.log,si
+Q7,design_degenerate in biiezione con le chiavi di S2; errori di generazione solo su chiavi degeneri,esatta,"main 1.728/1.728 celle, C 144/144 celle; errori su chiavi non degeneri: 0",si
+Q8a,"re_structure del LRT: pendenze in M3-M5, (1|id) in M1c",100%,F1 2.880/2.880; F2 1.920/1.920; L 12.480/12.480; C 1.440/1.440,si
+Q8b,"abs(LRT - Wald) < 1e-3 in almeno il 95% delle coppie senza warning, per scenario x meccanismo",">= 0,95 in ogni riga","6/12 righe; quota minima 0,608 (GenBinaryY M5)",no
+Q9,GenBinaryY M3-M4: differenza appaiata H0 v4 - H0 originale entro 3 MCSE,>= 99%,"usable 469/474 (0,9895); type I 1.190/1.347 (0,8834)",no
+Q10.1,"beta0(T) entro 5e-4 dai valori pre-registrati, residuo < 1e-10",4/4,"4/4; beta0 = 0,2427; 0,1960; 0,1495; 0,0569",si
+Q10.2,"prevalenza attesa H0: 0,5945 (GenBinaryY), 0,589 +/- 0,001 (GLMM-native)",4/4,"4/4; GLMM-native 0,5889; 0,5889; 0,5889; 0,5890",si
+Q10.3,prevalenza realizzata a N = 45 entro 3 MCSE dall'attesa,24/24,"24/24; |z| massimo 1,91",si
+Q10.4,AR1: errore massimo di calibrazione < 1e-8 sui replicati non degeneri,< 1e-8,9.51e-09,si
+Q10.5,costanti e argomenti dei motori come D-14,tutti,18/18,si

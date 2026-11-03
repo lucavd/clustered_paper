@@ -1,0 +1,3 @@
+label,points,match_file,assessed_i,hi_t,lo_t,hi_i,lo_i,hi_fin,lo_fin,hi_i_unbnc,lo_i_unbnc,mean_cov_t,mean_cov_i,mean_cov_fin
+manual,2376,2376,2376,0,0,0,115,0,33,1096,0,94.5557247774552,95.1491188125387,95.4344437419354
+mmlb,2376,2376,2376,0,0,0,101,0,24,1095,0,94.501262877069,95.074978597496,95.3859175387697

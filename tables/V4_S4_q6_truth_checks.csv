@@ -1,0 +1,6 @@
+check,keys,value,na_mismatch,pass
+Q6a S2 reproduction M1-M4,9600,5.55111512312578e-16,0,TRUE
+"Q6a failures = degenerate keys, main",960000,9.99996815909121e-09,0,TRUE
+"Q6a failures = degenerate keys, M1c",48000,9.98935581475457e-09,0,TRUE
+"Q6b replay = generator, 200 keys",200,0,0,TRUE
+Q6c quadrature reproduces S2 M1,12,4.44089209850063e-16,0,TRUE

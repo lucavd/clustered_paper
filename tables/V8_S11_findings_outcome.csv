@@ -1,0 +1,33 @@
+id,esito,dove
+F01,corretto,"D-89: i dati separati restano risultati; 3.4, 4.1, abstract, 5 descrivono il fallimento silenzioso di GEE (12/61 e 11/63 rifiuti su dati separati); nuova Sezione S19 e Tabella S38 (versioni a-d); lettera"
+F02,corretto,"2.5 paragrafo sui dati separati (stessa regola, quota S e S nei disegni piccoli, rinvio a S19); 4.1 consiglio di controllare la separazione [31],[33]"
+F03,corretto,"D-90: il rifit conta solo con codice nlm 1/2 e valori finiti, altrimenti nessun risultato (variante cv, D-91); 2.4, 3.2, 4.2; Sezione S20 e Tabella S39"
+F04,corretto,superato da D-90: rifit senza valori finiti = nessun risultato; 2.4 lo dice
+F05,corretto,"2.5 (quota utilizzabile sotto l'ipotesi nulla, media sui punti di disegno) e didascalie Tabelle 4, 5, S7, S8, S14, S20, S21, S26, S28, S31, S33"
+F06,corretto,"2.5 (almeno 20 replicati utilizzabili, x:min_obs_dp) e didascalia Tabella S14"
+F07,corretto,2.5: utilizzabilità del LRT e del sign-flip; frase sui tassi per replicato utilizzabile con l'eccezione della potenza
+F08,corretto,2.5: frase unita (media sui punti di disegno) coerente con 3.1-3.2
+F09,corretto,"3.7 e S7: media sui dataset con entrambi gli intervalli finiti (chiavi ciw|ds, ciw|ds_N75)"
+F10,corretto,3.1: intervallo da chiavi f:n11|madT2|marg|min/max
+F11,corretto,"S3: 18 con indipendenza, 11 con AR(1), massimi separati"
+F12,corretto,S4: almeno 666 (chiave ge4|both_min)
+F13,ricalcolato,"S16: confronto delle soglie rifatto con D-82 e D-90 (varianti t4cv, t2cv; R/s11/s11_thr_compare.R, eseguito): 156 affermazioni confrontate, 0 cambi di lettura in entrambe, 37 citate nel testo, 0 citate cambiate; punti chiaramente sopra 7,5% del modello marginalizzato con t: 0 in entrambe (tables/V8_S11_thr_summary.csv)"
+F14,corretto,S4: 20.0% dalle righe di produzione (to_max_prod)
+F15,corretto,didascalie MCSE: limite arrotondato per eccesso (ceil_sig2 in s8b_mcse_captions.py)
+F16,corretto,3.2: quote al limite / sostituito / nessun risultato da chiavi f:n11|cc (denominatore dichiarato)
+F17,corretto,3.10: ogni adattamento sui propri replicati utilizzabili
+F18,corretto,nota in S15: M1c ricampionato separatamente; effetto solo sull'MCSE
+F19,corretto,Tabella 2(b) celle M4/M5; 2.2 fattore M1c da chiave f:n11|zeger_f_m1c
+F20,corretto,2.2: 'tested marginal coefficient' e nota sui coefficienti condizionali di GLMM-AR1
+F21,corretto,2.2 frase su Copula-AR1; sign-flip 'no Wald interval'
+F22,corretto,3.1: shrinkage GLM con i metodi marginali
+F23,corretto,"Tabelle S35, S36, S8, S13: media o radice della media dei quadrati dichiarata in didascalia; intervallo S8 con il suo insieme"
+F24,corretto,"S2, S3, S4, S37: conteggio degli adattamenti, primi 50 replicati per geesmv, metodo EB, aggiustamento con almeno 2 replicati"
+F25,non applicabile,con D-90 a T=2 la differenza di MAD è 'simile' (0.84); 3.4 confronto diretto riscritto
+F26,corretto,Tabella 2(a): $\rho^{\lvert t_j - t_k \rvert}$ (verifica nel Word)
+F27,corretto,Tabella 2: larghezze di colonna differenziate (verifica nel Word)
+F28,corretto in parte,"frontespizio v8: contributi, parole, commit, fewclust 0.4.1; DOI Zenodo in attesa del rilascio GitHub del PI"
+F29,corretto,"lettera v8: raccomandazione D-89/D-90, nuovo paragrafo"
+F30,spiegato,37 replicati senza riga gee_kc; valori stampati invariati; nessuna modifica
+F31,ritirato,dopo arbitraggio: con denominatore stimabile (D-11) la Tabella 4 riproduce a 1e-13
+F32,verificato,"valori Kahan 2016 verificati sul testo completo (Zotero): 100, 99, mediana 25, IQR 15-44"

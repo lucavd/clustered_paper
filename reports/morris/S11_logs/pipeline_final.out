@@ -1,0 +1,52 @@
+OK   s7_extras 12 s
+OK   s6cc_cv 61 s
+OK   cpflags 1 s
+OK   table4 0 s
+OK   s9_keys 1 s
+OK   h2h_boot 115 s
+OK   degen_ind 13 s
+OK   degen_tab 103 s
+OK   s11_keys 22 s
+OK   s7g_filter 125 s
+OK   du8_mdkc_avg 180 s
+OK   lit_pow 420 s
+OK   copy results_v4/S11/prov/du8_table4_mdkc_avg.csv -> tables/V5_S8b_mdkc_avg.csv
+OK   copy results_v4/S11/prov/lit_pow1_pass_v2.csv -> tables/V5_S8b_rule_stability.csv
+OK   disc_r2 57 s
+OK   copy results_v4/S11/prov/disc_r2_flip_summary.csv -> tables/V5_S8b_flip_interval.csv
+OK   copy results_v4/S11/prov/disc_r2_flip_lo_points.csv -> tables/V5_S8b_flip_lo_points.csv
+OK   extras 3 s
+OK   fig1_series 1 s
+OK   clinical 22 s
+OK   s7g_extras 31 s
+OK   agq_keys0 0 s
+OK   tabkeys0 1 s
+OK   spec0 0 s
+OK   registry0 3 s
+OK   s36 1 s
+OK   s37 0 s
+OK   mdkc_s26 97 s
+OK   s8b_keys 17 s
+OK   mcse_captions 2 s
+OK   sub_keys 0 s
+OK   figures 6 s
+OK   figS1 3 s
+OK   agq_keys 0 s
+OK   tabkeys 0 s
+OK   spec 1 s
+OK   registry 3 s
+GF3a: 3376 numbers, 52 source files, 0 discordances
+verify exit 0
+GF2: 0 violations
+GF2 exit 0
+GF4: 95 tags, 0 not ok; 0 comparative sentences without a tag
+GF4 exit 0
+GF4: 39 tags, 0 not ok; 0 comparative sentences without a tag
+GF4 supp exit 0
+P1: words 7922 + 200 x 7 display items = 9322
+P2: sentences 323, median 22, mean 24.6, p90 43, max 68
+abstract words 224
+em dashes 0, en dashes 0
+manuscript/v5/MMM_v5_supplement.docx | text runs departing: 0
+format exit 0
+pipeline final done

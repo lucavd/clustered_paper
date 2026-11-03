@@ -1,0 +1,27 @@
+('manuscript/v5/MMM_v5_supplement_trace.md', 'VIOLATION') 9
+('manuscript/v5/MMM_v5_supplement_trace.md', 'b-label') 43
+('manuscript/v5/MMM_v5_supplement_trace.md', 'c-grid-N') 82
+('manuscript/v5/MMM_v5_supplement_trace.md', 'c-grid-T') 64
+('manuscript/v5/MMM_v5_supplement_trace.md', 'd-nominal') 93
+('manuscript/v5/MMM_v5_supplement_trace.md', 'e-math') 6
+('manuscript/v5/MMM_v5_supplement_trace.md', 'identifier') 314
+('manuscript/v5/MMM_v5_trace.md', 'VIOLATION') 2
+('manuscript/v5/MMM_v5_trace.md', 'b-label') 90
+('manuscript/v5/MMM_v5_trace.md', 'c-grid-N') 51
+('manuscript/v5/MMM_v5_trace.md', 'c-grid-T') 36
+('manuscript/v5/MMM_v5_trace.md', 'd-nominal') 87
+('manuscript/v5/MMM_v5_trace.md', 'e-math') 2
+('manuscript/v5/MMM_v5_trace.md', 'identifier') 219
+GF2: 11 violations
+   ('manuscript/v5/MMM_v5_trace.md', 'VIOLATION', '200', 'h the iterations stopped: refitted with 200 instead of 25 iterations, it ')
+   ('manuscript/v5/MMM_v5_trace.md', 'VIOLATION', '25', 's stopped: refitted with 200 instead of 25 iterations, it moved further ')
+   ('manuscript/v5/MMM_v5_supplement_trace.md', 'VIOLATION', '50', 'the same exchangeable fits of the first 50 replicates of each design poi')
+   ('manuscript/v5/MMM_v5_supplement_trace.md', 'VIOLATION', '10', 'ic regression gave an interaction above 10 in absolute value in § of the')
+   ('manuscript/v5/MMM_v5_supplement_trace.md', 'VIOLATION', '200', 'Refitting these separated datasets with 200 instead of the 25 iterations ')
+   ('manuscript/v5/MMM_v5_supplement_trace.md', 'VIOLATION', '25', 'arated datasets with 200 instead of the 25 iterations of the study moved')
+   ('manuscript/v5/MMM_v5_supplement_trace.md', 'VIOLATION', '1', 'ort convergence (return code other than 1 or 2) or an estimated slope o')
+   ('manuscript/v5/MMM_v5_supplement_trace.md', 'VIOLATION', '2', 'onvergence (return code other than 1 or 2) or an estimated slope of the')
+   ('manuscript/v5/MMM_v5_supplement_trace.md', 'VIOLATION', '3', 'r per attempted dataset (%). *nlm* code 3: the last global step failed ')
+   ('manuscript/v5/MMM_v5_supplement_trace.md', 'VIOLATION', '3', '§ | § | § | | (ii’) As (ii), *nlm* code 3 also accepted | § | § | § | §')
+   ('manuscript/v5/MMM_v5_supplement_trace.md', 'VIOLATION', '3', '| § | § | | (iii’) As (iii), *nlm* code 3 also accepted | § | § | § | §')
+GF2 exit 1

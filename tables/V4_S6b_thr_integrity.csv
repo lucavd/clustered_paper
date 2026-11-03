@@ -1,0 +1,3 @@
+variant,check,pass
+t4,row set identical to the study outside MMM rows of M3-M5,TRUE
+t2,row set identical to the study outside MMM rows of M3-M5,TRUE

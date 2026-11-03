@@ -1,0 +1,216 @@
+##### 1. which threshold for the last stratum gives 502 / 608? #####
+  threshold >0.99    : 95-th = 172, last = 938
+  threshold >0.995   : 95-th = 256, last = 854
+  threshold >0.998   : 95-th = 359, last = 751
+  threshold >0.999   : 95-th = 472, last = 638
+  threshold >0.9995  : 95-th = 588, last = 522
+  threshold >0.9999  : 95-th = 738, last = 372
+  threshold >1       : 95-th = 1110, last =   0
+  pu5 == 1 exactly: 372 
+  distribution of pu5 near 1:
+         b     N
+     <num> <int>
+ 1: 1.0000   372
+ 2: 0.9998    86
+ 3: 0.9996    64
+ 4: 0.9994    44
+ 5: 0.9992    42
+ 6: 0.9990    30
+ 7: 0.9988    36
+ 8: 0.9986    31
+ 9: 0.9984    31
+10: 0.9982    13
+11: 0.9980    10
+12: 0.9978     9
+
+  ## same with pu over 1000 instead of n_attempt
+  >0.995   : 854 | 95-th 256
+  >0.998   : 751 | 95-th 359
+  >0.999   : 638 | 95-th 472
+  >0.9995  : 522 | 95-th 588
+  >1       :   0 | 95-th 1110
+
+  ## with the EIGHT methods instead of the five marginal ones
+  >0.995   : 837 | 95-th 190
+  >0.999   : 666 | 95-th 361
+  >1       :   0 | 95-th 1027
+
+  ## strata under the boundary that yields 502/608, MAD per method
+  boundary giving last=608: NA 
+
+##### 2. the T=2 random-slope cells where glmer/shrink return anything #####
+Key: <key, method>
+    method                key n_usable     n k_rej  rate   dev
+    <char>             <char>    <int> <int> <int> <num> <num>
+ 1: shrink    GLMM-AR1 3 10 2        4     4     2 50.00 45.00
+ 2: shrink    GLMM-AR1 3 15 2        1     1     0  0.00  5.00
+ 3: shrink GLMM-native 3 10 2        1     1     0  0.00  5.00
+ 4: shrink GLMM-native 4 10 2        3     3     1 33.33 28.33
+ 5: shrink GLMM-native 4 15 2        1     1     0  0.00  5.00
+ 6:  glmer  GenBinaryY 3 10 2        2     2     1 50.00 45.00
+ 7: shrink  GenBinaryY 3 10 2        7     7     2 28.57 23.57
+ 8:  glmer  GenBinaryY 4 10 2        1     1     0  0.00  5.00
+ 9: shrink  GenBinaryY 4 10 2        5     5     1 20.00 15.00
+10: shrink  GenBinaryY 4 15 2        1     1     0  0.00  5.00
+MAD over just those cells: glmer 25  shrink 16.4881 
+MMM MAD on the same 144 RS/T=2 cells: 2.113361 
+MMM MAD on the 2 cells where glmer answers: 3.333333 
+
+##### 3. RMSE conventions (3.14) #####
+
+-- cellmean --
+Key: <method>
+   method GLMM-AR1 GLMM-native GenBinaryY
+   <char>    <num>       <num>      <num>
+1:    gee  0.47616     0.47720    0.47642
+2: gee_fg  0.43740     0.43806    0.43855
+3: gee_kc  0.43479     0.43732    0.43721
+4: gee_md  0.43731     0.43785    0.43841
+5:  glmer  0.63125     0.59867    0.87224
+6:    mmm  0.44917     0.44935    0.44736
+7: shrink  0.39152     0.36905    0.40864
+   GenBinaryY   spread4=2.32% spread3=2.04% glmer/min4=1.995 glmer/max4=1.950
+   GLMM-native  spread4=2.75% spread3=2.63% glmer/min4=1.369 glmer/max4=1.332
+   GLMM-AR1     spread4=3.31% spread3=2.71% glmer/min4=1.452 glmer/max4=1.405
+
+-- pooled --
+Key: <method>
+   method GLMM-AR1 GLMM-native GenBinaryY
+   <char>    <num>       <num>      <num>
+1:    gee  0.57360     0.57916    0.56734
+2: gee_fg  0.50672     0.51090    0.49473
+3: gee_kc  0.50618     0.51078    0.49447
+4: gee_md  0.50677     0.51144    0.49497
+5:  glmer  0.85765     0.80564    1.10929
+6:    mmm  0.51226     0.51607    0.49969
+7: shrink  0.44057     0.43980    0.45841
+   GenBinaryY   spread4=1.06% spread3=1.00% glmer/min4=2.243 glmer/max4=2.220
+   GLMM-native  spread4=1.04% spread3=1.01% glmer/min4=1.577 glmer/max4=1.561
+   GLMM-AR1     spread4=1.20% spread3=1.09% glmer/min4=1.694 glmer/max4=1.674
+
+-- cellmean_mse --
+Key: <method>
+   method GLMM-AR1 GLMM-native GenBinaryY
+   <char>    <num>       <num>      <num>
+1:    gee  0.44275     0.46100    0.42935
+2: gee_fg  0.33566     0.34673    0.32613
+3: gee_kc  0.32874     0.34397    0.32251
+4: gee_md  0.33538     0.34534    0.32567
+5:  glmer  0.97170     0.89903    1.87849
+6:    mmm  0.35061     0.35977    0.33810
+7: shrink  0.34736     0.27494    0.34168
+   GenBinaryY   spread4=4.83% spread3=3.82% glmer/min4=5.825 glmer/max4=5.556
+   GLMM-native  spread4=4.59% spread3=4.18% glmer/min4=2.614 glmer/max4=2.499
+   GLMM-AR1     spread4=6.65% spread3=4.54% glmer/min4=2.956 glmer/max4=2.771
+
+-- cellmed --
+Key: <method>
+   method GLMM-AR1 GLMM-native GenBinaryY
+   <char>    <num>       <num>      <num>
+1:    gee  0.29322     0.28244    0.30985
+2: gee_fg  0.29150     0.27888    0.30941
+3: gee_kc  0.29095     0.27895    0.30823
+4: gee_md  0.29038     0.27895    0.30825
+5:  glmer  0.28671     0.27624    0.37448
+6:    mmm  0.29535     0.28098    0.30939
+7: shrink  0.23643     0.22504    0.24843
+   GenBinaryY   spread4=0.38% spread3=0.37% glmer/min4=1.215 glmer/max4=1.210
+   GLMM-native  spread4=0.75% spread3=0.75% glmer/min4=0.991 glmer/max4=0.983
+   GLMM-AR1     spread4=1.71% spread3=1.71% glmer/min4=0.987 glmer/max4=0.971
+
+-- shrink RMSE and cell counts, restricting to cells with n>=k replicates --
+n>= 1  shrink: GenBinaryY 0.4086(422) | GLMM-AR1 0.3915(422) | GLMM-native 0.3690(422) 
+        glmer : GenBinaryY 0.8722(421) | GLMM-AR1 0.6313(420) | GLMM-native 0.5987(419) 
+n>= 10  shrink: GenBinaryY 0.3959(416) | GLMM-AR1 0.3741(417) | GLMM-native 0.3683(417) 
+        glmer : GenBinaryY 0.8357(416) | GLMM-AR1 0.6226(416) | GLMM-native 0.5877(416) 
+n>= 50  shrink: GenBinaryY 0.3959(416) | GLMM-AR1 0.3731(416) | GLMM-native 0.3658(416) 
+        glmer : GenBinaryY 0.8313(414) | GLMM-AR1 0.6186(414) | GLMM-native 0.5777(414) 
+n>= 100  shrink: GenBinaryY 0.3857(414) | GLMM-AR1 0.3633(414) | GLMM-native 0.3587(414) 
+        glmer : GenBinaryY 0.8284(413) | GLMM-AR1 0.6186(414) | GLMM-native 0.5777(414) 
+n>= 500  shrink: GenBinaryY 0.3497(402) | GLMM-AR1 0.3335(404) | GLMM-native 0.3289(404) 
+        glmer : GenBinaryY 0.7466(394) | GLMM-AR1 0.5653(401) | GLMM-native 0.5258(401) 
+
+##### 4. bias conventions (3.13), glmer #####
+truth used: marginal per scenario (0.2/0.05); conditional 0.232/0.058 (AR1: per-T calibrated)
+all cells                    repw: marg 0.0798 cond 0.0460 (ratio 0.423) | cellmean: marg 0.0909 cond 0.0572 (ratio 0.371) | cells 1260
+T>=3                         repw: marg 0.0735 cond 0.0399 (ratio 0.457) | cellmean: marg 0.0915 cond 0.0579 (ratio 0.367) | cells 1161
+T>=4                         repw: marg 0.0717 cond 0.0375 (ratio 0.477) | cellmean: marg 0.0736 cond 0.0394 (ratio 0.465) | cells 960
+n>=500 replicates            repw: marg 0.0801 cond 0.0463 (ratio 0.422) | cellmean: marg 0.0810 cond 0.0472 (ratio 0.417) | cells 1196
+excluding M4                 repw: marg 0.0927 cond 0.0534 (ratio 0.424) | cellmean: marg 0.1067 cond 0.0676 (ratio 0.366) | cells 1019
+N>=25                        repw: marg 0.0775 cond 0.0438 (ratio 0.435) | cellmean: marg 0.0779 cond 0.0442 (ratio 0.433) | cells 1014
+T>=4 & n>=900                repw: marg 0.0673 cond 0.0330 (ratio 0.509) | cellmean: marg 0.0676 cond 0.0334 (ratio 0.506) | cells 891
+
+MAPE variants (%):
+  all      marg 291.5 cond 242.1 reduction 17.0%
+  T>=4     marg 189.7 cond 155.5 reduction 18.0%
+  n>=500   marg 281.3 cond 233.4 reduction 17.0%
+
+pooled coverage of glmer over the three mechanisms, each target:
+   cov_marg cov_cond cov_plim       n
+      <num>    <num>    <num>   <int>
+1:  91.2287   92.309  92.7311 1170315
+mean over the three dgp of (cov_cond - cov_marg): 1.084962 
+95 - cov_marg by dgp:
+           dgp   dep
+        <char> <num>
+1:  GenBinaryY 6.677
+2:    GLMM-AR1 2.719
+3: GLMM-native 1.969
+gap glmer vs FG by dgp:
+Key: <dgp>
+           dgp   gap
+        <char> <num>
+1:    GLMM-AR1 2.631
+2: GLMM-native 1.799
+3:  GenBinaryY 6.230
+
+##### 5. 3.15 'three points flat in N' on GenBinaryY #####
+Key: <N>
+        N gee_fg  glmer    mmm
+    <int>  <num>  <num>  <num>
+ 1:    10 92.456 94.117 91.991
+ 2:    15 93.330 93.276 92.362
+ 3:    20 93.632 92.659 92.670
+ 4:    25 93.881 92.335 92.786
+ 5:    35 93.994 91.590 92.812
+ 6:    45 94.610 91.474 93.017
+ 7:    55 94.540 91.312 93.006
+ 8:    65 94.757 91.097 93.279
+ 9:    75 94.948 91.212 93.290
+10:    85 94.875 91.080 93.309
+11:    95 95.243 90.812 93.633
+12:   105 95.046 90.883 93.440
+13:   115 94.929 90.667 93.530
+14:   125 95.018 90.871 93.594
+15:   135 95.049 91.028 93.565
+16:   145 94.933 90.294 93.397
+
+glmer deficit 95-cov_plim by N (GenBinaryY):
+        N def_plim def_gen
+    <int>    <num>   <num>
+ 1:    10   0.8831   1.108
+ 2:   105   4.1170   8.898
+ 3:   115   4.3328   9.156
+ 4:   125   4.1292   9.308
+ 5:   135   3.9719   9.746
+ 6:   145   4.7057  10.897
+ 7:    15   1.7241   2.103
+ 8:    20   2.3409   2.918
+ 9:    25   2.6645   3.413
+10:    35   3.4096   4.643
+11:    45   3.5257   5.222
+12:    55   3.6881   5.900
+13:    65   3.9031   6.552
+14:    75   3.7882   6.883
+15:    85   3.9200   7.395
+16:    95   4.1884   8.202
+
+by ntime (GenBinaryY, glmer):
+   ntime cov_marg cov_plim
+   <int>    <num>    <num>
+1:    10   83.439   92.397
+2:     2   85.767   85.110
+3:     3   90.370   90.327
+4:     4   90.208   90.052
+5:     6   90.732   92.524
+6:     8   88.423   93.132

@@ -1,0 +1,6 @@
+check,pass,fatal,detail
+strategies of printed Table 4 found in the stability file,TRUE,TRUE,"mmm_cc,gee_ar1_fg,gee_ind_fg,gee_exch_fg,gee_ar1_md,gee_exch_md,gee_ar1_kc,gee_exch_kc | not in file: gee_exch_cr2,gee_exch_unc,shrink,glmer,glmer_lrt,flip"
+bootstrap size read from the provenance script,TRUE,TRUE,2000
+observed flags equal Table 4 (hi_obs = hi_all),TRUE,TRUE,""
+rule strategies have the fewest expected flags in every calculation (table4 rows),TRUE,FALSE,boot mmm_cc>gee_ar1_fg>gee_ind_fg | plugin mmm_cc>gee_ar1_fg>gee_ind_fg | eb mmm_cc>gee_ar1_fg>gee_ind_fg
+rule strategies have the fewest expected flags in every calculation (file rows),TRUE,FALSE,boot mmm_cc>gee_ar1_fg>gee_ind_fg | plugin mmm_cc>gee_ar1_fg>gee_ind_fg | eb mmm_cc>gee_ar1_fg>gee_ind_fg

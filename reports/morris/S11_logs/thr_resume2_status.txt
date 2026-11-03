@@ -1,0 +1,2 @@
+t4cv s5_checks exit 0
+t2cv s5_checks exit 0

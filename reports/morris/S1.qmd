@@ -1,0 +1,138 @@
+---
+title: "S1: protocollo ADEMP di revisione, datato prima di ogni rerun"
+subtitle: "Roadmap Morris 2019, ramo morris-v4"
+date: 2026-10-15
+format:
+  html:
+    embed-resources: true
+    toc: true
+lang: it
+---
+
+## In breve (TL;DR) {.unnumbered}
+
+::: {.callout-note appearance="simple"}
+**Domanda.** Sappiamo esattamente con quali parametri e con quale codice sono stati generati i dati, al punto da scriverlo in un protocollo datato prima di rifare i calcoli?
+
+**Cosa abbiamo fatto.** Estratto dal codice la tabella completa dei parametri (30 combinazioni meccanismo x scenario x ipotesi), verificato che basti da sola a rigenerare i dati, e rifatto un pezzo della simulazione per vedere se torna identico.
+
+**Risultato.** Si', la provenienza e' ricostruita. La tabella rigenera i dati bit per bit (240/240) e il rifit riproduce esattamente i risultati originali (30/30, scarto 0). Il protocollo ADEMP e' datato e committato.
+
+**Cosa abbiamo scoperto.**
+
+- La simulazione originale usava un generatore di numeri casuali diverso dal default di R (L'Ecuyer-CMRG): senza saperlo non si riproduce nulla (0/30). Ora si imposta esplicitamente (D-07).
+- In 3 dei 15 generatori (GenBinaryY M3-M5) i dati sotto H0 e sotto H1 differivano anche in parametri diversi dall'effetto testato: il confronto H0/H1 non era pulito. Da rifare in S3 (D-01).
+- In M3-M5 il LRT del GLMM usava un modello piu' semplice del Wald. Deciso di allinearlo e rifarlo in S3 (D-08).
+- Un coefficiente e' arrotondato (0,012 invece di 0,0116): basta dichiararlo.
+
+**Cosa cambia per il paper.** Ancora nessun numero; ora sappiamo cosa va rifatto in S3.
+:::
+
+## 1. Pre-registrazione
+
+Attese scritte in `docs/sessions/2026-10-15_S1.md` e committate **prima** di qualsiasi calcolo: commit `b0826c5`, 2026-10-15 21:55:06 +0200. Requisiti Morris toccati: A1, B1, B2, B5, B6, C1, C2, D1, D3, E1, F1, F2, F3, H1, H6.
+
+| # | attesa | tolleranza |
+|---|---|---|
+| P1 | la tabella estratta ha 30 combinazioni generatore x arm, e i valori coincidono con l'audit (B1, B3, B4), incluso beta_c GLMM-native = 1,16 x marginale | esatta |
+| P2 | 12/15 coppie H0/H1 differiscono solo nel coefficiente testato; eccezioni GenBinaryY M3, M4, M5 | esatta |
+| P3 | un rigeneratore guidato solo dalla tabella riproduce `make_all_data` su 240/240 dataset | zero discordanze |
+| P4 | il codice dei chunk M1-M2 (job 23035d84) e `.rundir/` danno 96/96 dataset identici | zero discordanze |
+| P5 | il rifit di i = 1, N = 25, T = 4 (30 generatori x arm; mmm, gee, glmer) riproduce `results_full/` | max abs diff <= 1e-8 |
+| P6 | `md5sum -c` su `results_full/` prima e dopo | 28.800/28.800 |
+
+## 2. Esecuzione
+
+Prima di pre-registrare ho ricostruito la provenienza del codice:
+
+- i chunk M1-M2 (11.520, datati 2026-08-05/06) vengono dal job `23035d84`, il cui codice ora sta in `_superseded/rundir_m1m2_job23035d84/` con README e md5;
+- i chunk M3-M5 (17.280, datati 2026-08-08/09) vengono da `5f84297`, copia eseguita in `.rundir/`, identica file per file a `R/` attuale.
+
+Script (tutti `Rscript --vanilla` sul server, R 4.6.1):
+
+- `R/protocol/dgm_common.R`: caricamento delle famiglie come in `run_full.R`, registratori degli argomenti dei motori e delle chiamate RNG, lettura statica del disegno;
+- `R/protocol/extract_dgm_params.R` produce `tables/V4_dgm_parameters.csv` e `tables/V4_dgm_parameters_invariance.csv`;
+- `R/testing/test_dgm_parameters.R` (P1-P4) produce `tables/V4_S1_tests_P1_P4.csv`;
+- `R/testing/test_chunk_reproduction.R` (P5) produce `tables/V4_S1_tests_P5.csv`, e con `MMM_RNGKIND_OVERRIDE` anche `tables/V4_S1_tests_P5_mersenne.csv`;
+- `R/protocol/s1_tables.R` produce le tabelle di questo report e il blocco dei parametri di `docs/PROTOCOL_ADEMP.md`.
+
+Durata complessiva dell'ultimo job (estrazione, test e tabelle): meno di un minuto.
+
+Correzioni durante lo step, tutte prima del verdetto e senza cambiare le attese:
+
+1. Tre difetti di programmazione dello script di estrazione e del test: `missing()` su elementi di chiamata, `rnorm` cercato in `base`, nome del motore non forzato nella closure. Hanno bloccato l'esecuzione, senza produrre numeri.
+2. Primo run di P3: 0/240, per un difetto del rigeneratore (le espressioni valutate in un ambiente senza `stats`). Secondo run: 160/240, con GenBinaryY 0/80 per un altro difetto del rigeneratore (`GenBinaryY` legge l'id con `substitute()`, quindi vuole `id = id`). La tabella non e' stata toccata.
+3. Primo run di P5: **0/30**, con stime diverse fino a 1,6e7. Indagine: i worker crew/mirai inizializzano il generatore **L'Ecuyer-CMRG**, mentre la sessione del test usava il default Mersenne-Twister. Verificato su un caso (scarto GEE 0 contro 0,75). Di conseguenza l'estrattore ora legge `RNGkind()` da un worker crew vero, e i test impostano il RNGkind preso dalla tabella. Il run sotto Mersenne-Twister e' conservato come P5'.
+4. Durante la stesura ho controllato nel sorgente di `MMLB::GenBinaryY` che il carico latente e' lineare (`sig = x.lv %*% sigma`), e ho corretto la nota della tabella, che lo descriveva come log-lineare.
+
+Md5 degli input e degli output:
+
+{{< include S1_md5.md >}}
+
+## 3. Esito
+
+{{< include S1_results.md >}}
+
+**Lettura degli esiti.**
+
+- **P1** fallisce alla lettera su 2 controlli su 101: in GLMM-native M2 il coefficiente di age e' 0,012, mentre 1,16 x 0,01 = 0,0116. Il codice usa `round(1,16 x marginale, 3)`, e questo controllo passa in tutte e 10 le righe. L'attesa scritta ("= 1,16 x marginale") era quindi imprecisa per questo coefficiente. Non lo considero un difetto del generatore: va dichiarato nel v4 come arrotondamento. Tutti gli altri valori dell'audit sono confermati esattamente, comprese le differenze B3 e B4.
+- **P2** conferma B3 dalla tabella, senza leggere il codice a mano. Le eccezioni sono esattamente GenBinaryY M3 (sigma), M4 e M5 (sigma e gamma).
+- **P3** e' la controprova centrale: la tabella basta a rigenerare i dati, quindi non manca e non e' sbagliato alcun parametro, ordine di estrazione o regola di disegno.
+- **P5** dopo la correzione del RNGkind: riproduzione esatta (scarto 0, status identici) su 606 righe di 30 chunk. Il codice e l'ambiente identificati sono quelli che hanno prodotto `results_full/`.
+
+Tabella dei parametri (generata da `tables/V4_dgm_parameters.csv`):
+
+{{< include S1_params.md >}}
+
+MCSE attese per la giustificazione di n_sim (D-03 (a)):
+
+{{< include S1_mcse.md >}}
+
+*Cosa guardare*: nella tabella dei parametri, la colonna "H0 differs from H1 in" (tre righe GenBinaryY non pulite) e D di GLMM-AR1 M5. *Segnale di errore*: una riga GLMM-native o GLMM-AR1 con differenze oltre `time:trt`, o un `draw_*` assente in un generatore che usa quella covariata.
+
+## 4. Controprova
+
+P3 e' il test che smentirebbe lo step. Se la tabella omettesse un parametro, ne riportasse uno sbagliato o invertisse l'ordine di due estrazioni, il rigeneratore produrrebbe dati diversi: le stesse estrazioni casuali cadrebbero su variabili diverse. Il primo run, rotto, mostra che il test non passa per costruzione (0/240 e poi 160/240, prima di correggere il rigeneratore). P5' fa lo stesso per il RNGkind: con il generatore sbagliato nessun chunk si riproduce (0/30).
+
+## Rilievi nuovi
+
+- **RNGkind** (F2): la produzione usa L'Ecuyer-CMRG impostato da mirai, non il default di R. Nei rerun di S3 va impostato esplicitamente (D-07).
+- **GLMM LRT** (D1, D3): in M3-M5 il LRT usa `(1|id)`, mentre il Wald usa le pendenze casuali. Risolto con D-08 (b): LRT allineato e `glmer_lrt` rieseguito in S3 (vedi addendum).
+- **`ifelse()` e stream**: `sample()` del troncamento non viene chiamato quando tutti i soggetti sono completi. L'effetto e' identico nei due arm, quindi il CRN non ne risente.
+- **Covariate estratte ma inutilizzate**: consumano numeri casuali (sezione dei parametri). Il loro ruolo nel CRN fra meccanismi va dichiarato.
+- **Verita' marginale GLMM-native M3-M5**: e' calcolata con 10.000 estrazioni Monte Carlo a `colMeans(Z)`, quindi e' approssimata e ha errore proprio (S2(c)).
+
+## Verdetto
+
+**Chiuso, senza riserve aperte** (verdetto iniziale "chiuso con riserve", aggiornato nella stessa sessione: vedi addendum). Il protocollo `docs/PROTOCOL_ADEMP.md` (v1.1) e' datato e committato prima di qualsiasi rerun; la tabella dei parametri e' estratta dal codice e verificata.
+
+Riserve iniziali e loro risoluzione:
+
+- P1 non superato alla lettera (arrotondamento di beta_c age in M2): dichiarato nel protocollo sez. 2.3;
+- D-08: decisa (b), LRT allineato alle pendenze casuali e rieseguito in S3;
+- B6: decisa (D-10), valori ancorati alla coorte LUS con confronto in S2(g);
+- D-04: per roadmap si decide dopo S2(a), non e' una riserva di S1.
+
+Requisiti aggiornati in `docs/audit/MORRIS2019_conformita.csv` (`esito_v4`, `step_v4` = S1):
+
+- *Protocollato*: A1, B1, B2, B5, C1, C2, D3, E1, F2 (con evidenza corretta), H1, H6;
+- *Protocollato, rerun in S3*: D1 (D-08 (b));
+- *Deciso*: F1, F3;
+- *Deciso, rerun in S3*: B3, B4;
+- *Deciso, confronto in S2*: B6 (D-10).
+
+La conformita' piena arriva quando il v4 li riporta (S6-S7).
+
+## Addendum: risoluzione delle riserve (2026-10-15, stessa sessione, D-09)
+
+Il PI ha chiesto di non aprire la chat di S2 prima di aver risolto le riserve di S1 (regola D-09, registrata in `DECISIONS.md`, nella roadmap e nella skill `mmm-session`).
+
+| riserva | risoluzione | dove |
+|---|---|---|
+| P1 non superato alla lettera (beta_c di age in GLMM-native M2: 0,012 contro 0,0116) | **dichiarata**: il codice usa round(1,16 x marginale, 3); il protocollo lo descrive come fattore di Zeger arrotondato a tre decimali (sez. 2.3), e il v4 lo riporta. L'attesa resta registrata come non superata. | protocollo sez. 2.3; conformita' B4 |
+| D-08, struttura casuale del GLMM LRT in M3-M5 | **decisa (b)** dal PI: LRT allineato a `(1 + time|id)` / `(1 + time + dose|id)`, `glmer_lrt` rieseguito in M3-M5 in S3. Misura: su GLMM-native M3, 5 replicati, il LRT con pendenze costa 2,14 contro 0,83 s/replicato a N = 145, T = 10 e 0,36 contro 0,11 a N = 25, T = 4, senza fit nulli; M5 non misurato. | protocollo sez. 2.5 e 4; DECISIONS D-08; roadmap S3 |
+| B6, motivazione di effetto 0,2, intercetta -2, varianza 1 | **decisa** dal PI (D-10): ancoraggio alla coorte LUS neonatale; confronto in S2, testo in S7. | protocollo sez. 2.4; DECISIONS D-10; roadmap S2 |
+
+Questioni assegnate dalla roadmap a step futuri, che non bloccano: D-04 (dopo S2(a)); test di parita' H0/H1 15/15 (S3); tabulazione dei valori veri (S2(c)).
+
+**Verdetto aggiornato**: chiuso, senza riserve aperte; in attesa dell'ok del PI.

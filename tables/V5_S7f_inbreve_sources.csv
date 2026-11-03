@@ -1,0 +1,29 @@
+sentence,file,row,value,written,ok
+"1. nessuna delle due supera mai chiaramente 7,5% (GEE)",tables/V5_S7f_table4.csv,"strategy=gee_ar1_fg, hi_all",0,0,TRUE
+"1. nessuna delle due supera mai chiaramente 7,5% (MMM)",tables/V5_S7f_table4.csv,"strategy=mmm_cc, hi_all",0,0,TRUE
+1. 2.376 situazioni,tables/V5_S7f_table4.csv,"strategy=gee_ar1_fg, n_dp",2376,2376,TRUE
+1. GEE risponde nel 92%,tables/V5_S7f_table4.csv,"strategy=gee_ar1_fg, pu",92,92,TRUE
+1. MMM risponde nel 91%,tables/V5_S7f_table4.csv,"strategy=mmm_cc, pu",91,91,TRUE
+"1. differenza di usabilita' sotto la soglia (2,5 punti)",tables/V5_S7f_h2h_boot.csv,"region=all, q=pu_gee_minus_mmm, class",similar,similar,TRUE
+"1. a 10 cluster con 3+ occasioni: MMM 2,1 falsi positivi su 100",tables/V5_S7f_h2h_boot.csv,"region=N10_T3p, q=rate_mmm",2.1,2.1,TRUE
+"1. a 10 cluster con 3+ occasioni: GEE 4,0",tables/V5_S7f_h2h_boot.csv,"region=N10_T3p, q=rate_gee",4,4,TRUE
+"1. a 10 cluster con 3+ occasioni la differenza e' oltre la soglia, a favore della GEE",tables/V5_S7f_h2h_boot.csv,"region=N10_T3p, q=mad_gee_minus_mmm, class",GEE,GEE,TRUE
+"2. distanza media dal 5%: 1,1 punti (GEE)",tables/V5_S7f_h2h_boot.csv,"region=all, q=mad_gee",1.1,1.1,TRUE
+"2. distanza media dal 5%: 1,1 punti (MMM)",tables/V5_S7f_h2h_boot.csv,"region=all, q=mad_mmm",1.1,1.1,TRUE
+"2. con 2 occasioni e almeno 15 cluster: circa un punto, a cavallo della soglia",tables/V5_S7f_h2h_boot.csv,"region=N15p_T2, q=mad_gee_minus_mmm, est / class",1 about the margin,1 about the margin,TRUE
+"2. li' la GEE e' conservativa: 2,5 falsi positivi su 100",tables/V5_S7f_h2h_boot.csv,"region=N15p_T2, q=rate_gee",2.5,2.5,TRUE
+2. Figura 1 a: 'GEE' solo a 10 cluster con 3 e con 4+ occasioni,tables/V5_S7f_h2h_boot.csv,"region=map|*, q=mad_gee_minus_mmm, class in (GEE, MMM)",map|10|3:GEE; map|10|4+:GEE,map|10|3:GEE; map|10|4+:GEE,TRUE
+"3. modello misto sopra 7,5% sul suo stesso meccanismo: 55 situazioni",tables/V5_S7f_extra.csv,key=glmer_hi_native,55,55,TRUE
+3. ... su 696,tables/V5_S7f_extra.csv,key=glmer_ndp_native,696,696,TRUE
+3. test a inversione di segno con 2-3 visite e fino a 25 soggetti: effetto trovato in circa 4 dataset su 100,tables/V5_S7f_extra.csv,key=flip_upow_small,4,4,TRUE
+"3. 'chiaramente sotto 2,5%' prima: GEE 136",tables/V4_S7e_rule.csv,"set=all four mechanisms, strategy=gee_ar1_fg, n_lo",136,136,TRUE
+"3. 'chiaramente sotto 2,5%' prima: MMM 86",tables/V4_S7e_rule.csv,"set=all four mechanisms, strategy=mmm_cc, n_lo",86,86,TRUE
+3. con intervalli esatti: GEE 116,tables/V5_S7f_table4.csv,"strategy=gee_ar1_fg, lo_all",116,116,TRUE
+3. con intervalli esatti: MMM 24,tables/V5_S7f_table4.csv,"strategy=mmm_cc, lo_all",24,24,TRUE
+"4. Tabelle 2, 3 e 5 ricostruite coincidono (differenza massima sotto 1e-12)","tables/V5_S7f_table{2,3,5}_recompute.csv",max |stampato - ricalcolato| sulle celle con righe,9.9e-14,< 1e-12,TRUE
+4. celle confrontate (72 + 96 + 48),"tables/V5_S7f_table{2,3,5}_recompute.csv",righe,216,216,TRUE
+"4. numeri del manoscritto riletti: 2.297, nessuno discordante",reports/morris/S7f_logs/S7f_GF3a.log,riga GF3a,"GF3a: 2297 numbers, 48 source files, 0 discordances","GF3a: 2297 numbers, 48 source files, 0 discordances",TRUE
+5. 8.858 parole,reports/morris/S7f_logs/S7f_PF1PF2.log,riga P1,P1: words 7458 + 200 x 7 display items = 8858,P1: words 7458 + 200 x 7 display items = 8858,TRUE
+5. abstract 200 parole,reports/morris/S7f_logs/S7f_PF1PF2.log,riga abstract,abstract words 200,abstract words 200,TRUE
+Comunque: fewclust registrato sceglie il modello marginalizzato (dati del pacchetto),tables/V5_S7f_fewclust_condition.csv,"dataset=fc_trial, chosen",mmm,mmm,TRUE
+"Comunque: fewclust registrato sceglie il modello marginalizzato (25 soggetti, 4 visite)",tables/V5_S7f_fewclust_condition.csv,"dataset=simulated, chosen",mmm,mmm,TRUE

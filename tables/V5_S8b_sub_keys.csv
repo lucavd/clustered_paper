@@ -1,0 +1,354 @@
+key,value,mcse,kind,source,how
+s36|gee|AR1|M1c|cov,91.0758278971981,0.921925122487463,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee|GB|M1c|cov,89.9534454504649,0.973955636997623,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee|NAT|M1c|cov,91.1195403860766,0.922565534860591,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_fg|AR1|M1c|cov,94.6203986636291,0.715460318057363,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_fg|GB|M1c|cov,94.0042789506257,0.75561961505008,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_fg|NAT|M1c|cov,94.6546338382341,0.721105372226331,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_kc|AR1|M1c|cov,93.5866057558134,0.79985031494547,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_kc|GB|M1c|cov,92.8678312891396,0.856918528367788,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_kc|NAT|M1c|cov,93.7210162618617,0.78216200413155,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_md|AR1|M1c|cov,95.2021880428217,0.682861606727882,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_md|GB|M1c|cov,94.7868700815455,0.706065595722209,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_md|NAT|M1c|cov,95.353815373052,0.671118614780633,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|glmer|AR1|M1c|cov,95.0419271276443,0.737895750729635,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|glmer|GB|M1c|cov,n.a.,"",text,tables/variant_cv/V4_perf_primary.csv,not defined: the GLMM has no marginal estimand on GenBinaryY
+s36|glmer|NAT|M1c|cov,95.3581816269365,0.706711841590166,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|mmm|AR1|M1c|cov,93.1506893699522,0.870232023689837,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|mmm|GB|M1c|cov,93.0901470635515,0.910453669140141,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|mmm|NAT|M1c|cov,93.2248645945733,0.869337069277409,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|shrink|AR1|M1c|cov,91.998313448683,0.891622803667274,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|shrink|GB|M1c|cov,88.9383314579351,1.03945954789782,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|shrink|NAT|M1c|cov,92.6069158489563,0.865557110687871,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee|AR1|main|cov,92.1024345707361,0.869138550045449,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee|GB|main|cov,91.4344427600111,0.897853954293658,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee|NAT|main|cov,92.1910347842746,0.865922272576481,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_fg|AR1|main|cov,95.0622293992783,0.710188000665872,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_fg|GB|main|cov,94.6284808457935,0.750050053959624,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_fg|NAT|main|cov,95.0671091373157,0.707263480362414,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_kc|AR1|main|cov,93.7922462366683,0.79219777481759,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_kc|GB|main|cov,93.288192279566,0.826462124281535,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_kc|NAT|main|cov,93.8379499409997,0.790295946961403,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_md|AR1|main|cov,94.7803880373961,0.710936771536529,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_md|GB|main|cov,94.2760513800762,0.76349981201331,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_md|NAT|main|cov,94.8091663333363,0.716311357909951,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|glmer|AR1|main|cov,93.2664347231823,0.825614112639345,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 416 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|glmer|GB|main|cov,n.a.,"",text,tables/variant_cv/V4_perf_primary.csv,not defined: the GLMM has no marginal estimand on GenBinaryY
+s36|glmer|NAT|main|cov,93.5939302917846,0.809627866103183,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 416 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|mmm|AR1|main|cov,94.8902052951784,0.792843584623555,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 477 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|mmm|GB|main|cov,94.7404557261963,0.827489484508452,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 478 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|mmm|NAT|main|cov,95.0339920792962,0.77590684994293,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 478 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|shrink|AR1|main|cov,92.4733219318747,0.868601147845887,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 416 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|shrink|GB|main|cov,89.8957200069081,0.991657063208835,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 416 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|shrink|NAT|main|cov,92.7457700311615,0.855489623077684,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 416 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee|AR1|M1c|rb,0.050614999580782,0.033035542147505,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee|GB|M1c|rb,0.0558851994098278,0.0331760079858096,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee|NAT|M1c|rb,0.0358340572576072,0.0331369173444466,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_fg|AR1|M1c|rb,0.0515336396522187,0.0335590611876344,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_fg|GB|M1c|rb,0.0570662708662986,0.0339212322790112,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_fg|NAT|M1c|rb,0.0378549487545312,0.0336480945986599,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_kc|AR1|M1c|rb,0.0514116044800649,0.033686139017554,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_kc|GB|M1c|rb,0.0594656160717448,0.034246130309735,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_kc|NAT|M1c|rb,0.0387677832861584,0.0338338128248247,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_md|AR1|M1c|rb,0.0520859712626401,0.0335889303589729,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_md|GB|M1c|rb,0.0568197725846019,0.0339480925471956,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_md|NAT|M1c|rb,0.0378858818544696,0.0336777777406915,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|glmer|AR1|M1c|rb,0.00346435900046088,0.0348852564895183,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|glmer|GB|M1c|rb,n.a.,"",text,tables/variant_cv/V4_perf_primary.csv,not defined: the GLMM has no marginal estimand on GenBinaryY
+s36|glmer|NAT|M1c|rb,0.0158092499943264,0.0348878878869925,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|mmm|AR1|M1c|rb,0.0425875683978174,0.0347964136908664,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|mmm|GB|M1c|rb,0.0583910286729158,0.0364253973595573,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|mmm|NAT|M1c|rb,0.0311154016491406,0.0348635355534185,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|shrink|AR1|M1c|rb,0.0440096566819932,0.0333307797622825,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|shrink|GB|M1c|rb,0.0383067046674828,0.0335529407029802,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|shrink|NAT|M1c|rb,0.0309009530771372,0.0333946156866409,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee|AR1|main|rb,0.0204061544824743,0.0332137469647128,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee|GB|main|rb,0.030360383419322,0.0332276666019444,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee|NAT|main|rb,0.021504023239475,0.0331690483543278,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_fg|AR1|main|rb,0.0221596714107985,0.0351193277670139,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_fg|GB|main|rb,0.0319198434321159,0.0351163812210377,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_fg|NAT|main|rb,0.0233394426001925,0.0349011916716782,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_kc|AR1|main|rb,0.0219288498929206,0.0349305895952777,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_kc|GB|main|rb,0.030992183174942,0.0349195262416586,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_kc|NAT|main|rb,0.0233953100224877,0.0347513039073338,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_md|AR1|main|rb,0.0222753741222444,0.0351443367148013,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_md|GB|main|rb,0.0320391820857427,0.0351571308390163,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_md|NAT|main|rb,0.023917365662815,0.034914106319949,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|glmer|AR1|main|rb,-0.0178811681391293,0.0339441305739659,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 416 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|glmer|GB|main|rb,n.a.,"",text,tables/variant_cv/V4_perf_primary.csv,not defined: the GLMM has no marginal estimand on GenBinaryY
+s36|glmer|NAT|main|rb,0.0368682062688618,0.033827198795845,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 416 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|mmm|AR1|main|rb,0.0192622914424508,0.0385454679361592,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 477 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|mmm|GB|main|rb,0.0274225868721402,0.0390553273904859,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 478 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|mmm|NAT|main|rb,0.0211654625598263,0.0385911401468646,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 478 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|shrink|AR1|main|rb,0.0753618468325726,0.0332873826085799,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 416 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|shrink|GB|main|rb,0.124421331041008,0.0333795710468896,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 416 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|shrink|NAT|main|rb,0.079357852778615,0.033262756989289,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 416 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee|AR1|M1c|relerr,-8.658579931314,2.34859555360338,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee|GB|M1c|relerr,-8.66986608811139,3.00432896815792,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee|NAT|M1c|relerr,-8.13596628689489,2.37862838289695,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_fg|AR1|M1c|relerr,7.73949389726481,3.04391916723377,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_fg|GB|M1c|relerr,7.0073989039776,3.1689557966284,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_fg|NAT|M1c|relerr,8.5194786536122,3.04509911307834,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_kc|AR1|M1c|relerr,1.76211105721109,2.74551347096179,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_kc|GB|M1c|relerr,0.612905508719279,2.82983229818502,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_kc|NAT|M1c|relerr,2.08676939817233,2.77392539198284,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_md|AR1|M1c|relerr,15.248441094199,3.80260971384056,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_md|GB|M1c|relerr,14.1752933653497,3.69963278200285,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_md|NAT|M1c|relerr,15.6387040713603,3.64592875489582,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|glmer|AR1|M1c|relerr,5.3196395958624,4.58115210248928,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|glmer|GB|M1c|relerr,7.80780114466505,5.559491860291,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|glmer|NAT|M1c|relerr,8.46515903785041,4.61618532985875,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|mmm|AR1|M1c|relerr,1.00529331552006,3.50707419875465,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|mmm|GB|M1c|relerr,7.38846867564674,5.85543261500962,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|mmm|NAT|M1c|relerr,2.18179743087379,4.52122721631254,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|shrink|AR1|M1c|relerr,0.719507383846477,2.80523478376894,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|shrink|GB|M1c|relerr,-4.53979781512843,3.15152613965836,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|shrink|NAT|M1c|relerr,2.65412023724475,2.89002267560655,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 24 of 24 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee|AR1|main|relerr,-6.76514630896941,2.33631740412975,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee|GB|main|relerr,-7.77670012325395,2.39501708602067,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee|NAT|main|relerr,-6.99024351947593,2.30974424710865,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_fg|AR1|main|relerr,8.55276975696103,3.61730814600568,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_fg|GB|main|relerr,7.37512112178448,3.77866900479428,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_fg|NAT|main|relerr,8.27900276613394,3.74091026058857,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_kc|AR1|main|relerr,0.325888031985753,2.74958321653824,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_kc|GB|main|relerr,-0.879098382221206,2.72357906314595,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_kc|NAT|main|relerr,0.0927743926922723,2.70817941398755,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_md|AR1|main|relerr,8.02460200068988,3.61755089764038,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_md|GB|main|relerr,6.25992505757497,3.56858525008209,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|gee_md|NAT|main|relerr,7.56886438308551,3.6183339447398,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 480 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|glmer|AR1|main|relerr,6.09577036112006,4.16503502113511,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 416 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|glmer|GB|main|relerr,4.34682079645072,4.18595088426,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 416 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|glmer|NAT|main|relerr,5.87260326650234,4.02894185883019,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 416 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|mmm|AR1|main|relerr,1.75766860582392,3.35705040672781,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 477 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|mmm|GB|main|relerr,2.13152877295206,3.76056651891811,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 478 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|mmm|NAT|main|relerr,2.10182566317734,3.44224738687186,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 478 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|shrink|AR1|main|relerr,3.8720486804568,3.81478037468947,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 416 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|shrink|GB|main|relerr,2.12778196710632,4.41001887059069,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 416 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|shrink|NAT|main|relerr,4.00382216860808,3.66853928596809,sig2,tables/variant_cv/V4_perf_primary.csv,mean over 416 of 480 design points with n_obs >= 20; mcse = mean of per-point MCSE (upper bound)
+s36|mcse_max|rb,0.0390553273904859,"",sig2,tables/variant_cv/V4_perf_primary.csv,max over the cells of Table S36 of the mean per-point MCSE (at mmm GB main)
+s36|mcse_max|relerr,5.85543261500962,"",sig2,tables/variant_cv/V4_perf_primary.csv,max over the cells of Table S36 of the mean per-point MCSE (at mmm GB M1c)
+s36|mcse_max|cov,1.03945954789782,"",sig2,tables/variant_cv/V4_perf_primary.csv,max over the cells of Table S36 of the mean per-point MCSE (at shrink GB M1c)
+s36|ndp|main,480,"",int,tables/variant_cv/V4_perf_primary.csv,design points per mechanism in the grid (H1)
+s36|ndp|M1c,24,"",int,tables/variant_cv/V4_perf_primary.csv,design points per mechanism in the grid (H1)
+s36|nused_min|main,416,"",int,tables/variant_cv/V4_perf_primary.csv,smallest number of design points entering a cell of the grid
+s36|nused_min|M1c,24,"",int,tables/variant_cv/V4_perf_primary.csv,smallest number of design points entering a cell of the grid
+s36|nused_min,24,"",int,tables/variant_cv/V4_perf_primary.csv,smallest number of design points entering a cell
+s37|rank_same|table4,1,"",int,tables/V5_S8b_rule_stability.csv,1 = identical ordering by expected flags in the three calculations (table4 strategies)
+s37|rule_top2|table4,1,"",int,tables/V5_S8b_rule_stability.csv,1 = gee_ar1_fg and mmm_cc have the fewest expected flags in all three (table4)
+s37|rank_same|file,0,"",int,tables/V5_S8b_rule_stability.csv,1 = identical ordering by expected flags in the three calculations (file strategies)
+s37|rule_top2|file,1,"",int,tables/V5_S8b_rule_stability.csv,1 = gee_ar1_fg and mmm_cc have the fewest expected flags in all three (file)
+s37|rank_same_ppass,0,"",int,tables/V5_S8b_rule_stability.csv,1 = identical ordering by P(zero flags) in the three calculations (Table 4 rows)
+s37|mmm_cc|hi_obs,0,"",int,tables/V5_S8b_rule_stability.csv,observed design points clearly above 7.5% (Table 4)
+s37|mmm_cc|p_pass_boot,41.55,1.10195224488178,sig2,tables/V5_S8b_rule_stability.csv,% of 2000 block-bootstrap resamples with zero flags
+s37|mmm_cc|mean_flags_boot,0.86,"",sig2,tables/V5_S8b_rule_stability.csv,mean number of flags over the resamples
+s37|mmm_cc|q90_flags_boot,2,"",int,tables/V5_S8b_rule_stability.csv,90th percentile of the number of flags over the resamples
+s37|mmm_cc|plugin_p_pass,41.8023343339868,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: P(zero flags) (%)"
+s37|mmm_cc|plugin_exp_flags,0.84307534156183,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: expected flags"
+s37|mmm_cc|eb_p_pass,88.2364025380302,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: P(zero flags) (%)"
+s37|mmm_cc|eb_exp_flags,0.124473606957808,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: expected flags"
+s37|gee_ar1_fg|hi_obs,2,"",int,tables/V5_S8b_rule_stability.csv,observed design points clearly above 7.5% (Table 4)
+s37|gee_ar1_fg|p_pass_boot,0.55,0.165374574829385,sig2,tables/V5_S8b_rule_stability.csv,% of 2000 block-bootstrap resamples with zero flags
+s37|gee_ar1_fg|mean_flags_boot,3.7325,"",sig2,tables/V5_S8b_rule_stability.csv,mean number of flags over the resamples
+s37|gee_ar1_fg|q90_flags_boot,6,"",int,tables/V5_S8b_rule_stability.csv,90th percentile of the number of flags over the resamples
+s37|gee_ar1_fg|plugin_p_pass,0.583619251941559,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: P(zero flags) (%)"
+s37|gee_ar1_fg|plugin_exp_flags,3.66852514618667,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: expected flags"
+s37|gee_ar1_fg|eb_p_pass,86.0549714476605,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: P(zero flags) (%)"
+s37|gee_ar1_fg|eb_exp_flags,0.149375998872453,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: expected flags"
+s37|gee_ind_fg|hi_obs,5,"",int,tables/V5_S8b_rule_stability.csv,observed design points clearly above 7.5% (Table 4)
+s37|gee_ind_fg|p_pass_boot,0.05,0.0499874984371093,sig2,tables/V5_S8b_rule_stability.csv,% of 2000 block-bootstrap resamples with zero flags
+s37|gee_ind_fg|mean_flags_boot,5.744,"",sig2,tables/V5_S8b_rule_stability.csv,mean number of flags over the resamples
+s37|gee_ind_fg|q90_flags_boot,8,"",int,tables/V5_S8b_rule_stability.csv,90th percentile of the number of flags over the resamples
+s37|gee_ind_fg|plugin_p_pass,0.0370871535875687,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: P(zero flags) (%)"
+s37|gee_ind_fg|plugin_exp_flags,5.61209477552686,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: expected flags"
+s37|gee_ind_fg|eb_p_pass,41.4185313708211,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: P(zero flags) (%)"
+s37|gee_ind_fg|eb_exp_flags,0.818081859129488,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: expected flags"
+s37|gee_exch_fg|hi_obs,15,"",int,tables/V5_S8b_rule_stability.csv,observed design points clearly above 7.5% (Table 4)
+s37|gee_exch_fg|p_pass_boot,0,0,sig2,tables/V5_S8b_rule_stability.csv,% of 2000 block-bootstrap resamples with zero flags
+s37|gee_exch_fg|mean_flags_boot,17.289,"",sig2,tables/V5_S8b_rule_stability.csv,mean number of flags over the resamples
+s37|gee_exch_fg|q90_flags_boot,21,"",int,tables/V5_S8b_rule_stability.csv,90th percentile of the number of flags over the resamples
+s37|gee_exch_fg|plugin_p_pass,2.21132353451744e-09,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: P(zero flags) (%)"
+s37|gee_exch_fg|plugin_exp_flags,17.2763261305921,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: expected flags"
+s37|gee_exch_fg|eb_p_pass,0.331167622983101,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: P(zero flags) (%)"
+s37|gee_exch_fg|eb_exp_flags,5.0161159746427,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: expected flags"
+s37|gee_ar1_md|hi_obs,20,"",int,tables/V5_S8b_rule_stability.csv,observed design points clearly above 7.5% (Table 4)
+s37|gee_ar1_md|p_pass_boot,0,0,sig2,tables/V5_S8b_rule_stability.csv,% of 2000 block-bootstrap resamples with zero flags
+s37|gee_ar1_md|mean_flags_boot,28.0975,"",sig2,tables/V5_S8b_rule_stability.csv,mean number of flags over the resamples
+s37|gee_ar1_md|q90_flags_boot,33,"",int,tables/V5_S8b_rule_stability.csv,90th percentile of the number of flags over the resamples
+s37|gee_ar1_md|plugin_p_pass,1.00661026521935e-19,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: P(zero flags) (%)"
+s37|gee_ar1_md|plugin_exp_flags,28.1461653636707,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: expected flags"
+s37|gee_ar1_md|eb_p_pass,4.48936613159863e-05,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: P(zero flags) (%)"
+s37|gee_ar1_md|eb_exp_flags,10.8470673036657,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: expected flags"
+s37|gee_exch_md|hi_obs,63,"",int,tables/V5_S8b_rule_stability.csv,observed design points clearly above 7.5% (Table 4)
+s37|gee_exch_md|p_pass_boot,0,0,sig2,tables/V5_S8b_rule_stability.csv,% of 2000 block-bootstrap resamples with zero flags
+s37|gee_exch_md|mean_flags_boot,73.286,"",sig2,tables/V5_S8b_rule_stability.csv,mean number of flags over the resamples
+s37|gee_exch_md|q90_flags_boot,80,"",int,tables/V5_S8b_rule_stability.csv,90th percentile of the number of flags over the resamples
+s37|gee_exch_md|plugin_p_pass,1.07573062106887e-83,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: P(zero flags) (%)"
+s37|gee_exch_md|plugin_exp_flags,73.6164895944358,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: expected flags"
+s37|gee_exch_md|eb_p_pass,4.54301375198004e-46,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: P(zero flags) (%)"
+s37|gee_exch_md|eb_exp_flags,48.8559953817725,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: expected flags"
+s37|gee_ar1_kc|hi_obs,138,"",int,tables/V5_S8b_rule_stability.csv,observed design points clearly above 7.5% (Table 4)
+s37|gee_ar1_kc|p_pass_boot,0,0,sig2,tables/V5_S8b_rule_stability.csv,% of 2000 block-bootstrap resamples with zero flags
+s37|gee_ar1_kc|mean_flags_boot,141.8045,"",sig2,tables/V5_S8b_rule_stability.csv,mean number of flags over the resamples
+s37|gee_ar1_kc|q90_flags_boot,149,"",int,tables/V5_S8b_rule_stability.csv,90th percentile of the number of flags over the resamples
+s37|gee_ar1_kc|plugin_p_pass,8.36884410805793e-200,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: P(zero flags) (%)"
+s37|gee_ar1_kc|plugin_exp_flags,142.13536972714,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: expected flags"
+s37|gee_ar1_kc|eb_p_pass,1.40284498977544e-123,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: P(zero flags) (%)"
+s37|gee_ar1_kc|eb_exp_flags,109.5389991272,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: expected flags"
+s37|gee_exch_kc|hi_obs,207,"",int,tables/V5_S8b_rule_stability.csv,observed design points clearly above 7.5% (Table 4)
+s37|gee_exch_kc|p_pass_boot,0,0,sig2,tables/V5_S8b_rule_stability.csv,% of 2000 block-bootstrap resamples with zero flags
+s37|gee_exch_kc|mean_flags_boot,208.423,"",sig2,tables/V5_S8b_rule_stability.csv,mean number of flags over the resamples
+s37|gee_exch_kc|q90_flags_boot,217,"",int,tables/V5_S8b_rule_stability.csv,90th percentile of the number of flags over the resamples
+s37|gee_exch_kc|plugin_p_pass,0,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: P(zero flags) (%)"
+s37|gee_exch_kc|plugin_exp_flags,208.715763968407,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: expected flags"
+s37|gee_exch_kc|eb_p_pass,0,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: P(zero flags) (%)"
+s37|gee_exch_kc|eb_exp_flags,179.976224223816,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: expected flags"
+s37|mmm_cc|p_pass_boot|disp,42,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|mmm_cc|plugin_p_pass|disp,42,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|mmm_cc|eb_p_pass|disp,88,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_ar1_fg|p_pass_boot|disp,0.5,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_ar1_fg|plugin_p_pass|disp,0.6,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_ar1_fg|eb_p_pass|disp,86,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_ind_fg|p_pass_boot|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_ind_fg|plugin_p_pass|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_ind_fg|eb_p_pass|disp,41,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_exch_fg|p_pass_boot|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_exch_fg|plugin_p_pass|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_exch_fg|eb_p_pass|disp,0.3,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_ar1_md|p_pass_boot|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_ar1_md|plugin_p_pass|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_ar1_md|eb_p_pass|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_exch_md|p_pass_boot|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_exch_md|plugin_p_pass|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_exch_md|eb_p_pass|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_ar1_kc|p_pass_boot|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_ar1_kc|plugin_p_pass|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_ar1_kc|eb_p_pass|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_exch_kc|p_pass_boot|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_exch_kc|plugin_p_pass|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_exch_kc|eb_p_pass|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|B,2000,"",int,R/s8b/provenance/lit_pow_rule_stability_v2.R,block-bootstrap resamples
+s37|nrows,8,"",int,tables/V5_S8b_rule_stability.csv,strategies of Table 4 in the stability file
+s37|fg_pfail_boot,99.45,"",sig2,tables/V5_S8b_rule_stability.csv,"% of resamples with at least one flag, GEE AR(1) FG"
+s37|mmm_pfail_boot,58.45,"",sig2,tables/V5_S8b_rule_stability.csv,"% of resamples with at least one flag, MMM with check"
+mdkc|gee_ar1_avgvar|N - p|n_hi,41,"",int,tables/V5_S8b_sub_mdkc_s26.csv,"design points of the three study mechanisms (1896), exact 95% interval, N - p df"
+mdkc|gee_ar1_avgvar|N - p|n_lo,74,"",int,tables/V5_S8b_sub_mdkc_s26.csv,"design points of the three study mechanisms (1896), exact 95% interval, N - p df"
+mdkc|gee_ar1_avgvar|N - p|n_lo_N10,3,"",int,tables/V5_S8b_sub_mdkc_s26.csv,"design points of the three study mechanisms (1896), exact 95% interval, N - p df"
+mdkc|gee_ar1_avgvar|N - 2|n_hi,69,"",int,tables/V5_S8b_sub_mdkc_s26.csv,"design points of the three study mechanisms (1896), exact 95% interval, N - 2 df"
+mdkc|gee_ar1_avgvar|N - 2|n_lo,71,"",int,tables/V5_S8b_sub_mdkc_s26.csv,"design points of the three study mechanisms (1896), exact 95% interval, N - 2 df"
+mdkc|gee_ar1_avgvar|N - 2|n_lo_N10,3,"",int,tables/V5_S8b_sub_mdkc_s26.csv,"design points of the three study mechanisms (1896), exact 95% interval, N - 2 df"
+mdkc|gee_ar1_avgvar|pu,91.8442499880858,"",sig2,tables/V5_S8b_sub_mdkc_s26.csv,"mean usable share (%) over the 1,896 points (same for both df)"
+mdkc|gee_ar1_avgvar|hi_all,56,"",int,tables/V5_S8b_mdkc_avg.csv,"design points clearly above 7.5% over the 2,376 points of the four mechanisms, N - p (Table 4 basis)"
+mdkc|gee_ar1_avgvar|pu_all,91.6970587851489,"",sig2,tables/V5_S8b_mdkc_avg.csv,"mean usable share (%) over the 2,376 points of the four mechanisms"
+mdkc|gee_ar1_avgvar|hi_copula,15,"",int,tables/V5_S8b_mdkc_avg.csv,of which Copula-AR1
+mdkc|gee_exch_avgvar|N - p|n_hi,80,"",int,tables/V5_S8b_sub_mdkc_s26.csv,"design points of the three study mechanisms (1896), exact 95% interval, N - p df"
+mdkc|gee_exch_avgvar|N - p|n_lo,74,"",int,tables/V5_S8b_sub_mdkc_s26.csv,"design points of the three study mechanisms (1896), exact 95% interval, N - p df"
+mdkc|gee_exch_avgvar|N - p|n_lo_N10,3,"",int,tables/V5_S8b_sub_mdkc_s26.csv,"design points of the three study mechanisms (1896), exact 95% interval, N - p df"
+mdkc|gee_exch_avgvar|N - 2|n_hi,108,"",int,tables/V5_S8b_sub_mdkc_s26.csv,"design points of the three study mechanisms (1896), exact 95% interval, N - 2 df"
+mdkc|gee_exch_avgvar|N - 2|n_lo,71,"",int,tables/V5_S8b_sub_mdkc_s26.csv,"design points of the three study mechanisms (1896), exact 95% interval, N - 2 df"
+mdkc|gee_exch_avgvar|N - 2|n_lo_N10,3,"",int,tables/V5_S8b_sub_mdkc_s26.csv,"design points of the three study mechanisms (1896), exact 95% interval, N - 2 df"
+mdkc|gee_exch_avgvar|pu,91.9251850312131,"",sig2,tables/V5_S8b_sub_mdkc_s26.csv,"mean usable share (%) over the 1,896 points (same for both df)"
+mdkc|gee_exch_avgvar|hi_all,121,"",int,tables/V5_S8b_mdkc_avg.csv,"design points clearly above 7.5% over the 2,376 points of the four mechanisms, N - p (Table 4 basis)"
+mdkc|gee_exch_avgvar|pu_all,91.783044351218,"",sig2,tables/V5_S8b_mdkc_avg.csv,"mean usable share (%) over the 2,376 points of the four mechanisms"
+mdkc|gee_exch_avgvar|hi_copula,41,"",int,tables/V5_S8b_mdkc_avg.csv,of which Copula-AR1
+mdkc|ndp_three,1896,"",int,results_v4/S7d/rows,design points of the three study mechanisms
+cap|S3|rate,0.0471941303254473,"",sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 24 registry ids of columns ['Rate AR1', 'Rate GB', 'Rate NAT'] of Table S3 (block bootstrap)"
+cap|S3|worst,0.3151791064346989,"",sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 24 registry ids of columns ['Worst AR1', 'Worst GB', 'Worst NAT'] of Table S3 (block bootstrap)"
+cap|S3|mad,0.0471240785396113,"",sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 24 registry ids of columns ['MAD AR1', 'MAD GB', 'MAD NAT'] of Table S3 (block bootstrap)"
+cap|S16|rate,0.216170829566151,"",sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 24 registry ids of columns ['Rate AR1', 'Rate GB', 'Rate NAT'] of Table S16 (block bootstrap)"
+cap|S16|worst,0.6506459911947229,"",sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 24 registry ids of columns ['Worst AR1', 'Worst GB', 'Worst NAT'] of Table S16 (block bootstrap)"
+cap|S16|mad,0.21564580822306,"",sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 24 registry ids of columns ['MAD AR1', 'MAD GB', 'MAD NAT'] of Table S16 (block bootstrap)"
+cap|S4|mad,0.496574178607454,"",sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 24 registry ids of columns ['T = 2', 'T = 3', 'T ≥ 4'] of Table S4 (block bootstrap)"
+cap|S17|mad,0.2841687029765039,"",sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 24 registry ids of columns ['T = 2', 'T = 3', 'T ≥ 4'] of Table S17 (block bootstrap)"
+cap|S5|share,1.09586462042439,"",sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 16 registry ids of columns ['BH', 'BY'] of Table S5 (block bootstrap)"
+cap|S18|share,5.02429876668564,"",sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 16 registry ids of columns ['BH', 'BY'] of Table S18 (block bootstrap)"
+cap|S6|rate,0.0471941303254473,"",sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 48 registry ids of columns ['Common AR1', 'Common GB', 'Common NAT', 'Own AR1', 'Own GB', 'Own NAT'] of Table S6 (block bootstrap)"
+cap|S6|shift,0.0228868681127865,"",sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 24 registry ids of columns ['Shift AR1', 'Shift GB', 'Shift NAT'] of Table S6 (block bootstrap)"
+cap|S19|rate,0.216170829566151,"",sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 48 registry ids of columns ['Common AR1', 'Common GB', 'Common NAT', 'Own AR1', 'Own GB', 'Own NAT'] of Table S19 (block bootstrap)"
+cap|S19|shift,0.131599023026329,"",sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 24 registry ids of columns ['Shift AR1', 'Shift GB', 'Shift NAT'] of Table S19 (block bootstrap)"
+cap|S7|usable,0.126261001004289,"",sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 96 registry ids of columns ['GEE, Fay-Graubard', 'GEE, Kauermann-Carroll', 'GEE, Mancl-DeRouen', 'GEE, uncorrected', 'GLMM, Wald', 'GLMM, likelihood ratio', 'Marginalized model', 'Shrinkage GLM'] of Table S7 (block bootstrap)"
+cap|S20|usable,0.349940003318224,"",sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 32 registry ids of columns ['GEE, Fay-Graubard', 'GEE, Kauermann-Carroll', 'GEE, Mancl-DeRouen', 'GEE, uncorrected', 'GLMM, Wald', 'GLMM, likelihood ratio', 'Marginalized model', 'Shrinkage GLM'] of Table S20 (block bootstrap)"
+cap|S8|usable,0.0962589473250264,"",sig2,tables/V5_S7f_numbers.csv,registry: max of column mcse over the 8 registry ids of columns ['Usable'] of Table S8 (block bootstrap)
+cap|S8|uncond,0.104049635973042,"",sig2,tables/V5_S7f_numbers.csv,registry: max of column mcse over the 8 registry ids of columns ['Unconditional validity'] of Table S8 (block bootstrap)
+cap|S21|usable,0.259589480343746,"",sig2,tables/V5_S7f_numbers.csv,registry: max of column mcse over the 8 registry ids of columns ['Usable'] of Table S21 (block bootstrap)
+cap|S21|uncond,0.276635378790899,"",sig2,tables/V5_S7f_numbers.csv,registry: max of column mcse over the 8 registry ids of columns ['Unconditional validity'] of Table S21 (block bootstrap)
+cap|S9|mad,1.19367029057644,"",sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 40 registry ids of columns ['x:hdr_T9_1', 'x:hdr_T9_2', 'x:hdr_T9_3', 'x:hdr_T9_4', 'x:hdr_T9_5'] of Table S9 (block bootstrap)"
+cap|S22|mad,0.909176121282504,"",sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 40 registry ids of columns ['x:hdr_T9_1', 'x:hdr_T9_2', 'x:hdr_T9_3', 'x:hdr_T9_4', 'x:hdr_T9_5'] of Table S22 (block bootstrap)"
+cap|S10|raw,0.0632386745881545,"",sig2,tables/V5_S7f_numbers.csv,registry: max of column mcse over the 24 registry ids of columns ['Raw'] of Table S10 (block bootstrap)
+cap|S10|sa,0.264057311896992,"",sig2,tables/V5_S7f_numbers.csv,registry: max of column mcse over the 24 registry ids of columns ['Size-adjusted'] of Table S10 (block bootstrap)
+cap|S23|raw,0.236004822806548,"",sig2,tables/V5_S7f_numbers.csv,registry: max of column mcse over the 24 registry ids of columns ['Raw'] of Table S23 (block bootstrap)
+cap|S23|sa,0.2850988680966249,"",sig2,tables/V5_S7f_numbers.csv,registry: max of column mcse over the 24 registry ids of columns ['Size-adjusted'] of Table S23 (block bootstrap)
+cap|S11|rate,0.0471941303254473,"",sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 42 registry ids of columns ['Normal AR1', 'Normal GB', 'Normal NAT', 't AR1', 't GB', 't NAT'] of Table S11 (block bootstrap)"
+cap|S11|shift,0.0353302124443478,"",sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 28 registry ids of columns ['Normal minus t at N ≤ 25', 't minus normal AR1', 't minus normal GB', 't minus normal NAT'] of Table S11 (block bootstrap)"
+cap|S24|rate,0.216170829566151,"",sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 42 registry ids of columns ['Normal AR1', 'Normal GB', 'Normal NAT', 't AR1', 't GB', 't NAT'] of Table S24 (block bootstrap)"
+cap|S24|shift,0.104015997508892,"",sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 28 registry ids of columns ['Normal minus t at N ≤ 25', 't minus normal AR1', 't minus normal GB', 't minus normal NAT'] of Table S24 (block bootstrap)"
+cap|S12|cov,0.0490260358915671,"",sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 20 registry ids of columns ['GLMM-AR1', 'GLMM-native', 'GenBinaryY'] of Table S12 (block bootstrap)"
+cap|S25|cov,0.20293094008208,"",sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 20 registry ids of columns ['GLMM-AR1', 'GLMM-native', 'GenBinaryY'] of Table S25 (block bootstrap)"
+cap|S30|usable,2.23605008888442,"",sig2,tables/V5_S7f_numbers.csv,registry: max of column mcse over the 30 registry ids of columns ['Usable (%)'] of Table S30 (block bootstrap)
+cap|S30|bias,0.2146875190599039,"",sig2,tables/V5_S7f_numbers.csv,registry: max of column mcse over the 30 registry ids of columns ['Bias'] of Table S30 (block bootstrap)
+cap|S30|seratio,0.152362631176855,"",sig2,tables/V5_S7f_seratio_fpc.csv,"registry: max of mcse_ratio over the 30 rows of the respiratory trial in Table S30 (ratio before the finite-population factor, which is below 1, so conservative)"
+cap|S31|rate,0.470123140082634,"",sig2,tables/V5_S7f_h2h_boot.csv,bootstrap: max of the block-bootstrap mcse over the 20 cells (rate)
+cap|S31|mad,0.421863343004918,"",sig2,tables/V5_S7f_h2h_boot.csv,bootstrap: max of the block-bootstrap mcse over the 20 cells (mad)
+cap|S31|diff,0.540565250050324,"",sig2,tables/V5_S7f_h2h_boot.csv,bootstrap: max of the block-bootstrap mcse over the 10 cells (diff)
+cap|S31|pu,0.298774453744622,"",sig2,tables/V5_S7f_h2h_boot.csv,bootstrap: max of the block-bootstrap mcse over the 20 cells (pu)
+cap|S31|upow,0.0690815691648106,"",sig2,tables/V5_S7f_h2h_boot.csv,bootstrap: max of the block-bootstrap mcse over the 20 cells (upow)
+cap|t4|pu,0.56,"",sig2,tables/V5_S7f_cp_S7d_dp_rates.csv; V5_S7f_cp_S7e_dp_rates.csv; V5_S7f_cp_S7b_rule_dp.csv; V5_S7f_cp_S7d2_flip_rules_dp.csv,bound: max over the 14 strategies of Table 4 of the mean over design points of 100 sqrt(p(1-p)/nd) (at mmm_cc; power with the H1 estimable designs)
+cap|t4|upow,1.1,"",sig2,tables/V5_S7f_cp_S7d_dp_rates.csv; V5_S7f_cp_S7e_dp_rates.csv; V5_S7f_cp_S7b_rule_dp.csv; V5_S7f_cp_S7d2_flip_rules_dp.csv,bound: max over the 14 strategies of Table 4 of the mean over design points of 100 sqrt(p(1-p)/nd) (at gee_exch_unc; power with the H1 estimable designs)
+cap|t4|pu_small,1.4000000000000001,"",sig2,tables/V5_S7f_cp_S7d_dp_rates.csv; V5_S7f_cp_S7e_dp_rates.csv; V5_S7f_cp_S7b_rule_dp.csv; V5_S7f_cp_S7d2_flip_rules_dp.csv,bound: max over the 14 strategies of Table 4 of the mean over design points of 100 sqrt(p(1-p)/nd) (at gee_exch_unc; power with the H1 estimable designs)
+cap|S26|pu,0.55,"",sig2,tables/V5_S7f_cp_S7d_dp_rates.csv; V5_S7f_cp_S7b_rule_dp.csv,"bound: max over the 8 strategies of Table S26 of the mean over the 1,896 points of 100 sqrt(p(1-p)/nd)"
+cap|S28|type1,1.2000000000000002,"",sig2,tables/V5_S7f_cp_S7e_dp_rates.csv; V5_S7f_cp_S7d2_flip_rules_dp.csv,bound: max over the strategies of the mean over the 480 points of the per-point binomial MCSE of the rate
+cap|S28|usable,0.58,"",sig2,tables/V5_S7f_cp_S7e_dp_rates.csv,bound: max over the strategies of the mean over the 480 points of 100 sqrt(p(1-p)/nd)
+cap|S28|power,1.1,"",sig2,tables/V5_S7f_cp_S7e_dp_rates.csv,bound: max over the strategies of the mean over the 480 points of 100 sqrt(q(1-q)/nd_H1)
+cap|S28|biasse,0.041,"",sig2,tables/V4_S7e_bias_cov.csv,bound: max over the marginal estimators of the mean over points of mcse_bias / empse
+cap|S28|cov,0.91,"",sig2,tables/V4_S7e_bias_cov.csv,bound: max over estimators and references of the mean over points of the binomial MCSE of coverage
+cap|S14|maxrate,1.2828880501708395,"",sig2,tables/V4_S6b_ns_rule_safety_dp.csv,binomial: max over the 24 rows of 100 sqrt(p(1-p)/n) at the design point with the largest rate
+cap|S14|pu,0.5700000000000001,"",sig2,tables/V4_S6b_ns_rule_safety_dp.csv,bound: max over the 24 rows of the mean over the 96 points of 100 sqrt(p(1-p)/nd)
+cap|S15|share,2.2356207191739834,"",sig2,tables/V5_S7f_lus_tab316.csv,"binomial: max over the 120 cells of 100 sqrt(p(1-p)/500), 500 subsamples (x:lus_nsub)"
+cap|S27|finite,0.3226523597331494,"",sig2,tables/V4_S7d2_explain_finite.csv,"binomial: max over the 24 rows of 100 sqrt(p(1-p)/datasets); approximate, the datasets of a row share replicate seeds across N"
+cap|S27|gee,0.3023636210561903,"",sig2,tables/V4_S7d2_explain_finite.csv,"binomial: max over the 24 rows of 100 sqrt(p(1-p)/datasets); approximate, as above"
+cap|S32|maxrate,5.96065548112562,"",sig2,tables/V5_S7g_calib.csv,"binomial: max of max_mc over the 19 strategies (binomial MCSE at the point of the highest rate, at gee_ar1_kc)"
+cap|S33|pu,0.56,"",sig2,tables/V5_S7g_filter_dp.csv,bound: max over the 51 strategy x limit cells of the mean over points of 100 sqrt(p(1-p)/nd)
+cap|S34|type1,3.1,"",sig2,tables/V5_S7g_agq_dp.csv,bound: max over the 30 cells (mechanism x T x method) of the mean over points of the binomial MCSE of the rate (mc_t)
+cap|S34|pu,1.1,"",sig2,tables/V5_S7g_agq_dp.csv,bound: max over the 30 cells of the mean over points of 100 sqrt(p(1-p)/nd)
+cap|S35|rb,0.038492317521675375,"",sig2,tables/V5_S7g_m67_cc_dp.csv,"approx: max over the 8 rows of the mean over points of 1 / sqrt(n) (bias / SE, empirical SE treated as known; bound for the mean)"
+cap|S35|rbmax,0.22360679774997896,"",sig2,tables/V5_S7g_m67_cc_dp.csv,approx: max over rows of 1 / sqrt(n) at the point with the largest |bias / SE|
+cap|S35|ser,2.206481415683872,"",sig2,tables/V5_S7g_m67_cc_dp.csv,"approx: max over the 8 rows of the median over points of 100 (1 + ratio) / sqrt(2 (n - 1)) (typical per-point MCSE of the ratio, empirical-SE component only; not a bound for the median over points)"
+cap|S35|cov,0.73,"",sig2,tables/V5_S7g_m67_cc_dp.csv,bound: max over rows of the mean over points of the binomial MCSE of coverage
+cap|S35|covmin,0.8568944817345686,"",sig2,tables/V5_S7g_m67_cc_dp.csv,binomial: max over rows of the binomial MCSE at the point with the smallest coverage
+cap|S35|sh,1.8,"",sig2,tables/V5_S7g_m67_cc_dp.csv,bound: max over rows of the mean over points of the binomial MCSE of the share of fits in which the check intervened
+cap|fig2|mcse_max,6.36030377172783,"",sig2,tables/variant_cv/V4_S6_nestedloop.csv,"binomial: largest per-point MCSE of a drawn rate (n_obs >= 20), all methods (percentage points)"
+figS1|gee_ar1_fg|n_hi,0,"",int,tables/V5_S7f_rule_dp.csv,circled points over the four panels (= f:t4|<strategy>|hi_m67)
+figS1|gee_ar1_fg|GB|M6|n_hi,0,"",int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|gee_ar1_fg|GB|M7|n_hi,0,"",int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|gee_ar1_fg|NAT|M6|n_hi,0,"",int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|gee_ar1_fg|NAT|M7|n_hi,0,"",int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|mmm_cc|n_hi,0,"",int,tables/V5_S7f_rule_dp.csv,circled points over the four panels (= f:t4|<strategy>|hi_m67)
+figS1|mmm_cc|GB|M6|n_hi,0,"",int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|mmm_cc|GB|M7|n_hi,0,"",int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|mmm_cc|NAT|M6|n_hi,0,"",int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|mmm_cc|NAT|M7|n_hi,0,"",int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|gee_exch_fg|n_hi,4,"",int,tables/V5_S7f_rule_dp.csv,circled points over the four panels (= f:t4|<strategy>|hi_m67)
+figS1|gee_exch_fg|GB|M6|n_hi,1,"",int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|gee_exch_fg|GB|M7|n_hi,3,"",int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|gee_exch_fg|NAT|M6|n_hi,0,"",int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|gee_exch_fg|NAT|M7|n_hi,0,"",int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|gee_exch_md|n_hi,18,"",int,tables/V5_S7f_rule_dp.csv,circled points over the four panels (= f:t4|<strategy>|hi_m67)
+figS1|gee_exch_md|GB|M6|n_hi,8,"",int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|gee_exch_md|GB|M7|n_hi,10,"",int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|gee_exch_md|NAT|M6|n_hi,0,"",int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|gee_exch_md|NAT|M7|n_hi,0,"",int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|glmer_lrt|n_hi,0,"",int,tables/V5_S7f_rule_dp.csv,circled points over the four panels (= f:t4|<strategy>|hi_m67)
+figS1|glmer_lrt|GB|M6|n_hi,0,"",int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|glmer_lrt|GB|M7|n_hi,0,"",int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|glmer_lrt|NAT|M6|n_hi,0,"",int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|glmer_lrt|NAT|M7|n_hi,0,"",int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|n_points_panel,96,"",int,tables/V5_S7f_rule_dp.csv,design points per panel
+figS1|n_hidden,64,"",int,tables/V5_S7f_cp_S7d_dp_rates.csv,strategy x point pairs not drawn (fewer than 20 usable replicates)
+figS1|gee_ar1_fg|n_hidden,0,"",int,tables/V5_S7f_cp_S7d_dp_rates.csv,points of the strategy not drawn
+figS1|mmm_cc|n_hidden,4,"",int,tables/V5_S7f_cp_S7d_dp_rates.csv,points of the strategy not drawn
+figS1|gee_exch_fg|n_hidden,0,"",int,tables/V5_S7f_cp_S7d_dp_rates.csv,points of the strategy not drawn
+figS1|gee_exch_md|n_hidden,0,"",int,tables/V5_S7f_cp_S7d_dp_rates.csv,points of the strategy not drawn
+figS1|glmer_lrt|n_hidden,60,"",int,tables/V5_S7f_cp_S7d_dp_rates.csv,points of the strategy not drawn
+figS1|n_clipped,0,"",int,tables/V5_S7f_cp_S7d_dp_rates.csv,drawn values above the axis limit (drawn at the limit)
+figS1|ymax,15.0,"",plain,py/s8b/s8b_figS1.py,upper limit of the vertical axis (%)
+figS1|max_rate,14.2361111111111,"",sig2,tables/V5_S7f_cp_S7d_dp_rates.csv,largest drawn rate (%)
+figS1|mcse_max,3.388301272003571,"",sig2,tables/V5_S7f_cp_S7d_dp_rates.csv,"largest binomial MCSE of a drawn rate, 100 sqrt(p(1-p)/n) (pp)"

@@ -1,0 +1,4 @@
+gate,pass,detail,explained
+GG3,FALSE,"1230 chunk files, 123 points, 123000 replicates, 96 generation errors; fits per point: nAGQ 1 10-145, 10 10-145, 25 10-145 | explanation: replicates not generated here 96, in the study runs 96, same set and same degenerate flags: TRUE",TRUE
+GG2,TRUE,"122904 replicate rows compared (stored: 122688, refit: 122904), 0 differ beyond 1e-8; max |d est| 0, max |d se| 0",
+GG4,TRUE,"9844 fits usable for both; same t decision in 99.8984%; median |z25 - z10| 2.3e-05, 99th percentile 0.11",

@@ -1,0 +1,15 @@
+id,attesa,tolleranza,osservato,superato
+Q0,"md5 di results_full/ (28.800), results_v4 S2 (126) e S3 (18.720) e di rows_timetrt.rds invariati prima e dopo",zero falliti,"prima: results_full: 28800 checked, 0 FAIL lines; results_v4 S2: 126 checked, 0 FAIL lines; results_v4 S3: 18720 checked, 0 FAIL lines; rows_timetrt.rds 092a5ad60b60e0ea28cb6b78ba2adbeb (expected 092a5ad60b60e0ea28cb6b78ba2adbeb) || dopo: results_full: 28800 checked, 0 FAIL lines; results_v4 S2: 126 checked, 0 FAIL lines; results_v4 S3: 18720 checked, 0 FAIL lines; rows_timetrt.rds 092a5ad60b60e0ea28cb6b78ba2adbeb (expected 092a5ad60b60e0ea28cb6b78ba2adbeb)",si
+Q1a,nessuna riga glmer_lrt v3 in M3-M5; re_structure come D-08 in M3-M5 e (1|id) in M1c,esatta,righe v3: 0; re_structure inattese: 0,si
+Q1b,celle F1 e F2 interamente da S3,esatta,righe non da S3: 0,si
+Q1c,"3.024 celle, 1.512 design point, ogni cella con righe per tutti gli 8 metodi primari",esatta,"celle 3.024, design point 1.512; celle con meno di 8 metodi: 342 (qualunque riga), 342 (righe time:trt); duplicati 0",no
+Q1d,tabella lunga 3.024 x 9 x 3 x 2 = 163.296 righe,esatta,163.296,si
+Q2,n_den: 2.878.518 (griglia) e 143.742 (M1c); zero righe U0 su chiavi degeneri; ogni chiave non degenere con una riga di analisi,esatta,2.878.518; 143.742; U0 su degeneri 0; chiavi senza righe 0,si
+Q3,"righe non toccate da S3 riproducono O_level_all (n, k_rej) e O_coverage_all (n, cov_gen)","100%, 1e-12","O_level_all (H0): 12.395/12.395 n uguali, diff. max 5.3e-16, mancanti 0, inverse mancanti 0; O_coverage_all (H1): 13.144/13.144 n uguali, diff. max 1.1e-15, mancanti 0",si
+Q4,"n_U0, n_U1, n_U2 = V4_S2_usable_by_cell nelle combinazioni non toccate",esatta,"17.725 righe; U0 17.725, U1 17.725, U2 17.725 uguali; mancanti 0",si
+Q5a,rsimsum 0.13.1 su 300 combinazioni: 17 misure e MCSE entro 1e-10,1e-10,"5.070 confronti, oltre tolleranza 0, diff. max 4.4e-13",si
+Q5b,MSE = bias^2 + SE empirico^2 (n - 1)/n in tutte le combinazioni con n_obs >= 2,1e-12,"marginal: 0/100.893 oltre, diff. max 2.9e-14; conditional per replicate: 10.052/10.580 oltre, diff. max 4.5e-03; conditional: 0/10.579 oltre, diff. max 2.1e-13",no
+Q6,"verita' AR1 per replicato (riproduzione S2, biiezione con i degeneri, replay = generatore); quadratura M1",1e-12; < 1e-8,"S2 reproduction M1-M4: ok; failures = degenerate keys, main: ok; failures = degenerate keys, M1c: ok; replay = generator, 200 keys: ok; quadrature reproduces S2 M1: ok",si
+Q7,SE bootstrap della potenza grezza entro il 10% dalla MCSE binomiale,>= 95%,"58.198/58.198 (1,0000); rapporto mediano 1,000",si
+Q8,D-08: ogni cella del blocco L con almeno un replicato usabile in entrambe le versioni,100%,1.021/1.248,no
+Q9,glmer_bobyqa: p = 2 Phi(-abs(z)); n_obs <= n_obs(glmer_lrt) per cella,esatta,p diversi 0 su 2.634.153 righe; celle 3.024/3.024 (eccesso massimo 0),si

@@ -1,0 +1,98 @@
+sentence_id_original,sentence_id_corrected,text_start,from_section,to_section,words,set,edits
+42.1,42.1,Cluster-randomized trials with ten to thirty clusters are common.,1. Introduction,S14,9,D-71,
+42.2,42.2,"Among {x:k11_reviewed} reviewed trials, the {x:k11_reported} that reported the number of c",1. Introduction,S14,43,D-71,
+42.6,42.6,"In the evaluations cited here, the unit within a cluster is a site within a mouth [7], a p",1. Introduction,S14,37,D-71,
+42.7,42.7,None is a subject measured on several occasions.,1. Introduction,S14,8,D-71,
+42.8,42.8,Cluster sizes range from {x:k9_size} observations per cluster [19] to {x:k8_size} on avera,1. Introduction,S14,14,D-71,
+44.7,44.7,Three results are established elsewhere and are cited rather than claimed here: the uncorr,1. Introduction,S14,35,D-71,; tag set to <!-- noclaim: cited results -->
+62.3.2,64.1,"Its conditional coefficients are calibrated on each replicate, so that the implied margina",2.2 Data-generating mechanisms,S1,17,D-71,
+67.5,67.5,With 10 occasions the latent standard deviation of GenBinaryY then grows from {x:m3_sd0} t,2.2 Data-generating mechanisms,S1,21,D-71,
+69.4,69.4,The autoregressive parameters of GLMM-AR1 add a serial dependence to the cluster effect.,2.2 Data-generating mechanisms,S1,13,D-71,
+71.1,71.1,"In {x:ndp_short} design points of the main grid and {f:s8|ndp_short_m1c} of M1c, all in GL",2.2 Data-generating mechanisms,S1,44,D-71,"""defined next"" -> ""defined in Section 2.2 of the main text"""
+71.5,71.6,"The {f:x|ndp_all5} design points comprise {f:gt|n_datasets} datasets, analysed with about ",2.2 Data-generating mechanisms,S2,30,D-71,
+81.8,81.8,The marginalized model without the check is reported as a sensitivity analysis (Table S3).,2.4 Methods compared,S3,14,D-71,
+89.1,89.1,Fits that returned with warnings were kept; excluding them is a sensitivity analysis (Tabl,2.5 Performance measures,S3,15,D-71,
+91.11,91.11,The size-adjusted critical value was the 95th percentile of |estimate/SE| over the usable ,2.5 Performance measures,S3,32,D-71,
+91.12,91.12,"It uses the null distribution of each design point, unknown in practice, and serves only t",2.5 Performance measures,S3,21,D-71,
+93.9,93.9,Counts of miscalibrated cells used exact binomial tests with the Benjamini-Hochberg and Be,2.5 Performance measures,S3,14,D-71,
+113.0,113.0,"With the Benjamini-Hochberg correction within method, the marginalized model was detectabl",3.1 Type I error on the main grid,S3,30,D-71,
+113.2,113.2,Its smallest excess over the cluster counts was under half a point on every mechanism.,3.1 Type I error on the main grid,S3,15,D-71,
+115.0,115.0,"The ordering of the methods was stable across mechanisms, with Spearman correlations of {c",3.1 Type I error on the main grid,S3,20,D-71,
+115.1,115.1,GLMM-AR1 differed from GLMM-native by {cl:C09|all:est} percentage points on average across,3.1 Type I error on the main grid,S3,12,D-71,
+131.4,131.4,Fay-Graubard with exchangeable working correlation also had the smaller worst-case departu,3.4 Reference distribution and the decision rule,S3,23,D-71,
+143.1,143.1,"Per design point, {f:gt|fgwc_central}% of the differences lay between {f:g7|fgwc_q05_d_ar1",3.5 Working correlation and implementation of the corrections,S3,31,D-71,
+155.0,155.0,Table S10 gives raw and size-adjusted power.,3.8 Power and coverage,S3,7,D-71,"""Table 5"" -> ""Table S10"""
+155.1,155.1,"After size adjustment, power ranged from {v:sa|GB|gee}% to {v:sa|AR1|glmer_lrt}% across me",3.8 Power and coverage,S3,13,D-71,
+155.2,155.2,On GenBinaryY the Wald test of the mixed model had more size-adjusted power than Fay-Graub,3.8 Power and coverage,S3,30,D-71,
+155.3,155.3,"On GLMM-AR1 the difference was about two points with the default optimizer, and the two we",3.8 Power and coverage,S3,19,D-71,
+155.4,155.4,"On GLMM-native the two were similar with the default optimizer, and with bobyqa Fay-Grauba",3.8 Power and coverage,S3,21,D-71,
+79.4,79.4,"With exchangeable correlation, Mancl-DeRouen and Fay-Graubard were also computed with `gee",2.4 Methods compared,S4,37,D-71,"""Table 5"" -> ""Table S10"""
+79.5,79.5,"Every Kauermann-Carroll result is from `fewclust`, because `geesmv` applies a symmetric ma",2.4 Methods compared,S4,20,D-71,
+143.2,143.2,"Computed with `fewclust` instead of `geesmv`, Fay-Graubard with exchangeable correlation r",3.5 Working correlation and implementation of the corrections,S4,29,D-71,
+143.3,143.3,The Kauermann-Carroll correction computed from its published formula rejected a true null ,3.5 Working correlation and implementation of the corrections,S4,26,D-71,
+143.4,143.4,Its rejection rates in Table 2 and Table S10 are therefore lower than those obtained with ,3.5 Working correlation and implementation of the corrections,S4,19,D-71,"""Table 5"" -> ""Table S10"""
+161.4,161.4,The size-adjusted power of the Wald test of the mixed model fell below that of Fay-Graubar,3.9 Scenario anchored to the cohort,S5,25,D-71,
+161.5,161.5,"With bobyqa the deficit was about two points on GenBinaryY and GLMM-AR1, and the two were ",3.9 Scenario anchored to the cohort,S5,19,D-71,
+161.6,161.6,The default optimizer returned degenerate fits with a near-zero standard error.,3.9 Scenario anchored to the cohort,S5,11,D-71,
+161.7,161.7,"In M1c, the method with the fewest miscalibrated cells could not be identified.",3.9 Scenario anchored to the cohort,S5,13,D-71,
+83.1,83.1,"Degrees of freedom N - 2, as used by Li and Redden [15], were examined as a sensitivity an",2.4 Methods compared,S6,18,D-71,
+85.2,85.3,The model without the interaction was fitted as a logistic regression with the mean model ,2.4 Methods compared,S7,37,D-71,
+85.3,85.4,The p-value compares the observed sum of contributions with its distribution under random ,2.4 Methods compared,S7,31,D-71,
+85.5,85.6,A version that also excluded fits with a coefficient of at least {f:x|flip_coefmax} is a s,2.4 Methods compared,S7,19,D-71,"""(Section 3.7)"" -> ""(Section S7)"""
+85.6,85.7,The test gives a p-value only; the interval obtained by inverting it is described in Secti,2.4 Methods compared,S7,17,D-71,
+151.1,151.1,"With the coefficient filter of Section S7, on the {f:x|ndp_three} design points of the thr",3.7 Sign-flip score test,S7,42,D-71,"""coefficient filter of Section 2.4"" -> ""coefficient filter of Section S7"""
+151.3,151.3,"Where it did not answer, the interaction was usually not identified because one arm had on",3.7 Sign-flip score test,S7,20,D-71,
+62.4.2,65.1,Every observation has exactly the marginal mean of the scenario.,2.2 Data-generating mechanisms,S8,10,D-71,
+62.4.5,65.4,On the latent scale its correlation is that of the AR(1) working correlation of Section 2.,2.2 Data-generating mechanisms,S8,45,D-71,"""Section 2.4"" -> ""Section 2.4 of the main text"""
+67.6,67.6,"The fourth mechanism was simulated on the main grid only, with the seeds of the other thre",2.2 Data-generating mechanisms,S8,17,D-71,
+147.5,147.5,The excess does not come from a non-zero null value of its conditional coefficient: fitted,3.6 The fourth mechanism,S8,46,D-71,
+103.1,103.1,"The contrast of interest was the treatment effect, adjusted for baseline status, visit, ag",2.7 Clinical applications,S9,53,D-71,
+103.2,103.2,"In both applications Kauermann-Carroll was computed with `fewclust`, and Mancl-DeRouen and",2.7 Clinical applications,S9,33,D-71,
+171.2,171.2,The bias of the marginalized model against its full-data estimate was within two Monte Car,3.11 Clinical applications,S9,32,D-71,
+171.3,171.3,"Its corrected ratio, with the model-based standard error, was {f:sr|resp|MMM|10} at {f:ru|",3.11 Clinical applications,S9,17,D-71,
+97.7,97.7,The strategies that met the rule were then compared with each other by number of clusters ,2.6 Decision rule,S10,37,D-71,
+139.4,139.4,With two or three occasions and at most 25 clusters the GEE strategy returned a usable res,3.4 Reference distribution and the decision rule,S10,22,D-71,
+89.6,89.6,"With usability limits of {f:gt|lim_lo} or {f:gt|lim_hi} in place of {x:usab_max}, the same",2.5 Performance measures,S11,32,D-71,"""Section 2.6"" -> ""Section 2.6 of the main text"""
+91.7,91.7,An exact interval was used because with no rejections the binomial Monte Carlo standard er,2.5 Performance measures,S11,17,D-71,
+97.6,97.6,The rule replaces a criterion that selected at each cluster count the method with the high,2.6 Decision rule,S11,36,D-71,"""(Section 4.1)"" -> ""(Section 4.1 of the main text)"""
+165.0,165.0,"After the main run, the mixed model with a random intercept (scenarios M1, M2 and M1c) was",3.10 Adaptive quadrature for the mixed model,S12,64,D-71,
+165.1,165.1,"Refitted by the Laplace approximation, the same datasets reproduced the stored estimates a",3.10 Adaptive quadrature for the mixed model,S12,34,D-71,
+121.3,121.3,Its estimates had a bias of at most {f:g7|m67_rb_max} empirical standard errors at any des,3.2 The convergence check of the marginalized model,S13,61,D-71,
+121.4,121.4,Fits in which the check intervened covered the true value as often as the others (Table S3,3.2 The convergence check of the marginalized model,S13,32,D-71,
+121.5,121.5,Under a normal reference its mean type I error was {x:pb4_n6}% to {x:pb4_g7}% across the f,3.2 The convergence check of the marginalized model,S13,17,D-71,
+121.7,121.7,GEE with exchangeable working correlation and Fay-Graubard with a t reference was clearly ,3.2 The convergence check of the marginalized model,S13,34,D-71,; tag set to <!-- claim: reg:t4 as=descr -->
+79.0,79.0,The eight methods of Table 2 and Table S10 and the further strategies of Table 1 were appl,2.4 Methods compared,S15,21,D-71,"""Table 2 and Table 5"" -> ""Table 2 and Table S10"""
+83.3,83.3,Its full fit used the optimizer bobyqa in both stages with a limit of $10^5$ function eval,2.4 Methods compared,S15,50,D-71,"""(Section 3.8 and Section 3.9)"" -> ""(Section S3 and Section S5)"""
+89.2,89.2,"For the likelihood-ratio test, both nested fits had to return and the p-value had to be fi",2.5 Performance measures,S15,17,D-71,
+93.10,93.10,"In the text, values are given to two significant figures, or fewer where the MCSE does not",2.5 Performance measures,S15,19,D-71,
+93.11,93.11,"Tables give the digit that the MCSE supports, with the MCSE in the caption.",2.5 Performance measures,S15,14,D-71,
+81.6,81.6,The check was specified after the diagnosis and before the reanalysis of the {x:cc_nfits} ,2.4 Methods compared,S16,21,D-71,
+81.7,81.7,"Thresholds of {x:cc_thr_lo} and {x:cc_thr_hi} were examined as sensitivity analyses, and s",2.4 Methods compared,S16,20,D-71,
+119.4,119.4,Raw power at eight or ten occasions changed by {x:cc_p11} points on average.,3.2 The convergence check of the marginalized model,S16,13,D-71,
+119.5,119.5,The thresholds {x:cc_thr_lo} and {x:cc_thr_hi} in place of {x:cc_thr} changed the reading ,3.2 The convergence check of the marginalized model,S16,30,D-71,"""Section 2.5"" -> ""Section 2.5 of the main text"""
+119.6,119.6,"With either threshold, the marginalized model with a t reference was not clearly above 7.5",3.2 The convergence check of the marginalized model,S16,19,D-71,
+185.1,185.1,"`MMLB::mm` writes the latent standard deviation with an exponentiated slope, so a slope ne",4.2 The convergence check,S16,34,D-71,
+185.2,185.2,At the boundary `nlm` either stopped without converging or converged with a collapsed stan,4.2 The convergence check,S16,15,D-71,
+185.3,185.3,Both failures produced excess rejections that grew with the number of occasions.,4.2 The convergence check,S16,12,D-71,
+185.4,185.4,"This is why, without the check, the marginalized model appears miscalibrated with long ser",4.2 The convergence check,S16,14,D-71,
+101.9,101.9,"Subsampling whole patients preserves the dependence structure exactly, and the covariate d",2.7 Clinical applications,S17,15,D-71,
+101.10,101.10,"Of the {x:lus_ninv} patients ventilated invasively, a draw of {x:lus_N10} contains none wi",2.7 Clinical applications,S17,23,D-71,
+169.2,169.2,"In subsamples of {x:lus_N10} patients, {x:lus_inv_none}% of draws contained no invasively ",3.11 Clinical applications,S17,53,D-71,"""Section 2.7"" -> ""Section 2.7 of the main text"""
+169.4,169.4,"Among the fits that were returned, a usable result was obtained by the mixed model in {x:l",3.11 Clinical applications,S17,30,D-71,
+169.5,169.5,It was obtained by Fay-Graubard in {x:lus_ur_fg}% and by Mancl-DeRouen in {x:lus_ur_md}%; ,3.11 Clinical applications,S17,25,D-71,
+169.7,169.7,A random intercept for the patient-timepoint did not change this ratio ({f:gt|lus_pt_min} ,3.11 Clinical applications,S17,25,D-71,
+169.8,169.8,"The posterior-versus-anterior contrast varied strongly between patients, which a random in",3.11 Clinical applications,S17,45,D-71,
+,155.5,Part of the size-adjusted power of the Wald test of the mixed model came from fits with a ,3.8 Power and coverage,S3,65,additional,
+,71.5,"Replicates were run in parallel, each from its own seed, so that any dataset can be regene",2.2 Data-generating mechanisms,S2,41,additional,
+147.3,147.3,The marginalized model estimated the interaction with a mean bias of {f:bs|mmm_cc|mean_bia,3.6 The fourth mechanism,S8,41,additional,
+147.6,147.6,"With a random intercept only, and N ≥ 85, its model-based standard error was {f:x|cop_glmm",3.6 The fourth mechanism,S8,28,additional,
+165.3,165.3,"The change was largest at two occasions with 145 clusters, from {f:gq|t2n145_lap_min}% to ",3.10 Adaptive quadrature for the mixed model,S12,22,additional,; tag set to <!-- noclaim: descriptive values of the sensitivity analysis -->
+67.3,67.3,In GenBinaryY the latent standard deviation grows by {x:m6_gby} or {x:m7_gby} per occasion,2.2 Data-generating mechanisms,S1,22,additional,
+133.4,133.4,The highest rate at a design point was {f:g7|cal_maxrate_gee_ar1_fg}% for the GEE strategy,3.4 Reference distribution and the decision rule,S11,44,additional,
+169.10,169.10,The bias of the marginalized model against its full-cohort estimate fell from {x:lus_bias_,3.11 Clinical applications,S17,29,additional,
+113.1,113.1,The uncorrected GEE was above 7.5% by {cl:C12a|GB:est} points at N = 10 on GenBinaryY.,3.1 Type I error on the main grid,S3,14,additional,
+113.3,113.3,"Above 45 clusters, Fay-Graubard and the marginalized model were both within about half a p",3.1 Type I error on the main grid,S3,21,additional,
+127.0,127.0,"At 20 clusters or fewer, the likelihood-ratio test returned a usable result in {v:use20|gl",3.3 Availability of a result,S3,22,additional,
+127.1,127.1,The marginalized model ({v:use20|mmm}%) and the three corrected sandwiches ({v:use20|gee_m,3.3 Availability of a result,S3,14,additional,
+,"(new, supplement)","Section 3.5 of the main text compares Fay-Graubard with exchangeable, independence and AR(",(none),S3,0,supplement connective,added before 143.1 to give its antecedent; not counted in main text
+,"(new, supplement)","Section 3.11 of the main text reports, for the mixed model in the cohort, the ratio of its",(none),S17,0,supplement connective,added before 169.7 to give its antecedent; not counted in main text

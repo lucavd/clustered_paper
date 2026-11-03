@@ -1,0 +1,2 @@
+chunks,chunks_expected,recs,recs_unique,generated,gen_errors,gen_errors_nondegenerate,rows_per_generated_ok,pass_completeness
+37920,37920,3792000,3792000,3791420,580,0,TRUE,TRUE

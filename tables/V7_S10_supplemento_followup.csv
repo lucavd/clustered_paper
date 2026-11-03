@@ -1,0 +1,11 @@
+id,claimed_text,recomputed,status,note,stratum,sampled
+x:geesmv_timeout,5,5,MATCH,timeout_secs = 5 in R/v4/rundir/analysis_smallsample.R,text: S4. Numerical behaviour of the small-sample corrections,False
+f:ge4|nmin,670,,NOT_RECOMPUTABLE,needs the hand computation of the S7d gate GE4; not redone,text: S4. Numerical behaviour of the small-sample corrections,False
+f:ec|kc|share,2.0,1.99,MATCH,"3,480 of 174,589 exchangeable fits within 1%",text: S4. Numerical behaviour of the small-sample corrections,False
+f:x|ndp_three,"1,896",1896,MATCH,,text: S4. Numerical behaviour of the small-sample corrections,False
+f:r7d|study_gee_kc|mean_rate,9.7,9.7457,MATCH,"geesmv KC from study rows (main, M1c) and rows_ns (M6-M7), t reference",text: S4. Numerical behaviour of the small-sample corrections,False
+f:r7d|gee_exch_kc|n_hi,146,146,MATCH,,text: S4. Numerical behaviour of the small-sample corrections,False
+f:r7d|study_gee_kc|n_hi,963,963,MATCH,,text: S4. Numerical behaviour of the small-sample corrections,False
+f:cv|impl_fg|est,0.061,0.0605,MATCH,"mean over 1,896 design points of FG (fewclust) minus FG (geesmv) rate, t",text: S4. Numerical behaviour of the small-sample corrections,False
+f:cv|impl_fg_pu|est,0.21,0.2105,MATCH,,text: S4. Numerical behaviour of the small-sample corrections,False
+f:cv|impl_kc|est@abs,4.1,4.149,MATCH,,text: S4. Numerical behaviour of the small-sample corrections,False

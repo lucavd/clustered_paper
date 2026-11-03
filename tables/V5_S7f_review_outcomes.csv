@@ -1,0 +1,46 @@
+finding,topic,outcome,how
+V-001,Errore Monte Carlo del confronto diretto con approssimazione di indipendenza,corretto,"Confronto rifatto con il bootstrap per blocchi dichiarato nei Metodi (R/s7f/s7f_h2h_boot.R, tables/V5_S7f_h2h_boot.csv, Tabella S31)"
+V-002,Differenze entro i margini scritte come differenze,corretto,"Usabilita' e potenza complessive scritte come simili (margini 2,5 e 2 punti, Sez. 2.5)"
+V-003,Shrinkage: 'only its interval differs',corretto,"Frase riscritta: stessa statistica sullo stesso fit, tasso di rifiuto diverso per il filtro di usabilita'"
+V-004,Tabella S28 con la versione del test senza regole di non calcolabilita',corretto,Valori dal file con le regole del test non calcolabile
+V-005,Segno della colonna 'N <= 25' nelle Tabelle S11 e S24,corretto,"Colonna rinominata 'Normal minus t at N <= 25', cosi' il verso e' dichiarato"
+V-006,Numero stampato con 15 cifre nel supplemento,corretto,Formato arrotondato
+V-007,Distorsione a 10 pazienti nel trial respiratorio,corretto,'within two Monte Carlo standard errors of zero' a 10 e a 50 pazienti
+V-008,Cifra 0.015 non giustificata dalla MCSE (coorte),corretto,"MCSE nel registro (0,0137), frase 'within two Monte Carlo standard errors of zero' con controllo |bias| < 2 MCSE"
+V-009,45% dei trial stepped-wedge citato di seconda mano,corretto,'citing an earlier review'
+V-010,Limite b della correzione di Fay e Graubard non dichiarato,corretto,"b = 0,75 dichiarato e controllato su fewclust e geesmv"
+V-011,'kept their level at every design point',corretto,"Ridotto a 'mai chiaramente sopra 7,5%'"
+V-012,Modello misto anticonservativo 'solo' con dipendenza seriale,corretto,'more so with serial dependence'; 55 punti su 696 sul suo stesso meccanismo
+V-013,Modello marginalizzato 'preferable' con T = 2 e N >= 15,deciso dal PI,Parita' (D-61): differenza dell'ordine del margine
+V-014,GEE 'piu' vicina' con T >= 3 a ogni N,corretto,Solo a 10 cluster oltre il margine; simili da 15 cluster
+V-015,"Scelta della regola per 1,2 punti di usabilita'",deciso dal PI,Parita' sul criterio della regola; GEE prima per 10 cluster e assenza del controllo (D-61)
+V-016,Test a inversione di segno 'can say whether there is an effect',corretto,"Potenza 4,2% con T <= 3 e N <= 25 dichiarata"
+V-018,Frase sulle coorti perinatali senza fonte,corretto,Frase tolta
+V-019,'Clearly below 2.5%' con MCSE di Wald nulla a zero rifiuti,deciso dal PI,Intervalli esatti di Clopper-Pearson (D-63)
+V-020,"Tabella 4, due strategie della regola",verificato,Identiche sui 2.376 punti
+V-021,"Tabella 4, altre strategie GEE",verificato,Identiche
+V-023,Rilettura indipendente del registro,verificato,2.249 su 2.249 identici
+V-024,113 etichette di affermazione,verificato,Coerenti con la regola della Sez. 2.5
+V-025,Descrizione della coorte,verificato,Ricalcolata da lurid_long.rds
+V-026,22% di estrazioni senza ventilati contro 27% atteso,spiegato,"Estrazioni casuali semplici; fluttuazione a N = 10 (p = 0,012), coerenti a 15-50; atteso scritto accanto all'osservato (R/s7f/s7f_lus_draws_check.R)"
+V-027,"Coorte: usabilita', rapporti SE, distorsione",verificato,Identici
+V-028,Trial respiratorio: usabilita' e rapporti SE,verificato,Identici
+V-029,Coerenza interna fra tabelle,verificato,Tutte le uguaglianze tornano
+V-030,"Seme, generatore e parametri dei Metodi",verificato,Confermati nel codice
+V-032..V-042,Citazioni,verificato,Contenuto e metadati (CrossRef) coerenti
+V-043,Bradley 1978,rinviato,Testo non disponibile al revisore; si legge nella revisione finale
+V-044,"Trial respiratorio, N = 50",verificato,"-0,005 con MCSE 0,020"
+V-045,"Tabelle 2, 3 e 5 (5,65 contro 5,54 per il modello marginalizzato)",spiegato,"Ricostruite per intero dalle singole simulazioni: differenza massima circa 1e-13; il 5,65 veniva dalla selezione delle righe del revisore; in Tabella 3 le celle senza righe (R/s7f/s7f_table{2,3,5}_recompute.R)"
+V-046,Intervalli esatti per i flag,applicato,D-63
+V-047,Confronto diretto con margini e bootstrap per blocchi,applicato,"Sez. 3.4, Figura 1 a, Tabella S31"
+V-048,Potenza aggiustata per il livello,letto,Sostiene la parita' (D-61); non entra nel testo
+V-049,Distanza media corretta per il rumore Monte Carlo,letto,Ordinamento invariato in ogni regione
+"V-050, V-065",Media di Mancl-DeRouen e Kauermann-Carroll (Ford e Westgate),rinviato,Revisione finale: decidere se una riga nel supplemento
+V-051,Correlazione del quarto meccanismo sugli esiti binari,corretto,Lag 1 e lag 2 sugli esiti binari dichiarati (tables/V4_S7e_dependence_profiles.csv)
+V-052,Identita' AR(1) = exchangeable a T = 2,verificato,tables/V5_S7f_T2_ar1_exch_identity.csv
+V-053..V-058,"Nuove simulazioni proposte (quadratura adattiva, score robusto, GEE penalizzata, quadratura del MMM, gradi di liberta' FG, rho)",deciso dal PI,Nessuna nuova simulazione; frase nei limiti (D-64)
+V-059,Randomizzazione semplice a N = 10,corretto,Frase nei limiti
+V-060,Stima fra cluster nel modello marginalizzato (Bie et al.),rinviato,"Revisione finale, insieme al confronto con Bie et al."
+"V-061, V-062",Parita' e preferenza a T = 2,deciso dal PI,D-61
+V-063,Flag 'clearly below',deciso dal PI,D-63
+V-064,Analisi oltre le 4 ore,deciso dal PI,D-64

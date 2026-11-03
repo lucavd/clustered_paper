@@ -1,0 +1,65 @@
+mismatch datasets: 19 
+            dgp   scen     N ntime  label sim_id       est    se_unc     se_md
+         <char> <char> <int> <int> <char>  <int>     <num>     <num>     <num>
+ 1: GLMM-native     M3    15     3 manual      2 3.829e+15 1.200e+15 1.944e+15
+ 2:    GLMM-AR1     M4    75     2 manual      1 4.347e+01 1.311e+00 1.240e+00
+ 3:    GLMM-AR1     M4    75     2   mmlb      1 4.347e+01 1.311e+00 1.240e+00
+ 4: GLMM-native     M1    10     3   mmlb     39 4.202e+01 8.292e-01 1.829e+00
+ 5:  GenBinaryY     M7    15     3   mmlb     28 4.165e+01 7.071e-01 9.852e-01
+ 6: GLMM-native     M5    10     4   mmlb     42 4.097e+01 1.053e+00 4.924e+00
+ 7:  GenBinaryY     M7    45     3   mmlb     30 4.020e+01 5.863e-01 5.360e-01
+ 8: GLMM-native     M1    10     3 manual     39 4.013e+01 5.728e-01 6.249e-01
+ 9: GLMM-native     M2    20     3   mmlb     30 3.931e+01 1.403e+00 1.439e+00
+10: GLMM-native     M7    15     4 manual     44 3.855e+01 6.614e-01 8.455e-01
+11: GLMM-native     M6    25     3   mmlb     11 3.815e+01 6.227e-01 6.244e-01
+12:  GenBinaryY     M6    10     3 manual     45 3.723e+01 9.882e-01 1.226e+00
+13:  GenBinaryY     M1    20     4 manual     40 3.699e+01 8.660e-01 9.012e-01
+14:  GenBinaryY     M1    20     4 manual     30 3.679e+01 6.374e-01 7.954e-01
+15:  GenBinaryY     M1    20     4   mmlb     30 3.679e+01 6.374e-01 7.954e-01
+16:  GenBinaryY     M6    10     4 manual     35 3.678e+01 8.385e-01 1.000e+00
+17:  GenBinaryY     M1    20     4 manual     21 3.655e+01 4.861e-01 4.672e-01
+18:    GLMM-AR1     M2    15     4 manual     44 3.635e+01 4.518e-01        NA
+19:  GenBinaryY     M3    15     6 manual      1 3.557e+01 3.086e-01 3.848e-01
+    smv_md     se_fg    smv_fg   r_md  r_fg usable_md usable_fg
+     <num>     <num>     <num>  <num> <num>    <lgcl>    <lgcl>
+ 1: 1.6860 1.399e+15 2.738e+03 1.0000 1.000     FALSE     FALSE
+ 2: 1.3100 3.650e+12 2.250e+10 0.0570 0.994     FALSE     FALSE
+ 3: 1.3100 3.650e+12 2.250e+10 0.0570 0.994     FALSE     FALSE
+ 4: 1.9150 2.055e+14 2.002e+02 0.0472 1.000     FALSE     FALSE
+ 5: 1.1650 4.727e+13 1.922e+03 0.1820 1.000     FALSE     FALSE
+ 6: 9.0300 6.255e+12 5.324e+00 0.8340 1.000     FALSE     FALSE
+ 7: 0.7957 7.013e+12 2.772e+01 0.4840 1.000     FALSE     FALSE
+ 8: 0.9374 8.348e+13 3.792e+01 0.5000 1.000     FALSE     FALSE
+ 9: 2.1580 1.857e+13 6.776e+01 0.5000 1.000     FALSE     FALSE
+10: 1.1720 2.913e+13 7.939e+03 0.3860 1.000     FALSE     FALSE
+11: 1.2210 1.643e+13 2.029e+02 0.9550 1.000     FALSE     FALSE
+12: 1.6870 3.959e+13 2.437e+01 0.3760 1.000     FALSE     FALSE
+13: 1.4520 1.384e+13 2.468e+03 0.6110 1.000     FALSE     FALSE
+14: 1.0840 1.745e+13 3.787e+01 0.3620 1.000     FALSE     FALSE
+15: 1.0840 1.745e+13 3.787e+01 0.3620 1.000     FALSE     FALSE
+16: 1.7330 2.520e+13 2.118e+01 0.7330 1.000     FALSE     FALSE
+17: 1.1740 1.375e+13 3.826e+01 1.5100 1.000     FALSE     FALSE
+18: 0.7444 5.959e+12 7.591e-01     NA 1.000     FALSE     FALSE
+19: 0.6163 8.922e+12 6.211e-01 0.6020 1.000     FALSE     FALSE
+mismatches among usable (study filter): md 0  fg 0 
+usable md both: 174979 max rel 5.03e-10 
+usable fg both: 175093 max rel 1.16e-12 
+   only_geesmv_md only_fc_md only_geesmv_md_usable only_fc_md_usable
+            <int>      <int>                 <int>             <int>
+1:            577       2394                    65               562
+                                                            why     N
+                                                         <char> <int>
+1: Cgee: error: logistic model for probability has fitted value   492
+2: system is computationally singular: reciprocal condition num    66
+3:                                          geesmv hard timeout     4
+4:                                                         <NA>    NA
+5:                                                         <NA>    NA
+6:                                                         <NA>    NA
+                                                            why     N
+                                                         <char> <int>
+1: model-based information matrix is singular (aliased or degen   511
+2: the "md" estimator produced a non-finite or non-positive var    38
+3: Mancl-DeRouen correction undefined: leverage at or above 1 i    28
+4:                                                         <NA>    NA
+5:                                                         <NA>    NA
+6:                                                         <NA>    NA

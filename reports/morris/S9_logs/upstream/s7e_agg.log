@@ -1,0 +1,112 @@
+read 9600 chunks: 960000 recs, 4664861 study rows, 576000 cc, 2880000 gee rows (0.5 min)
+   chunks chunks_expected   recs recs_unique gen_errors
+    <int>           <int>  <int>       <int>      <int>
+1:   9600            9600 960000      960000          0
+   gen_errors_nondegenerate gee3_all study4_all study4_missing
+                      <int>   <lgcl>     <lgcl>          <int>
+1:                        0     TRUE      FALSE            344
+   study4_missing_nondeg md5_unchanged   pass
+                   <int>        <lgcl> <lgcl>
+1:                     0          TRUE  FALSE
+                                  part      n n_mismatch max_abs_diff   pass
+                                <char>  <int>      <int>        <num> <lgcl>
+1:  b: study GEE exch = added GEE exch 959506          0 0.000000e+00   TRUE
+2:    b: MMM fit A = study MMM (M3-M5) 559769          0 0.000000e+00   TRUE
+3: c: geesmv = fewclust MD (ind, 1-50)  44026          0 2.545519e-12   TRUE
+4: c: geesmv = fewclust FG (ind, 1-50)  44050          0 1.275868e-12   TRUE
+D-82: gee$use switched off on 2519 of 2539 constant-outcome rows
+D-82: glmer$use switched off on 0 of 2539 constant-outcome rows
+D-82: shrink$use switched off on 0 of 2539 constant-outcome rows
+D-82: glmer_lrt$use switched off on 0 of 2539 constant-outcome rows
+D-82: mmm_cc$use switched off on 0 of 2539 constant-outcome rows
+D-82: mmm_study$use switched off on 0 of 2539 constant-outcome rows
+D-82: gee_exch_unc$use switched off on 2519 of 2539 constant-outcome rows
+D-82: gee_exch_md$use switched off on 2150 of 2539 constant-outcome rows
+D-82: gee_exch_kc$use switched off on 2152 of 2539 constant-outcome rows
+D-82: gee_exch_fg$use switched off on 2518 of 2539 constant-outcome rows
+D-82: gee_exch_cr2$use switched off on 0 of 2539 constant-outcome rows
+D-82: gee_ind_unc$use switched off on 2509 of 2539 constant-outcome rows
+D-82: gee_ind_md$use switched off on 2145 of 2539 constant-outcome rows
+D-82: gee_ind_kc$use switched off on 2144 of 2539 constant-outcome rows
+D-82: gee_ind_fg$use switched off on 2519 of 2539 constant-outcome rows
+D-82: gee_ind_cr2$use switched off on 0 of 2539 constant-outcome rows
+D-82: gee_ar1_unc$use switched off on 2521 of 2539 constant-outcome rows
+D-82: gee_ar1_md$use switched off on 2148 of 2539 constant-outcome rows
+D-82: gee_ar1_kc$use switched off on 2161 of 2539 constant-outcome rows
+D-82: gee_ar1_fg$use switched off on 2518 of 2539 constant-outcome rows
+D-82: flip$use switched off on 2537 of 2539 constant-outcome rows
+D-82: flip_strict$use switched off on 0 of 2539 constant-outcome rows
+     strategy  n_dp  n_hi  n_lo mean_pu mean_rate mean_upow eligible chosen
+       <char> <int> <int> <int>   <num>     <num>     <num>   <lgcl> <lgcl>
+1:     mmm_cc  1896     0    77    91.0      4.49      21.2     TRUE   TRUE
+2: gee_ar1_fg  1896     2   111    92.0      4.32      19.9    FALSE  FALSE
+3: gee_ar1_fg   480     0    24    91.4      4.60      17.4     TRUE   TRUE
+4:     mmm_cc   480     0     9    90.6      5.14      19.2     TRUE  FALSE
+5:     mmm_cc  2376     0    86    90.9      4.62      20.8     TRUE   TRUE
+6: gee_ar1_fg  2376     2   135    91.9      4.38      19.4    FALSE  FALSE
+                                  set
+                               <char>
+1:    study mechanisms (1,896 points)
+2:    study mechanisms (1,896 points)
+3:                copula (480 points)
+4:                copula (480 points)
+5: all four mechanisms (2,376 points)
+6: all four mechanisms (2,376 points)
+D-82: study rows$use switched off on 0 of 5509 constant-outcome rows
+                                                    q      est       lo
+                                               <char>    <num>    <num>
+ 1:                              flip rate H0, copula  5.24123  5.17794
+ 2:           flip rate H0, copula - study mechanisms -0.04135 -0.11325
+ 3:                    GEE AR(1) FG t rate H0, copula  4.59852  4.53011
+ 4: GEE AR(1) FG t rate H0, copula - study mechanisms  0.23401  0.15608
+ 5:                          MMM cc t rate H0, copula  5.13710  5.07367
+ 6:       MMM cc t rate H0, copula - study mechanisms  0.71407  0.64239
+ 7:                       GLMM Wald t rate H0, copula 10.21046  9.72861
+ 8:    GLMM Wald t rate H0, copula - study mechanisms  3.19868  3.01730
+ 9:                          MMM cc usable H0, copula 90.57529 90.49803
+10:       MMM cc usable H0, copula - study mechanisms -0.57656 -0.66227
+11:                      MMM cc bias/empSE H1, copula  0.02680  0.02315
+12:               MMM cc coverage (normal) H1, copula 93.77942 93.70610
+          hi       sd n_pts
+       <num>    <num> <num>
+ 1:  5.30283 0.031252   480
+ 2:  0.02962 0.036128   480
+ 3:  4.66277 0.034464   480
+ 4:  0.31048 0.039579   480
+ 5:  5.20171 0.033297   480
+ 6:  0.78554 0.037254   480
+ 7: 10.35079 0.163479   421
+ 8:  3.45918 0.111981   418
+ 9: 90.65307 0.039849   480
+10: -0.49678 0.042899   480
+11:  0.03046 0.001882   480
+12: 93.85272 0.037846   480
+Index: <code>
+      code      obs       lo       hi     a     b    verdict
+    <char>    <num>    <num>    <num> <num> <num>     <char>
+ 1:    PF1  0.00000  0.00000  0.00000  0.00  0.00 confermata
+ 2:    PF2 -0.04135 -0.11325  0.02962 -1.00  1.00 confermata
+ 3:    PF3  0.00000  0.00000  0.00000  0.00  0.00 confermata
+ 4:    PF4  0.00000  0.00000  0.00000  0.00  0.00 confermata
+ 5:    PF5  0.23401  0.15608  0.31048 -1.00  1.00 confermata
+ 6:    PF6  0.71407  0.64239  0.78554 -1.00  1.00 confermata
+ 7:    PF7  0.02680  0.02315  0.03046 -0.46  0.46 confermata
+ 8:    PF8 93.77942 93.70610 93.85272 92.50 97.50 confermata
+ 9:    PF9  3.19868  3.01730  3.45918  1.00 10.00 confermata
+10:   PF10  0.00000  0.00000  0.00000  1.00  1.00   smentita
+11:   PF11 -0.57656 -0.66227 -0.49678 -2.50  2.50 confermata
+                                                              extra
+                                                             <char>
+ 1:                                                            <NA>
+ 2:                                                            <NA>
+ 3:                                                            <NA>
+ 4:                                                            <NA>
+ 5:                                                            <NA>
+ 6:                                                            <NA>
+ 7: H1 points with bias/empSE +/- 2 MCSE wholly outside +/- 0.46: 0
+ 8:                                                            <NA>
+ 9:                                                            <NA>
+10:                                                  chosen: mmm_cc
+11:                                                            <NA>
+mean seconds per replicate by part: gen 0.004 study 1.865 cc 0.238 gee3 0.212 flip 0.005 
+done 6.0 min

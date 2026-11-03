@@ -1,0 +1,165 @@
+            set   usab     N total_rows_set
+         <char> <char> <int>          <int>
+1: intersection     U0  7124          24192
+2: intersection     U1  6432          24192
+3: intersection     U2  6480          24192
+          status     N
+          <char> <int>
+1:         equal   340
+2:         empty     4
+3:       differs    67
+4: shape differs     2
+                               table        status same_bytes rows_pre rows_now
+                              <char>        <char>     <lgcl>    <int>    <int>
+ 1:                V4_S6cc_cells.csv       differs      FALSE     1728     1728
+ 2:         V5_S7f_cp_S6cc_cells.csv       differs      FALSE     1728     1728
+ 3:             V5_S7g_m67_cc_dp.csv       differs      FALSE      768      768
+ 4:              V5_S8b_sub_keys.csv       differs      FALSE      353      353
+ 5:          V5_S8b_sub_s36_keys.csv       differs      FALSE      134      134
+ 6:              V5_S7g_tab_keys.csv       differs      FALSE      308      308
+ 7:          V5_S8b_sub_cap_keys.csv       differs      FALSE       65       65
+ 8:                 V5_S7g_extra.csv       differs      FALSE      124      124
+ 9:         V5_S7g_m67_cc_byused.csv       differs      FALSE       16       16
+10:                V5_S7g_m67_cc.csv       differs      FALSE        8        8
+11:        V5_S8b_sub_cap_checks.csv       differs      FALSE      139      139
+12:              V5_S7f_fig1_map.csv       differs      FALSE        9        9
+13:                  V4_S7_extra.csv       differs      FALSE       67       67
+14:          V4_S7b_rule_summary.csv       differs      FALSE      110      110
+15:            V5_S7f_cp_changes.csv       differs      FALSE        6        6
+16:          V4_S7b_null_summary.csv       differs      FALSE       54       54
+17:           V4_S7e_predictions.csv       differs      FALSE       11       11
+18:                V5_S7f_claims.csv       differs      FALSE       13       13
+19:                V4_S6cc_preds.csv       differs      FALSE        4        4
+20:        V5_S8b_sub_s36_checks.csv       differs      FALSE       11       11
+21:                 V4_S7b_gates.csv       differs      FALSE        3        3
+22:                 V5_S7f_extra.csv       differs      FALSE       28       28
+23:        V5_S8b_sub_figS1_keys.csv       differs      FALSE       36       36
+24:          V5_S8b_sub_s37_keys.csv       differs      FALSE       97       97
+25:                 V4_S6b_ns_dp.csv       differs      FALSE     7680     7680
+26:     V4_S6b_ns_rule_safety_dp.csv       differs      FALSE     6528     6528
+27:        V4_S6b_ns_rule_safety.csv       differs      FALSE      289      289
+28:                     V4_S7_u1.csv       differs      FALSE       27       27
+29:              V4_S7b_df_shift.csv       differs      FALSE       28       28
+30:              V4_S7b_dp_rates.csv       differs      FALSE    30336    30336
+31:            V4_S7b_null_shift.csv       differs      FALSE     8352     8352
+32:               V4_S7b_rule_dp.csv       differs      FALSE    41712    41712
+33:              V4_S7d_dp_rates.csv       differs      FALSE   119448   119448
+34:                  V4_S7d_rule.csv       differs      FALSE       28       28
+35:              V4_S7e_bias_cov.csv       differs      FALSE    11405    11405
+36:          V4_S7e_bias_summary.csv       differs      FALSE       12       12
+37:            V4_S7e_boot_means.csv       differs      FALSE       12       12
+38:              V4_S7e_dp_rates.csv       differs      FALSE    21120    21120
+39:                  V4_S7e_rule.csv       differs      FALSE       51       51
+40:               V4_S7e_summary.csv       differs      FALSE       46       46
+41:   V5_S7f_cp_kcfc_rule_safety.csv       differs      FALSE     1020     1020
+42: V5_S7f_cp_S6b_ns_rule_safety.csv       differs      FALSE      289      289
+43:        V5_S7f_cp_S7b_rule_dp.csv       differs      FALSE    41712    41712
+44:       V5_S7f_cp_S7d_dp_rates.csv       differs      FALSE   119448   119448
+45:           V5_S7f_cp_S7d_rule.csv       differs      FALSE       28       28
+46:       V5_S7f_cp_S7e_dp_rates.csv       differs      FALSE    21120    21120
+47:        V5_S7f_cp_S7e_summary.csv       differs      FALSE       46       46
+48:              V5_S7f_fig1_byN.csv       differs      FALSE      160      160
+49:              V5_S7f_fig1_byT.csv       differs      FALSE       30       30
+50:               V5_S7f_fig1_ef.csv       differs      FALSE       18       18
+51:         V5_S7f_GF3c_flagdiff.csv       differs      FALSE       17       17
+52:              V5_S7f_h2h_boot.csv       differs      FALSE      209      209
+53:              V5_S7f_h2h_diff.csv       differs      FALSE        3        3
+54:              V5_S7f_h2h_grid.csv       differs      FALSE       70       70
+55:       V5_S7f_h2h_series_boot.csv       differs      FALSE       76       76
+56:               V5_S7f_rule_dp.csv       differs      FALSE    45144    45144
+57:               V5_S7f_rule_t2.csv       differs      FALSE       34       34
+58:                V5_S7f_table4.csv       differs      FALSE       19       19
+59:                    V5_S7f_u1.csv       differs      FALSE       27       27
+60:                 V5_S7g_calib.csv       differs      FALSE       19       19
+61:          V5_S7g_filter_check.csv       differs      FALSE       17       17
+62:             V5_S7g_filter_dp.csv       differs      FALSE   121176   121176
+63:             V5_S7g_filter_t4.csv       differs      FALSE       51       51
+64:        V5_S8b_rule_stability.csv       differs      FALSE       13       13
+65:               V5_S8b_sub_s36.csv       differs      FALSE      126      126
+66:        V5_S8b_sub_s37_checks.csv       differs      FALSE        5        5
+67:               V5_S8b_sub_s37.csv       differs      FALSE        8        8
+68:                V4_S5_fu_a_g2.csv         empty         NA       NA       NA
+69:       V4_S6b_thr_claims_diff.csv         empty         NA       NA       NA
+70:              V4_S7b_df_flips.csv shape differs         NA      116      117
+71:            V4_S7b_null_flips.csv         empty         NA       NA       NA
+72:               V5_S7f_numbers.csv shape differs         NA     3184     3376
+73:      V5_S7g_agq_GG2_mismatch.csv         empty         NA       NA       NA
+                               table        status same_bytes rows_pre rows_now
+                              <char>        <char>     <lgcl>    <int>    <int>
+    differ differ_no_mmm
+     <int>         <int>
+ 1:   1218          1218
+ 2:   1218          1218
+ 3:    451           451
+ 4:    172           139
+ 5:    134           114
+ 6:     94            87
+ 7:     24            23
+ 8:     22            18
+ 9:     16            16
+10:      8             8
+11:      8             8
+12:      9             7
+13:      6             6
+14:     20             5
+15:      5             5
+16:     10             4
+17:      4             4
+18:      4             3
+19:      3             2
+20:      2             2
+21:      1             1
+22:      1             1
+23:      2             1
+24:     12             1
+25:    451             0
+26:    470             0
+27:     34             0
+28:      3             0
+29:      4             0
+30:   1669             0
+31:    642             0
+32:   2580             0
+33:   2622             0
+34:      2             0
+35:    523             0
+36:      1             0
+37:      6             0
+38:    548             0
+39:      3             0
+40:      4             0
+41:    128             0
+42:     34             0
+43:   2580             0
+44:   2622             0
+45:      2             0
+46:    548             0
+47:      4             0
+48:     32             0
+49:      6             0
+50:      6             0
+51:      1             0
+52:    133             0
+53:      2             0
+54:     14             0
+55:     38             0
+56:   1132             0
+57:      2             0
+58:      1             0
+59:      3             0
+60:      1             0
+61:      1             0
+62:   3348             0
+63:      3             0
+64:      1             0
+65:      9             0
+66:      2             0
+67:      1             0
+68:     NA            NA
+69:     NA            NA
+70:     NA            NA
+71:     NA            NA
+72:     NA            NA
+73:     NA            NA
+    differ differ_no_mmm
+     <int>         <int>

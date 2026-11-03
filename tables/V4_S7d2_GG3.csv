@@ -1,0 +1,15 @@
+part,value,pass
+datasets generated,1080,
+(a) offset fits compared,2160,
+"(a) glm.fit vs glm, max coef diff",0,TRUE
+"(a) score = numDeriv, datasets failing",0,TRUE
+(b) datasets with centre,943,
+(b) |sum u| at centre >= 1e-8,1,FALSE
+(b) p at centre != 1,309,FALSE
+(c) finite intervals,570,
+(c) rejected run inside the interval at least one walk step wide,0,TRUE
+reported: intervals with a narrower rejected run inside,0,
+"reported: median share of the interval rejected, among those",0,
+reported: max share of the interval rejected,0,
+reported: >1 accepted stretch on the dense window,90,
+reported: min p at centre,0.876953125,

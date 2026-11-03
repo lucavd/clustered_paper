@@ -1,0 +1,32 @@
+sentence,file,row,value
+4.752.000 dataset rigenerati,tables/V7_S10_degen_gates.csv,GD2 datasets,"4752000 rows, 4752000 unique keys"
+524 numeri del testo principale,results_v4/S10/ids_inventory.csv,"part == main, distinct id",524
+367 numeri del supplemento,results_v4/S10/ids_inventory.csv,"supplement, sampled",367
+151 frasi assolute,tables/V7_S10_assolute_check.csv,verdict != NOT_A_RESULT_CLAIM,151
+3 frasi false (rilettura),tables/V7_S10_assolute_check.csv,verdict == FALSE,3
+"234 celle, 64 con scelte non scritte",tables/V7_S10_tabelle_check.csv,"rows with id, by status","{'MATCH': 170, 'DEFINITION_DIVERGENCE': 64}"
+"tranne 4 (2 diversi, 2 non ricalcolabili); 1 frase falsa",tables/V7_S10_testo_check.csv,status counts,"{'MATCH': 292, 'DEFINITION_DIVERGENCE': 10, 'MISMATCH': 2, 'NOT_RECOMPUTABLE': 2, 'TRUE': 14, 'FALSE': 1}"
+quasi 8 su 100 separati,tables/V7_S10_degen_classes.csv,"scope all, pct_S",7.54699664342091
+separati per regione,tables/V7_S10_degen_classes.csv,"region T2-3 & N<=25, pct_S",55.1368423552321
+separati per regione,tables/V7_S10_degen_classes.csv,"region other, pct_S",8.37071156374301
+separati per regione,tables/V7_S10_degen_classes.csv,"region N>=45, pct_S",0.977977722396182
+"risultati usabili su dataset separati, mmm_cc",tables/V7_S10_degen_usable.csv,"T5 mmm_cc Si, sum over 16 mechanism x region x arm rows",15 of 4332779
+"risultati usabili su dataset separati, gee_ar1_fg",tables/V7_S10_degen_usable.csv,"T5 gee_ar1_fg Si, sum over 16 mechanism x region x arm rows",8420 of 4377361
+regola per versione,tables/V7_S10_degen_table5_versions.csv,base mmm_cc,hi_all 0 pu 90.89 pu_small 39.16 chosen TRUE
+regola per versione,tables/V7_S10_degen_table5_versions.csv,base gee_ar1_fg,hi_all 2 pu 91.90 pu_small 43.72 chosen FALSE
+regola per versione,tables/V7_S10_degen_table5_versions.csv,base flip,hi_all 0 pu 96.51 pu_small 72.27 chosen FALSE
+regola per versione,tables/V7_S10_degen_table5_versions.csv,a gee_ar1_fg,hi_all 0 pu 91.69 pu_small 41.95 chosen TRUE
+regola per versione,tables/V7_S10_degen_table5_versions.csv,a mmm_cc,hi_all 0 pu 90.89 pu_small 39.16 chosen FALSE
+regola per versione,tables/V7_S10_degen_table5_versions.csv,a flip,hi_all 0 pu 96.51 pu_small 72.27 chosen FALSE
+regola per versione,tables/V7_S10_degen_table5_versions.csv,b gee_ar1_fg,hi_all 0 pu 91.69 pu_small 41.95 chosen TRUE
+regola per versione,tables/V7_S10_degen_table5_versions.csv,b mmm_cc,hi_all 0 pu 90.89 pu_small 39.16 chosen FALSE
+regola per versione,tables/V7_S10_degen_table5_versions.csv,b flip,hi_all 0 pu 91.96 pu_small 42.88 chosen FALSE
+fino a 5 risultati usabili su 100 in meno (Tabella 4),tables/V7_S10_degen_sensitivity.csv,version a Table 4 min diff: gee RI T=2,-5.05290959982104
+varianti del controllo,tables/V7_S10_testo_cc_variants.csv,ii hi_all,4
+varianti del controllo,tables/V7_S10_testo_cc_variants.csv,ii pu,90.55750083177344
+varianti del controllo,tables/V7_S10_testo_cc_variants.csv,ii pu_small,38.51324870265368
+varianti del controllo,tables/V7_S10_testo_cc_variants.csv,iii hi_all,0
+varianti del controllo,tables/V7_S10_testo_cc_variants.csv,iii pu,84.01487347231183
+varianti del controllo,tables/V7_S10_testo_cc_variants.csv,iii pu_small,27.637727074134506
+time-out di geesmv fino al 20%,tables/V7_S10_supplemento_geesmv_timeouts.csv,max pct_to: GLMM-AR1 M5 N20 T2 manual,20
+365 sottocampioni su 5.000 separati (studio respiratorio),tables/V7_S10_degen_clinical.csv,"app respiratory, method (draws), sum Si / sum draws",365 / 5000

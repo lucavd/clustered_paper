@@ -1,0 +1,43 @@
+    model     N ntime  reps same_design  mono same_as_glmm_native
+    <int> <int> <int> <int>       <int> <int>               <int>
+ 1:     1    10     2   100         100   100                 100
+ 2:     1    25     6   100         100   100                 100
+ 3:     2    10     2   100         100   100                 100
+ 4:     2    25     6   100         100   100                 100
+ 5:     3    10     2   100         100   100                 100
+ 6:     3    25     6   100         100   100                 100
+ 7:     4    10     2   100         100   100                 100
+ 8:     4    25     6   100         100   100                 100
+ 9:     5    10     2   100         100   100                 100
+10:     5    25     6   100         100   100                 100
+    same_as_glmm_ar1 gen_err_other gen_err_other_nondeg mean_y_changed
+               <int>         <int>                <int>          <num>
+ 1:               97             3                    0           0.14
+ 2:              100             0                    0           5.45
+ 3:               98             2                    0           0.12
+ 4:              100             0                    0           5.64
+ 5:               99             1                    0           0.07
+ 6:              100             0                    0           5.14
+ 7:               99             1                    0           0.06
+ 8:              100             0                    0           1.38
+ 9:               97             3                    0           0.07
+10:              100             0                    0           5.72
+    model                             check n_cells max_abs_z   pass
+    <int>                            <char>   <int>     <num> <lgcl>
+ 1:     1                    marginal cells      20     2.194   TRUE
+ 2:     1                        pair cells      90     2.472   TRUE
+ 3:     2 GEE independence coef (Intercept)       1     0.866   TRUE
+ 4:     2        GEE independence coef time       1     0.631   TRUE
+ 5:     2         GEE independence coef trt       1     1.255   TRUE
+ 6:     2         GEE independence coef age       1     0.492   TRUE
+ 7:     2    GEE independence coef time:trt       1     1.482   TRUE
+ 8:     3                    marginal cells      20     2.305   TRUE
+ 9:     3                        pair cells      90     2.598   TRUE
+10:     4                    marginal cells      20     2.746   TRUE
+11:     4                        pair cells      90     2.551   TRUE
+12:     5 GEE independence coef (Intercept)       1     0.376   TRUE
+13:     5        GEE independence coef time       1     0.286   TRUE
+14:     5         GEE independence coef trt       1     0.323   TRUE
+15:     5        GEE independence coef dose       1     0.685   TRUE
+16:     5    GEE independence coef time:trt       1     1.021   TRUE
+GF2 PASS | GF3 PASS

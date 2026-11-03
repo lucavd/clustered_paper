@@ -1,0 +1,120 @@
+---
+title: "S10: revisione indipendente di numeri e definizioni del manoscritto v7"
+subtitle: "Roadmap Morris 2019, ramo morris-v4"
+date: 2026-11-02
+format:
+  html:
+    embed-resources: true
+    toc: true
+lang: it
+execute:
+  echo: false
+  warning: false
+---
+
+```{r setup}
+.libPaths(path.expand("~/MMM/renv/library/linux-ubuntu-noble/R-4.6/x86_64-pc-linux-gnu"))
+suppressMessages({ library(data.table) })
+REPO <- path.expand("~/MMM")
+md <- function(D) { D <- as.data.frame(D); for (j in seq_along(D)) if (is.numeric(D[[j]])) D[[j]] <- format(signif(D[[j]], 4), trim = TRUE, drop0trailing = TRUE)
+  h <- paste0("| ", paste(names(D), collapse = " | "), " |"); s <- paste0("|", paste(rep("---", ncol(D)), collapse = "|"), "|")
+  b <- apply(D, 1, function(r) paste0("| ", paste(gsub("|", "\\|", gsub("\n", " ", r), fixed = TRUE), collapse = " | "), " |")); cat(c(h, s, b, ""), sep = "\n") }
+sec <- function(file, head, level = 1) {
+  x <- readLines(file.path(REPO, file)); pat <- paste(strrep("#", level), head); i <- which(x == pat); if (!length(i)) return(""); i <- max(i)
+  nxt <- which(grepl(paste0("^", strrep("#", level), " "), x) & seq_along(x) > i); j <- if (length(nxt)) min(nxt) - 1 else length(x)
+  x <- x[(i + 1):j]; gsub("\\]\\(\\.\\./", "](../../docs/", x) }
+tab <- function(f) fread(file.path(REPO, "tables", f))
+```
+
+```{r inbreve, results = "asis"}
+cat(sec("docs/steps/S10.md", "In breve"), sep = "\n")
+```
+
+# Decisioni del PI
+
+```{r decisioni, results = "asis"}
+cat(sec("docs/steps/S10.md", "Decisioni del PI (2026-11-03)"), sep = "\n")
+```
+
+# Dubbi rinviati
+
+```{r rinvii, results = "asis"}
+cat(sec("docs/steps/S10.md", "Dubbi rinviati"), sep = "\n")
+```
+
+# Cancelli e previsioni
+
+Pre-registrati nel commit 9cecee9, prima di ogni calcolo dello step.
+
+```{r esiti, results = "asis"}
+cat(sec("docs/steps/S10.md", "Esiti (2026-11-02)"), sep = "\n")
+```
+
+# Cosa e' girato
+
+| lavoro | chi | script | durata | note |
+|---|---|---|---|---|
+| prove in sola lettura | capo | `R/s10/probe/s10_probe.R`, `s10_probe2.R` | pochi minuti | 400 dataset, programmazione lineare contro *detectseparation* |
+| md5 prima e dopo | capo | comando in `results_v4/S10/md5_inputs_*.txt` | circa 2 minuti ciascuno | 170.827 file |
+| inventario dei numeri | capo | `R/s10/s10_ids.py` | secondi | `results_v4/S10/ids_inventory.csv` |
+| inventario dei dataset degeneri e sensibilita' | traccia Degeneri | `R/s10/degen/` | 2,15 ore su 10-14 processi (26 ore-processore) | 47.520 chunk, Tctl 71-86 C |
+| controprova delle Tabelle 3-5 | traccia Tabelle | `R/s10/tabelle/` | circa 1,2 ore, piu' l'arbitrato sul denominatore | |
+| controprova degli altri numeri del testo | traccia Testo | `R/s10/testo/` | circa 1,3 ore, piu' le varianti del controllo | bootstrap rifatto con estrazioni proprie |
+| controprova a campione del supplemento | traccia Supplemento | `R/s10/supplemento/` | circa 1,6 ore | 9 valori da bootstrap non rifatti |
+| frasi assolute | traccia Assolute | `R/s10/assolute/` | circa 1 ora, piu' il seguito sulle soglie | |
+| verifiche del capo | capo | `R/s10/lead/` | minuti | separazione nei due punti, varianti del controllo, copertura, fonti del riassunto |
+
+Le tracce hanno lavorato in sola lettura fuori dalle loro cartelle; due copie di file finite per errore fuori (radice del repository e `tables/`) sono state tolte o spostate dalla traccia stessa e dichiarate. Verifica del registro sul sorgente invariato: `results_v4/S10/verify_registry.log`.
+
+# Appendice
+
+## Rilievi della revisione
+
+```{r findings, results = "asis"}
+F <- tab("V7_S10_findings.csv"); md(F[, .(id, track, severity, where, finding, proposed, kind, depends_on)])
+```
+
+## Dataset degeneri per classe
+
+```{r classes, results = "asis"}
+C <- tab("V7_S10_degen_classes.csv")[scope %in% c("all", "region", "mechanism")]
+md(C[, .(scope, mechanism, region, eligible, S, pct_S, Si, V1, E1, B0, B1)])
+```
+
+## Regola di decisione nelle versioni della sensibilita'
+
+Versione base: il paper. Versione a: dataset con interazione infinita tolti alle strategie con intervallo di Wald. Versione b: tolti a tutte. Versione c: come a, con tutti i dataset separati. Versione d: come a, piu' le classi V1, E1, B0, B1.
+
+```{r t5v, results = "asis"}
+V <- tab("V7_S10_degen_table5_versions.csv")[strategy %in% c("mmm_cc", "gee_ar1_fg", "gee_ind_fg", "gee_exch_fg", "flip", "glmer_lrt")]
+md(V[, .(version, strategy, hi_main, hi_m67, hi_copula, lo_all, pu, pu_small, upow, eligible, chosen)])
+```
+
+## Varianti del controllo di convergenza del modello marginalizzato
+
+(i) come oggi; (ii) fit di riserva solo se nlm converge (codici 1-2), altrimenti fit originale; (iii) solo se converge, altrimenti nessun risultato; (ii') e (iii') come (ii) e (iii) accettando anche il codice 3.
+
+```{r ccv, results = "asis"}
+X <- tab("V7_S10_testo_cc_variants.csv")[grepl("Table 5", table) & quantity %in% c("hi_main", "hi_m67", "hi_copula", "hi_all", "lo_all", "pu", "pu_small", "upow", "chosen")]
+md(dcast(X, quantity ~ variant, value.var = "value", fun.aggregate = function(v) v[1]))
+```
+
+## Verifiche del capo
+
+```{r lead, results = "asis"}
+for (f in c("sepchk.out", "ccchk.out")) { x <- readLines(file.path(REPO, "results_v4/S10/lead", f)); x <- x[!grepl("sandbox|Warning|NAs introduced|fifelse", x)]
+  cat("\n**", f, "**\n\n```\n", sep = ""); cat(x, sep = "\n"); cat("```\n") }
+```
+
+## Da dove vengono i numeri del riassunto
+
+```{r fonti, results = "asis"}
+S <- tab("V7_S10_inbreve_sources.csv")
+S <- rbind(S, data.table(sentence = c("quasi 1 sostituzione su 5 non converge", "23 falsi positivi, 71 dataset non separati senza falsi positivi",
+                                      "4 scenari fuori taratura con il ritorno al fit originale", "circa 7.400 parole; SMMR circa 8.000",
+                                      "tempi del ricalcolo: 62, 30, 20 minuti"),
+  file = c("results_v4/S10/lead/ccchk.out", "results_v4/S10/lead/sepchk.out", "tables/V7_S10_testo_cc_variants.csv", "docs/steps/S9.md; istruzioni SMMR", "docs/steps/S9.md, Sui tempi di calcolo"),
+  row = c("B_code 3 + 4 + 5 sulle sostituzioni", "righe GLMM-AR1 e GLMM-native", "variante ii, hi_all", "Dubbi rinviati punto 4", "In breve"),
+  value = c("(28.697 + 3.093 + 184.409) / 1.139.699 = 19,0%", "12 + 11; 34 + 37", "4", "7.375", "62, 30, 20")))
+md(S)
+```

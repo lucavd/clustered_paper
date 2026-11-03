@@ -1,0 +1,51 @@
+classification code: lines 165-213 of s5_checks.R
+     gate   pass                                              result
+   <char> <lgcl>                                              <char>
+1:    G2a   TRUE    2001 x 560 values, max |diff| 0, NA mismatches 0
+2:    G2b   TRUE 93 values, max |diff| over est, se, lo, hi 4.97e-14
+3:    G2c   TRUE                        146 of 146 classes identical
+M1c claim columns with a non-finite estimate: C07|all, C12b|GB, C13a|all, C24b|all, C25b|GB, C25c|GB|gee_fg, C25c|GB|gee_md, C25a|NAT, C25b|NAT, C25c|NAT|gee_fg, C25c|NAT|gee_md, C25a|AR1, C25b|AR1, C25c|AR1|gee_fg, C25c|AR1|gee_md 
+M1c bobyqa sensitivity: 8 applicable sub-claims change class
+          applicability                            class     N
+                 <char>                           <char> <int>
+ 1:         applicabile                     trascurabile    31
+ 2:         applicabile                         smentita    23
+ 3:         applicabile              risolta e rilevante    20
+ 4:         applicabile                      descrittiva    13
+ 5:         applicabile                      non risolta    12
+ 6:         applicabile                       confermata     7
+ 7:         applicabile             smentita e rilevante     6
+ 8:         applicabile vedi tabella dei punti di cambio     6
+ 9:         applicabile                    indeterminata     5
+10:         applicabile risolta, rilevanza indeterminata     5
+11:         applicabile                          risolta     2
+12:             esclusa                          esclusa     2
+13:     non applicabile                  non applicabile    15
+14: not_operationalized              not_operationalized     1
+15:        out_of_scope                     out_of_scope     3
+16:          superseded                       superseded     3
+     mech switch_m1c modal_switch p_modal p_same next_m1c
+   <char>      <num>        <num>   <num>  <num>   <char>
+1:     GB         15           15   1.000  1.000   gee_md
+2:    NAT         15           15   0.879  0.879   gee_md
+3:    AR1         15           15   0.961  0.961   gee_md
+       id       quantity               expected         est          lo
+   <char>         <char>                 <char>       <num>       <num>
+1:     P1 C14a|all (M1c) circa 0, sotto 5 punti 11.35538278 10.94668769
+2:     P2  C23c|GB (M1c)          sotto 5 punti 22.69658172 21.24737722
+3:     P2 C23c|NAT (M1c)          sotto 5 punti 21.03726629 19.61608195
+4:     P2 C23c|AR1 (M1c)          sotto 5 punti 20.00454261 18.52056774
+5:     P3 C17b|all (M1c)           1,39 +/- 0,5  1.12314681  1.02683516
+6:     P4  C19c|GB (M1c)             sotto 0,10  0.02894690  0.01628084
+7:     P4 C19c|NAT (M1c)             sotto 0,10  0.03222316  0.02600460
+8:     P4 C19c|AR1 (M1c)             sotto 0,10  0.02436240  0.01761094
+            hi    outcome
+         <num>     <char>
+1: 11.76663463   smentita
+2: 24.06815154   smentita
+3: 22.48304217   smentita
+4: 21.52238449   smentita
+5:  1.22313743 confermata
+6:  0.04072616 confermata
+7:  0.03876962 confermata
+8:  0.03051076 confermata

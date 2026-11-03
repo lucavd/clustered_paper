@@ -1,0 +1,4 @@
+RNGkind in a crew worker: L'Ecuyer-CMRG, Inversion, Rejection | in this session: Mersenne-Twister, Inversion, Rejection 
+rundir: R/v4/rundir
+rows: 522 | generator x arm combinations: 30 | invariant over 3 cells: 30/30
+written: /tmp/s8b/V4_dgm_parameters_new.csv 

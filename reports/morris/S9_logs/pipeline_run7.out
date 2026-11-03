@@ -1,0 +1,48 @@
+skip s7_extras
+skip cpflags
+skip table4
+skip s9_keys
+skip h2h_boot
+skip s7g_filter
+skip du8_mdkc_avg
+skip lit_pow
+skip copy results_v4/S9/prov/du8_table4_mdkc_avg.csv
+skip copy results_v4/S9/prov/lit_pow1_pass_v2.csv
+skip disc_r2
+skip copy results_v4/S9/prov/disc_r2_flip_summary.csv
+skip copy results_v4/S9/prov/disc_r2_flip_lo_points.csv
+skip extras
+skip fig1_series
+skip clinical
+skip s7g_extras
+skip agq_keys0
+skip tabkeys0
+skip spec0
+skip registry0
+skip s36
+skip s37
+skip mdkc_s26
+skip s8b_keys
+skip mcse_captions
+skip sub_keys
+skip figures
+skip figS1
+skip agq_keys
+skip tabkeys
+skip spec
+OK   registry 6 s
+GF3a: 3184 numbers, 54 source files, 0 discordances
+verify exit 0
+GF2: 0 violations
+GF2 exit 0
+GF4: 95 tags, 0 not ok; 0 comparative sentences without a tag
+GF4 exit 0
+GF4: 41 tags, 0 not ok; 0 comparative sentences without a tag
+GF4 supp exit 0
+P1: words 7375 + 200 x 7 display items = 8775
+P2: sentences 313, median 22, mean 23.7, p90 41, max 64
+abstract words 197
+em dashes 0, en dashes 0
+manuscript/v5/MMM_v5_supplement.docx | text runs departing: 0
+format exit 0
+pipeline run done

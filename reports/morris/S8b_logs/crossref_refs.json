@@ -1,0 +1,390 @@
+{
+ "7": {
+  "doi": "10.1186/s13063-017-1862-2",
+  "authors": [
+   [
+    "Barker",
+    "D"
+   ],
+   [
+    "D\u2019Este",
+    "C"
+   ],
+   [
+    "Campbell",
+    "MJ"
+   ],
+   [
+    "McElduff",
+    "P"
+   ]
+  ],
+  "title": "Minimum number of clusters and comparison of analysis methods for cross sectional stepped wedge cluster randomised trials with binary outcomes: A simulation study",
+  "journal": "Trials",
+  "year": 2017,
+  "volume": "18",
+  "issue": "1",
+  "page": null,
+  "article": "119"
+ },
+ "15": {
+  "doi": "10.1002/sim.9744",
+  "authors": [
+   [
+    "Gosho",
+    "M"
+   ],
+   [
+    "Ishii",
+    "R"
+   ],
+   [
+    "Noma",
+    "H"
+   ],
+   [
+    "Maruo",
+    "K"
+   ]
+  ],
+  "title": "A comparison of bias\u2010adjusted generalized estimating equations for sparse binary data in small\u2010sample longitudinal studies",
+  "journal": "Statistics in Medicine",
+  "year": 2023,
+  "volume": "42",
+  "issue": "15",
+  "page": "2711-2727",
+  "article": null
+ },
+ "17": {
+  "doi": "10.1016/j.jclinepi.2025.111838",
+  "authors": [
+   [
+    "Hemming",
+    "K"
+   ],
+   [
+    "Thompson",
+    "J"
+   ],
+   [
+    "Kristunas",
+    "C"
+   ],
+   [
+    "Forbes",
+    "A"
+   ],
+   [
+    "Watson",
+    "S"
+   ],
+   [
+    "Bowden",
+    "R"
+   ],
+   [
+    "McKenzie",
+    "J"
+   ],
+   [
+    "Kasza",
+    "J"
+   ]
+  ],
+  "title": "The performance of small sample correction methods for controlling type I error when analyzing parallel cluster randomized trials: a systematic review of simulation studies",
+  "journal": "Journal of Clinical Epidemiology",
+  "year": 2025,
+  "volume": "185",
+  "issue": null,
+  "page": "111838",
+  "article": "111838"
+ },
+ "18": {
+  "doi": "10.1002/sim.9126",
+  "authors": [
+   [
+    "Bie",
+    "R"
+   ],
+   [
+    "Haneuse",
+    "S"
+   ],
+   [
+    "Huey",
+    "N"
+   ],
+   [
+    "Schildcrout",
+    "J"
+   ],
+   [
+    "McGee",
+    "G"
+   ]
+  ],
+  "title": "Fitting marginal models in small samples: A simulation study of marginalized multilevel models and generalized estimating equations",
+  "journal": "Statistics in Medicine",
+  "year": 2021,
+  "volume": "40",
+  "issue": "24",
+  "page": "5298-5312",
+  "article": null
+ },
+ "19": {
+  "doi": "10.1111/j.1541-0420.2007.00764.x",
+  "authors": [
+   [
+    "Lu",
+    "B"
+   ],
+   [
+    "Preisser",
+    "JS"
+   ],
+   [
+    "Qaqish",
+    "BF"
+   ],
+   [
+    "Suchindran",
+    "C"
+   ],
+   [
+    "Bangdiwala",
+    "SI"
+   ],
+   [
+    "Wolfson",
+    "M"
+   ]
+  ],
+  "title": "A Comparison of Two Bias\u2010Corrected Covariance Estimators for Generalized Estimating Equations",
+  "journal": "Biometrics",
+  "year": 2007,
+  "volume": "63",
+  "issue": "3",
+  "page": "935-941",
+  "article": null
+ },
+ "21": {
+  "doi": "10.1093/ije/dyx169",
+  "authors": [
+   [
+    "Leyrat",
+    "C"
+   ],
+   [
+    "Morgan",
+    "KE"
+   ],
+   [
+    "Leurent",
+    "B"
+   ],
+   [
+    "Kahan",
+    "BC"
+   ]
+  ],
+  "title": "Cluster randomized trials with a small number of clusters: which analyses should be used?",
+  "journal": "International Journal of Epidemiology",
+  "year": 2018,
+  "volume": "47",
+  "issue": "1",
+  "page": "321-331",
+  "article": null
+ },
+ "26": {
+  "doi": "10.18637/jss.v067.i01",
+  "authors": [
+   [
+    "Bates",
+    "D"
+   ],
+   [
+    "M\u00e4chler",
+    "M"
+   ],
+   [
+    "Bolker",
+    "B"
+   ],
+   [
+    "Walker",
+    "S"
+   ]
+  ],
+  "title": "Fitting Linear Mixed-Effects Models Using\n                    <b>lme4</b>",
+  "journal": "Journal of Statistical Software",
+  "year": 2015,
+  "volume": "67",
+  "issue": "1",
+  "page": null,
+  "article": null
+ },
+ "29": {
+  "doi": "10.1016/j.jml.2012.11.001",
+  "authors": [
+   [
+    "Barr",
+    "DJ"
+   ],
+   [
+    "Levy",
+    "R"
+   ],
+   [
+    "Scheepers",
+    "C"
+   ],
+   [
+    "Tily",
+    "HJ"
+   ]
+  ],
+  "title": "Random effects structure for confirmatory hypothesis testing: Keep it maximal",
+  "journal": "Journal of Memory and Language",
+  "year": 2013,
+  "volume": "68",
+  "issue": "3",
+  "page": "255-278",
+  "article": null
+ },
+ "30": {
+  "doi": "10.1016/j.jml.2017.01.001",
+  "authors": [
+   [
+    "Matuschek",
+    "H"
+   ],
+   [
+    "Kliegl",
+    "R"
+   ],
+   [
+    "Vasishth",
+    "S"
+   ],
+   [
+    "Baayen",
+    "H"
+   ],
+   [
+    "Bates",
+    "D"
+   ]
+  ],
+  "title": "Balancing Type I error and power in linear mixed models",
+  "journal": "Journal of Memory and Language",
+  "year": 2017,
+  "volume": "94",
+  "issue": null,
+  "page": "305-315",
+  "article": null
+ },
+ "T21": {
+  "doi": "10.1177/0962280220958735",
+  "authors": [
+   [
+    "Thompson",
+    "J"
+   ],
+   [
+    "Hemming",
+    "K"
+   ],
+   [
+    "Forbes",
+    "A"
+   ],
+   [
+    "Fielding",
+    "K"
+   ],
+   [
+    "Hayes",
+    "R"
+   ]
+  ],
+  "title": "Comparison of small-sample standard-error corrections for generalised estimating equations in stepped wedge cluster randomised trials with a binary outcome: A simulation study",
+  "journal": "Statistical Methods in Medical Research",
+  "year": 2021,
+  "volume": "30",
+  "issue": "2",
+  "page": "425-439",
+  "article": null
+ },
+ "PA94": {
+  "doi": "10.1080/03610919408813210",
+  "authors": [
+   [
+    "Sullivan Pepe",
+    "M"
+   ],
+   [
+    "Anderson",
+    "GL"
+   ]
+  ],
+  "title": "A cautionary note on inference for marginal regression models with longitudinal data and general correlated response data",
+  "journal": "Communications in Statistics - Simulation and Computation",
+  "year": 1994,
+  "volume": "23",
+  "issue": "4",
+  "page": "939-951",
+  "article": null
+ },
+ "SH05": {
+  "doi": "10.1093/biostatistics/kxi033",
+  "authors": [
+   [
+    "Schildcrout",
+    "JS"
+   ]
+  ],
+  "title": "Regression analysis of longitudinal binary data with time-dependent environmental covariates: bias and efficiency",
+  "journal": "Biostatistics",
+  "year": 2005,
+  "volume": "6",
+  "issue": "4",
+  "page": "633-652",
+  "article": null
+ },
+ "FW20": {
+  "doi": "10.1002/sim.8575",
+  "authors": [
+   [
+    "Ford",
+    "WP"
+   ],
+   [
+    "Westgate",
+    "PM"
+   ]
+  ],
+  "title": "Maintaining the validity of inference in small\u2010sample stepped wedge cluster randomized trials with binary outcomes when using generalized estimating equations",
+  "journal": "Statistics in Medicine",
+  "year": 2020,
+  "volume": "39",
+  "issue": "21",
+  "page": "2779-2792",
+  "article": null
+ },
+ "B78": {
+  "doi": "10.1111/j.2044-8317.1978.tb00581.x",
+  "authors": [
+   [
+    "Bradley",
+    "JV"
+   ]
+  ],
+  "title": "Robustness?",
+  "journal": "British Journal of Mathematical and Statistical Psychology",
+  "year": 1978,
+  "volume": "31",
+  "issue": "2",
+  "page": "144-152",
+  "article": null
+ }
+}

@@ -1,0 +1,96 @@
+      grid     N     Tb    leader    lead  rate va_leader floor_best rate_floor
+    <char> <int> <char>    <char>   <num> <num>     <num>     <char>      <num>
+ 1:    M1c    10    T23 glmer_lrt 30.0458 11.95      87.9     gee_fg       3.91
+ 2:    M1c    15    T23 glmer_lrt  7.6859 12.25      87.7     gee_md       2.56
+ 3:    M1c    20    T23    gee_md  0.5500  2.37      90.6     gee_fg       2.96
+ 4:    M1c    25    T23    gee_md  0.7667  2.99      93.5     gee_md       2.99
+ 5:    M1c    35    T23    gee_md  0.3500  3.98      95.4     gee_md       3.98
+ 6:    M1c    45    T23    gee_md  0.3333  4.56      95.3     gee_md       4.56
+ 7:    M1c    10    T4p glmer_lrt  7.5021  9.34      90.6     shrink       6.69
+ 8:    M1c    15    T4p    gee_md  0.4000  5.63      92.2     gee_md       5.63
+ 9:    M1c    20    T4p    gee_md  0.5500  5.24      94.3     gee_md       5.24
+10:    M1c    25    T4p    gee_md  0.5833  4.97      95.0     gee_md       4.97
+11:    M1c    35    T4p    gee_md  0.4333  4.85      95.2     gee_md       4.85
+12:    M1c    45    T4p    gee_md  0.3000  4.92      95.1     gee_md       4.92
+13:   main    10    T23 glmer_lrt 24.2541  6.10      53.4  glmer_lrt       6.10
+14:   main    15    T23 glmer_lrt 12.4282  8.09      54.2     gee_fg       5.39
+15:   main    20    T23 glmer_lrt  2.6841  9.17      54.1     gee_fg       4.97
+16:   main    25    T23       gee  4.8176  9.03      59.6     gee_fg       4.45
+17:   main    35    T23       gee  1.2500  6.65      73.1        gee       6.65
+18:   main    45    T23    gee_md  0.0800  4.03      82.2     gee_md       4.03
+19:   main    55    T23    gee_md  0.0900  4.10      87.4     gee_md       4.10
+20:   main    65    T23    gee_md  0.1267  3.94      91.4     gee_md       3.94
+21:   main    75    T23    gee_md  0.0667  4.16      93.1     gee_md       4.16
+22:   main    85    T23    gee_md  0.0967  4.32      94.1     gee_md       4.32
+23:   main    95    T23    gee_md  0.1033  4.37      94.7     gee_md       4.37
+24:   main   105    T23    gee_md  0.0733  4.51      95.0     gee_md       4.51
+25:   main   115    T23    gee_md  0.0767  4.40      95.3     gee_md       4.40
+26:   main   125    T23    gee_md  0.0700  4.54      95.3     gee_md       4.54
+27:   main   135    T23    gee_md  0.0600  4.41      95.5     gee_md       4.41
+28:   main   145    T23    gee_md  0.0767  4.72      95.2     gee_md       4.72
+29:   main    10    T4p glmer_lrt 17.3438  7.42      91.7  glmer_lrt       7.42
+30:   main    15    T4p glmer_lrt  7.5841  6.49      93.2  glmer_lrt       6.49
+31:   main    20    T4p glmer_lrt  4.3252  6.04      93.8  glmer_lrt       6.04
+32:   main    25    T4p glmer_lrt  2.5800  5.87      94.0  glmer_lrt       5.87
+33:   main    35    T4p glmer_lrt  0.8500  5.75      94.2  glmer_lrt       5.75
+34:   main    45    T4p glmer_lrt  0.1533  5.59      94.4  glmer_lrt       5.59
+35:   main    55    T4p glmer_lrt  0.0283  5.44      94.5  glmer_lrt       5.44
+36:   main    65    T4p glmer_lrt  0.0683  5.38      94.6  glmer_lrt       5.38
+37:   main    75    T4p    gee_md  0.0117  5.44      94.6     gee_md       5.44
+38:   main    85    T4p    gee_md  0.0533  5.13      94.9     gee_md       5.13
+39:   main    95    T4p    gee_md  0.0633  5.24      94.8     gee_md       5.24
+40:   main   105    T4p    gee_md  0.0683  5.17      94.8     gee_md       5.17
+41:   main   115    T4p    gee_md  0.0650  5.13      94.9     gee_md       5.13
+42:   main   125    T4p    gee_md  0.0450  5.17      94.8     gee_md       5.17
+43:   main   135    T4p    gee_md  0.0550  5.13      94.9     gee_md       5.13
+44:   main   145    T4p    gee_md  0.0317  5.11      94.9     gee_md       5.11
+      grid     N     Tb    leader    lead  rate va_leader floor_best rate_floor
+    <char> <int> <char>    <char>   <num> <num>     <num>     <char>      <num>
+     cost n_mech_lead
+    <num>       <int>
+ 1: 34.64           3
+ 2:  7.69           3
+ 3:  0.55           3
+ 4:  0.00           3
+ 5:  0.00           3
+ 6:  0.00           3
+ 7:  7.50           3
+ 8:  0.00           2
+ 9:  0.00           3
+10:  0.00           3
+11:  0.00           3
+12:  0.00           2
+13:  0.00           3
+14: 24.48           3
+15: 11.00           3
+16:  4.82           3
+17:  0.00           3
+18:  0.00           2
+19:  0.00           3
+20:  0.00           3
+21:  0.00           3
+22:  0.00           3
+23:  0.00           3
+24:  0.00           3
+25:  0.00           3
+26:  0.00           3
+27:  0.00           3
+28:  0.00           3
+29:  0.00           3
+30:  0.00           3
+31:  0.00           3
+32:  0.00           3
+33:  0.00           3
+34:  0.00           2
+35:  0.00           2
+36:  0.00           2
+37:  0.00           1
+38:  0.00           2
+39:  0.00           1
+40:  0.00           0
+41:  0.00           2
+42:  0.00           1
+43:  0.00           2
+44:  0.00           2
+     cost n_mech_lead
+    <num>       <int>

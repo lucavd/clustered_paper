@@ -1,0 +1,34 @@
+('manuscript/v5/MMM_v5_supplement_trace.md', 'b-label') 33
+('manuscript/v5/MMM_v5_supplement_trace.md', 'c-grid-N') 75
+('manuscript/v5/MMM_v5_supplement_trace.md', 'c-grid-T') 61
+('manuscript/v5/MMM_v5_supplement_trace.md', 'd-nominal') 76
+('manuscript/v5/MMM_v5_supplement_trace.md', 'e-math') 5
+('manuscript/v5/MMM_v5_supplement_trace.md', 'identifier') 283
+('manuscript/v5/MMM_v5_trace.md', 'VIOLATION') 19
+('manuscript/v5/MMM_v5_trace.md', 'b-label') 82
+('manuscript/v5/MMM_v5_trace.md', 'c-grid-N') 39
+('manuscript/v5/MMM_v5_trace.md', 'c-grid-T') 35
+('manuscript/v5/MMM_v5_trace.md', 'd-nominal') 78
+('manuscript/v5/MMM_v5_trace.md', 'e-math') 2
+('manuscript/v5/MMM_v5_trace.md', 'identifier') 204
+GF2: 19 violations
+   ('manuscript/v5/MMM_v5_trace.md', 'VIOLATION', '45', 'luster counts, N ∈ {10, 15, 20, 25, 35, 45, 55, 65, 75, 85, 95, 105, 115')
+   ('manuscript/v5/MMM_v5_trace.md', 'VIOLATION', '55', 'er counts, N ∈ {10, 15, 20, 25, 35, 45, 55, 65, 75, 85, 95, 105, 115, 12')
+   ('manuscript/v5/MMM_v5_trace.md', 'VIOLATION', '65', 'ounts, N ∈ {10, 15, 20, 25, 35, 45, 55, 65, 75, 85, 95, 105, 115, 125, 1')
+   ('manuscript/v5/MMM_v5_trace.md', 'VIOLATION', '75', 's, N ∈ {10, 15, 20, 25, 35, 45, 55, 65, 75, 85, 95, 105, 115, 125, 135, ')
+   ('manuscript/v5/MMM_v5_trace.md', 'VIOLATION', '85', ' ∈ {10, 15, 20, 25, 35, 45, 55, 65, 75, 85, 95, 105, 115, 125, 135, 145}')
+   ('manuscript/v5/MMM_v5_trace.md', 'VIOLATION', '95', '10, 15, 20, 25, 35, 45, 55, 65, 75, 85, 95, 105, 115, 125, 135, 145}, wi')
+   ('manuscript/v5/MMM_v5_trace.md', 'VIOLATION', '105', '15, 20, 25, 35, 45, 55, 65, 75, 85, 95, 105, 115, 125, 135, 145}, with § ')
+   ('manuscript/v5/MMM_v5_trace.md', 'VIOLATION', '115', '0, 25, 35, 45, 55, 65, 75, 85, 95, 105, 115, 125, 135, 145}, with § maxim')
+   ('manuscript/v5/MMM_v5_trace.md', 'VIOLATION', '125', ', 35, 45, 55, 65, 75, 85, 95, 105, 115, 125, 135, 145}, with § maximum nu')
+   ('manuscript/v5/MMM_v5_trace.md', 'VIOLATION', '135', ' 45, 55, 65, 75, 85, 95, 105, 115, 125, 135, 145}, with § maximum numbers')
+   ('manuscript/v5/MMM_v5_trace.md', 'VIOLATION', '145', '55, 65, 75, 85, 95, 105, 115, 125, 135, 145}, with § maximum numbers of o')
+   ('manuscript/v5/MMM_v5_trace.md', 'VIOLATION', '480', 'ating coefficient; not defined | M1-M5 (480), M1c (24), M6-M7 (192) | | G')
+   ('manuscript/v5/MMM_v5_trace.md', 'VIOLATION', '24', 'icient; not defined | M1-M5 (480), M1c (24), M6-M7 (192) | | GLMM-native')
+   ('manuscript/v5/MMM_v5_trace.md', 'VIOLATION', '192', 'defined | M1-M5 (480), M1c (24), M6-M7 (192) | | GLMM-native | Logistic m')
+   ('manuscript/v5/MMM_v5_trace.md', 'VIOLATION', '480', 'design; generating coefficient | M1-M5 (480), M1c (24), M6-M7 (192) | | G')
+   ('manuscript/v5/MMM_v5_trace.md', 'VIOLATION', '24', 'erating coefficient | M1-M5 (480), M1c (24), M6-M7 (192) | | GLMM-AR1 | ')
+   ('manuscript/v5/MMM_v5_trace.md', 'VIOLATION', '192', 'ficient | M1-M5 (480), M1c (24), M6-M7 (192) | | GLMM-AR1 | GLMM-native p')
+   ('manuscript/v5/MMM_v5_trace.md', 'VIOLATION', '480', 't; computed for each replicate | M1-M5 (480), M1c (24) | | Copula-AR1 | G')
+   ('manuscript/v5/MMM_v5_trace.md', 'VIOLATION', '24', ' for each replicate | M1-M5 (480), M1c (24) | | Copula-AR1 | Gaussian co')
+GF2 exit 1

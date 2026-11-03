@@ -1,0 +1,5 @@
+id,confirmed,detail
+P5,FALSE,non-boundary rejection 6.3/7.2/6.7/5.1/7.4/11.7/6.0/7.1/10.9; boundary rejection 8.2/8.6/10.5/7.0/9.5/10.0/7.8/8.7/10.1
+P6,FALSE,cells where boundary share at N=145 is not below N=10 minus 2 MCSE: 18 of 45
+P7,FALSE,M1 non-convergence 8.87%; M1 cells (n>=100) outside band: 11 of 60
+P8,TRUE,rule rejection 5.6/5.7/5.2/4.6/6.6/6.0/5.3/5.7/5.9

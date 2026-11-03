@@ -1,0 +1,14 @@
+id,atteso,osservato,esito
+G1,md5 invariati prima e dopo,"prima: results_full: 28800 checked, 0 FAIL lines; results_v4 S2: 126 checked, 0 FAIL lines; results_v4 S3: 18720 checked, 0 FAIL lines; results_v4 S4: 5 checked, 0 FAIL lines || dopo: results_full: 28800 checked, 0 FAIL lines; results_v4 S2: 126 checked, 0 FAIL lines; results_v4 S3: 18720 checked, 0 FAIL lines; results_v4 S4: 5 checked, 0 FAIL lines",superato
+G2,b = 0 e MCSE di S4 riprodotte entro 1e-12,7 of 7 checks pass (max 6.7e-16),"superato (dopo la correzione dello strumento, sez. 3)"
+G3,SE bootstrap = SE per linearizzazione entro 7%,27 of 27 pass; rel. diff. -0.033 to 0.020,superato
+G4,ogni riga con un esito; >= 1.990 replicati finiti,missing 0; sub-claims with < B - 10 finite: 0,superato
+P1,numeri v3 riprodotti alla cifra stampata,"275 of 288 reproduced, 0 within one unit, 13 not reproduced","smentita, spiegata"
+P2,v4 - v3 entro +/- 1 punto (63 valori),mean diff 0.020; 63 of 63 confirmed,confermata
+P3,"rapporto SE blocchi / SE indipendenti circa 2, sopra 1,25",ratio 0.97 to 1.04; 0 of 27 above 1.25,"smentita, spiegata"
+P4a C01,GB risolta e rilevante; NAT e AR1 trascurabile o indeterminata,C01|AR1: trascurabile; C01|GB: risolta e rilevante; C01|NAT: trascurabile,confermata
+P4b C02,trascurabile sui tre,C02|AR1: trascurabile; C02|GB: trascurabile; C02|NAT: trascurabile,confermata
+P4c C03,"risolta, rilevanza indeterminata sui tre","C03|AR1: risolta, rilevanza indeterminata; C03|GB: trascurabile; C03|NAT: trascurabile","smentita su GB e NAT, spiegata"
+P4d C04,uguaglianza confermata (margine 72),"MMM - FG = 135,4 [113,2; 182,1]: smentita","smentita, spiegata"
+P4e C20,"C20b rilevante, C20a trascurabile",C20a|AR1: trascurabile; C20a|GB: trascurabile; C20a|NAT: trascurabile; C20b|AR1: risolta e rilevante; C20b|GB: risolta e rilevante; C20b|NAT: risolta e rilevante,confermata
+P4f C14,vantaggio del LRT ridotto di oltre 5 punti,"usabilita': scarto da 20,0 a 7,1 [6,9; 7,2]; validita': da 24,1 a 14,7 [14,5; 14,9]",confermata

@@ -1,0 +1,125 @@
+variant,rule,table,quantity,mechanism,value
+i,as today: refit used if finite,"Table 5 (mmm_cc, t, 2376 points)",n_dp,all,2376
+i,as today: refit used if finite,"Table 5 (mmm_cc, t, 2376 points)",hi_main,all,0
+i,as today: refit used if finite,"Table 5 (mmm_cc, t, 2376 points)",hi_m67,all,0
+i,as today: refit used if finite,"Table 5 (mmm_cc, t, 2376 points)",hi_copula,all,0
+i,as today: refit used if finite,"Table 5 (mmm_cc, t, 2376 points)",hi_all,all,0
+i,as today: refit used if finite,"Table 5 (mmm_cc, t, 2376 points)",lo_all,all,24
+i,as today: refit used if finite,"Table 5 (mmm_cc, t, 2376 points)",lo_N10,all,18
+i,as today: refit used if finite,"Table 5 (mmm_cc, t, 2376 points)",pu,all,90.89476659031783
+i,as today: refit used if finite,"Table 5 (mmm_cc, t, 2376 points)",pu_small,all,39.16422271563734
+i,as today: refit used if finite,"Table 5 (mmm_cc, t, 2376 points)",upow,all,20.80020643879534
+i,as today: refit used if finite,"Table 5 (mmm_cc, t, 2376 points)",mean_rate_t,all,4.621005823646093
+i,as today: refit used if finite,"Table 3 (MMM with check, normal, main grid)",rate_pooled,GenBinaryY,5.539743383753758
+i,as today: refit used if finite,"Table 3 (MMM with check, normal, main grid)",worst,GenBinaryY,0.8318146316063526
+i,as today: refit used if finite,"Table 3 (MMM with check, normal, main grid)",mad_byN,GenBinaryY,0.5360745944806806
+i,as today: refit used if finite,"Table 3 (MMM with check, normal, main grid)",rate_pooled,GLMM-native,5.225647798169316
+i,as today: refit used if finite,"Table 3 (MMM with check, normal, main grid)",worst,GLMM-native,0.4383795166627671
+i,as today: refit used if finite,"Table 3 (MMM with check, normal, main grid)",mad_byN,GLMM-native,0.23985112448418677
+i,as today: refit used if finite,"Table 3 (MMM with check, normal, main grid)",rate_pooled,GLMM-AR1,5.385397739609402
+i,as today: refit used if finite,"Table 3 (MMM with check, normal, main grid)",worst,GLMM-AR1,0.5633850077176028
+i,as today: refit used if finite,"Table 3 (MMM with check, normal, main grid)",mad_byN,GLMM-AR1,0.3748930748407323
+i,as today: refit used if finite,M2 N=10 T=2 (t),k/n (nd),GLMM-AR1,0/35 (971)
+i,as today: refit used if finite,M2 N=10 T=2 (t),k/n (nd),GLMM-native,0/38 (971)
+i,as today: refit used if finite,rule of Section 2.6,chosen strategy,all,mmm_cc
+ii,"refit used only if nlm code 1-2, else fit A","Table 5 (mmm_cc, t, 2376 points)",n_dp,all,2376
+ii,"refit used only if nlm code 1-2, else fit A","Table 5 (mmm_cc, t, 2376 points)",hi_main,all,3
+ii,"refit used only if nlm code 1-2, else fit A","Table 5 (mmm_cc, t, 2376 points)",hi_m67,all,0
+ii,"refit used only if nlm code 1-2, else fit A","Table 5 (mmm_cc, t, 2376 points)",hi_copula,all,1
+ii,"refit used only if nlm code 1-2, else fit A","Table 5 (mmm_cc, t, 2376 points)",hi_all,all,4
+ii,"refit used only if nlm code 1-2, else fit A","Table 5 (mmm_cc, t, 2376 points)",lo_all,all,28
+ii,"refit used only if nlm code 1-2, else fit A","Table 5 (mmm_cc, t, 2376 points)",lo_N10,all,22
+ii,"refit used only if nlm code 1-2, else fit A","Table 5 (mmm_cc, t, 2376 points)",pu,all,90.55750083177344
+ii,"refit used only if nlm code 1-2, else fit A","Table 5 (mmm_cc, t, 2376 points)",pu_small,all,38.51324870265368
+ii,"refit used only if nlm code 1-2, else fit A","Table 5 (mmm_cc, t, 2376 points)",upow,all,20.843253561530542
+ii,"refit used only if nlm code 1-2, else fit A","Table 5 (mmm_cc, t, 2376 points)",mean_rate_t,all,4.696389618275105
+ii,"refit used only if nlm code 1-2, else fit A","Table 3 (MMM with check, normal, main grid)",rate_pooled,GenBinaryY,5.650168181723869
+ii,"refit used only if nlm code 1-2, else fit A","Table 3 (MMM with check, normal, main grid)",worst,GenBinaryY,1.1284170375079468
+ii,"refit used only if nlm code 1-2, else fit A","Table 3 (MMM with check, normal, main grid)",mad_byN,GenBinaryY,0.6714710224406011
+ii,"refit used only if nlm code 1-2, else fit A","Table 3 (MMM with check, normal, main grid)",rate_pooled,GLMM-native,5.361242002791172
+ii,"refit used only if nlm code 1-2, else fit A","Table 3 (MMM with check, normal, main grid)",worst,GLMM-native,0.6549707602339181
+ii,"refit used only if nlm code 1-2, else fit A","Table 3 (MMM with check, normal, main grid)",mad_byN,GLMM-native,0.37040369328539874
+ii,"refit used only if nlm code 1-2, else fit A","Table 3 (MMM with check, normal, main grid)",rate_pooled,GLMM-AR1,5.5014823323863835
+ii,"refit used only if nlm code 1-2, else fit A","Table 3 (MMM with check, normal, main grid)",worst,GLMM-AR1,0.7651991614255769
+ii,"refit used only if nlm code 1-2, else fit A","Table 3 (MMM with check, normal, main grid)",mad_byN,GLMM-AR1,0.5088641109959836
+ii,"refit used only if nlm code 1-2, else fit A",M2 N=10 T=2 (t),k/n (nd),GLMM-AR1,0/35 (971)
+ii,"refit used only if nlm code 1-2, else fit A",M2 N=10 T=2 (t),k/n (nd),GLMM-native,0/38 (971)
+ii,"refit used only if nlm code 1-2, else fit A",rule of Section 2.6,chosen strategy,all,none (no interval strategy with 0 flags)
+iii,"refit used only if nlm code 1-2, else no usable result","Table 5 (mmm_cc, t, 2376 points)",n_dp,all,2376
+iii,"refit used only if nlm code 1-2, else no usable result","Table 5 (mmm_cc, t, 2376 points)",hi_main,all,0
+iii,"refit used only if nlm code 1-2, else no usable result","Table 5 (mmm_cc, t, 2376 points)",hi_m67,all,0
+iii,"refit used only if nlm code 1-2, else no usable result","Table 5 (mmm_cc, t, 2376 points)",hi_copula,all,0
+iii,"refit used only if nlm code 1-2, else no usable result","Table 5 (mmm_cc, t, 2376 points)",hi_all,all,0
+iii,"refit used only if nlm code 1-2, else no usable result","Table 5 (mmm_cc, t, 2376 points)",lo_all,all,42
+iii,"refit used only if nlm code 1-2, else no usable result","Table 5 (mmm_cc, t, 2376 points)",lo_N10,all,32
+iii,"refit used only if nlm code 1-2, else no usable result","Table 5 (mmm_cc, t, 2376 points)",pu,all,84.01487347231183
+iii,"refit used only if nlm code 1-2, else no usable result","Table 5 (mmm_cc, t, 2376 points)",pu_small,all,27.637727074134506
+iii,"refit used only if nlm code 1-2, else no usable result","Table 5 (mmm_cc, t, 2376 points)",upow,all,20.30897527627715
+iii,"refit used only if nlm code 1-2, else no usable result","Table 5 (mmm_cc, t, 2376 points)",mean_rate_t,all,4.408159221613827
+iii,"refit used only if nlm code 1-2, else no usable result","Table 3 (MMM with check, normal, main grid)",rate_pooled,GenBinaryY,5.341712098711292
+iii,"refit used only if nlm code 1-2, else no usable result","Table 3 (MMM with check, normal, main grid)",worst,GenBinaryY,0.625683749894808
+iii,"refit used only if nlm code 1-2, else no usable result","Table 3 (MMM with check, normal, main grid)",mad_byN,GenBinaryY,0.32671906034919385
+iii,"refit used only if nlm code 1-2, else no usable result","Table 3 (MMM with check, normal, main grid)",rate_pooled,GLMM-native,5.097139847090774
+iii,"refit used only if nlm code 1-2, else no usable result","Table 3 (MMM with check, normal, main grid)",worst,GLMM-native,0.48766979537107247
+iii,"refit used only if nlm code 1-2, else no usable result","Table 3 (MMM with check, normal, main grid)",mad_byN,GLMM-native,0.19546857731229195
+iii,"refit used only if nlm code 1-2, else no usable result","Table 3 (MMM with check, normal, main grid)",rate_pooled,GLMM-AR1,5.255692459831886
+iii,"refit used only if nlm code 1-2, else no usable result","Table 3 (MMM with check, normal, main grid)",worst,GLMM-AR1,0.42822257107971406
+iii,"refit used only if nlm code 1-2, else no usable result","Table 3 (MMM with check, normal, main grid)",mad_byN,GLMM-AR1,0.27924813751382105
+iii,"refit used only if nlm code 1-2, else no usable result",M2 N=10 T=2 (t),k/n (nd),GLMM-AR1,0/35 (971)
+iii,"refit used only if nlm code 1-2, else no usable result",M2 N=10 T=2 (t),k/n (nd),GLMM-native,0/38 (971)
+iii,"refit used only if nlm code 1-2, else no usable result",rule of Section 2.6,chosen strategy,all,mmm_cc
+ii,flagged point,Table 5 flags,"k/n, rate, CP lower",Copula-AR1 M5 N=75 T=2,"86/898, 9.58%, lo 7.73% (variant i: 74/935)"
+ii,flagged point,Table 5 flags,"k/n, rate, CP lower",GLMM-native M5 N=95 T=2,"95/947, 10.03%, lo 8.19% (variant i: 77/973)"
+ii,flagged point,Table 5 flags,"k/n, rate, CP lower",GenBinaryY M5 N=45 T=3,"88/920, 9.57%, lo 7.74% (variant i: 69/955)"
+ii,flagged point,Table 5 flags,"k/n, rate, CP lower",GenBinaryY M5 N=95 T=2,"91/938, 9.70%, lo 7.88% (variant i: 78/972)"
+ii3,"refit used only if nlm code 1-3, else fit A","Table 5 (mmm_cc, t, 2376 points)",hi_main,all,2
+ii3,"refit used only if nlm code 1-3, else fit A","Table 5 (mmm_cc, t, 2376 points)",hi_m67,all,0
+ii3,"refit used only if nlm code 1-3, else fit A","Table 5 (mmm_cc, t, 2376 points)",hi_copula,all,1
+ii3,"refit used only if nlm code 1-3, else fit A","Table 5 (mmm_cc, t, 2376 points)",hi_all,all,3
+ii3,"refit used only if nlm code 1-3, else fit A","Table 5 (mmm_cc, t, 2376 points)",lo_all,all,29
+ii3,"refit used only if nlm code 1-3, else fit A","Table 5 (mmm_cc, t, 2376 points)",lo_N10,all,25
+ii3,"refit used only if nlm code 1-3, else fit A","Table 5 (mmm_cc, t, 2376 points)",pu,all,90.63866642511765
+ii3,"refit used only if nlm code 1-3, else fit A","Table 5 (mmm_cc, t, 2376 points)",pu_small,all,38.72696347704294
+ii3,"refit used only if nlm code 1-3, else fit A","Table 5 (mmm_cc, t, 2376 points)",upow,all,20.855467310702824
+ii3,"refit used only if nlm code 1-3, else fit A","Table 3 (MMM with check, normal, main grid)",rate_pooled,GenBinaryY,5.663653635787898
+ii3,"refit used only if nlm code 1-3, else fit A","Table 3 (MMM with check, normal, main grid)",worst,GenBinaryY,1.235755887566473
+ii3,"refit used only if nlm code 1-3, else fit A","Table 3 (MMM with check, normal, main grid)",mad_byN,GenBinaryY,0.6895684650921403
+ii3,"refit used only if nlm code 1-3, else fit A","Table 3 (MMM with check, normal, main grid)",rate_pooled,GLMM-native,5.366288030138707
+ii3,"refit used only if nlm code 1-3, else fit A","Table 3 (MMM with check, normal, main grid)",worst,GLMM-native,0.7261265468129814
+ii3,"refit used only if nlm code 1-3, else fit A","Table 3 (MMM with check, normal, main grid)",mad_byN,GLMM-native,0.37857457593084665
+ii3,"refit used only if nlm code 1-3, else fit A","Table 3 (MMM with check, normal, main grid)",rate_pooled,GLMM-AR1,5.510545989590376
+ii3,"refit used only if nlm code 1-3, else fit A","Table 3 (MMM with check, normal, main grid)",worst,GLMM-AR1,0.8070231958762886
+ii3,"refit used only if nlm code 1-3, else fit A","Table 3 (MMM with check, normal, main grid)",mad_byN,GLMM-AR1,0.5195572661835044
+ii3,"refit used only if nlm code 1-3, else fit A",M2 N=10 T=2 (t),k/n (nd),GLMM-AR1,0/35 (971)
+ii3,"refit used only if nlm code 1-3, else fit A",M2 N=10 T=2 (t),k/n (nd),GLMM-native,0/38 (971)
+ii3,"refit used only if nlm code 1-3, else fit A",rule of Section 2.6,chosen strategy,all,none (no interval strategy with 0 flags)
+ii3,flagged point,Table 5 flags,"k/n, rate, CP lower",Copula-AR1 M5 N=75 T=2,"88/906, 9.71%, lo 7.86%"
+ii3,flagged point,Table 5 flags,"k/n, rate, CP lower",GLMM-native M5 N=35 T=3,"84/896, 9.38%, lo 7.55%"
+ii3,flagged point,Table 5 flags,"k/n, rate, CP lower",GLMM-native M5 N=95 T=2,"92/948, 9.70%, lo 7.90%"
+iii3,"refit used only if nlm code 1-3, else no usable result","Table 5 (mmm_cc, t, 2376 points)",hi_main,all,0
+iii3,"refit used only if nlm code 1-3, else no usable result","Table 5 (mmm_cc, t, 2376 points)",hi_m67,all,0
+iii3,"refit used only if nlm code 1-3, else no usable result","Table 5 (mmm_cc, t, 2376 points)",hi_copula,all,0
+iii3,"refit used only if nlm code 1-3, else no usable result","Table 5 (mmm_cc, t, 2376 points)",hi_all,all,0
+iii3,"refit used only if nlm code 1-3, else no usable result","Table 5 (mmm_cc, t, 2376 points)",lo_all,all,30
+iii3,"refit used only if nlm code 1-3, else no usable result","Table 5 (mmm_cc, t, 2376 points)",lo_N10,all,26
+iii3,"refit used only if nlm code 1-3, else no usable result","Table 5 (mmm_cc, t, 2376 points)",pu,all,84.69848145554485
+iii3,"refit used only if nlm code 1-3, else no usable result","Table 5 (mmm_cc, t, 2376 points)",pu_small,all,29.474114766709043
+iii3,"refit used only if nlm code 1-3, else no usable result","Table 5 (mmm_cc, t, 2376 points)",upow,all,20.392347501894086
+iii3,"refit used only if nlm code 1-3, else no usable result","Table 3 (MMM with check, normal, main grid)",rate_pooled,GenBinaryY,5.42688072805879
+iii3,"refit used only if nlm code 1-3, else no usable result","Table 3 (MMM with check, normal, main grid)",worst,GenBinaryY,0.7515907776216846
+iii3,"refit used only if nlm code 1-3, else no usable result","Table 3 (MMM with check, normal, main grid)",mad_byN,GenBinaryY,0.43353612512410533
+iii3,"refit used only if nlm code 1-3, else no usable result","Table 3 (MMM with check, normal, main grid)",rate_pooled,GLMM-native,5.134635332212714
+iii3,"refit used only if nlm code 1-3, else no usable result","Table 3 (MMM with check, normal, main grid)",worst,GLMM-native,0.4137931034482758
+iii3,"refit used only if nlm code 1-3, else no usable result","Table 3 (MMM with check, normal, main grid)",mad_byN,GLMM-native,0.18565136441378355
+iii3,"refit used only if nlm code 1-3, else no usable result","Table 3 (MMM with check, normal, main grid)",rate_pooled,GLMM-AR1,5.297889745610785
+iii3,"refit used only if nlm code 1-3, else no usable result","Table 3 (MMM with check, normal, main grid)",worst,GLMM-AR1,0.43600168232160375
+iii3,"refit used only if nlm code 1-3, else no usable result","Table 3 (MMM with check, normal, main grid)",mad_byN,GLMM-AR1,0.2963323367883487
+iii3,"refit used only if nlm code 1-3, else no usable result",M2 N=10 T=2 (t),k/n (nd),GLMM-AR1,0/35 (971)
+iii3,"refit used only if nlm code 1-3, else no usable result",M2 N=10 T=2 (t),k/n (nd),GLMM-native,0/38 (971)
+iii3,"refit used only if nlm code 1-3, else no usable result",rule of Section 2.6,chosen strategy,all,mmm_cc
+i,as today: refit used if finite,"usable share, GEE AR(1) FG t minus mmm_cc (H0, mean over points)",pu,all,1.0026706337764324
+i,as today: refit used if finite,"usable share, GEE AR(1) FG t minus mmm_cc (H0, mean over points)",pu_small,"T<=3, N<=25",4.556092485837645
+iii,"refit used only if nlm code 1-2, else no usable result","usable share, GEE AR(1) FG t minus mmm_cc (H0, mean over points)",pu,all,7.882563751782428
+iii,"refit used only if nlm code 1-2, else no usable result","usable share, GEE AR(1) FG t minus mmm_cc (H0, mean over points)",pu_small,"T<=3, N<=25",16.082588127340475
+iii3,"refit used only if nlm code 1-3, else no usable result","usable share, GEE AR(1) FG t minus mmm_cc (H0, mean over points)",pu,all,7.1989557685494105
+iii3,"refit used only if nlm code 1-3, else no usable result","usable share, GEE AR(1) FG t minus mmm_cc (H0, mean over points)",pu_small,"T<=3, N<=25",14.246200434765939

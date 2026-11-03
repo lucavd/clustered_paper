@@ -1,0 +1,5 @@
+a5770093b3a6fe60851678cf75b3665f  fig_decision_guide.pdf
+e0001adb10fc9f3b0f807bab4aa48665  fig_decision_guide.png
+ff59b812b6079df18b23e6f3513fe9aa  MMM_manuscript_SMMR.docx
+3ca4ae440dfb4c8a4078b2aa93da0380  MMM_manuscript_SMMR.md
+75e7a49b86cded1f9845f9017c7ed52a  VERIFICATION_LOG.md

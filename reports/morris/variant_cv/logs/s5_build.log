@@ -1,0 +1,18 @@
+rows 25556985 | load 37.2 s
+            used   (Mb) gc trigger   (Mb)   max used   (Mb)
+Ncells    456351   24.4    1672557   89.4    1672557   89.4
+Vcells 391234018 2984.9 1138077832 8682.9 1136708523 8672.4
+Key: <dgp>
+           dgp     b     c      n
+        <char> <int> <int>  <int>
+1:    GLMM-AR1  5413  5609 400027
+2: GLMM-native  4924  5704 402081
+3:  GenBinaryY  5789  7204 400498
+design points 1512 | cells 60480
+model 1 done (14400 cells) 1.3 min
+model 2 done (11520 cells) 1.4 min
+model 3 done (11520 cells) 1.6 min
+model 4 done (11520 cells) 1.7 min
+model 5 done (11520 cells) 1.8 min
+KSA 2001 x 13608 | 8.4 min
+saved | elapsed 8.5 min

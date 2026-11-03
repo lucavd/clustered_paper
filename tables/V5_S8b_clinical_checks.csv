@@ -1,0 +1,18 @@
+app,check,value,pass
+neonatal cohort,GEE estimate refitted = stored (draws compared; max abs diff),5261; 0,TRUE
+neonatal cohort,MD: fewclust within 1% of geesmv (draws compared; share %),4406; 99.39,TRUE
+neonatal cohort,FG: fewclust within 1% of geesmv (draws compared; share %),4810; 99.19,TRUE
+neonatal cohort,GEE-KC rows without a fewclust row,0,TRUE
+neonatal cohort,MMM rows without a refit row,0,TRUE
+neonatal cohort,"tab316: non-KC, non-MMM rows equal to rev2/T5_tab316.csv (rows; discordant cells)",44; 0,TRUE
+neonatal cohort,seratio: non-KC rows equal to rev2/T5_seratio.csv (rows; discordant cells),44; 0,TRUE
+neonatal cohort,bias: non-KC rows equal to rev2/T7_bias.csv (rows; discordant cells),44; 0,TRUE
+respiratory,GEE estimate refitted = stored (draws compared; max abs diff),4934; 0,TRUE
+respiratory,MD: fewclust within 1% of geesmv (draws compared; share %),4157; 99.86,TRUE
+respiratory,FG: fewclust within 1% of geesmv (draws compared; share %),4229; 99.60,TRUE
+respiratory,GEE-KC rows without a fewclust row,0,TRUE
+respiratory,MMM rows without a refit row,0,TRUE
+respiratory,usable: non-KC rows equal to V4_S7b_resp_usable.csv (rows; discordant cells),40; 0,TRUE
+respiratory,bias: non-KC rows equal to V4_S7b_resp_bias.csv (rows; discordant cells),40; 0,TRUE
+respiratory,full-data estimates: non-KC rows equal to V4_S7b_resp_ref.csv (rows; discordant cells),8; 0,TRUE
+both,SE ratio with fpc: non-KC rows equal to V4_S7b_seratio_fpc.csv (rows; discordant cells),80; 0,TRUE

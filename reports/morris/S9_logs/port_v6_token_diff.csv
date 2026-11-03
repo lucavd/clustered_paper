@@ -1,0 +1,27 @@
+change,file,id,registry_text,location,reason
+removed,MMM_v5.qmd,f:x|git_commit,78c78d8,Code and data availability,"v6 anonymised the section: repository link, commits and fewclust version withheld for review and moved to the title page (change log item 7)"
+removed,MMM_v5.qmd,f:sw|fewclust,0.2.0,Code and data availability,"v6 anonymised the section: repository link, commits and fewclust version withheld for review and moved to the title page (change log item 7)"
+removed,MMM_v5.qmd,f:sw|fewclust_commit,8538cad,Code and data availability,"v6 anonymised the section: repository link, commits and fewclust version withheld for review and moved to the title page (change log item 7)"
+added (new id in this file),MMM_v5.qmd,x:n_dp_ns_scen,96,Table 2 caption,"Table 2 caption, design points per scenario and mechanism (registry row: M6 on GenBinaryY, 96 = full grid; used with the same meaning in Table S14)"
+added (new id in this file),MMM_v5.qmd,x:par_GenBinaryY_2_H1_beta,"-2, 0.1, 0.2, 0.01, 0.2",Table 2(b) M2,"Table 2(b) M2, marginal coefficients under H1 (from Table S1)"
+added (new id in this file),MMM_v5.qmd,x:par_GenBinaryY_4_H1_beta,"-2, 0.2, 0.2, 0.05",Table 2(b) M4,"Table 2(b) M4, marginal coefficients under H1 (from Table S1)"
+added (new id in this file),MMM_v5.qmd,x:par_GenBinaryY_5_H1_beta,"-2, 0.1, 0.2, 0.05, 0.2",Table 2(b) M5,"Table 2(b) M5, marginal coefficients under H1 (from Table S1)"
+added (new id in this file),MMM_v5.qmd,x:m6_nat,0.01,Table 2(b) M6,"Table 2(b) M6, GLMM-native random-slope variance"
+added (new id in this file),MMM_v5.qmd,x:m7_nat,0.04,Table 2(b) M7,"Table 2(b) M7, GLMM-native random-slope variance"
+added (new id in this file),MMM_v5.qmd,x:m7_gby,0.25,Table 2(b) M7,"Table 2(b) M7, GenBinaryY latent-SD slope per occasion"
+added (further use of an existing id),MMM_v5.qmd,x:n_levels_N,16,Table 2,occurrences 4 -> 5
+added (further use of an existing id),MMM_v5.qmd,x:n_levels_T,6,Table 2,occurrences 2 -> 3
+added (further use of an existing id),MMM_v5.qmd,x:nsim,"1,000",Table 2,occurrences 5 -> 6
+added (further use of an existing id),MMM_v5.qmd,x:zeger_f,1.16,Table 2,occurrences 1 -> 2
+added (further use of an existing id),MMM_v5.qmd,x:glmm_d11,1,Table 2,occurrences 2 -> 3
+added (further use of an existing id),MMM_v5.qmd,x:ar1_rho,0.6,Table 2,occurrences 1 -> 2
+added (further use of an existing id),MMM_v5.qmd,x:ar1_s2,0.5,Table 2,occurrences 1 -> 2
+added (further use of an existing id),MMM_v5.qmd,f:x|cop_rho,0.6,Table 2,occurrences 1 -> 2
+added (further use of an existing id),MMM_v5.qmd,f:x|ndp_cop,480,Table 2,occurrences 5 -> 6
+added (further use of an existing id),MMM_v5.qmd,f:x|ndp_all5,"2,376",Table 2,occurrences 8 -> 9
+added (further use of an existing id),MMM_v5.qmd,x:beta_m1,"-2, 0.1, 0.2, 0.2",Table 2,occurrences 1 -> 2
+added (further use of an existing id),MMM_v5.qmd,x:glmm_d22,0.001,Table 2,occurrences 1 -> 3
+added (further use of an existing id),MMM_v5.qmd,x:gby_sigma_m3,0.01,Table 2,occurrences 2 -> 4
+added (further use of an existing id),MMM_v5.qmd,x:m1c_prev,0.59,Table 2,occurrences 1 -> 2
+added (further use of an existing id),MMM_v5.qmd,x:m1c_var,3.5,Table 2,occurrences 1 -> 2
+added (further use of an existing id),MMM_v5.qmd,x:m6_gby,0.1,Table 2,occurrences 1 -> 2

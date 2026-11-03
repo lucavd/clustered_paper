@@ -1,0 +1,13 @@
+check,observed,expected,pass
+"Q1 duplicate (cell, method, sim_id) rows",0,0,TRUE
+Q1a glmer_lrt rows from results_full in M3-M5,0,0,TRUE
+"Q1a glmer_lrt rows with unexpected re_structure (M3-M5, M1c)",0,0,TRUE
+Q1b F1/F2 cell rows not from S3,0,0,TRUE
+Q1c cells,3024,3024,TRUE
+Q1c design points,1512,1512,TRUE
+Q1c cells with fewer than 8 primary methods (any row),342,0,FALSE
+Q1c cells with fewer than 8 primary methods (time:trt rows; descriptive),342,,
+Q2 sum n_den main grid,2878518,2878518,TRUE
+Q2 sum n_den M1c,143742,143742,TRUE
+Q2 U0 rows on degenerate keys,0,0,TRUE
+Q2 non-degenerate keys without any analysis row,0,0,TRUE

@@ -1,0 +1,103 @@
+
+Attaching package: ‘data.table’
+
+The following objects are masked from ‘package:dplyr’:
+
+    between, first, last
+
+The following object is masked from ‘package:base’:
+
+    %notin%
+
+                           check   pass
+                          <char> <lgcl>
+1: PREV == prevalence_lus_severe   TRUE
+2:          VAR == var_id_modelA   TRUE
+3:        SIGMA_GBY == sqrt(VAR)   TRUE
+4:                GAMMA_GBY == 1   TRUE
+5:  ZEGER_F == sqrt(1 + c^2 VAR)   TRUE
+6:                AR1_RHO == 0.6   TRUE
+7:             AR1_SIGMA2 == 0.5   TRUE
+constants: sigma_GBY 1.882770 | Zeger f 1.491963
+   ntime      beta0 prereg         resid prev_H1_marginal prev_glmm_H0
+   <num>      <num>  <num>         <num>            <num>        <num>
+1:     2 0.24265079 0.2427  0.000000e+00        0.6038070    0.5888617
+2:     3 0.19598338 0.1960  0.000000e+00        0.6138821    0.5888856
+3:     4 0.14947501 0.1495 -1.110223e-16        0.6232708    0.5889190
+4:     6 0.05693913 0.0569 -1.110223e-16        0.6398533    0.5890141
+   prev_glmm_H1 pass_101 pass_102
+          <num>   <lgcl>   <lgcl>
+1:    0.5978056     TRUE     TRUE
+2:    0.6076489     TRUE     TRUE
+3:    0.6169777     TRUE     TRUE
+4:    0.6338774     TRUE     TRUE
+                         check   pass
+                        <char> <lgcl>
+ 1:                   GBY beta   TRUE
+ 2:                  GBY sigma   TRUE
+ 3:                  GBY gamma   TRUE
+ 4:        GBY lv/t formula ~1   TRUE
+ 5: GLMM beta_c = f x marginal   TRUE
+ 6:                     GLMM D   TRUE
+ 7:                 GLMM re ~1   TRUE
+ 8:                 AR1 target   TRUE
+ 9:         AR1 D (calib, gen)   TRUE
+10:                    AR1 rho   TRUE
+11:              AR1 sigma2_ar   TRUE
+            dgp ntime  label generated degenerate      prev        mcse
+         <char> <num> <char>     <int>      <int>     <num>       <num>
+ 1:    GLMM-AR1     2 manual      1000          0 0.5925747 0.002031738
+ 2:    GLMM-AR1     2   mmlb      1000          0 0.6019215 0.002009363
+ 3:    GLMM-AR1     3 manual      1000          0 0.5938173 0.001803675
+ 4:    GLMM-AR1     3   mmlb      1000          0 0.6139254 0.001800934
+ 5:    GLMM-AR1     4 manual      1000          0 0.5920810 0.001713845
+ 6:    GLMM-AR1     4   mmlb      1000          0 0.6206528 0.001670898
+ 7:    GLMM-AR1     6 manual      1000          0 0.5928524 0.001645686
+ 8:    GLMM-AR1     6   mmlb      1000          0 0.6384691 0.001599014
+ 9: GLMM-native     2 manual      1000          0 0.5900327 0.001962877
+10: GLMM-native     2   mmlb      1000          0 0.6000574 0.001926563
+11: GLMM-native     3 manual      1000          0 0.5911855 0.001845670
+12: GLMM-native     3   mmlb      1000          0 0.6111459 0.001835564
+13: GLMM-native     4 manual      1000          0 0.5883979 0.001751256
+14: GLMM-native     4   mmlb      1000          0 0.6167220 0.001699803
+15: GLMM-native     6 manual      1000          0 0.5891712 0.001661792
+16: GLMM-native     6   mmlb      1000          0 0.6340622 0.001602531
+17:  GenBinaryY     2 manual      1000          0 0.5955209 0.002105432
+18:  GenBinaryY     2   mmlb      1000          0 0.6051674 0.002121474
+19:  GenBinaryY     3 manual      1000          0 0.5951897 0.002042600
+20:  GenBinaryY     3   mmlb      1000          0 0.6153499 0.001993876
+21:  GenBinaryY     4 manual      1000          0 0.5913053 0.001992554
+22:  GenBinaryY     4   mmlb      1000          0 0.6199879 0.001932446
+23:  GenBinaryY     6 manual      1000          0 0.5928915 0.001811282
+24:  GenBinaryY     6   mmlb      1000          0 0.6376390 0.001730802
+            dgp ntime  label generated degenerate      prev        mcse
+         <char> <num> <char>     <int>      <int>     <num>       <num>
+    max_calib_err_nondeg  expected           z pass_103
+                   <num>     <num>       <num>   <lgcl>
+ 1:         5.214189e-09 0.5945122 -0.95360064     TRUE
+ 2:         5.214189e-09 0.6038070 -0.93837894     TRUE
+ 3:         4.386047e-09 0.5945122 -0.38525720     TRUE
+ 4:         4.386047e-09 0.6138821  0.02404493     TRUE
+ 5:         9.513444e-09 0.5945122 -1.41856820     TRUE
+ 6:         5.325900e-09 0.6232708 -1.56681676     TRUE
+ 7:         4.535922e-09 0.5945122 -1.00857767     TRUE
+ 8:         8.192230e-09 0.6398533 -0.86562044     TRUE
+ 9:                   NA 0.5888617  0.59656464     TRUE
+10:                   NA 0.5978056  1.16877637     TRUE
+11:                   NA 0.5888856  1.24610231     TRUE
+12:                   NA 0.6076489  1.90510977     TRUE
+13:                   NA 0.5889190 -0.29754436     TRUE
+14:                   NA 0.6169777 -0.15044545     TRUE
+15:                   NA 0.5890141  0.09456495     TRUE
+16:                   NA 0.6338774  0.11531640     TRUE
+17:                   NA 0.5945122  0.47907303     TRUE
+18:                   NA 0.6038070  0.64125474     TRUE
+19:                   NA 0.5945122  0.33168842     TRUE
+20:                   NA 0.6138821  0.73615655     TRUE
+21:                   NA 0.5945122 -1.60946258     TRUE
+22:                   NA 0.6232708 -1.69883440     TRUE
+23:                   NA 0.5945122 -0.89477329     TRUE
+24:                   NA 0.6398533 -1.27931740     TRUE
+    max_calib_err_nondeg  expected           z pass_103
+                   <num>     <num>       <num>   <lgcl>
+Q10.1 4/4 | Q10.2 4/4 | Q10.3 24/24 (max |z| 1.91) | Q10.4 AR1 max calib error (non-degenerate) 9.51e-09 | Q10.5a 18/18

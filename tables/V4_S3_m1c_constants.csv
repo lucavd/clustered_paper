@@ -1,0 +1,19 @@
+check,pass
+PREV == prevalence_lus_severe,TRUE
+VAR == var_id_modelA,TRUE
+SIGMA_GBY == sqrt(VAR),TRUE
+GAMMA_GBY == 1,TRUE
+ZEGER_F == sqrt(1 + c^2 VAR),TRUE
+AR1_RHO == 0.6,TRUE
+AR1_SIGMA2 == 0.5,TRUE
+GBY beta,TRUE
+GBY sigma,TRUE
+GBY gamma,TRUE
+GBY lv/t formula ~1,TRUE
+GLMM beta_c = f x marginal,TRUE
+GLMM D,TRUE
+GLMM re ~1,TRUE
+AR1 target,TRUE
+"AR1 D (calib, gen)",TRUE
+AR1 rho,TRUE
+AR1 sigma2_ar,TRUE

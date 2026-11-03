@@ -1,0 +1,100 @@
+rows: study 23781670, new scenarios 6011274 | load 0.5 min
+          n n_bad      max_dev
+      <int> <int>        <num>
+1: 23682062     0 4.857226e-15
+     gate   pass
+   <char> <lgcl>
+1:    GC2   TRUE
+2:    GC3   TRUE
+                                                                                                                                                                                                                                                              detail
+                                                                                                                                                                                                                                                              <char>
+1: 28440 design point x strategy rows compared with the stored tables (22680 study, 5760 new scenarios): n, nd, rate, hi, lo, pu, upow identical: TRUE; normal p recomputed from estimate and SE on 23682062 usable Wald rows, 0 beyond 1e-9 (max deviation 4.9e-15)
+2:                                                                                                                                                            7 Wald strategies x 1896 design points with the t at N - 2; usable rows with a non-finite statistic: 0
+Warning message:
+In max(pu[eligible]) : no non-missing arguments to max; returning -Inf
+       strategy    method    ref    src  n_dp  n_hi  n_lo  n_na max_rate    pu
+         <char>    <char> <char> <char> <int> <int> <int> <int>    <num> <num>
+ 1:       gee|n       gee      n  tutti  1896   423     1     0    34.19  94.1
+ 2:    gee_fg|n    gee_fg      n  tutti  1896    64    88     0    14.98  91.9
+ 3:    gee_kc|n    gee_kc      n  tutti  1896  1128    24     4    25.20  91.9
+ 4:    gee_md|n    gee_md      n  tutti  1896   153   102     0    20.00  91.8
+ 5:       mmm|n       mmm      n  tutti  1896     4    18     0    10.61  91.0
+ 6: glmer_lrt|n glmer_lrt      n  tutti  1896   216    13   243    26.23  86.4
+ 7:    shrink|n    shrink      n  tutti  1896   404     0   256    25.76  81.8
+ 8:     glmer|n     glmer      n  tutti  1896   316     3   256    20.33  80.7
+ 9:       mmm|t       mmm      t  tutti  1896     0    77     0     8.44  91.0
+10:       gee|t       gee      t  tutti  1896   290     4     0    26.04  94.1
+11:    gee_fg|t    gee_fg      t  tutti  1896     2   116     0    10.42  91.9
+12:    gee_kc|t    gee_kc      t  tutti  1896   951    48     4    24.90  91.9
+13:    gee_md|t    gee_md      t  tutti  1896    32   124     0    14.14  91.8
+14:    shrink|t    shrink      t  tutti  1896   340    11   256    24.24  81.8
+15:     glmer|t     glmer      t  tutti  1896   265    18   256    19.82  80.7
+16:      mmm|t2       mmm     t2  tutti  1896     0    49     0     8.46  91.0
+17:      gee|t2       gee     t2  tutti  1896   317     3     0    27.18  94.1
+18:   gee_fg|t2    gee_fg     t2  tutti  1896     7   113     0    10.65  91.9
+19:   gee_kc|t2    gee_kc     t2  tutti  1896   963    45     4    24.90  91.9
+20:   gee_md|t2    gee_md     t2  tutti  1896    55   118     0    15.43  91.8
+21:   shrink|t2    shrink     t2  tutti  1896   344     7   256    24.24  81.8
+22:    glmer|t2     glmer     t2  tutti  1896   268    15   256    19.82  80.7
+       strategy    method    ref    src  n_dp  n_hi  n_lo  n_na max_rate    pu
+         <char>    <char> <char> <char> <int> <int> <int> <int>    <num> <num>
+     upow eligible recommended
+    <num>   <lgcl>      <lgcl>
+ 1:  24.9    FALSE       FALSE
+ 2:  21.7    FALSE       FALSE
+ 3:  30.4    FALSE       FALSE
+ 4:  21.9    FALSE       FALSE
+ 5:  22.5    FALSE       FALSE
+ 6:  24.4    FALSE       FALSE
+ 7:  24.7    FALSE       FALSE
+ 8:  24.2    FALSE       FALSE
+ 9:  21.2     TRUE        TRUE
+10:  23.3    FALSE       FALSE
+11:  20.5    FALSE       FALSE
+12:  29.1    FALSE       FALSE
+13:  20.6    FALSE       FALSE
+14:  23.6    FALSE       FALSE
+15:  23.2    FALSE       FALSE
+16:  21.4     TRUE        TRUE
+17:  23.6    FALSE       FALSE
+18:  20.7    FALSE       FALSE
+19:  29.3    FALSE       FALSE
+20:  20.8    FALSE       FALSE
+21:  23.8    FALSE       FALSE
+22:  23.3    FALSE       FALSE
+     upow eligible recommended
+    <num>   <lgcl>      <lgcl>
+design points whose hi or lo flag changes between N - p and N - 2: 122 
+    method             group  n_dp  shift    mcse
+    <char>            <char> <int>  <num>   <num>
+ 1:    gee all design points  1896 0.2120 0.00383
+ 2: gee_fg all design points  1896 0.1065 0.00301
+ 3: gee_kc all design points  1896 0.1260 0.00301
+ 4: gee_md all design points  1896 0.1266 0.00320
+ 5:  glmer all design points  1652 0.0489 0.00188
+ 6:    mmm all design points  1896 0.0955 0.00323
+ 7: shrink all design points  1663 0.0629 0.00235
+ 8:    gee            N = 10   126 1.9700 0.04777
+ 9: gee_fg            N = 10   126 0.8509 0.03736
+10: gee_kc            N = 10   126 0.8622 0.03401
+11: gee_md            N = 10   126 1.0847 0.03955
+12:  glmer            N = 10   117 0.1913 0.01485
+13:    mmm            N = 10   126 0.6329 0.04008
+14: shrink            N = 10   122 0.2921 0.01985
+15:    gee           N <= 25   504 0.7506 0.01421
+16: gee_fg           N <= 25   504 0.3589 0.01089
+17: gee_kc           N <= 25   504 0.4125 0.01082
+18: gee_md           N <= 25   504 0.4347 0.01174
+19:  glmer           N <= 25   452 0.1414 0.00609
+20:    mmm           N <= 25   504 0.3126 0.01174
+21: shrink           N <= 25   463 0.1884 0.00794
+22:    gee           N >= 35  1392 0.0170 0.00110
+23: gee_fg           N >= 35  1392 0.0151 0.00106
+24: gee_kc           N >= 35  1392 0.0222 0.00127
+25: gee_md           N >= 35  1392 0.0151 0.00105
+26:  glmer           N >= 35  1200 0.0141 0.00111
+27:    mmm           N >= 35  1392 0.0169 0.00112
+28: shrink           N >= 35  1200 0.0145 0.00112
+    method             group  n_dp  shift    mcse
+    <char>            <char> <int>  <num>   <num>
+done 1.2 min

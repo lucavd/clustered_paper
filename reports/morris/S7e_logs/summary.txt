@@ -1,0 +1,67 @@
+Warning message:
+Removed 60 rows containing non-finite outside the scale range
+(`stat_boxplot()`). 
+      strategy         dgp points mean_type1 clearly_above clearly_below
+        <char>      <char>  <int>      <num>         <int>         <int>
+ 1:       flip  Copula-AR1    480       5.24             0             0
+ 2:       flip    GLMM-AR1    480       5.24             0             0
+ 3:       flip GLMM-native    480       5.29             0             1
+ 4:       flip  GenBinaryY    480       5.30             0             1
+ 5: gee_ar1_fg  Copula-AR1    480       4.55             0            24
+ 6: gee_ar1_fg    GLMM-AR1    480       4.23             0            29
+ 7: gee_ar1_fg GLMM-native    480       4.23             0            26
+ 8: gee_ar1_fg  GenBinaryY    480       4.50             0            21
+ 9:      glmer  Copula-AR1    480      10.21           219             0
+10:      glmer    GLMM-AR1    480       6.20            38             9
+11:      glmer GLMM-native    480       5.65            38             6
+12:      glmer  GenBinaryY    480       8.02           100             1
+13:     mmm_cc  Copula-AR1    480       5.14             0             9
+14:     mmm_cc    GLMM-AR1    480       4.42             0            25
+15:     mmm_cc GLMM-native    480       4.28             0            22
+16:     mmm_cc  GenBinaryY    480       4.57             0            18
+    mean_usable mean_power                          label
+          <num>      <num>                         <char>
+ 1:       100.0       18.2           Sign-flip score test
+ 2:       100.0       22.3           Sign-flip score test
+ 3:       100.0       22.0           Sign-flip score test
+ 4:       100.0       21.1           Sign-flip score test
+ 5:        91.6       17.4   GEE AR(1) + Fay-Graubard + t
+ 6:        92.4       20.7   GEE AR(1) + Fay-Graubard + t
+ 7:        92.7       20.3   GEE AR(1) + Fay-Graubard + t
+ 8:        91.8       19.7   GEE AR(1) + Fay-Graubard + t
+ 9:        79.2       23.2                  GLMM Wald + t
+10:        81.2       22.8                  GLMM Wald + t
+11:        81.5       21.9                  GLMM Wald + t
+12:        79.9       24.6                  GLMM Wald + t
+13:        90.6       19.2 MMM with convergence check + t
+14:        91.2       21.9 MMM with convergence check + t
+15:        91.5       21.3 MMM with convergence check + t
+16:        90.8       20.8 MMM with convergence check + t
+        strategy points mean_bias_rel max_abs_bias_rel mean_relerr_modse
+          <char>  <int>         <num>            <num>             <num>
+ 1:       mmm_cc    480        0.0268            0.251            -0.521
+ 2:    mmm_study    480        0.0103            0.207            -1.999
+ 3: gee_exch_unc    480        0.0260            0.219            -8.347
+ 4:  gee_exch_md    480        0.0270            0.295             4.082
+ 5:  gee_exch_kc    480        0.0269            0.321            -1.808
+ 6:  gee_exch_fg    480        0.0276            0.301             6.867
+ 7:  gee_ar1_unc    480        0.0271            0.233            -7.738
+ 8:   gee_ar1_md    480        0.0282            0.295             4.493
+ 9:   gee_ar1_kc    480        0.0280            0.321            -1.321
+10:   gee_ar1_fg    480        0.0287            0.301             7.078
+11:   gee_ind_fg    480        0.0265            0.313             8.307
+12:       shrink    422        0.0485            1.567             0.408
+    mean_cov_n mean_cov_t cov_n_below_92.5                               label
+         <num>      <num>            <int>                              <char>
+ 1:       93.8       94.7                9      MMM with convergence check + t
+ 2:       92.3       93.3              101  MMM as in the study (no check) + t
+ 3:       91.3       92.6              116 GEE exch., uncorrected sandwich + t
+ 4:       94.0       94.9               48       GEE exch. + Mancl-DeRouen + t
+ 5:       93.1       94.2               86   GEE exch. + Kauermann-Carroll + t
+ 6:       94.4       95.2               14        GEE exch. + Fay-Graubard + t
+ 7:       91.8       93.1              104 GEE AR(1), uncorrected sandwich + t
+ 8:       94.4       95.2               25                                <NA>
+ 9:       93.5       94.6               61                                <NA>
+10:       94.8       95.5                4        GEE AR(1) + Fay-Graubard + t
+11:       94.8       95.6                4       GEE indep. + Fay-Graubard + t
+12:       87.3       88.3              280                   Shrinkage GLM + t

@@ -1,0 +1,66 @@
+[31m
+
+processing file: S8.qmd
+[39m1/39          
+2/39 [setup]  
+3/39          
+4/39 [inbreve]
+5/39          
+6/39 [rinv]   
+7/39          
+8/39 [gates]  
+9/39          
+10/39 [logtab] 
+11/39          
+12/39 [adj]    
+13/39          
+14/39 [ser]    
+15/39          
+16/39 [tim]    
+17/39          
+18/39 [flip]   
+19/39          
+20/39 [p1]     
+21/39          
+22/39 [p3]     
+23/39          
+24/39 [mdkc]   
+25/39          
+26/39 [mor]    
+27/39          
+28/39 [pf]     
+29/39          
+30/39 [acc]    
+31/39          
+32/39 [abs]    
+33/39          
+34/39 [f41]    
+35/39          
+36/39 [arb]    
+37/39          
+38/39 [src]    
+39/39          
+[31moutput file: S8.knit.md
+
+[39m[1mpandoc [22m
+  to: html
+  output-file: S8.html
+  standalone: true
+  embed-resources: true
+  section-divs: true
+  html-math-method: mathjax
+  wrap: none
+  default-image-extension: png
+  toc: true
+  
+[1mmetadata[22m
+  document-css: false
+  link-citations: true
+  date-format: long
+  lang: it
+  title: 'S8: revisione avversariale finale, ri-audit Morris e piano di implementazione'
+  subtitle: Roadmap Morris 2019, ramo morris-v4
+  date: '2026-11-01'
+  
+Output created: S8.html
+

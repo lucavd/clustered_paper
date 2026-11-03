@@ -1,0 +1,7 @@
+pred,unit,value,outcome
+PG1,GenBinaryY,"-3.43 [-3.68, -3.19]",refuted
+PG1,GLMM-native,"-3.30 [-3.63, -3.04]",refuted
+PG1,GLMM-AR1,"-3.07 [-3.55, -2.70]",refuted
+PG1,Copula-AR1,"-3.96 [-4.61, -3.47]",refuted
+PG2,all points,"27 confirmed, 63 indeterminate, 33 refuted of 123",refuted in some points
+PG3,Copula-AR1,6 of 12 points clearly above with Laplace stay clearly above (50%),refuted

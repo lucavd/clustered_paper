@@ -1,0 +1,62 @@
+##### 3.8 TABLE, denominator 1000 per design point, mean over design points #####
+Key: <slope, ntime>
+     slope ntime     glmer   shrink glmer_lrt   mmm gee_fg
+    <char> <int>     <num>    <num>     <num> <num>  <num>
+ 1:   M1M2     2 68.552083 74.00104     98.75 68.15  72.72
+ 2:   M1M2     3 87.758333 88.84792     99.58 87.09  88.26
+ 3:   M1M2     4 93.732292 94.09792     99.84 92.89  93.76
+ 4:   M1M2     6 97.802083 97.85000     99.97 97.41  97.67
+ 5:   M1M2     8 99.013542 99.02083     99.97 98.83  98.86
+ 6:   M1M2    10 99.564583 99.56458     99.99 99.50  99.45
+ 7:   M3M5     2  0.002083  0.01597     98.84 67.61  73.14
+ 8:   M3M5     3 56.638194 59.28611     99.58 86.78  88.43
+ 9:   M3M5     4 90.938889 93.74931     99.83 92.92  94.08
+10:   M3M5     6 97.754861 98.06319     99.97 97.05  97.97
+11:   M3M5     8 99.178472 99.23194     99.99 98.15  99.12
+12:   M3M5    10 99.611111 99.62292     99.98 98.08  99.54
+
+-- same rounded to 1 decimal --
+Key: <slope, ntime>
+     slope ntime glmer shrink glmer_lrt   mmm gee_fg
+    <char> <int> <num>  <num>     <num> <num>  <num>
+ 1:   M1M2     2  68.6   74.0      98.8  68.2   72.7
+ 2:   M1M2     3  87.8   88.8      99.6  87.1   88.3
+ 3:   M1M2     4  93.7   94.1      99.8  92.9   93.8
+ 4:   M1M2     6  97.8   97.8     100.0  97.4   97.7
+ 5:   M1M2     8  99.0   99.0     100.0  98.8   98.9
+ 6:   M1M2    10  99.6   99.6     100.0  99.5   99.5
+ 7:   M3M5     2   0.0    0.0      98.8  67.6   73.1
+ 8:   M3M5     3  56.6   59.3      99.6  86.8   88.4
+ 9:   M3M5     4  90.9   93.7      99.8  92.9   94.1
+10:   M3M5     6  97.8   98.1     100.0  97.0   98.0
+11:   M3M5     8  99.2   99.2     100.0  98.1   99.1
+12:   M3M5    10  99.6   99.6     100.0  98.1   99.5
+
+-- pooled over the H0+H1 arms (2000 attempts) --
+Key: <slope, ntime>
+     slope ntime gee_fg     glmer glmer_lrt   mmm   shrink
+    <char> <int>  <num>     <num>     <num> <num>    <num>
+ 1:   M1M2     2  73.22 69.057292     98.81 68.81 74.57656
+ 2:   M1M2     3  88.77 88.264583     99.63 87.73 89.38281
+ 3:   M1M2     4  94.14 94.127604     99.86 93.46 94.49792
+ 4:   M1M2     6  97.92 98.068229     99.97 97.78 98.11771
+ 5:   M1M2     8  98.96 99.142188     99.97 99.02 99.15156
+ 6:   M1M2    10  99.48 99.635417     99.99 99.59 99.63646
+ 7:   M3M5     2  73.51  0.002431     98.87 68.00  0.01597
+ 8:   M3M5     3  88.78 56.835417     99.61 87.18 59.46354
+ 9:   M3M5     4  94.37 91.334028     99.85 93.28 94.07222
+10:   M3M5     6  98.15 97.945486     99.97 97.28 98.24479
+11:   M3M5     8  99.21 99.268750     99.99 98.31 99.31597
+12:   M3M5    10  99.57 99.645833     99.98 98.10 99.65694
+
+##### hunting 502 / 608 : alternative stratifying variables #####
+  H0, 5 marginal, /1000              th>0.999   :  83/100/147/472/638
+  H0, 5 marginal, /1000              th>0.9995  :  83/100/147/588/522
+  H0, 5 marginal, /n_attempt         th>0.999   :  83/100/147/472/638
+  H0, 5 marginal, /n_attempt         th>0.9995  :  83/100/147/588/522
+  H1, 5 marginal, /1000              th>0.999   :  77/ 90/143/483/647
+  H1, 5 marginal, /1000              th>0.9995  :  77/ 90/143/598/532
+Error in value[[3L]](cond) : 
+  Operator := detected in i, the first argument inside DT[...], but is only valid in the second argument, j. Most often, this happens when forgetting the first comma (e.g. DT[newvar := 5] instead of DT[ , new_var := 5]). Please double-check the syntax. Run traceback(), and debugger() to get a line number.
+Calls: tryit ... tryCatchList -> tryCatchOne -> <Anonymous> -> .checkTypos
+Execution halted

@@ -1,0 +1,14 @@
+D-82: G$U0 switched off on 0 of 38829 constant-outcome rows
+D-90: G$U0 switched off on 210211 of 255407 rows of the MMM with the check on a no-result key
+D-82: G$U1 switched off on 0 of 38829 constant-outcome rows
+D-90: G$U1 switched off on 199337 of 255407 rows of the MMM with the check on a no-result key
+D-82: G$U2 switched off on 0 of 38829 constant-outcome rows
+D-90: G$U2 switched off on 210211 of 255407 rows of the MMM with the check on a no-result key
+gate: threshold 1e-3 reproduces variant cv: TRUE ; keys at 1e-3 255407 of which in cv_keys 255407 
+D-82: V$U0 switched off on 0 of 38829 constant-outcome rows
+D-90: V$U0 switched off on 209806 of 254923 rows of the MMM with the check on a no-result key
+D-82: V$U1 switched off on 0 of 38829 constant-outcome rows
+D-90: V$U1 switched off on 198977 of 254923 rows of the MMM with the check on a no-result key
+D-82: V$U2 switched off on 0 of 38829 constant-outcome rows
+D-90: V$U2 switched off on 209806 of 254923 rows of the MMM with the check on a no-result key
+variant t4cv rows written: 26416021 ; keys 254923 

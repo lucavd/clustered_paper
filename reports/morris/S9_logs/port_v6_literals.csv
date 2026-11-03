@@ -1,0 +1,13 @@
+file,location,literal,meaning,suggested_source
+MMM_v5.qmd,Table 2 caption,10 to 145,range of the number of clusters N on the full grid,design grid (R/v4 grid definition); new key e.g. x:N_min / x:N_max; same literal already in Table 1 and Section 2.2 of v5
+MMM_v5.qmd,Table 2 caption,2 to 10,range of the maximum number of occasions T on the full grid,design grid; new key e.g. x:T_min / x:T_max; same literal already in Table 1 of v5
+MMM_v5.qmd,Table 2(a) GenBinaryY row,480,design points of M1-M5 on GenBinaryY,"x:ndp_grid / 3 (1,440 / 3); new key per mechanism in V5_S7f_extra.csv (f:x|ndp_cop has the same value but refers to Copula-AR1)"
+MMM_v5.qmd,Table 2(a) GenBinaryY row,24,design points of M1c on GenBinaryY,x:ndp_m1c / 3 (72 / 3); new key
+MMM_v5.qmd,Table 2(a) GenBinaryY row,192,design points of M6-M7 on GenBinaryY,x:ndp_m67 / 2 (384 / 2); new key
+MMM_v5.qmd,Table 2(a) GLMM-native row,480,design points of M1-M5 on GLMM-native,x:ndp_grid / 3; new key
+MMM_v5.qmd,Table 2(a) GLMM-native row,24,design points of M1c on GLMM-native,x:ndp_m1c / 3; new key
+MMM_v5.qmd,Table 2(a) GLMM-native row,192,design points of M6-M7 on GLMM-native,x:ndp_m67 / 2; new key
+MMM_v5.qmd,Table 2(a) GLMM-AR1 row,480,design points of M1-M5 on GLMM-AR1,x:ndp_grid / 3; new key
+MMM_v5.qmd,Table 2(a) GLMM-AR1 row,24,design points of M1c on GLMM-AR1,x:ndp_m1c / 3; new key
+MMM_v5.qmd,Table 2(b) M1c row,45,largest number of clusters N in the M1c grid,M1c grid definition; new key; same literal already in Section 2.2 of v5
+MMM_v5.qmd,Table 2(b) M1c row,6,largest maximum number of occasions T in the M1c grid,M1c grid definition; new key; same literal already in Section 2.2 of v5

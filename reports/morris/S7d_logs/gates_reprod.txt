@@ -1,0 +1,32 @@
+chunks 37920 rows 11374260 recs 3792000 
+         n missing_new max_d_est max_d_se
+     <int>       <int>     <num>    <num>
+1: 3744885           0         0        0
+   method n_both only_saved only_new max_rel
+   <char>  <int>      <int>    <int>   <num>
+1: gee_fg 175259          3        0       0
+2: gee_kc 175222          3        0       0
+3: gee_md 175184          1        0       0
+       n mism_primary mism_strict
+   <int>        <int>       <int>
+1: 36000            0           0
+     corr n_both only_geesmv only_fewclust      max_rel share_rel_lt_1e8
+   <char>  <int>       <int>         <int>        <num>            <num>
+1:     md 174999         577          2394 1.512909e+00     9.998971e-01
+2:     kc 174982         651          2401 6.640956e+08     1.142975e-05
+3:     fg 175123         519          2617 1.000000e+00     9.998915e-01
+     corr      n       q05       q50      q95 share_within_1pct
+   <char>  <int>     <num>     <num>    <num>             <num>
+1:     md 174804 0.9967229 0.9999474 1.000872        0.97620764
+2:     kc 174589 0.6327607 0.8222990 1.258654        0.01993253
+3:     fg 174957 0.9965315 0.9999557 1.001148        0.97246180
+     gate   pass
+   <char> <lgcl>
+1:    GE2   TRUE
+2:    GE3   TRUE
+3:    GE5  FALSE
+                                                                                                                                                                                                                                                                                                                detail
+                                                                                                                                                                                                                                                                                                                <char>
+1: gee exch: 3744885 saved finite rows, 0 without new value, max |d est| 0.00e+00, max |d se| 0.00e+00; geesmv (i<=50): gee_fg both 175259, only saved 3, only new 0, max rel 0.00e+00; gee_kc both 175222, only saved 3, only new 0, max rel 0.00e+00; gee_md both 175184, only saved 1, only new 0, max rel 0.00e+00
+2:                                                                                                                                                                                                                                                              36000 pilot replicates, mismatches primary 0, strict 0
+3:                                                                                              md: both 174999, only geesmv 577, only fewclust 2394, max rel 1.51e+00; kc: both 174982, only geesmv 651, only fewclust 2401, max rel 6.64e+08; fg: both 175123, only geesmv 519, only fewclust 2617, max rel 1.00e+00

@@ -1,0 +1,52 @@
+key,value,mcse,kind,source,how
+cop_exfg4_Nmin,10,"",int,tables/V5_S7f_cp_S7e_dp_rates.csv,min N of the points at the modal ntime
+cop_exfg4_Nmax,25,"",int,tables/V5_S7f_cp_S7e_dp_rates.csv,max N of the points at the modal ntime
+cop_exfg_oth_n,2,"",int,tables/V5_S7f_cp_S7e_dp_rates.csv,points at another ntime
+cop_exfg_oth_T,3,"",int,tables/V5_S7f_cp_S7e_dp_rates.csv,ntime of the first such point
+cop_exfg_oth_N,10,"",int,tables/V5_S7f_cp_S7e_dp_rates.csv,N of the first such point
+cop_exfg_oth2_T,6,"",int,tables/V5_S7f_cp_S7e_dp_rates.csv,ntime of the second such point
+cop_exfg_oth2_N,10,"",int,tables/V5_S7f_cp_S7e_dp_rates.csv,N of the second such point
+m67_exfg_hi,4,"",int,tables/V5_S7f_rule_dp.csv,"points of M6-M7 clearly above 7.5%, gee_exch_fg (equals f:t4|gee_exch_fg|hi_m67)"
+m67_exfg_hi_gbm7,3,"",int,tables/V5_S7f_rule_dp.csv,of which GenBinaryY M7
+ndp_short_main,44,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds,main-grid design points (H1) with fewer than 1000 generated datasets (check: equals x:ndp_short)
+ndp_short_m1c,6,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds,M1c design points (H1) with fewer than 1000 generated datasets
+deg_main,247,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds,"degenerate designs per hypothesis, main grid, each mechanism (check: x:n_degenerate)"
+deg_m1c,43,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds,"degenerate designs per hypothesis, M1c"
+deg_m6,47,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds,"degenerate designs per hypothesis, M6"
+deg_m7,55,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds,"degenerate designs per hypothesis, M7"
+n_fits_total_m,52.1,"",plain,tables/V5_S8b_fits_by_run.csv,"sum of column total over runs, millions"
+flipci_cov_h1,95.072748804231,"",sig2,tables/V5_S8b_flip_interval.csv,"mean coverage of the inverted interval over design points, H1"
+flipci_lo_h1,97,"",int,tables/V5_S8b_flip_interval.csv,"design points with non-coverage clearly below 2.5%, H1"
+flipci_lo_h0,112,"",int,tables/V5_S8b_flip_interval.csv,"design points with non-coverage clearly below 2.5%, H0"
+flipci_points,2376,"",int,tables/V5_S8b_flip_interval.csv,design points
+nat_h1_min,0.0435821148520879,"",sig2,tables/V4_S4_truth_by_cell.csv,min over scenarios M1-M5 and T
+nat_h1_max,0.201789406956594,"",sig2,tables/V4_S4_truth_by_cell.csv,max over scenarios M1-M5 and T
+nat_h1_m1c_min,0.19084349728897,"",sig2,tables/V4_S4_truth_by_cell.csv,"min over T, M1c"
+nat_h1_m1c_max,0.197848798642472,"",sig2,tables/V4_S4_truth_by_cell.csv,"max over T, M1c"
+mdkc_ar1_hi,56,"",int,tables/V5_S8b_mdkc_avg.csv,"points clearly above 7.5%, AR(1)"
+mdkc_exch_hi,121,"",int,tables/V5_S8b_mdkc_avg.csv,"points clearly above 7.5%, exchangeable"
+pb2_mean,2.28236881075321,0.0467677686875519,sig2,tables/V5_S8b_pb2_summary.csv,mean over cells of the share of usable H1 datasets rejected with |z| > 37
+pb2_cells,1254,"",int,tables/V5_S8b_pb2_summary.csv,main-grid cells with a size-adjusted power of the mixed model
+pb2_cells_q37,193,"",int,tables/V5_S8b_pb2_summary.csv,cells whose size-adjusted critical value exceeds 37
+pb2_mean_pow,23.7570578741272,"",sig2,tables/V5_S8b_pb2_summary.csv,mean over the same cells of the size-adjusted power of the mixed model
+pb5_neo,0.0428444130101624,0.00284981078543186,sig2,tables/V5_S8b_pb5.csv,mean over N of ratio MMM - ratio GLMM
+pb5_resp,0.0553932248046418,0.0105860168569745,sig2,tables/V5_S8b_pb5.csv,mean over N of ratio MMM - ratio GLMM
+rob_neo_min,0.851325007575958,"",sig2,tables/V5_S8b_mmm_robust_seratio.csv,"robust-SE ratio of the MMM, cohort, min over N"
+rob_neo_max,0.990284366178669,"",sig2,tables/V5_S8b_mmm_robust_seratio.csv,"robust-SE ratio of the MMM, cohort, max over N"
+rob_resp_min,0.548266816624386,"",sig2,tables/V5_S8b_mmm_robust_seratio.csv,"robust-SE ratio of the MMM, trial, min over N"
+rob_resp_max,0.871682530054103,"",sig2,tables/V5_S8b_mmm_robust_seratio.csv,"robust-SE ratio of the MMM, trial, max over N"
+resp_mmm_min,0.653897139481685,"",sig2,tables/V5_S7f_seratio_fpc.csv,"model-based SE ratio of the MMM, trial, min over N"
+resp_mmm_max,0.850656002035925,"",sig2,tables/V5_S7f_seratio_fpc.csv,"model-based SE ratio of the MMM, trial, max over N"
+resp_glmm_min,0.641082498057618,"",sig2,tables/V5_S7f_seratio_fpc.csv,"SE ratio of the GLMM, trial, min over N"
+resp_glmm_max,0.694723595734423,"",sig2,tables/V5_S7f_seratio_fpc.csv,"SE ratio of the GLMM, trial, max over N"
+lus_mmm_se_rob,0.166844793192107,"",sig2,tables/V5_S8b_clin_mmm_ref.csv,"robust SE of the MMM, full cohort"
+resp_mmm_se_rob,0.345254348028074,"",sig2,tables/V5_S8b_clin_mmm_ref.csv,"robust SE of the MMM, full trial"
+lus_lateral_lv,1.05796773854268,"",sig2,tables/V5_S8b_lus_lateral.csv,"regionlateral of the MMM with lv.formula = ~1, q = 20, full cohort"
+nongen_n,580,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds,"replicates with a design record and no GEE row (not generated), both hypotheses"
+nongen_nondeg,0,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds,of which with an estimable design (must be 0)
+flipci_lo_h1_T2,90,"",int,tables/V5_S8b_flip_lo_points.csv,"of the H1 points with non-coverage clearly below 2.5%, those with T = 2"
+lus_bias_mmm_50_z,1.20749566117937,"",sig2,tables/V5_S7f_lus_bias.csv,|bias| / MCSE of the MMM at N = 50 (MCSE = SD of the estimates / sqrt(n))
+lus_bias_mmm_10_z,3.34177636701086,"",sig2,tables/V5_S7f_lus_bias.csv,|bias| / MCSE of the MMM at N = 10
+fl7_small_pu_1d,99.9,"",plain,tables/V4_S7d2_flip_rules.csv,"mean usable share of the sign-flip test without the rules, small designs, H0, one decimal"
+ag_resp_md_1d,99.9,"",plain,tables/V5_S7f_kc_clinical_agree.csv,"trial, MD fewclust within 1% of geesmv, one decimal"
+ag_resp_fg_1d,99.6,"",plain,tables/V5_S7f_kc_clinical_agree.csv,"trial, FG fewclust within 1% of geesmv, one decimal"

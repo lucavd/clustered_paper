@@ -1,0 +1,50 @@
+S7d H0: 18960 files, 1896000 recs, 5687130 rows (0.4 min)
+Key: <strategy>
+        strategy hi_all hi_pub      pu  pu_pub     ok
+          <char>  <int>  <int>   <num>   <num> <lgcl>
+ 1:   gee_ar1_fg      0      0 92.1211 92.1211   TRUE
+ 2:   gee_ar1_kc    132    132 91.9048 91.9048   TRUE
+ 3:   gee_ar1_md     16     16 92.0120 92.0120   TRUE
+ 4:  gee_ar1_unc    349    349 93.9067 93.9067   TRUE
+ 5: gee_exch_cr2    254    254 93.4963 93.4963   TRUE
+ 6:  gee_exch_fg     11     11 92.2072 92.2072   TRUE
+ 7:  gee_exch_kc    199    199 91.9919 91.9919   TRUE
+ 8:  gee_exch_md     57     57 92.0978 92.0978   TRUE
+ 9: gee_exch_unc    397    397 94.0043 94.0043   TRUE
+10:  gee_ind_cr2    251    251 93.8791 93.8791   TRUE
+11:   gee_ind_fg      2      2 92.3313 92.3313   TRUE
+12:   gee_ind_kc    185    185 92.2193 92.2193   TRUE
+13:   gee_ind_md     54     54 92.2194 92.2194   TRUE
+14:  gee_ind_unc    381    381 94.1991 94.1991   TRUE
+15:        glmer    515    515 80.3553 80.3553   TRUE
+16:       mmm_cc      0      0 90.8948 90.8948   TRUE
+17:       shrink    608    608 81.7269 81.7269   TRUE
+Key: <strategy>
+        strategy     5    10    20
+          <char> <int> <int> <int>
+ 1:   gee_ar1_fg     0     0     0
+ 2:   gee_ar1_kc   131   132   150
+ 3:   gee_ar1_md    16    16    21
+ 4:  gee_ar1_unc   330   349   389
+ 5: gee_exch_cr2   241   254   284
+ 6:  gee_exch_fg    11    11    15
+ 7:  gee_exch_kc   198   199   244
+ 8:  gee_exch_md    59    57    69
+ 9: gee_exch_unc   377   397   440
+10:  gee_ind_cr2   241   251   252
+11:   gee_ind_fg     2     2     2
+12:   gee_ind_kc   185   185   187
+13:   gee_ind_md    55    54    54
+14:  gee_ind_unc   373   381   387
+15:        glmer   434   515   553
+16:       mmm_cc     0     0     0
+17:       shrink   602   608   622
+     strategy     L hi_all       pu mean_rate eligible chosen
+       <char> <num>  <int>    <num>     <num>   <lgcl> <lgcl>
+1: gee_ar1_fg     5      0 92.09778  4.323399     TRUE   TRUE
+2:     mmm_cc     5      0 90.85427  4.623025     TRUE  FALSE
+3: gee_ar1_fg    10      0 92.12111  4.341646     TRUE   TRUE
+4:     mmm_cc    10      0 90.89477  4.621006     TRUE  FALSE
+5: gee_ar1_fg    20      0 92.15076  4.395925     TRUE   TRUE
+6:     mmm_cc    20      0 90.92304  4.640309     TRUE  FALSE
+check with L = 10: 17 of 17 strategies reproduce Table 4; 2.5 min

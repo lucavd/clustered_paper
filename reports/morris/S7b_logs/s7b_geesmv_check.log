@@ -1,0 +1,23 @@
+--- with the original respiratory `id` column present (within-centre id), geesmv keyed on it ---
+geepack alpha: 0.3308976  scale: 0.9961032 
+CR0 0.3463268 
+CR1 0.3478974 
+CR2 0.3568782 
+CR3 0.3678623 
+manual CR0 SE: 0.3463268  MD: 0.3678623  FG: 0.34992 
+(Intercept)      treatA    baseline       visit         age        sexM 
+geesmv FG: 0.634802 
+(Intercept)      treatA    baseline       visit         age        sexM 
+geesmv MD: 0.6737746 
+(Intercept)      treatn    baseline       visit         age        sexn 
+geesmv FG numeric design: 0.634802 
+(Intercept)      treatn    baseline 
+geesmv FG reduced: 0.5827251 
+geepack reduced: 0.3286504 
+--- cluster column renamed to `id` ---
+(Intercept)      treatA    baseline       visit         age        sexM 
+geesmv md treatA SE: 0.3678674 
+(Intercept)      treatA    baseline       visit         age        sexM 
+geesmv kc treatA SE: 0.3568735 
+(Intercept)      treatA    baseline       visit         age        sexM 
+geesmv fg treatA SE: 0.3499246 

@@ -1,0 +1,81 @@
+id,filter,field,printed,stored,v4,differs
+x:par_GLMMAR1_1_H1_D,"{""dgp"": ""GLMM-AR1"", ""model"": ""1"", ""arm"": ""H1"", ""parameter"": ""D""}",value,1,1,1,False
+x:par_GLMMAR1_1_H1_mean_formula,"{""dgp"": ""GLMM-AR1"", ""model"": ""1"", ""arm"": ""H1"", ""parameter"": ""mean.formula""}",value,~time * trt,~time * trt,~time * trt,False
+x:par_GLMMAR1_1_H1_re_formula,"{""dgp"": ""GLMM-AR1"", ""model"": ""1"", ""arm"": ""H1"", ""parameter"": ""re.formula""}",value,~1,~1,~1,False
+x:par_GLMMAR1_1_H1_rho,"{""dgp"": ""GLMM-AR1"", ""model"": ""1"", ""arm"": ""H1"", ""parameter"": ""rho""}",value,0.6,0.6,0.6,False
+x:par_GLMMAR1_1_H1_sigma2_ar,"{""dgp"": ""GLMM-AR1"", ""model"": ""1"", ""arm"": ""H1"", ""parameter"": ""sigma2_ar""}",value,0.5,0.5,0.5,False
+x:par_GLMMAR1_1_H1_target_beta_m,"{""dgp"": ""GLMM-AR1"", ""model"": ""1"", ""arm"": ""H1"", ""parameter"": ""target_beta_m""}",value,"-2, 0.1, 0.2, 0.2","-2, 0.1, 0.2, 0.2","-2, 0.1, 0.2, 0.2",False
+x:par_GLMMAR1_2_H1_D,"{""dgp"": ""GLMM-AR1"", ""model"": ""2"", ""arm"": ""H1"", ""parameter"": ""D""}",value,1,1,1,False
+x:par_GLMMAR1_2_H1_mean_formula,"{""dgp"": ""GLMM-AR1"", ""model"": ""2"", ""arm"": ""H1"", ""parameter"": ""mean.formula""}",value,~time * trt + age,~time * trt + age,~time * trt + age,False
+x:par_GLMMAR1_2_H1_re_formula,"{""dgp"": ""GLMM-AR1"", ""model"": ""2"", ""arm"": ""H1"", ""parameter"": ""re.formula""}",value,~1,~1,~1,False
+x:par_GLMMAR1_2_H1_rho,"{""dgp"": ""GLMM-AR1"", ""model"": ""2"", ""arm"": ""H1"", ""parameter"": ""rho""}",value,0.6,0.6,0.6,False
+x:par_GLMMAR1_2_H1_sigma2_ar,"{""dgp"": ""GLMM-AR1"", ""model"": ""2"", ""arm"": ""H1"", ""parameter"": ""sigma2_ar""}",value,0.5,0.5,0.5,False
+x:par_GLMMAR1_2_H1_target_beta_m,"{""dgp"": ""GLMM-AR1"", ""model"": ""2"", ""arm"": ""H1"", ""parameter"": ""target_beta_m""}",value,"-2, 0.1, 0.2, 0.01, 0.2","-2, 0.1, 0.2, 0.01, 0.2","-2, 0.1, 0.2, 0.01, 0.2",False
+x:par_GLMMAR1_3_H1_D,"{""dgp"": ""GLMM-AR1"", ""model"": ""3"", ""arm"": ""H1"", ""parameter"": ""D""}",value,"1, 0.01; 0.01, 0.001","1, 0.01; 0.01, 0.001","1, 0.01; 0.01, 0.001",False
+x:par_GLMMAR1_3_H1_mean_formula,"{""dgp"": ""GLMM-AR1"", ""model"": ""3"", ""arm"": ""H1"", ""parameter"": ""mean.formula""}",value,~time * trt,~time * trt,~time * trt,False
+x:par_GLMMAR1_3_H1_re_formula,"{""dgp"": ""GLMM-AR1"", ""model"": ""3"", ""arm"": ""H1"", ""parameter"": ""re.formula""}",value,~1 + time,~1 + time,~1 + time,False
+x:par_GLMMAR1_3_H1_rho,"{""dgp"": ""GLMM-AR1"", ""model"": ""3"", ""arm"": ""H1"", ""parameter"": ""rho""}",value,0.6,0.6,0.6,False
+x:par_GLMMAR1_3_H1_sigma2_ar,"{""dgp"": ""GLMM-AR1"", ""model"": ""3"", ""arm"": ""H1"", ""parameter"": ""sigma2_ar""}",value,0.5,0.5,0.5,False
+x:par_GLMMAR1_3_H1_target_beta_m,"{""dgp"": ""GLMM-AR1"", ""model"": ""3"", ""arm"": ""H1"", ""parameter"": ""target_beta_m""}",value,"-2, 0.1, 0.2, 0.2","-2, 0.1, 0.2, 0.2","-2, 0.1, 0.2, 0.2",False
+x:par_GLMMAR1_4_H1_D,"{""dgp"": ""GLMM-AR1"", ""model"": ""4"", ""arm"": ""H1"", ""parameter"": ""D""}",value,"1, 0.01; 0.01, 0.001","1, 0.01; 0.01, 0.001","1, 0.01; 0.01, 0.001",False
+x:par_GLMMAR1_4_H1_mean_formula,"{""dgp"": ""GLMM-AR1"", ""model"": ""4"", ""arm"": ""H1"", ""parameter"": ""mean.formula""}",value,~time * trt,~time * trt,~time * trt,False
+x:par_GLMMAR1_4_H1_re_formula,"{""dgp"": ""GLMM-AR1"", ""model"": ""4"", ""arm"": ""H1"", ""parameter"": ""re.formula""}",value,~1 + time,~1 + time,~1 + time,False
+x:par_GLMMAR1_4_H1_rho,"{""dgp"": ""GLMM-AR1"", ""model"": ""4"", ""arm"": ""H1"", ""parameter"": ""rho""}",value,0.6,0.6,0.6,False
+x:par_GLMMAR1_4_H1_sigma2_ar,"{""dgp"": ""GLMM-AR1"", ""model"": ""4"", ""arm"": ""H1"", ""parameter"": ""sigma2_ar""}",value,0.5,0.5,0.5,False
+x:par_GLMMAR1_4_H1_target_beta_m,"{""dgp"": ""GLMM-AR1"", ""model"": ""4"", ""arm"": ""H1"", ""parameter"": ""target_beta_m""}",value,"-2, 0.2, 0.2, 0.05","-2, 0.2, 0.2, 0.05","-2, 0.2, 0.2, 0.05",False
+x:par_GLMMAR1_5_H1_D,"{""dgp"": ""GLMM-AR1"", ""model"": ""5"", ""arm"": ""H1"", ""parameter"": ""D""}",value,"1, 0.01, 0.01; 0.01, 0.001, 0; 0.01, 0, 0.01","1, 0.01, 0.01; 0.01, 0.001, 0; 0.01, 0, 0.01","1, 0.01, 0.01; 0.01, 0.001, 0; 0.01, 0, 0.001",True
+x:par_GLMMAR1_5_H1_mean_formula,"{""dgp"": ""GLMM-AR1"", ""model"": ""5"", ""arm"": ""H1"", ""parameter"": ""mean.formula""}",value,~time * trt + dose,~time * trt + dose,~time * trt + dose,False
+x:par_GLMMAR1_5_H1_re_formula,"{""dgp"": ""GLMM-AR1"", ""model"": ""5"", ""arm"": ""H1"", ""parameter"": ""re.formula""}",value,~1 + time + dose,~1 + time + dose,~1 + time + dose,False
+x:par_GLMMAR1_5_H1_rho,"{""dgp"": ""GLMM-AR1"", ""model"": ""5"", ""arm"": ""H1"", ""parameter"": ""rho""}",value,0.6,0.6,0.6,False
+x:par_GLMMAR1_5_H1_sigma2_ar,"{""dgp"": ""GLMM-AR1"", ""model"": ""5"", ""arm"": ""H1"", ""parameter"": ""sigma2_ar""}",value,0.5,0.5,0.5,False
+x:par_GLMMAR1_5_H1_target_beta_m,"{""dgp"": ""GLMM-AR1"", ""model"": ""5"", ""arm"": ""H1"", ""parameter"": ""target_beta_m""}",value,"-2, 0.1, 0.2, 0.05, 0.2","-2, 0.1, 0.2, 0.05, 0.2","-2, 0.1, 0.2, 0.05, 0.2",False
+x:par_GLMMnative_1_H1_D,"{""dgp"": ""GLMM-native"", ""model"": ""1"", ""arm"": ""H1"", ""parameter"": ""D""}",value,1,1,1,False
+x:par_GLMMnative_1_H1_beta_c,"{""dgp"": ""GLMM-native"", ""model"": ""1"", ""arm"": ""H1"", ""parameter"": ""beta_c""}",value,"-2.32, 0.116, 0.232, 0.232","-2.32, 0.116, 0.232, 0.232","-2.32, 0.116, 0.232, 0.232",False
+x:par_GLMMnative_1_H1_mean_formula,"{""dgp"": ""GLMM-native"", ""model"": ""1"", ""arm"": ""H1"", ""parameter"": ""mean.formula""}",value,~time * trt,~time * trt,~time * trt,False
+x:par_GLMMnative_1_H1_re_formula,"{""dgp"": ""GLMM-native"", ""model"": ""1"", ""arm"": ""H1"", ""parameter"": ""re.formula""}",value,~1,~1,~1,False
+x:par_GLMMnative_2_H1_D,"{""dgp"": ""GLMM-native"", ""model"": ""2"", ""arm"": ""H1"", ""parameter"": ""D""}",value,1,1,1,False
+x:par_GLMMnative_2_H1_beta_c,"{""dgp"": ""GLMM-native"", ""model"": ""2"", ""arm"": ""H1"", ""parameter"": ""beta_c""}",value,"-2.32, 0.116, 0.232, 0.012, 0.232","-2.32, 0.116, 0.232, 0.012, 0.232","-2.32, 0.116, 0.232, 0.012, 0.232",False
+x:par_GLMMnative_2_H1_mean_formula,"{""dgp"": ""GLMM-native"", ""model"": ""2"", ""arm"": ""H1"", ""parameter"": ""mean.formula""}",value,~time * trt + age,~time * trt + age,~time * trt + age,False
+x:par_GLMMnative_2_H1_re_formula,"{""dgp"": ""GLMM-native"", ""model"": ""2"", ""arm"": ""H1"", ""parameter"": ""re.formula""}",value,~1,~1,~1,False
+x:par_GLMMnative_3_H1_D,"{""dgp"": ""GLMM-native"", ""model"": ""3"", ""arm"": ""H1"", ""parameter"": ""D""}",value,"1, 0.01; 0.01, 0.001","1, 0.01; 0.01, 0.001","1, 0.01; 0.01, 0.001",False
+x:par_GLMMnative_3_H1_beta_c,"{""dgp"": ""GLMM-native"", ""model"": ""3"", ""arm"": ""H1"", ""parameter"": ""beta_c""}",value,"-2.32, 0.116, 0.232, 0.232","-2.32, 0.116, 0.232, 0.232","-2.32, 0.116, 0.232, 0.232",False
+x:par_GLMMnative_3_H1_mean_formula,"{""dgp"": ""GLMM-native"", ""model"": ""3"", ""arm"": ""H1"", ""parameter"": ""mean.formula""}",value,~time * trt,~time * trt,~time * trt,False
+x:par_GLMMnative_3_H1_re_formula,"{""dgp"": ""GLMM-native"", ""model"": ""3"", ""arm"": ""H1"", ""parameter"": ""re.formula""}",value,~1 + time,~1 + time,~1 + time,False
+x:par_GLMMnative_4_H1_D,"{""dgp"": ""GLMM-native"", ""model"": ""4"", ""arm"": ""H1"", ""parameter"": ""D""}",value,"1, 0.01; 0.01, 0.001","1, 0.01; 0.01, 0.001","1, 0.01; 0.01, 0.001",False
+x:par_GLMMnative_4_H1_beta_c,"{""dgp"": ""GLMM-native"", ""model"": ""4"", ""arm"": ""H1"", ""parameter"": ""beta_c""}",value,"-2.32, 0.232, 0.232, 0.058","-2.32, 0.232, 0.232, 0.058","-2.32, 0.232, 0.232, 0.058",False
+x:par_GLMMnative_4_H1_mean_formula,"{""dgp"": ""GLMM-native"", ""model"": ""4"", ""arm"": ""H1"", ""parameter"": ""mean.formula""}",value,~time * trt,~time * trt,~time * trt,False
+x:par_GLMMnative_4_H1_re_formula,"{""dgp"": ""GLMM-native"", ""model"": ""4"", ""arm"": ""H1"", ""parameter"": ""re.formula""}",value,~1 + time,~1 + time,~1 + time,False
+x:par_GLMMnative_5_H1_D,"{""dgp"": ""GLMM-native"", ""model"": ""5"", ""arm"": ""H1"", ""parameter"": ""D""}",value,"1, 0.01, 0.01; 0.01, 0.001, 0; 0.01, 0, 0.001","1, 0.01, 0.01; 0.01, 0.001, 0; 0.01, 0, 0.001","1, 0.01, 0.01; 0.01, 0.001, 0; 0.01, 0, 0.001",False
+x:par_GLMMnative_5_H1_beta_c,"{""dgp"": ""GLMM-native"", ""model"": ""5"", ""arm"": ""H1"", ""parameter"": ""beta_c""}",value,"-2.32, 0.116, 0.232, 0.058, 0.232","-2.32, 0.116, 0.232, 0.058, 0.232","-2.32, 0.116, 0.232, 0.058, 0.232",False
+x:par_GLMMnative_5_H1_mean_formula,"{""dgp"": ""GLMM-native"", ""model"": ""5"", ""arm"": ""H1"", ""parameter"": ""mean.formula""}",value,~time * trt + dose,~time * trt + dose,~time * trt + dose,False
+x:par_GLMMnative_5_H1_re_formula,"{""dgp"": ""GLMM-native"", ""model"": ""5"", ""arm"": ""H1"", ""parameter"": ""re.formula""}",value,~1 + time + dose,~1 + time + dose,~1 + time + dose,False
+x:par_GenBinaryY_1_H1_beta,"{""dgp"": ""GenBinaryY"", ""model"": ""1"", ""arm"": ""H1"", ""parameter"": ""beta""}",value,"-2, 0.1, 0.2, 0.2","-2, 0.1, 0.2, 0.2","-2, 0.1, 0.2, 0.2",False
+x:par_GenBinaryY_1_H1_gamma,"{""dgp"": ""GenBinaryY"", ""model"": ""1"", ""arm"": ""H1"", ""parameter"": ""gamma""}",value,1,1,1,False
+x:par_GenBinaryY_1_H1_lv_formula,"{""dgp"": ""GenBinaryY"", ""model"": ""1"", ""arm"": ""H1"", ""parameter"": ""lv.formula""}",value,~1,~1,~1,False
+x:par_GenBinaryY_1_H1_mean_formula,"{""dgp"": ""GenBinaryY"", ""model"": ""1"", ""arm"": ""H1"", ""parameter"": ""mean.formula""}",value,~time * trt,~time * trt,~time * trt,False
+x:par_GenBinaryY_1_H1_sigma,"{""dgp"": ""GenBinaryY"", ""model"": ""1"", ""arm"": ""H1"", ""parameter"": ""sigma""}",value,1,1,1,False
+x:par_GenBinaryY_1_H1_t_formula,"{""dgp"": ""GenBinaryY"", ""model"": ""1"", ""arm"": ""H1"", ""parameter"": ""t.formula""}",value,~1,~1,~1,False
+x:par_GenBinaryY_2_H1_beta,"{""dgp"": ""GenBinaryY"", ""model"": ""2"", ""arm"": ""H1"", ""parameter"": ""beta""}",value,"-2, 0.1, 0.2, 0.01, 0.2","-2, 0.1, 0.2, 0.01, 0.2","-2, 0.1, 0.2, 0.01, 0.2",False
+x:par_GenBinaryY_2_H1_gamma,"{""dgp"": ""GenBinaryY"", ""model"": ""2"", ""arm"": ""H1"", ""parameter"": ""gamma""}",value,1,1,1,False
+x:par_GenBinaryY_2_H1_lv_formula,"{""dgp"": ""GenBinaryY"", ""model"": ""2"", ""arm"": ""H1"", ""parameter"": ""lv.formula""}",value,~1,~1,~1,False
+x:par_GenBinaryY_2_H1_mean_formula,"{""dgp"": ""GenBinaryY"", ""model"": ""2"", ""arm"": ""H1"", ""parameter"": ""mean.formula""}",value,~time * trt + age,~time * trt + age,~time * trt + age,False
+x:par_GenBinaryY_2_H1_sigma,"{""dgp"": ""GenBinaryY"", ""model"": ""2"", ""arm"": ""H1"", ""parameter"": ""sigma""}",value,1,1,1,False
+x:par_GenBinaryY_2_H1_t_formula,"{""dgp"": ""GenBinaryY"", ""model"": ""2"", ""arm"": ""H1"", ""parameter"": ""t.formula""}",value,~1,~1,~1,False
+x:par_GenBinaryY_3_H1_beta,"{""dgp"": ""GenBinaryY"", ""model"": ""3"", ""arm"": ""H1"", ""parameter"": ""beta""}",value,"-2, 0.1, 0.2, 0.2","-2, 0.1, 0.2, 0.2","-2, 0.1, 0.2, 0.2",False
+x:par_GenBinaryY_3_H1_gamma,"{""dgp"": ""GenBinaryY"", ""model"": ""3"", ""arm"": ""H1"", ""parameter"": ""gamma""}",value,1,1,1,False
+x:par_GenBinaryY_3_H1_lv_formula,"{""dgp"": ""GenBinaryY"", ""model"": ""3"", ""arm"": ""H1"", ""parameter"": ""lv.formula""}",value,~time,~time,~time,False
+x:par_GenBinaryY_3_H1_mean_formula,"{""dgp"": ""GenBinaryY"", ""model"": ""3"", ""arm"": ""H1"", ""parameter"": ""mean.formula""}",value,~time * trt,~time * trt,~time * trt,False
+x:par_GenBinaryY_3_H1_sigma,"{""dgp"": ""GenBinaryY"", ""model"": ""3"", ""arm"": ""H1"", ""parameter"": ""sigma""}",value,"1, 0.01","1, 0.01","1, 0.01",False
+x:par_GenBinaryY_3_H1_t_formula,"{""dgp"": ""GenBinaryY"", ""model"": ""3"", ""arm"": ""H1"", ""parameter"": ""t.formula""}",value,~1,~1,~1,False
+x:par_GenBinaryY_4_H1_beta,"{""dgp"": ""GenBinaryY"", ""model"": ""4"", ""arm"": ""H1"", ""parameter"": ""beta""}",value,"-2, 0.2, 0.2, 0.05","-2, 0.2, 0.2, 0.05","-2, 0.2, 0.2, 0.05",False
+x:par_GenBinaryY_4_H1_gamma,"{""dgp"": ""GenBinaryY"", ""model"": ""4"", ""arm"": ""H1"", ""parameter"": ""gamma""}",value,"1, 0.01","1, 0.01","1, 0.01",False
+x:par_GenBinaryY_4_H1_lv_formula,"{""dgp"": ""GenBinaryY"", ""model"": ""4"", ""arm"": ""H1"", ""parameter"": ""lv.formula""}",value,~time,~time,~time,False
+x:par_GenBinaryY_4_H1_mean_formula,"{""dgp"": ""GenBinaryY"", ""model"": ""4"", ""arm"": ""H1"", ""parameter"": ""mean.formula""}",value,~time * trt,~time * trt,~time * trt,False
+x:par_GenBinaryY_4_H1_sigma,"{""dgp"": ""GenBinaryY"", ""model"": ""4"", ""arm"": ""H1"", ""parameter"": ""sigma""}",value,"1, 0.01","1, 0.01","1, 0.01",False
+x:par_GenBinaryY_4_H1_t_formula,"{""dgp"": ""GenBinaryY"", ""model"": ""4"", ""arm"": ""H1"", ""parameter"": ""t.formula""}",value,~trt,~trt,~trt,False
+x:par_GenBinaryY_5_H1_beta,"{""dgp"": ""GenBinaryY"", ""model"": ""5"", ""arm"": ""H1"", ""parameter"": ""beta""}",value,"-2, 0.1, 0.2, 0.05, 0.2","-2, 0.1, 0.2, 0.05, 0.2","-2, 0.1, 0.2, 0.05, 0.2",False
+x:par_GenBinaryY_5_H1_gamma,"{""dgp"": ""GenBinaryY"", ""model"": ""5"", ""arm"": ""H1"", ""parameter"": ""gamma""}",value,"1, 0.1, 0.05","1, 0.1, 0.05","1, 0.1, 0.05",False
+x:par_GenBinaryY_5_H1_lv_formula,"{""dgp"": ""GenBinaryY"", ""model"": ""5"", ""arm"": ""H1"", ""parameter"": ""lv.formula""}",value,~time + dose,~time + dose,~time + dose,False
+x:par_GenBinaryY_5_H1_mean_formula,"{""dgp"": ""GenBinaryY"", ""model"": ""5"", ""arm"": ""H1"", ""parameter"": ""mean.formula""}",value,~time * trt + dose,~time * trt + dose,~time * trt + dose,False
+x:par_GenBinaryY_5_H1_sigma,"{""dgp"": ""GenBinaryY"", ""model"": ""5"", ""arm"": ""H1"", ""parameter"": ""sigma""}",value,"1, 0.01, 0.01","1, 0.01, 0.01","1, 0.01, 0.01",False
+x:par_GenBinaryY_5_H1_t_formula,"{""dgp"": ""GenBinaryY"", ""model"": ""5"", ""arm"": ""H1"", ""parameter"": ""t.formula""}",value,~trt + steroids,~trt + steroids,~trt + steroids,False

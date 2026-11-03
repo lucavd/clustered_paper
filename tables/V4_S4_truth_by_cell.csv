@@ -1,0 +1,205 @@
+dgp,scen,ntime,label,truth_marginal,truth_conditional,cond_source,marg_source
+GLMM-AR1,M1,2,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M1,2,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M1,3,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M1,3,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M1,4,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M1,4,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M1,6,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M1,6,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M1,8,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M1,8,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M1,10,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M1,10,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M1c,2,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M1c,2,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M1c,3,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M1c,3,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M1c,4,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M1c,4,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M1c,6,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M1c,6,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M2,2,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M2,2,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M2,3,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M2,3,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M2,4,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M2,4,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M2,6,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M2,6,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M2,8,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M2,8,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M2,10,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M2,10,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M3,2,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M3,2,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M3,3,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M3,3,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M3,4,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M3,4,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M3,6,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M3,6,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M3,8,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M3,8,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M3,10,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M3,10,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M4,2,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M4,2,mmlb,0.05,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M4,3,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M4,3,mmlb,0.05,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M4,4,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M4,4,mmlb,0.05,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M4,6,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M4,6,mmlb,0.05,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M4,8,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M4,8,mmlb,0.05,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M4,10,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M4,10,mmlb,0.05,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M5,2,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M5,2,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M5,3,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M5,3,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M5,4,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M5,4,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M5,6,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M5,6,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M5,8,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M5,8,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M5,10,manual,0,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-AR1,M5,10,mmlb,0.2,,per replicate (results_v4/S4/truth_ar1_rep.rds),generator target
+GLMM-native,M1,2,manual,-0.00124858895330602,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M1,2,mmlb,0.201789406956594,0.232,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M1,3,manual,-0.00124183132694975,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M1,3,mmlb,0.199455363127681,0.232,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M1,4,manual,-0.0012324539303088,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M1,4,mmlb,0.197227472124961,0.232,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M1,6,manual,-0.00120576272398951,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M1,6,mmlb,0.193551452181124,0.232,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M1,8,manual,-0.00116837938268988,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M1,8,mmlb,0.191318152186398,0.232,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M1,10,manual,-0.00112046946956841,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M1,10,mmlb,0.190663290646573,0.232,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M1c,2,manual,0.000568924916630947,0,generator beta_c,"GH quadrature, weighted design (S4)"
+GLMM-native,M1c,2,mmlb,0.19084349728897,0.298392539381883,generator beta_c,"GH quadrature, weighted design (S4)"
+GLMM-native,M1c,3,manual,0.000568393410723155,0,generator beta_c,"GH quadrature, weighted design (S4)"
+GLMM-native,M1c,3,mmlb,0.192293656310204,0.298392539381883,generator beta_c,"GH quadrature, weighted design (S4)"
+GLMM-native,M1c,4,manual,0.000569432013647968,0,generator beta_c,"GH quadrature, weighted design (S4)"
+GLMM-native,M1c,4,mmlb,0.19399025386694,0.298392539381883,generator beta_c,"GH quadrature, weighted design (S4)"
+GLMM-native,M1c,6,manual,0.000571957415266735,0,generator beta_c,"GH quadrature, weighted design (S4)"
+GLMM-native,M1c,6,mmlb,0.197848798642472,0.298392539381883,generator beta_c,"GH quadrature, weighted design (S4)"
+GLMM-native,M2,2,manual,-0.00124846908362195,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M2,2,mmlb,0.201788894273579,0.232,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M2,3,manual,-0.00124170707832949,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M2,3,mmlb,0.19945512123473,0.232,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M2,4,manual,-0.00123232559714771,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M2,4,mmlb,0.197227516357905,0.232,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M2,6,manual,-0.00120562772631123,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M2,6,mmlb,0.193552016169682,0.232,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M2,8,manual,-0.00116824016828589,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M2,8,mmlb,0.191319047977741,0.232,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M2,10,manual,-0.00112032882577836,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M2,10,mmlb,0.19066427404845,0.232,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M3,2,manual,-0.00179988749667423,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M3,2,mmlb,0.200669651297475,0.232,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M3,3,manual,-0.00182598908337686,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M3,3,mmlb,0.197651077762538,0.232,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M3,4,manual,-0.00184936351061684,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M3,4,mmlb,0.194656002681734,0.232,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M3,6,manual,-0.00188460923414417,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M3,6,mmlb,0.189291295681672,0.232,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M3,8,manual,-0.00190233752121848,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M3,8,mmlb,0.185266550798487,0.232,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M3,10,manual,-0.00190131206148084,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M3,10,mmlb,0.182827558192562,0.232,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M4,2,manual,-0.00304490964568286,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M4,2,mmlb,0.0474958369632174,0.058,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M4,3,manual,-0.00303786897472304,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M4,3,mmlb,0.0466782045006252,0.058,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M4,4,manual,-0.00300533793509086,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M4,4,mmlb,0.0458950606643669,0.058,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M4,6,manual,-0.00286095747829872,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M4,6,mmlb,0.0445959055535057,0.058,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M4,8,manual,-0.00262026420171671,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M4,8,mmlb,0.0438021871513272,0.058,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M4,10,manual,-0.00230701476075862,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M4,10,mmlb,0.0435821148520879,0.058,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M5,2,manual,-0.00179414151921651,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M5,2,mmlb,0.200612724394652,0.232,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M5,3,manual,-0.00181993168385713,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M5,3,mmlb,0.197606079894638,0.232,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M5,4,manual,-0.00184301491857821,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M5,4,mmlb,0.194623818987297,0.232,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M5,6,manual,-0.00187778369400717,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M5,6,mmlb,0.189283272301783,0.232,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M5,8,manual,-0.00189520398100115,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M5,8,mmlb,0.185276402314877,0.232,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M5,10,manual,-0.00189405275805834,0,generator beta_c,"GH quadrature, weighted design (S2)"
+GLMM-native,M5,10,mmlb,0.182847193977472,0.232,generator beta_c,"GH quadrature, weighted design (S2)"
+GenBinaryY,M1,2,manual,0,,none (D-18),generator beta
+GenBinaryY,M1,2,mmlb,0.2,,none (D-18),generator beta
+GenBinaryY,M1,3,manual,0,,none (D-18),generator beta
+GenBinaryY,M1,3,mmlb,0.2,,none (D-18),generator beta
+GenBinaryY,M1,4,manual,0,,none (D-18),generator beta
+GenBinaryY,M1,4,mmlb,0.2,,none (D-18),generator beta
+GenBinaryY,M1,6,manual,0,,none (D-18),generator beta
+GenBinaryY,M1,6,mmlb,0.2,,none (D-18),generator beta
+GenBinaryY,M1,8,manual,0,,none (D-18),generator beta
+GenBinaryY,M1,8,mmlb,0.2,,none (D-18),generator beta
+GenBinaryY,M1,10,manual,0,,none (D-18),generator beta
+GenBinaryY,M1,10,mmlb,0.2,,none (D-18),generator beta
+GenBinaryY,M1c,2,manual,0,,none (D-18),generator beta
+GenBinaryY,M1c,2,mmlb,0.2,,none (D-18),generator beta
+GenBinaryY,M1c,3,manual,0,,none (D-18),generator beta
+GenBinaryY,M1c,3,mmlb,0.2,,none (D-18),generator beta
+GenBinaryY,M1c,4,manual,0,,none (D-18),generator beta
+GenBinaryY,M1c,4,mmlb,0.2,,none (D-18),generator beta
+GenBinaryY,M1c,6,manual,0,,none (D-18),generator beta
+GenBinaryY,M1c,6,mmlb,0.2,,none (D-18),generator beta
+GenBinaryY,M2,2,manual,0,,none (D-18),generator beta
+GenBinaryY,M2,2,mmlb,0.2,,none (D-18),generator beta
+GenBinaryY,M2,3,manual,0,,none (D-18),generator beta
+GenBinaryY,M2,3,mmlb,0.2,,none (D-18),generator beta
+GenBinaryY,M2,4,manual,0,,none (D-18),generator beta
+GenBinaryY,M2,4,mmlb,0.2,,none (D-18),generator beta
+GenBinaryY,M2,6,manual,0,,none (D-18),generator beta
+GenBinaryY,M2,6,mmlb,0.2,,none (D-18),generator beta
+GenBinaryY,M2,8,manual,0,,none (D-18),generator beta
+GenBinaryY,M2,8,mmlb,0.2,,none (D-18),generator beta
+GenBinaryY,M2,10,manual,0,,none (D-18),generator beta
+GenBinaryY,M2,10,mmlb,0.2,,none (D-18),generator beta
+GenBinaryY,M3,2,manual,0,,none (D-18),generator beta
+GenBinaryY,M3,2,mmlb,0.2,,none (D-18),generator beta
+GenBinaryY,M3,3,manual,0,,none (D-18),generator beta
+GenBinaryY,M3,3,mmlb,0.2,,none (D-18),generator beta
+GenBinaryY,M3,4,manual,0,,none (D-18),generator beta
+GenBinaryY,M3,4,mmlb,0.2,,none (D-18),generator beta
+GenBinaryY,M3,6,manual,0,,none (D-18),generator beta
+GenBinaryY,M3,6,mmlb,0.2,,none (D-18),generator beta
+GenBinaryY,M3,8,manual,0,,none (D-18),generator beta
+GenBinaryY,M3,8,mmlb,0.2,,none (D-18),generator beta
+GenBinaryY,M3,10,manual,0,,none (D-18),generator beta
+GenBinaryY,M3,10,mmlb,0.2,,none (D-18),generator beta
+GenBinaryY,M4,2,manual,0,,none (D-18),generator beta
+GenBinaryY,M4,2,mmlb,0.05,,none (D-18),generator beta
+GenBinaryY,M4,3,manual,0,,none (D-18),generator beta
+GenBinaryY,M4,3,mmlb,0.05,,none (D-18),generator beta
+GenBinaryY,M4,4,manual,0,,none (D-18),generator beta
+GenBinaryY,M4,4,mmlb,0.05,,none (D-18),generator beta
+GenBinaryY,M4,6,manual,0,,none (D-18),generator beta
+GenBinaryY,M4,6,mmlb,0.05,,none (D-18),generator beta
+GenBinaryY,M4,8,manual,0,,none (D-18),generator beta
+GenBinaryY,M4,8,mmlb,0.05,,none (D-18),generator beta
+GenBinaryY,M4,10,manual,0,,none (D-18),generator beta
+GenBinaryY,M4,10,mmlb,0.05,,none (D-18),generator beta
+GenBinaryY,M5,2,manual,0,,none (D-18),generator beta
+GenBinaryY,M5,2,mmlb,0.2,,none (D-18),generator beta
+GenBinaryY,M5,3,manual,0,,none (D-18),generator beta
+GenBinaryY,M5,3,mmlb,0.2,,none (D-18),generator beta
+GenBinaryY,M5,4,manual,0,,none (D-18),generator beta
+GenBinaryY,M5,4,mmlb,0.2,,none (D-18),generator beta
+GenBinaryY,M5,6,manual,0,,none (D-18),generator beta
+GenBinaryY,M5,6,mmlb,0.2,,none (D-18),generator beta
+GenBinaryY,M5,8,manual,0,,none (D-18),generator beta
+GenBinaryY,M5,8,mmlb,0.2,,none (D-18),generator beta
+GenBinaryY,M5,10,manual,0,,none (D-18),generator beta
+GenBinaryY,M5,10,mmlb,0.2,,none (D-18),generator beta

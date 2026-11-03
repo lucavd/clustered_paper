@@ -1,0 +1,6 @@
+item,value,source
+n_cmp,127,MMM-package@626393b:fewclust/dev/checks_0.3.1/out/c9b_summary.txt
+n_mismatch,8,MMM-package@626393b:fewclust/dev/checks_0.3.1/out/c9b_summary.txt
+n_usable_study,119,MMM-package@626393b:fewclust/dev/checks_0.3.1/out/c9b_summary.txt
+n_mismatch_usable,2,MMM-package@626393b:fewclust/dev/checks_0.3.1/out/c9b_summary.txt
+n_coh,4,MMM-package@626393b:fewclust/dev/checks_0.3.1/out/c9b_summary.txt

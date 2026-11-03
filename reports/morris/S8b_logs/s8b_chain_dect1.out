@@ -1,0 +1,16 @@
+OK   s5_build 1400 s
+OK   s5_run 1348 s
+OK   s5_checks 32 s
+OK   s6_run 1096 s
+OK   s6_run_boby 572 s
+OK   s6_checks 8 s
+OK   s6_tables 1 s
+OK   s6_figdata 39 s
+OK   s6_dp_rates 11 s
+OK   s6_rule 1 s
+OK   s6_rule_safety 0 s
+OK   s6_m1c_reasons 40 s
+OK   s6_m1c_glmer_extreme 35 s
+OK   s7_extras 20 s
+OK   s7f_table5_recompute 64 s
+chain done

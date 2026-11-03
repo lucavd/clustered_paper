@@ -1,0 +1,19 @@
+id,scenario,what,n_cells,expected,est,mcse,lo,hi,outcome
+PB1,GenBinaryY M6,"share of MMM fits using the fit without slope, H0 (%)",96,15,44.3265692356219,,0,40,smentita
+PB4,GenBinaryY M6,"type I of MMM with the rule, mean over the 96 H0 cells (%)",96,5.3,5.27151103804242,0.0767687666994596,4,6,confermata
+PB5,GenBinaryY M6,"type I difference with rule - without, mean over H0 cells (points)",96,-0.3,-0.779228473840427,0.0685053297819189,-1,1,confermata
+PB6,GenBinaryY M6,"power difference with rule - without, mean over H1 cells (points)",96,0,-0.235419551216638,0.0646421549236042,-1,1,confermata
+PB1,GenBinaryY M7,"share of MMM fits using the fit without slope, H0 (%)",96,5,35.6083866083446,,0,40,confermata
+PB4,GenBinaryY M7,"type I of MMM with the rule, mean over the 96 H0 cells (%)",96,5.3,5.84216613685135,0.0813290645372115,4,6,indeterminata
+PB5,GenBinaryY M7,"type I difference with rule - without, mean over H0 cells (points)",96,-0.3,-0.593464914047832,0.0537905317817813,-1,1,confermata
+PB6,GenBinaryY M7,"power difference with rule - without, mean over H1 cells (points)",96,0,-0.300069310256658,0.0551095659431462,-1,1,confermata
+PB1,GLMM-native M6,"share of MMM fits using the fit without slope, H0 (%)",96,35,51.3653781371063,,0,40,smentita
+PB4,GLMM-native M6,"type I of MMM with the rule, mean over the 96 H0 cells (%)",96,5.3,5.21094999537505,0.0796935626581214,4,6,confermata
+PB5,GLMM-native M6,"type I difference with rule - without, mean over H0 cells (points)",96,-0.5,-0.822668865625877,0.0458808824812989,-1,1,confermata
+PB6,GLMM-native M6,"power difference with rule - without, mean over H1 cells (points)",96,0,-0.0721309942444693,0.0545967718036062,-1,1,confermata
+PB1,GLMM-native M7,"share of MMM fits using the fit without slope, H0 (%)",96,15,43.6000294808217,,0,40,smentita
+PB4,GLMM-native M7,"type I of MMM with the rule, mean over the 96 H0 cells (%)",96,5.3,5.6487212130134,0.0895394040613722,4,6,confermata
+PB5,GLMM-native M7,"type I difference with rule - without, mean over H0 cells (points)",96,-0.5,-0.88555573042176,0.0496866225291068,-1,1,confermata
+PB6,GLMM-native M7,"power difference with rule - without, mean over H1 cells (points)",96,0,-0.233086339003411,0.0516857047957723,-1,1,confermata
+PB2,all four,design points with MMM|t clearly above 7.5% (of 384),384,0,0,0,0,0,confermata
+PB3,all four,design points with FG|t clearly above 7.5% (of 384),384,0,2,0,0,0,smentita

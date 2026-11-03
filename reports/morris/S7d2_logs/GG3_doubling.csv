@@ -1,0 +1,12 @@
+part,value,pass
+datasets generated,1080,
+(a) offset fits compared,2160,
+"(a) glm.fit vs glm, max coef diff",0,TRUE
+"(a) score = numDeriv, datasets failing",,
+(b) datasets with centre,943,
+(b) |sum u| at centre >= 1e-8,1,FALSE
+(b) p at centre != 1,267,FALSE
+reported: finite intervals,544,
+reported: >1 accepted stretch on dense grid,86,
+reported: max |left steps|,567.666666666702,
+reported: max |right steps|,593.333333333322,

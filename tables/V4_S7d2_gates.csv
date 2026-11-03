@@ -1,0 +1,16 @@
+gate,check,value,target,pass
+GG1,chunk files,47520,47520,TRUE
+GG1,replicates,4752000,4752000,TRUE
+GG1,unique replicate keys,4752000,4752000,TRUE
+GG1,md5 before = after,1,1,TRUE
+GG1,md5 before = S7b list,1,1,TRUE
+GG2,n_obs and sum_y equal to S7d/S7e,0,0,TRUE
+GG2,p0 s7d_flip() = saved p_flip,0,0,TRUE
+GG2,p0 new function = saved p_flip,0,0,TRUE
+GG2,CI errors,0,0,TRUE
+GG4,intervals checked,4502130,,TRUE
+GG4,lo <= est <= hi violated,0,0,TRUE
+GG4,p < 0.05 at a reported end,0,0,TRUE
+GG4,not rejected 1e-4 beyond a finite end,78,0,FALSE
+GG4,  of which p not computable 1e-4 beyond,78,,
+GG4,reported: finite intervals of width 0,51,,

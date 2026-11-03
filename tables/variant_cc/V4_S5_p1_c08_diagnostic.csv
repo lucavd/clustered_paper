@@ -1,0 +1,10 @@
+weighting,pair,rho
+perN,GenBinaryY vs GLMM-native,0.928571428571429
+perN,GenBinaryY vs GLMM-AR1,0.928571428571429
+perN,GLMM-native vs GLMM-AR1,1
+perCell,GenBinaryY vs GLMM-native,0.833333333333334
+perCell,GenBinaryY vs GLMM-AR1,0.833333333333334
+perCell,GLMM-native vs GLMM-AR1,1
+perNT,GenBinaryY vs GLMM-native,0.880952380952381
+perNT,GenBinaryY vs GLMM-AR1,0.904761904761905
+perNT,GLMM-native vs GLMM-AR1,0.976190476190476

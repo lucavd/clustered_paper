@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+# s11_text_pipeline.sh -- S11: text-only pass of the closing pipeline (no recomputation of the per-point tables) (D-89, D-90, D-91): copy of R/s9/s9_pipeline.sh with the table variant cv
+#   (D-90) instead of nc, logs in reports/morris/S11_logs, provenance runs in results_v4/S11/prov, and the S11 registry
+#   sources (separated datasets with D-90: R/s11/s11_degen_ind_cv.R, s11_degen_tables.R; keys: R/s11/s11_keys.R).
+# History of R/s9/s9_pipeline.sh: copy of R/s8b/s8b_pipeline.sh with
+#   * the table variant nc (constant-outcome datasets not usable) instead of kcfc;
+#   * the scripts that S8b ran once as prerequisites and that read per-replicate GEE rows, rerun in dependency order:
+#     sensitivity to the usability limits (R/s7g/s7g_filter.R), average of the MD and KC variances and stability of the
+#     rule (R/s8b/provenance/, run in results_v4/S9/prov and copied to tables/ only if the columns are those of the
+#     stored file), Tables S36, S37 and the S26 rows (R/s8b/sub/);
+#   * a first spec + registry build before the sub-tables, so that their registry checks read the nc paths.
+# Prerequisites (outputs on disk): R/s11/s11_cv_pipeline.sh, R/s11/s11_upstream.sh. Run: bash R/s11/s11_pipeline.sh [tag]
+# Logs in reports/morris/S11_logs/pipeline_<tag>/ (default tag: run).
+set -u
+cd /home/user/MMM
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 R_LIBS=/home/user/MMM/renv/library/linux-ubuntu-noble/R-4.6/x86_64-pc-linux-gnu
+TAG=${1:-run}
+L=/home/user/MMM/reports/morris/S11_logs/pipeline_$TAG; F=reports/morris/S7f_figures; P=results_v4/S11/prov; mkdir -p $L $F $P manuscript/v5/figures
+SKIP=${START:+1}   # START=<step name>: resume from that step (earlier steps are skipped)
+run() { b=$1; shift; if [ -n "$SKIP" ]; then if [ "$b" = "$START" ]; then SKIP=; else echo "skip $b"; return 0; fi; fi; t0=$(date +%s); if "$@" > $L/$b.log 2>&1; then echo "OK   $b $(( $(date +%s) - t0 )) s"; else echo "FAIL $b (see $L/$b.log)"; tail -15 $L/$b.log; exit 1; fi; }
+run s6cc_cv    env S6CC_VARIANT=cv Rscript --vanilla R/s6/s6cc_compare.R
+run cpflags    Rscript --vanilla R/s7f/s7f_cpflags.R
+run s11_keys   Rscript --vanilla R/s11/s11_keys.R
+run spec0      python3 -B py/s8b_build_spec.py
+run registry0  Rscript --vanilla R/s7f/s7f_numbers.R
+run mcse_captions python3 -B py/s8b/s8b_mcse_captions.py
+run sub_keys   Rscript --vanilla R/s8b/sub/s8b_sub_keys.R
+run spec       python3 -B py/s8b_build_spec.py
+run registry   Rscript --vanilla R/s7f/s7f_numbers.R
+python3 -B tools/s7g_verify_registry.py > $L/GB2_verify.log 2>&1; echo "verify exit $?" >> $L/GB2_verify.log
+Rscript --vanilla -e '.libPaths("/home/user/MMM/renv/library/linux-ubuntu-noble/R-4.6/x86_64-pc-linux-gnu"); .libPaths(c("/home/user/R/s7d_lib", .libPaths())); suppressMessages({library(fewclust); library(clubSandwich); library(MMLB); library(lme4); library(geepack); library(geesmv)}); writeLines(capture.output(sessionInfo()), "reports/morris/S11_logs/sessionInfo.txt")' > $L/sessioninfo.log 2>&1
+cp manuscript/v4/reference.docx manuscript/v5/reference.docx
+python3 R/s9/s9_ref_style.py manuscript/v5/reference.docx > /dev/null   # D-88: Title 18 pt left; Heading 1-3 16/14/12 pt
+cd manuscript/v5
+for f in MMM_v5 MMM_v5_supplement; do
+  quarto render $f.qmd --to docx > /dev/null 2>&1 || echo "render docx $f failed"
+  quarto render $f.qmd --to html > /dev/null 2>&1 || echo "render html $f failed"
+  quarto render $f.qmd --to gfm --output ${f}_render.md > /dev/null 2>&1 || echo "render gfm $f failed"
+  MMM_S7_TRACE=1 quarto render $f.qmd --to gfm --output ${f}_trace.md > /dev/null 2>&1 || echo "trace $f failed"
+done
+cd /home/user/MMM
+python3 -B tools/s8b_check_numbers.py manuscript/v5/MMM_v5_trace.md manuscript/v5/MMM_v5_supplement_trace.md > $L/GF2.log 2>&1; echo "GF2 exit $?" >> $L/GF2.log
+python3 -B tools/s8b_check_claims.py manuscript/v5/MMM_v5_supplement.qmd > $L/GF4_supp.log 2>&1; echo "GF4 supp exit $?" >> $L/GF4_supp.log
+python3 -B tools/s8b_check_claims.py manuscript/v5/MMM_v5.qmd > $L/GF4.log 2>&1; echo "GF4 exit $?" >> $L/GF4.log
+python3 -B tools/s7_wordcount.py manuscript/v5/MMM_v5_render.md > $L/wordcount.log 2>&1
+python3 -B tools/s7_check_docx_format.py manuscript/v5/MMM_v5.docx manuscript/v5/MMM_v5_supplement.docx > $L/format.log 2>&1; echo "format exit $?" >> $L/format.log
+tail -3 $L/GB2_verify.log; grep -E '^GF2|exit' $L/GF2.log; head -1 $L/GF4.log; tail -1 $L/GF4.log; head -1 $L/GF4_supp.log; tail -1 $L/GF4_supp.log; cat $L/wordcount.log; tail -2 $L/format.log
+echo "text pipeline $TAG done"

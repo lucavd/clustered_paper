@@ -1,0 +1,4 @@
+gate,pass,detail
+G8,TRUE,"1685204 rows compared, 0 mismatches (estimate, SE, p); status identical in 1256567"
+G9,TRUE,"17280 chunk files; stored time:trt keys 1685204, rerun 1685204; stored failures 42406, rerun 42406; fits without the term 66"
+G10,TRUE,"1685204 replicates recomputed, 0 mismatches; boundary 1178907, fit without slope used 1139699"

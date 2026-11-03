@@ -1,0 +1,64 @@
+                                           relation   scen method pairs
+                                             <char> <char> <char> <int>
+ 1:    same N and T, mechanisms GenBinaryY~GLMM-AR1     M1 gee_fg    96
+ 2: same N and T, mechanisms GenBinaryY~GLMM-native     M1 gee_fg    96
+ 3:                   same mechanism, other N and T     M1 gee_fg 10800
+ 4:                 same mechanism, other N, same T     M1 gee_fg  2160
+ 5:                 same mechanism, same N, other T     M1 gee_fg   720
+ 6:                   other mechanism, other N or T     M1 gee_fg 27360
+ 7:   same N and T, mechanisms GLMM-AR1~GLMM-native     M1 gee_fg    96
+ 8: same N and T, mechanisms GenBinaryY~GLMM-native     M1    mmm    96
+ 9:                   same mechanism, other N and T     M1    mmm 10800
+10:                   other mechanism, other N or T     M1    mmm 27360
+11:                 same mechanism, other N, same T     M1    mmm  2160
+12:    same N and T, mechanisms GenBinaryY~GLMM-AR1     M1    mmm    96
+13:                 same mechanism, same N, other T     M1    mmm   720
+14:   same N and T, mechanisms GLMM-AR1~GLMM-native     M1    mmm    96
+15:    same N and T, mechanisms GenBinaryY~GLMM-AR1     M3 gee_fg    96
+16: same N and T, mechanisms GenBinaryY~GLMM-native     M3 gee_fg    96
+17:   same N and T, mechanisms GLMM-AR1~GLMM-native     M3 gee_fg    96
+18:                 same mechanism, same N, other T     M3 gee_fg   720
+19:                 same mechanism, other N, same T     M3 gee_fg  2160
+20:                   other mechanism, other N or T     M3 gee_fg 27360
+21:                   same mechanism, other N and T     M3 gee_fg 10800
+22:   same N and T, mechanisms GLMM-AR1~GLMM-native     M3    mmm    96
+23:                 same mechanism, other N, same T     M3    mmm  2160
+24:                   other mechanism, other N or T     M3    mmm 27360
+25:                   same mechanism, other N and T     M3    mmm 10800
+26: same N and T, mechanisms GenBinaryY~GLMM-native     M3    mmm    96
+27:                 same mechanism, same N, other T     M3    mmm   720
+28:    same N and T, mechanisms GenBinaryY~GLMM-AR1     M3    mmm    96
+                                           relation   scen method pairs
+                                             <char> <char> <char> <int>
+        mean_corr        q90
+            <num>      <num>
+ 1:  3.438846e-03 0.04803598
+ 2:  2.037592e-03 0.04190597
+ 3:  2.876213e-04 0.04610227
+ 4:  2.092789e-04 0.04409406
+ 5:  1.632698e-05 0.04188250
+ 6: -9.206785e-05 0.04502702
+ 7: -8.462092e-03 0.03810623
+ 8:  3.716529e-03 0.04805020
+ 9: -4.981342e-04 0.04627887
+10: -5.688688e-04 0.04744818
+11: -1.177168e-03 0.04507754
+12: -1.194573e-03 0.04834224
+13: -1.548930e-03 0.04451659
+14: -3.190070e-03 0.04967422
+15:  5.877400e-03 0.05101089
+16:  2.805287e-03 0.04208128
+17:  1.544462e-03 0.04853940
+18:  7.403679e-04 0.04249177
+19:  3.002065e-04 0.04467761
+20:  1.493246e-04 0.04502151
+21: -1.741567e-04 0.04507548
+22:  6.918658e-03 0.06346429
+23:  1.010633e-03 0.04913726
+24:  2.002190e-04 0.04713933
+25:  1.171486e-04 0.04731142
+26: -1.528303e-04 0.04219613
+27: -2.465566e-03 0.04381520
+28: -8.207878e-03 0.03596142
+        mean_corr        q90
+            <num>      <num>

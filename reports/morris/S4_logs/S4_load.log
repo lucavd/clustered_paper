@@ -1,0 +1,13 @@
+rows_timetrt.rds md5 092a5ad60b60e0ea28cb6b78ba2adbeb 
+results_full rows (time:trt or failure, gee_ss dropped): 22631954
+            used   (Mb) gc trigger   (Mb)  max used   (Mb)
+Ncells   1141136   61.0    3764850  201.1   2668261  142.6
+Vcells 443614686 3384.6  665813276 5079.8 665812575 5079.8
+S3 rows read: 7354096 (F1 2238009, F2 1470313, L 2495828, C 1149946)
+rows of results_full removed for F1/F2 cells: 3708354 (cells 480)
+glmer_lrt rows of results_full in M3-M5 set aside: 1727716
+            used   (Mb) gc trigger   (Mb)  max used   (Mb)
+Ncells   1057742   56.5    3011880  160.9   2668261  142.6
+Vcells 551328719 4206.4  967393506 7380.7 887655603 6772.3
+v4 rows 26416021 | by src: full 18824383, C 1293649, L 2238602, F2 1597829, F1 2461558
+elapsed 109.7 s

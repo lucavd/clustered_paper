@@ -1,0 +1,417 @@
+replicates with a missing analysis: 365 
+        miss     N
+      <char> <int>
+1: mmm,glmer   151
+2:       mmm   209
+3:     glmer     5
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+fixed-effect model matrix is rank deficient so dropping 2 columns / coefficients
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+boundary (singular) fit: see help('isSingular')
+     tech has_timetrt
+   <char>      <lgcl>
+1:    mmm       FALSE
+2:  glmer       FALSE
+3:    mmm       FALSE
+4:  glmer       FALSE
+                                                                           terms
+                                                                          <char>
+1: (Intercept);time;trt;gamma:(Intercept);log(sigma):(Intercept);log(sigma):time
+2:                                                          (Intercept);time;trt
+3:     (Intercept);time;gamma:(Intercept);log(sigma):(Intercept);log(sigma):time
+4:                                                              (Intercept);time
+       N
+   <int>
+1:   285
+2:    92
+3:    75
+4:    64
+            dgp   scen    arm      Ng   band     n used_B nonconv
+         <char> <char> <char>  <char> <char> <int>  <num>   <num>
+ 1: GLMM-native     M6     H0  N10-20   T2-3  5516  55.64   57.03
+ 2: GLMM-native     M6     H0  N10-20   T4-6  5929  66.03   47.48
+ 3: GLMM-native     M6     H0  N10-20  T8-10  5970  57.79   43.53
+ 4: GLMM-native     M6     H0  N25-55   T2-3  7730  62.98   53.34
+ 5: GLMM-native     M6     H0  N25-55   T4-6  7986  52.33   16.87
+ 6: GLMM-native     M6     H0  N25-55  T8-10  7997  47.98   34.05
+ 7: GLMM-native     M6     H0 N65-145   T2-3 17864  60.14   37.37
+ 8: GLMM-native     M6     H0 N65-145   T4-6 18000  45.01    8.64
+ 9: GLMM-native     M6     H0 N65-145  T8-10 18000  36.83   24.97
+10: GLMM-native     M7     H0  N10-20   T2-3  5464  55.75   56.24
+11: GLMM-native     M7     H0  N10-20   T4-6  5918  62.55   45.42
+12: GLMM-native     M7     H0  N10-20  T8-10  5968  49.30   38.46
+13: GLMM-native     M7     H0  N25-55   T2-3  7741  63.05   54.53
+14: GLMM-native     M7     H0  N25-55   T4-6  7990  46.13   15.72
+15: GLMM-native     M7     H0  N25-55  T8-10  8000  31.67   24.82
+16: GLMM-native     M7     H0 N65-145   T2-3 17898  58.89   36.78
+17: GLMM-native     M7     H0 N65-145   T4-6 17998  36.79    7.00
+18: GLMM-native     M7     H0 N65-145  T8-10 18000  19.21   15.77
+19:  GenBinaryY     M6     H0  N10-20   T2-3  5539  57.28   57.59
+20:  GenBinaryY     M6     H0  N10-20   T4-6  5882  64.88   51.36
+21:  GenBinaryY     M6     H0  N10-20  T8-10  5969  51.73   41.90
+22:  GenBinaryY     M6     H0  N25-55   T2-3  7808  64.31   56.57
+23:  GenBinaryY     M6     H0  N25-55   T4-6  7978  46.82   19.67
+24:  GenBinaryY     M6     H0  N25-55  T8-10  7997  33.73   23.85
+25:  GenBinaryY     M6     H0 N65-145   T2-3 17944  58.63   38.05
+26:  GenBinaryY     M6     H0 N65-145   T4-6 17994  35.35    6.81
+27:  GenBinaryY     M6     H0 N65-145  T8-10 17999  20.82   14.05
+28:  GenBinaryY     M7     H0  N10-20   T2-3  5535  56.06   57.67
+29:  GenBinaryY     M7     H0  N10-20   T4-6  5895  61.83   53.74
+30:  GenBinaryY     M7     H0  N10-20  T8-10  5951  43.98   38.87
+31:  GenBinaryY     M7     H0  N25-55   T2-3  7811  63.76   56.27
+32:  GenBinaryY     M7     H0  N25-55   T4-6  7981  37.99   19.86
+33:  GenBinaryY     M7     H0  N25-55  T8-10  7996  17.80   14.61
+34:  GenBinaryY     M7     H0 N65-145   T2-3 17937  56.84   38.86
+35:  GenBinaryY     M7     H0 N65-145   T4-6 17999  20.72    4.09
+36:  GenBinaryY     M7     H0 N65-145  T8-10 17999   6.33    5.51
+            dgp   scen    arm      Ng   band     n used_B nonconv
+         <char> <char> <char>  <char> <char> <int>  <num>   <num>
+    small_slope_conv   code3   code4 code5 rej_B_H0
+               <num>   <num>   <num> <num>    <num>
+ 1:            7.977 16.6606  0.0906 40.28     1.73
+ 2:           24.068 11.0643  2.5805 33.83     4.44
+ 3:           14.908 10.1340 20.8543 12.55     5.88
+ 4:           18.137 13.2083  0.5821 39.55     4.54
+ 5:           36.376  1.6404  2.7423 12.48     5.34
+ 6:           13.930  2.1883 24.0340  7.83     5.50
+ 7:           24.894 13.7931  1.6178 21.96     5.50
+ 8:           36.406  0.0500  1.7833  6.81     5.39
+ 9:           11.861  0.3833 18.1889  6.39     5.43
+10:            8.254 16.7826  0.1098 39.35     1.61
+11:           22.288 10.7638  2.5684 32.09     4.86
+12:           11.495  8.9477 19.3867 10.12     6.32
+13:           17.104 13.3058  0.6330 40.59     4.06
+14:           31.076  1.4143  2.6408 11.66     5.91
+15:            6.850  1.5875 16.0625  7.17     6.43
+16:           23.969 13.4317  1.4862 21.86     5.64
+17:           29.803  0.0222  1.2501  5.73     5.75
+18:            3.439  0.1667  8.4333  7.17     5.64
+19:            6.283 30.4026  0.1805 27.01     1.64
+20:           18.038 22.6964  1.7341 26.93     5.19
+21:           10.605 16.4182 15.1449 10.34     5.15
+22:           13.922 25.3202  0.7428 30.51     4.16
+23:           27.676  6.8438  1.9804 10.84     5.57
+24:            9.879  3.3888 14.4554  6.00     5.23
+25:           21.818 17.8221  2.2960 17.93     5.72
+26:           28.548  0.4724  0.9614  5.37     5.30
+27:            6.778  0.4111  8.7449  4.89     5.36
+28:            5.492 30.4426  0.1987 27.03     1.39
+29:           12.621 26.8024  1.6624 25.28     5.10
+30:            6.268 19.4085 11.5779  7.88     6.30
+31:           12.956 26.4883  0.8578 28.92     4.34
+32:           18.682  9.0340  1.2780  9.55     6.76
+33:            3.227  3.7519  7.5663  3.29     5.83
+34:           19.201 19.2507  2.2356 17.37     5.68
+35:           16.629  0.8334  0.3334  2.92     5.66
+36:            0.822  0.1945  2.6057  2.71     5.70
+    small_slope_conv   code3   code4 code5 rej_B_H0
+               <num>   <num>   <num> <num>    <num>
+Key: <scen, N>
+      scen     N     2     3     4     6     8    10
+    <char> <int> <num> <num> <num> <num> <num> <num>
+ 1:     M6    10 0.000  5.95  7.21  9.09  7.76  6.90
+ 2:     M6    15 0.000  5.24  7.95  7.64  7.72  5.52
+ 3:     M6    20 0.000  7.37  9.08  7.48  7.46  5.35
+ 4:     M6    25 0.536  7.21  6.96  7.27  6.52  6.71
+ 5:     M6    35 0.890  4.56  5.38  6.21  5.20  6.51
+ 6:     M6    45 1.102  4.56  4.45  6.30  5.60  5.20
+ 7:     M6    55 2.024  3.88  5.11  6.60  5.30  4.60
+ 8:     M6    65 1.883  4.53  6.01  5.10  5.60  5.30
+ 9:     M6    75 2.335  4.61  4.00  4.60  5.00  4.50
+10:     M6    85 3.498  5.41  4.40  5.60  4.80  5.30
+11:     M6    95 4.312  4.50  5.10  5.50  4.70  5.60
+12:     M6   105 2.929  4.90  4.50  4.30  5.70  3.40
+13:     M6   115 3.431  5.10  5.10  4.80  5.70  3.80
+14:     M6   125 3.811  4.80  3.80  3.90  5.30  4.50
+15:     M6   135 3.904  4.70  5.30  6.80  4.90  4.40
+16:     M6   145 4.112  5.40  4.90  4.40  4.60  4.00
+17:     M7    10 0.000  9.31  8.37  8.32  7.78  9.08
+18:     M7    15 0.000  8.99  9.45  9.84  7.35  6.84
+19:     M7    20 0.000  7.25  7.77  9.30  7.06  7.05
+20:     M7    25 0.265  7.61 10.42  7.84  6.73  6.82
+21:     M7    35 0.712  6.03  7.00  5.74  5.20  5.41
+22:     M7    45 1.114  5.39  6.77  6.12  6.30  5.90
+23:     M7    55 2.017  5.58  5.01  5.40  5.20  5.10
+24:     M7    65 2.318  5.33  5.00  5.30  4.70  5.40
+25:     M7    75 3.118  6.01  5.31  4.30  4.90  5.10
+26:     M7    85 2.388  5.30  5.00  4.20  4.60  5.20
+27:     M7    95 2.256  5.30  4.00  3.90  5.40  5.80
+28:     M7   105 3.018  3.90  5.50  5.60  5.20  4.30
+29:     M7   115 4.646  5.60  5.20  5.00  4.80  4.10
+30:     M7   125 4.322  5.90  5.30  5.00  3.80  5.60
+31:     M7   135 3.916  5.90  5.00  6.30  4.80  3.40
+32:     M7   145 4.317  4.50  4.80  4.20  5.60  4.40
+      scen     N     2     3     4     6     8    10
+    <char> <int> <num> <num> <num> <num> <num> <num>
+    strategy        dgp   scen   band      Ng  n_dp mean_rate max_rate  n_hi
+      <char>     <char> <char> <char>  <char> <int>     <num>    <num> <int>
+ 1:    mmm|n GenBinaryY     M7   T2-3  N10-20     6      3.39     6.67     0
+ 2:    mmm|n GenBinaryY     M7   T2-3  N25-55     8      5.08     6.41     0
+ 3:    mmm|n GenBinaryY     M7   T2-3 N65-145    18      5.67     6.71     0
+ 4:    mmm|n GenBinaryY     M7   T4-6  N10-20     6      6.55     8.70     0
+ 5:    mmm|n GenBinaryY     M7   T4-6  N25-55     8      6.60     7.53     0
+ 6:    mmm|n GenBinaryY     M7   T4-6 N65-145    18      5.49     7.30     0
+ 7:    mmm|n GenBinaryY     M7  T8-10  N10-20     6      8.02     9.70     1
+ 8:    mmm|n GenBinaryY     M7  T8-10  N25-55     8      7.17     9.36     1
+ 9:    mmm|n GenBinaryY     M7  T8-10 N65-145    18      5.64     7.01     0
+10:    mmm|t GenBinaryY     M7   T2-3  N10-20     6      1.69     2.73     0
+11:    mmm|t GenBinaryY     M7   T2-3  N25-55     8      4.38     5.49     0
+12:    mmm|t GenBinaryY     M7   T2-3 N65-145    18      5.34     6.31     0
+13:    mmm|t GenBinaryY     M7   T4-6  N10-20     6      4.19     6.34     0
+14:    mmm|t GenBinaryY     M7   T4-6  N25-55     8      5.48     6.11     0
+15:    mmm|t GenBinaryY     M7   T4-6 N65-145    18      5.14     7.00     0
+16:    mmm|t GenBinaryY     M7  T8-10  N10-20     6      5.11     7.76     0
+17:    mmm|t GenBinaryY     M7  T8-10  N25-55     8      6.19     7.65     0
+18:    mmm|t GenBinaryY     M7  T8-10 N65-145    18      5.32     6.80     0

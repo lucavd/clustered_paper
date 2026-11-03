@@ -1,0 +1,100 @@
+[0.6 min] S7d read
+[0.9 min] S7e read
+recs 4752000 unique 4752000  gee rows 9502840 
+   n_both max_abs_est_diff max_rel_se_diff rej_discordant use_discordant      n
+    <int>            <num>           <num>          <int>          <int>  <int>
+1: 603942                0               0              0              0 803664
+[1.8 min] variant_cc rows: 2954376; columns: method,term,estimate,se,stat,p,converged,status,sim_id,model,N,ntime,label,dgp,scen,src,block,design_degenerate,re_structure,U0,U1,U2
+[1.9 min] S6b rows: 760436
+S6b columns: dgp,scen,N,ntime,label,method,sim_id,term,estimate,se,stat,p,converged,status,design_degenerate,U0,U1,U2 
+copula cc replaced: 559771 of 939777 
+MMM: rows 4752000  use (U0) 4332779  use (text, no converged) 4332779  converged FALSE but finite: 0 
+[2.3 min] per-replicate table saved
+gate: per-point n and rejections equal Table 4 inputs at 4752 strategy-points
+D-11 denominators from the design records: H0 2374679, H1 2374679 estimable of 2376000; GEE-row denominators were H0 2374969, H1 2374969
+[2.7 min] bootstrap done
+Key: <region, n_dp>
+          region  n_dp mad_gee mad_gee_minus_mmm mad_mmm
+          <char> <int>   <num>             <num>   <num>
+ 1:      N10_T3p   129   1.603           -1.3460   2.949
+ 2:      N15p_T2   375   2.551            1.0200   1.531
+ 3:     N15p_T3p  1845   0.675           -0.1190   0.794
+ 4:     Nb|10|3+   129   1.603           -1.3460   2.949
+ 5:  Nb|15-25|3+   387   1.043           -0.2159   1.259
+ 6:    Nb|>25|3+  1458   0.577           -0.0933   0.670
+ 7:           T2   402   2.642            0.8942   1.748
+ 8:          T3p  1974   0.735           -0.1992   0.935
+ 9:          all  2376   1.058           -0.0142   1.072
+10:     map|10|2    27   3.904           -0.8519   4.755
+11:     map|10|3    27   1.801           -1.8217   3.623
+12:    map|10|4+   102   1.551           -1.2200   2.771
+13:  map|15-25|2    81   4.354            1.1762   3.177
+14:  map|15-25|3    81   1.370           -0.3504   1.721
+15: map|15-25|4+   306   0.956           -0.1804   1.136
+16:    map|>25|2   294   2.055            0.9769   1.078
+17:    map|>25|3   294   0.612           -0.1342   0.747
+18:   map|>25|4+  1164   0.568           -0.0830   0.651
+19:        small   216   2.860           -0.0245   2.884
+          region                  q    est   mcse            class
+          <char>             <char>  <num>  <num>           <char>
+ 1:          all  mad_gee_minus_mmm -0.014 0.0140          similar
+ 2:          all   pu_gee_minus_mmm  1.226 0.0089          similar
+ 3:          all upow_mmm_minus_gee  1.437 0.0140          similar
+ 4:           T2  mad_gee_minus_mmm  0.894 0.0400          similar
+ 5:           T2   pu_gee_minus_mmm  4.811 0.0370        different
+ 6:           T2 upow_mmm_minus_gee  1.190 0.0220          similar
+ 7:          T3p  mad_gee_minus_mmm -0.199 0.0150          similar
+ 8:          T3p   pu_gee_minus_mmm  0.496 0.0071          similar
+ 9:          T3p upow_mmm_minus_gee  1.487 0.0160          similar
+10:      N10_T3p  mad_gee_minus_mmm -1.346 0.0810              GEE
+11:      N10_T3p   pu_gee_minus_mmm  2.697 0.0620        different
+12:      N10_T3p upow_mmm_minus_gee -0.456 0.0600          similar
+13:      N15p_T2  mad_gee_minus_mmm  1.020 0.0410 about the margin
+14:      N15p_T2   pu_gee_minus_mmm  4.164 0.0360        different
+15:      N15p_T2 upow_mmm_minus_gee  1.291 0.0240          similar
+16:     N15p_T3p  mad_gee_minus_mmm -0.119 0.0150          similar
+17:     N15p_T3p   pu_gee_minus_mmm  0.342 0.0061          similar
+18:     N15p_T3p upow_mmm_minus_gee  1.622 0.0170          similar
+19:        small  mad_gee_minus_mmm -0.025 0.0680          similar
+20:        small   pu_gee_minus_mmm  6.780 0.0630        different
+21:        small upow_mmm_minus_gee -0.027 0.0310          similar
+22:     map|10|2  mad_gee_minus_mmm -0.852 0.1900 about the margin
+23:     map|10|2   pu_gee_minus_mmm 13.806 0.2300        different
+24:     map|10|2 upow_mmm_minus_gee -0.206 0.0300          similar
+25:     map|10|3  mad_gee_minus_mmm -1.822 0.2100              GEE
+26:     map|10|3   pu_gee_minus_mmm  7.583 0.1900        different
+27:     map|10|3 upow_mmm_minus_gee -0.720 0.0820          similar
+28:    map|10|4+  mad_gee_minus_mmm -1.220 0.0830              GEE
+29:    map|10|4+   pu_gee_minus_mmm  1.404 0.0610          similar
+30:    map|10|4+ upow_mmm_minus_gee -0.385 0.0730          similar
+31:  map|15-25|2  mad_gee_minus_mmm  1.176 0.1000 about the margin
+32:  map|15-25|2   pu_gee_minus_mmm  7.274 0.1000        different
+33:  map|15-25|2 upow_mmm_minus_gee  0.524 0.0310          similar
+34:  map|15-25|3  mad_gee_minus_mmm -0.350 0.1100          similar
+35:  map|15-25|3   pu_gee_minus_mmm  3.677 0.0830        different
+36:  map|15-25|3 upow_mmm_minus_gee -0.287 0.0690          similar
+37: map|15-25|4+  mad_gee_minus_mmm -0.180 0.0440          similar
+38: map|15-25|4+   pu_gee_minus_mmm  0.440 0.0240          similar
+39: map|15-25|4+ upow_mmm_minus_gee  1.400 0.0510          similar
+40:    map|>25|2  mad_gee_minus_mmm  0.977 0.0430 about the margin
+41:    map|>25|2   pu_gee_minus_mmm  3.307 0.0360        different
+42:    map|>25|2 upow_mmm_minus_gee  1.502 0.0290          similar
+43:    map|>25|3  mad_gee_minus_mmm -0.134 0.0380          similar
+44:    map|>25|3   pu_gee_minus_mmm  0.457 0.0150          similar
+45:    map|>25|3 upow_mmm_minus_gee  0.856 0.0320          similar
+46:   map|>25|4+  mad_gee_minus_mmm -0.083 0.0170          similar
+47:   map|>25|4+   pu_gee_minus_mmm  0.056 0.0028          similar
+48:   map|>25|4+ upow_mmm_minus_gee  2.007 0.0220 about the margin
+49:     Nb|10|3+  mad_gee_minus_mmm -1.346 0.0810              GEE
+50:     Nb|10|3+   pu_gee_minus_mmm  2.697 0.0620        different
+51:     Nb|10|3+ upow_mmm_minus_gee -0.456 0.0600          similar
+52:  Nb|15-25|3+  mad_gee_minus_mmm -0.216 0.0420          similar
+53:  Nb|15-25|3+   pu_gee_minus_mmm  1.117 0.0260          similar
+54:  Nb|15-25|3+ upow_mmm_minus_gee  1.047 0.0430          similar
+55:    Nb|>25|3+  mad_gee_minus_mmm -0.093 0.0150          similar
+56:    Nb|>25|3+   pu_gee_minus_mmm  0.137 0.0038          similar
+57:    Nb|>25|3+ upow_mmm_minus_gee  1.775 0.0180          similar
+          region                  q    est   mcse            class
+          <char>             <char>  <num>  <num>           <char>
+series rows 76 
+[2.8 min] done

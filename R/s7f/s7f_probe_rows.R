@@ -1,0 +1,13 @@
+# s7f_probe_rows.R -- read-only look at the variant_cc row set and the S7d rows for gee_kc (planning of D-60)
+source(path.expand("~/MMM/R/s4/s4_common.R"))
+V <- readRDS(file.path(REPO, "results_v4/variant_cc/S4/rows_v4.rds"))
+cat("rows", nrow(V), "\n"); print(names(V)); print(V[, .N, by = method])
+K <- V[method == "gee_kc"]
+print(K[, .N, by = .(term_na = is.na(term), term)][order(-N)][1:6])
+print(head(K[term == "time:trt"], 3))
+print(K[term == "time:trt", .(n = .N, se_na = sum(!is.finite(se)), U0 = sum(U0), conv = sum(converged %in% TRUE))])
+print(K[is.na(term), .N, by = .(converged, st = substr(status, 1, 60))][order(-N)][1:8])
+print(V[method == "gee_kc", .N, by = scen])
+f <- list.files(file.path(REPO, "results_v4/S7d/rows"), full.names = TRUE)
+cat("S7d files", length(f), "\n"); print(table(sub(".*_(manual|mmlb)_.*", "\\1", basename(f))))
+x <- readRDS(f[500]); print(x$rows[cor == "exch", .(sim_id, gee_ok, est, se_kc, msg_kc, smv_kc, smv_msg_kc)][1:5])

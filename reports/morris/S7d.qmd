@@ -1,0 +1,138 @@
+---
+title: "S7d: run con correlazioni di lavoro, correzioni indipendenti e test a inversione di segno"
+subtitle: "Roadmap Morris 2019, ramo morris-v4"
+date: 2026-10-23
+format:
+  html:
+    embed-resources: true
+    toc: true
+lang: it
+execute:
+  echo: false
+  warning: false
+---
+
+```{r setup}
+.libPaths(path.expand("~/MMM/renv/library/linux-ubuntu-noble/R-4.6/x86_64-pc-linux-gnu"))
+suppressMessages({ library(data.table) })
+REPO <- path.expand("~/MMM"); TAB <- file.path(REPO, "tables")
+md <- function(D) { D <- as.data.frame(D); for (j in seq_along(D)) if (is.numeric(D[[j]])) D[[j]] <- format(signif(D[[j]], 4), trim = TRUE, drop0trailing = TRUE)
+  h <- paste0("| ", paste(names(D), collapse = " | "), " |"); s <- paste0("|", paste(rep("---", ncol(D)), collapse = "|"), "|")
+  b <- apply(D, 1, function(r) paste0("| ", paste(gsub("|", "\\|", r, fixed = TRUE), collapse = " | "), " |")); cat(c(h, s, b, ""), sep = "\n") }
+sec <- function(file, head, level = 1) {
+  x <- readLines(file.path(REPO, file)); pat <- paste(strrep("#", level), head); i <- which(x == pat); if (!length(i)) return(""); i <- max(i)
+  nxt <- which(grepl(paste0("^", strrep("#", level), " "), x) & seq_along(x) > i); j <- if (length(nxt)) min(nxt) - 1 else length(x)
+  x <- x[(i + 1):j]; x <- x[!grepl("^\\[\\^", x)]
+  x <- gsub("\\]\\(/", "](../../docs/", gsub("\\]\\((\\.\\./)+", "](../../docs/", x))
+  gsub("\\]\\(S([0-9a-z]+)\\.md", "](../../docs/steps/S\\1.md", x) }
+RU <- fread(file.path(TAB, "V4_S7d_rule.csv")); BM <- fread(file.path(TAB, "V4_S7d_boot_means.csv")); PR <- fread(file.path(TAB, "V4_S7d_predictions.csv"))
+DP <- fread(file.path(TAB, "V4_S7d_dp_rates.csv")); UR <- fread(file.path(TAB, "V4_S7d_usable_reasons.csv"))
+G4 <- fread(file.path(TAB, "V4_S7d_GE4.csv")); KG <- fread(file.path(TAB, "V4_S7d_kc_geesmv_formula.csv")); GR <- fread(file.path(TAB, "V4_S7d_gates_reprod.csv"))
+EX <- fread(file.path(TAB, "V4_S7d_exch_coincidence.csv")); G5 <- fread(file.path(TAB, "V4_S7d_GE5_mismatches.csv")); G1 <- fread(file.path(TAB, "V4_S7d_GE1.csv"))
+```
+
+```{r inbreve, results = "asis"}
+cat(sec("docs/steps/S7d.md", "In breve"), sep = "\n")
+```
+
+# Dubbi rinviati
+
+```{r rinv, results = "asis"}
+cat(sec("docs/steps/S7d.md", "Dubbi rinviati"), sep = "\n")
+```
+
+# Scelte del PI
+
+```{r scelte, results = "asis"}
+cat(sec("docs/steps/S7d.md", "Scelte del PI sul riassunto (2026-10-23)"), sep = "\n")
+```
+
+# Cancelli e previsioni
+
+```{r gates, results = "asis"}
+cat(sec("docs/steps/S7d.md", "Cancelli", 2), sep = "\n"); cat("\n")
+cat(sec("docs/steps/S7d.md", "Previsioni", 2), sep = "\n")
+```
+
+Valori calcolati (`tables/V4_S7d_predictions.csv`; intervallo = percentili 2,5 e 97,5 del bootstrap per blocchi di replicato, B = 2000, seed 20261015; per i conteggi il valore intero):
+
+```{r pred, results = "asis"}
+md(PR[, .(code, obs, lo, hi, a, b, verdict, extra)])
+```
+
+Medie sui 1.896 punti sotto H0 con bootstrap (`tables/V4_S7d_boot_means.csv`):
+
+```{r bm, results = "asis"}
+md(BM)
+```
+
+# Preparazione, decisioni tecniche e anomalia
+
+```{r prep, results = "asis"}
+cat(sec("docs/steps/S7d.md", "Preparazione prima del run (2026-10-22, nessuna misura entra nel paper)"), sep = "\n")
+```
+
+# Cosa e' girato
+
+- Pre-registrazione: commit `47c032a` (2026-10-22), prima di ogni calcolo del run; script di aggregazione e prova su 6 chunk: `afb66a5`.
+- Codice: `R/s7d/s7d_common.R`, `s7d_flip.R`, `s7d_run.R` (37.920 chunk, 11,5 ore, 20-28 processi, guardia `s7d_thermal_guard.sh`), `s7d_agg.R`, `s7d_gate_formulas.R`, `s7d_gate_reprod.R`, `s7d_ge5_detail.R`, `s7d_md5.sh`; preparazione `s7d_probe.R`, `s7d_check_formulas.R`.
+- Risultati: `results_v4/S7d/rows/` (37.920 file, fuori da git); md5 di `results_full/` in `results_v4/S7d/md5_results_full_{before,after}.txt`.
+- Software: R 4.6.1, libreria del progetto (geepack, geesmv 1.3, clubSandwich 0.7.0); fewclust 0.2.0, commit `8538cad` di lucavd/MMM (ramo package), in `~/R/s7d_lib`.
+
+# Appendice
+
+## Regola della Figura 1 con tutte le strategie (t a N - p)
+
+`paper_*` = righe salvate dello studio; `study_*` = le stesse ricalcolate qui (controllo); `gee_<correlazione>_<correzione>` = strategie nuove (fewclust; `unc` = sandwich di geepack); `flip` = test a inversione di segno (principale), `flip_strict` = con filtro. n_hi / n_lo = punti chiaramente sopra 7,5% / sotto 2,5%; pu = quota usabile media (%); upow = potenza per tentativo media (%); `_small` = 176 punti con 2-3 visite e fino a 25 soggetti.
+
+```{r rule, results = "asis"}
+md(RU[src == "S7d run" | startsWith(strategy, "paper_"), .(strategy, mean_rate, n_hi, n_lo, mean_pu, mean_upow, pu_small, rate_small, hi_small, eligible, chosen_wald, chosen_all)][order(-eligible, -mean_pu)])
+```
+
+Cosa guardare: fra le strategie con stima, solo `gee_ar1_fg` e `paper_mmm` hanno n_hi = 0; `gee_ar1_fg` ha pu piu' alta.
+
+## Punti piu' alti (limite inferiore tasso - 2 MCSE) per le strategie candidate
+
+```{r top, results = "asis"}
+T <- DP[ref == "t" & assess == TRUE & strategy %in% c("gee_ar1_fg", "gee_ind_fg", "gee_exch_fg", "study_mmm", "flip")]
+T[, lb := rate - 2 * mc]
+md(T[order(-lb), head(.SD, 5), by = strategy][, .(strategy, dgp, scen, N, ntime, n, rate, mc, lb, pu)])
+md(DP[ref == "t2", .(n_hi_t2 = sum(hi)), by = strategy][strategy %in% c("gee_ar1_fg", "gee_ind_fg", "gee_exch_fg", "study_mmm", "study_gee_fg", "flip")])
+```
+
+## Errore di I tipo e quota usabile per numero di soggetti (media sui punti)
+
+```{r byN, results = "asis"}
+S <- DP[ref == "t" & strategy %in% c("flip", "gee_ar1_fg", "gee_exch_fg", "study_gee_fg", "study_mmm", "gee_exch_kc", "study_gee_kc")]
+md(dcast(S, N ~ strategy, value.var = "rate", fun.aggregate = function(x) round(mean(x, na.rm = TRUE), 2)))
+md(dcast(S, N ~ strategy, value.var = "pu", fun.aggregate = function(x) round(mean(x), 1)))
+```
+
+## Cancelli: dettagli
+
+```{r g, results = "asis"}
+md(G1); md(GR); md(G4); md(KG); md(EX)
+md(G5[, .(dgp, scen, N, ntime, label, sim_id, est, se_md, smv_md, se_fg, smv_fg, usable_md, usable_fg)])
+```
+
+## Motivi di non usabilita' (strategie nuove)
+
+```{r ur, results = "asis"}
+md(UR[order(what, -N), head(.SD, 3), by = what])
+```
+
+## Da dove vengono i numeri del riassunto
+
+| frase | fonte | valore letto |
+|---|---|---|
+| 3,8 milioni di dataset; coincidono esattamente | `V4_S7d_GE1.csv`; `V4_S7d_gates_reprod.csv`, GE2 | 3.792.000; 3.744.885 righe, scarto 0 |
+| 5,3 falsi positivi su 100; mai fuori taratura; prudente in 4 | `V4_S7d_rule.csv`, flip | 5,29; n_hi 0; n_lo 4 (tutti N = 10, T 2-3, `V4_S7d_dp_rates.csv`) |
+| 99,9% contro 44% e 40% | `V4_S7d_rule.csv`, pu_small: flip, paper_gee_fg, paper_mmm | 99,90; 43,61; 40,43 |
+| 21,6, 21,2, 20,5 tentativi su 100 | idem, mean_upow | 21,60; 21,21; 20,53 |
+| GEE AR(1): 92,2% contro 91,0%; 19,9 contro 21,2; 112 contro 77 | idem, gee_ar1_fg e paper_mmm | 92,24 / 90,98; 19,87 / 21,21; 112 / 77 |
+| exchangeable o indipendente sopra in 1-2 situazioni, 15-25 soggetti | idem, gee_ind_fg 1, gee_exch_fg 2; punti in "Punti piu' alti" | M7, N 25 T 4; N 15 T 6 |
+| correlazione: circa 0,3 in meno | `V4_S7d_boot_means.csv` | -0,29; -0,31 |
+| fewclust contro geesmv: 0,02; 4 su 1.000; nessuna soglia cambia | idem; `V4_S7d_predictions.csv` PE7 | +0,024; +0,42 punti; 0 |
+| Kauermann e Carroll: da 9,8 a 5,6; da 951 a 133 | `V4_S7d_rule.csv`, paper_gee_kc e gee_exch_kc | 9,75 / 5,55; 951 / 133 |
+| geesmv AR(1) circa 1 su 8 | sonda, `docs/steps/S7d.md` (preparazione) | 13% |
+| 11,5 ore; 16 stimate | `results_v4/S7d/run_progress.log`; `docs/decisions/D-48.md` | 11,51 h; circa 16 h |

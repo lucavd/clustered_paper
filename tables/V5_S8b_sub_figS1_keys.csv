@@ -1,0 +1,37 @@
+key,value,mcse,kind,source,how
+figS1|gee_ar1_fg|n_hi,0,,int,tables/V5_S7f_rule_dp.csv,circled points over the four panels (= f:t4|<strategy>|hi_m67)
+figS1|gee_ar1_fg|GB|M6|n_hi,0,,int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|gee_ar1_fg|GB|M7|n_hi,0,,int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|gee_ar1_fg|NAT|M6|n_hi,0,,int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|gee_ar1_fg|NAT|M7|n_hi,0,,int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|mmm_cc|n_hi,0,,int,tables/V5_S7f_rule_dp.csv,circled points over the four panels (= f:t4|<strategy>|hi_m67)
+figS1|mmm_cc|GB|M6|n_hi,0,,int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|mmm_cc|GB|M7|n_hi,0,,int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|mmm_cc|NAT|M6|n_hi,0,,int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|mmm_cc|NAT|M7|n_hi,0,,int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|gee_exch_fg|n_hi,4,,int,tables/V5_S7f_rule_dp.csv,circled points over the four panels (= f:t4|<strategy>|hi_m67)
+figS1|gee_exch_fg|GB|M6|n_hi,1,,int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|gee_exch_fg|GB|M7|n_hi,3,,int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|gee_exch_fg|NAT|M6|n_hi,0,,int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|gee_exch_fg|NAT|M7|n_hi,0,,int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|gee_exch_md|n_hi,18,,int,tables/V5_S7f_rule_dp.csv,circled points over the four panels (= f:t4|<strategy>|hi_m67)
+figS1|gee_exch_md|GB|M6|n_hi,8,,int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|gee_exch_md|GB|M7|n_hi,10,,int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|gee_exch_md|NAT|M6|n_hi,0,,int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|gee_exch_md|NAT|M7|n_hi,0,,int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|glmer_lrt|n_hi,0,,int,tables/V5_S7f_rule_dp.csv,circled points over the four panels (= f:t4|<strategy>|hi_m67)
+figS1|glmer_lrt|GB|M6|n_hi,0,,int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|glmer_lrt|GB|M7|n_hi,0,,int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|glmer_lrt|NAT|M6|n_hi,0,,int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|glmer_lrt|NAT|M7|n_hi,0,,int,tables/V5_S7f_rule_dp.csv,circled points in the panel
+figS1|n_points_panel,96,,int,tables/V5_S7f_rule_dp.csv,design points per panel
+figS1|n_hidden,64,,int,tables/V5_S7f_cp_S7d_dp_rates.csv,strategy x point pairs not drawn (fewer than 20 usable replicates)
+figS1|gee_ar1_fg|n_hidden,0,,int,tables/V5_S7f_cp_S7d_dp_rates.csv,points of the strategy not drawn
+figS1|mmm_cc|n_hidden,4,,int,tables/V5_S7f_cp_S7d_dp_rates.csv,points of the strategy not drawn
+figS1|gee_exch_fg|n_hidden,0,,int,tables/V5_S7f_cp_S7d_dp_rates.csv,points of the strategy not drawn
+figS1|gee_exch_md|n_hidden,0,,int,tables/V5_S7f_cp_S7d_dp_rates.csv,points of the strategy not drawn
+figS1|glmer_lrt|n_hidden,60,,int,tables/V5_S7f_cp_S7d_dp_rates.csv,points of the strategy not drawn
+figS1|n_clipped,0,,int,tables/V5_S7f_cp_S7d_dp_rates.csv,drawn values above the axis limit (drawn at the limit)
+figS1|ymax,15.0,,plain,py/s8b/s8b_figS1.py,upper limit of the vertical axis (%)
+figS1|max_rate,14.2361111111111,,sig2,tables/V5_S7f_cp_S7d_dp_rates.csv,largest drawn rate (%)
+figS1|mcse_max,3.388301272003571,,sig2,tables/V5_S7f_cp_S7d_dp_rates.csv,"largest binomial MCSE of a drawn rate, 100 sqrt(p(1-p)/n) (pp)"

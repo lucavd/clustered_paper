@@ -1,0 +1,18 @@
+{
+ "S6_fig1": {
+  "overlaps": [],
+  "outside": []
+ },
+ "S6_nestedloop": {
+  "overlaps": [],
+  "outside": []
+ },
+ "S6_zip": {
+  "overlaps": [],
+  "outside": []
+ },
+ "nestedloop_clipped_above_30_and_hidden_below_min_obs": [
+  4,
+  571
+ ]
+}

@@ -1,0 +1,16 @@
+Key: <dgp>
+           dgp     cm     cc     cp    fgc    dep  gapFG gain_cond gain_plim
+        <char>  <num>  <num>  <num>  <num>  <num>  <num>     <num>     <num>
+1:    GLMM-AR1 92.281 93.193 93.253 94.913 2.7188 2.6314   0.91175   0.97148
+2: GLMM-native 93.031 93.512 93.486 94.830 1.9689 1.7988   0.48129   0.45457
+3:  GenBinaryY 88.323 90.185 91.432 94.553 6.6770 6.2301   1.86184   3.10938
+
+MEDIE sui tre meccanismi: dep=3.7882  gapFG=3.5534  gain_cond=1.0850  gain_plim=1.5118
+pooled: cov_marg=91.2287 cov_cond=92.3090 dep_pooled=3.7713 FG_pooled=94.7658 gap_pooled=3.5371
+
+MMM su bersaglio marginale vs condizionale (controllo T-3.15-05):
+           dgp cov_marg cov_plim cov_cond
+        <char>    <num>    <num>    <num>
+1:  GenBinaryY  93.1675  93.1675  92.6189
+2:    GLMM-AR1  93.2447  93.2447  91.0161
+3: GLMM-native  93.2442  93.2442  92.0933

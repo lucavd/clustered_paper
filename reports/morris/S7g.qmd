@@ -1,0 +1,129 @@
+---
+title: "S7g: rafforzare il manoscritto v5 prima dell'invio"
+subtitle: "Roadmap Morris 2019, ramo morris-v4"
+date: 2026-11-01
+format:
+  html:
+    embed-resources: true
+    toc: true
+lang: it
+execute:
+  echo: false
+  warning: false
+---
+
+```{r setup}
+.libPaths(path.expand("~/MMM/renv/library/linux-ubuntu-noble/R-4.6/x86_64-pc-linux-gnu"))
+suppressMessages({ library(data.table) })
+REPO <- path.expand("~/MMM"); TAB <- file.path(REPO, "tables"); LOGS <- file.path(REPO, "reports/morris/S7g_logs")
+md <- function(D) { D <- as.data.frame(D); for (j in seq_along(D)) if (is.numeric(D[[j]])) D[[j]] <- format(signif(D[[j]], 4), trim = TRUE, drop0trailing = TRUE)
+  h <- paste0("| ", paste(names(D), collapse = " | "), " |"); s <- paste0("|", paste(rep("---", ncol(D)), collapse = "|"), "|")
+  b <- apply(D, 1, function(r) paste0("| ", paste(gsub("|", "\\|", r, fixed = TRUE), collapse = " | "), " |")); cat(c(h, s, b, ""), sep = "\n") }
+sec <- function(file, head, level = 1) {
+  x <- readLines(file.path(REPO, file)); pat <- paste(strrep("#", level), head); i <- which(x == pat); if (!length(i)) return(""); i <- max(i)
+  nxt <- which(grepl(paste0("^", strrep("#", level), " "), x) & seq_along(x) > i); j <- if (length(nxt)) min(nxt) - 1 else length(x)
+  x <- x[(i + 1):j]; x <- x[!grepl("^\\[\\^", x)]
+  x <- gsub("\\]\\(/", "](../../docs/", gsub("\\]\\((\\.\\./)+", "](../../docs/", x))
+  gsub("\\]\\(S([0-9a-z]+)\\.md", "](../../docs/steps/S\\1.md", x) }
+rd <- function(f) fread(file.path(TAB, f))
+GT <- rd("V5_S7g_agq_gates.csv"); PR <- rd("V5_S7g_agq_preds.csv"); ME <- rd("V5_S7g_agq_mech.csv"); DF <- rd("V5_S7g_agq_diff.csv")
+CAL <- rd("V5_S7g_calib.csv"); F4 <- rd("V5_S7g_filter_t4.csv"); FC <- rd("V5_S7g_filter_check.csv"); M67 <- rd("V5_S7g_m67_cc.csv"); BYU <- rd("V5_S7g_m67_cc_byused.csv")
+LG <- rd("V5_S7g_lus_glmm.csv"); LS <- rd("V5_S7g_lus_glmm_slope.csv"); LD <- rd("V5_S7g_lus_draws.csv"); EX <- rd("V5_S7g_extra.csv"); AK <- rd("V5_S7g_agq_keys.csv")
+ex <- function(k) as.numeric(EX[key == k, value]); ak <- function(k) AK[key == k, value]
+pf <- readLines(file.path(LOGS, "S7g_PF1PF2.log")); pl <- readLines(file.path(LOGS, "pipeline.txt"))
+g3a <- grep("^GF3a:", readLines(file.path(LOGS, "S7g_GF3a.log")), value = TRUE)[1]
+m5b <- readLines(file.path(REPO, "reports/morris/S7g_logs/md5_before.txt")); m5a <- readLines(file.path(REPO, "reports/morris/S7g_logs/md5_after.txt"))
+```
+
+```{r inbreve, results = "asis"}
+cat(sec("docs/steps/S7g.md", "In breve"), sep = "\n")
+```
+
+# Dubbi rinviati
+
+```{r rinv, results = "asis"}
+cat(sec("docs/steps/S7g.md", "Dubbi rinviati"), sep = "\n")
+```
+
+# Cancelli e previsioni
+
+Cancelli e previsioni pre-registrati nel commit 9d207a5, prima del calcolo. Le previsioni si giudicano con la stima +/- 2 MCSE (per gli aggregati, l'intervallo del bootstrap per blocchi, B = 2.000).
+
+```{r gates, results = "asis"}
+G <- rbind(GT[, .(codice = gate, esito = fifelse(pass, "superato", fifelse(explained %in% TRUE, "fallito come scritto, spiegato", "fallito")), dettaglio = detail)],
+  data.table(codice = "GG1", esito = fifelse(all(grepl("diff_vs_S7b_after=0", c(m5b, m5a))), "superato", "fallito"), dettaglio = paste(c(m5b, m5a), collapse = " / ")),
+  data.table(codice = "GG5", esito = "superato", dettaglio = paste(c(g3a, grep("^GF2:|^GF4:|^abstract|format exit", pl, value = TRUE)), collapse = "; ")))
+setorder(G, codice); md(G)
+P <- rbind(PR[, .(codice = pred, unita = unit, atteso = fifelse(pred == "PG1", "0 (+/- 1 punto)", fifelse(pred == "PG2", "0 (+/- 2,5 punti)", "100% (almeno 80%)")), osservato = value, esito = outcome)],
+  data.table(codice = "PG4", unita = "Tabella 4", atteso = "stessa scelta con limiti 5 e 20", osservato = sprintf("strategie mai chiaramente sopra: %s; scelta: %s; riproduzione con limite 10: %d su %d",
+    paste(unique(F4[eligible == TRUE, strategy]), collapse = ", "), paste(unique(F4[chosen == TRUE, strategy]), collapse = ", "), FC[, sum(ok)], nrow(FC)), esito = "confermata"),
+  data.table(codice = "PG5", unita = "coorte neonatale", atteso = "0,85-1,15", osservato = sprintf("%.2f-%.2f con l'intercetta per paziente-visita", LG[re == "id_pt", min(ratio_fpc)], LG[re == "id_pt", max(ratio_fpc)]), esito = "smentita"))
+md(P)
+```
+
+Spiegazione delle previsioni smentite: si veda il file dello step, sezione "Esito delle attese". In breve: l'approssimazione di Laplace e' imprecisa con pochi esiti binari per soggetto (PG1-PG3); la varianza paziente-visita finisce al bordo nei sottocampioni e il motivo principale dello scarto e' l'eterogeneita' del contrasto regionale fra pazienti, che spiega una parte del rapporto (PG5, tabella in appendice).
+
+# Cosa e' girato
+
+- Commit: apertura e approvazione di S7f 99b11ca; pre-registrazione 9d207a5; run e analisi ab90156; testo e chiusura nel commit di questo report.
+- Run con quadratura: `R/s7g/s7g_run.R`, 1.230 chunk, `r tail(grep("DONE", readLines(file.path(REPO, "results_v4/S7g/run_progress.log")), value = TRUE), 1)`.
+- Analisi: `R/s7g/s7g_agg.R` (cancelli GG2-GG4, PG1-PG3), `s7g_filter.R` (PG4), `s7g_lus.R` (PG5 e spiegazione), `s7g_extras.R` (numeri del testo), `s7g_agq_keys.R` e `s7g_tabkeys.R` (registro), catena `R/s7g/s7g_pipeline.sh`.
+- Integrita': `r paste(m5b, collapse = " ")`; `r paste(m5a, collapse = " ")`.
+- Manoscritto: `r grep("^P1", pf, value = TRUE)`; `r grep("^abstract", pf, value = TRUE)`.
+
+# Appendice
+
+## Quadratura contro Laplace, per meccanismo
+
+```{r agq, results = "asis"}
+md(ME[, .(meccanismo = dgp, punti = n_points, `differenza media (punti)` = mean_diff_t, `2,5%` = lo95_t, `97,5%` = hi95_t, `tasso medio Laplace` = mean_rate_lap, `tasso medio quadratura` = mean_rate_agq,
+          `sopra 7,5% Laplace` = hi_lap, `sopra 7,5% quadratura` = hi_agq, PG1 = pg1)])
+md(DF[order(-abs(diff_t))][1:12, .(dgp, scen, N, T = ntime, `diff (punti)` = diff_t, MCSE = mc_t, `Laplace (%)` = rate_t_lap, `quadratura (%)` = rate_t_agq, PG2 = pg2)])
+```
+
+## Cosa garantisce la regola (Tabella S32)
+
+```{r cal, results = "asis"}
+md(CAL[order(n_hi), .(strategia = strategy, `chiaramente sopra` = n_hi, `eccesso non escluso` = n_notexcl, `non valutati` = n_notassessed, `tasso massimo (%)` = max_rate, usabili = max_n, dove = max_where)])
+```
+
+## Limiti del filtro (Tabella S33)
+
+```{r flt, results = "asis"}
+md(dcast(F4, strategy ~ L, value.var = "hi_all"))
+```
+
+## Controllo di convergenza in M6-M7 (Tabella S35)
+
+```{r m67, results = "asis"}
+md(M67[, .(dgp, scen, arm, punti = n_points, `bias/SE medio` = mean_rb, `bias/SE max` = max_abs_rb, `SE ratio - 1 mediano` = median_ser, `copertura media` = mean_cov, `copertura min` = min_cov, `intervento (%)` = mean_share_B)])
+md(BYU[, .(dgp, scen, arm, intervento = used, punti = n_points, `copertura media` = mean_cov, `SE ratio - 1 mediano` = median_ser)])
+```
+
+## Coorte neonatale
+
+```{r lus, results = "asis"}
+md(rbind(LG, LS, fill = TRUE)[, .(effetti = re, N, n, `SE medio` = mean_se, `SD stime` = sd_est, `rapporto corretto` = ratio_fpc, `varianza mediana del termine aggiunto` = median_var_pt, `riproduce il salvato` = reproduces_stored)])
+md(LD[, .(N, estrazioni = draws, `senza ventilati` = none, `atteso (%)` = 100 * p0, z, `p bilaterale` = p_two, `ventilati medi` = mean_inv, `attesi` = exp_inv)])
+```
+
+## Da dove vengono i numeri del riassunto
+
+```{r fonti, results = "asis"}
+cop <- DF[dgp == "Copula-AR1" & hi_t_agq == TRUE]; gb <- DF[dgp == "GenBinaryY" & hi_t_agq == TRUE]; x145 <- DF[N == 145 & ntime == 2 & scen %in% c("M1", "M2")]
+src <- data.table(frase = c("123 situazioni", "scendono di 3-4 su 100", "da 10-20 a 3-5 (2 visite, 145 soggetti)", "6 situazioni, 12-16 su 100", "2 situazioni, circa 9-10",
+  "37 situazioni contro 3", "9,3 su 100 con 1.000 simulazioni", "8,6 su 100; 218 su 2.376", "438 per il modello marginalizzato", "limiti 5 o 20, stessa scelta",
+  "78%, 77%, 70%, 34%, 15%", "distorsione non rilevante (max 0,40 errori standard)", "errore standard basso del 3-5%", "copertura circa 95 su 100", "da poco più di metà a circa due terzi", "22% contro 27%", "circa 9.900 parole", "4.752.000 dataset", "0,92 ore"),
+  fonte = c("V5_S7g_agq_keys.csv npts", "V5_S7g_agq_mech.csv mean_diff_t", "V5_S7g_agq_diff.csv N=145 T=2 M1-M2", "V5_S7g_agq_diff.csv Copula-AR1 hi_t_agq", "V5_S7g_agq_diff.csv GenBinaryY hi_t_agq",
+  "V5_S7g_agq_keys.csv lo_agq, lo_lap", "V5_S7g_extra.csv cal_thr1000", "V5_S7g_calib.csv gee_ar1_fg", "V5_S7g_calib.csv mmm_cc", "V5_S7g_filter_t4.csv", "V5_S7g_extra.csv lus_u500_*",
+  "V5_S7g_extra.csv m67_rb_max", "V5_S7g_extra.csv m67_ser_med_*", "V5_S7g_extra.csv m67_cov_*", "V5_S7g_lus_glmm.csv, V5_S7g_lus_glmm_slope.csv", "V5_S7g_lus_draws.csv N=10", "S7g_logs/S7g_PF1PF2.log", "V5_S7g_tab_keys.csv n_datasets", "results_v4/S7g/run_progress.log"),
+  valore = c(ak("npts"), sprintf("%.2f to %.2f", -max(ME$mean_diff_t), -min(ME$mean_diff_t)), sprintf("%.1f-%.1f -> %.1f-%.1f", min(x145$rate_t_lap), max(x145$rate_t_lap), min(x145$rate_t_agq), max(x145$rate_t_agq)),
+    sprintf("%d, %.1f-%.1f", nrow(cop), min(cop$rate_t_agq), max(cop$rate_t_agq)), sprintf("%d, %.1f-%.1f", nrow(gb), min(gb$rate_t_agq), max(gb$rate_t_agq)), paste(ak("lo_agq"), ak("lo_lap")),
+    ex("cal_thr1000"), sprintf("%.2f; %d", CAL[strategy == "gee_ar1_fg", max_rate], CAL[strategy == "gee_ar1_fg", n_notexcl]), CAL[strategy == "mmm_cc", n_notexcl],
+    paste(unique(F4[chosen == TRUE, strategy]), collapse = ","), paste(round(sapply(c("GLMM", "MMM", "GEE", "GEE-FG", "GEE-MD"), function(m) ex(paste0("lus_u500_", m))), 1), collapse = ", "),
+    sprintf("%.3f", ex("m67_rb_max")), sprintf("%.2f to %.2f", ex("m67_ser_med_max"), ex("m67_ser_med_min")), sprintf("%.1f-%.1f (A %.1f-%.1f, B %.1f-%.1f)", ex("m67_cov_min"), ex("m67_cov_max"), ex("m67_cov_A_min"), ex("m67_cov_A_max"), ex("m67_cov_B_min"), ex("m67_cov_B_max")),
+    sprintf("%.2f-%.2f -> %.2f-%.2f", LG[re == "id", min(ratio_fpc)], LG[re == "id", max(ratio_fpc)], LS[re == "id_slope", min(ratio_fpc)], LS[re == "id_slope", max(ratio_fpc)]),
+    sprintf("%.1f vs %.1f", LD[N == 10, 100 * none / draws], LD[N == 10, 100 * p0]), grep("^P1", pf, value = TRUE), fread(file.path(TAB, "V5_S7g_tab_keys.csv"))[key == "n_datasets", value],
+    tail(grep("DONE", readLines(file.path(REPO, "results_v4/S7g/run_progress.log")), value = TRUE), 1)))
+md(src)
+```

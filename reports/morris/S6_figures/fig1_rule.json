@@ -1,0 +1,17 @@
+{
+ "option": "validity first (recommended, pending PI decision)",
+ "lines": [
+  [
+   "q",
+   "Testing the time x treatment\ninteraction with few clusters"
+  ],
+  [
+   "fg",
+   "GEE with the Fay-Graubard\ncorrection and a t reference\n(N - p degrees of freedom), at any\nnumber of clusters (e.g. patients)\nand of occasions"
+  ],
+  [
+   "end",
+   "With 2-3 occasions and up to 25\nclusters (e.g. patients) it gives no\nresult in 4-7 datasets out of 10 and\nis often conservative: there no method\nis both available and calibrated. The\nlikelihood-ratio test answers more\noften but is clearly above 7.5%\nfalse positives in over a third\nof those scenarios."
+  ]
+ ]
+}

@@ -1,0 +1,52 @@
+source_file,script,script_exists,inputs,md5_matches_registry,supp_rows,recompute_level,outcome_supp_rows,provenance_outcome
+manuscript/v4/literature_numbers.csv,NONE,no,,yes,0,not used by supplement (provenance only),,FINDING: nessuno script; valori della letteratura inseriti a mano
+rev2/T2_fullcohort.csv,rev2/T2_defs.R,yes,,yes,0,not used by supplement (provenance only),,FINDING: prodotto da script della revisione precedente (rev2/)
+rev2/T7_bias.csv,rev2/T7_bias.R,yes,,yes,0,not used by supplement (provenance only),,FINDING: prodotto da script della revisione precedente (rev2/)
+tables/V4_S2_lus_vs_dgm.csv,R/s2/s2_g_lus.R,yes,,yes,0,not used by supplement (provenance only),,PASS
+tables/V4_S2_replicates_by_cell.csv,R/s2/s2_ab_usable_missing.R,yes,,yes,0,not used by supplement (provenance only),,PASS
+tables/V4_S2_series_length.csv,R/s2/s2_d_series.R,yes,,yes,0,not used by supplement (provenance only),,PASS
+tables/V4_S2_truth_glmmnative.csv,R/s2/s2_c_truth.R,yes,,yes,0,not used by supplement (provenance only),,PASS
+tables/V4_S5_switch_points.csv,R/s5/s5_checks.R,yes,,yes,0,not used by supplement (provenance only),,PASS
+tables/V4_S6_table_cells.csv,R/s6/s6_tables.R,yes,results_v4/S4/rows_v4.rds (catena v4 senza variante),yes,9,rows:9,PASS:9,PASS
+tables/V4_S6_values.csv,R/s6/s6_checks.R,yes,,yes,0,not used by supplement (provenance only),,PASS
+tables/V4_S6b_ns_fallback.csv,R/s6b/s6b_ns_agg.R,yes,,yes,0,not used by supplement (provenance only),,PASS
+tables/V4_S6b_ns_preds.csv,R/s6b/s6b_ns_agg.R,yes,,yes,0,not used by supplement (provenance only),,PASS
+tables/V4_S6b_rule_all.csv,R/s6b/s6b_rule_all.R,yes,,yes,0,not used by supplement (provenance only),,PASS
+tables/V4_S6b_thr_preds.csv,R/s6b/s6b_thr_compare.R,yes,,yes,0,not used by supplement (provenance only),,PASS
+tables/V4_S6cc_preds.csv,R/s6/s6cc_compare.R,yes,,yes,0,not used by supplement (provenance only),,PASS
+tables/V4_S7_extra.csv,R/s7/s7_extras.R,yes,costanti del codice e tabelle v4,yes,28,source:16/rows:12,PASS:28,PASS
+tables/V4_S7d2_boot_means.csv,R/s7d2/s7d2_agg.R,yes,"results_v4/S7d2/rows, bootstrap per blocchi",yes,4,rows:4,PASS:4,PASS
+tables/V4_S7d2_explain_finite.csv,R/s7d2/s7d2_explain.R,yes,"results_v4/S7d2/rows + results_v4/S7d/rows, S7e/rows",yes,72,rows:72,PASS:72,PASS
+tables/V4_S7d2_flip_rules.csv,R/s7d2/s7d2_flip_rules.R,yes,results_v4/S7d2/rows,yes,3,rows:3,PASS:2/MISMATCH:1,PASS
+tables/V4_S7d_GE4.csv,R/s7d/s7d_gate_formulas.R,yes,"campione di fit S7d, calcolo a mano",yes,1,source:1,PASS:1,PASS
+tables/V4_S7d_exch_coincidence.csv,R/s7d/s7d_gate_reprod.R,yes,results_v4/S7d/rows (colonne se_* e smv_*),yes,4,rows:4,PASS:4,PASS
+tables/V4_S7e_bias_summary.csv,R/s7e/s7e_summary.R,yes,tables/V4_S7e_bias_cov.csv (s7e_agg.R da results_v4/S7e/rows),yes,24,rows:24,PASS:24,PASS
+tables/V4_S7e_dependence_profiles.csv,R/s7e/s7e_profiles.R,yes,,yes,0,not used by supplement (provenance only),,PASS
+tables/V4_dgm_parameters.csv,R/protocol/extract_dgm_params.R,yes,.rundir/ (codice originale; argomenti dei motori intercettati),yes,80,source:80,PASS:79/MISMATCH:1,"FINDING: estratto da .rundir/ (codice originale), non dal codice v4 che ha generato i dati (D-01, D-02)"
+tables/V5_S7f_claims.csv,R/s7f/s7f_extras.R,yes,,yes,0,not used by supplement (provenance only),,PASS
+tables/V5_S7f_cp_S6b_ns_rule_safety.csv,R/s7f/s7f_cpflags.R,yes,tables/V4_S6b_ns_rule_safety_dp.csv (s6b_ns_agg.R da results_v4/S6b/ns),yes,97,rows:97,PASS:97,PASS
+tables/V5_S7f_cp_S6cc_cells.csv,R/s7f/s7f_cpflags.R,yes,,yes,0,not used by supplement (provenance only),,PASS
+tables/V5_S7f_cp_S7d_rule.csv,R/s7f/s7f_cpflags.R,yes,V4_S7d_rule.csv + flag esatti,yes,4,rows:4,PASS:4,PASS
+tables/V5_S7f_cp_S7e_summary.csv,R/s7f/s7f_cpflags.R,yes,"V4_S7e_dp_rates.csv, V4_S7d_dp_rates.csv, V4_S7b_rule_dp.csv, V4_S7d2_flip_rules_dp.csv (da righe S7e, S7d, S7b, S7d2)",yes,61,rows:61,PASS:61,PASS
+tables/V5_S7f_cp_kcfc_rule_safety.csv,R/s7f/s7f_cpflags.R,yes,,yes,0,not used by supplement (provenance only),,PASS
+tables/V5_S7f_extra.csv,R/s7f/s7f_extras.R,yes,tabelle v4/v5 e costanti del codice,yes,11,rows:10/source:1,PASS:11,PASS
+tables/V5_S7f_h2h_boot.csv,R/s7f/s7f_h2h_boot.R,yes,"results_v4/S7d/rows, S7e/rows, variant_cc/S4/rows_v4.rds, S6b/ns/rows_ns.rds",yes,110,rows:110,PASS:106/MISMATCH:4,"FINDING: denominatore della quota usabile e della potenza dalle righe GEE presenti, non da recs (D-11)"
+tables/V5_S7f_h2h_grid.csv,R/s7f/s7f_fig1_series.R,yes,,yes,0,not used by supplement (provenance only),,PASS
+tables/V5_S7f_kc_clinical_agree.csv,R/s7f/s7f_kc_clinical_tables.R,yes,per estrazione (geesmv vs fewclust),yes,4,rows:4,PASS:2/MISMATCH:2,PASS
+tables/V5_S7f_lus_tab316.csv,R/s7f/s7f_kc_clinical_tables.R,yes,rev2/T3_subsample_rerun.csv (per estrazione) + V5_S7f_lus_fc.csv,yes,150,rows:150,PASS:150,PASS
+tables/V5_S7f_resp_bias.csv,R/s7f/s7f_kc_clinical_tables.R,yes,idem,yes,30,rows:30,PASS:30,PASS
+tables/V5_S7f_resp_ref.csv,R/s7f/s7f_kc_clinical_tables.R,yes,V4_S7b_resp_ref.csv + V5_S7f_resp_fc.csv rep 0,yes,24,source:24,PASS:24,PASS
+tables/V5_S7f_resp_usable.csv,R/s7f/s7f_kc_clinical_tables.R,yes,tables/V4_S7b_resp_fits.csv (per estrazione) + V5_S7f_resp_fc.csv,yes,60,rows:60,PASS:60,PASS
+tables/V5_S7f_rule_t2.csv,R/s7f/s7f_extras.R,yes,"V5_S7f_cp_S7d_dp_rates.csv, V5_S7f_cp_S7b_rule_dp.csv",yes,56,rows:56,PASS:56,PASS
+tables/V5_S7f_seratio_fpc.csv,R/s7f/s7f_kc_clinical_tables.R,yes,come resp e lus,yes,31,rows:30/source:1,PASS:31,PASS
+tables/V5_S7f_software.csv,R/s7f/s7f_extras.R,yes,sessionInfo della libreria del progetto,yes,12,source:12,PASS:12,PASS (didascalia S2 cita un sessionInfo incompleto)
+tables/V5_S7f_table4.csv,R/s7f/s7f_table4.R,yes,,yes,0,not used by supplement (provenance only),,PASS
+tables/V5_S7f_u1.csv,R/s7f/s7f_extras.R,yes,tables/variant_kcfc/V4_perf_all.csv.gz,yes,49,rows:49,PASS:49,PASS
+tables/V5_S7g_agq_keys.csv,R/s7g/s7g_agq_keys.R,yes,V5_S7g_agq_*.csv da results_v4/S7g/rows (s7g_agg.R),yes,154,rows:151/source:3,PASS:154,PASS
+tables/V5_S7g_extra.csv,R/s7g/s7g_extras.R,yes,"per-point dp_rates, V4_S7e_glmm_pseudotrue.csv, V5_S7f_lus_tab316.csv, log dei run",yes,7,source:4/rows:3,PASS:7,PASS
+tables/V5_S7g_tab_keys.csv,R/s7g/s7g_tabkeys.R,yes,"V5_S7g_calib.csv, V5_S7g_filter_t4.csv, V5_S7g_m67_cc*.csv, V5_S7g_lus_glmm*.csv, V5_S7f_table4.csv (da righe S7d, S7e, variant_cc, S6b ns)",yes,301,rows:293/source:8,PASS:301,PASS
+tables/geesmv_timeouts.csv,R/v4/rundir/aggregate_results.R,yes,results_full (run originale),yes,1,source:1,PASS:1,PASS
+tables/variant_kcfc/V4_S5_claims.csv,"R/s5/s5_checks.R (MMM_VARIANT=kcfc, R/s7f/s7f_kcfc_pipeline.sh)",yes,,yes,0,not used by supplement (provenance only),,PASS
+tables/variant_kcfc/V4_S6_m1c_claims.csv,R/s6/s6_checks.R (MMM_VARIANT=kcfc),yes,,yes,0,not used by supplement (provenance only),,PASS
+tables/variant_kcfc/V4_S6_table_cells.csv,R/s6/s6_tables.R (MMM_VARIANT=kcfc),yes,results_v4/variant_kcfc/S4/rows_v4.rds -> agg_v4.R -> S5/S6 bootstrap -> V4_S6_values.csv,yes,911,rows:901/text:10,PASS:911,PASS
+tables/variant_kcfc/V4_S6_values.csv,R/s6/s6_checks.R (MMM_VARIANT=kcfc),yes,,yes,0,not used by supplement (provenance only),,PASS

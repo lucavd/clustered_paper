@@ -1,0 +1,32 @@
+chunks 6 rows 1800 recs 600 
+       n missing_new max_d_est max_d_se
+   <int>       <int>     <num>    <num>
+1:   562           0         0        0
+   method n_both only_saved only_new max_rel
+   <char>  <int>      <int>    <int>   <num>
+1: gee_fg    204          0        0       0
+2: gee_kc    204          0        0       0
+3: gee_md    204          0        0       0
+       n mism_primary mism_strict
+   <int>        <int>       <int>
+1:   200            0           0
+     corr n_both only_geesmv only_fewclust      max_rel share_rel_lt_1e8
+   <char>  <int>       <int>         <int>        <num>            <num>
+1:     md    201           2            10 1.829370e-14                1
+2:     kc    200           3            10 8.146025e-01                0
+3:     fg    201           2            13 3.516679e-14                1
+     corr     n       q05       q50      q95 share_within_1pct
+   <char> <int>     <num>     <num>    <num>             <num>
+1:     md   198 0.9973551 0.9999655 1.000531        0.94444444
+2:     kc   199 0.6463664 0.8436934 1.474941        0.01507538
+3:     fg   199 0.9972781 0.9999785 1.001124        0.93467337
+     gate   pass
+   <char> <lgcl>
+1:    GE2   TRUE
+2:    GE3   TRUE
+3:    GE5   TRUE
+                                                                                                                                                                                                                                                                                                   detail
+                                                                                                                                                                                                                                                                                                   <char>
+1: gee exch: 562 saved finite rows, 0 without new value, max |d est| 0.00e+00, max |d se| 0.00e+00; geesmv (i<=50): gee_fg both 204, only saved 0, only new 0, max rel 0.00e+00; gee_kc both 204, only saved 0, only new 0, max rel 0.00e+00; gee_md both 204, only saved 0, only new 0, max rel 0.00e+00
+2:                                                                                                                                                                                                                                                   200 pilot replicates, mismatches primary 0, strict 0
+3:                                                                                                      md: both 201, only geesmv 2, only fewclust 10, max rel 1.83e-14; kc: both 200, only geesmv 3, only fewclust 10, max rel 8.15e-01; fg: both 201, only geesmv 2, only fewclust 13, max rel 3.52e-14

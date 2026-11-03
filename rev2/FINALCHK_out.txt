@@ -1,0 +1,98 @@
+== A. MMMROB: livello per N, filtri separati (file IMPL_MMMROB_byN.csv) ==
+         dgp  N n_mod lev_mod n_rob lev_rob
+    GLMM-AR1 10   696    4.74   796   20.10
+ GLMM-native 10   707    6.08   812   20.94
+  GenBinaryY 10   644    7.45   759   22.27
+worst case per meccanismo (max su N):
+         dgp worst_mod worst_rob
+    GLMM-AR1      1.57     15.10
+ GLMM-native      1.20     15.94
+  GenBinaryY      2.45     17.27
+intervalli: mod 1.20-2.45 | rob 15.10-17.27 
+
+== B. worst case MMM pubblicato vs ricalcolato (IMPL_MMMROB_worstcase.csv) ==
+         dgp worst_pubblicato worst_sottogriglia worst_ricalcolato_mod
+    GLMM-AR1             1.55               1.60                  1.57
+ GLMM-native             1.50               1.08                  1.20
+  GenBinaryY             2.06               2.46                  2.45
+ worst_ricalcolato_rob
+                 15.10
+                 15.94
+                 17.27
+
+== C. rapporto SE_rob/SE_mod a N=10 (IMPL_MMMROB_raw.csv) ==
+N=10: rapporto medio 0.8114 (mediano 0.7446), n=2020 -> robusta 18.9% piu' piccola
+fit totali nel file: 11849 ; utilizzabili con entrambe: 10839
+
+== D. DGRID: livello e MCSE, quattro metodi richiesti (IMPL_DGRID_publishable.csv) ==
+mmm       : 5.46 (0.566) / 4.86 (0.533) / 5.25 (0.564)
+gee_fg    : 6.57 (0.609) / 6.73 (0.617) / 9.29 (0.729)
+gee_md    : 7.44 (0.645) / 7.48 (0.649) / 10.39 (0.768)
+gee_kc    : 7.02 (0.628) / 10.07 (0.741) / 11.58 (0.805)
+
+|livello-5| per metodo, ordine ICC 0.071/0.233/0.549:
+gee       : 7.57 / 7.74 / 10.95
+gee_fg    : 1.57 / 1.73 / 4.29
+gee_kc    : 2.02 / 5.07 / 6.58
+gee_md    : 2.44 / 2.48 / 5.39
+glmer     : 0.73 / 1.24 / 0.32
+glmer_lrt : 2.58 / 1.02 / 2.32
+mmm       : 0.46 / 0.14 / 0.25
+shrink    : 0.73 / 1.23 / 0.77
+
+Spearman fra ordinamenti (ranghi su |livello-5|):
+  0.071 vs 0.233 = 0.6190 | 0.071 vs 0.549 = 0.8095 | 0.233 vs 0.549 = 0.9048
+n_use per D-metodo, intervallo: 1562 1795 
+
+== E. test di deterioramento (IMPL_DGRID_tests.csv) ==
+    method lev_low lev_high delta  p_2camp  p_trend
+    gee_kc    7.02    11.58  4.56 7.52e-06 0.000027
+    gee_md    7.44    10.39  2.95 3.20e-03 0.001120
+    gee_fg    6.57     9.29  2.71 4.22e-03 0.001710
+       gee   12.57    15.95  3.38 4.82e-03 0.002070
+     glmer    5.73     5.32 -0.42 6.04e-01 0.501000
+ glmer_lrt    7.58     7.32 -0.26 7.68e-01 0.959000
+       mmm    5.46     5.25 -0.21 7.93e-01 0.894000
+    shrink    5.73     5.77  0.05 9.56e-01 0.951000
+
+== F. correlazione di rango fra MECCANISMI, griglia intera (REV_cells.csv) ==
+    method GLMM-AR1 GLMM-native GenBinaryY
+       gee        6           7          4
+    gee_fg        1           1          1
+    gee_kc        8           8          8
+    gee_md        2           2          2
+     glmer        4           4          5
+ glmer_lrt        7           6          7
+       mmm        3           3          3
+    shrink        5           5          6
+  GLMM-AR1 vs GLMM-native = 0.9762
+  GLMM-AR1 vs GenBinaryY = 0.9286
+  GLMM-native vs GenBinaryY = 0.8571
+intervallo fra meccanismi: 0.8571 - 0.9762
+
+== G. M5: diagonale della matrice D dei due generatori a effetti casuali ==
+GLMM-native M5:
+  D <- matrix(c( 
+  D <- matrix(c(
+    1.0,   0.01,  0.01,
+    0.01,  0.001, 0.0,
+    0.01,  0.0,   0.001 
+GLMM-AR1 M5:
+generate_data_model5 <- function(N, ntime, sim_id, methods = c("mmlb", "manual")) {
+  methods <- match.arg(methods)
+  D <- matrix(c(1.0,  0.01,  0.01,
+                0.01, 0.001, 0.0,
+                0.01, 0.0,   0.01), nrow = 3, byrow = TRUE)
+  .ar1_generate(~ time * trt + dose, ~ 1 + time + dose, D = D, 
+
+== H. mediana tentativi per cella-metodo, file vecchio e nuovo ==
+DGRID_raw.csv        righe totali 42879 | righe/cella-metodo: mediana 300.0 media 297.8 | utilizzabili: mediana 295.0 media 275.1
+IMPL_DGRID_raw.csv   righe totali 42880 | righe/cella-metodo: mediana 300.0 media 297.8 | utilizzabili: mediana 298.0 media 275.9
+
+== I. calibrazione M-30 sotto i due generatori pseudocasuali ==
+IMPL_MMMROB_n60_mmlb.csv     (L'Ecuyer) n=399 | SE media 0.18532 | SD 0.18409 | rapporto 1.0067
+IMPL_MMMROB_n60_manual.csv   (L'Ecuyer) n=398 | SE media 0.19638 | SD 0.19298 | rapporto 1.0176
+VER_mmmrob_n60_mmlb.csv      (Mersenne) n=398 | SE media 0.18489 | SD 0.19446 | rapporto 0.9507
+VER_mmmrob_n60_manual.csv    (Mersenne) n=399 | SE media 0.19597 | SD 0.20714 | rapporto 0.9461
+
+DONE_FINALCHK

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/mnt/micron/MMM/py/s8b_build_spec.py", line 128, in <module>
+    OUT.append(new(i)); n_new += 1
+               ^^^^^^
+  File "/mnt/micron/MMM/py/s8b_build_spec.py", line 112, in new
+    FILE = S8B_FILES[h]; key = "|".join(p[1:]); kd = S8B_KINDS[FILE][key]
+                                                     ~~~~~~~~~~~~~~~^^^^^
+KeyError: 'sep|gd3_n'

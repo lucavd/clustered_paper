@@ -1,0 +1,20 @@
+Warning message:
+In fifelse(scen == "M1c", 1L, as.integer(sub("M", "", scen))) :
+  NAs introduced by coercion
+      cor     n both_md one_md       max_md both_kc one_kc       max_kc both_fg
+   <char> <int>   <int>  <int>        <num>   <int>  <int>        <num>   <int>
+1:   exch   670     666      4 1.640273e-13     668      0 8.650558e-13     670
+2:    ind   673     671      0 3.627832e-13     669      2 7.933625e-13     673
+3:    ar1   673     671      0 7.829028e-13     667      4 6.344605e-13     673
+   one_fg       max_fg
+    <int>        <num>
+1:      0 5.736946e-14
+2:      0 3.642801e-13
+3:      0 1.844462e-13
+flip score vs numDeriv: datasets 240 max rel diff 3.48e+285 
+      cor     n med_ratio       q05      q95 share_off_1pct
+   <char> <int>     <num>     <num>    <num>          <num>
+1:   exch   668 0.9393504 0.6286649 1.737215      0.9700599
+2:    ind   671 1.0264378 0.8860237 1.617630      0.8599106
+3:    ar1   671 0.9888259 0.7207596 1.602401      0.9567809
+GE4 FAIL (a) TRUE (b) FALSE 

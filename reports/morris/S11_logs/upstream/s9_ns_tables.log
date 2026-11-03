@@ -1,0 +1,8 @@
+D-82: rows_ns$U0 switched off on 1608 of 13000 constant-outcome rows
+Key: <method, label>
+   method  label     U0    U0n   dU0
+   <char> <char>  <int>  <int> <int>
+1:    gee manual 361193 360312   881
+2:    gee   mmlb 362411 361684   727
+D-90: rows_ns$U0 switched off on 38119 of 60141 rows of the MMM with the check on a no-result key
+M6-M7 tables rewritten: 7680 6528 289 

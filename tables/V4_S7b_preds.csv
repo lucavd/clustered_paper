@@ -1,0 +1,22 @@
+code,quantity,observed,mcse,rel_lo,rel_hi,verdict,source,note
+PC1,design points with MMM (check) + t at N - 2 clearly above 7.5%,0,0,0,0,confermata,"V4_S7b_rule_summary.csv, strategy mmm|t2, src tutti, n_hi",""
+PC2,"strategy chosen by the rule with N - 2 (1 = mmm|t2, 0 = other)",1,0,1,1,confermata,"V4_S7b_rule_summary.csv, ref t2, recommended",chosen: mmm|t2
+PC3,"mean shift of the type I error rate, N - 2 minus N - p, all design points, gee (points)",0.211966992196528,0.00383291726284091,0,1,confermata,"V4_S7b_df_shift.csv, group all design points",""
+PC3,"mean shift of the type I error rate, N - 2 minus N - p, all design points, gee_fg (points)",0.106514647083416,0.00301297117119319,0,1,confermata,"V4_S7b_df_shift.csv, group all design points",""
+PC3,"mean shift of the type I error rate, N - 2 minus N - p, all design points, gee_kc (points)",0.125991767792894,0.00301331288525241,0,1,confermata,"V4_S7b_df_shift.csv, group all design points",""
+PC3,"mean shift of the type I error rate, N - 2 minus N - p, all design points, gee_md (points)",0.126638804847172,0.00320384372762561,0,1,confermata,"V4_S7b_df_shift.csv, group all design points",""
+PC3,"mean shift of the type I error rate, N - 2 minus N - p, all design points, glmer (points)",0.0488990411995365,0.00187758470656384,0,1,confermata,"V4_S7b_df_shift.csv, group all design points",""
+PC3,"mean shift of the type I error rate, N - 2 minus N - p, all design points, mmm (points)",0.0955141563561627,0.00322770482071471,0,1,confermata,"V4_S7b_df_shift.csv, group all design points",""
+PC3,"mean shift of the type I error rate, N - 2 minus N - p, all design points, shrink (points)",0.0629121860521798,0.00235451123320034,0,1,confermata,"V4_S7b_df_shift.csv, group all design points",""
+PC4,"mean shift at N = 10, mmm (points)",0.632889681531413,0.0400784011019194,0,2.5,confermata,"V4_S7b_df_shift.csv, group N = 10",""
+PC4,"mean shift at N = 10, gee_fg (points)",0.850904125877994,0.0373585048104299,0,2.5,confermata,"V4_S7b_df_shift.csv, group N = 10",""
+PC5,design points with Fay-Graubard + t at N - 2 clearly above 7.5%,7,0,2,10,confermata,"V4_S7b_rule_summary.csv, strategy gee_fg|t2, src tutti, n_hi",""
+PC6,"largest expected excess rejection over all GLMM-native design points and marginal methods, normal reference (points)",1.54547587773249,1.09281647330488,0,1.5,indeterminata,"V4_S7b_null_shift.csv, ref n, max excess","M7 N=10 T=2 shrink; empirical SE 0.0077, rate 0.0"
+PC6b,"the same, shrinkage excluded (not pre-registered, explanation of PC6)",0.259682282655516,0.00580957788120165,0,1.5,confermata,"V4_S7b_null_shift.csv, ref n, max excess, method != shrink","M7 N=145 T=10 mmm; empirical SE 0.0525, rate 6.8"
+PC7,"largest expected excess rejection, main scenarios M1-M5 and M1c, normal reference (points)",0.0291994451501576,0.000653246147380602,0,0.5,confermata,"V4_S7b_null_shift.csv, ref n, group M1-M5 and M1c",M4 N=145 T=10 mmm; empirical SE 0.0457
+PC8,"hi flags on GLMM-native that change after subtracting the excess, mmm + t",0,0,0,0,confermata,"V4_S7b_null_summary.csv, group all, ref t",""
+PC8,"hi flags on GLMM-native that change after subtracting the excess, gee_fg + t",0,0,0,0,confermata,"V4_S7b_null_summary.csv, group all, ref t",""
+PC9,share of draws of 10 patients with a binary covariate at one level (%),8.8,1.26693330526907,0,25,confermata,"V4_S7b_resp_degeneracy.csv, N = 10, any_one",""
+PC10,"usable on returned, 10 patients, full specification, MMM (%)",74.0634005763689,2.35284655160351,75,100,indeterminata,"V4_S7b_resp_usable.csv, pieno MMM N=10, pct_usable_returned","returned 347, usable 257 of 500"
+PC11,"mean model SE / SD of estimates, MMM, full specification, 50 patients",1.17585809675087,0.0372211376757122,0.91,1.14,indeterminata,"V4_S7b_resp_seratio.csv, pieno MMM N=50, ratio",""
+PC12,"bias / SD of estimates, MMM, full specification, 50 patients",-0.0111219014851798,0.0447213595499958,-0.46,0.46,confermata,"V4_S7b_resp_bias.csv, pieno MMM N=50, bias_over_sd",""

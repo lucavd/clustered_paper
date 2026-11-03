@@ -1,0 +1,28 @@
+RNGkind set from table: L'Ecuyer-CMRG, Inversion, Rejection 
+ test    pass
+   P1  92/101
+   P2   15/15
+   P3 240/240
+   P4   96/96
+P3 datasets whose generation raised an error (in both paths): 0 
+FAILURES:
+ test                                      item  pass
+   P1 GLMM-native M2 H1 beta_c == 1.16 x beta_m FALSE
+   P1 GLMM-native M2 H0 beta_c == 1.16 x beta_m FALSE
+   P1                    GenBinaryY M3 H0 sigma FALSE
+   P1                    GenBinaryY M4 H0 sigma FALSE
+   P1                    GenBinaryY M4 H0 gamma FALSE
+   P1                          GLMM-AR1 M5 H1 D FALSE
+   P1                    GenBinaryY M5 H0 sigma FALSE
+   P1                    GenBinaryY M5 H0 gamma FALSE
+   P1                          GLMM-AR1 M5 H0 D FALSE
+                                                                                         detail
+ beta_c = -2.32, 0.116, 0.232, 0.012, 0.232; 1.16 x beta_m = -2.32, 0.116, 0.232, 0.0116, 0.232
+         beta_c = -2.32, 0.116, 0.232, 0.012, 0; 1.16 x beta_m = -2.32, 0.116, 0.232, 0.0116, 0
+                                                                                        1, 0.01
+                                                                                        1, 0.01
+                                                                                        1, 0.01
+                                                  1, 0.01, 0.01; 0.01, 0.001, 0; 0.01, 0, 0.001
+                                                                                  1, 0.01, 0.01
+                                                                                   1, 0.1, 0.05
+                                                  1, 0.01, 0.01; 0.01, 0.001, 0; 0.01, 0, 0.001

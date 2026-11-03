@@ -1,0 +1,29 @@
+GenBinaryY tasks to run: 27 
+TASK FAILED GenBinaryY_m3_N10_T4_manual_c08.rds: missing value where TRUE/FALSE needed
+TASK FAILED GenBinaryY_m3_N10_T4_mmlb_c08.rds: missing value where TRUE/FALSE needed
+TASK FAILED GenBinaryY_m3_N15_T3_mmlb_c02.rds: missing value where TRUE/FALSE needed
+TASK FAILED GenBinaryY_m3_N15_T3_manual_c02.rds: missing value where TRUE/FALSE needed
+TASK FAILED GenBinaryY_m3_N10_T3_mmlb_c01.rds: missing value where TRUE/FALSE needed
+TASK FAILED GenBinaryY_m3_N10_T3_manual_c01.rds: missing value where TRUE/FALSE needed
+TASK FAILED GenBinaryY_m3_N10_T2_manual_c03.rds: missing value where TRUE/FALSE needed
+TASK FAILED GenBinaryY_m3_N15_T2_manual_c02.rds: missing value where TRUE/FALSE needed
+TASK FAILED GenBinaryY_m3_N15_T2_mmlb_c02.rds: missing value where TRUE/FALSE needed
+TASK FAILED GenBinaryY_m3_N10_T2_mmlb_c03.rds: missing value where TRUE/FALSE needed
+TASK FAILED GenBinaryY_m3_N10_T3_manual_c06.rds: missing value where TRUE/FALSE needed
+TASK FAILED GenBinaryY_m3_N10_T3_mmlb_c06.rds: missing value where TRUE/FALSE needed
+TASK FAILED GenBinaryY_m3_N10_T2_manual_c08.rds: missing value where TRUE/FALSE needed
+TASK FAILED GenBinaryY_m3_N10_T3_manual_c03.rds: missing value where TRUE/FALSE needed
+TASK FAILED GenBinaryY_m3_N10_T4_mmlb_c07.rds: missing value where TRUE/FALSE needed
+TASK FAILED GenBinaryY_m3_N10_T4_manual_c07.rds: missing value where TRUE/FALSE needed
+TASK FAILED GenBinaryY_m3_N10_T2_mmlb_c08.rds: missing value where TRUE/FALSE needed
+TASK FAILED GenBinaryY_m3_N10_T4_manual_c04.rds: missing value where TRUE/FALSE needed
+TASK FAILED GenBinaryY_m3_N10_T4_mmlb_c04.rds: missing value where TRUE/FALSE needed
+TASK FAILED GenBinaryY_m3_N10_T3_mmlb_c03.rds: missing value where TRUE/FALSE needed
+TASK FAILED GenBinaryY_m3_N10_T2_manual_c09.rds: missing value where TRUE/FALSE needed
+TASK FAILED GenBinaryY_m3_N10_T3_manual_c09.rds: missing value where TRUE/FALSE needed
+TASK FAILED GenBinaryY_m3_N10_T2_mmlb_c09.rds: missing value where TRUE/FALSE needed
+TASK FAILED GenBinaryY_m3_N10_T3_mmlb_c09.rds: missing value where TRUE/FALSE needed
+TASK FAILED GenBinaryY_m3_N15_T3_manual_c10.rds: missing value where TRUE/FALSE needed
+TASK FAILED GenBinaryY_m3_N15_T3_mmlb_c10.rds: missing value where TRUE/FALSE needed
+TASK FAILED GenBinaryY_m3_N10_T8_manual_c09.rds: missing value where TRUE/FALSE needed
+GenBinaryY done: 0 tasks ok, 27 failed; 0.002069134 hours 

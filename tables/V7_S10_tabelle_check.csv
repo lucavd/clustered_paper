@@ -1,0 +1,256 @@
+id,table,render_line,row,column,printed_render,registry_text,registry_value,registry_mcse,recomputed_text_def,recomputed_text_def_rounded,recomputed_code_def,recomputed_code_def_rounded,status,note
+v:rate|GB|gee_fg@tab,Table 3,1090,"GEE, Fay-Graubard",Rate GB,5.8,5.8,5.82570543781156,0.0356180394098215,5.82570543781156,5.8,5.82570543781156,5.8,MATCH,
+v:rate|NAT|gee_fg@tab,Table 3,1090,"GEE, Fay-Graubard",Rate NAT,5.3,5.3,5.32219581170252,0.0330360656150223,5.32219581170252,5.3,5.32219581170252,5.3,MATCH,
+v:rate|AR1|gee_fg@tab,Table 3,1090,"GEE, Fay-Graubard",Rate AR1,5.3,5.3,5.34336284387783,0.0327781291675244,5.34336284387783,5.3,5.34336284387783,5.3,MATCH,
+v:wc|GB|gee_fg@tab,Table 3,1090,"GEE, Fay-Graubard",Worst GB,4.7,4.7,4.72205064854849,0.229803502707525,4.72205064854849,4.7,4.72205064854849,4.7,MATCH,
+v:wc|NAT|gee_fg@tab,Table 3,1090,"GEE, Fay-Graubard",Worst NAT,2.8,2.8,2.83402301456834,0.202102989412167,2.83402301456834,2.8,2.83402301456834,2.8,MATCH,
+v:wc|AR1|gee_fg@tab,Table 3,1090,"GEE, Fay-Graubard",Worst AR1,2.9,2.9,2.8505214368482,0.201735750482915,2.8505214368482,2.9,2.8505214368482,2.9,MATCH,fragile: unrounded 2.850521 lies 0.000521 from the rounding boundary
+v:mad|GB|gee_fg@tab,Table 3,1090,"GEE, Fay-Graubard",MAD GB,1.0,1.0,1.04306028839004,0.0348631952501905,1.04306028839004,1.0,1.04306028839004,1.0,MATCH,
+v:mad|NAT|gee_fg@tab,Table 3,1090,"GEE, Fay-Graubard",MAD NAT,0.5,0.5,0.518624821208572,0.0290000000706176,0.518624821208572,0.5,0.518624821208572,0.5,MATCH,
+v:mad|AR1|gee_fg@tab,Table 3,1090,"GEE, Fay-Graubard",MAD AR1,0.6,0.6,0.5508922285074819,0.0300423269162324,0.550892228507482,0.6,0.550892228507482,0.6,MATCH,fragile: unrounded 0.550892 lies 0.000892 from the rounding boundary
+v:rate|GB|gee_md@tab,Table 3,1091,"GEE, Mancl-DeRouen",Rate GB,6.1,6.1,6.08874610982833,0.036514115271591,6.08874610982833,6.1,6.08874610982833,6.1,MATCH,
+v:rate|NAT|gee_md@tab,Table 3,1091,"GEE, Mancl-DeRouen",Rate NAT,5.5,5.5,5.5073032807786,0.0337810208790614,5.5073032807786,5.5,5.5073032807786,5.5,MATCH,
+v:rate|AR1|gee_md@tab,Table 3,1091,"GEE, Mancl-DeRouen",Rate AR1,5.6,5.6,5.56350820607834,0.0341423763628053,5.56350820607834,5.6,5.56350820607834,5.6,MATCH,
+v:wc|GB|gee_md@tab,Table 3,1091,"GEE, Mancl-DeRouen",Worst GB,8.6,8.6,8.55008457056944,0.268344888327165,8.55008457056944,8.6,8.55008457056944,8.6,MATCH,fragile: unrounded 8.550085 lies 0.000085 from the rounding boundary
+v:wc|NAT|gee_md@tab,Table 3,1091,"GEE, Mancl-DeRouen",Worst NAT,5.9,5.9,5.89695644669467,0.237739788129607,5.89695644669467,5.9,5.89695644669467,5.9,MATCH,
+v:wc|AR1|gee_md@tab,Table 3,1091,"GEE, Mancl-DeRouen",Worst AR1,6.0,6.0,6.0307520432763,0.2429124790651409,6.0307520432763,6.0,6.0307520432763,6.0,MATCH,
+v:mad|GB|gee_md@tab,Table 3,1091,"GEE, Mancl-DeRouen",MAD GB,1.5,1.5,1.46582521395825,0.035991768064666,1.46582521395825,1.5,1.46582521395825,1.5,MATCH,
+v:mad|NAT|gee_md@tab,Table 3,1091,"GEE, Mancl-DeRouen",MAD NAT,0.9,0.9,0.88020911109287,0.03095958096698,0.88020911109287,0.9,0.88020911109287,0.9,MATCH,
+v:mad|AR1|gee_md@tab,Table 3,1091,"GEE, Mancl-DeRouen",MAD AR1,1.0,1.0,0.954580787167344,0.033130533350265,0.954580787167344,1.0,0.954580787167344,1.0,MATCH,
+v:rate|GB|mmm@tab,Table 3,1092,"Marginalized model, with check",Rate GB,5.5,5.5,5.53974338375376,0.0359163499290627,5.52773989379196,5.5,5.53974338375376,5.5,MATCH,
+v:rate|NAT|mmm@tab,Table 3,1092,"Marginalized model, with check",Rate NAT,5.2,5.2,5.22564779816932,0.0340185502753031,5.21773423270424,5.2,5.22564779816932,5.2,MATCH,
+v:rate|AR1|mmm@tab,Table 3,1092,"Marginalized model, with check",Rate AR1,5.4,5.4,5.3853977396094,0.0337391290487933,5.37592083612721,5.4,5.3853977396094,5.4,MATCH,
+v:wc|GB|mmm@tab,Table 3,1092,"Marginalized model, with check",Worst GB,0.8,0.8,0.831814631606353,0.0984974777565282,0.801754713459026,0.8,0.831814631606353,0.8,MATCH,"literal check gives 0.802, code reading 0.832: both print 0.8 (text 3.1 quotes 0.83)"
+v:wc|NAT|mmm@tab,Table 3,1092,"Marginalized model, with check",Worst NAT,0.4,0.4,0.4383795166627669,0.0851304802065329,0.439834163629676,0.4,0.438379516662767,0.4,MATCH,
+v:wc|AR1|mmm@tab,Table 3,1092,"Marginalized model, with check",Worst AR1,0.6,0.6,0.563385007717603,0.085724000694731,0.561522454185407,0.6,0.563385007717603,0.6,MATCH,
+v:mad|GB|mmm@tab,Table 3,1092,"Marginalized model, with check",MAD GB,0.5,0.5,0.536074594480681,0.036006043479964,0.522571262699674,0.5,0.536074594480681,0.5,MATCH,
+v:mad|NAT|mmm@tab,Table 3,1092,"Marginalized model, with check",MAD NAT,0.2,0.2,0.2398511244841869,0.0297665267958037,0.234647282272562,0.2,0.239851124484187,0.2,MATCH,
+v:mad|AR1|mmm@tab,Table 3,1092,"Marginalized model, with check",MAD AR1,0.4,0.4,0.3748930748407319,0.0327007188947038,0.369844517139932,0.4,0.374893074840732,0.4,MATCH,
+v:rate|GB|glmer@tab,Table 3,1093,"GLMM, Wald",Rate GB,8.6,8.6,8.61163506014761,0.0453452126193127,8.61163506014761,8.6,8.61163506014761,8.6,MATCH,
+v:rate|NAT|glmer@tab,Table 3,1093,"GLMM, Wald",Rate NAT,6.3,6.3,6.29781487156008,0.0395424942123858,6.29781487156008,6.3,6.29781487156008,6.3,MATCH,
+v:rate|AR1|glmer@tab,Table 3,1093,"GLMM, Wald",Rate AR1,6.6,6.6,6.55274385078627,0.0390798742976858,6.55274385078627,6.6,6.55274385078627,6.6,MATCH,
+v:wc|GB|glmer@tab,Table 3,1093,"GLMM, Wald",Worst GB,4.5,4.5,4.49110690998881,0.125921827538044,4.49110690998881,4.5,4.49110690998881,4.5,MATCH,
+v:wc|NAT|glmer@tab,Table 3,1093,"GLMM, Wald",Worst NAT,1.8,1.8,1.8253290367667,0.102599105500572,1.8253290367667,1.8,1.8253290367667,1.8,MATCH,
+v:wc|AR1|glmer@tab,Table 3,1093,"GLMM, Wald",Worst AR1,2.2,2.2,2.17232869317086,0.111830837922643,2.17232869317086,2.2,2.17232869317086,2.2,MATCH,
+v:mad|GB|glmer@tab,Table 3,1093,"GLMM, Wald",MAD GB,3.5,3.5,3.47994346364855,0.0449778133921645,3.47994346364855,3.5,3.47994346364855,3.5,MATCH,
+v:mad|NAT|glmer@tab,Table 3,1093,"GLMM, Wald",MAD NAT,1.4,1.4,1.3756155832883,0.0390592501093341,1.3756155832883,1.4,1.3756155832883,1.4,MATCH,
+v:mad|AR1|glmer@tab,Table 3,1093,"GLMM, Wald",MAD AR1,1.6,1.6,1.58153631581742,0.0373768385005692,1.58153631581742,1.6,1.58153631581742,1.6,MATCH,
+v:rate|GB|shrink@tab,Table 3,1094,Shrinkage GLM,Rate GB,9.3,9.3,9.28377756177419,0.0471941303254473,9.28377756177419,9.3,9.28377756177419,9.3,MATCH,
+v:rate|NAT|shrink@tab,Table 3,1094,Shrinkage GLM,Rate NAT,6.6,6.6,6.64424631635503,0.0402150756500753,6.64424631635503,6.6,6.64424631635503,6.6,MATCH,
+v:rate|AR1|shrink@tab,Table 3,1094,Shrinkage GLM,Rate AR1,6.9,6.9,6.91019516161822,0.039306509916494,6.91019516161822,6.9,6.91019516161822,6.9,MATCH,
+v:wc|GB|shrink@tab,Table 3,1094,Shrinkage GLM,Worst GB,4.9,4.9,4.89176652493235,0.122427063950798,4.89176652493235,4.9,4.89176652493235,4.9,MATCH,
+v:wc|NAT|shrink@tab,Table 3,1094,Shrinkage GLM,Worst NAT,2.3,2.3,2.30498406829,0.1329468221858169,2.30498406829,2.3,2.30498406829,2.3,MATCH,
+v:wc|AR1|shrink@tab,Table 3,1094,Shrinkage GLM,Worst AR1,2.4,2.4,2.43217129164412,0.109854608603773,2.43217129164412,2.4,2.43217129164412,2.4,MATCH,
+v:mad|GB|shrink@tab,Table 3,1094,Shrinkage GLM,MAD GB,4.2,4.2,4.20351186726724,0.0471240785396113,4.20351186726724,4.2,4.20351186726724,4.2,MATCH,
+v:mad|NAT|shrink@tab,Table 3,1094,Shrinkage GLM,MAD NAT,1.6,1.6,1.60508757507333,0.0393240509941785,1.60508757507333,1.6,1.60508757507333,1.6,MATCH,
+v:mad|AR1|shrink@tab,Table 3,1094,Shrinkage GLM,MAD AR1,1.9,1.9,1.8542798249861,0.0382055907811851,1.8542798249861,1.9,1.8542798249861,1.9,MATCH,
+v:rate|GB|gee@tab,Table 3,1095,"GEE, uncorrected",Rate GB,8.4,8.4,8.36855019348863,0.0414681225368863,8.36855019348863,8.4,8.36855019348863,8.4,MATCH,
+v:rate|NAT|gee@tab,Table 3,1095,"GEE, uncorrected",Rate NAT,7.6,7.6,7.625989115851089,0.0392013027226311,7.62598911585109,7.6,7.62598911585109,7.6,MATCH,
+v:rate|AR1|gee@tab,Table 3,1095,"GEE, uncorrected",Rate AR1,7.7,7.7,7.71749506071437,0.0386896396687202,7.71749506071437,7.7,7.71749506071437,7.7,MATCH,
+v:wc|GB|gee@tab,Table 3,1095,"GEE, uncorrected",Worst GB,22.1,22.1,22.078662637684,0.3151791064346989,22.078662637684,22.1,22.078662637684,22.1,MATCH,
+v:wc|NAT|gee@tab,Table 3,1095,"GEE, uncorrected",Worst NAT,18.0,18.0,17.9961696694567,0.2941848747330639,17.9961696694567,18.0,17.9961696694567,18.0,MATCH,
+v:wc|AR1|gee@tab,Table 3,1095,"GEE, uncorrected",Worst AR1,19.1,19.1,19.1121853163588,0.296605549479519,19.1121853163588,19.1,19.1121853163588,19.1,MATCH,
+v:mad|GB|gee@tab,Table 3,1095,"GEE, uncorrected",MAD GB,3.9,3.9,3.93361243395923,0.0441993975069778,3.93361243395923,3.9,3.93361243395923,3.9,MATCH,
+v:mad|NAT|gee@tab,Table 3,1095,"GEE, uncorrected",MAD NAT,3.0,3.0,3.04856298181065,0.0413488893352466,3.04856298181065,3.0,3.04856298181065,3.0,MATCH,
+v:mad|AR1|gee@tab,Table 3,1095,"GEE, uncorrected",MAD AR1,3.2,3.2,3.17945906497523,0.0409192091340557,3.17945906497523,3.2,3.17945906497523,3.2,MATCH,
+v:rate|GB|glmer_lrt@tab,Table 3,1096,"GLMM, likelihood ratio",Rate GB,7.8,7.8,7.80045078163607,0.0414736489977442,7.80045078163607,7.8,7.80045078163607,7.8,MATCH,
+v:rate|NAT|glmer_lrt@tab,Table 3,1096,"GLMM, likelihood ratio",Rate NAT,5.8,5.8,5.77026372774067,0.0362559904943033,5.77026372774067,5.8,5.77026372774067,5.8,MATCH,
+v:rate|AR1|glmer_lrt@tab,Table 3,1096,"GLMM, likelihood ratio",Rate AR1,6.1,6.1,6.14199940247299,0.0367782636022326,6.14199940247299,6.1,6.14199940247299,6.1,MATCH,
+v:wc|GB|glmer_lrt@tab,Table 3,1096,"GLMM, likelihood ratio",Worst GB,3.6,3.6,3.64829497344315,0.154027414808205,3.64829497344315,3.6,3.64829497344315,3.6,MATCH,
+v:wc|NAT|glmer_lrt@tab,Table 3,1096,"GLMM, likelihood ratio",Worst NAT,1.8,1.8,1.75755313715476,0.1606379092871829,1.75755313715476,1.8,1.75755313715476,1.8,MATCH,
+v:wc|AR1|glmer_lrt@tab,Table 3,1096,"GLMM, likelihood ratio",Worst AR1,1.8,1.8,1.84175243503293,0.136762380037451,1.84175243503293,1.8,1.84175243503293,1.8,MATCH,
+v:mad|GB|glmer_lrt@tab,Table 3,1096,"GLMM, likelihood ratio",MAD GB,2.8,2.8,2.8005328011214,0.0414765912241608,2.8005328011214,2.8,2.8005328011214,2.8,MATCH,
+v:mad|NAT|glmer_lrt@tab,Table 3,1096,"GLMM, likelihood ratio",MAD NAT,0.8,0.8,0.771764041118225,0.0362440169460975,0.771764041118225,0.8,0.771764041118225,0.8,MATCH,
+v:mad|AR1|glmer_lrt@tab,Table 3,1096,"GLMM, likelihood ratio",MAD AR1,1.1,1.1,1.14338334137695,0.0367838265372699,1.14338334137695,1.1,1.14338334137695,1.1,MATCH,
+v:rate|GB|gee_kc@tab,Table 3,1097,"GEE, Kauermann-Carroll",Rate GB,6.9,6.9,6.94964248373011,0.038580207808437,6.94964248373011,6.9,6.94964248373011,6.9,MATCH,fragile: unrounded 6.949642 lies 0.000358 from the rounding boundary
+v:rate|NAT|gee_kc@tab,Table 3,1097,"GEE, Kauermann-Carroll",Rate NAT,6.3,6.3,6.34172285724588,0.0364193760778612,6.34172285724588,6.3,6.34172285724588,6.3,MATCH,
+v:rate|AR1|gee_kc@tab,Table 3,1097,"GEE, Kauermann-Carroll",Rate AR1,6.4,6.4,6.39727669584493,0.0363288281814622,6.39744500287256,6.4,6.39744500287256,6.4,MATCH,code-reading value differs from registry by 0.00017 (4 GLMM-AR1 replicates without a gee_kc row in the project row set)
+v:wc|GB|gee_kc@tab,Table 3,1097,"GEE, Kauermann-Carroll",Worst GB,14.1,14.1,14.1244381503602,0.3101522833646689,14.1244381503602,14.1,14.1244381503602,14.1,MATCH,
+v:wc|NAT|gee_kc@tab,Table 3,1097,"GEE, Kauermann-Carroll",Worst NAT,10.7,10.7,10.7406880864373,0.2766462415810689,10.7406880864373,10.7,10.7406880864373,10.7,MATCH,
+v:wc|AR1|gee_kc@tab,Table 3,1097,"GEE, Kauermann-Carroll",Worst AR1,11.2,11.2,11.2199791159067,0.2796097023588309,11.2220160074237,11.2,11.2220160074237,11.2,MATCH,code-reading value differs from registry by 0.002 (4 GLMM-AR1 replicates without a gee_kc row in the project row set)
+v:mad|GB|gee_kc@tab,Table 3,1097,"GEE, Kauermann-Carroll",MAD GB,2.5,2.5,2.48704563671687,0.0416116354649724,2.48704563671687,2.5,2.48704563671687,2.5,MATCH,
+v:mad|NAT|gee_kc@tab,Table 3,1097,"GEE, Kauermann-Carroll",MAD NAT,1.7,1.7,1.70510271130835,0.0371480774143609,1.70510271130835,1.7,1.70510271130835,1.7,MATCH,
+v:mad|AR1|gee_kc@tab,Table 3,1097,"GEE, Kauermann-Carroll",MAD AR1,1.8,1.8,1.79347544401784,0.0372189115619116,1.79360274973765,1.8,1.79360274973765,1.8,MATCH,code-reading value differs from registry by 0.00013 (4 GLMM-AR1 replicates without a gee_kc row in the project row set)
+v:puT|RI|glmer|2@tab,Table 4,1109,Intercept (M1-M2) T = 2,"GLMM, Wald",68.6,68.6,68.5594654419701,0.124635177100461,69.1913499071117,69.2,68.55946544197006,68.6,DEFINITION_DIVERGENCE,needs H0-only AND unweighted mean over design points
+v:puT|RI|glmer_lrt|2@tab,Table 4,1109,Intercept (M1-M2) T = 2,"GLMM, LR",98.9,98.9,98.9271417518501,0.0347922989269566,98.99962427202705,99.0,98.92714175185004,98.9,DEFINITION_DIVERGENCE,reproduced with H0-only (pooled)
+v:puT|RI|mmm|2@tab,Table 4,1109,Intercept (M1-M2) T = 2,Marginalized model,68.2,68.2,68.1610797118623,0.126261001004289,68.93877721418582,68.9,68.16107971186226,68.2,DEFINITION_DIVERGENCE,needs H0-only AND unweighted mean over design points
+v:puT|RI|gee_fg|2@tab,Table 4,1109,Intercept (M1-M2) T = 2,"GEE, Fay-Graubard",72.7,72.7,72.7307032928101,0.115311167565686,73.36088671801616,73.4,72.73070329281006,72.7,DEFINITION_DIVERGENCE,needs H0-only AND unweighted mean over design points
+v:puT|RI|gee|2@tab,Table 4,1109,Intercept (M1-M2) T = 2,"GEE, uncorrected",77.8,77.8,77.8406005463992,0.116485152978416,78.2964911182082,78.3,77.84060054639922,77.8,DEFINITION_DIVERGENCE,needs H0-only AND unweighted mean over design points
+v:puT|RI|glmer|3@tab,Table 4,1110,RI T = 3,"GLMM, Wald",87.8,87.8,87.77370791446292,0.0924763441588575,88.3142601046422,88.3,87.77370791446292,87.8,DEFINITION_DIVERGENCE,reproduced with H0-only (pooled)
+v:puT|RI|glmer_lrt|3@tab,Table 4,1110,RI T = 3,"GLMM, LR",99.6,99.6,99.63820136287768,0.0191926740133521,99.68419736101558,99.7,99.63820136287768,99.6,DEFINITION_DIVERGENCE,reproduced with H0-only (pooled)
+v:puT|RI|mmm|3@tab,Table 4,1110,RI T = 3,Marginalized model,87.1,87.1,87.1024479234074,0.0966993791382605,87.7821899818648,87.8,87.10244792340741,87.1,DEFINITION_DIVERGENCE,reproduced with H0-only (pooled)
+v:puT|RI|gee_fg|3@tab,Table 4,1110,RI T = 3,"GEE, Fay-Graubard",88.3,88.3,88.2787312021215,0.0912525492440434,88.81766827173618,88.8,88.2787312021215,88.3,DEFINITION_DIVERGENCE,reproduced with H0-only (pooled)
+v:puT|RI|gee|3@tab,Table 4,1110,RI T = 3,"GEE, uncorrected",91.4,91.4,91.4314681007516,0.0823058541009771,91.77662435119755,91.8,91.43146810075159,91.4,DEFINITION_DIVERGENCE,needs H0-only AND unweighted mean over design points
+v:puT|RI|glmer|4@tab,Table 4,1111,RI T = 4,"GLMM, Wald",93.7,93.7,93.7446295702434,0.0724131772119572,94.1511419521547,94.2,93.74462957024339,93.7,DEFINITION_DIVERGENCE,needs H0-only AND unweighted mean over design points
+v:puT|RI|glmer_lrt|4@tab,Table 4,1111,RI T = 4,"GLMM, LR",99.9,99.9,99.8630509724315,0.0123028478327213,99.88851379511544,99.9,99.86305097243154,99.9,MATCH,
+v:puT|RI|mmm|4@tab,Table 4,1111,RI T = 4,Marginalized model,92.9,92.9,92.9003231480455,0.077872429115805,93.48170375927315,93.5,92.90032314804547,92.9,DEFINITION_DIVERGENCE,reproduced with H0-only (pooled)
+v:puT|RI|gee_fg|4@tab,Table 4,1111,RI T = 4,"GEE, Fay-Graubard",93.8,93.8,93.770579929697,0.0733468138741707,94.1683337501042,94.2,93.77057992969696,93.8,DEFINITION_DIVERGENCE,reproduced with H0-only (pooled)
+v:puT|RI|gee|4@tab,Table 4,1111,RI T = 4,"GEE, uncorrected",95.8,95.8,95.84499311376341,0.0616395979826747,96.0495332166375,96.0,95.8449931137634,95.8,DEFINITION_DIVERGENCE,needs H0-only AND unweighted mean over design points
+v:puT|RI|glmer|6@tab,Table 4,1112,RI T = 6,"GLMM, Wald",97.8,97.8,97.8140279451414,0.0466715543915112,98.08355472209199,98.1,97.81402794514138,97.8,DEFINITION_DIVERGENCE,reproduced with H0-only (pooled)
+v:puT|RI|glmer_lrt|6@tab,Table 4,1112,RI T = 6,"GLMM, LR",100.0,100.0,99.98328737046141,0.0041282083188191,99.98906079074855,100.0,99.98328737046143,100.0,MATCH,
+v:puT|RI|mmm|6@tab,Table 4,1112,RI T = 6,Marginalized model,97.4,97.4,97.42192055667668,0.0510577112908175,97.790279731208,97.8,97.4219205566767,97.4,DEFINITION_DIVERGENCE,reproduced with H0-only (pooled)
+v:puT|RI|gee_fg|6@tab,Table 4,1112,RI T = 6,"GEE, Fay-Graubard",97.7,97.7,97.6867262504782,0.04759751096913,97.93978225764442,97.9,97.68672625047823,97.7,DEFINITION_DIVERGENCE,reproduced with H0-only (pooled)
+v:puT|RI|gee|6@tab,Table 4,1112,RI T = 6,"GEE, uncorrected",98.6,98.6,98.63640585458768,0.0368163514667873,98.73469812991613,98.7,98.63640585458779,98.6,DEFINITION_DIVERGENCE,reproduced with H0-only (pooled)
+v:puT|RI|glmer|10@tab,Table 4,1113,RI T = 10,"GLMM, Wald",99.6,99.6,99.57635755217768,0.0227037288939936,99.64787265074801,99.6,99.57635755217773,99.6,MATCH,
+v:puT|RI|glmer_lrt|10@tab,Table 4,1113,RI T = 10,"GLMM, LR",100.0,100.0,100.0,0.0,100.0,100.0,100.0,100.0,MATCH,
+v:puT|RI|mmm|10@tab,Table 4,1113,RI T = 10,Marginalized model,99.5,99.5,99.5085489618672,0.0244471272614808,99.60307538442305,99.6,99.50854896186725,99.5,DEFINITION_DIVERGENCE,reproduced with H0-only (pooled)
+v:puT|RI|gee_fg|10@tab,Table 4,1113,RI T = 10,"GEE, Fay-Graubard",99.5,99.5,99.4627209111067,0.0251585127557902,99.49004042171939,99.5,99.4627209111067,99.5,MATCH,
+v:puT|RI|gee|10@tab,Table 4,1113,RI T = 10,"GEE, uncorrected",99.7,99.7,99.690189562682,0.0187140388072728,99.6676667916823,99.7,99.69018956268205,99.7,MATCH,
+v:puT|RS|glmer|2@tab,Table 4,1114,Intercept and slopes (M3-M5) T = 2,"GLMM, Wald",0.0,0.0,0.0021244292776842,0.0011951619552727,0.0024344608364807434,0.0,0.0021244292776842013,0.0,MATCH,
+v:puT|RS|glmer_lrt|2@tab,Table 4,1114,Intercept and slopes (M3-M5) T = 2,"GLMM, LR",0.1,0.1,0.136465278105719,0.0180213705697916,0.13424312612593814,0.1,0.13646527810571882,0.1,MATCH,
+v:puT|RS|mmm|2@tab,Table 4,1114,Intercept and slopes (M3-M5) T = 2,Marginalized model,71.0,71.0,70.9953542042986,0.0902408073001613,70.924190889552,70.9,70.99535420429862,71.0,DEFINITION_DIVERGENCE,needs H0-only AND unweighted mean over design points; and needs the code's reading of the convergence check (refit with non-finite estimate/SE counted as failed)
+v:puT|RS|gee_fg|2@tab,Table 4,1114,Intercept and slopes (M3-M5) T = 2,"GEE, Fay-Graubard",73.1,73.1,73.1196775734011,0.0849883491726718,73.61809569517769,73.6,73.11967757340106,73.1,DEFINITION_DIVERGENCE,needs H0-only AND unweighted mean over design points
+v:puT|RS|gee|2@tab,Table 4,1114,Intercept and slopes (M3-M5) T = 2,"GEE, uncorrected",78.0,78.0,77.9751900974012,0.0899210077041252,78.33677635651635,78.3,77.97519009740125,78.0,DEFINITION_DIVERGENCE,needs H0-only AND unweighted mean over design points
+v:puT|RS|glmer|3@tab,Table 4,1115,RS T = 3,"GLMM, Wald",56.7,56.7,56.6586894938711,0.0683337989406752,56.8698975160674,56.9,56.65868949387107,56.7,DEFINITION_DIVERGENCE,reproduced with H0-only (pooled)
+v:puT|RS|glmer_lrt|3@tab,Table 4,1115,RS T = 3,"GLMM, LR",66.5,66.5,66.465061870473,0.0209661741694965,66.4849748132708,66.5,66.465061870473,66.5,MATCH,
+v:puT|RS|mmm|3@tab,Table 4,1115,RS T = 3,Marginalized model,87.9,87.9,87.9347785770639,0.0719283774616595,87.9878408893521,88.0,87.93477857706394,87.9,DEFINITION_DIVERGENCE,needs H0-only AND unweighted mean over design points; and needs the code's reading of the convergence check (refit with non-finite estimate/SE counted as failed)
+v:puT|RS|gee_fg|3@tab,Table 4,1115,RS T = 3,"GEE, Fay-Graubard",88.4,88.4,88.4072645386515,0.0714839634032582,88.80250130276185,88.8,88.40726453865156,88.4,DEFINITION_DIVERGENCE,reproduced with H0-only (pooled)
+v:puT|RS|gee|3@tab,Table 4,1115,RS T = 3,"GEE, uncorrected",91.5,91.5,91.47760546848501,0.0641574502910859,91.70644432864339,91.7,91.47760546848501,91.5,DEFINITION_DIVERGENCE,reproduced with H0-only (pooled)
+v:puT|RS|glmer|4@tab,Table 4,1116,RS T = 4,"GLMM, Wald",90.8,90.8,90.82278908812448,0.0739659804023311,91.29605701900634,91.3,90.82278908812441,90.8,DEFINITION_DIVERGENCE,reproduced with H0-only (pooled)
+v:puT|RS|glmer_lrt|4@tab,Table 4,1116,RS T = 4,"GLMM, LR",99.4,99.4,99.4089597111875,0.0449535970572451,99.4282816494387,99.4,99.40895971118749,99.4,MATCH,
+v:puT|RS|mmm|4@tab,Table 4,1116,RS T = 4,Marginalized model,93.8,93.8,93.7941687723036,0.0590594128365801,93.90178670668,93.9,93.79416877230364,93.8,DEFINITION_DIVERGENCE,reproduced with H0-only (pooled); and needs the code's reading of the convergence check (refit with non-finite estimate/SE counted as failed)
+v:puT|RS|gee_fg|4@tab,Table 4,1116,RS T = 4,"GEE, Fay-Graubard",94.1,94.1,94.055482966066,0.0581002568128249,94.38528120484607,94.4,94.05548296606594,94.1,DEFINITION_DIVERGENCE,reproduced with H0-only (pooled)
+v:puT|RS|gee|4@tab,Table 4,1116,RS T = 4,"GEE, uncorrected",96.0,96.0,95.9957280170221,0.0507065852175261,96.15739968878515,96.2,95.99572801702209,96.0,DEFINITION_DIVERGENCE,reproduced with H0-only (pooled)
+v:puT|RS|glmer|6@tab,Table 4,1117,RS T = 6,"GLMM, Wald",97.7,97.7,97.7272731734412,0.0401309644795442,97.9440161144683,97.9,97.72727317344118,97.7,DEFINITION_DIVERGENCE,reproduced with H0-only (pooled)
+v:puT|RS|glmer_lrt|6@tab,Table 4,1117,RS T = 6,"GLMM, LR",100.0,100.0,99.98467202979421,0.003202250047576,99.98853927901646,100.0,99.98467202979418,100.0,MATCH,
+v:puT|RS|mmm|6@tab,Table 4,1117,RS T = 6,Marginalized model,97.8,97.8,97.78171790431661,0.0400145390015363,97.91553795929707,97.9,97.78171790431664,97.8,DEFINITION_DIVERGENCE,reproduced with H0-only (pooled); and needs the code's reading of the convergence check (refit with non-finite estimate/SE counted as failed)
+v:puT|RS|gee_fg|6@tab,Table 4,1117,RS T = 6,"GEE, Fay-Graubard",98.0,98.0,97.95132888913008,0.0386299830616581,98.14961450302147,98.1,97.9513288891301,98.0,DEFINITION_DIVERGENCE,reproduced with H0-only (pooled)
+v:puT|RS|gee|6@tab,Table 4,1117,RS T = 6,"GEE, uncorrected",98.8,98.8,98.7648620173051,0.0293341556866904,98.84767659929152,98.8,98.76486201730512,98.8,MATCH,
+v:puT|RS|glmer|10@tab,Table 4,1118,RS T = 10,"GLMM, Wald",99.6,99.6,99.61733231809708,0.0175617622905703,99.65758181919209,99.7,99.61733231809706,99.6,DEFINITION_DIVERGENCE,reproduced with H0-only (pooled)
+v:puT|RS|glmer_lrt|10@tab,Table 4,1118,RS T = 10,"GLMM, LR",100.0,100.0,99.9993034659534,0.0006795038904894,99.99965271989777,100.0,99.99930346595342,100.0,MATCH,
+v:puT|RS|mmm|10@tab,Table 4,1118,RS T = 10,Marginalized model,99.4,99.4,99.3643449266736,0.0218482704825582,99.41205478690893,99.4,99.36434492667358,99.4,MATCH,
+v:puT|RS|gee_fg|10@tab,Table 4,1118,RS T = 10,"GEE, Fay-Graubard",99.5,99.5,99.5338471011118,0.0190003919075251,99.57215091404123,99.6,99.5338471011118,99.5,DEFINITION_DIVERGENCE,reproduced with H0-only (pooled)
+v:puT|RS|gee|10@tab,Table 4,1118,RS T = 10,"GEE, uncorrected",99.7,99.7,99.7167737313764,0.0149538443812781,99.7232177585153,99.7,99.7167737313764,99.7,MATCH,
+f:t4|mmm_cc|hi_main,Table 5,1140,Marginalized model with check,"Above 7.5%, main and M1c",0,0,0.0,,0.0,0,0.0,0,MATCH,
+f:t4|mmm_cc|hi_m67,Table 5,1140,Marginalized model with check,"Above 7.5%, M6-M7",0,0,0.0,,0.0,0,0.0,0,MATCH,
+f:t4|mmm_cc|hi_copula,Table 5,1140,Marginalized model with check,"Above 7.5%, Copula-AR1",0,0,0.0,,0.0,0,0.0,0,MATCH,
+f:t4|mmm_cc|lo_all,Table 5,1140,Marginalized model with check,"Below 2.5%, all",24,24,24.0,,28.0,28,24.0,24,DEFINITION_DIVERGENCE,"printed value needs the code's convergence-check reading (refit returning a non-finite estimate or SE treated as failed, original fit kept); literal text gives 28"
+f:t4|mmm_cc|lo_N10,Table 5,1140,Marginalized model with check,"Below 2.5%, ten clusters",18,18,18.0,,20.0,20,18.0,18,DEFINITION_DIVERGENCE,"printed value needs the code's convergence-check reading (refit returning a non-finite estimate or SE treated as failed, original fit kept); literal text gives 20"
+f:t4|mmm_cc|pu@tab,Table 5,1140,Marginalized model with check,Usable (%),90.9,90.9,90.89476659031781,,91.03927345413,91.0,90.8947665903178,90.9,DEFINITION_DIVERGENCE,"printed value needs the code's convergence-check reading (refit returning a non-finite estimate or SE treated as failed, original fit kept); literal text gives 91.0 | printed usable share is H0-only (mean over design points of the null cells); caption does not restrict to H0; both hypotheses give 91.0"
+f:t4|mmm_cc|upow@tab,Table 5,1140,Marginalized model with check,Power (%),20.8,20.8,20.8002064387953,,20.7826020491492,20.8,20.8002064387953,20.8,MATCH,
+f:t4|mmm_cc|pu_small@tab,Table 5,1140,Marginalized model with check,"Usable, T ≤ 3 and N ≤ 25 (%)",39.2,39.2,39.1642227156373,,39.6029923229211,39.6,39.1642227156373,39.2,DEFINITION_DIVERGENCE,"printed value needs the code's convergence-check reading (refit returning a non-finite estimate or SE treated as failed, original fit kept); literal text gives 39.6 | printed usable share is H0-only (mean over design points of the null cells); caption does not restrict to H0; both hypotheses give 39.6"
+f:t4|gee_ar1_fg|hi_main,Table 5,1141,"GEE AR(1), Fay-Graubard","Above 7.5%, main and M1c",2,2,2.0,,2.0,2,2.0,2,MATCH,
+f:t4|gee_ar1_fg|hi_m67,Table 5,1141,"GEE AR(1), Fay-Graubard","Above 7.5%, M6-M7",0,0,0.0,,0.0,0,0.0,0,MATCH,
+f:t4|gee_ar1_fg|hi_copula,Table 5,1141,"GEE AR(1), Fay-Graubard","Above 7.5%, Copula-AR1",0,0,0.0,,0.0,0,0.0,0,MATCH,
+f:t4|gee_ar1_fg|lo_all,Table 5,1141,"GEE AR(1), Fay-Graubard","Below 2.5%, all",106,106,106.0,,106.0,106,106.0,106,MATCH,
+f:t4|gee_ar1_fg|lo_N10,Table 5,1141,"GEE AR(1), Fay-Graubard","Below 2.5%, ten clusters",5,5,5.0,,5.0,5,5.0,5,MATCH,
+f:t4|gee_ar1_fg|pu@tab,Table 5,1141,"GEE AR(1), Fay-Graubard",Usable (%),91.9,91.9,91.8974372240942,,92.134261801779,92.1,91.8974372240942,91.9,DEFINITION_DIVERGENCE,printed usable share is H0-only (mean over design points of the null cells); caption does not restrict to H0; both hypotheses give 92.1
+f:t4|gee_ar1_fg|upow@tab,Table 5,1141,"GEE AR(1), Fay-Graubard",Power (%),19.4,19.4,19.3633330830881,,19.3633330830881,19.4,19.3633330830881,19.4,MATCH,
+f:t4|gee_ar1_fg|pu_small@tab,Table 5,1141,"GEE AR(1), Fay-Graubard","Usable, T ≤ 3 and N ≤ 25 (%)",43.7,43.7,43.720315201475,,44.4044613281374,44.4,43.720315201475,43.7,DEFINITION_DIVERGENCE,printed usable share is H0-only (mean over design points of the null cells); caption does not restrict to H0; both hypotheses give 44.4
+f:t4|gee_ind_fg|hi_main,Table 5,1142,"GEE independence, Fay-Graubard","Above 7.5%, main and M1c",3,3,3.0,,3.0,3,3.0,3,MATCH,
+f:t4|gee_ind_fg|hi_m67,Table 5,1142,"GEE independence, Fay-Graubard","Above 7.5%, M6-M7",1,1,1.0,,1.0,1,1.0,1,MATCH,
+f:t4|gee_ind_fg|hi_copula,Table 5,1142,"GEE independence, Fay-Graubard","Above 7.5%, Copula-AR1",1,1,1.0,,1.0,1,1.0,1,MATCH,
+f:t4|gee_ind_fg|lo_all,Table 5,1142,"GEE independence, Fay-Graubard","Below 2.5%, all",104,104,104.0,,104.0,104,104.0,104,MATCH,
+f:t4|gee_ind_fg|lo_N10,Table 5,1142,"GEE independence, Fay-Graubard","Below 2.5%, ten clusters",7,7,7.0,,7.0,7,7.0,7,MATCH,
+f:t4|gee_ind_fg|pu@tab,Table 5,1142,"GEE independence, Fay-Graubard",Usable (%),92.1,92.1,92.107668595819,,92.3475941617983,92.3,92.107668595819,92.1,DEFINITION_DIVERGENCE,printed usable share is H0-only (mean over design points of the null cells); caption does not restrict to H0; both hypotheses give 92.3
+f:t4|gee_ind_fg|upow@tab,Table 5,1142,"GEE independence, Fay-Graubard",Power (%),19.3,19.3,19.338744854543,,19.338744854543,19.3,19.338744854543,19.3,MATCH,
+f:t4|gee_ind_fg|pu_small@tab,Table 5,1142,"GEE independence, Fay-Graubard","Usable, T ≤ 3 and N ≤ 25 (%)",44.1,44.1,44.1295250701983,,44.8598041454663,44.9,44.1295250701983,44.1,DEFINITION_DIVERGENCE,printed usable share is H0-only (mean over design points of the null cells); caption does not restrict to H0; both hypotheses give 44.9
+f:t4|gee_exch_fg|hi_main,Table 5,1143,"GEE exchangeable, Fay-Graubard","Above 7.5%, main and M1c",3,3,3.0,,3.0,3,3.0,3,MATCH,
+f:t4|gee_exch_fg|hi_m67,Table 5,1143,"GEE exchangeable, Fay-Graubard","Above 7.5%, M6-M7",4,4,4.0,,4.0,4,4.0,4,MATCH,
+f:t4|gee_exch_fg|hi_copula,Table 5,1143,"GEE exchangeable, Fay-Graubard","Above 7.5%, Copula-AR1",8,8,8.0,,8.0,8,8.0,8,MATCH,
+f:t4|gee_exch_fg|lo_all,Table 5,1143,"GEE exchangeable, Fay-Graubard","Below 2.5%, all",104,104,104.0,,104.0,104,104.0,104,MATCH,
+f:t4|gee_exch_fg|lo_N10,Table 5,1143,"GEE exchangeable, Fay-Graubard","Below 2.5%, ten clusters",3,3,3.0,,3.0,3,3.0,3,MATCH,
+f:t4|gee_exch_fg|pu@tab,Table 5,1143,"GEE exchangeable, Fay-Graubard",Usable (%),92.0,92.0,91.98364092773781,,92.2086265735399,92.2,91.9836409277378,92.0,DEFINITION_DIVERGENCE,printed usable share is H0-only (mean over design points of the null cells); caption does not restrict to H0; both hypotheses give 92.2
+f:t4|gee_exch_fg|upow@tab,Table 5,1143,"GEE exchangeable, Fay-Graubard",Power (%),19.9,19.9,19.8728098679487,,19.8728098679487,19.9,19.8728098679487,19.9,MATCH,
+f:t4|gee_exch_fg|pu_small@tab,Table 5,1143,"GEE exchangeable, Fay-Graubard","Usable, T ≤ 3 and N ≤ 25 (%)",43.9,43.9,43.895202684254,,44.5835103354922,44.6,43.895202684254,43.9,DEFINITION_DIVERGENCE,printed usable share is H0-only (mean over design points of the null cells); caption does not restrict to H0; both hypotheses give 44.6
+f:t4|gee_ar1_md|hi_main,Table 5,1144,"GEE AR(1), Mancl-DeRouen","Above 7.5%, main and M1c",7,7,7.0,,7.0,7,7.0,7,MATCH,
+f:t4|gee_ar1_md|hi_m67,Table 5,1144,"GEE AR(1), Mancl-DeRouen","Above 7.5%, M6-M7",6,6,6.0,,6.0,6,6.0,6,MATCH,
+f:t4|gee_ar1_md|hi_copula,Table 5,1144,"GEE AR(1), Mancl-DeRouen","Above 7.5%, Copula-AR1",7,7,7.0,,7.0,7,7.0,7,MATCH,
+f:t4|gee_ar1_md|lo_all,Table 5,1144,"GEE AR(1), Mancl-DeRouen","Below 2.5%, all",103,103,103.0,,103.0,103,103.0,103,MATCH,
+f:t4|gee_ar1_md|lo_N10,Table 5,1144,"GEE AR(1), Mancl-DeRouen","Below 2.5%, ten clusters",4,4,4.0,,4.0,4,4.0,4,MATCH,
+f:t4|gee_ar1_md|pu@tab,Table 5,1144,"GEE AR(1), Mancl-DeRouen",Usable (%),91.8,91.8,91.8237828794894,,92.0593502020197,92.1,91.8237828794894,91.8,DEFINITION_DIVERGENCE,printed usable share is H0-only (mean over design points of the null cells); caption does not restrict to H0; both hypotheses give 92.1
+f:t4|gee_ar1_md|upow@tab,Table 5,1144,"GEE AR(1), Mancl-DeRouen",Power (%),19.6,19.6,19.6174890278085,,19.6174890278085,19.6,19.6174890278085,19.6,MATCH,
+f:t4|gee_ar1_md|pu_small@tab,Table 5,1144,"GEE AR(1), Mancl-DeRouen","Usable, T ≤ 3 and N ≤ 25 (%)",43.5,43.5,43.4682280680321,,44.1545453830819,44.2,43.4682280680321,43.5,DEFINITION_DIVERGENCE,printed usable share is H0-only (mean over design points of the null cells); caption does not restrict to H0; both hypotheses give 44.2
+f:t4|gee_exch_md|hi_main,Table 5,1145,"GEE exchangeable, Mancl-DeRouen","Above 7.5%, main and M1c",17,17,17.0,,17.0,17,17.0,17,MATCH,
+f:t4|gee_exch_md|hi_m67,Table 5,1145,"GEE exchangeable, Mancl-DeRouen","Above 7.5%, M6-M7",18,18,18.0,,18.0,18,18.0,18,MATCH,
+f:t4|gee_exch_md|hi_copula,Table 5,1145,"GEE exchangeable, Mancl-DeRouen","Above 7.5%, Copula-AR1",28,28,28.0,,28.0,28,28.0,28,MATCH,
+f:t4|gee_exch_md|lo_all,Table 5,1145,"GEE exchangeable, Mancl-DeRouen","Below 2.5%, all",101,101,101.0,,101.0,101,101.0,101,MATCH,
+f:t4|gee_exch_md|lo_N10,Table 5,1145,"GEE exchangeable, Mancl-DeRouen","Below 2.5%, ten clusters",3,3,3.0,,3.0,3,3.0,3,MATCH,
+f:t4|gee_exch_md|pu@tab,Table 5,1145,"GEE exchangeable, Mancl-DeRouen",Usable (%),91.9,91.9,91.9092708569067,,92.132115312579,92.1,91.9092708569067,91.9,DEFINITION_DIVERGENCE,printed usable share is H0-only (mean over design points of the null cells); caption does not restrict to H0; both hypotheses give 92.1
+f:t4|gee_exch_md|upow@tab,Table 5,1145,"GEE exchangeable, Mancl-DeRouen",Power (%),20.0,20.0,19.9995651604594,,19.9995651604594,20.0,19.9995651604594,20.0,MATCH,
+f:t4|gee_exch_md|pu_small@tab,Table 5,1145,"GEE exchangeable, Mancl-DeRouen","Usable, T ≤ 3 and N ≤ 25 (%)",43.6,43.6,43.638955106457,,44.3276079938105,44.3,43.638955106457,43.6,DEFINITION_DIVERGENCE,printed usable share is H0-only (mean over design points of the null cells); caption does not restrict to H0; both hypotheses give 44.3
+f:t4|gee_ar1_kc|hi_main,Table 5,1146,"GEE AR(1), Kauermann-Carroll","Above 7.5%, main and M1c",62,62,62.0,,62.0,62,62.0,62,MATCH,
+f:t4|gee_ar1_kc|hi_m67,Table 5,1146,"GEE AR(1), Kauermann-Carroll","Above 7.5%, M6-M7",38,38,38.0,,38.0,38,38.0,38,MATCH,
+f:t4|gee_ar1_kc|hi_copula,Table 5,1146,"GEE AR(1), Kauermann-Carroll","Above 7.5%, Copula-AR1",38,38,38.0,,38.0,38,38.0,38,MATCH,
+f:t4|gee_ar1_kc|lo_all,Table 5,1146,"GEE AR(1), Kauermann-Carroll","Below 2.5%, all",70,70,70.0,,70.0,70,70.0,70,MATCH,
+f:t4|gee_ar1_kc|lo_N10,Table 5,1146,"GEE AR(1), Kauermann-Carroll","Below 2.5%, ten clusters",3,3,3.0,,3.0,3,3.0,3,MATCH,
+f:t4|gee_ar1_kc|pu@tab,Table 5,1146,"GEE AR(1), Kauermann-Carroll",Usable (%),91.7,91.7,91.71407759543861,,91.9517330071223,92.0,91.7140775954386,91.7,DEFINITION_DIVERGENCE,printed usable share is H0-only (mean over design points of the null cells); caption does not restrict to H0; both hypotheses give 92.0
+f:t4|gee_ar1_kc|upow@tab,Table 5,1146,"GEE AR(1), Kauermann-Carroll",Power (%),20.7,20.7,20.6537791478297,,20.6537791478297,20.7,20.6537791478297,20.7,MATCH,
+f:t4|gee_ar1_kc|pu_small@tab,Table 5,1146,"GEE AR(1), Kauermann-Carroll","Usable, T ≤ 3 and N ≤ 25 (%)",42.5,42.5,42.5397878354377,,43.2421459560144,43.2,42.5397878354377,42.5,DEFINITION_DIVERGENCE,printed usable share is H0-only (mean over design points of the null cells); caption does not restrict to H0; both hypotheses give 43.2
+f:t4|gee_exch_kc|hi_main,Table 5,1147,"GEE exchangeable, Kauermann-Carroll","Above 7.5%, main and M1c",102,102,102.0,,102.0,102,102.0,102,MATCH,
+f:t4|gee_exch_kc|hi_m67,Table 5,1147,"GEE exchangeable, Kauermann-Carroll","Above 7.5%, M6-M7",44,44,44.0,,44.0,44,44.0,44,MATCH,
+f:t4|gee_exch_kc|hi_copula,Table 5,1147,"GEE exchangeable, Kauermann-Carroll","Above 7.5%, Copula-AR1",61,61,61.0,,61.0,61,61.0,61,MATCH,
+f:t4|gee_exch_kc|lo_all,Table 5,1147,"GEE exchangeable, Kauermann-Carroll","Below 2.5%, all",70,70,70.0,,70.0,70,70.0,70,MATCH,
+f:t4|gee_exch_kc|lo_N10,Table 5,1147,"GEE exchangeable, Kauermann-Carroll","Below 2.5%, ten clusters",3,3,3.0,,3.0,3,3.0,3,MATCH,
+f:t4|gee_exch_kc|pu@tab,Table 5,1147,"GEE exchangeable, Kauermann-Carroll",Usable (%),91.8,91.8,91.80124414465928,,92.0256903494809,92.0,91.8012441446593,91.8,DEFINITION_DIVERGENCE,printed usable share is H0-only (mean over design points of the null cells); caption does not restrict to H0; both hypotheses give 92.0
+f:t4|gee_exch_kc|upow@tab,Table 5,1147,"GEE exchangeable, Kauermann-Carroll",Power (%),21.1,21.1,21.0726718493755,,21.0726718493755,21.1,21.0726718493755,21.1,MATCH,
+f:t4|gee_exch_kc|pu_small@tab,Table 5,1147,"GEE exchangeable, Kauermann-Carroll","Usable, T ≤ 3 and N ≤ 25 (%)",42.7,42.7,42.7169304748354,,43.4137181374245,43.4,42.7169304748354,42.7,DEFINITION_DIVERGENCE,printed usable share is H0-only (mean over design points of the null cells); caption does not restrict to H0; both hypotheses give 43.4
+f:t4|gee_exch_cr2|hi_main,Table 5,1148,"GEE exchangeable, CR2","Above 7.5%, main and M1c",133,133,133.0,,133.0,133,133.0,133,MATCH,
+f:t4|gee_exch_cr2|hi_m67,Table 5,1148,"GEE exchangeable, CR2","Above 7.5%, M6-M7",52,52,52.0,,52.0,52,52.0,52,MATCH,
+f:t4|gee_exch_cr2|hi_copula,Table 5,1148,"GEE exchangeable, CR2","Above 7.5%, Copula-AR1",69,69,69.0,,69.0,69,69.0,69,MATCH,
+f:t4|gee_exch_cr2|lo_all,Table 5,1148,"GEE exchangeable, CR2","Below 2.5%, all",10,10,10.0,,10.0,10,10.0,10,MATCH,
+f:t4|gee_exch_cr2|lo_N10,Table 5,1148,"GEE exchangeable, CR2","Below 2.5%, ten clusters",0,0,0.0,,0.0,0,0.0,0,MATCH,
+f:t4|gee_exch_cr2|pu@tab,Table 5,1148,"GEE exchangeable, CR2",Usable (%),93.5,93.5,93.49626215238888,,93.6227585444878,93.6,93.4962621523889,93.5,DEFINITION_DIVERGENCE,printed usable share is H0-only (mean over design points of the null cells); caption does not restrict to H0; both hypotheses give 93.6
+f:t4|gee_exch_cr2|upow@tab,Table 5,1148,"GEE exchangeable, CR2",Power (%),21.4,21.4,21.3904401950591,,21.3904401950591,21.4,21.3904401950591,21.4,MATCH,
+f:t4|gee_exch_cr2|pu_small@tab,Table 5,1148,"GEE exchangeable, CR2","Usable, T ≤ 3 and N ≤ 25 (%)",54.3,54.3,54.2887799139116,,54.7255589875672,54.7,54.2887799139116,54.3,DEFINITION_DIVERGENCE,printed usable share is H0-only (mean over design points of the null cells); caption does not restrict to H0; both hypotheses give 54.7
+f:t4|gee_exch_unc|hi_main,Table 5,1149,"GEE exchangeable, uncorrected","Above 7.5%, main and M1c",242,242,242.0,,242.0,242,242.0,242,MATCH,
+f:t4|gee_exch_unc|hi_m67,Table 5,1149,"GEE exchangeable, uncorrected","Above 7.5%, M6-M7",69,69,69.0,,69.0,69,69.0,69,MATCH,
+f:t4|gee_exch_unc|hi_copula,Table 5,1149,"GEE exchangeable, uncorrected","Above 7.5%, Copula-AR1",100,100,100.0,,100.0,100,100.0,100,MATCH,
+f:t4|gee_exch_unc|lo_all,Table 5,1149,"GEE exchangeable, uncorrected","Below 2.5%, all",1,1,1.0,,1.0,1,1.0,1,MATCH,
+f:t4|gee_exch_unc|lo_N10,Table 5,1149,"GEE exchangeable, uncorrected","Below 2.5%, ten clusters",0,0,0.0,,0.0,0,0.0,0,MATCH,
+f:t4|gee_exch_unc|pu@tab,Table 5,1149,"GEE exchangeable, uncorrected",Usable (%),93.8,93.8,93.7808613784155,,93.9081288961095,93.9,93.7808613784155,93.8,DEFINITION_DIVERGENCE,printed usable share is H0-only (mean over design points of the null cells); caption does not restrict to H0; both hypotheses give 93.9
+f:t4|gee_exch_unc|upow@tab,Table 5,1149,"GEE exchangeable, uncorrected",Power (%),22.7,22.7,22.6982960667652,,22.6982960667652,22.7,22.6982960667652,22.7,MATCH,
+f:t4|gee_exch_unc|pu_small@tab,Table 5,1149,"GEE exchangeable, uncorrected","Usable, T ≤ 3 and N ≤ 25 (%)",56.1,56.1,56.1113291768061,,56.5403386091234,56.5,56.1113291768061,56.1,DEFINITION_DIVERGENCE,printed usable share is H0-only (mean over design points of the null cells); caption does not restrict to H0; both hypotheses give 56.5
+f:t4|shrink|hi_main,Table 5,1150,Shrinkage GLM,"Above 7.5%, main and M1c",271,271,271.0,,271.0,271,271.0,271,MATCH,
+f:t4|shrink|hi_m67,Table 5,1150,Shrinkage GLM,"Above 7.5%, M6-M7",93,93,93.0,,93.0,93,93.0,93,MATCH,
+f:t4|shrink|hi_copula,Table 5,1150,Shrinkage GLM,"Above 7.5%, Copula-AR1",244,244,244.0,,244.0,244,244.0,244,MATCH,
+f:t4|shrink|lo_all,Table 5,1150,Shrinkage GLM,"Below 2.5%, all",6,6,6.0,,6.0,6,6.0,6,MATCH,
+f:t4|shrink|lo_N10,Table 5,1150,Shrinkage GLM,"Below 2.5%, ten clusters",5,5,5.0,,5.0,5,5.0,5,MATCH,
+f:t4|shrink|pu@tab,Table 5,1150,Shrinkage GLM,Usable (%),81.7,81.7,81.7268531243199,,81.9360005438743,81.9,81.7268531243199,81.7,DEFINITION_DIVERGENCE,printed usable share is H0-only (mean over design points of the null cells); caption does not restrict to H0; both hypotheses give 81.9
+f:t4|shrink|upow@tab,Table 5,1150,Shrinkage GLM,Power (%),23.7,23.7,23.7425790304421,,23.7425790304421,23.7,23.7425790304421,23.7,MATCH,
+f:t4|shrink|pu_small@tab,Table 5,1150,Shrinkage GLM,"Usable, T ≤ 3 and N ≤ 25 (%)",33.7,33.7,33.6786054806549,,34.2678102417371,34.3,33.6786054806549,33.7,DEFINITION_DIVERGENCE,printed usable share is H0-only (mean over design points of the null cells); caption does not restrict to H0; both hypotheses give 34.3
+f:t4|glmer|hi_main,Table 5,1151,"GLMM, Wald","Above 7.5%, main and M1c",206,206,206.0,,206.0,206,206.0,206,MATCH,
+f:t4|glmer|hi_m67,Table 5,1151,"GLMM, Wald","Above 7.5%, M6-M7",86,86,86.0,,86.0,86,86.0,86,MATCH,
+f:t4|glmer|hi_copula,Table 5,1151,"GLMM, Wald","Above 7.5%, Copula-AR1",223,223,223.0,,223.0,223,223.0,223,MATCH,
+f:t4|glmer|lo_all,Table 5,1151,"GLMM, Wald","Below 2.5%, all",15,15,15.0,,15.0,15,15.0,15,MATCH,
+f:t4|glmer|lo_N10,Table 5,1151,"GLMM, Wald","Below 2.5%, ten clusters",12,12,12.0,,12.0,12,12.0,12,MATCH,
+f:t4|glmer|pu@tab,Table 5,1151,"GLMM, Wald",Usable (%),80.4,80.4,80.3553158692921,,80.5667648640244,80.6,80.3553158692921,80.4,DEFINITION_DIVERGENCE,printed usable share is H0-only (mean over design points of the null cells); caption does not restrict to H0; both hypotheses give 80.6
+f:t4|glmer|upow@tab,Table 5,1151,"GLMM, Wald",Power (%),23.2,23.2,23.1813901677897,,23.1813901677897,23.2,23.1813901677897,23.2,MATCH,
+f:t4|glmer|pu_small@tab,Table 5,1151,"GLMM, Wald","Usable, T ≤ 3 and N ≤ 25 (%)",28.2,28.2,28.2342056746725,,28.6882738820782,28.7,28.2342056746725,28.2,DEFINITION_DIVERGENCE,printed usable share is H0-only (mean over design points of the null cells); caption does not restrict to H0; both hypotheses give 28.7
+f:t4|glmer_lrt|hi_main,Table 5,1152,"GLMM, likelihood ratio (no interval)","Above 7.5%, main and M1c",223,223,223.0,,223.0,223,223.0,223,MATCH,
+f:t4|glmer_lrt|hi_m67,Table 5,1152,"GLMM, likelihood ratio (no interval)","Above 7.5%, M6-M7",0,0,0.0,,0.0,0,0.0,0,MATCH,
+f:t4|glmer_lrt|hi_copula,Table 5,1152,"GLMM, likelihood ratio (no interval)","Above 7.5%, Copula-AR1",189,189,189.0,,189.0,189,189.0,189,MATCH,
+f:t4|glmer_lrt|lo_all,Table 5,1152,"GLMM, likelihood ratio (no interval)","Below 2.5%, all",13,13,13.0,,13.0,13,13.0,13,MATCH,
+f:t4|glmer_lrt|lo_N10,Table 5,1152,"GLMM, likelihood ratio (no interval)","Below 2.5%, ten clusters",0,0,0.0,,0.0,0,0.0,0,MATCH,
+f:t4|glmer_lrt|pu@tab,Table 5,1152,"GLMM, likelihood ratio (no interval)",Usable (%),86.4,86.4,86.3679994168263,,86.3810445565783,86.4,86.3679994168263,86.4,MATCH,
+f:t4|glmer_lrt|upow@tab,Table 5,1152,"GLMM, likelihood ratio (no interval)",Power (%),24.5,24.5,24.4801862027844,,24.4801862027844,24.5,24.4801862027844,24.5,MATCH,
+f:t4|glmer_lrt|pu_small@tab,Table 5,1152,"GLMM, likelihood ratio (no interval)","Usable, T ≤ 3 and N ≤ 25 (%)",61.9,61.9,61.8981304611237,,61.9819418996976,62.0,61.8981304611237,61.9,DEFINITION_DIVERGENCE,printed usable share is H0-only (mean over design points of the null cells); caption does not restrict to H0; both hypotheses give 62.0
+f:t4|flip|hi_main,Table 5,1153,Sign-flip score test (no interval),"Above 7.5%, main and M1c",0,0,0.0,,0.0,0,0.0,0,MATCH,
+f:t4|flip|hi_m67,Table 5,1153,Sign-flip score test (no interval),"Above 7.5%, M6-M7",0,0,0.0,,0.0,0,0.0,0,MATCH,
+f:t4|flip|hi_copula,Table 5,1153,Sign-flip score test (no interval),"Above 7.5%, Copula-AR1",0,0,0.0,,0.0,0,0.0,0,MATCH,
+f:t4|flip|lo_all,Table 5,1153,Sign-flip score test (no interval),"Below 2.5%, all",0,0,0.0,,0.0,0,0.0,0,MATCH,
+f:t4|flip|lo_N10,Table 5,1153,Sign-flip score test (no interval),"Below 2.5%, ten clusters",0,0,0.0,,0.0,0,0.0,0,MATCH,
+f:t4|flip|pu@tab,Table 5,1153,Sign-flip score test (no interval),Usable (%),96.5,96.5,96.50728587551168,,96.6787115336269,96.7,96.5072858755117,96.5,DEFINITION_DIVERGENCE,printed usable share is H0-only (mean over design points of the null cells); caption does not restrict to H0; both hypotheses give 96.7
+f:t4|flip|upow@tab,Table 5,1153,Sign-flip score test (no interval),Power (%),20.9,20.9,20.9064343479589,,20.9064343479589,20.9,20.9064343479589,20.9,MATCH,
+f:t4|flip|pu_small@tab,Table 5,1153,Sign-flip score test (no interval),"Usable, T ≤ 3 and N ≤ 25 (%)",72.3,72.3,72.2703772598972,,73.1381031701558,73.1,72.2703772598972,72.3,DEFINITION_DIVERGENCE,printed usable share is H0-only (mean over design points of the null cells); caption does not restrict to H0; both hypotheses give 73.1
+,Table 3 caption,,design points of the main grid,,"1,440",,,,"1,440","1,440",,,MATCH,main grid M1-M5 x 3 mechanisms x 16 N x 6 T
+,Table 3 caption,,"MCSE (block bootstrap) at most, rates and MAD",,0.047,,,,0.0461,0.0461,,,MATCH,"own bootstrap: replicate index resampled within scenario, jointly over mechanisms, N, T and the 8 methods, B = 2000, seed 20261015; literal convergence check for the marginalized model"
+,Table 3 caption,,"MCSE (block bootstrap) at most, worst case",,0.32,,,,0.311,0.311,,,MATCH,same bootstrap
+,Table 4 caption,,MCSE at most,,0.13,,,,0.106,0.106,,,MATCH,binomial SE of the mean over design points of the H0 usable shares (definition reproducing the printed cells); pooled over both hypotheses gives 0.106 too
+,Table 5 caption,,"design points, four mechanisms",,"2,376",,,,"2,376","2,376",,,MATCH,
+,Table 5 caption,,main grid and M1c,,"1,512",,,,"1,512","1,512",,,MATCH,
+,Table 5 caption,,scenarios M6-M7,,384,,,,384,384,,,MATCH,
+,Table 5 caption,,Copula-AR1,,480,,,,480,480,,,MATCH,
+,Table 5 caption,,design points at ten clusters,,156,,,,156,156,,,MATCH,
+,Table 5 caption,,design points T<=3 and N<=25,,216,,,,216,216,,,MATCH,
+,Table 5 caption,,"MCSE at most, usable share",,0.40,,,,0.401,0.401,,,MISMATCH,"mean over design points of the binomial SE (H0 denominators); maximum 0.401 (marginalized model, code reading of the check; 0.407 with the literal reading) exceeds 0.40 only in the third decimal"
+,Table 5 caption,,"MCSE at most, power",,1.0,,,,1.034,1.034,,,MISMATCH,maximum 1.034 (GEE exchangeable uncorrected): 'at most 1.0' holds only after rounding
+,Table 5 caption,,"MCSE at most, usable share at T<=3 and N<=25",,1.4,,,,1.399,1.399,,,MATCH,
+,Table 5 / Section 3.4,,strategy selected by the rule,,Marginalized model with check,,,,mmm_cc (both readings of the check),mmm_cc (both readings of the check),,,MATCH,only interval strategy never clearly above 7.5% under both readings; highest usable share among eligible = itself
+,Section 2.6,,"observed rate from which a point is flagged, 1,000 usable",,9.3%,,,,9.3% (k = 93),9.3% (k = 93),,,MATCH,Clopper-Pearson lower limit > 7.5%
+,Section 2.6,,"observed rate from which a point is flagged, 500 usable",,10%,,,,10.0% (k = 50),10.0% (k = 50),,,MATCH,
+,Section 2.5,,constant-outcome datasets,,"9,711 among 4,752,000",,,,"9,711 among 4,752,000","9,711 among 4,752,000",,,MATCH,"own rule sum_y in {0, n_obs} among estimable designs; identical key set to results_v4/S9/const_keys.rds"
+,Section 2.5,,share of constant datasets with T<=3 and N<=25,,92%,,,,91.84%,91.84%,,,MATCH,
+,Section 2.2,,"non-estimable designs per hypothesis, main grid, each mechanism",,247,,,,"247 (GB, NAT, AR1)","247 (GB, NAT, AR1)",,,MATCH,
+,Section 2.2,,"non-estimable designs per hypothesis, M1c",,43,,,,43 per mechanism,43 per mechanism,,,MATCH,text does not say 'per mechanism'
+,Section 2.2,,"non-estimable designs per hypothesis, M6 and M7",,47 and 55,,,,47 and 55 per mechanism,47 and 55 per mechanism,,,MATCH,text does not say 'per mechanism'

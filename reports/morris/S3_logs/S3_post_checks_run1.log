@@ -1,0 +1,80 @@
+
+Attaching package: ‘data.table’
+
+The following objects are masked from ‘package:dplyr’:
+
+    between, first, last
+
+The following object is masked from ‘package:base’:
+
+    %notin%
+
+
+==== Q6 
+    block expected exist sims_ok every_sim_rows gen_rows_match gen_fail trace_analysis_rows
+   <char>    <int> <int>   <int>          <int>          <int>    <int>               <int>
+1:     F1     2880  2880    2880           2880           2880        0                   0
+2:     F2     1920  1920    1920           1920           1920      112                   0
+3:      L    12480 12480   12480          12480          12480      172                   0
+4:      C     1440  1440    1440           1440           1440       86                   0
+
+==== Q4 
+    block checked identical
+   <char>   <int>     <int>
+1:     F1  288000    288000
+2:     F2  191888    191888
+3:      C  143914    143914
+
+==== Q5 
+   chunks gee_identical gee_sims_equal rows_v4 rows_orig
+    <int>         <int>          <int>   <int>     <int>
+1:  12480             0          12480 5277866   5277866
+
+==== Q7 
+    block cells bijection flagged expected
+   <char> <int>     <int>   <int>    <int>
+1:   main  1728      1728     852      852
+2:      C   144       144     258      258
+
+==== Q7_genfail_nondeg 
+    block gen_fail_on_nondegenerate
+   <char>                     <int>
+1:     F1                         0
+2:     F2                         0
+3:      L                         0
+4:      C                         0
+
+==== Q8_re 
+    block chunks re_ok lrt_rows
+   <char>  <int> <int>    <int>
+1:     F1   2880  2880   288000
+2:     F2   1920  1920   191888
+3:      L  12480 12480  1247828
+4:      C   1440  1440   143914
+
+==== Q8 
+            dgp   scen  pairs  close     share   pass
+         <char> <char>  <int>  <int>     <num> <lgcl>
+ 1:  GenBinaryY     M3 124154 117155 0.9436265  FALSE
+ 2:  GenBinaryY     M4 123290 116848 0.9477492  FALSE
+ 3:  GenBinaryY     M5   8368   5089 0.6081501  FALSE
+ 4:    GLMM-AR1     M5  14935  11358 0.7604955  FALSE
+ 5: GLMM-native     M3 124397 118686 0.9540905   TRUE
+ 6: GLMM-native     M4 125264 120151 0.9591822   TRUE
+ 7: GLMM-native     M5  16942  13338 0.7872742  FALSE
+ 8:    GLMM-AR1     M3 125661 119948 0.9545364   TRUE
+ 9:    GLMM-AR1     M4 124701 119618 0.9592385   TRUE
+10:  GenBinaryY    M1c  41861  39767 0.9499773  FALSE
+11: GLMM-native    M1c  42864  41196 0.9610862   TRUE
+12:    GLMM-AR1    M1c  42865  41162 0.9602706   TRUE
+
+==== Q9 
+   measure evaluable within_3     share   pass
+    <char>     <int>    <int>     <num> <lgcl>
+1:  usable       474      469 0.9894515  FALSE
+2:  type I      1347     1190 0.8834447  FALSE
+
+==== Q9_M5_explore 
+   evaluable_t1 over3_t1 evaluable_u over3_u
+          <int>    <int>       <int>   <int>
+1:          663       54         331      43

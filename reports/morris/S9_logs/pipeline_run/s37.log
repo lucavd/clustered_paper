@@ -1,0 +1,29 @@
+[PASS] strategies of printed Table 4 found in the stability file mmm_cc,gee_ar1_fg,gee_ind_fg,gee_exch_fg,gee_ar1_md,gee_exch_md,gee_ar1_kc,gee_exch_kc | not in file: gee_exch_cr2,gee_exch_unc,shrink,glmer,glmer_lrt,flip
+[PASS] bootstrap size read from the provenance script 2000
+[PASS] observed flags equal Table 4 (hi_obs = hi_all) 
+[PASS] rule strategies have the fewest expected flags in every calculation (table4 rows) boot mmm_cc>gee_ar1_fg>gee_ind_fg | plugin mmm_cc>gee_ar1_fg>gee_ind_fg | eb gee_ar1_fg>mmm_cc>gee_ind_fg
+table4 same full ordering in the three calculations: FALSE 
+[PASS] rule strategies have the fewest expected flags in every calculation (file rows) boot mmm_cc>gee_ar1_fg>gee_ind_fg | plugin mmm_cc>gee_ar1_fg>gee_ind_fg | eb gee_ar1_fg>mmm_cc>gee_ind_fg
+file same full ordering in the three calculations: FALSE 
+Index: <strategy>
+      strategy hi_obs p_pass_boot mean_flags_boot q90_flags_boot plugin_p_pass
+        <char>  <int>       <num>           <num>          <int>         <num>
+1:      mmm_cc      0       18.20            1.70              3      1.65e+01
+2:  gee_ar1_fg      2        0.55            3.73              6      5.84e-01
+3:  gee_ind_fg      5        0.05            5.74              8      3.71e-02
+4: gee_exch_fg     15        0.00           17.29             21      2.21e-09
+5:  gee_ar1_md     20        0.00           28.10             33      1.01e-19
+6: gee_exch_md     63        0.00           73.29             80      1.08e-83
+7:  gee_ar1_kc    138        0.00          141.80            149     8.37e-200
+8: gee_exch_kc    207        0.00          208.42            217      0.00e+00
+   plugin_exp_flags eb_p_pass eb_exp_flags
+              <num>     <num>        <num>
+1:             1.72  8.03e+01        0.219
+2:             3.67  8.61e+01        0.149
+3:             5.61  4.14e+01        0.818
+4:            17.28  3.31e-01        5.016
+5:            28.15  4.49e-05       10.847
+6:            73.62  4.54e-46       48.856
+7:           142.14 1.40e-123      109.539
+8:           208.72  0.00e+00      179.976
+keys 97 | checks failed 0 

@@ -1,0 +1,47 @@
+Warning message:
+In sqrt(2 * (n - 1)) : NaNs produced
+      code observed    mcse rel_lo rel_hi       verdict
+    <char>    <num>   <num>  <num>  <num>        <char>
+ 1:    PC1   0.0000 0.00000   0.00   0.00    confermata
+ 2:    PC2   1.0000 0.00000   1.00   1.00    confermata
+ 3:    PC3   0.2120 0.00380   0.00   1.00    confermata
+ 4:    PC3   0.1070 0.00300   0.00   1.00    confermata
+ 5:    PC3   0.1260 0.00300   0.00   1.00    confermata
+ 6:    PC3   0.1270 0.00320   0.00   1.00    confermata
+ 7:    PC3   0.0489 0.00190   0.00   1.00    confermata
+ 8:    PC3   0.0955 0.00320   0.00   1.00    confermata
+ 9:    PC3   0.0629 0.00240   0.00   1.00    confermata
+10:    PC4   0.6330 0.04000   0.00   2.50    confermata
+11:    PC4   0.8510 0.03700   0.00   2.50    confermata
+12:    PC5   7.0000 0.00000   2.00  10.00    confermata
+13:    PC6   1.5500 1.10000   0.00   1.50 indeterminata
+14:   PC6b   0.2600 0.00580   0.00   1.50    confermata
+15:    PC7   0.0292 0.00065   0.00   0.50    confermata
+16:    PC8   0.0000 0.00000   0.00   0.00    confermata
+17:    PC8   0.0000 0.00000   0.00   0.00    confermata
+18:    PC9   8.8000 1.30000   0.00  25.00    confermata
+19:   PC10  74.1000 2.40000  75.00 100.00 indeterminata
+20:   PC11   1.1800 0.03700   0.91   1.14 indeterminata
+21:   PC12  -0.0111 0.04500  -0.46   0.46    confermata
+      code observed    mcse rel_lo rel_hi       verdict
+    <char>    <num>   <num>  <num>  <num>        <char>
+
+SE ratio with the finite-population factor, full specification, MMM and GLMM:
+Key: <application, method>
+       application method    10    15    20    25    50
+            <char> <char> <num> <num> <num> <num> <num>
+1: neonatal cohort GEE-FG 1.054 1.023 0.927 1.025 1.010
+2: neonatal cohort   GLMM 0.534 0.579 0.508 0.575 0.570
+3: neonatal cohort    MMM 0.845 0.970 0.877 0.968 0.991
+4:     respiratory GEE-FG 2.214 1.297 0.996 0.885 0.908
+5:     respiratory   GLMM 0.680 0.655 0.641 0.687 0.695
+6:     respiratory    MMM 0.548 0.591 0.680 0.722 0.872
+Key: <application, method>
+       application method    10    15    20    25    50
+            <char> <char> <num> <num> <num> <num> <num>
+1: neonatal cohort GEE-FG 1.080 1.062 0.975 1.094 1.160
+2: neonatal cohort   GLMM 0.548 0.601 0.535 0.614 0.654
+3: neonatal cohort    MMM 0.866 1.008 0.923 1.033 1.138
+4:     respiratory GEE-FG 2.321 1.395 1.100 1.005 1.225
+5:     respiratory   GLMM 0.712 0.704 0.708 0.781 0.937
+6:     respiratory    MMM 0.575 0.636 0.751 0.820 1.176

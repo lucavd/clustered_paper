@@ -1,0 +1,80 @@
+[PASS] same rows in kcfc and cc variants 27216 rows
+[PASS] cv differs from cc only in gee_kc rows (fewclust KC, D-60), gee rows (constant outcomes, D-82) and mmm rows of M3-M5 (refit not converged, D-90) gee,gee_kc,mmm
+[PASS] cc differs from the study row set only in mmm rows of M3-M5 (convergence check, D-32) mmm M3,mmm M4,mmm M5
+[PASS] kcfc build gate (V5_S7f_kcfc_gate.csv) all pass 9 checks
+[PASS] registry tables of the supplement read the cv variant 
+[PASS] one row per design point and method 
+[PASS] relerr_modse is 100 (modse / empse - 1), in percent max abs diff 1.42e-12 over 10213 rows
+[PASS] cover is a proportion in [0, 1] 
+[PASS] GLMM on GenBinaryY: bias and coverage missing in the source 
+[PASS] every cell defined except GLMM on GenBinaryY (bias, coverage) 
+[PASS] design points per grid and mechanism M1c/AR1=24 M1c/GB=24 M1c/NAT=24 main/AR1=480 main/GB=480 main/NAT=480
+Key: <method, grid>
+    method   grid cov_AR1 cov_GB cov_NAT   rb_AR1  rb_GB rb_NAT relerr_AR1
+    <char> <char>   <num>  <num>   <num>    <num>  <num>  <num>      <num>
+ 1:    gee    M1c    91.1   90.0    91.1  0.05061 0.0559 0.0358     -8.659
+ 2:    gee   main    92.1   91.4    92.2  0.02041 0.0304 0.0215     -6.765
+ 3: gee_fg    M1c    94.6   94.0    94.7  0.05153 0.0571 0.0379      7.739
+ 4: gee_fg   main    95.1   94.6    95.1  0.02216 0.0319 0.0233      8.553
+ 5: gee_kc    M1c    93.6   92.9    93.7  0.05141 0.0595 0.0388      1.762
+ 6: gee_kc   main    93.8   93.3    93.8  0.02193 0.0310 0.0234      0.326
+ 7: gee_md    M1c    95.2   94.8    95.4  0.05209 0.0568 0.0379     15.248
+ 8: gee_md   main    94.8   94.3    94.8  0.02228 0.0320 0.0239      8.025
+ 9:  glmer    M1c    95.0     NA    95.4  0.00346     NA 0.0158      5.320
+10:  glmer   main    93.3     NA    93.6 -0.01788     NA 0.0369      6.096
+11:    mmm    M1c    93.2   93.1    93.2  0.04259 0.0584 0.0311      1.005
+12:    mmm   main    94.9   94.7    95.0  0.01926 0.0274 0.0212      1.758
+13: shrink    M1c    92.0   88.9    92.6  0.04401 0.0383 0.0309      0.720
+14: shrink   main    92.5   89.9    92.7  0.07536 0.1244 0.0794      3.872
+    relerr_GB relerr_NAT
+        <num>      <num>
+ 1:    -8.670    -8.1360
+ 2:    -7.777    -6.9902
+ 3:     7.007     8.5195
+ 4:     7.375     8.2790
+ 5:     0.613     2.0868
+ 6:    -0.879     0.0928
+ 7:    14.175    15.6387
+ 8:     6.260     7.5689
+ 9:     7.808     8.4652
+10:     4.347     5.8726
+11:     7.388     2.1818
+12:     2.132     2.1018
+13:    -4.540     2.6541
+14:     2.128     4.0038
+   measure  max_bound
+    <char>      <num>
+1:     cov 1.03945955
+2:      rb 0.03905533
+3:  relerr 5.85543262
+     grid   mech min_used max_used  n_dp
+   <char> <char>    <int>    <int> <int>
+1:    M1c    AR1       24       24    24
+2:    M1c     GB        0       24    24
+3:    M1c    NAT       24       24    24
+4:   main    AR1      416      480   480
+5:   main     GB        0      480   480
+6:   main    NAT      416      480   480
+    method   scen     N
+    <char> <char> <int>
+ 1:    gee     M1    55
+ 2:    gee    M1c     4
+ 3:    gee     M2    58
+ 4:    gee     M3    63
+ 5:    gee     M4    53
+ 6:    gee     M5    59
+ 7: gee_kc     M1   576
+ 8: gee_kc    M1c   144
+ 9: gee_kc     M2   576
+10: gee_kc     M3   576
+11: gee_kc     M4   576
+12: gee_kc     M5   576
+13:    mmm     M3   366
+14:    mmm     M4   405
+15:    mmm     M5   447
+   method   scen     N
+   <char> <char> <int>
+1:    mmm     M3   576
+2:    mmm     M4   576
+3:    mmm     M5   576
+keys: 134 | checks failed: 0 

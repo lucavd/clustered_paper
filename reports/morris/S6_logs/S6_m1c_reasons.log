@@ -1,0 +1,65 @@
+ [1] "method"            "term"              "estimate"         
+ [4] "se"                "stat"              "p"                
+ [7] "converged"         "status"            "sim_id"           
+[10] "model"             "N"                 "ntime"            
+[13] "label"             "dgp"               "scen"             
+[16] "src"               "block"             "design_degenerate"
+[19] "re_structure"      "U0"                "U1"               
+[22] "U2"               
+Key: <grid, method>
+      grid    method SE >= 10 or <= 0 error / not converged p not finite usable
+    <char>    <char>            <num>                 <num>        <num>  <num>
+ 1:  M1-M2       gee           0.6333                   0.0         3.54   78.7
+ 2:  M1-M2    gee_fg           0.0353                  30.5         0.00   68.6
+ 3:  M1-M2    gee_kc           0.2331                  30.6         0.00   68.3
+ 4:  M1-M2    gee_md           0.1059                  30.7         0.00   68.3
+ 5:  M1-M2     glmer           5.6414                   0.0         0.00   70.7
+ 6:  M1-M2 glmer_lrt           0.0000                   0.0         0.00  100.0
+ 7:  M1-M2       mmm          11.4151                   0.0         1.88   70.6
+ 8:  M1-M2    shrink           6.9542                   0.0         0.00   72.7
+ 9:    M1c       gee           0.2676                   0.0         1.63   88.7
+10:    M1c    gee_fg           0.0195                  13.4         0.00   86.0
+11:    M1c    gee_kc           0.2007                  13.4         0.00   85.8
+12:    M1c    gee_md           0.0892                  13.7         0.00   85.7
+13:    M1c     glmer           2.0634                   0.0         0.00   80.4
+14:    M1c glmer_lrt           0.0000                   0.0         0.00  100.0
+15:    M1c       mmm           3.2293                   0.0         4.98   83.5
+16:    M1c    shrink           3.0081                   0.0         0.00   87.8
+17:  M3-M5       gee           0.7303                   0.0         4.22   78.8
+18:  M3-M5    gee_fg           0.0285                  29.6         0.00   69.4
+19:  M3-M5    gee_kc           0.2055                  29.7         0.00   69.1
+20:  M3-M5    gee_md           0.1046                  29.8         0.00   69.1
+21:  M3-M5     glmer           5.4165                   0.0         0.00   81.7
+22:  M3-M5 glmer_lrt           0.0000                   0.0         0.00  100.0
+23:  M3-M5       mmm           9.2123                   0.0         4.73   73.2
+24:  M3-M5    shrink           5.7238                   0.0         0.00   85.2
+      grid    method SE >= 10 or <= 0 error / not converged p not finite usable
+    <char>    <char>            <num>                 <num>        <num>  <num>
+    |estimate| >= 10
+               <num>
+ 1:           17.105
+ 2:            0.873
+ 3:            0.842
+ 4:            0.836
+ 5:           23.637
+ 6:            0.000
+ 7:           16.103
+ 8:           20.308
+ 9:            9.414
+10:            0.577
+11:            0.577
+12:            0.552
+13:           17.519
+14:            0.000
+15:            8.284
+16:            9.167
+17:           16.212
+18:            1.008
+19:            0.984
+20:            0.959
+21:           12.932
+22:            0.000
+23:           12.878
+24:            9.075
+    |estimate| >= 10
+               <num>

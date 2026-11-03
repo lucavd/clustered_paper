@@ -1,0 +1,17 @@
+           dgp scen n_checks n_pass       differs_in  pass
+1   GenBinaryY   M1       12     12             beta  TRUE
+2  GLMM-native   M1       12     12           beta_c  TRUE
+3     GLMM-AR1   M1       12     12    target_beta_m  TRUE
+4   GenBinaryY   M2       12     12             beta  TRUE
+5  GLMM-native   M2       12     12           beta_c  TRUE
+6     GLMM-AR1   M2       12     12    target_beta_m  TRUE
+7   GenBinaryY   M3       12      0       beta,sigma FALSE
+8  GLMM-native   M3       12     12           beta_c  TRUE
+9     GLMM-AR1   M3       12     12    target_beta_m  TRUE
+10  GenBinaryY   M4       12      0 beta,sigma,gamma FALSE
+11 GLMM-native   M4       12     12           beta_c  TRUE
+12    GLMM-AR1   M4       12     12    target_beta_m  TRUE
+13  GenBinaryY   M5       12      0 beta,sigma,gamma FALSE
+14 GLMM-native   M5       12     12           beta_c  TRUE
+15    GLMM-AR1   M5       12     12    target_beta_m  TRUE
+PARITY [/home/user/MMM/.rundir]: main grid 12/15 PASS

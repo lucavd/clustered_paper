@@ -1,0 +1,46 @@
+       method   scen ntime combos with_rows all_failure glmer_never_converged
+       <char> <char> <int>  <int>     <int>       <int>                 <int>
+ 1:     glmer     M3     2     84        84          84                    84
+ 2:     glmer     M4     2     84        84          84                    84
+ 3:     glmer     M5     2     96        96          96                    96
+ 4:     glmer     M5     3     78        78          78                    78
+ 5: glmer_lrt     M3     2     84        84          84                    84
+ 6: glmer_lrt     M4     2     84        84          84                    84
+ 7: glmer_lrt     M5     2     96        96          96                    96
+ 8: glmer_lrt     M5     3     78        78          78                    78
+ 9:    shrink     M3     2     84         0           0                    84
+10:    shrink     M4     2     84         0           0                    84
+11:    shrink     M5     2     96         0           0                    96
+12:    shrink     M5     3     78         0           0                    78
+                                                                       check
+                                                                      <char>
+ 1:                                 Q1 duplicate (cell, method, sim_id) rows
+ 2:                            Q1a glmer_lrt rows from results_full in M3-M5
+ 3:             Q1a glmer_lrt rows with unexpected re_structure (M3-M5, M1c)
+ 4:                                          Q1b F1/F2 cell rows not from S3
+ 5:                                                                Q1c cells
+ 6:                                                        Q1c design points
+ 7:                    Q1c cells with fewer than 8 primary methods (any row)
+ 8: Q1c cells with fewer than 8 primary methods (time:trt rows; descriptive)
+ 9:                                                   Q2 sum n_den main grid
+10:                                                         Q2 sum n_den M1c
+11:                                            Q2 U0 rows on degenerate keys
+12:                          Q2 non-degenerate keys without any analysis row
+    observed expected   pass
+       <int>    <num> <lgcl>
+ 1:        0        0   TRUE
+ 2:        0        0   TRUE
+ 3:        0        0   TRUE
+ 4:        0        0   TRUE
+ 5:     3024     3024   TRUE
+ 6:     1512     1512   TRUE
+ 7:      342        0  FALSE
+ 8:      342       NA     NA
+ 9:  2878518  2878518   TRUE
+10:   143742   143742   TRUE
+11:        0        0   TRUE
+12:        0        0   TRUE
+            used   (Mb) gc trigger    (Mb)   max used    (Mb)
+Ncells    747145   40.0    1672557    89.4    1672557    89.4
+Vcells 438549030 3345.9 1348053539 10284.9 1348051037 10284.9
+rows 163296 (expected 163296) | primary 27216 | elapsed 10.2 min

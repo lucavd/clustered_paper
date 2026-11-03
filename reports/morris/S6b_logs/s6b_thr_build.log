@@ -1,0 +1,33 @@
+            used   (Mb) gc trigger    (Mb)   max used    (Mb)
+Ncells   2508792  134.0    4444980   237.4    2642357   141.2
+Vcells 658444285 5023.6 2163485517 16506.1 2150952973 16410.5
+                                                                          item
+                                                                        <char>
+1:                                                    usable MMM fits of M3-M5
+2:    converged, 1e-4 <= min exp(a_k) < 1e-3 (back to the study fit with 1e-4)
+3: converged, 1e-3 <= min exp(a_k) < 1e-2 (fit without slope needed with 1e-2)
+4:                                    of which the fit without slope is usable
+5:                                      fit without slope used, threshold 1e-4
+6:                                      fit without slope used, threshold 1e-3
+7:                                      fit without slope used, threshold 1e-2
+         n
+     <int>
+1: 1685204
+2:   21879
+3:   19962
+4:   19862
+5: 1117930
+6: 1139699
+7: 1159561
+     gate   pass
+   <char> <lgcl>
+1:   GA3a   TRUE
+2:   GA3b   TRUE
+3:    GA4   TRUE
+                                                                                                                                                           detail
+                                                                                                                                                           <char>
+1:                                                                                                        19962 study fits redone, 0 mismatches (estimate, SE, p)
+2:                                                                                             2000 stored fits without slope redone, 0 mismatches (estimate, SE)
+3: threshold 1e-3: 1685204 fits, 0 mismatches with cc_est/cc_se/cc_p/used; row set identical to variant_cc: TRUE; inventory 21879/19962 found: TRUE (21879/19962)
+variant t4 written
+variant t2 written

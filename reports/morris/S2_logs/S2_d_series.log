@@ -1,0 +1,48 @@
+Q4.1 pooled p_full = 0.70026 (MCSE 0.00008) | pass = TRUE
+Q4.2 cells out of 0.70 +/- 0.01: 0 of 480
+Empty data.table (0 rows and 10 cols): model,N,ntime,n_subj,p_full,p_single...
+Q4.2 by N: exceedances
+        N n_fail max_abs_z
+    <num>  <int>     <num>
+ 1:    10      0 0.8728716
+ 2:    15      0 0.9977753
+ 3:    20      0 1.1418448
+ 4:    25      0 0.6900656
+ 5:    35      0 2.6477818
+ 6:    45      0 2.4174191
+ 7:    55      0 2.4192589
+ 8:    65      0 2.1312433
+ 9:    75      0 2.1593797
+10:    85      0 2.2903524
+11:    95      0 1.7770607
+12:   105      0 1.3940105
+13:   115      0 1.2548044
+14:   125      0 0.9751972
+15:   135      0 0.9443231
+16:   145      0 1.4441320
+Q4.3 T=2: p_single in [0.2935, 0.3062]; all within 0.30 +/- 0.01: TRUE
+Q4.3 mean_obs/T in [0.8462, 0.8539]; all within 0.85 +/- 0.02: TRUE
+mean obs per subject by T (pooled):
+   ntime mean_obs   p_single
+   <num>    <num>      <num>
+1:     2 1.700442 0.29955797
+2:     3 2.550776 0.14966616
+3:     4 3.400997 0.09974975
+4:     6 5.100515 0.05991851
+5:     8 6.801571 0.04279867
+6:    10 8.502465 0.03330977
+Q4.4 generation errors:
+        dgp model     N ntime     i nclust_identical
+     <char> <int> <num> <num> <int>           <lgcl>
+1: GLMM-AR1     1    10     2     2               NA
+2:   across     1    10     2     2             TRUE
+3: GLMM-AR1     5    10     2     5               NA
+4:   across     5    10     2     5             TRUE
+                          gen_error
+                             <char>
+1:     singular matrix 'a' in solve
+2: compared: GenBinaryY,GLMM-native
+3:     singular matrix 'a' in solve
+4: compared: GenBinaryY,GLMM-native
+Q4.4 regenerated vs make_all_data: 148/148 identical
+Q4.4 across mechanisms (nclust and trt): 50/50 identical

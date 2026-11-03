@@ -1,0 +1,139 @@
+        strategy n_points  n_hi n_notexcl n_notassessed max_rate max_n max_mc
+          <char>    <int> <int>     <int>         <int>    <num> <int>  <num>
+ 1:         flip     2376     0       760             0     8.78   296  1.645
+ 2:       mmm_cc     2376     0       402            15     8.48   991  0.885
+ 3:   gee_ar1_fg     2376     2       227             0    19.67    61  5.090
+ 4:   gee_ind_fg     2376     5       271             0    19.30    57  5.227
+ 5:  gee_exch_fg     2376    15       404             0    19.67    61  5.090
+ 6:   gee_ar1_md     2376    20       369             0    18.97    58  5.148
+ 7:   gee_ind_md     2376    58       402             0    19.64    56  5.309
+ 8:  gee_exch_md     2376    63       453             0    18.97    58  5.148
+ 9:   gee_ar1_kc     2376   138       589             0    22.45    49  5.961
+10:   gee_ind_kc     2376   189       595             0    22.64    53  5.749
+11:  gee_exch_kc     2376   207       651             0    22.45    49  5.961
+12:  gee_ind_cr2     2376   251       561             0    22.16   677  1.596
+13: gee_exch_cr2     2376   254       660             0    22.30   677  1.600
+14:  gee_ar1_unc     2376   363       737             0    24.69   648  1.694
+15:  gee_ind_unc     2376   383       770             0    25.75   835  1.513
+16: gee_exch_unc     2376   411       799             0    26.73   681  1.696
+17:    glmer_lrt     2376   412       450           304    28.40  1000  1.426
+18:        glmer     2376   515       702           322    19.82   979  1.274
+19:       shrink     2376   608       687           320    25.29   949  1.411
+                  max_where median_n max_up_not_hi hi_all
+                     <char>    <num>         <num>  <int>
+ 1:  GenBinaryY M5 N=10 T=2     1000          12.6      0
+ 2: Copula-AR1 M5 N=75 T=10      989          26.0      0
+ 3:    GLMM-AR1 M2 N=10 T=2     1000          26.2      2
+ 4:    GLMM-AR1 M2 N=10 T=2     1000          24.6      5
+ 5:    GLMM-AR1 M2 N=10 T=2     1000          26.2     15
+ 6: GLMM-native M2 N=10 T=2     1000          23.2     20
+ 7: GLMM-native M2 N=10 T=2     1000          21.2     58
+ 8: GLMM-native M2 N=10 T=2     1000          23.2     63
+ 9:    GLMM-AR1 M2 N=10 T=2     1000          27.4    138
+10:    GLMM-AR1 M2 N=10 T=2     1000          23.6    189
+11:    GLMM-AR1 M2 N=10 T=2     1000          27.4    207
+12:  GenBinaryY M3 N=10 T=4     1000          14.2    251
+13:  GenBinaryY M3 N=10 T=4     1000          16.6    254
+14:  Copula-AR1 M1 N=10 T=4     1000          14.7    363
+15:  Copula-AR1 M1 N=10 T=6     1000          15.4    383
+16:  GenBinaryY M3 N=10 T=4     1000          14.7    411
+17:  Copula-AR1 M1 N=75 T=2     1000          29.2    412
+18: GenBinaryY M1 N=145 T=2      998          22.8    515
+19:  Copula-AR1 M1 N=75 T=2     1000          23.5    608
+   contrast n_points   mean   q05 median   q95 max_abs n_abs_gt_2.5
+     <char>    <int>  <num> <num>  <num> <num>   <num>        <int>
+1:    d_ind     1896 -0.293 -1.31   -0.2   0.4    5.14           18
+2:    d_ar1     1896 -0.310 -1.41   -0.2   0.4    3.68           11
+                where_max
+                   <char>
+1: GenBinaryY M7 N=10 T=3
+2: GenBinaryY M3 N=10 T=6
+   model ntime  n_obs est_timetrt  se_timetrt re_var_intercept      secs
+   <int> <int>  <int>       <num>       <num>            <num>     <num>
+1:     1     2  34057 0.060490215 0.115241214        88.633697 15.218182
+2:     1     4  68159 0.036201538 0.024025928         3.272378  8.277066
+3:     1    10 170139 0.004568182 0.004827342         1.224625 25.951524
+4:     3     4  68159 0.023101606 0.156194483       100.438891 94.871242
+5:     3    10 170139 0.007816418 0.007411024         3.741756 80.188289
+rows_ns columns: dgp,scen,N,ntime,label,method,sim_id,term,estimate,se,stat,p,converged,status,design_degenerate,U0,U1,U2 
+D-90: rows_ns mmm$U0 switched off on 38119 of 60141 rows of the MMM with the check on a no-result key
+           dgp   scen    arm n_points   mean_rb max_abs_rb median_ser min_ser
+        <char> <char> <char>    <int>     <num>      <num>      <num>   <num>
+1: GLMM-native     M6     H0       95  1.74e-03     0.1429    -0.0364  -0.224
+2: GLMM-native     M6     H1       95  2.57e-02     0.1762    -0.0299  -0.188
+3: GLMM-native     M7     H1       96  1.15e-02     0.4507    -0.0346  -0.242
+4: GLMM-native     M7     H0       95 -9.08e-04     0.0809    -0.0390  -0.220
+5:  GenBinaryY     M6     H1       96  3.62e-02     0.5461    -0.0199  -0.240
+6:  GenBinaryY     M6     H0       95  5.33e-05     0.1443    -0.0254  -0.250
+7:  GenBinaryY     M7     H0       95  1.76e-03     0.1265    -0.0385  -0.259
+8:  GenBinaryY     M7     H1       95  4.30e-02     0.1720    -0.0416  -0.268
+   max_ser mean_cov min_cov n_cov_clearly_low n_cov_clearly_high mean_share_B
+     <num>    <num>   <num>             <int>              <int>        <num>
+1:   0.517     95.8    93.0                 0                  1         53.1
+2:   0.503     95.8    93.4                 0                  3         51.5
+3:   0.811     95.5    92.6                 0                  3         43.5
+4:   0.919     95.5    92.8                 0                  5         45.1
+5:   0.714     95.7    93.1                 0                  1         43.1
+6:   0.720     95.9    93.0                 0                  2         44.9
+7:   0.534     95.5    92.4                 0                  1         35.6
+8:   0.506     95.2    92.2                 0                  2         33.7
+            dgp   scen    arm   used n_points  fits  mean_rb max_abs_rb
+         <char> <char> <char> <char>    <int> <int>    <num>      <num>
+ 1: GLMM-native     M6     H0      B       95 41936  0.01394      0.154
+ 2: GLMM-native     M6     H0      A       95 41148 -0.01093      0.193
+ 3: GLMM-native     M6     H1      A       95 42861  0.00904      0.180
+ 4: GLMM-native     M6     H1      B       95 41369  0.03491      0.198
+ 5: GLMM-native     M7     H0      B       95 34708  0.01682      0.214
+ 6: GLMM-native     M7     H0      A       95 48736 -0.01102      0.228
+ 7: GLMM-native     M7     H1      B       95 33811  0.04236      0.321
+ 8: GLMM-native     M7     H1      A       95 50545 -0.01024      0.195
+ 9:  GenBinaryY     M6     H0      B       95 33663  0.01623      0.170
+10:  GenBinaryY     M6     H0      A       94 48142 -0.01664      0.205
+11:  GenBinaryY     M6     H1      B       95 32802  0.06396      0.287
+12:  GenBinaryY     M6     H1      A       95 49890  0.02006      0.202
+13:  GenBinaryY     M7     H0      B       95 24866  0.02588      0.346
+14:  GenBinaryY     M7     H0      A       95 56173 -0.00108      0.281
+15:  GenBinaryY     M7     H1      A       95 58034  0.02168      0.247
+16:  GenBinaryY     M7     H1      B       95 23940  0.08565      0.317
+    median_ser mean_cov       rb     ser   cov
+         <num>    <num>    <num>   <num> <num>
+ 1:    -0.0470     95.9  0.01394 -0.0470  95.9
+ 2:    -0.0279     95.5 -0.01093 -0.0279  95.5
+ 3:    -0.0273     95.6  0.00904 -0.0273  95.6
+ 4:    -0.0427     95.9  0.03491 -0.0427  95.9
+ 5:    -0.0468     95.7  0.01682 -0.0468  95.7
+ 6:    -0.0352     95.2 -0.01102 -0.0352  95.2
+ 7:    -0.0341     95.8  0.04236 -0.0341  95.8
+ 8:    -0.0357     95.0 -0.01024 -0.0357  95.0
+ 9:    -0.0306     96.1  0.01623 -0.0306  96.1
+10:    -0.0182     95.5 -0.01664 -0.0182  95.5
+11:    -0.0320     96.0  0.06396 -0.0320  96.0
+12:    -0.0158     95.3  0.02006 -0.0158  95.3
+13:    -0.0437     95.9  0.02588 -0.0437  95.9
+14:    -0.0360     95.0 -0.00108 -0.0360  95.0
+15:    -0.0306     94.8  0.02168 -0.0306  94.8
+16:    -0.0420     95.6  0.08565 -0.0420  95.6
+       N draws  none mean_inv       p0 exp_inv      z  p_two
+   <int> <int> <int>    <num>    <num>   <num>  <num>  <num>
+1:    10   500   109     1.28 0.267671    1.21 -2.509 0.0115
+2:    15   500    73     1.75 0.134789    1.81  0.734 0.4711
+3:    20   500    27     2.45 0.066571    2.42 -1.128 0.2824
+4:    25   500    17     3.14 0.032211    3.02  0.227 0.7993
+5:    50   500     0     6.10 0.000599    6.04     NA 1.0000
+      run                               file done_lines hours_last_segment
+   <char>                             <char>      <int>              <num>
+1:     S3              results_v4/S3/run.log          2           20.06667
+2: S6b_ns results_v4/S6b/ns/run_progress.log          1            6.38000
+3:    S7d    results_v4/S7d/run_progress.log          1           11.51000
+4:    S7e    results_v4/S7e/run_progress.log          1           26.38000
+5:   S7d2   results_v4/S7d2/run_progress.log          1            7.98000
+6:    S7g    results_v4/S7g/run_progress.log          1            0.92000
+   all_done_hours
+           <char>
+1:      0.3;20.07
+2:           6.38
+3:          11.51
+4:          26.38
+5:           7.98
+6:           0.92
+extra: 124 keys

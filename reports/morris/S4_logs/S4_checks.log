@@ -1,0 +1,94 @@
+Q3
+                 table  rows n_equal     max_diff missing reverse_missing
+                <char> <int>   <int>        <num>   <int>           <int>
+1:    O_level_all (H0) 12395   12395 5.273559e-16       0               0
+2: O_coverage_all (H1) 13144   13144 1.110223e-15       0              NA
+     pass
+   <lgcl>
+1:   TRUE
+2:   TRUE
+Q4
+    rows U0_equal U1_equal U2_equal missing   pass
+   <int>    <int>    <int>    <int>   <int> <lgcl>
+1: 17725    17725    17725    17725       0   TRUE
+Q5 rsimsum
+         measure combos compared max_abs_diff over_1e10
+          <char>  <int>    <int>        <num>     <int>
+ 1:            n    300      300 0.000000e+00         0
+ 2:         bias    300      300 4.163336e-16         0
+ 3:        empse    300      300 4.884981e-15         0
+ 4:        modse    300      300 5.107026e-15         0
+ 5:       relerr    300      300 4.405365e-13         0
+ 6:          mse    300      300 5.329071e-15         0
+ 7:        cover    300      300 6.661338e-16         0
+ 8:      becover    300      300 6.661338e-16         0
+ 9:        power    300      300 5.551115e-16         0
+10:    mcse_bias    300      270 4.718448e-16         0
+11:   mcse_empse    300      300 3.885781e-16         0
+12:   mcse_modse    300      300 3.330669e-16         0
+13:  mcse_relerr    300      300 4.973799e-14         0
+14:     mcse_mse    300      300 4.718448e-16         0
+15:   mcse_cover    300      300 6.245005e-17         0
+16: mcse_becover    300      300 6.245005e-17         0
+17:   mcse_power    300      300 5.204170e-17         0
+Q5 identity
+                  truth_type combos max_abs_diff over_1e12
+                      <char>  <int>        <num>     <int>
+1:                  marginal 100893 2.930989e-14         0
+2: conditional per replicate  10580 4.536766e-03     10052
+3:               conditional  10579 2.060574e-13         0
+Q7
+   combos within_10pct share median_ratio       q01      q99   pass
+    <int>        <int> <num>        <num>     <num>    <num> <lgcl>
+1:  58198        58198     1     1.000243 0.9615972 1.037125   TRUE
+Q8
+          group         dgp   scen    arm cells  mean_d_rej cells_rej_over2
+         <char>      <char> <char> <char> <int>       <num>           <int>
+ 1: D-01 + D-08  GenBinaryY     M3     H0    96 -0.04545242              80
+ 2: D-01 + D-08  GenBinaryY     M4     H0    96 -0.04546843              80
+ 3: D-01 + D-08  GenBinaryY     M5     H0    96 -0.03566363              53
+ 4: D-02 + D-08    GLMM-AR1     M5     H0    96 -0.01510993              28
+ 5: D-02 + D-08    GLMM-AR1     M5     H1    96 -0.03800549              56
+ 6:   D-08 only    GLMM-AR1     M3     H0    96 -0.02483497              78
+ 7:   D-08 only    GLMM-AR1     M3     H1    96 -0.04249909              78
+ 8:   D-08 only    GLMM-AR1     M4     H0    96 -0.02222365              70
+ 9:   D-08 only    GLMM-AR1     M4     H1    96 -0.02464729              72
+10:   D-08 only GLMM-native     M3     H0    96 -0.01955766              64
+11:   D-08 only GLMM-native     M3     H1    96 -0.03756051              79
+12:   D-08 only GLMM-native     M4     H0    96 -0.01647408              71
+13:   D-08 only GLMM-native     M4     H1    96 -0.01653284              60
+14:   D-08 only GLMM-native     M5     H0    96 -0.01235575              33
+15:   D-08 only GLMM-native     M5     H1    96 -0.02898141              54
+16:   D-08 only  GenBinaryY     M3     H1    96 -0.06606639              79
+17:   D-08 only  GenBinaryY     M4     H1    96 -0.04903247              80
+18:   D-08 only  GenBinaryY     M5     H1    96 -0.06561741              61
+    mean_d_usable cells_usable_over2 min_n_both
+            <num>              <int>      <int>
+ 1:    -0.1644112                 16          0
+ 2:    -0.1647372                 18          0
+ 3:    -0.3317385                 38          0
+ 4:    -0.3328873                 39          0
+ 5:    -0.3331286                 39          0
+ 6:    -0.1648093                 16          0
+ 7:    -0.1650299                 17          0
+ 8:    -0.1651359                 17          0
+ 9:    -0.1651876                 17          0
+10:    -0.1651255                 16          0
+11:    -0.1651883                 17          0
+12:    -0.1653262                 17          0
+13:    -0.1654003                 17          0
+14:    -0.3329188                 38          0
+15:    -0.3333403                 38          0
+16:    -0.1646005                 16          0
+17:    -0.1648214                 18          0
+18:    -0.3318345                 39          0
+   cells cells_n_both_ge1   pass cells_n_both_0 of_which_v4_never_usable
+   <int>            <int> <lgcl>          <int>                    <int>
+1:  1248             1021  FALSE            227                      227
+   of_which_in_q1c_list
+                  <int>
+1:                  227
+Q9
+      rows p_mismatch cells cells_bobyqa_le_lrt max_excess   pass
+     <int>      <int> <int>               <int>      <int> <lgcl>
+1: 2634153          0  3024                3024          0   TRUE

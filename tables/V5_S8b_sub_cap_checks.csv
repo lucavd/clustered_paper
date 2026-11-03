@@ -1,0 +1,140 @@
+check,pass,detail
+S3 rate: every registry id carries an mcse,True,24/24 ids
+S3 worst: every registry id carries an mcse,True,24/24 ids
+S3 mad: every registry id carries an mcse,True,24/24 ids
+S16 rate: every registry id carries an mcse,True,24/24 ids
+S16 worst: every registry id carries an mcse,True,24/24 ids
+S16 mad: every registry id carries an mcse,True,24/24 ids
+S4 mad: every registry id carries an mcse,True,24/24 ids
+S17 mad: every registry id carries an mcse,True,24/24 ids
+S5 share: every registry id carries an mcse,True,16/16 ids
+S18 share: every registry id carries an mcse,True,16/16 ids
+S6 rate: every registry id carries an mcse,True,48/48 ids
+S6 shift: every registry id carries an mcse,True,24/24 ids
+S19 rate: every registry id carries an mcse,True,48/48 ids
+S19 shift: every registry id carries an mcse,True,24/24 ids
+S7 usable: every registry id carries an mcse,True,96/96 ids
+S20 usable: every registry id carries an mcse,True,32/32 ids
+S8 usable: every registry id carries an mcse,True,8/8 ids
+S8 uncond: every registry id carries an mcse,True,8/8 ids
+S21 usable: every registry id carries an mcse,True,8/8 ids
+S21 uncond: every registry id carries an mcse,True,8/8 ids
+S9 mad: every registry id carries an mcse,True,40/40 ids
+S22 mad: every registry id carries an mcse,True,40/40 ids
+S10 raw: every registry id carries an mcse,True,24/24 ids
+S10 sa: every registry id carries an mcse,True,24/24 ids
+S23 raw: every registry id carries an mcse,True,24/24 ids
+S23 sa: every registry id carries an mcse,True,24/24 ids
+S11 rate: every registry id carries an mcse,True,42/42 ids
+S11 shift: every registry id carries an mcse,True,28/28 ids
+S24 rate: every registry id carries an mcse,True,42/42 ids
+S24 shift: every registry id carries an mcse,True,28/28 ids
+S12 cov: every registry id carries an mcse,True,20/20 ids
+S25 cov: every registry id carries an mcse,True,20/20 ids
+S30 usable: every registry id carries an mcse,True,30/30 ids
+S30 bias: every registry id carries an mcse,True,30/30 ids
+S30 SE ratio: one row of V5_S7f_seratio_fpc.csv per id,True,30
+S31: every id found in V5_S7f_h2h_boot.csv,True,90
+H1 estimable-design count found for every point,True,
+pu = 100 n / nd on every row,True,
+"2,376 points per strategy (480 Copula-AR1 points for the model without the check)",True,
+Table 4 pu: recomputed means equal V5_S7f_table4.csv,True,14 strategies
+Table 4 upow: recomputed means equal V5_S7f_table4.csv,True,14 strategies
+Table 4 pu_small: recomputed means equal V5_S7f_table4.csv,True,14 strategies
+"S26 usable: recomputed means equal V5_S7f_rule_t2.csv on 1,896 points",True,"['gee_ar1_fg', 'gee_ar1_md', 'gee_exch_fg', 'gee_exch_kc', 'gee_exch_md', 'gee_ind_fg', 'glmer', 'mmm_cc']"
+S28 mean_type1: recomputed means equal V5_S7f_cp_S7e_summary.csv,True,"['flip', 'gee_ar1_fg', 'gee_exch_fg', 'gee_exch_kc', 'gee_exch_md', 'gee_exch_unc', 'gee_ind_fg', 'glmer', 'glmer_lrt', 'mmm_cc', 'mmm_study', 'shrink']"
+S28 mean_usable: recomputed means equal V5_S7f_cp_S7e_summary.csv,True,"['flip', 'gee_ar1_fg', 'gee_exch_fg', 'gee_exch_kc', 'gee_exch_md', 'gee_exch_unc', 'gee_ind_fg', 'glmer', 'glmer_lrt', 'mmm_cc', 'mmm_study', 'shrink']"
+S28 mean_power: recomputed means equal V5_S7f_cp_S7e_summary.csv,True,"['flip', 'gee_ar1_fg', 'gee_exch_fg', 'gee_exch_kc', 'gee_exch_md', 'gee_exch_unc', 'gee_ind_fg', 'glmer', 'glmer_lrt', 'mmm_cc', 'mmm_study', 'shrink']"
+S28 mean_bias_rel: recomputed means equal V4_S7e_bias_summary.csv,True,"['gee_ar1_fg', 'gee_exch_fg', 'gee_exch_kc', 'gee_exch_md', 'gee_exch_unc', 'gee_ind_fg', 'mmm_cc', 'mmm_study']"
+S28 mean_cov_n: recomputed means equal V4_S7e_bias_summary.csv,True,"['gee_ar1_fg', 'gee_exch_fg', 'gee_exch_kc', 'gee_exch_md', 'gee_exch_unc', 'gee_ind_fg', 'mmm_cc', 'mmm_study']"
+S28 mean_cov_t: recomputed means equal V4_S7e_bias_summary.csv,True,"['gee_ar1_fg', 'gee_exch_fg', 'gee_exch_kc', 'gee_exch_md', 'gee_exch_unc', 'gee_ind_fg', 'mmm_cc', 'mmm_study']"
+S14 largest rate mmm|t GenBinaryY M6 equals the table,True,
+S14 usable mmm|t GenBinaryY M6 equals the table,True,
+S14 largest rate mmm|n GenBinaryY M6 equals the table,True,
+S14 usable mmm|n GenBinaryY M6 equals the table,True,
+S14 largest rate mmm_nocc|t GenBinaryY M6 equals the table,True,
+S14 usable mmm_nocc|t GenBinaryY M6 equals the table,True,
+S14 largest rate gee_fg|t GenBinaryY M6 equals the table,True,
+S14 usable gee_fg|t GenBinaryY M6 equals the table,True,
+S14 largest rate gee_md|t GenBinaryY M6 equals the table,True,
+S14 usable gee_md|t GenBinaryY M6 equals the table,True,
+S14 largest rate glmer_lrt|n GenBinaryY M6 equals the table,True,
+S14 usable glmer_lrt|n GenBinaryY M6 equals the table,True,
+S14 largest rate mmm|t GenBinaryY M7 equals the table,True,
+S14 usable mmm|t GenBinaryY M7 equals the table,True,
+S14 largest rate mmm|n GenBinaryY M7 equals the table,True,
+S14 usable mmm|n GenBinaryY M7 equals the table,True,
+S14 largest rate mmm_nocc|t GenBinaryY M7 equals the table,True,
+S14 usable mmm_nocc|t GenBinaryY M7 equals the table,True,
+S14 largest rate gee_fg|t GenBinaryY M7 equals the table,True,
+S14 usable gee_fg|t GenBinaryY M7 equals the table,True,
+S14 largest rate gee_md|t GenBinaryY M7 equals the table,True,
+S14 usable gee_md|t GenBinaryY M7 equals the table,True,
+S14 largest rate glmer_lrt|n GenBinaryY M7 equals the table,True,
+S14 usable glmer_lrt|n GenBinaryY M7 equals the table,True,
+S14 largest rate mmm|t GLMM-native M6 equals the table,True,
+S14 usable mmm|t GLMM-native M6 equals the table,True,
+S14 largest rate mmm|n GLMM-native M6 equals the table,True,
+S14 usable mmm|n GLMM-native M6 equals the table,True,
+S14 largest rate mmm_nocc|t GLMM-native M6 equals the table,True,
+S14 usable mmm_nocc|t GLMM-native M6 equals the table,True,
+S14 largest rate gee_fg|t GLMM-native M6 equals the table,True,
+S14 usable gee_fg|t GLMM-native M6 equals the table,True,
+S14 largest rate gee_md|t GLMM-native M6 equals the table,True,
+S14 usable gee_md|t GLMM-native M6 equals the table,True,
+S14 largest rate glmer_lrt|n GLMM-native M6 equals the table,True,
+S14 usable glmer_lrt|n GLMM-native M6 equals the table,True,
+S14 largest rate mmm|t GLMM-native M7 equals the table,True,
+S14 usable mmm|t GLMM-native M7 equals the table,True,
+S14 largest rate mmm|n GLMM-native M7 equals the table,True,
+S14 usable mmm|n GLMM-native M7 equals the table,True,
+S14 largest rate mmm_nocc|t GLMM-native M7 equals the table,True,
+S14 usable mmm_nocc|t GLMM-native M7 equals the table,True,
+S14 largest rate gee_fg|t GLMM-native M7 equals the table,True,
+S14 usable gee_fg|t GLMM-native M7 equals the table,True,
+S14 largest rate gee_md|t GLMM-native M7 equals the table,True,
+S14 usable gee_md|t GLMM-native M7 equals the table,True,
+S14 largest rate glmer_lrt|n GLMM-native M7 equals the table,True,
+S14 usable glmer_lrt|n GLMM-native M7 equals the table,True,
+S15: every cell found once,True,120
+S32: max_mc = 100 sqrt(p(1-p)/n) at the highest rate,True,19
+S33: recomputed mean usable equals V5_S7g_filter_t4.csv,True,51 strategy x limit
+S34 AR1 T=2 lap: mean rate and usable equal V5_S7g_agq_tab.csv,True,11
+S34 AR1 T=2 agq: mean rate and usable equal V5_S7g_agq_tab.csv,True,11
+S34 AR1 T=4 lap: mean rate and usable equal V5_S7g_agq_tab.csv,True,11
+S34 AR1 T=4 agq: mean rate and usable equal V5_S7g_agq_tab.csv,True,11
+S34 AR1 T=6 lap: mean rate and usable equal V5_S7g_agq_tab.csv,True,3
+S34 AR1 T=6 agq: mean rate and usable equal V5_S7g_agq_tab.csv,True,3
+S34 AR1 T=10 lap: mean rate and usable equal V5_S7g_agq_tab.csv,True,8
+S34 AR1 T=10 agq: mean rate and usable equal V5_S7g_agq_tab.csv,True,8
+S34 COP T=2 lap: mean rate and usable equal V5_S7g_agq_tab.csv,True,8
+S34 COP T=2 agq: mean rate and usable equal V5_S7g_agq_tab.csv,True,8
+S34 COP T=4 lap: mean rate and usable equal V5_S7g_agq_tab.csv,True,8
+S34 COP T=4 agq: mean rate and usable equal V5_S7g_agq_tab.csv,True,8
+S34 COP T=10 lap: mean rate and usable equal V5_S7g_agq_tab.csv,True,8
+S34 COP T=10 agq: mean rate and usable equal V5_S7g_agq_tab.csv,True,8
+S34 GB T=2 lap: mean rate and usable equal V5_S7g_agq_tab.csv,True,11
+S34 GB T=2 agq: mean rate and usable equal V5_S7g_agq_tab.csv,True,11
+S34 GB T=4 lap: mean rate and usable equal V5_S7g_agq_tab.csv,True,11
+S34 GB T=4 agq: mean rate and usable equal V5_S7g_agq_tab.csv,True,11
+S34 GB T=6 lap: mean rate and usable equal V5_S7g_agq_tab.csv,True,3
+S34 GB T=6 agq: mean rate and usable equal V5_S7g_agq_tab.csv,True,3
+S34 GB T=10 lap: mean rate and usable equal V5_S7g_agq_tab.csv,True,8
+S34 GB T=10 agq: mean rate and usable equal V5_S7g_agq_tab.csv,True,8
+S34 NAT T=2 lap: mean rate and usable equal V5_S7g_agq_tab.csv,True,11
+S34 NAT T=2 agq: mean rate and usable equal V5_S7g_agq_tab.csv,True,11
+S34 NAT T=4 lap: mean rate and usable equal V5_S7g_agq_tab.csv,True,11
+S34 NAT T=4 agq: mean rate and usable equal V5_S7g_agq_tab.csv,True,11
+S34 NAT T=6 lap: mean rate and usable equal V5_S7g_agq_tab.csv,True,3
+S34 NAT T=6 agq: mean rate and usable equal V5_S7g_agq_tab.csv,True,3
+S34 NAT T=10 lap: mean rate and usable equal V5_S7g_agq_tab.csv,True,8
+S34 NAT T=10 agq: mean rate and usable equal V5_S7g_agq_tab.csv,True,8
+S35 GLMM-native M6 H0: recomputed means equal V5_S7g_m67_cc.csv,True,95
+S35 GLMM-native M6 H1: recomputed means equal V5_S7g_m67_cc.csv,True,95
+S35 GLMM-native M7 H1: recomputed means equal V5_S7g_m67_cc.csv,True,96
+S35 GLMM-native M7 H0: recomputed means equal V5_S7g_m67_cc.csv,True,95
+S35 GenBinaryY M6 H1: recomputed means equal V5_S7g_m67_cc.csv,True,96
+S35 GenBinaryY M6 H0: recomputed means equal V5_S7g_m67_cc.csv,True,95
+S35 GenBinaryY M7 H0: recomputed means equal V5_S7g_m67_cc.csv,True,95
+S35 GenBinaryY M7 H1: recomputed means equal V5_S7g_m67_cc.csv,True,95
+Figure 2: registry id x:mcse_5pct exists,True,0.69

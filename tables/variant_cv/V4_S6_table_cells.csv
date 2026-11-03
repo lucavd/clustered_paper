@@ -1,0 +1,913 @@
+table_id,variant,row,col,j,i,name,est,se,count,digits,mode,text
+T3,main,"GEE, Fay-Graubard",rate GB,1,1,rate|GB|gee_fg,5.82570543781156,0.0356180394098216,FALSE,2,caption,5.83
+T3,main,"GEE, Mancl-DeRouen",rate GB,1,2,rate|GB|gee_md,6.08874610982833,0.0365141152715911,FALSE,2,caption,6.09
+T3,main,Marginalized model,rate GB,1,3,rate|GB|mmm,5.34171209871129,0.035987163981669,FALSE,2,caption,5.34
+T3,main,"GLMM, Wald",rate GB,1,4,rate|GB|glmer,8.61163506014761,0.0453452126193128,FALSE,2,caption,8.61
+T3,main,Shrinkage GLM,rate GB,1,5,rate|GB|shrink,9.28377756177419,0.0471941303254474,FALSE,2,caption,9.28
+T3,main,"GEE, uncorrected",rate GB,1,6,rate|GB|gee,8.36855019348863,0.0414681225368863,FALSE,2,caption,8.37
+T3,main,"GLMM, likelihood ratio",rate GB,1,7,rate|GB|glmer_lrt,7.80045078163607,0.0414736489977442,FALSE,2,caption,7.80
+T3,main,"GEE, Kauermann-Carroll",rate GB,1,8,rate|GB|gee_kc,6.94964248373011,0.038580207808437,FALSE,2,caption,6.95
+T3,main,"GEE, Fay-Graubard",rate NAT,2,1,rate|NAT|gee_fg,5.32219581170252,0.0330360656150224,FALSE,2,caption,5.32
+T3,main,"GEE, Mancl-DeRouen",rate NAT,2,2,rate|NAT|gee_md,5.5073032807786,0.0337810208790614,FALSE,2,caption,5.51
+T3,main,Marginalized model,rate NAT,2,3,rate|NAT|mmm,5.09713984709077,0.0349054153600026,FALSE,2,caption,5.10
+T3,main,"GLMM, Wald",rate NAT,2,4,rate|NAT|glmer,6.29781487156008,0.0395424942123859,FALSE,2,caption,6.30
+T3,main,Shrinkage GLM,rate NAT,2,5,rate|NAT|shrink,6.64424631635503,0.0402150756500753,FALSE,2,caption,6.64
+T3,main,"GEE, uncorrected",rate NAT,2,6,rate|NAT|gee,7.62598911585109,0.0392013027226312,FALSE,2,caption,7.63
+T3,main,"GLMM, likelihood ratio",rate NAT,2,7,rate|NAT|glmer_lrt,5.77026372774067,0.0362559904943033,FALSE,2,caption,5.77
+T3,main,"GEE, Kauermann-Carroll",rate NAT,2,8,rate|NAT|gee_kc,6.34172285724588,0.0364193760778613,FALSE,2,caption,6.34
+T3,main,"GEE, Fay-Graubard",rate AR1,3,1,rate|AR1|gee_fg,5.34336284387783,0.0327781291675245,FALSE,2,caption,5.34
+T3,main,"GEE, Mancl-DeRouen",rate AR1,3,2,rate|AR1|gee_md,5.56350820607834,0.0341423763628053,FALSE,2,caption,5.56
+T3,main,Marginalized model,rate AR1,3,3,rate|AR1|mmm,5.25569245983189,0.0348025889851518,FALSE,2,caption,5.26
+T3,main,"GLMM, Wald",rate AR1,3,4,rate|AR1|glmer,6.55274385078627,0.0390798742976858,FALSE,2,caption,6.55
+T3,main,Shrinkage GLM,rate AR1,3,5,rate|AR1|shrink,6.91019516161822,0.0393065099164941,FALSE,2,caption,6.91
+T3,main,"GEE, uncorrected",rate AR1,3,6,rate|AR1|gee,7.71749506071437,0.0386896396687203,FALSE,2,caption,7.72
+T3,main,"GLMM, likelihood ratio",rate AR1,3,7,rate|AR1|glmer_lrt,6.14199940247299,0.0367782636022326,FALSE,2,caption,6.14
+T3,main,"GEE, Kauermann-Carroll",rate AR1,3,8,rate|AR1|gee_kc,6.39727669584493,0.0363288281814622,FALSE,2,caption,6.40
+T3,main,"GEE, Fay-Graubard",worst GB,4,1,wc|GB|gee_fg,4.72205064854849,0.229803502707525,FALSE,1,inline,4.7 (0.2)
+T3,main,"GEE, Mancl-DeRouen",worst GB,4,2,wc|GB|gee_md,8.55008457056944,0.268344888327165,FALSE,1,inline,8.6 (0.3)
+T3,main,Marginalized model,worst GB,4,3,wc|GB|mmm,0.625683749894808,0.098660062186528,FALSE,1,inline,0.6 (0.1)
+T3,main,"GLMM, Wald",worst GB,4,4,wc|GB|glmer,4.49110690998881,0.125921827538044,FALSE,1,inline,4.5 (0.1)
+T3,main,Shrinkage GLM,worst GB,4,5,wc|GB|shrink,4.89176652493235,0.122427063950798,FALSE,1,inline,4.9 (0.1)
+T3,main,"GEE, uncorrected",worst GB,4,6,wc|GB|gee,22.078662637684,0.315179106434699,FALSE,1,inline,22.1 (0.3)
+T3,main,"GLMM, likelihood ratio",worst GB,4,7,wc|GB|glmer_lrt,3.64829497344315,0.154027414808205,FALSE,1,inline,3.6 (0.2)
+T3,main,"GEE, Kauermann-Carroll",worst GB,4,8,wc|GB|gee_kc,14.1244381503602,0.310152283364669,FALSE,1,inline,14.1 (0.3)
+T3,main,"GEE, Fay-Graubard",worst NAT,5,1,wc|NAT|gee_fg,2.83402301456834,0.202102989412167,FALSE,1,inline,2.8 (0.2)
+T3,main,"GEE, Mancl-DeRouen",worst NAT,5,2,wc|NAT|gee_md,5.89695644669467,0.237739788129607,FALSE,1,inline,5.9 (0.2)
+T3,main,Marginalized model,worst NAT,5,3,wc|NAT|mmm,0.487669795371073,0.112195851867862,FALSE,1,inline,0.5 (0.1)
+T3,main,"GLMM, Wald",worst NAT,5,4,wc|NAT|glmer,1.8253290367667,0.102599105500572,FALSE,1,inline,1.8 (0.1)
+T3,main,Shrinkage GLM,worst NAT,5,5,wc|NAT|shrink,2.30498406829,0.132946822185817,FALSE,1,inline,2.3 (0.1)
+T3,main,"GEE, uncorrected",worst NAT,5,6,wc|NAT|gee,17.9961696694567,0.294184874733064,FALSE,1,inline,18.0 (0.3)
+T3,main,"GLMM, likelihood ratio",worst NAT,5,7,wc|NAT|glmer_lrt,1.75755313715476,0.160637909287183,FALSE,1,inline,1.8 (0.2)
+T3,main,"GEE, Kauermann-Carroll",worst NAT,5,8,wc|NAT|gee_kc,10.7406880864373,0.276646241581069,FALSE,1,inline,10.7 (0.3)
+T3,main,"GEE, Fay-Graubard",worst AR1,6,1,wc|AR1|gee_fg,2.8505214368482,0.201735750482915,FALSE,1,inline,2.9 (0.2)
+T3,main,"GEE, Mancl-DeRouen",worst AR1,6,2,wc|AR1|gee_md,6.0307520432763,0.242912479065141,FALSE,1,inline,6.0 (0.2)
+T3,main,Marginalized model,worst AR1,6,3,wc|AR1|mmm,0.428222571079714,0.0869606981390733,FALSE,1,inline,0.4 (0.09)
+T3,main,"GLMM, Wald",worst AR1,6,4,wc|AR1|glmer,2.17232869317086,0.111830837922643,FALSE,1,inline,2.2 (0.1)
+T3,main,Shrinkage GLM,worst AR1,6,5,wc|AR1|shrink,2.43217129164412,0.109854608603773,FALSE,1,inline,2.4 (0.1)
+T3,main,"GEE, uncorrected",worst AR1,6,6,wc|AR1|gee,19.1121853163588,0.296605549479519,FALSE,1,inline,19.1 (0.3)
+T3,main,"GLMM, likelihood ratio",worst AR1,6,7,wc|AR1|glmer_lrt,1.84175243503293,0.136762380037451,FALSE,1,inline,1.8 (0.1)
+T3,main,"GEE, Kauermann-Carroll",worst AR1,6,8,wc|AR1|gee_kc,11.2199791159067,0.279609702358831,FALSE,1,inline,11.2 (0.3)
+T3,main,"GEE, Fay-Graubard",MAD GB,7,1,mad|GB|gee_fg,1.04306028839004,0.0348631952501905,FALSE,2,caption,1.04
+T3,main,"GEE, Mancl-DeRouen",MAD GB,7,2,mad|GB|gee_md,1.46582521395825,0.035991768064666,FALSE,2,caption,1.47
+T3,main,Marginalized model,MAD GB,7,3,mad|GB|mmm,0.326719060349194,0.0332716656139906,FALSE,2,caption,0.33
+T3,main,"GLMM, Wald",MAD GB,7,4,mad|GB|glmer,3.47994346364855,0.0449778133921645,FALSE,2,caption,3.48
+T3,main,Shrinkage GLM,MAD GB,7,5,mad|GB|shrink,4.20351186726724,0.0471240785396113,FALSE,2,caption,4.20
+T3,main,"GEE, uncorrected",MAD GB,7,6,mad|GB|gee,3.93361243395923,0.0441993975069778,FALSE,2,caption,3.93
+T3,main,"GLMM, likelihood ratio",MAD GB,7,7,mad|GB|glmer_lrt,2.8005328011214,0.0414765912241608,FALSE,2,caption,2.80
+T3,main,"GEE, Kauermann-Carroll",MAD GB,7,8,mad|GB|gee_kc,2.48704563671687,0.0416116354649724,FALSE,2,caption,2.49
+T3,main,"GEE, Fay-Graubard",MAD NAT,8,1,mad|NAT|gee_fg,0.518624821208572,0.0290000000706176,FALSE,2,caption,0.52
+T3,main,"GEE, Mancl-DeRouen",MAD NAT,8,2,mad|NAT|gee_md,0.88020911109287,0.03095958096698,FALSE,2,caption,0.88
+T3,main,Marginalized model,MAD NAT,8,3,mad|NAT|mmm,0.195468577312292,0.0296531198367475,FALSE,2,caption,0.20
+T3,main,"GLMM, Wald",MAD NAT,8,4,mad|NAT|glmer,1.3756155832883,0.0390592501093342,FALSE,2,caption,1.38
+T3,main,Shrinkage GLM,MAD NAT,8,5,mad|NAT|shrink,1.60508757507333,0.0393240509941785,FALSE,2,caption,1.61
+T3,main,"GEE, uncorrected",MAD NAT,8,6,mad|NAT|gee,3.04856298181065,0.0413488893352466,FALSE,2,caption,3.05
+T3,main,"GLMM, likelihood ratio",MAD NAT,8,7,mad|NAT|glmer_lrt,0.771764041118225,0.0362440169460975,FALSE,2,caption,0.77
+T3,main,"GEE, Kauermann-Carroll",MAD NAT,8,8,mad|NAT|gee_kc,1.70510271130835,0.0371480774143609,FALSE,2,caption,1.71
+T3,main,"GEE, Fay-Graubard",MAD AR1,9,1,mad|AR1|gee_fg,0.550892228507482,0.0300423269162324,FALSE,2,caption,0.55
+T3,main,"GEE, Mancl-DeRouen",MAD AR1,9,2,mad|AR1|gee_md,0.954580787167344,0.033130533350265,FALSE,2,caption,0.95
+T3,main,Marginalized model,MAD AR1,9,3,mad|AR1|mmm,0.279248137513821,0.0336902241250793,FALSE,2,caption,0.28
+T3,main,"GLMM, Wald",MAD AR1,9,4,mad|AR1|glmer,1.58153631581742,0.0373768385005693,FALSE,2,caption,1.58
+T3,main,Shrinkage GLM,MAD AR1,9,5,mad|AR1|shrink,1.8542798249861,0.0382055907811852,FALSE,2,caption,1.85
+T3,main,"GEE, uncorrected",MAD AR1,9,6,mad|AR1|gee,3.17945906497523,0.0409192091340557,FALSE,2,caption,3.18
+T3,main,"GLMM, likelihood ratio",MAD AR1,9,7,mad|AR1|glmer_lrt,1.14338334137695,0.0367838265372699,FALSE,2,caption,1.14
+T3,main,"GEE, Kauermann-Carroll",MAD AR1,9,8,mad|AR1|gee_kc,1.79347544401784,0.0372189115619117,FALSE,2,caption,1.79
+T4,main,"GEE, Fay-Graubard",T = 2,1,1,madT|T2|gee_fg,2.41358430835486,0.0378283105219678,FALSE,1,inline,2.4 (0.04)
+T4,main,"GEE, Mancl-DeRouen",T = 2,1,2,madT|T2|gee_md,2.52854980870332,0.0348142564045934,FALSE,1,inline,2.5 (0.03)
+T4,main,Marginalized model,T = 2,1,3,madT|T2|mmm,1.61829953296328,0.0520646527869736,FALSE,1,inline,1.6 (0.05)
+T4,main,"GLMM, Wald",T = 2,1,4,madT|T2|glmer,5.5943600040123,0.384749198014441,FALSE,1,inline,5.6 (0.4)
+T4,main,Shrinkage GLM,T = 2,1,5,madT|T2|shrink,10.8273826493994,0.496574178607454,FALSE,1,inline,10.8 (0.5)
+T4,main,"GEE, uncorrected",T = 2,1,6,madT|T2|gee,2.59766065503781,0.0677599235700511,FALSE,1,inline,2.6 (0.07)
+T4,main,"GLMM, likelihood ratio",T = 2,1,7,madT|T2|glmer_lrt,10.4302538263788,0.199057415150498,FALSE,1,inline,10.4 (0.2)
+T4,main,"GEE, Kauermann-Carroll",T = 2,1,8,madT|T2|gee_kc,2.42628139631137,0.0618782932634998,FALSE,1,inline,2.4 (0.06)
+T4,main,"GEE, Fay-Graubard",T = 3,2,1,madT|T3|gee_fg,1.03772985643781,0.0468923021367804,FALSE,1,inline,1.0 (0.05)
+T4,main,"GEE, Mancl-DeRouen",T = 3,2,2,madT|T3|gee_md,1.15384072794843,0.0484492401465316,FALSE,1,inline,1.2 (0.05)
+T4,main,Marginalized model,T = 3,2,3,madT|T3|mmm,1.08221836370144,0.0506900472539459,FALSE,1,inline,1.1 (0.05)
+T4,main,"GLMM, Wald",T = 3,2,4,madT|T3|glmer,3.98748788307966,0.280347965360068,FALSE,1,inline,4.0 (0.3)
+T4,main,Shrinkage GLM,T = 3,2,5,madT|T3|shrink,4.77214606484836,0.369031503713935,FALSE,1,inline,4.8 (0.4)
+T4,main,"GEE, uncorrected",T = 3,2,6,madT|T3|gee,3.67570566916244,0.0613498840182623,FALSE,1,inline,3.7 (0.06)
+T4,main,"GLMM, likelihood ratio",T = 3,2,7,madT|T3|glmer_lrt,2.38935456531278,0.0629943253257064,FALSE,1,inline,2.4 (0.06)
+T4,main,"GEE, Kauermann-Carroll",T = 3,2,8,madT|T3|gee_kc,2.04827439592824,0.0573438705658823,FALSE,1,inline,2.0 (0.06)
+T4,main,"GEE, Fay-Graubard",T >= 4,3,1,madT|T4plus|gee_fg,1.19654731526083,0.0215282656060444,FALSE,2,caption,1.20
+T4,main,"GEE, Mancl-DeRouen",T >= 4,3,2,madT|T4plus|gee_md,1.61572541870325,0.0235449134232859,FALSE,2,caption,1.62
+T4,main,Marginalized model,T >= 4,3,3,madT|T4plus|mmm,0.712111071489539,0.0206325838296771,FALSE,2,caption,0.71
+T4,main,"GLMM, Wald",T >= 4,3,4,madT|T4plus|glmer,2.08665274922761,0.0241372673467694,FALSE,2,caption,2.09
+T4,main,Shrinkage GLM,T >= 4,3,5,madT|T4plus|shrink,2.18827062138965,0.0245581942268989,FALSE,2,caption,2.19
+T4,main,"GEE, uncorrected",T >= 4,3,6,madT|T4plus|gee,3.80459029057845,0.0285507084017033,FALSE,2,caption,3.80
+T4,main,"GLMM, likelihood ratio",T >= 4,3,7,madT|T4plus|glmer_lrt,1.42886653124159,0.0201321449510085,FALSE,2,caption,1.43
+T4,main,"GEE, Kauermann-Carroll",T >= 4,3,8,madT|T4plus|gee_kc,2.53523324815151,0.0259995924861339,FALSE,2,caption,2.54
+T5,main,"GEE, Fay-Graubard",BH,1,1,flag|BH|gee_fg,23.2638888888889,0.843874259231492,FALSE,0,caption,23
+T5,main,"GEE, Mancl-DeRouen",BH,1,2,flag|BH|gee_md,28.3333333333333,1.09586462042439,FALSE,0,caption,28
+T5,main,Marginalized model,BH,1,3,flag|BH|mmm,0.555555555555556,1.02972321848373,FALSE,0,caption,1
+T5,main,"GLMM, Wald",BH,1,4,flag|BH|glmer,50.7154213036566,0.856433540600518,FALSE,0,caption,51
+T5,main,Shrinkage GLM,BH,1,5,flag|BH|shrink,53.4387351778656,0.845907101309989,FALSE,0,caption,53
+T5,main,"GEE, uncorrected",BH,1,6,flag|BH|gee,45.6944444444445,0.878391453077031,FALSE,0,caption,46
+T5,main,"GLMM, likelihood ratio",BH,1,7,flag|BH|glmer_lrt,34.909377462569,1.07632586113086,FALSE,0,caption,35
+T5,main,"GEE, Kauermann-Carroll",BH,1,8,flag|BH|gee_kc,37.8472222222222,0.852816223002663,FALSE,0,caption,38
+T5,main,"GEE, Fay-Graubard",BY,2,1,flag|BY|gee_fg,14.1666666666667,0.718381528259146,FALSE,1,caption,14.2
+T5,main,"GEE, Mancl-DeRouen",BY,2,2,flag|BY|gee_md,20.2777777777778,0.663522875980696,FALSE,1,caption,20.3
+T5,main,Marginalized model,BY,2,3,flag|BY|mmm,0,0.487274584518046,FALSE,1,caption,0.0
+T5,main,"GLMM, Wald",BY,2,4,flag|BY|glmer,41.8918918918919,0.790961722823265,FALSE,1,caption,41.9
+T5,main,Shrinkage GLM,BY,2,5,flag|BY|shrink,45.0592885375494,0.726497725535516,FALSE,1,caption,45.1
+T5,main,"GEE, uncorrected",BY,2,6,flag|BY|gee,34.5833333333333,0.725315704005172,FALSE,1,caption,34.6
+T5,main,"GLMM, likelihood ratio",BY,2,7,flag|BY|glmer_lrt,27.9747832939322,0.652853962217947,FALSE,1,caption,28.0
+T5,main,"GEE, Kauermann-Carroll",BY,2,8,flag|BY|gee_kc,28.5416666666667,0.687850566447836,FALSE,1,caption,28.5
+T6,main,"GEE, Fay-Graubard",own GB,1,1,rate|GB|gee_fg,5.82570543781156,0.0356180394098216,FALSE,2,caption,5.83
+T6,main,"GEE, Mancl-DeRouen",own GB,1,2,rate|GB|gee_md,6.08874610982833,0.0365141152715911,FALSE,2,caption,6.09
+T6,main,Marginalized model,own GB,1,3,rate|GB|mmm,5.34171209871129,0.035987163981669,FALSE,2,caption,5.34
+T6,main,"GLMM, Wald",own GB,1,4,rate|GB|glmer,8.61163506014761,0.0453452126193128,FALSE,2,caption,8.61
+T6,main,Shrinkage GLM,own GB,1,5,rate|GB|shrink,9.28377756177419,0.0471941303254474,FALSE,2,caption,9.28
+T6,main,"GEE, uncorrected",own GB,1,6,rate|GB|gee,8.36855019348863,0.0414681225368863,FALSE,2,caption,8.37
+T6,main,"GLMM, likelihood ratio",own GB,1,7,rate|GB|glmer_lrt,7.80045078163607,0.0414736489977442,FALSE,2,caption,7.80
+T6,main,"GEE, Kauermann-Carroll",own GB,1,8,rate|GB|gee_kc,6.94964248373011,0.038580207808437,FALSE,2,caption,6.95
+T6,main,"GEE, Fay-Graubard",own NAT,2,1,rate|NAT|gee_fg,5.32219581170252,0.0330360656150224,FALSE,2,caption,5.32
+T6,main,"GEE, Mancl-DeRouen",own NAT,2,2,rate|NAT|gee_md,5.5073032807786,0.0337810208790614,FALSE,2,caption,5.51
+T6,main,Marginalized model,own NAT,2,3,rate|NAT|mmm,5.09713984709077,0.0349054153600026,FALSE,2,caption,5.10
+T6,main,"GLMM, Wald",own NAT,2,4,rate|NAT|glmer,6.29781487156008,0.0395424942123859,FALSE,2,caption,6.30
+T6,main,Shrinkage GLM,own NAT,2,5,rate|NAT|shrink,6.64424631635503,0.0402150756500753,FALSE,2,caption,6.64
+T6,main,"GEE, uncorrected",own NAT,2,6,rate|NAT|gee,7.62598911585109,0.0392013027226312,FALSE,2,caption,7.63
+T6,main,"GLMM, likelihood ratio",own NAT,2,7,rate|NAT|glmer_lrt,5.77026372774067,0.0362559904943033,FALSE,2,caption,5.77
+T6,main,"GEE, Kauermann-Carroll",own NAT,2,8,rate|NAT|gee_kc,6.34172285724588,0.0364193760778613,FALSE,2,caption,6.34
+T6,main,"GEE, Fay-Graubard",own AR1,3,1,rate|AR1|gee_fg,5.34336284387783,0.0327781291675245,FALSE,2,caption,5.34
+T6,main,"GEE, Mancl-DeRouen",own AR1,3,2,rate|AR1|gee_md,5.56350820607834,0.0341423763628053,FALSE,2,caption,5.56
+T6,main,Marginalized model,own AR1,3,3,rate|AR1|mmm,5.25569245983189,0.0348025889851518,FALSE,2,caption,5.26
+T6,main,"GLMM, Wald",own AR1,3,4,rate|AR1|glmer,6.55274385078627,0.0390798742976858,FALSE,2,caption,6.55
+T6,main,Shrinkage GLM,own AR1,3,5,rate|AR1|shrink,6.91019516161822,0.0393065099164941,FALSE,2,caption,6.91
+T6,main,"GEE, uncorrected",own AR1,3,6,rate|AR1|gee,7.71749506071437,0.0386896396687203,FALSE,2,caption,7.72
+T6,main,"GLMM, likelihood ratio",own AR1,3,7,rate|AR1|glmer_lrt,6.14199940247299,0.0367782636022326,FALSE,2,caption,6.14
+T6,main,"GEE, Kauermann-Carroll",own AR1,3,8,rate|AR1|gee_kc,6.39727669584493,0.0363288281814622,FALSE,2,caption,6.40
+T6,main,"GEE, Fay-Graubard",common GB,4,1,irate|GB|gee_fg,5.64619164619165,0.0379142904228171,FALSE,2,caption,5.65
+T6,main,"GEE, Mancl-DeRouen",common GB,4,2,irate|GB|gee_md,5.84930384930385,0.0387480823803342,FALSE,2,caption,5.85
+T6,main,Marginalized model,common GB,4,3,irate|GB|mmm,5.19383019383019,0.0369406787678689,FALSE,2,caption,5.19
+T6,main,"GLMM, Wald",common GB,4,4,irate|GB|glmer,8.56401856401856,0.0462879038173393,FALSE,2,caption,8.56
+T6,main,Shrinkage GLM,common GB,4,5,irate|GB|shrink,8.56401856401856,0.0462879038173393,FALSE,2,caption,8.56
+T6,main,"GEE, uncorrected",common GB,4,6,irate|GB|gee,7.45864045864046,0.0428681890315853,FALSE,2,caption,7.46
+T6,main,"GLMM, likelihood ratio",common GB,4,7,irate|GB|glmer_lrt,6.88042588042588,0.0419959690773978,FALSE,2,caption,6.88
+T6,main,"GEE, Kauermann-Carroll",common GB,4,8,irate|GB|gee_kc,6.61288561288561,0.0407295713316891,FALSE,2,caption,6.61
+T6,main,"GEE, Fay-Graubard",common NAT,5,1,irate|NAT|gee_fg,5.36208237887367,0.037225576432088,FALSE,2,caption,5.36
+T6,main,"GEE, Mancl-DeRouen",common NAT,5,2,irate|NAT|gee_md,5.49930846695769,0.037765923606286,FALSE,2,caption,5.50
+T6,main,Marginalized model,common NAT,5,3,irate|NAT|mmm,5.06439901456542,0.0366600006274149,FALSE,2,caption,5.06
+T6,main,"GLMM, Wald",common NAT,5,4,irate|NAT|glmer,6.30753771016121,0.0406837779817141,FALSE,2,caption,6.31
+T6,main,Shrinkage GLM,common NAT,5,5,irate|NAT|shrink,6.30753771016121,0.0406837779817141,FALSE,2,caption,6.31
+T6,main,"GEE, uncorrected",common NAT,5,6,irate|NAT|gee,7.0973981069283,0.0426837758179004,FALSE,2,caption,7.10
+T6,main,"GLMM, likelihood ratio",common NAT,5,7,irate|NAT|glmer_lrt,5.01064312572935,0.0359028290727467,FALSE,2,caption,5.01
+T6,main,"GEE, Kauermann-Carroll",common NAT,5,8,irate|NAT|gee_kc,6.2464883087695,0.0403905430239424,FALSE,2,caption,6.25
+T6,main,"GEE, Fay-Graubard",common AR1,6,1,irate|AR1|gee_fg,5.34416579636235,0.036444645841792,FALSE,2,caption,5.34
+T6,main,"GEE, Mancl-DeRouen",common AR1,6,2,irate|AR1|gee_md,5.50800906020697,0.0376404095126288,FALSE,2,caption,5.51
+T6,main,Marginalized model,common AR1,6,3,irate|AR1|mmm,5.21775692061468,0.0362072415045117,FALSE,2,caption,5.22
+T6,main,"GLMM, Wald",common AR1,6,4,irate|AR1|glmer,6.54803401646571,0.0400584876692304,FALSE,2,caption,6.55
+T6,main,Shrinkage GLM,common AR1,6,5,irate|AR1|shrink,6.54803401646571,0.0400584876692304,FALSE,2,caption,6.55
+T6,main,"GEE, uncorrected",common AR1,6,6,irate|AR1|gee,7.11199121105671,0.0427778218316593,FALSE,2,caption,7.11
+T6,main,"GLMM, likelihood ratio",common AR1,6,7,irate|AR1|glmer_lrt,5.3759036471402,0.0373680319232604,FALSE,2,caption,5.38
+T6,main,"GEE, Kauermann-Carroll",common AR1,6,8,irate|AR1|gee_kc,6.26266462314693,0.040208351329974,FALSE,2,caption,6.26
+T6,main,"GEE, Fay-Graubard",shift GB,7,1,shift|GB|gee_fg,-0.179513791619912,0.0163533805020475,FALSE,2,inline,-0.18 (0.02)
+T6,main,"GEE, Mancl-DeRouen",shift GB,7,2,shift|GB|gee_md,-0.239442260524482,0.0170382645700282,FALSE,2,inline,-0.24 (0.02)
+T6,main,Marginalized model,shift GB,7,3,shift|GB|mmm,-0.147881904881098,0.0123229106018236,FALSE,2,inline,-0.15 (0.01)
+T6,main,"GLMM, Wald",shift GB,7,4,shift|GB|glmer,-0.0476164961290451,0.0101199549146132,FALSE,2,inline,-0.05 (0.01)
+T6,main,Shrinkage GLM,shift GB,7,5,shift|GB|shrink,-0.719758997755621,0.0169938223405734,FALSE,2,inline,-0.72 (0.02)
+T6,main,"GEE, uncorrected",shift GB,7,6,shift|GB|gee,-0.90990973484817,0.0228868681127865,FALSE,2,inline,-0.91 (0.02)
+T6,main,"GLMM, likelihood ratio",shift GB,7,7,shift|GB|glmer_lrt,-0.920024901210192,0.0195659467407247,FALSE,2,inline,-0.92 (0.02)
+T6,main,"GEE, Kauermann-Carroll",shift GB,7,8,shift|GB|gee_kc,-0.336756870844493,0.018711202544067,FALSE,2,inline,-0.34 (0.02)
+T6,main,"GEE, Fay-Graubard",shift NAT,8,1,shift|NAT|gee_fg,0.0398865671711492,0.0152111458587308,FALSE,2,inline,0.04 (0.02)
+T6,main,"GEE, Mancl-DeRouen",shift NAT,8,2,shift|NAT|gee_md,-0.0079948138209085,0.0155633607580099,FALSE,2,inline,-0.01 (0.02)
+T6,main,Marginalized model,shift NAT,8,3,shift|NAT|mmm,-0.0327408325253593,0.0109907583705521,FALSE,2,inline,-0.03 (0.01)
+T6,main,"GLMM, Wald",shift NAT,8,4,shift|NAT|glmer,0.00972283860113432,0.00897248710920507,FALSE,2,inline,0.01 (0.009)
+T6,main,Shrinkage GLM,shift NAT,8,5,shift|NAT|shrink,-0.336708606193816,0.0130107895887753,FALSE,2,inline,-0.34 (0.01)
+T6,main,"GEE, uncorrected",shift NAT,8,6,shift|NAT|gee,-0.528591008922797,0.0202484224921347,FALSE,2,inline,-0.53 (0.02)
+T6,main,"GLMM, likelihood ratio",shift NAT,8,7,shift|NAT|glmer_lrt,-0.759620602011319,0.0175626337076743,FALSE,2,inline,-0.76 (0.02)
+T6,main,"GEE, Kauermann-Carroll",shift NAT,8,8,shift|NAT|gee_kc,-0.0952345484763768,0.0168115366158826,FALSE,2,inline,-0.10 (0.02)
+T6,main,"GEE, Fay-Graubard",shift AR1,9,1,shift|AR1|gee_fg,0.000802952484527886,0.0153908197684593,FALSE,2,inline,0.00 (0.02)
+T6,main,"GEE, Mancl-DeRouen",shift AR1,9,2,shift|AR1|gee_md,-0.0554991458713676,0.0157312413264556,FALSE,2,inline,-0.06 (0.02)
+T6,main,Marginalized model,shift AR1,9,3,shift|AR1|mmm,-0.0379355392172025,0.0108851937056291,FALSE,2,inline,-0.04 (0.01)
+T6,main,"GLMM, Wald",shift AR1,9,4,shift|AR1|glmer,-0.00470983432056205,0.00940143702444489,FALSE,2,inline,-0.00 (0.009)
+T6,main,Shrinkage GLM,shift AR1,9,5,shift|AR1|shrink,-0.362161145152509,0.0135468331847556,FALSE,2,inline,-0.36 (0.01)
+T6,main,"GEE, uncorrected",shift AR1,9,6,shift|AR1|gee,-0.605503849657657,0.021368634598641,FALSE,2,inline,-0.61 (0.02)
+T6,main,"GLMM, likelihood ratio",shift AR1,9,7,shift|AR1|glmer_lrt,-0.766095755332788,0.0176631746175525,FALSE,2,inline,-0.77 (0.02)
+T6,main,"GEE, Kauermann-Carroll",shift AR1,9,8,shift|AR1|gee_kc,-0.134612072697996,0.0172333776427495,FALSE,2,inline,-0.13 (0.02)
+T7,main,"random intercept, T = 2","GEE, Fay-Graubard",1,1,puT|RI|gee_fg|2,72.7307032928101,0.115311167565686,FALSE,1,inline,72.7 (0.1)
+T7,main,"random intercept, T = 3","GEE, Fay-Graubard",1,2,puT|RI|gee_fg|3,88.2787312021215,0.0912525492440435,FALSE,1,inline,88.3 (0.09)
+T7,main,"random intercept, T = 4","GEE, Fay-Graubard",1,3,puT|RI|gee_fg|4,93.770579929697,0.0733468138741707,FALSE,1,inline,93.8 (0.07)
+T7,main,"random intercept, T = 6","GEE, Fay-Graubard",1,4,puT|RI|gee_fg|6,97.6867262504782,0.04759751096913,FALSE,1,inline,97.7 (0.05)
+T7,main,"random intercept, T = 8","GEE, Fay-Graubard",1,5,puT|RI|gee_fg|8,98.8799564627719,0.0359601791139345,FALSE,1,inline,98.9 (0.04)
+T7,main,"random intercept, T = 10","GEE, Fay-Graubard",1,6,puT|RI|gee_fg|10,99.4627209111067,0.0251585127557903,FALSE,1,inline,99.5 (0.03)
+T7,main,"random slopes, T = 2","GEE, Fay-Graubard",1,7,puT|RS|gee_fg|2,73.1196775734011,0.0849883491726719,FALSE,1,inline,73.1 (0.08)
+T7,main,"random slopes, T = 3","GEE, Fay-Graubard",1,8,puT|RS|gee_fg|3,88.4072645386515,0.0714839634032583,FALSE,1,inline,88.4 (0.07)
+T7,main,"random slopes, T = 4","GEE, Fay-Graubard",1,9,puT|RS|gee_fg|4,94.055482966066,0.0581002568128249,FALSE,1,inline,94.1 (0.06)
+T7,main,"random slopes, T = 6","GEE, Fay-Graubard",1,10,puT|RS|gee_fg|6,97.9513288891301,0.0386299830616581,FALSE,1,inline,98.0 (0.04)
+T7,main,"random slopes, T = 8","GEE, Fay-Graubard",1,11,puT|RS|gee_fg|8,99.1146321893182,0.0255465097890817,FALSE,1,inline,99.1 (0.03)
+T7,main,"random slopes, T = 10","GEE, Fay-Graubard",1,12,puT|RS|gee_fg|10,99.5338471011118,0.0190003919075252,FALSE,1,inline,99.5 (0.02)
+T7,main,"random intercept, T = 2","GEE, Mancl-DeRouen",2,1,puT|RI|gee_md|2,72.7168710879572,0.115289066082573,FALSE,1,inline,72.7 (0.1)
+T7,main,"random intercept, T = 3","GEE, Mancl-DeRouen",2,2,puT|RI|gee_md|3,88.2545816568354,0.0913031482367834,FALSE,1,inline,88.3 (0.09)
+T7,main,"random intercept, T = 4","GEE, Mancl-DeRouen",2,3,puT|RI|gee_md|4,93.7088830667043,0.0744774618348891,FALSE,1,inline,93.7 (0.07)
+T7,main,"random intercept, T = 6","GEE, Mancl-DeRouen",2,4,puT|RI|gee_md|6,97.631389469427,0.0491573818668651,FALSE,1,inline,97.6 (0.05)
+T7,main,"random intercept, T = 8","GEE, Mancl-DeRouen",2,5,puT|RI|gee_md|8,98.8056989173131,0.0395751488502295,FALSE,1,inline,98.8 (0.04)
+T7,main,"random intercept, T = 10","GEE, Mancl-DeRouen",2,6,puT|RI|gee_md|10,99.3625182929084,0.0318651774414159,FALSE,1,inline,99.4 (0.03)
+T7,main,"random slopes, T = 2","GEE, Mancl-DeRouen",2,7,puT|RS|gee_md|2,73.116114303792,0.0848212934426439,FALSE,1,inline,73.1 (0.08)
+T7,main,"random slopes, T = 3","GEE, Mancl-DeRouen",2,8,puT|RS|gee_md|3,88.3862626543083,0.0714323297137732,FALSE,1,inline,88.4 (0.07)
+T7,main,"random slopes, T = 4","GEE, Mancl-DeRouen",2,9,puT|RS|gee_md|4,94.0164153736321,0.0582203396697924,FALSE,1,inline,94.0 (0.06)
+T7,main,"random slopes, T = 6","GEE, Mancl-DeRouen",2,10,puT|RS|gee_md|6,97.8740190240441,0.040258569688532,FALSE,1,inline,97.9 (0.04)
+T7,main,"random slopes, T = 8","GEE, Mancl-DeRouen",2,11,puT|RS|gee_md|8,99.0394825209884,0.0290814400775026,FALSE,1,inline,99.0 (0.03)
+T7,main,"random slopes, T = 10","GEE, Mancl-DeRouen",2,12,puT|RS|gee_md|10,99.4343331545938,0.0243908962630123,FALSE,1,inline,99.4 (0.02)
+T7,main,"random intercept, T = 2",Marginalized model,3,1,puT|RI|mmm|2,68.1610797118623,0.126261001004289,FALSE,1,inline,68.2 (0.1)
+T7,main,"random intercept, T = 3",Marginalized model,3,2,puT|RI|mmm|3,87.1024479234074,0.0966993791382606,FALSE,1,inline,87.1 (0.1)
+T7,main,"random intercept, T = 4",Marginalized model,3,3,puT|RI|mmm|4,92.9003231480455,0.0778724291158051,FALSE,1,inline,92.9 (0.08)
+T7,main,"random intercept, T = 6",Marginalized model,3,4,puT|RI|mmm|6,97.4219205566767,0.0510577112908175,FALSE,1,inline,97.4 (0.05)
+T7,main,"random intercept, T = 8",Marginalized model,3,5,puT|RI|mmm|8,98.8517782409204,0.0370049442590963,FALSE,1,inline,98.9 (0.04)
+T7,main,"random intercept, T = 10",Marginalized model,3,6,puT|RI|mmm|10,99.5085489618672,0.0244471272614808,FALSE,1,inline,99.5 (0.02)
+T7,main,"random slopes, T = 2",Marginalized model,3,7,puT|RS|mmm|2,42.1910943386337,0.11591543667472,FALSE,1,inline,42.2 (0.1)
+T7,main,"random slopes, T = 3",Marginalized model,3,8,puT|RS|mmm|3,69.063948525008,0.094146787228585,FALSE,1,inline,69.1 (0.09)
+T7,main,"random slopes, T = 4",Marginalized model,3,9,puT|RS|mmm|4,80.6413163939257,0.0824881185296813,FALSE,1,inline,80.6 (0.08)
+T7,main,"random slopes, T = 6",Marginalized model,3,10,puT|RS|mmm|6,90.35484080131,0.067882049498849,FALSE,1,inline,90.4 (0.07)
+T7,main,"random slopes, T = 8",Marginalized model,3,11,puT|RS|mmm|8,94.6401401589639,0.0514022025316128,FALSE,1,inline,94.6 (0.05)
+T7,main,"random slopes, T = 10",Marginalized model,3,12,puT|RS|mmm|10,96.845058975726,0.0411563444514105,FALSE,1,inline,96.8 (0.04)
+T7,main,"random intercept, T = 2","GLMM, Wald",4,1,puT|RI|glmer|2,68.5594654419701,0.124635177100461,FALSE,1,inline,68.6 (0.1)
+T7,main,"random intercept, T = 3","GLMM, Wald",4,2,puT|RI|glmer|3,87.7737079144629,0.0924763441588576,FALSE,1,inline,87.8 (0.09)
+T7,main,"random intercept, T = 4","GLMM, Wald",4,3,puT|RI|glmer|4,93.7446295702434,0.0724131772119573,FALSE,1,inline,93.7 (0.07)
+T7,main,"random intercept, T = 6","GLMM, Wald",4,4,puT|RI|glmer|6,97.8140279451414,0.0466715543915112,FALSE,1,inline,97.8 (0.05)
+T7,main,"random intercept, T = 8","GLMM, Wald",4,5,puT|RI|glmer|8,99.0355342199127,0.0342123787817483,FALSE,1,inline,99.0 (0.03)
+T7,main,"random intercept, T = 10","GLMM, Wald",4,6,puT|RI|glmer|10,99.5763575521777,0.0227037288939936,FALSE,1,inline,99.6 (0.02)
+T7,main,"random slopes, T = 2","GLMM, Wald",4,7,puT|RS|glmer|2,0.0021244292776842,0.0011951619552727,FALSE,1,inline,0.0 (0.001)
+T7,main,"random slopes, T = 3","GLMM, Wald",4,8,puT|RS|glmer|3,56.6586894938711,0.0683337989406752,FALSE,1,inline,56.7 (0.07)
+T7,main,"random slopes, T = 4","GLMM, Wald",4,9,puT|RS|glmer|4,90.8227890881245,0.0739659804023312,FALSE,1,inline,90.8 (0.07)
+T7,main,"random slopes, T = 6","GLMM, Wald",4,10,puT|RS|glmer|6,97.7272731734412,0.0401309644795443,FALSE,1,inline,97.7 (0.04)
+T7,main,"random slopes, T = 8","GLMM, Wald",4,11,puT|RS|glmer|8,99.1730233028838,0.0248482031750915,FALSE,1,inline,99.2 (0.02)
+T7,main,"random slopes, T = 10","GLMM, Wald",4,12,puT|RS|glmer|10,99.6173323180971,0.0175617622905704,FALSE,1,inline,99.6 (0.02)
+T7,main,"random intercept, T = 2",Shrinkage GLM,5,1,puT|RI|shrink|2,74.0150128120659,0.114737337786402,FALSE,1,inline,74.0 (0.1)
+T7,main,"random intercept, T = 3",Shrinkage GLM,5,2,puT|RI|shrink|3,88.8656940967808,0.0910247141732571,FALSE,1,inline,88.9 (0.09)
+T7,main,"random intercept, T = 4",Shrinkage GLM,5,3,puT|RI|shrink|4,94.1108613004004,0.0721805445351219,FALSE,1,inline,94.1 (0.07)
+T7,main,"random intercept, T = 6",Shrinkage GLM,5,4,puT|RI|shrink|6,97.8620313030776,0.0458355096631345,FALSE,1,inline,97.9 (0.05)
+T7,main,"random intercept, T = 8",Shrinkage GLM,5,5,puT|RI|shrink|8,99.0428415585954,0.0341447096026836,FALSE,1,inline,99.0 (0.03)
+T7,main,"random intercept, T = 10",Shrinkage GLM,5,6,puT|RI|shrink|10,99.5763575521777,0.0227037288939936,FALSE,1,inline,99.6 (0.02)
+T7,main,"random slopes, T = 2",Shrinkage GLM,5,7,puT|RS|shrink|2,0.016257125910492,0.0038206834446754,FALSE,1,inline,0.0 (0.004)
+T7,main,"random slopes, T = 3",Shrinkage GLM,5,8,puT|RS|shrink|3,59.2914278368937,0.0595779474049345,FALSE,1,inline,59.3 (0.06)
+T7,main,"random slopes, T = 4",Shrinkage GLM,5,9,puT|RS|shrink|4,93.7096780117854,0.0676772634773607,FALSE,1,inline,93.7 (0.07)
+T7,main,"random slopes, T = 6",Shrinkage GLM,5,10,puT|RS|shrink|6,98.0570865711763,0.0377874394369176,FALSE,1,inline,98.1 (0.04)
+T7,main,"random slopes, T = 8",Shrinkage GLM,5,11,puT|RS|shrink|8,99.2293784544148,0.0242888049113289,FALSE,1,inline,99.2 (0.02)
+T7,main,"random slopes, T = 10",Shrinkage GLM,5,12,puT|RS|shrink|10,99.628471988507,0.0173160147068704,FALSE,1,inline,99.6 (0.02)
+T7,main,"random intercept, T = 2","GEE, uncorrected",6,1,puT|RI|gee|2,77.8406005463992,0.116485152978416,FALSE,1,inline,77.8 (0.1)
+T7,main,"random intercept, T = 3","GEE, uncorrected",6,2,puT|RI|gee|3,91.4314681007516,0.0823058541009772,FALSE,1,inline,91.4 (0.08)
+T7,main,"random intercept, T = 4","GEE, uncorrected",6,3,puT|RI|gee|4,95.8449931137634,0.0616395979826747,FALSE,1,inline,95.8 (0.06)
+T7,main,"random intercept, T = 6","GEE, uncorrected",6,4,puT|RI|gee|6,98.6364058545877,0.0368163514667874,FALSE,1,inline,98.6 (0.04)
+T7,main,"random intercept, T = 8","GEE, uncorrected",6,5,puT|RI|gee|8,99.3680016914226,0.0259520517926829,FALSE,1,inline,99.4 (0.03)
+T7,main,"random intercept, T = 10","GEE, uncorrected",6,6,puT|RI|gee|10,99.690189562682,0.0187140388072728,FALSE,1,inline,99.7 (0.02)
+T7,main,"random slopes, T = 2","GEE, uncorrected",6,7,puT|RS|gee|2,77.9751900974012,0.0899210077041252,FALSE,1,inline,78.0 (0.09)
+T7,main,"random slopes, T = 3","GEE, uncorrected",6,8,puT|RS|gee|3,91.477605468485,0.064157450291086,FALSE,1,inline,91.5 (0.06)
+T7,main,"random slopes, T = 4","GEE, uncorrected",6,9,puT|RS|gee|4,95.9957280170221,0.0507065852175262,FALSE,1,inline,96.0 (0.05)
+T7,main,"random slopes, T = 6","GEE, uncorrected",6,10,puT|RS|gee|6,98.7648620173051,0.0293341556866904,FALSE,1,inline,98.8 (0.03)
+T7,main,"random slopes, T = 8","GEE, uncorrected",6,11,puT|RS|gee|8,99.4679501371737,0.0196428373702777,FALSE,1,inline,99.5 (0.02)
+T7,main,"random slopes, T = 10","GEE, uncorrected",6,12,puT|RS|gee|10,99.7167737313764,0.0149538443812781,FALSE,1,inline,99.7 (0.01)
+T7,main,"random intercept, T = 2","GLMM, likelihood ratio",7,1,puT|RI|glmer_lrt|2,98.9271417518501,0.0347922989269566,FALSE,2,inline,98.93 (0.03)
+T7,main,"random intercept, T = 3","GLMM, likelihood ratio",7,2,puT|RI|glmer_lrt|3,99.6382013628777,0.0191926740133521,FALSE,2,inline,99.64 (0.02)
+T7,main,"random intercept, T = 4","GLMM, likelihood ratio",7,3,puT|RI|glmer_lrt|4,99.8630509724315,0.0123028478327213,FALSE,2,inline,99.86 (0.01)
+T7,main,"random intercept, T = 6","GLMM, likelihood ratio",7,4,puT|RI|glmer_lrt|6,99.9832873704614,0.0041282083188192,FALSE,2,inline,99.98 (0.004)
+T7,main,"random intercept, T = 8","GLMM, likelihood ratio",7,5,puT|RI|glmer_lrt|8,99.9989530988275,0.00108057507427593,FALSE,2,inline,100.00 (0.001)
+T7,main,"random intercept, T = 10","GLMM, likelihood ratio",7,6,puT|RI|glmer_lrt|10,100,0,FALSE,2,inline,100.00 (0)
+T7,main,"random slopes, T = 2","GLMM, likelihood ratio",7,7,puT|RS|glmer_lrt|2,0.136465278105719,0.0180213705697916,FALSE,2,inline,0.14 (0.02)
+T7,main,"random slopes, T = 3","GLMM, likelihood ratio",7,8,puT|RS|glmer_lrt|3,66.465061870473,0.0209661741694965,FALSE,2,inline,66.47 (0.02)
+T7,main,"random slopes, T = 4","GLMM, likelihood ratio",7,9,puT|RS|glmer_lrt|4,99.4089597111875,0.0449535970572451,FALSE,2,inline,99.41 (0.04)
+T7,main,"random slopes, T = 6","GLMM, likelihood ratio",7,10,puT|RS|glmer_lrt|6,99.9846720297942,0.00320225004757605,FALSE,2,inline,99.98 (0.003)
+T7,main,"random slopes, T = 8","GLMM, likelihood ratio",7,11,puT|RS|glmer_lrt|8,99.9979117923228,0.00121141976312648,FALSE,2,inline,100.00 (0.001)
+T7,main,"random slopes, T = 10","GLMM, likelihood ratio",7,12,puT|RS|glmer_lrt|10,99.9993034659534,0.000679503890489401,FALSE,2,inline,100.00 (0.0007)
+T7,main,"random intercept, T = 2","GEE, Kauermann-Carroll",8,1,puT|RI|gee_kc|2,72.9622861421528,0.116762098843222,FALSE,1,inline,73.0 (0.1)
+T7,main,"random intercept, T = 3","GEE, Kauermann-Carroll",8,2,puT|RI|gee_kc|3,88.6894062974984,0.0880399277775561,FALSE,1,inline,88.7 (0.09)
+T7,main,"random intercept, T = 4","GEE, Kauermann-Carroll",8,3,puT|RI|gee_kc|4,93.857163891171,0.0735276766322315,FALSE,1,inline,93.9 (0.07)
+T7,main,"random intercept, T = 6","GEE, Kauermann-Carroll",8,4,puT|RI|gee_kc|6,97.6814970797496,0.0488333076936651,FALSE,1,inline,97.7 (0.05)
+T7,main,"random intercept, T = 8","GEE, Kauermann-Carroll",8,5,puT|RI|gee_kc|8,98.8610443190963,0.0386218936265579,FALSE,1,inline,98.9 (0.04)
+T7,main,"random intercept, T = 10","GEE, Kauermann-Carroll",8,6,puT|RI|gee_kc|10,99.3979777608602,0.0313355184037026,FALSE,1,inline,99.4 (0.03)
+T7,main,"random slopes, T = 2","GEE, Kauermann-Carroll",8,7,puT|RS|gee_kc|2,73.2339837622587,0.0849470886534063,FALSE,1,inline,73.2 (0.08)
+T7,main,"random slopes, T = 3","GEE, Kauermann-Carroll",8,8,puT|RS|gee_kc|3,88.7923148136521,0.0696772124473121,FALSE,1,inline,88.8 (0.07)
+T7,main,"random slopes, T = 4","GEE, Kauermann-Carroll",8,9,puT|RS|gee_kc|4,94.1222563030734,0.0574356071584522,FALSE,1,inline,94.1 (0.06)
+T7,main,"random slopes, T = 6","GEE, Kauermann-Carroll",8,10,puT|RS|gee_kc|6,97.8872378570002,0.0400047236546642,FALSE,1,inline,97.9 (0.04)
+T7,main,"random slopes, T = 8","GEE, Kauermann-Carroll",8,11,puT|RS|gee_kc|8,99.0589443676297,0.0289964430882074,FALSE,1,inline,99.1 (0.03)
+T7,main,"random slopes, T = 10","GEE, Kauermann-Carroll",8,12,puT|RS|gee_kc|10,99.4468512658987,0.0242570826406414,FALSE,1,inline,99.4 (0.02)
+T8,main,"GEE, Fay-Graubard",usable,1,1,use20|gee_fg,68.9470579320297,0.0924854059613997,FALSE,2,inline,68.95 (0.09)
+T8,main,"GEE, Mancl-DeRouen",usable,1,2,use20|gee_md,68.6593655240937,0.0962589473250264,FALSE,2,inline,68.66 (0.1)
+T8,main,Marginalized model,usable,1,3,use20|mmm,54.1188711129391,0.0961940462291358,FALSE,2,inline,54.12 (0.1)
+T8,main,"GLMM, Wald",usable,1,4,use20|glmer,64.4601287179085,0.0831605230773124,FALSE,2,inline,64.46 (0.08)
+T8,main,Shrinkage GLM,usable,1,5,use20|shrink,66.8594069118089,0.0835484103549751,FALSE,2,inline,66.86 (0.08)
+T8,main,"GEE, uncorrected",usable,1,6,use20|gee,77.6182821975589,0.0776855004337484,FALSE,2,inline,77.62 (0.08)
+T8,main,"GLMM, likelihood ratio",usable,1,7,use20|glmer_lrt,85.8171214618796,0.0297740985216404,FALSE,2,inline,85.82 (0.03)
+T8,main,"GEE, Kauermann-Carroll",usable,1,8,use20|gee_kc,69.2543958834557,0.0942548181407902,FALSE,2,inline,69.25 (0.09)
+T8,main,"GEE, Fay-Graubard",unconditional validity,2,1,val20|gee_fg,63.7963768564531,0.0974776164849686,FALSE,1,caption,63.8
+T8,main,"GEE, Mancl-DeRouen",unconditional validity,2,2,val20|gee_md,62.2813187707159,0.104049635973042,FALSE,1,caption,62.3
+T8,main,Marginalized model,unconditional validity,2,3,val20|mmm,51.4193607760658,0.0968128541895191,FALSE,1,caption,51.4
+T8,main,"GLMM, Wald",unconditional validity,2,4,val20|glmer,60.9689100591255,0.0840954402103915,FALSE,1,caption,61.0
+T8,main,Shrinkage GLM,unconditional validity,2,5,val20|shrink,62.61971258816,0.0847936166031749,FALSE,1,caption,62.6
+T8,main,"GEE, uncorrected",unconditional validity,2,6,val20|gee,64.0920964830624,0.0984611745593507,FALSE,1,caption,64.1
+T8,main,"GLMM, likelihood ratio",unconditional validity,2,7,val20|glmer_lrt,79.8849394255995,0.0521427008924743,FALSE,1,caption,79.9
+T8,main,"GEE, Kauermann-Carroll",unconditional validity,2,8,val20|gee_kc,60.6107908897283,0.103828108812108,FALSE,1,caption,60.6
+T8,main,"GEE, Fay-Graubard",design points with a usable replicate,3,1,ncell20|gee_fg,270,,TRUE,0,none,270
+T8,main,"GEE, Mancl-DeRouen",design points with a usable replicate,3,2,ncell20|gee_md,270,,TRUE,0,none,270
+T8,main,Marginalized model,design points with a usable replicate,3,3,ncell20|mmm,270,,TRUE,0,none,270
+T8,main,"GLMM, Wald",design points with a usable replicate,3,4,ncell20|glmer,244,,TRUE,0,none,244
+T8,main,Shrinkage GLM,design points with a usable replicate,3,5,ncell20|shrink,251,,TRUE,0,none,251
+T8,main,"GEE, uncorrected",design points with a usable replicate,3,6,ncell20|gee,270,,TRUE,0,none,270
+T8,main,"GLMM, likelihood ratio",design points with a usable replicate,3,7,ncell20|glmer_lrt,255,,TRUE,0,none,255
+T8,main,"GEE, Kauermann-Carroll",design points with a usable replicate,3,8,ncell20|gee_kc,270,,TRUE,0,none,270
+T9,main,"GEE, Fay-Graubard",<50%,1,1,madS|s1|gee_fg,3.83438825587961,0.107683163383976,FALSE,0,inline,4 (0.1)
+T9,main,"GEE, Mancl-DeRouen",<50%,1,2,madS|s1|gee_md,4.32007767039948,0.11914888691122,FALSE,0,inline,4 (0.1)
+T9,main,Marginalized model,<50%,1,3,madS|s1|mmm,3.02706483593758,0.124594675215787,FALSE,0,inline,3 (0.1)
+T9,main,"GLMM, Wald",<50%,1,4,madS|s1|glmer,6.13678188838787,1.19367029057644,FALSE,0,inline,6 (1)
+T9,main,Shrinkage GLM,<50%,1,5,madS|s1|shrink,10.6483610847757,1.08294389478283,FALSE,0,inline,11 (1)
+T9,main,"GEE, uncorrected",<50%,1,6,madS|s1|gee,10.3835227402547,0.253915302692272,FALSE,0,inline,10 (0.3)
+T9,main,"GLMM, likelihood ratio",<50%,1,7,madS|s1|glmer_lrt,4.32370058684515,0.307486727363557,FALSE,0,inline,4 (0.3)
+T9,main,"GEE, Kauermann-Carroll",<50%,1,8,madS|s1|gee_kc,6.11086261075127,0.20007729844622,FALSE,0,inline,6 (0.2)
+T9,main,design points,<50%,1,9,ndp|s1,93,,TRUE,0,none,93
+T9,main,"GEE, Fay-Graubard",50-80%,2,1,madS|s2|gee_fg,2.81604120178361,0.0818601477094426,FALSE,1,inline,2.8 (0.08)
+T9,main,"GEE, Mancl-DeRouen",50-80%,2,2,madS|s2|gee_md,4.19700412986601,0.102508664736391,FALSE,1,inline,4.2 (0.1)
+T9,main,Marginalized model,50-80%,2,3,madS|s2|mmm,1.61455687568629,0.0866029396991078,FALSE,1,inline,1.6 (0.09)
+T9,main,"GLMM, Wald",50-80%,2,4,madS|s2|glmer,2.32481780345082,0.0956857487925847,FALSE,1,inline,2.3 (0.1)
+T9,main,Shrinkage GLM,50-80%,2,5,madS|s2|shrink,5.20385044175814,0.506081645376511,FALSE,1,inline,5.2 (0.5)
+T9,main,"GEE, uncorrected",50-80%,2,6,madS|s2|gee,9.30176081889823,0.193286818038206,FALSE,1,inline,9.3 (0.2)
+T9,main,"GLMM, likelihood ratio",50-80%,2,7,madS|s2|glmer_lrt,4.63865981117966,0.160891990593032,FALSE,1,inline,4.6 (0.2)
+T9,main,"GEE, Kauermann-Carroll",50-80%,2,8,madS|s2|gee_kc,6.2173195136486,0.133559288377946,FALSE,1,inline,6.2 (0.1)
+T9,main,design points,50-80%,2,9,ndp|s2,123,,TRUE,0,none,123
+T9,main,"GEE, Fay-Graubard",80-95%,3,1,madS|s3|gee_fg,2.17581875807412,0.058522214492383,FALSE,1,inline,2.2 (0.06)
+T9,main,"GEE, Mancl-DeRouen",80-95%,3,2,madS|s3|gee_md,3.11358777527941,0.0713953168776209,FALSE,1,inline,3.1 (0.07)
+T9,main,Marginalized model,80-95%,3,3,madS|s3|mmm,0.911145575801135,0.0491568745696296,FALSE,1,inline,0.9 (0.05)
+T9,main,"GLMM, Wald",80-95%,3,4,madS|s3|glmer,2.51128369713142,0.0865311831419207,FALSE,1,inline,2.5 (0.09)
+T9,main,Shrinkage GLM,80-95%,3,5,madS|s3|shrink,3.70620737834468,0.117326348972875,FALSE,1,inline,3.7 (0.1)
+T9,main,"GEE, uncorrected",80-95%,3,6,madS|s3|gee,6.44020302342794,0.133186767202422,FALSE,1,inline,6.4 (0.1)
+T9,main,"GLMM, likelihood ratio",80-95%,3,7,madS|s3|glmer_lrt,4.47333903528473,0.147022721639939,FALSE,1,inline,4.5 (0.1)
+T9,main,"GEE, Kauermann-Carroll",80-95%,3,8,madS|s3|gee_kc,4.52470849059401,0.0949691091703454,FALSE,1,inline,4.5 (0.09)
+T9,main,design points,80-95%,3,9,ndp|s3,196,,TRUE,0,none,196
+T9,main,"GEE, Fay-Graubard",95-99.9%,4,1,madS|s4|gee_fg,1.10563855521832,0.0343171235775395,FALSE,2,inline,1.11 (0.03)
+T9,main,"GEE, Mancl-DeRouen",95-99.9%,4,2,madS|s4|gee_md,1.29317228605648,0.0382709091158623,FALSE,2,inline,1.29 (0.04)
+T9,main,Marginalized model,95-99.9%,4,3,madS|s4|mmm,0.717646232651732,0.0300067123569292,FALSE,2,inline,0.72 (0.03)
+T9,main,"GLMM, Wald",95-99.9%,4,4,madS|s4|glmer,3.14795991181723,0.0592996462004181,FALSE,2,inline,3.15 (0.06)
+T9,main,Shrinkage GLM,95-99.9%,4,5,madS|s4|shrink,3.4372503016616,0.0644923922634388,FALSE,2,inline,3.44 (0.06)
+T9,main,"GEE, uncorrected",95-99.9%,4,6,madS|s4|gee,2.79054093790958,0.0626520024348572,FALSE,2,inline,2.79 (0.06)
+T9,main,"GLMM, likelihood ratio",95-99.9%,4,7,madS|s4|glmer_lrt,2.66244230749001,0.0614989314569882,FALSE,2,inline,2.66 (0.06)
+T9,main,"GEE, Kauermann-Carroll",95-99.9%,4,8,madS|s4|gee_kc,1.9655848997406,0.0490743153893423,FALSE,2,inline,1.97 (0.05)
+T9,main,design points,95-99.9%,4,9,ndp|s4,398,,TRUE,0,none,398
+T9,main,"GEE, Fay-Graubard",100%,5,1,madS|s5|gee_fg,0.646865119087341,0.0232955840403825,FALSE,2,caption,0.65
+T9,main,"GEE, Mancl-DeRouen",100%,5,2,madS|s5|gee_md,0.622104167659723,0.0230489648031553,FALSE,2,caption,0.62
+T9,main,Marginalized model,100%,5,3,madS|s5|mmm,0.614977245913444,0.023239625166659,FALSE,2,caption,0.61
+T9,main,"GLMM, Wald",100%,5,4,madS|s5|glmer,2.15344089925971,0.036739105723211,FALSE,2,caption,2.15
+T9,main,Shrinkage GLM,100%,5,5,madS|s5|shrink,2.15609657276324,0.0372360447633107,FALSE,2,caption,2.16
+T9,main,"GEE, uncorrected",100%,5,6,madS|s5|gee,1.07192907192907,0.0294168150980269,FALSE,2,caption,1.07
+T9,main,"GLMM, likelihood ratio",100%,5,7,madS|s5|glmer_lrt,1.19793650793651,0.0290769658370267,FALSE,2,caption,1.20
+T9,main,"GEE, Kauermann-Carroll",100%,5,8,madS|s5|gee_kc,0.802430366874812,0.0258233642337786,FALSE,2,caption,0.80
+T9,main,design points,100%,5,9,ndp|s5,630,,TRUE,0,none,630
+T10,main,"GenBinaryY, GEE, Fay-Graubard",raw,1,1,raw|GB|gee_fg,23.2995687993942,0.0558476225923849,FALSE,2,caption,23.30
+T10,main,"GenBinaryY, GEE, Mancl-DeRouen",raw,1,2,raw|GB|gee_md,23.5314932767162,0.0562727224529237,FALSE,2,caption,23.53
+T10,main,"GenBinaryY, Marginalized model",raw,1,3,raw|GB|mmm,25.3273386969554,0.0599306868284167,FALSE,2,caption,25.33
+T10,main,"GenBinaryY, GLMM, Wald",raw,1,4,raw|GB|glmer,31.908598456069,0.0632386745881545,FALSE,2,caption,31.91
+T10,main,"GenBinaryY, Shrinkage GLM",raw,1,5,raw|GB|shrink,32.1514294722496,0.0628540887323048,FALSE,2,caption,32.15
+T10,main,"GenBinaryY, GEE, uncorrected",raw,1,6,raw|GB|gee,26.2801514091933,0.0573505931584253,FALSE,2,caption,26.28
+T10,main,"GenBinaryY, GLMM, likelihood ratio",raw,1,7,raw|GB|glmer_lrt,30.1196399956626,0.058695935361553,FALSE,2,caption,30.12
+T10,main,"GenBinaryY, GEE, Kauermann-Carroll",raw,1,8,raw|GB|gee_kc,24.7791841710513,0.0573528642468739,FALSE,2,caption,24.78
+T10,main,"GLMM-native, GEE, Fay-Graubard",raw,1,9,raw|NAT|gee_fg,23.7340075422259,0.0519362996129438,FALSE,2,caption,23.73
+T10,main,"GLMM-native, GEE, Mancl-DeRouen",raw,1,10,raw|NAT|gee_md,23.893302682474,0.0520037586723484,FALSE,2,caption,23.89
+T10,main,"GLMM-native, Marginalized model",raw,1,11,raw|NAT|mmm,25.7895743335017,0.0569422581760134,FALSE,2,caption,25.79
+T10,main,"GLMM-native, GLMM, Wald",raw,1,12,raw|NAT|glmer,27.9812065573437,0.0584820287026214,FALSE,2,caption,27.98
+T10,main,"GLMM-native, Shrinkage GLM",raw,1,13,raw|NAT|shrink,28.137690627412,0.0589129529708859,FALSE,2,caption,28.14
+T10,main,"GLMM-native, GEE, uncorrected",raw,1,14,raw|NAT|gee,26.5521627374948,0.0548072117416015,FALSE,2,caption,26.55
+T10,main,"GLMM-native, GLMM, likelihood ratio",raw,1,15,raw|NAT|glmer_lrt,26.7685001673679,0.0569179123171154,FALSE,2,caption,26.77
+T10,main,"GLMM-native, GEE, Kauermann-Carroll",raw,1,16,raw|NAT|gee_kc,25.1366083445491,0.0535543200054527,FALSE,2,caption,25.14
+T10,main,"GLMM-AR1, GEE, Fay-Graubard",raw,1,17,raw|AR1|gee_fg,24.145816639807,0.052032031919883,FALSE,2,caption,24.15
+T10,main,"GLMM-AR1, GEE, Mancl-DeRouen",raw,1,18,raw|AR1|gee_md,24.3556796810775,0.0517054799580452,FALSE,2,caption,24.36
+T10,main,"GLMM-AR1, Marginalized model",raw,1,19,raw|AR1|mmm,26.6747613465081,0.0558443209086414,FALSE,2,caption,26.67
+T10,main,"GLMM-AR1, GLMM, Wald",raw,1,20,raw|AR1|glmer,29.1609553637749,0.0581966665457135,FALSE,2,caption,29.16
+T10,main,"GLMM-AR1, Shrinkage GLM",raw,1,21,raw|AR1|shrink,29.3108242705537,0.0583381430832448,FALSE,2,caption,29.31
+T10,main,"GLMM-AR1, GEE, uncorrected",raw,1,22,raw|AR1|gee,27.0456908950105,0.0546908244409257,FALSE,2,caption,27.05
+T10,main,"GLMM-AR1, GLMM, likelihood ratio",raw,1,23,raw|AR1|glmer_lrt,27.9164659408421,0.0547767331808075,FALSE,2,caption,27.92
+T10,main,"GLMM-AR1, GEE, Kauermann-Carroll",raw,1,24,raw|AR1|gee_kc,25.6098301858348,0.0530696664360461,FALSE,2,caption,25.61
+T10,main,"GenBinaryY, GEE, Fay-Graubard",size-adjusted,2,1,sa|GB|gee_fg,21.9590382095426,0.0803668992277242,FALSE,1,inline,22.0 (0.08)
+T10,main,"GenBinaryY, GEE, Mancl-DeRouen",size-adjusted,2,2,sa|GB|gee_md,21.8908214927323,0.0801550189711154,FALSE,1,inline,21.9 (0.08)
+T10,main,"GenBinaryY, Marginalized model",size-adjusted,2,3,sa|GB|mmm,24.8212947625809,0.0874522361489815,FALSE,1,inline,24.8 (0.09)
+T10,main,"GenBinaryY, GLMM, Wald",size-adjusted,2,4,sa|GB|glmer,25.2694250536776,0.123730744705909,FALSE,1,inline,25.3 (0.1)
+T10,main,"GenBinaryY, Shrinkage GLM",size-adjusted,2,5,sa|GB|shrink,24.872803460051,0.121638329267202,FALSE,1,inline,24.9 (0.1)
+T10,main,"GenBinaryY, GEE, uncorrected",size-adjusted,2,6,sa|GB|gee,21.5329625806165,0.0790719985672786,FALSE,1,inline,21.5 (0.08)
+T10,main,"GenBinaryY, GLMM, likelihood ratio",size-adjusted,2,7,sa|GB|glmer_lrt,26.3676101341224,0.0862996767060501,FALSE,1,inline,26.4 (0.09)
+T10,main,"GenBinaryY, GEE, Kauermann-Carroll",size-adjusted,2,8,sa|GB|gee_kc,21.870850497827,0.0805671225739084,FALSE,1,inline,21.9 (0.08)
+T10,main,"GLMM-native, GEE, Fay-Graubard",size-adjusted,2,9,sa|NAT|gee_fg,23.1406349199227,0.0831579184908377,FALSE,1,inline,23.1 (0.08)
+T10,main,"GLMM-native, GEE, Mancl-DeRouen",size-adjusted,2,10,sa|NAT|gee_md,23.1077995810949,0.0835311376223267,FALSE,1,inline,23.1 (0.08)
+T10,main,"GLMM-native, Marginalized model",size-adjusted,2,11,sa|NAT|mmm,25.6834151388405,0.089998818545919,FALSE,1,inline,25.7 (0.09)
+T10,main,"GLMM-native, GLMM, Wald",size-adjusted,2,12,sa|NAT|glmer,23.8647296272353,0.264057311896992,FALSE,1,inline,23.9 (0.3)
+T10,main,"GLMM-native, Shrinkage GLM",size-adjusted,2,13,sa|NAT|shrink,23.6816151302431,0.261585154763883,FALSE,1,inline,23.7 (0.3)
+T10,main,"GLMM-native, GEE, uncorrected",size-adjusted,2,14,sa|NAT|gee,22.8048015687244,0.0826913585946018,FALSE,1,inline,22.8 (0.08)
+T10,main,"GLMM-native, GLMM, likelihood ratio",size-adjusted,2,15,sa|NAT|glmer_lrt,26.2570679972643,0.0890926659689357,FALSE,1,inline,26.3 (0.09)
+T10,main,"GLMM-native, GEE, Kauermann-Carroll",size-adjusted,2,16,sa|NAT|gee_kc,23.0657245401525,0.0840419568585899,FALSE,1,inline,23.1 (0.08)
+T10,main,"GLMM-AR1, GEE, Fay-Graubard",size-adjusted,2,17,sa|AR1|gee_fg,23.4581934078202,0.0771728183982857,FALSE,1,inline,23.5 (0.08)
+T10,main,"GLMM-AR1, GEE, Mancl-DeRouen",size-adjusted,2,18,sa|AR1|gee_md,23.381794840032,0.0779497840924811,FALSE,1,inline,23.4 (0.08)
+T10,main,"GLMM-AR1, Marginalized model",size-adjusted,2,19,sa|AR1|mmm,26.1755346921887,0.0861160196466167,FALSE,1,inline,26.2 (0.09)
+T10,main,"GLMM-AR1, GLMM, Wald",size-adjusted,2,20,sa|AR1|glmer,25.8361517746608,0.199974909183009,FALSE,1,inline,25.8 (0.2)
+T10,main,"GLMM-AR1, Shrinkage GLM",size-adjusted,2,21,sa|AR1|shrink,25.6270050130065,0.19806945373372,FALSE,1,inline,25.6 (0.2)
+T10,main,"GLMM-AR1, GEE, uncorrected",size-adjusted,2,22,sa|AR1|gee,23.0293174023675,0.0762690825816466,FALSE,1,inline,23.0 (0.08)
+T10,main,"GLMM-AR1, GLMM, likelihood ratio",size-adjusted,2,23,sa|AR1|glmer_lrt,26.7405981804562,0.0857920892694753,FALSE,1,inline,26.7 (0.09)
+T10,main,"GLMM-AR1, GEE, Kauermann-Carroll",size-adjusted,2,24,sa|AR1|gee_kc,23.3442162604882,0.0771452990176364,FALSE,1,inline,23.3 (0.08)
+T11,main,"GEE, Fay-Graubard",normal GB,1,1,rate|GB|gee_fg,5.82570543781156,0.0356180394098216,FALSE,2,caption,5.83
+T11,main,"GEE, Mancl-DeRouen",normal GB,1,2,rate|GB|gee_md,6.08874610982833,0.0365141152715911,FALSE,2,caption,6.09
+T11,main,Marginalized model,normal GB,1,3,rate|GB|mmm,5.34171209871129,0.035987163981669,FALSE,2,caption,5.34
+T11,main,"GLMM, Wald",normal GB,1,4,rate|GB|glmer,8.61163506014761,0.0453452126193128,FALSE,2,caption,8.61
+T11,main,Shrinkage GLM,normal GB,1,5,rate|GB|shrink,9.28377756177419,0.0471941303254474,FALSE,2,caption,9.28
+T11,main,"GEE, uncorrected",normal GB,1,6,rate|GB|gee,8.36855019348863,0.0414681225368863,FALSE,2,caption,8.37
+T11,main,"GEE, Kauermann-Carroll",normal GB,1,7,rate|GB|gee_kc,6.94964248373011,0.038580207808437,FALSE,2,caption,6.95
+T11,main,"GEE, Fay-Graubard",normal NAT,2,1,rate|NAT|gee_fg,5.32219581170252,0.0330360656150224,FALSE,2,caption,5.32
+T11,main,"GEE, Mancl-DeRouen",normal NAT,2,2,rate|NAT|gee_md,5.5073032807786,0.0337810208790614,FALSE,2,caption,5.51
+T11,main,Marginalized model,normal NAT,2,3,rate|NAT|mmm,5.09713984709077,0.0349054153600026,FALSE,2,caption,5.10
+T11,main,"GLMM, Wald",normal NAT,2,4,rate|NAT|glmer,6.29781487156008,0.0395424942123859,FALSE,2,caption,6.30
+T11,main,Shrinkage GLM,normal NAT,2,5,rate|NAT|shrink,6.64424631635503,0.0402150756500753,FALSE,2,caption,6.64
+T11,main,"GEE, uncorrected",normal NAT,2,6,rate|NAT|gee,7.62598911585109,0.0392013027226312,FALSE,2,caption,7.63
+T11,main,"GEE, Kauermann-Carroll",normal NAT,2,7,rate|NAT|gee_kc,6.34172285724588,0.0364193760778613,FALSE,2,caption,6.34
+T11,main,"GEE, Fay-Graubard",normal AR1,3,1,rate|AR1|gee_fg,5.34336284387783,0.0327781291675245,FALSE,2,caption,5.34
+T11,main,"GEE, Mancl-DeRouen",normal AR1,3,2,rate|AR1|gee_md,5.56350820607834,0.0341423763628053,FALSE,2,caption,5.56
+T11,main,Marginalized model,normal AR1,3,3,rate|AR1|mmm,5.25569245983189,0.0348025889851518,FALSE,2,caption,5.26
+T11,main,"GLMM, Wald",normal AR1,3,4,rate|AR1|glmer,6.55274385078627,0.0390798742976858,FALSE,2,caption,6.55
+T11,main,Shrinkage GLM,normal AR1,3,5,rate|AR1|shrink,6.91019516161822,0.0393065099164941,FALSE,2,caption,6.91
+T11,main,"GEE, uncorrected",normal AR1,3,6,rate|AR1|gee,7.71749506071437,0.0386896396687203,FALSE,2,caption,7.72
+T11,main,"GEE, Kauermann-Carroll",normal AR1,3,7,rate|AR1|gee_kc,6.39727669584493,0.0363288281814622,FALSE,2,caption,6.40
+T11,main,"GEE, Fay-Graubard",t GB,4,1,ratet|GB|gee_fg,5.05630276246118,0.0332475807816847,FALSE,2,caption,5.06
+T11,main,"GEE, Mancl-DeRouen",t GB,4,2,ratet|GB|gee_md,5.26371028830621,0.0344957305936958,FALSE,2,caption,5.26
+T11,main,Marginalized model,t GB,4,3,ratet|GB|mmm,4.65948391855122,0.0337473596502408,FALSE,2,caption,4.66
+T11,main,"GLMM, Wald",t GB,4,4,ratet|GB|glmer,7.9586336800528,0.0435377319558175,FALSE,2,caption,7.96
+T11,main,Shrinkage GLM,t GB,4,5,ratet|GB|shrink,8.59518084616565,0.0454676502047651,FALSE,2,caption,8.60
+T11,main,"GEE, uncorrected",t GB,4,6,ratet|GB|gee,7.22587626524641,0.0393597719822072,FALSE,2,caption,7.23
+T11,main,"GEE, Kauermann-Carroll",t GB,4,7,ratet|GB|gee_kc,6.01160361821499,0.036178362154337,FALSE,2,caption,6.01
+T11,main,"GEE, Fay-Graubard",t NAT,5,1,ratet|NAT|gee_fg,4.57573529743407,0.0310560414952064,FALSE,2,caption,4.58
+T11,main,"GEE, Mancl-DeRouen",t NAT,5,2,ratet|NAT|gee_md,4.72902379969176,0.0313230409791443,FALSE,2,caption,4.73
+T11,main,Marginalized model,t NAT,5,3,ratet|NAT|mmm,4.41856478018988,0.0323218488088955,FALSE,2,caption,4.42
+T11,main,"GLMM, Wald",t NAT,5,4,ratet|NAT|glmer,5.77218699563384,0.0380692090662888,FALSE,2,caption,5.77
+T11,main,Shrinkage GLM,t NAT,5,5,ratet|NAT|shrink,6.09911247852158,0.038605420317074,FALSE,2,caption,6.10
+T11,main,"GEE, uncorrected",t NAT,5,6,ratet|NAT|gee,6.50547085678355,0.0364983935781469,FALSE,2,caption,6.51
+T11,main,"GEE, Kauermann-Carroll",t NAT,5,7,ratet|NAT|gee_kc,5.41773338621858,0.033247786558126,FALSE,2,caption,5.42
+T11,main,"GEE, Fay-Graubard",t AR1,6,1,ratet|AR1|gee_fg,4.63257447998135,0.0306036698496044,FALSE,2,caption,4.63
+T11,main,"GEE, Mancl-DeRouen",t AR1,6,2,ratet|AR1|gee_md,4.80450824684826,0.0316031732322768,FALSE,2,caption,4.80
+T11,main,Marginalized model,t AR1,6,3,ratet|AR1|mmm,4.56770268852918,0.0321693502389791,FALSE,2,caption,4.57
+T11,main,"GLMM, Wald",t AR1,6,4,ratet|AR1|glmer,5.98518335977328,0.0371070861980085,FALSE,2,caption,5.99
+T11,main,Shrinkage GLM,t AR1,6,5,ratet|AR1|shrink,6.32623500711527,0.0375164719207656,FALSE,2,caption,6.33
+T11,main,"GEE, uncorrected",t AR1,6,6,ratet|AR1|gee,6.57224676449042,0.0361389837710834,FALSE,2,caption,6.57
+T11,main,"GEE, Kauermann-Carroll",t AR1,6,7,ratet|AR1|gee_kc,5.49207210875122,0.0339521504455152,FALSE,2,caption,5.49
+T11,main,"GEE, Fay-Graubard",shift GB,7,1,tshift|GB|gee_fg,-0.769402675350382,0.0128576890027059,FALSE,2,caption,-0.77
+T11,main,"GEE, Mancl-DeRouen",shift GB,7,2,tshift|GB|gee_md,-0.825035821522118,0.0133482222086246,FALSE,2,caption,-0.83
+T11,main,Marginalized model,shift GB,7,3,tshift|GB|mmm,-0.682228180160067,0.0127387565330007,FALSE,2,caption,-0.68
+T11,main,"GLMM, Wald",shift GB,7,4,tshift|GB|glmer,-0.653001380094807,0.0128643939594668,FALSE,2,caption,-0.65
+T11,main,Shrinkage GLM,shift GB,7,5,tshift|GB|shrink,-0.688596715608533,0.0130527466791866,FALSE,2,caption,-0.69
+T11,main,"GEE, uncorrected",shift GB,7,6,tshift|GB|gee,-1.14267392824222,0.0153296749018194,FALSE,2,caption,-1.14
+T11,main,"GEE, Kauermann-Carroll",shift GB,7,7,tshift|GB|gee_kc,-0.938038865515113,0.0147155590164701,FALSE,2,caption,-0.94
+T11,main,"GEE, Fay-Graubard",shift NAT,8,1,tshift|NAT|gee_fg,-0.746460514268446,0.0125717017906377,FALSE,2,caption,-0.75
+T11,main,"GEE, Mancl-DeRouen",shift NAT,8,2,tshift|NAT|gee_md,-0.778279481086838,0.0129102405185688,FALSE,2,caption,-0.78
+T11,main,Marginalized model,shift NAT,8,3,tshift|NAT|mmm,-0.678575066900892,0.0128391043360769,FALSE,2,caption,-0.68
+T11,main,"GLMM, Wald",shift NAT,8,4,tshift|NAT|glmer,-0.525627875926243,0.0115231499782168,FALSE,2,caption,-0.53
+T11,main,Shrinkage GLM,shift NAT,8,5,tshift|NAT|shrink,-0.545133837833454,0.0116771991752781,FALSE,2,caption,-0.55
+T11,main,"GEE, uncorrected",shift NAT,8,6,tshift|NAT|gee,-1.12051825906754,0.0155760078530111,FALSE,2,caption,-1.12
+T11,main,"GEE, Kauermann-Carroll",shift NAT,8,7,tshift|NAT|gee_kc,-0.923989471027296,0.0138045474491625,FALSE,2,caption,-0.92
+T11,main,"GEE, Fay-Graubard",shift AR1,9,1,tshift|AR1|gee_fg,-0.710788363896478,0.0124954515156687,FALSE,2,caption,-0.71
+T11,main,"GEE, Mancl-DeRouen",shift AR1,9,2,tshift|AR1|gee_md,-0.758999959230083,0.0127780376369378,FALSE,2,caption,-0.76
+T11,main,Marginalized model,shift AR1,9,3,tshift|AR1|mmm,-0.687989771302711,0.0126114348472625,FALSE,2,caption,-0.69
+T11,main,"GLMM, Wald",shift AR1,9,4,tshift|AR1|glmer,-0.567560491012984,0.0118436691037364,FALSE,2,caption,-0.57
+T11,main,Shrinkage GLM,shift AR1,9,5,tshift|AR1|shrink,-0.583960154502948,0.0117933105724098,FALSE,2,caption,-0.58
+T11,main,"GEE, uncorrected",shift AR1,9,6,tshift|AR1|gee,-1.14524829622394,0.0158650435479954,FALSE,2,caption,-1.15
+T11,main,"GEE, Kauermann-Carroll",shift AR1,9,7,tshift|AR1|gee_kc,-0.90520458709371,0.0139677224325493,FALSE,2,caption,-0.91
+T11,main,"GEE, Fay-Graubard",shift at N <= 25,10,1,tsh25|gee_fg,2.18941325556896,0.0280182726198394,FALSE,2,caption,2.19
+T11,main,"GEE, Mancl-DeRouen",shift at N <= 25,10,2,tsh25|gee_md,2.4355136322918,0.0310087700632163,FALSE,2,caption,2.44
+T11,main,Marginalized model,shift at N <= 25,10,3,tsh25|mmm,2.00747565650073,0.0307219647095071,FALSE,2,caption,2.01
+T11,main,"GLMM, Wald",shift at N <= 25,10,4,tsh25|glmer,1.38890604095914,0.0239784164466223,FALSE,2,caption,1.39
+T11,main,Shrinkage GLM,shift at N <= 25,10,5,tsh25|shrink,1.46571765230407,0.0239843359241257,FALSE,2,caption,1.47
+T11,main,"GEE, uncorrected",shift at N <= 25,10,6,tsh25|gee,3.75444042794787,0.0353302124443479,FALSE,2,caption,3.75
+T11,main,"GEE, Kauermann-Carroll",shift at N <= 25,10,7,tsh25|gee_kc,3.05157179140115,0.0335454963913021,FALSE,2,caption,3.05
+T12,main,"GEE, Fay-Graubard",GenBinaryY,1,1,cov|GB|gee_fg,94.5530884573356,0.0341471426768572,FALSE,2,caption,94.55
+T12,main,"GEE, Mancl-DeRouen",GenBinaryY,1,2,cov|GB|gee_md,94.2359863538208,0.0348696135728591,FALSE,2,caption,94.24
+T12,main,Marginalized model,GenBinaryY,1,3,cov|GB|mmm,94.6038412998896,0.0349902713220813,FALSE,2,caption,94.60
+T12,main,"GLMM, Wald",GenBinaryY,1,4,cov|GB|glmer,,,FALSE,2,caption,n.a.
+T12,main,Shrinkage GLM,GenBinaryY,1,5,cov|GB|shrink,90.0607441347203,0.0490260358915672,FALSE,2,caption,90.06
+T12,main,"GEE, uncorrected",GenBinaryY,1,6,cov|GB|gee,91.8929479281139,0.0409354744242551,FALSE,2,caption,91.89
+T12,main,"GEE, Kauermann-Carroll",GenBinaryY,1,7,cov|GB|gee_kc,93.3952388073906,0.0370449923350492,FALSE,2,caption,93.40
+T12,main,"GEE, Fay-Graubard",GLMM-native,2,1,cov|NAT|gee_fg,94.9153911211714,0.0325267898816426,FALSE,2,caption,94.92
+T12,main,"GEE, Mancl-DeRouen",GLMM-native,2,2,cov|NAT|gee_md,94.6709709572631,0.0332083246984674,FALSE,2,caption,94.67
+T12,main,Marginalized model,GLMM-native,2,3,cov|NAT|mmm,94.8227165966294,0.0352630829572898,FALSE,2,caption,94.82
+T12,main,"GLMM, Wald",GLMM-native,2,4,cov|NAT|glmer,93.5123606201053,0.0412707027931512,FALSE,2,caption,93.51
+T12,main,Shrinkage GLM,GLMM-native,2,5,cov|NAT|shrink,92.880312775886,0.0422232647578683,FALSE,2,caption,92.88
+T12,main,"GEE, uncorrected",GLMM-native,2,6,cov|NAT|gee,92.5154355065231,0.0386041433950032,FALSE,2,caption,92.52
+T12,main,"GEE, Kauermann-Carroll",GLMM-native,2,7,cov|NAT|gee_kc,93.8398384925976,0.0355292792864625,FALSE,2,caption,93.84
+T12,main,"GEE, Fay-Graubard",GLMM-AR1,3,1,cov|AR1|gee_fg,94.9156395458761,0.0328809168238203,FALSE,2,caption,94.92
+T12,main,"GEE, Mancl-DeRouen",GLMM-AR1,3,2,cov|AR1|gee_md,94.6467865629118,0.0337570525248801,FALSE,2,caption,94.65
+T12,main,Marginalized model,GLMM-AR1,3,3,cov|AR1|mmm,94.6811549942369,0.0365846650820335,FALSE,2,caption,94.68
+T12,main,"GLMM, Wald",GLMM-AR1,3,4,cov|AR1|glmer,93.165035161385,0.0407298160423087,FALSE,2,caption,93.17
+T12,main,Shrinkage GLM,GLMM-AR1,3,5,cov|AR1|shrink,92.6025922021584,0.0423837522880428,FALSE,2,caption,92.60
+T12,main,"GEE, uncorrected",GLMM-AR1,3,6,cov|AR1|gee,92.4591215842461,0.0385269242209757,FALSE,2,caption,92.46
+T12,main,"GEE, Kauermann-Carroll",GLMM-AR1,3,7,cov|AR1|gee_kc,93.7956064775542,0.0360127199090687,FALSE,2,caption,93.80
+T3c,m1c,"GEE, Fay-Graubard",rate GB,1,1,rate|GB|gee_fg,5.06904069767442,0.147647436968728,FALSE,1,caption,5.1
+T3c,m1c,"GEE, Mancl-DeRouen",rate GB,1,2,rate|GB|gee_md,4.46790117839756,0.136676954841087,FALSE,1,caption,4.5
+T3c,m1c,Marginalized model,rate GB,1,3,rate|GB|mmm,6.98935331230284,0.17506848527935,FALSE,1,caption,7.0
+T3c,m1c,"GLMM, Wald",rate GB,1,4,rate|GB|glmer,7.69937611839242,0.199707992600468,FALSE,1,caption,7.7
+T3c,m1c,Shrinkage GLM,rate GB,1,5,rate|GB|shrink,11.1995324161496,0.216170829566151,FALSE,1,caption,11.2
+T3c,m1c,"GEE, uncorrected",rate GB,1,6,rate|GB|gee,8.32961740836529,0.185519844159456,FALSE,1,caption,8.3
+T3c,m1c,"GLMM, likelihood ratio",rate GB,1,7,rate|GB|glmer_lrt,10.5399423727398,0.198392988253042,FALSE,1,caption,10.5
+T3c,m1c,"GEE, Kauermann-Carroll",rate GB,1,8,rate|GB|gee_kc,6.13144720525421,0.161585135893787,FALSE,1,caption,6.1
+T3c,m1c,"GEE, Fay-Graubard",rate NAT,2,1,rate|NAT|gee_fg,4.96294632831799,0.145067153734049,FALSE,1,caption,5.0
+T3c,m1c,"GEE, Mancl-DeRouen",rate NAT,2,2,rate|NAT|gee_md,4.46243814664867,0.138082161480353,FALSE,1,caption,4.5
+T3c,m1c,Marginalized model,rate NAT,2,3,rate|NAT|mmm,6.75188462799082,0.170554231785465,FALSE,1,caption,6.8
+T3c,m1c,"GLMM, Wald",rate NAT,2,4,rate|NAT|glmer,5.98346186007619,0.160919821851646,FALSE,1,caption,6.0
+T3c,m1c,Shrinkage GLM,rate NAT,2,5,rate|NAT|shrink,7.89180020532964,0.180613360663407,FALSE,1,caption,7.9
+T3c,m1c,"GEE, uncorrected",rate NAT,2,6,rate|NAT|gee,8.08139019416615,0.172301321463504,FALSE,1,caption,8.1
+T3c,m1c,"GLMM, likelihood ratio",rate NAT,2,7,rate|NAT|glmer_lrt,7.47234397829263,0.167266000178414,FALSE,1,caption,7.5
+T3c,m1c,"GEE, Kauermann-Carroll",rate NAT,2,8,rate|NAT|gee_kc,5.96745027124774,0.153451117233845,FALSE,1,caption,6.0
+T3c,m1c,"GEE, Fay-Graubard",rate AR1,3,1,rate|AR1|gee_fg,4.96816429019819,0.146731848435872,FALSE,1,caption,5.0
+T3c,m1c,"GEE, Mancl-DeRouen",rate AR1,3,2,rate|AR1|gee_md,4.4046923457234,0.139729236188212,FALSE,1,caption,4.4
+T3c,m1c,Marginalized model,rate AR1,3,3,rate|AR1|mmm,6.91750408974059,0.174008403703597,FALSE,1,caption,6.9
+T3c,m1c,"GLMM, Wald",rate AR1,3,4,rate|AR1|glmer,6.24854603824501,0.168097644719863,FALSE,1,caption,6.2
+T3c,m1c,Shrinkage GLM,rate AR1,3,5,rate|AR1|shrink,8.34373328579069,0.188536935796715,FALSE,1,caption,8.3
+T3c,m1c,"GEE, uncorrected",rate AR1,3,6,rate|AR1|gee,8.21256038647343,0.185223620796408,FALSE,1,caption,8.2
+T3c,m1c,"GLMM, likelihood ratio",rate AR1,3,7,rate|AR1|glmer_lrt,7.97043964761388,0.176084542466691,FALSE,1,caption,8.0
+T3c,m1c,"GEE, Kauermann-Carroll",rate AR1,3,8,rate|AR1|gee_kc,6.00451467268623,0.159914439350336,FALSE,1,caption,6.0
+T3c,m1c,"GEE, Fay-Graubard",worst GB,4,1,wc|GB|gee_fg,1.8,0.474936992335214,FALSE,1,inline,1.8 (0.5)
+T3c,m1c,"GEE, Mancl-DeRouen",worst GB,4,2,wc|GB|gee_md,1.1850013065064,0.255030212783484,FALSE,1,inline,1.2 (0.3)
+T3c,m1c,Marginalized model,worst GB,4,3,wc|GB|mmm,2.40897544453853,0.35184170612918,FALSE,1,inline,2.4 (0.4)
+T3c,m1c,"GLMM, Wald",worst GB,4,4,wc|GB|glmer,4.48012232415902,0.400978741749699,FALSE,1,inline,4.5 (0.4)
+T3c,m1c,Shrinkage GLM,worst GB,4,5,wc|GB|shrink,6.57128514056225,0.362940357082062,FALSE,1,inline,6.6 (0.4)
+T3c,m1c,"GEE, uncorrected",worst GB,4,6,wc|GB|gee,10.0130548302872,0.650645991194723,FALSE,1,inline,10.0 (0.7)
+T3c,m1c,"GLMM, likelihood ratio",worst GB,4,7,wc|GB|glmer_lrt,6.96495619524406,0.443241115459452,FALSE,1,inline,7.0 (0.4)
+T3c,m1c,"GEE, Kauermann-Carroll",worst GB,4,8,wc|GB|gee_kc,4.779299847793,0.584729721691407,FALSE,1,inline,4.8 (0.6)
+T3c,m1c,"GEE, Fay-Graubard",worst NAT,5,1,wc|NAT|gee_fg,1.22392211404729,0.391879243065606,FALSE,1,inline,1.2 (0.4)
+T3c,m1c,"GEE, Mancl-DeRouen",worst NAT,5,2,wc|NAT|gee_md,1.10793980280228,0.219222873672645,FALSE,1,inline,1.1 (0.2)
+T3c,m1c,Marginalized model,worst NAT,5,3,wc|NAT|mmm,2.3518090839107,0.369737780073038,FALSE,1,inline,2.4 (0.4)
+T3c,m1c,"GLMM, Wald",worst NAT,5,4,wc|NAT|glmer,2.78141526063964,0.412351824814332,FALSE,1,inline,2.8 (0.4)
+T3c,m1c,Shrinkage GLM,worst NAT,5,5,wc|NAT|shrink,3.28328328328328,0.327077959439705,FALSE,1,inline,3.3 (0.3)
+T3c,m1c,"GEE, uncorrected",worst NAT,5,6,wc|NAT|gee,8.54735152487961,0.590483224609905,FALSE,1,inline,8.5 (0.6)
+T3c,m1c,"GLMM, likelihood ratio",worst NAT,5,7,wc|NAT|glmer_lrt,4.79550618530674,0.465741966426353,FALSE,1,inline,4.8 (0.5)
+T3c,m1c,"GEE, Kauermann-Carroll",worst NAT,5,8,wc|NAT|gee_kc,3.64553314121038,0.530342614119136,FALSE,1,inline,3.6 (0.5)
+T3c,m1c,"GEE, Fay-Graubard",worst AR1,6,1,wc|AR1|gee_fg,1.7539627842867,0.448640869491399,FALSE,1,inline,1.8 (0.4)
+T3c,m1c,"GEE, Mancl-DeRouen",worst AR1,6,2,wc|AR1|gee_md,1.13789528252981,0.23954647236154,FALSE,1,inline,1.1 (0.2)
+T3c,m1c,Marginalized model,worst AR1,6,3,wc|AR1|mmm,2.86650774731824,0.371897989872788,FALSE,1,inline,2.9 (0.4)
+T3c,m1c,"GLMM, Wald",worst AR1,6,4,wc|AR1|glmer,2.46606334841629,0.359070410837548,FALSE,1,inline,2.5 (0.4)
+T3c,m1c,Shrinkage GLM,worst AR1,6,5,wc|AR1|shrink,4.46907498631637,0.456550054292182,FALSE,1,inline,4.5 (0.5)
+T3c,m1c,"GEE, uncorrected",worst AR1,6,6,wc|AR1|gee,9.55594741904457,0.618016198617037,FALSE,1,inline,9.6 (0.6)
+T3c,m1c,"GLMM, likelihood ratio",worst AR1,6,7,wc|AR1|glmer_lrt,5.6087395807022,0.454681427941519,FALSE,1,inline,5.6 (0.5)
+T3c,m1c,"GEE, Kauermann-Carroll",worst AR1,6,8,wc|AR1|gee_kc,4.11032028469751,0.538830420412144,FALSE,1,inline,4.1 (0.5)
+T3c,m1c,"GEE, Fay-Graubard",MAD GB,7,1,mad|GB|gee_fg,0.564032834973785,0.125137605536792,FALSE,1,caption,0.6
+T3c,m1c,"GEE, Mancl-DeRouen",MAD GB,7,2,mad|GB|gee_md,0.810914618793599,0.129375060563144,FALSE,1,caption,0.8
+T3c,m1c,Marginalized model,MAD GB,7,3,mad|GB|mmm,2.01518582464462,0.176637038474188,FALSE,1,caption,2.0
+T3c,m1c,"GLMM, Wald",MAD GB,7,4,mad|GB|glmer,2.47892919525796,0.186640618363787,FALSE,1,caption,2.5
+T3c,m1c,Shrinkage GLM,MAD GB,7,5,mad|GB|shrink,6.20176783086649,0.21564580822306,FALSE,1,caption,6.2
+T3c,m1c,"GEE, uncorrected",MAD GB,7,6,mad|GB|gee,3.58391326920125,0.192465606838548,FALSE,1,caption,3.6
+T3c,m1c,"GLMM, likelihood ratio",MAD GB,7,7,mad|GB|glmer_lrt,5.54206553886659,0.198480308857669,FALSE,1,caption,5.5
+T3c,m1c,"GEE, Kauermann-Carroll",MAD GB,7,8,mad|GB|gee_kc,1.33020250821258,0.162447975031089,FALSE,1,caption,1.3
+T3c,m1c,"GEE, Fay-Graubard",MAD NAT,8,1,mad|NAT|gee_fg,0.493750494724706,0.122594071363652,FALSE,1,caption,0.5
+T3c,m1c,"GEE, Mancl-DeRouen",MAD NAT,8,2,mad|NAT|gee_md,0.669069287010693,0.117975621627122,FALSE,1,caption,0.7
+T3c,m1c,Marginalized model,MAD NAT,8,3,mad|NAT|mmm,1.77860967690575,0.174008607740527,FALSE,1,caption,1.8
+T3c,m1c,"GLMM, Wald",MAD NAT,8,4,mad|NAT|glmer,1.3269851889482,0.146221540073579,FALSE,1,caption,1.3
+T3c,m1c,Shrinkage GLM,MAD NAT,8,5,mad|NAT|shrink,2.86872917430549,0.181688245085822,FALSE,1,caption,2.9
+T3c,m1c,"GEE, uncorrected",MAD NAT,8,6,mad|NAT|gee,3.29031111258484,0.177982843984591,FALSE,1,caption,3.3
+T3c,m1c,"GLMM, likelihood ratio",MAD NAT,8,7,mad|NAT|glmer_lrt,2.47643555767464,0.165813153467569,FALSE,1,caption,2.5
+T3c,m1c,"GEE, Kauermann-Carroll",MAD NAT,8,8,mad|NAT|gee_kc,1.10473962072232,0.146736631169223,FALSE,1,caption,1.1
+T3c,m1c,"GEE, Fay-Graubard",MAD AR1,9,1,mad|AR1|gee_fg,0.537982642741456,0.123501107060246,FALSE,1,caption,0.5
+T3c,m1c,"GEE, Mancl-DeRouen",MAD AR1,9,2,mad|AR1|gee_md,0.796589919971766,0.135009540864341,FALSE,1,caption,0.8
+T3c,m1c,Marginalized model,MAD AR1,9,3,mad|AR1|mmm,1.9515703328888,0.174871936120584,FALSE,1,caption,2.0
+T3c,m1c,"GLMM, Wald",MAD AR1,9,4,mad|AR1|glmer,1.52629803628342,0.161371056797406,FALSE,1,caption,1.5
+T3c,m1c,Shrinkage GLM,MAD AR1,9,5,mad|AR1|shrink,3.33856318188059,0.188949336248657,FALSE,1,caption,3.3
+T3c,m1c,"GEE, uncorrected",MAD AR1,9,6,mad|AR1|gee,3.45485482024304,0.18991200199495,FALSE,1,caption,3.5
+T3c,m1c,"GLMM, likelihood ratio",MAD AR1,9,7,mad|AR1|glmer_lrt,2.97551277204715,0.174660922873596,FALSE,1,caption,3.0
+T3c,m1c,"GEE, Kauermann-Carroll",MAD AR1,9,8,mad|AR1|gee_kc,1.1706300280989,0.150366958861781,FALSE,1,caption,1.2
+T4c,m1c,"GEE, Fay-Graubard",T = 2,1,1,madT|T2|gee_fg,2.51924815624421,0.103029381879508,FALSE,1,inline,2.5 (0.1)
+T4c,m1c,"GEE, Mancl-DeRouen",T = 2,1,2,madT|T2|gee_md,2.96406647019615,0.0964586843277352,FALSE,1,inline,3.0 (0.1)
+T4c,m1c,Marginalized model,T = 2,1,3,madT|T2|mmm,1.94938590655866,0.211839716208608,FALSE,1,inline,1.9 (0.2)
+T4c,m1c,"GLMM, Wald",T = 2,1,4,madT|T2|glmer,1.51072540065604,0.16540155453348,FALSE,1,inline,1.5 (0.2)
+T4c,m1c,Shrinkage GLM,T = 2,1,5,madT|T2|shrink,7.08170009062278,0.284168702976504,FALSE,1,inline,7.1 (0.3)
+T4c,m1c,"GEE, uncorrected",T = 2,1,6,madT|T2|gee,0.930700842436879,0.163841902530758,FALSE,1,inline,0.9 (0.2)
+T4c,m1c,"GLMM, likelihood ratio",T = 2,1,7,madT|T2|glmer_lrt,6.67179347613048,0.260748347716264,FALSE,1,inline,6.7 (0.3)
+T4c,m1c,"GEE, Kauermann-Carroll",T = 2,1,8,madT|T2|gee_kc,2.10374476050922,0.113105567276907,FALSE,1,inline,2.1 (0.1)
+T4c,m1c,"GEE, Fay-Graubard",T = 3,2,1,madT|T3|gee_fg,0.670242414097904,0.13190205213969,FALSE,1,caption,0.7
+T4c,m1c,"GEE, Mancl-DeRouen",T = 3,2,2,madT|T3|gee_md,0.957338053729512,0.133478257078203,FALSE,1,caption,1.0
+T4c,m1c,Marginalized model,T = 3,2,3,madT|T3|mmm,1.8320098662969,0.193136986659169,FALSE,1,caption,1.8
+T4c,m1c,"GLMM, Wald",T = 3,2,4,madT|T3|glmer,1.25056300345159,0.146014876477285,FALSE,1,caption,1.3
+T4c,m1c,Shrinkage GLM,T = 3,2,5,madT|T3|shrink,2.62358693941327,0.198694041780234,FALSE,1,caption,2.6
+T4c,m1c,"GEE, uncorrected",T = 3,2,6,madT|T3|gee,3.12506209381993,0.200020459142327,FALSE,1,caption,3.1
+T4c,m1c,"GLMM, likelihood ratio",T = 3,2,7,madT|T3|glmer_lrt,3.2405587995795,0.201589844615718,FALSE,1,caption,3.2
+T4c,m1c,"GEE, Kauermann-Carroll",T = 3,2,8,madT|T3|gee_kc,1.09926330634551,0.158820171742823,FALSE,1,caption,1.1
+T4c,m1c,"GEE, Fay-Graubard",T >= 4,3,1,madT|T4plus|gee_fg,1.19085450042182,0.113212066646352,FALSE,1,caption,1.2
+T4c,m1c,"GEE, Mancl-DeRouen",T >= 4,3,2,madT|T4plus|gee_md,0.898923112986693,0.103108609642265,FALSE,1,caption,0.9
+T4c,m1c,Marginalized model,T >= 4,3,3,madT|T4plus|mmm,1.91116580282845,0.127890781317437,FALSE,1,caption,1.9
+T4c,m1c,"GLMM, Wald",T >= 4,3,4,madT|T4plus|glmer,3.6464055981735,0.147675896814357,FALSE,1,caption,3.6
+T4c,m1c,Shrinkage GLM,T >= 4,3,5,madT|T4plus|shrink,3.88333638863555,0.152942857183221,FALSE,1,caption,3.9
+T4c,m1c,"GEE, uncorrected",T >= 4,3,6,madT|T4plus|gee,4.69140838349232,0.161717600191656,FALSE,1,caption,4.7
+T4c,m1c,"GLMM, likelihood ratio",T >= 4,3,7,madT|T4plus|glmer_lrt,2.45704812053618,0.130114744066985,FALSE,1,caption,2.5
+T4c,m1c,"GEE, Kauermann-Carroll",T >= 4,3,8,madT|T4plus|gee_kc,2.33792212142507,0.137122261350068,FALSE,1,caption,2.3
+T5c,m1c,"GEE, Fay-Graubard",BH,1,1,flag|BH|gee_fg,27.7777777777778,3.7626456984134,FALSE,0,caption,28
+T5c,m1c,"GEE, Mancl-DeRouen",BH,1,2,flag|BH|gee_md,26.3888888888889,3.82157648135907,FALSE,0,caption,26
+T5c,m1c,Marginalized model,BH,1,3,flag|BH|mmm,56.9444444444445,4.92659286679445,FALSE,0,caption,57
+T5c,m1c,"GLMM, Wald",BH,1,4,flag|BH|glmer,54.1666666666667,4.18419131373382,FALSE,0,caption,54
+T5c,m1c,Shrinkage GLM,BH,1,5,flag|BH|shrink,77.7777777777778,2.88946944938829,FALSE,0,caption,78
+T5c,m1c,"GEE, uncorrected",BH,1,6,flag|BH|gee,61.1111111111111,3.84562567567362,FALSE,0,caption,61
+T5c,m1c,"GLMM, likelihood ratio",BH,1,7,flag|BH|glmer_lrt,66.6666666666667,3.2414212261761,FALSE,0,caption,67
+T5c,m1c,"GEE, Kauermann-Carroll",BH,1,8,flag|BH|gee_kc,44.4444444444444,4.01513254190669,FALSE,0,caption,44
+T5c,m1c,"GEE, Fay-Graubard",BY,2,1,flag|BY|gee_fg,25,2.93779871655866,FALSE,0,caption,25
+T5c,m1c,"GEE, Mancl-DeRouen",BY,2,2,flag|BY|gee_md,19.4444444444444,3.05907139024471,FALSE,0,caption,19
+T5c,m1c,Marginalized model,BY,2,3,flag|BY|mmm,41.6666666666667,5.02429876668564,FALSE,0,caption,42
+T5c,m1c,"GLMM, Wald",BY,2,4,flag|BY|glmer,37.5,3.8510568288431,FALSE,0,caption,38
+T5c,m1c,Shrinkage GLM,BY,2,5,flag|BY|shrink,72.2222222222222,3.00866492194681,FALSE,0,caption,72
+T5c,m1c,"GEE, uncorrected",BY,2,6,flag|BY|gee,52.7777777777778,3.78958361499967,FALSE,0,caption,53
+T5c,m1c,"GLMM, likelihood ratio",BY,2,7,flag|BY|glmer_lrt,63.8888888888889,2.64321645338577,FALSE,0,caption,64
+T5c,m1c,"GEE, Kauermann-Carroll",BY,2,8,flag|BY|gee_kc,36.1111111111111,3.52678873698491,FALSE,0,caption,36
+T6c,m1c,"GEE, Fay-Graubard",own GB,1,1,rate|GB|gee_fg,5.06904069767442,0.147647436968728,FALSE,1,caption,5.1
+T6c,m1c,"GEE, Mancl-DeRouen",own GB,1,2,rate|GB|gee_md,4.46790117839756,0.136676954841087,FALSE,1,caption,4.5
+T6c,m1c,Marginalized model,own GB,1,3,rate|GB|mmm,6.98935331230284,0.17506848527935,FALSE,1,caption,7.0
+T6c,m1c,"GLMM, Wald",own GB,1,4,rate|GB|glmer,7.69937611839242,0.199707992600468,FALSE,1,caption,7.7
+T6c,m1c,Shrinkage GLM,own GB,1,5,rate|GB|shrink,11.1995324161496,0.216170829566151,FALSE,1,caption,11.2
+T6c,m1c,"GEE, uncorrected",own GB,1,6,rate|GB|gee,8.32961740836529,0.185519844159456,FALSE,1,caption,8.3
+T6c,m1c,"GLMM, likelihood ratio",own GB,1,7,rate|GB|glmer_lrt,10.5399423727398,0.198392988253042,FALSE,1,caption,10.5
+T6c,m1c,"GEE, Kauermann-Carroll",own GB,1,8,rate|GB|gee_kc,6.13144720525421,0.161585135893787,FALSE,1,caption,6.1
+T6c,m1c,"GEE, Fay-Graubard",own NAT,2,1,rate|NAT|gee_fg,4.96294632831799,0.145067153734049,FALSE,1,caption,5.0
+T6c,m1c,"GEE, Mancl-DeRouen",own NAT,2,2,rate|NAT|gee_md,4.46243814664867,0.138082161480353,FALSE,1,caption,4.5
+T6c,m1c,Marginalized model,own NAT,2,3,rate|NAT|mmm,6.75188462799082,0.170554231785465,FALSE,1,caption,6.8
+T6c,m1c,"GLMM, Wald",own NAT,2,4,rate|NAT|glmer,5.98346186007619,0.160919821851646,FALSE,1,caption,6.0
+T6c,m1c,Shrinkage GLM,own NAT,2,5,rate|NAT|shrink,7.89180020532964,0.180613360663407,FALSE,1,caption,7.9
+T6c,m1c,"GEE, uncorrected",own NAT,2,6,rate|NAT|gee,8.08139019416615,0.172301321463504,FALSE,1,caption,8.1
+T6c,m1c,"GLMM, likelihood ratio",own NAT,2,7,rate|NAT|glmer_lrt,7.47234397829263,0.167266000178414,FALSE,1,caption,7.5
+T6c,m1c,"GEE, Kauermann-Carroll",own NAT,2,8,rate|NAT|gee_kc,5.96745027124774,0.153451117233845,FALSE,1,caption,6.0
+T6c,m1c,"GEE, Fay-Graubard",own AR1,3,1,rate|AR1|gee_fg,4.96816429019819,0.146731848435872,FALSE,1,caption,5.0
+T6c,m1c,"GEE, Mancl-DeRouen",own AR1,3,2,rate|AR1|gee_md,4.4046923457234,0.139729236188212,FALSE,1,caption,4.4
+T6c,m1c,Marginalized model,own AR1,3,3,rate|AR1|mmm,6.91750408974059,0.174008403703597,FALSE,1,caption,6.9
+T6c,m1c,"GLMM, Wald",own AR1,3,4,rate|AR1|glmer,6.24854603824501,0.168097644719863,FALSE,1,caption,6.2
+T6c,m1c,Shrinkage GLM,own AR1,3,5,rate|AR1|shrink,8.34373328579069,0.188536935796715,FALSE,1,caption,8.3
+T6c,m1c,"GEE, uncorrected",own AR1,3,6,rate|AR1|gee,8.21256038647343,0.185223620796408,FALSE,1,caption,8.2
+T6c,m1c,"GLMM, likelihood ratio",own AR1,3,7,rate|AR1|glmer_lrt,7.97043964761388,0.176084542466691,FALSE,1,caption,8.0
+T6c,m1c,"GEE, Kauermann-Carroll",own AR1,3,8,rate|AR1|gee_kc,6.00451467268623,0.159914439350336,FALSE,1,caption,6.0
+T6c,m1c,"GEE, Fay-Graubard",common GB,4,1,irate|GB|gee_fg,4.7260344649675,0.154380412315249,FALSE,1,caption,4.7
+T6c,m1c,"GEE, Mancl-DeRouen",common GB,4,2,irate|GB|gee_md,4.23072954287483,0.143723470818119,FALSE,1,caption,4.2
+T6c,m1c,Marginalized model,common GB,4,3,irate|GB|mmm,6.38221029821484,0.172166961083483,FALSE,1,caption,6.4
+T6c,m1c,"GLMM, Wald",common GB,4,4,irate|GB|glmer,7.71850170261067,0.204656703697189,FALSE,1,caption,7.7
+T6c,m1c,Shrinkage GLM,common GB,4,5,irate|GB|shrink,7.71850170261067,0.204656703697189,FALSE,1,caption,7.7
+T6c,m1c,"GEE, uncorrected",common GB,4,6,irate|GB|gee,7.50180579919513,0.193799993123303,FALSE,1,caption,7.5
+T6c,m1c,"GLMM, likelihood ratio",common GB,4,7,irate|GB|glmer_lrt,7.27479104323599,0.184685740823331,FALSE,1,caption,7.3
+T6c,m1c,"GEE, Kauermann-Carroll",common GB,4,8,irate|GB|gee_kc,5.72696316169642,0.171118525982753,FALSE,1,caption,5.7
+T6c,m1c,"GEE, Fay-Graubard",common NAT,5,1,irate|NAT|gee_fg,4.67096401770252,0.143226015091848,FALSE,1,caption,4.7
+T6c,m1c,"GEE, Mancl-DeRouen",common NAT,5,2,irate|NAT|gee_md,4.22359053299981,0.13825565215479,FALSE,1,caption,4.2
+T6c,m1c,Marginalized model,common NAT,5,3,irate|NAT|mmm,6.18145083702136,0.164955339459592,FALSE,1,caption,6.2
+T6c,m1c,"GLMM, Wald",common NAT,5,4,irate|NAT|glmer,6.00346353665576,0.163386671331062,FALSE,1,caption,6.0
+T6c,m1c,Shrinkage GLM,common NAT,5,5,irate|NAT|shrink,6.00346353665576,0.163386671331062,FALSE,1,caption,6.0
+T6c,m1c,"GEE, uncorrected",common NAT,5,6,irate|NAT|gee,7.38406773138349,0.17077600670214,FALSE,1,caption,7.4
+T6c,m1c,"GLMM, likelihood ratio",common NAT,5,7,irate|NAT|glmer_lrt,4.8874350586877,0.152030688846177,FALSE,1,caption,4.9
+T6c,m1c,"GEE, Kauermann-Carroll",common NAT,5,8,irate|NAT|gee_kc,5.62343659803733,0.152391683829403,FALSE,1,caption,5.6
+T6c,m1c,"GEE, Fay-Graubard",common AR1,6,1,irate|AR1|gee_fg,4.67186297151655,0.144735717813144,FALSE,1,caption,4.7
+T6c,m1c,"GEE, Mancl-DeRouen",common AR1,6,2,irate|AR1|gee_md,4.20515781370285,0.13994004899081,FALSE,1,caption,4.2
+T6c,m1c,Marginalized model,common AR1,6,3,irate|AR1|mmm,6.42802155504234,0.168940883271602,FALSE,1,caption,6.4
+T6c,m1c,"GLMM, Wald",common AR1,6,4,irate|AR1|glmer,6.3125481139338,0.171156331397916,FALSE,1,caption,6.3
+T6c,m1c,Shrinkage GLM,common AR1,6,5,irate|AR1|shrink,6.3125481139338,0.171156331397916,FALSE,1,caption,6.3
+T6c,m1c,"GEE, uncorrected",common AR1,6,6,irate|AR1|gee,7.54426481909161,0.186291422317063,FALSE,1,caption,7.5
+T6c,m1c,"GLMM, likelihood ratio",common AR1,6,7,irate|AR1|glmer_lrt,5.33102386451116,0.158214674437173,FALSE,1,caption,5.3
+T6c,m1c,"GEE, Kauermann-Carroll",common AR1,6,8,irate|AR1|gee_kc,5.68706697459584,0.159785100045689,FALSE,1,caption,5.7
+T6c,m1c,"GEE, Fay-Graubard",shift GB,7,1,shift|GB|gee_fg,-0.343006232706923,0.062983790519869,FALSE,1,inline,-0.3 (0.06)
+T6c,m1c,"GEE, Mancl-DeRouen",shift GB,7,2,shift|GB|gee_md,-0.237171635522729,0.0572343229500542,FALSE,1,inline,-0.2 (0.06)
+T6c,m1c,Marginalized model,shift GB,7,3,shift|GB|mmm,-0.607143014088001,0.0632291133093184,FALSE,1,inline,-0.6 (0.06)
+T6c,m1c,"GLMM, Wald",shift GB,7,4,shift|GB|glmer,0.0191255842182532,0.045145982247193,FALSE,1,inline,0.0 (0.05)
+T6c,m1c,Shrinkage GLM,shift GB,7,5,shift|GB|shrink,-3.48103071353896,0.127010532351625,FALSE,1,inline,-3.5 (0.1)
+T6c,m1c,"GEE, uncorrected",shift GB,7,6,shift|GB|gee,-0.827811609170161,0.086228206158257,FALSE,1,inline,-0.8 (0.09)
+T6c,m1c,"GLMM, likelihood ratio",shift GB,7,7,shift|GB|glmer_lrt,-3.26515132950381,0.131599023026329,FALSE,1,inline,-3.3 (0.1)
+T6c,m1c,"GEE, Kauermann-Carroll",shift GB,7,8,shift|GB|gee_kc,-0.404484043557795,0.0681087495220317,FALSE,1,inline,-0.4 (0.07)
+T6c,m1c,"GEE, Fay-Graubard",shift NAT,8,1,shift|NAT|gee_fg,-0.291982310615467,0.0555624732841186,FALSE,1,inline,-0.3 (0.06)
+T6c,m1c,"GEE, Mancl-DeRouen",shift NAT,8,2,shift|NAT|gee_md,-0.238847613648866,0.0512433810652202,FALSE,1,inline,-0.2 (0.05)
+T6c,m1c,Marginalized model,shift NAT,8,3,shift|NAT|mmm,-0.570433790969464,0.0570594570092553,FALSE,1,inline,-0.6 (0.06)
+T6c,m1c,"GLMM, Wald",shift NAT,8,4,shift|NAT|glmer,0.0200016765795761,0.0284240823838755,FALSE,1,inline,0.0 (0.03)
+T6c,m1c,Shrinkage GLM,shift NAT,8,5,shift|NAT|shrink,-1.88833666867388,0.0939966116649011,FALSE,1,inline,-1.9 (0.09)
+T6c,m1c,"GEE, uncorrected",shift NAT,8,6,shift|NAT|gee,-0.697322462782658,0.074103200642217,FALSE,1,inline,-0.7 (0.07)
+T6c,m1c,"GLMM, likelihood ratio",shift NAT,8,7,shift|NAT|glmer_lrt,-2.58490891960493,0.116248411485498,FALSE,1,inline,-2.6 (0.1)
+T6c,m1c,"GEE, Kauermann-Carroll",shift NAT,8,8,shift|NAT|gee_kc,-0.34401367321041,0.0584899445195568,FALSE,1,inline,-0.3 (0.06)
+T6c,m1c,"GEE, Fay-Graubard",shift AR1,9,1,shift|AR1|gee_fg,-0.296301318681637,0.0514730705281663,FALSE,1,inline,-0.3 (0.05)
+T6c,m1c,"GEE, Mancl-DeRouen",shift AR1,9,2,shift|AR1|gee_md,-0.199534532020556,0.0445176520134667,FALSE,1,inline,-0.2 (0.04)
+T6c,m1c,Marginalized model,shift AR1,9,3,shift|AR1|mmm,-0.489482534698253,0.0516697360704085,FALSE,1,inline,-0.5 (0.05)
+T6c,m1c,"GLMM, Wald",shift AR1,9,4,shift|AR1|glmer,0.0640020756887854,0.0250456220376619,FALSE,1,inline,0.1 (0.03)
+T6c,m1c,Shrinkage GLM,shift AR1,9,5,shift|AR1|shrink,-2.0311851718569,0.0972770419512695,FALSE,1,inline,-2.0 (0.1)
+T6c,m1c,"GEE, uncorrected",shift AR1,9,6,shift|AR1|gee,-0.66829556738182,0.0699658060896909,FALSE,1,inline,-0.7 (0.07)
+T6c,m1c,"GLMM, likelihood ratio",shift AR1,9,7,shift|AR1|glmer_lrt,-2.63941578310272,0.112233000409505,FALSE,1,inline,-2.6 (0.1)
+T6c,m1c,"GEE, Kauermann-Carroll",shift AR1,9,8,shift|AR1|gee_kc,-0.317447698090388,0.0530763274133758,FALSE,1,inline,-0.3 (0.05)
+T7c,m1c,"random intercept, T = 2","GEE, Fay-Graubard",1,1,puT|RI|gee_fg|2,81.3119692444994,0.31448895064453,FALSE,1,inline,81.3 (0.3)
+T7c,m1c,"random intercept, T = 3","GEE, Fay-Graubard",1,2,puT|RI|gee_fg|3,93.9416025344341,0.195041516591284,FALSE,1,inline,93.9 (0.2)
+T7c,m1c,"random intercept, T = 4","GEE, Fay-Graubard",1,3,puT|RI|gee_fg|4,96.6195196701215,0.154262524769194,FALSE,1,inline,96.6 (0.2)
+T7c,m1c,"random intercept, T = 6","GEE, Fay-Graubard",1,4,puT|RI|gee_fg|6,98.4196170118014,0.106608700534638,FALSE,1,inline,98.4 (0.1)
+T7c,m1c,"random intercept, T = 2","GEE, Mancl-DeRouen",2,1,puT|RI|gee_md|2,81.3288229842447,0.314663418165814,FALSE,1,inline,81.3 (0.3)
+T7c,m1c,"random intercept, T = 3","GEE, Mancl-DeRouen",2,2,puT|RI|gee_md|3,93.7512688315556,0.202266860433502,FALSE,1,inline,93.8 (0.2)
+T7c,m1c,"random intercept, T = 4","GEE, Mancl-DeRouen",2,3,puT|RI|gee_md|4,96.4022344812215,0.16626851376997,FALSE,1,inline,96.4 (0.2)
+T7c,m1c,"random intercept, T = 6","GEE, Mancl-DeRouen",2,4,puT|RI|gee_md|6,98.1134825205967,0.13285329825069,FALSE,1,inline,98.1 (0.1)
+T7c,m1c,"random intercept, T = 2",Marginalized model,3,1,puT|RI|mmm|2,69.6456166546528,0.349765293279103,FALSE,1,inline,69.6 (0.3)
+T7c,m1c,"random intercept, T = 3",Marginalized model,3,2,puT|RI|mmm|3,89.0903287247821,0.242873412813111,FALSE,1,inline,89.1 (0.2)
+T7c,m1c,"random intercept, T = 4",Marginalized model,3,3,puT|RI|mmm|4,94.261423158364,0.183260991238567,FALSE,1,inline,94.3 (0.2)
+T7c,m1c,"random intercept, T = 6",Marginalized model,3,4,puT|RI|mmm|6,97.5241928301047,0.124886039204729,FALSE,1,inline,97.5 (0.1)
+T7c,m1c,"random intercept, T = 2","GLMM, Wald",4,1,puT|RI|glmer|2,68.775280609618,0.349940003318224,FALSE,1,inline,68.8 (0.3)
+T7c,m1c,"random intercept, T = 3","GLMM, Wald",4,2,puT|RI|glmer|3,90.8446711496443,0.223395004305016,FALSE,1,inline,90.8 (0.2)
+T7c,m1c,"random intercept, T = 4","GLMM, Wald",4,3,puT|RI|glmer|4,95.979276719046,0.160306616848436,FALSE,1,inline,96.0 (0.2)
+T7c,m1c,"random intercept, T = 6","GLMM, Wald",4,4,puT|RI|glmer|6,98.564217323536,0.102091177840369,FALSE,1,inline,98.6 (0.1)
+T7c,m1c,"random intercept, T = 2",Shrinkage GLM,5,1,puT|RI|shrink|2,82.8573833796725,0.308085423808834,FALSE,1,inline,82.9 (0.3)
+T7c,m1c,"random intercept, T = 3",Shrinkage GLM,5,2,puT|RI|shrink|3,94.5564372167867,0.189181553981448,FALSE,1,inline,94.6 (0.2)
+T7c,m1c,"random intercept, T = 4",Shrinkage GLM,5,3,puT|RI|shrink|4,96.9646327872506,0.146144398490308,FALSE,1,inline,97.0 (0.1)
+T7c,m1c,"random intercept, T = 6",Shrinkage GLM,5,4,puT|RI|shrink|6,98.7089067022935,0.0983786168023469,FALSE,1,inline,98.7 (0.1)
+T7c,m1c,"random intercept, T = 2","GEE, uncorrected",6,1,puT|RI|gee|2,84.1235660591083,0.294508731169015,FALSE,1,inline,84.1 (0.3)
+T7c,m1c,"random intercept, T = 3","GEE, uncorrected",6,2,puT|RI|gee|3,95.1494862694236,0.174004752437134,FALSE,1,inline,95.1 (0.2)
+T7c,m1c,"random intercept, T = 4","GEE, uncorrected",6,3,puT|RI|gee|4,97.5163044689624,0.131155549921891,FALSE,1,inline,97.5 (0.1)
+T7c,m1c,"random intercept, T = 6","GEE, uncorrected",6,4,puT|RI|gee|6,98.9260632375863,0.0858789932858885,FALSE,1,inline,98.9 (0.09)
+T7c,m1c,"random intercept, T = 2","GLMM, likelihood ratio",7,1,puT|RI|glmer_lrt|2,99.9154601311228,0.021358417478118,FALSE,2,inline,99.92 (0.02)
+T7c,m1c,"random intercept, T = 3","GLMM, likelihood ratio",7,2,puT|RI|glmer_lrt|3,99.9887992831541,0.00792497530342714,FALSE,2,inline,99.99 (0.008)
+T7c,m1c,"random intercept, T = 4","GLMM, likelihood ratio",7,3,puT|RI|glmer_lrt|4,100,0,FALSE,2,inline,100.00 (0)
+T7c,m1c,"random intercept, T = 6","GLMM, likelihood ratio",7,4,puT|RI|glmer_lrt|6,99.9944333110666,0.00554306825197779,FALSE,2,inline,99.99 (0.006)
+T7c,m1c,"random intercept, T = 2","GEE, Kauermann-Carroll",8,1,puT|RI|gee_kc|2,79.9163354271788,0.314028576574253,FALSE,1,inline,79.9 (0.3)
+T7c,m1c,"random intercept, T = 3","GEE, Kauermann-Carroll",8,2,puT|RI|gee_kc|3,93.1420793104933,0.206063615788381,FALSE,1,inline,93.1 (0.2)
+T7c,m1c,"random intercept, T = 4","GEE, Kauermann-Carroll",8,3,puT|RI|gee_kc|4,96.140504847877,0.171212143758053,FALSE,1,inline,96.1 (0.2)
+T7c,m1c,"random intercept, T = 6","GEE, Kauermann-Carroll",8,4,puT|RI|gee_kc|6,98.0745268314407,0.133419864831987,FALSE,1,inline,98.1 (0.1)
+T8c,m1c,"GEE, Fay-Graubard",usable,1,1,use20|gee_fg,85.8935764526504,0.243907209042093,FALSE,1,inline,85.9 (0.2)
+T8c,m1c,"GEE, Mancl-DeRouen",usable,1,2,use20|gee_md,85.5451266310315,0.259589480343746,FALSE,1,inline,85.5 (0.3)
+T8c,m1c,Marginalized model,usable,1,3,use20|mmm,78.808002906174,0.237941816056417,FALSE,1,inline,78.8 (0.2)
+T8c,m1c,"GLMM, Wald",usable,1,4,use20|glmer,79.8289451231443,0.249306806392996,FALSE,1,inline,79.8 (0.2)
+T8c,m1c,Shrinkage GLM,usable,1,5,use20|shrink,87.227013376335,0.233896370490377,FALSE,1,inline,87.2 (0.2)
+T8c,m1c,"GEE, uncorrected",usable,1,6,use20|gee,88.5882655730958,0.208389296353078,FALSE,1,inline,88.6 (0.2)
+T8c,m1c,"GLMM, likelihood ratio",usable,1,7,use20|glmer_lrt,99.9493463626717,0.0123889830672663,FALSE,1,inline,99.9 (0.01)
+T8c,m1c,"GEE, Kauermann-Carroll",usable,1,8,use20|gee_kc,84.4700565418282,0.256631772568506,FALSE,1,inline,84.5 (0.3)
+T8c,m1c,"GEE, Fay-Graubard",unconditional validity,2,1,val20|gee_fg,81.4536592014366,0.263915319146954,FALSE,1,caption,81.5
+T8c,m1c,"GEE, Mancl-DeRouen",unconditional validity,2,2,val20|gee_md,81.6869281000735,0.273595251387309,FALSE,1,caption,81.7
+T8c,m1c,Marginalized model,unconditional validity,2,3,val20|mmm,73.2574823029394,0.24318836073223,FALSE,1,caption,73.3
+T8c,m1c,"GLMM, Wald",unconditional validity,2,4,val20|glmer,75.5819168069234,0.257955125804427,FALSE,1,caption,75.6
+T8c,m1c,Shrinkage GLM,unconditional validity,2,5,val20|shrink,79.2664055179308,0.254856332978889,FALSE,1,caption,79.3
+T8c,m1c,"GEE, uncorrected",unconditional validity,2,6,val20|gee,79.7221980978363,0.257663089186601,FALSE,1,caption,79.7
+T8c,m1c,"GLMM, likelihood ratio",unconditional validity,2,7,val20|glmer_lrt,90.0396027936554,0.154565955065751,FALSE,1,caption,90.0
+T8c,m1c,"GEE, Kauermann-Carroll",unconditional validity,2,8,val20|gee_kc,78.7442061728058,0.276635378790899,FALSE,1,caption,78.7
+T8c,m1c,"GEE, Fay-Graubard",design points with a usable replicate,3,1,ncell20|gee_fg,36,,TRUE,0,none,36
+T8c,m1c,"GEE, Mancl-DeRouen",design points with a usable replicate,3,2,ncell20|gee_md,36,,TRUE,0,none,36
+T8c,m1c,Marginalized model,design points with a usable replicate,3,3,ncell20|mmm,36,,TRUE,0,none,36
+T8c,m1c,"GLMM, Wald",design points with a usable replicate,3,4,ncell20|glmer,36,,TRUE,0,none,36
+T8c,m1c,Shrinkage GLM,design points with a usable replicate,3,5,ncell20|shrink,36,,TRUE,0,none,36
+T8c,m1c,"GEE, uncorrected",design points with a usable replicate,3,6,ncell20|gee,36,,TRUE,0,none,36
+T8c,m1c,"GLMM, likelihood ratio",design points with a usable replicate,3,7,ncell20|glmer_lrt,36,,TRUE,0,none,36
+T8c,m1c,"GEE, Kauermann-Carroll",design points with a usable replicate,3,8,ncell20|gee_kc,36,,TRUE,0,none,36
+T9c,m1c,"GEE, Fay-Graubard",<50%,1,1,madS|s1|gee_fg,4.73262032085562,0.151840831182174,FALSE,1,inline,4.7 (0.2)
+T9c,m1c,"GEE, Mancl-DeRouen",<50%,1,2,madS|s1|gee_md,5,0,FALSE,1,inline,5.0 (0)
+T9c,m1c,Marginalized model,<50%,1,3,madS|s1|mmm,1.38835797819749,0.565158053310373,FALSE,1,inline,1.4 (0.6)
+T9c,m1c,"GLMM, Wald",<50%,1,4,madS|s1|glmer,1.01179744560127,0.54282449131077,FALSE,1,inline,1.0 (0.5)
+T9c,m1c,Shrinkage GLM,<50%,1,5,madS|s1|shrink,7.98973083916268,0.909176121282504,FALSE,1,inline,8.0 (0.9)
+T9c,m1c,"GEE, uncorrected",<50%,1,6,madS|s1|gee,1.25456835346261,0.56330109002595,FALSE,1,inline,1.3 (0.6)
+T9c,m1c,"GLMM, likelihood ratio",<50%,1,7,madS|s1|glmer_lrt,7.30489558751127,0.622356011792518,FALSE,1,inline,7.3 (0.6)
+T9c,m1c,"GEE, Kauermann-Carroll",<50%,1,8,madS|s1|gee_kc,4.3164408751845,0.256154665701224,FALSE,1,inline,4.3 (0.3)
+T9c,m1c,design points,<50%,1,9,ndp|s1,3,,TRUE,0,none,3
+T9c,m1c,"GEE, Fay-Graubard",50-80%,2,1,madS|s2|gee_fg,2.29737349654313,0.225238753883902,FALSE,1,inline,2.3 (0.2)
+T9c,m1c,"GEE, Mancl-DeRouen",50-80%,2,2,madS|s2|gee_md,2.34174470314744,0.201527465763009,FALSE,1,inline,2.3 (0.2)
+T9c,m1c,Marginalized model,50-80%,2,3,madS|s2|mmm,1.60413116045695,0.35475852148991,FALSE,1,inline,1.6 (0.4)
+T9c,m1c,"GLMM, Wald",50-80%,2,4,madS|s2|glmer,1.92774759233311,0.250260260910507,FALSE,1,inline,1.9 (0.3)
+T9c,m1c,Shrinkage GLM,50-80%,2,5,madS|s2|shrink,8.76611477986394,0.523120486808455,FALSE,1,inline,8.8 (0.5)
+T9c,m1c,"GEE, uncorrected",50-80%,2,6,madS|s2|gee,5.69088822661187,0.509619044298865,FALSE,1,inline,5.7 (0.5)
+T9c,m1c,"GLMM, likelihood ratio",50-80%,2,7,madS|s2|glmer_lrt,8.13782924727384,0.425173620112796,FALSE,1,inline,8.1 (0.4)
+T9c,m1c,"GEE, Kauermann-Carroll",50-80%,2,8,madS|s2|gee_kc,3.75813790028556,0.357666988678201,FALSE,1,inline,3.8 (0.4)
+T9c,m1c,design points,50-80%,2,9,ndp|s2,7,,TRUE,0,none,7
+T9c,m1c,"GEE, Fay-Graubard",80-95%,3,1,madS|s3|gee_fg,2.39636610264712,0.186709403385318,FALSE,1,caption,2.4
+T9c,m1c,"GEE, Mancl-DeRouen",80-95%,3,2,madS|s3|gee_md,2.41291734474462,0.177444230413424,FALSE,1,caption,2.4
+T9c,m1c,Marginalized model,80-95%,3,3,madS|s3|mmm,2.52368619403745,0.231871958014356,FALSE,1,caption,2.5
+T9c,m1c,"GLMM, Wald",80-95%,3,4,madS|s3|glmer,1.50561808101112,0.159813030603289,FALSE,1,caption,1.5
+T9c,m1c,Shrinkage GLM,80-95%,3,5,madS|s3|shrink,4.15108660424049,0.258193068315834,FALSE,1,caption,4.2
+T9c,m1c,"GEE, uncorrected",80-95%,3,6,madS|s3|gee,5.42176492459991,0.281272477566911,FALSE,1,caption,5.4
+T9c,m1c,"GLMM, likelihood ratio",80-95%,3,7,madS|s3|glmer_lrt,5.49310545390876,0.258094453973845,FALSE,1,caption,5.5
+T9c,m1c,"GEE, Kauermann-Carroll",80-95%,3,8,madS|s3|gee_kc,3.28545795265126,0.222042176048096,FALSE,1,caption,3.3
+T9c,m1c,design points,80-95%,3,9,ndp|s3,15,,TRUE,0,none,15
+T9c,m1c,"GEE, Fay-Graubard",95-99.9%,4,1,madS|s4|gee_fg,0.77141288797781,0.103727562983052,FALSE,1,caption,0.8
+T9c,m1c,"GEE, Mancl-DeRouen",95-99.9%,4,2,madS|s4|gee_md,0.807895163787319,0.0964157295875648,FALSE,1,caption,0.8
+T9c,m1c,Marginalized model,95-99.9%,4,3,madS|s4|mmm,2.06488722384084,0.143906015499863,FALSE,1,caption,2.1
+T9c,m1c,"GLMM, Wald",95-99.9%,4,4,madS|s4|glmer,2.15918149099922,0.153246619346134,FALSE,1,caption,2.2
+T9c,m1c,Shrinkage GLM,95-99.9%,4,5,madS|s4|shrink,2.91506004519351,0.165743987800971,FALSE,1,caption,2.9
+T9c,m1c,"GEE, uncorrected",95-99.9%,4,6,madS|s4|gee,2.76872842856596,0.156687330775465,FALSE,1,caption,2.8
+T9c,m1c,"GLMM, likelihood ratio",95-99.9%,4,7,madS|s4|glmer_lrt,2.71212121212121,0.164205345216828,FALSE,1,caption,2.7
+T9c,m1c,"GEE, Kauermann-Carroll",95-99.9%,4,8,madS|s4|gee_kc,1.23882376840505,0.120251641347798,FALSE,1,caption,1.2
+T9c,m1c,design points,95-99.9%,4,9,ndp|s4,33,,TRUE,0,none,33
+T9c,m1c,"GEE, Fay-Graubard",100%,5,1,madS|s5|gee_fg,0.614285714285714,0.14608223206697,FALSE,1,inline,0.6 (0.1)
+T9c,m1c,"GEE, Mancl-DeRouen",100%,5,2,madS|s5|gee_md,0.621428571428571,0.144871591416814,FALSE,1,inline,0.6 (0.1)
+T9c,m1c,Marginalized model,100%,5,3,madS|s5|mmm,1.10546638986597,0.179080803330937,FALSE,1,inline,1.1 (0.2)
+T9c,m1c,"GLMM, Wald",100%,5,4,madS|s5|glmer,5.04335049335049,0.369551838651981,FALSE,1,inline,5.0 (0.4)
+T9c,m1c,Shrinkage GLM,100%,5,5,madS|s5|shrink,5.05,0.369368295689696,FALSE,1,inline,5.0 (0.4)
+T9c,m1c,"GEE, uncorrected",100%,5,6,madS|s5|gee,1.82857142857143,0.213423061216584,FALSE,1,inline,1.8 (0.2)
+T9c,m1c,"GLMM, likelihood ratio",100%,5,7,madS|s5|glmer_lrt,1.15,0.176946457795812,FALSE,1,inline,1.1 (0.2)
+T9c,m1c,"GEE, Kauermann-Carroll",100%,5,8,madS|s5|gee_kc,0.885714285714286,0.167935184277623,FALSE,1,inline,0.9 (0.2)
+T9c,m1c,design points,100%,5,9,ndp|s5,14,,TRUE,0,none,14
+T10c,m1c,"GenBinaryY, GEE, Fay-Graubard",raw,1,1,raw|GB|gee_fg,9.67132254644355,0.197015423704637,FALSE,1,caption,9.7
+T10c,m1c,"GenBinaryY, GEE, Mancl-DeRouen",raw,1,2,raw|GB|gee_md,8.61718822117604,0.181173816173712,FALSE,1,caption,8.6
+T10c,m1c,"GenBinaryY, Marginalized model",raw,1,3,raw|GB|mmm,11.2033610083025,0.215984459467878,FALSE,1,caption,11.2
+T10c,m1c,"GenBinaryY, GLMM, Wald",raw,1,4,raw|GB|glmer,10.5538037051636,0.213478449829078,FALSE,1,caption,10.6
+T10c,m1c,"GenBinaryY, Shrinkage GLM",raw,1,5,raw|GB|shrink,14.2200163919497,0.23193835748674,FALSE,1,caption,14.2
+T10c,m1c,"GenBinaryY, GEE, uncorrected",raw,1,6,raw|GB|gee,13.3991346673878,0.222487419411193,FALSE,1,caption,13.4
+T10c,m1c,"GenBinaryY, GLMM, likelihood ratio",raw,1,7,raw|GB|glmer_lrt,15.7026519106285,0.236004822806548,FALSE,1,caption,15.7
+T10c,m1c,"GenBinaryY, GEE, Kauermann-Carroll",raw,1,8,raw|GB|gee_kc,10.7764640163858,0.202748767469827,FALSE,1,caption,10.8
+T10c,m1c,"GLMM-native, GEE, Fay-Graubard",raw,1,9,raw|NAT|gee_fg,9.49438967882615,0.204070353012779,FALSE,1,caption,9.5
+T10c,m1c,"GLMM-native, GEE, Mancl-DeRouen",raw,1,10,raw|NAT|gee_md,8.56271895900632,0.195546922174641,FALSE,1,caption,8.6
+T10c,m1c,"GLMM-native, Marginalized model",raw,1,11,raw|NAT|mmm,11.1289257757239,0.215535358247687,FALSE,1,caption,11.1
+T10c,m1c,"GLMM-native, GLMM, Wald",raw,1,12,raw|NAT|glmer,8.61437294504462,0.190566920823494,FALSE,1,caption,8.6
+T10c,m1c,"GLMM-native, Shrinkage GLM",raw,1,13,raw|NAT|shrink,10.4308594631175,0.204487901511209,FALSE,1,caption,10.4
+T10c,m1c,"GLMM-native, GEE, uncorrected",raw,1,14,raw|NAT|gee,13.1061657636681,0.230196951372904,FALSE,1,caption,13.1
+T10c,m1c,"GLMM-native, GLMM, likelihood ratio",raw,1,15,raw|NAT|glmer_lrt,11.7897549367511,0.210924459398383,FALSE,1,caption,11.8
+T10c,m1c,"GLMM-native, GEE, Kauermann-Carroll",raw,1,16,raw|NAT|gee_kc,10.666788538001,0.214802854491065,FALSE,1,caption,10.7
+T10c,m1c,"GLMM-AR1, GEE, Fay-Graubard",raw,1,17,raw|AR1|gee_fg,9.78576615831518,0.196775172593728,FALSE,1,caption,9.8
+T10c,m1c,"GLMM-AR1, GEE, Mancl-DeRouen",raw,1,18,raw|AR1|gee_md,8.72174980673912,0.182678393256028,FALSE,1,caption,8.7
+T10c,m1c,"GLMM-AR1, Marginalized model",raw,1,19,raw|AR1|mmm,11.1542283848374,0.209777431033261,FALSE,1,caption,11.2
+T10c,m1c,"GLMM-AR1, GLMM, Wald",raw,1,20,raw|AR1|glmer,8.92991710625471,0.190942107891392,FALSE,1,caption,8.9
+T10c,m1c,"GLMM-AR1, Shrinkage GLM",raw,1,21,raw|AR1|shrink,11.0189359783589,0.209265411968777,FALSE,1,caption,11.0
+T10c,m1c,"GLMM-AR1, GEE, uncorrected",raw,1,22,raw|AR1|gee,13.4807864164433,0.223616115434138,FALSE,1,caption,13.5
+T10c,m1c,"GLMM-AR1, GLMM, likelihood ratio",raw,1,23,raw|AR1|glmer_lrt,12.4916499665999,0.21076765785388,FALSE,1,caption,12.5
+T10c,m1c,"GLMM-AR1, GEE, Kauermann-Carroll",raw,1,24,raw|AR1|gee_kc,10.8529962119483,0.206018175856954,FALSE,1,caption,10.9
+T10c,m1c,"GenBinaryY, GEE, Fay-Graubard",size-adjusted,2,1,sa|GB|gee_fg,9.37168671921818,0.244010766730729,FALSE,1,caption,9.4
+T10c,m1c,"GenBinaryY, GEE, Mancl-DeRouen",size-adjusted,2,2,sa|GB|gee_md,9.20797563001939,0.24662006167447,FALSE,1,caption,9.2
+T10c,m1c,"GenBinaryY, Marginalized model",size-adjusted,2,3,sa|GB|mmm,8.72761828548565,0.263146499458061,FALSE,1,caption,8.7
+T10c,m1c,"GenBinaryY, GLMM, Wald",size-adjusted,2,4,sa|GB|glmer,4.83839180134017,0.231514795885371,FALSE,1,caption,4.8
+T10c,m1c,"GenBinaryY, Shrinkage GLM",size-adjusted,2,5,sa|GB|shrink,4.79464529642109,0.213154011414533,FALSE,1,caption,4.8
+T10c,m1c,"GenBinaryY, GEE, uncorrected",size-adjusted,2,6,sa|GB|gee,9.04993690283036,0.250601729174393,FALSE,1,caption,9.0
+T10c,m1c,"GenBinaryY, GLMM, likelihood ratio",size-adjusted,2,7,sa|GB|glmer_lrt,8.8870327834621,0.223426124898349,FALSE,1,caption,8.9
+T10c,m1c,"GenBinaryY, GEE, Kauermann-Carroll",size-adjusted,2,8,sa|GB|gee_kc,9.22632901964435,0.255587377298233,FALSE,1,caption,9.2
+T10c,m1c,"GLMM-native, GEE, Fay-Graubard",size-adjusted,2,9,sa|NAT|gee_fg,9.14005360468814,0.25266637493539,FALSE,1,caption,9.1
+T10c,m1c,"GLMM-native, GEE, Mancl-DeRouen",size-adjusted,2,10,sa|NAT|gee_md,9.0176987124073,0.24929377504347,FALSE,1,caption,9.0
+T10c,m1c,"GLMM-native, Marginalized model",size-adjusted,2,11,sa|NAT|mmm,8.83240592285202,0.285098868096625,FALSE,1,caption,8.8
+T10c,m1c,"GLMM-native, GLMM, Wald",size-adjusted,2,12,sa|NAT|glmer,5.06341005166745,0.255290504231234,FALSE,1,caption,5.1
+T10c,m1c,"GLMM-native, Shrinkage GLM",size-adjusted,2,13,sa|NAT|shrink,5.01240694789082,0.241807409393728,FALSE,1,caption,5.0
+T10c,m1c,"GLMM-native, GEE, uncorrected",size-adjusted,2,14,sa|NAT|gee,8.91953611247929,0.241639148615674,FALSE,1,caption,8.9
+T10c,m1c,"GLMM-native, GLMM, likelihood ratio",size-adjusted,2,15,sa|NAT|glmer_lrt,9.05105832254832,0.247338050024535,FALSE,1,caption,9.1
+T10c,m1c,"GLMM-native, GEE, Kauermann-Carroll",size-adjusted,2,16,sa|NAT|gee_kc,9.00781499931447,0.249699864101167,FALSE,1,caption,9.0
+T10c,m1c,"GLMM-AR1, GEE, Fay-Graubard",size-adjusted,2,17,sa|AR1|gee_fg,9.65867828612927,0.273966139471603,FALSE,1,caption,9.7
+T10c,m1c,"GLMM-AR1, GEE, Mancl-DeRouen",size-adjusted,2,18,sa|AR1|gee_md,9.51752989859488,0.27391538021613,FALSE,1,caption,9.5
+T10c,m1c,"GLMM-AR1, Marginalized model",size-adjusted,2,19,sa|AR1|mmm,8.64606502295206,0.282585698981416,FALSE,1,caption,8.6
+T10c,m1c,"GLMM-AR1, GLMM, Wald",size-adjusted,2,20,sa|AR1|glmer,4.87000753579503,0.235801897999757,FALSE,1,caption,4.9
+T10c,m1c,"GLMM-AR1, Shrinkage GLM",size-adjusted,2,21,sa|AR1|shrink,4.98647430117223,0.23396332945826,FALSE,1,caption,5.0
+T10c,m1c,"GLMM-AR1, GEE, uncorrected",size-adjusted,2,22,sa|AR1|gee,9.29848078641644,0.27025294931666,FALSE,1,caption,9.3
+T10c,m1c,"GLMM-AR1, GLMM, likelihood ratio",size-adjusted,2,23,sa|AR1|glmer_lrt,9.07648630594522,0.248824884448776,FALSE,1,caption,9.1
+T10c,m1c,"GLMM-AR1, GEE, Kauermann-Carroll",size-adjusted,2,24,sa|AR1|gee_kc,9.41536214686687,0.276404131304935,FALSE,1,caption,9.4
+T11c,m1c,"GEE, Fay-Graubard",normal GB,1,1,rate|GB|gee_fg,5.06904069767442,0.147647436968728,FALSE,1,caption,5.1
+T11c,m1c,"GEE, Mancl-DeRouen",normal GB,1,2,rate|GB|gee_md,4.46790117839756,0.136676954841087,FALSE,1,caption,4.5
+T11c,m1c,Marginalized model,normal GB,1,3,rate|GB|mmm,6.98935331230284,0.17506848527935,FALSE,1,caption,7.0
+T11c,m1c,"GLMM, Wald",normal GB,1,4,rate|GB|glmer,7.69937611839242,0.199707992600468,FALSE,1,caption,7.7
+T11c,m1c,Shrinkage GLM,normal GB,1,5,rate|GB|shrink,11.1995324161496,0.216170829566151,FALSE,1,caption,11.2
+T11c,m1c,"GEE, uncorrected",normal GB,1,6,rate|GB|gee,8.32961740836529,0.185519844159456,FALSE,1,caption,8.3
+T11c,m1c,"GEE, Kauermann-Carroll",normal GB,1,7,rate|GB|gee_kc,6.13144720525421,0.161585135893787,FALSE,1,caption,6.1
+T11c,m1c,"GEE, Fay-Graubard",normal NAT,2,1,rate|NAT|gee_fg,4.96294632831799,0.145067153734049,FALSE,1,caption,5.0
+T11c,m1c,"GEE, Mancl-DeRouen",normal NAT,2,2,rate|NAT|gee_md,4.46243814664867,0.138082161480353,FALSE,1,caption,4.5
+T11c,m1c,Marginalized model,normal NAT,2,3,rate|NAT|mmm,6.75188462799082,0.170554231785465,FALSE,1,caption,6.8
+T11c,m1c,"GLMM, Wald",normal NAT,2,4,rate|NAT|glmer,5.98346186007619,0.160919821851646,FALSE,1,caption,6.0
+T11c,m1c,Shrinkage GLM,normal NAT,2,5,rate|NAT|shrink,7.89180020532964,0.180613360663407,FALSE,1,caption,7.9
+T11c,m1c,"GEE, uncorrected",normal NAT,2,6,rate|NAT|gee,8.08139019416615,0.172301321463504,FALSE,1,caption,8.1
+T11c,m1c,"GEE, Kauermann-Carroll",normal NAT,2,7,rate|NAT|gee_kc,5.96745027124774,0.153451117233845,FALSE,1,caption,6.0
+T11c,m1c,"GEE, Fay-Graubard",normal AR1,3,1,rate|AR1|gee_fg,4.96816429019819,0.146731848435872,FALSE,1,caption,5.0
+T11c,m1c,"GEE, Mancl-DeRouen",normal AR1,3,2,rate|AR1|gee_md,4.4046923457234,0.139729236188212,FALSE,1,caption,4.4
+T11c,m1c,Marginalized model,normal AR1,3,3,rate|AR1|mmm,6.91750408974059,0.174008403703597,FALSE,1,caption,6.9
+T11c,m1c,"GLMM, Wald",normal AR1,3,4,rate|AR1|glmer,6.24854603824501,0.168097644719863,FALSE,1,caption,6.2
+T11c,m1c,Shrinkage GLM,normal AR1,3,5,rate|AR1|shrink,8.34373328579069,0.188536935796715,FALSE,1,caption,8.3
+T11c,m1c,"GEE, uncorrected",normal AR1,3,6,rate|AR1|gee,8.21256038647343,0.185223620796408,FALSE,1,caption,8.2
+T11c,m1c,"GEE, Kauermann-Carroll",normal AR1,3,7,rate|AR1|gee_kc,6.00451467268623,0.159914439350336,FALSE,1,caption,6.0
+T11c,m1c,"GEE, Fay-Graubard",t GB,4,1,ratet|GB|gee_fg,3.6155523255814,0.124964192274058,FALSE,1,caption,3.6
+T11c,m1c,"GEE, Mancl-DeRouen",t GB,4,2,ratet|GB|gee_md,3.18485827380682,0.115177583139386,FALSE,1,caption,3.2
+T11c,m1c,Marginalized model,t GB,4,3,ratet|GB|mmm,5.1311119873817,0.152361311575428,FALSE,1,caption,5.1
+T11c,m1c,"GLMM, Wald",t GB,4,4,ratet|GB|glmer,6.62088310683368,0.182250577958528,FALSE,1,caption,6.6
+T11c,m1c,Shrinkage GLM,t GB,4,5,ratet|GB|shrink,9.68887689955939,0.199727518450165,FALSE,1,caption,9.7
+T11c,m1c,"GEE, uncorrected",t GB,4,6,ratet|GB|gee,5.99750289842148,0.158889937378144,FALSE,1,caption,6.0
+T11c,m1c,"GEE, Kauermann-Carroll",t GB,4,7,ratet|GB|gee_kc,4.28053093280669,0.1363271600799,FALSE,1,caption,4.3
+T11c,m1c,"GEE, Fay-Graubard",t NAT,5,1,ratet|NAT|gee_fg,3.56164383561644,0.121890174661839,FALSE,1,caption,3.6
+T11c,m1c,"GEE, Mancl-DeRouen",t NAT,5,2,ratet|NAT|gee_md,3.16689158794422,0.114795489696887,FALSE,1,caption,3.2
+T11c,m1c,Marginalized model,t NAT,5,3,ratet|NAT|mmm,4.97729081799878,0.148122702742642,FALSE,1,caption,5.0
+T11c,m1c,"GLMM, Wald",t NAT,5,4,ratet|NAT|glmer,5.1240360494286,0.151386362593455,FALSE,1,caption,5.1
+T11c,m1c,Shrinkage GLM,t NAT,5,5,ratet|NAT|shrink,6.73570503950364,0.171078384006612,FALSE,1,caption,6.7
+T11c,m1c,"GEE, uncorrected",t NAT,5,6,ratet|NAT|gee,5.85601560422023,0.152238859856088,FALSE,1,caption,5.9
+T11c,m1c,"GEE, Kauermann-Carroll",t NAT,5,7,ratet|NAT|gee_kc,4.21790235081374,0.137159868109322,FALSE,1,caption,4.2
+T11c,m1c,"GEE, Fay-Graubard",t AR1,6,1,ratet|AR1|gee_fg,3.48399246704331,0.122508503548791,FALSE,1,caption,3.5
+T11c,m1c,"GEE, Mancl-DeRouen",t AR1,6,2,ratet|AR1|gee_md,3.24958425097757,0.116761565700943,FALSE,1,caption,3.2
+T11c,m1c,Marginalized model,t AR1,6,3,ratet|AR1|mmm,5.06660434681,0.150764694633777,FALSE,1,caption,5.1
+T11c,m1c,"GLMM, Wald",t AR1,6,4,ratet|AR1|glmer,5.23426231796399,0.151866235102389,FALSE,1,caption,5.2
+T11c,m1c,Shrinkage GLM,t AR1,6,5,ratet|AR1|shrink,7.02442503119986,0.171653705089785,FALSE,1,caption,7.0
+T11c,m1c,"GEE, uncorrected",t AR1,6,6,ratet|AR1|gee,5.78823737978106,0.15748293675072,FALSE,1,caption,5.8
+T11c,m1c,"GEE, Kauermann-Carroll",t AR1,6,7,ratet|AR1|gee_kc,4.18510158013544,0.133221101327377,FALSE,1,caption,4.2
+T11c,m1c,"GEE, Fay-Graubard",shift GB,7,1,tshift|GB|gee_fg,-1.45348837209302,0.0853584364499784,FALSE,1,caption,-1.5
+T11c,m1c,"GEE, Mancl-DeRouen",shift GB,7,2,tshift|GB|gee_md,-1.28304290459075,0.0767391491622041,FALSE,1,caption,-1.3
+T11c,m1c,Marginalized model,shift GB,7,3,tshift|GB|mmm,-1.85824132492114,0.0902902618197222,FALSE,1,caption,-1.9
+T11c,m1c,"GLMM, Wald",shift GB,7,4,tshift|GB|glmer,-1.07849301155874,0.0722545493030094,FALSE,1,caption,-1.1
+T11c,m1c,Shrinkage GLM,shift GB,7,5,tshift|GB|shrink,-1.51065551659023,0.0820565427475429,FALSE,1,caption,-1.5
+T11c,m1c,"GEE, uncorrected",shift GB,7,6,tshift|GB|gee,-2.33211450994382,0.102896356448849,FALSE,1,caption,-2.3
+T11c,m1c,"GEE, Kauermann-Carroll",shift GB,7,7,tshift|GB|gee_kc,-1.85091627244753,0.0945794265145938,FALSE,1,caption,-1.9
+T11c,m1c,"GEE, Fay-Graubard",shift NAT,8,1,tshift|NAT|gee_fg,-1.40130249270155,0.0813124732046907,FALSE,2,caption,-1.40
+T11c,m1c,"GEE, Mancl-DeRouen",shift NAT,8,2,tshift|NAT|gee_md,-1.29554655870445,0.0773835092634491,FALSE,2,caption,-1.30
+T11c,m1c,Marginalized model,shift NAT,8,3,tshift|NAT|mmm,-1.77459380999204,0.0887745653843396,FALSE,2,caption,-1.77
+T11c,m1c,"GLMM, Wald",shift NAT,8,4,tshift|NAT|glmer,-0.859425810647589,0.0653384776032357,FALSE,2,caption,-0.86
+T11c,m1c,Shrinkage GLM,shift NAT,8,5,tshift|NAT|shrink,-1.15609516582601,0.0737664506331741,FALSE,2,caption,-1.16
+T11c,m1c,"GEE, uncorrected",shift NAT,8,6,tshift|NAT|gee,-2.22537458994592,0.09787270964725,FALSE,2,caption,-2.23
+T11c,m1c,"GEE, Kauermann-Carroll",shift NAT,8,7,tshift|NAT|gee_kc,-1.749547920434,0.0892437006097264,FALSE,2,caption,-1.75
+T11c,m1c,"GEE, Fay-Graubard",shift AR1,9,1,tshift|AR1|gee_fg,-1.48417182315487,0.0802403510555885,FALSE,1,caption,-1.5
+T11c,m1c,"GEE, Mancl-DeRouen",shift AR1,9,2,tshift|AR1|gee_md,-1.15510809474583,0.0725389314285922,FALSE,1,caption,-1.2
+T11c,m1c,Marginalized model,shift AR1,9,3,tshift|AR1|mmm,-1.85089974293059,0.090643808847836,FALSE,1,caption,-1.9
+T11c,m1c,"GLMM, Wald",shift AR1,9,4,tshift|AR1|glmer,-1.01428372028102,0.0683810262735757,FALSE,1,caption,-1.0
+T11c,m1c,Shrinkage GLM,shift AR1,9,5,tshift|AR1|shrink,-1.31930825459084,0.077352646981025,FALSE,1,caption,-1.3
+T11c,m1c,"GEE, uncorrected",shift AR1,9,6,tshift|AR1|gee,-2.42432300669237,0.104015997508892,FALSE,1,caption,-2.4
+T11c,m1c,"GEE, Kauermann-Carroll",shift AR1,9,7,tshift|AR1|gee_kc,-1.81941309255079,0.0897450090074016,FALSE,1,caption,-1.8
+T11c,m1c,"GEE, Fay-Graubard",shift at N <= 25,10,1,tsh25|gee_fg,1.88369419878486,0.0672266835977474,FALSE,2,caption,1.88
+T11c,m1c,"GEE, Mancl-DeRouen",shift at N <= 25,10,2,tsh25|gee_md,1.56691134952005,0.0605683612589214,FALSE,2,caption,1.57
+T11c,m1c,Marginalized model,shift at N <= 25,10,3,tsh25|mmm,2.40616706685202,0.074915452260897,FALSE,2,caption,2.41
+T11c,m1c,"GLMM, Wald",shift at N <= 25,10,4,tsh25|glmer,1.12314680776718,0.050412344029486,FALSE,2,caption,1.12
+T11c,m1c,Shrinkage GLM,shift at N <= 25,10,5,tsh25|shrink,1.64409609498191,0.0601980953660014,FALSE,2,caption,1.64
+T11c,m1c,"GEE, uncorrected",shift at N <= 25,10,6,tsh25|gee,3.11517904250682,0.0823846322569137,FALSE,2,caption,3.12
+T11c,m1c,"GEE, Kauermann-Carroll",shift at N <= 25,10,7,tsh25|gee_kc,2.37801111797406,0.074334374875634,FALSE,2,caption,2.38
+T12c,m1c,"GEE, Fay-Graubard",GenBinaryY,1,1,cov|GB|gee_fg,93.8597704328585,0.156282497065214,FALSE,1,caption,93.9
+T12c,m1c,"GEE, Mancl-DeRouen",GenBinaryY,1,2,cov|GB|gee_md,94.6506046339887,0.15348942402113,FALSE,1,caption,94.7
+T12c,m1c,Marginalized model,GenBinaryY,1,3,cov|GB|mmm,92.9578873662099,0.17568154589813,FALSE,1,caption,93.0
+T12c,m1c,"GLMM, Wald",GenBinaryY,1,4,cov|GB|glmer,,,FALSE,1,caption,n.a.
+T12c,m1c,Shrinkage GLM,GenBinaryY,1,5,cov|GB|shrink,89.4226391039068,0.20293094008208,FALSE,1,caption,89.4
+T12c,m1c,"GEE, uncorrected",GenBinaryY,1,6,cov|GB|gee,90.2244456462953,0.188512519021967,FALSE,1,caption,90.2
+T12c,m1c,"GEE, Kauermann-Carroll",GenBinaryY,1,7,cov|GB|gee_kc,92.8544828228284,0.170503683403644,FALSE,1,caption,92.9
+T12c,m1c,"GEE, Fay-Graubard",GLMM-native,2,1,cov|NAT|gee_fg,94.4896197701358,0.158649111726145,FALSE,1,caption,94.5
+T12c,m1c,"GEE, Mancl-DeRouen",GLMM-native,2,2,cov|NAT|gee_md,95.2045133991537,0.148851589236661,FALSE,1,caption,95.2
+T12c,m1c,Marginalized model,GLMM-native,2,3,cov|NAT|mmm,93.1906064321418,0.169819273891298,FALSE,1,caption,93.2
+T12c,m1c,"GLMM, Wald",GLMM-native,2,4,cov|NAT|glmer,95.1385627054955,0.143651031536886,FALSE,1,caption,95.1
+T12c,m1c,Shrinkage GLM,GLMM-native,2,5,cov|NAT|shrink,93.0295510940672,0.162891965823891,FALSE,1,caption,93.0
+T12c,m1c,"GEE, uncorrected",GLMM-native,2,6,cov|NAT|gee,91.2103165718891,0.193765886360203,FALSE,1,caption,91.2
+T12c,m1c,"GEE, Kauermann-Carroll",GLMM-native,2,7,cov|NAT|gee_kc,93.5697637219505,0.168830991730065,FALSE,1,caption,93.6
+T12c,m1c,"GEE, Fay-Graubard",GLMM-AR1,3,1,cov|AR1|gee_fg,94.4580610021787,0.157859605841584,FALSE,1,caption,94.5
+T12c,m1c,"GEE, Mancl-DeRouen",GLMM-AR1,3,2,cov|AR1|gee_md,95.0798053749261,0.152894792848171,FALSE,1,caption,95.1
+T12c,m1c,Marginalized model,GLMM-AR1,3,3,cov|AR1|mmm,93.104916946666,0.175260787155617,FALSE,1,caption,93.1
+T12c,m1c,"GLMM, Wald",GLMM-AR1,3,4,cov|AR1|glmer,94.8803692539563,0.152034243032758,FALSE,1,caption,94.9
+T12c,m1c,Shrinkage GLM,GLMM-AR1,3,5,cov|AR1|shrink,92.443642921551,0.185096559833064,FALSE,1,caption,92.4
+T12c,m1c,"GEE, uncorrected",GLMM-AR1,3,6,cov|AR1|gee,91.1840929401251,0.189053424866562,FALSE,1,caption,91.2
+T12c,m1c,"GEE, Kauermann-Carroll",GLMM-AR1,3,7,cov|AR1|gee_kc,93.5055451599653,0.165943055903135,FALSE,1,caption,93.5

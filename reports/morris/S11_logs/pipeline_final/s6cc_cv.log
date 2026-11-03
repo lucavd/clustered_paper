@@ -1,0 +1,19 @@
+       id
+   <char>
+1:     P9
+2:    P10
+3:    P11
+4:    P12
+                                                                          what
+                                                                        <char>
+1:                       type I, MMM with check, mean over 288 H0 cells T 8-10
+2:                    H0 design points clearly above 7.5% (of 864); study: 138
+3: power difference with check - study, mean over 288 H1 cells T 8-10 (points)
+4: type I difference with check - study, mean over 576 H0 cells T 2-6 (points)
+   n_cells        est       mcse    lo    hi    outcome
+     <int>      <num>      <num> <num> <num>     <char>
+1:     288  5.4298669 0.04558855   4.0     6 confermata
+2:     864  0.0000000 0.00000000   0.0     8 confermata
+3:     288  0.2630808 0.04485221  -2.5     1 confermata
+4:     576 -1.5178966 0.03829134  -1.0     1   smentita
+S6CC_VARIANT = cv : integrity checks of the cc variant tree not rerun (variant cv: R/s11/s11_gc3_chain.R)

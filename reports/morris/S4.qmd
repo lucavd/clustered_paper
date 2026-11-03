@@ -1,0 +1,133 @@
+---
+title: "S4: riaggregazione unica con MCSE"
+subtitle: "Roadmap Morris 2019, ramo morris-v4"
+date: 2026-10-17
+format:
+  html:
+    embed-resources: true
+    toc: true
+lang: it
+execute:
+  echo: false
+  warning: false
+---
+
+```{r setup}
+.libPaths(path.expand("~/MMM/renv/library/linux-ubuntu-noble/R-4.6/x86_64-pc-linux-gnu"))
+suppressMessages({ library(data.table); library(ggplot2) })
+REPO <- path.expand("~/MMM")
+m5 <- function(f) unname(tools::md5sum(file.path(REPO, f)))
+TAB <- file.path(REPO, "tables")
+E <- fread(file.path(TAB, "V4_S4_expectations.csv"))
+```
+
+## In breve (TL;DR) {.unnumbered}
+
+::: {.callout-note appearance="simple"}
+**Domanda.** Ricalcolare in un solo passaggio tutte le misure di performance dichiarate nel protocollo, ciascuna con la sua MCSE, sull'insieme di dati v4: `results_full/` con le sostituzioni di S3 e lo scenario M1c.
+
+**Cosa abbiamo fatto.** Un aggregatore unico (`R/postrun/agg_v4.R`) su 3.024 celle, 9 metodi, 3 definizioni di usabilita' e 2 insiemi: 163.296 righe. Le misure: bias, SE empirico, SE del modello, errore relativo, MSE/RMSE, copertura, copertura bias-eliminated, I tipo, potenza grezza e size-adjusted, validita' incondizionata e quota usabile, tutte con MCSE. La verita' condizionale di GLMM-AR1 e' ricalcolata per ciascuno dei 1.008.000 replicati.
+
+**Risultato.** I numeri del v3 si riproducono esattamente dove S3 non ha cambiato nulla (25.539 righe, differenza massima 1,1e-15). Le formule coincidono con quelle del pacchetto indipendente `rsimsum` (5.070 confronti, differenza massima 4,4e-13). 11 attese su 14 superate; le 3 non superate erano formulate male (D-20).
+
+**Due cose da sapere.**
+
+- **Con le pendenze casuali (D-08) il GLMM non e' stimabile nelle serie piu' corte**: M3-M4 a T = 2 e M5 a T <= 3 (342 celle). Valeva gia' per il Wald; ora vale anche per il LRT, che nel v3 usava la sola intercetta casuale. Dove resta stimabile, il LRT corretto rifiuta meno: da -1,2 a -2,5 punti sotto H0 e da -1,6 a -6,6 punti sotto H1, in media sulle celle.
+- **Wald `glmer` di default e Wald bobyqa (D-16) differiscono molto in alcune celle** con pendenze casuali, soprattutto in GenBinaryY. Esempio: in M3, N = 145, T = 4, H0, l'I tipo e' 0,116 contro 0,038 su 1.000 replicati usabili per entrambi. In media le due versioni quasi coincidono. Da valutare in S5 e S7.
+
+**Prossimo passo.** Ok del PI su questo report, poi S5 (inferenza per blocchi e adeguatezza di n_sim), che riusa la matrice degli indici bootstrap salvata qui.
+:::
+
+## 1. Pre-registrazione
+
+Attese Q0-Q9 scritte in `docs/sessions/2026-10-17_S4.md` e committate **prima** di qualsiasi calcolo dello step: commit `bae4915`, 2026-10-17 18:21:10 +0200. Nello stesso commit: D-18 (nessuna verita' condizionale per i metodi condizionali su GenBinaryY, scelta del PI in chat) e D-19 (regole tecniche: quantile z, copertura, MCSE con verita' per replicato, regola size-adjusted del v3, bootstrap per blocchi). Requisiti Morris toccati: E1, E2, E4, C2.
+
+Perimetro: insieme di righe v4 per D-15 (F1 e F2 per intero, `glmer_lrt` di L, M1c come scenario separato); denominatore D-11; usabilita' U0/U1/U2 (D-04); verita' D-12 e D-18; sensibilita' `glmer_bobyqa` (D-16); effetto di D-08 sul LRT (D-17). Il testo delle attese non e' stato modificato dopo i risultati.
+
+## 2. Esecuzione
+
+Tutto su lesexp-server, R 4.6.1, `Rscript --vanilla`, libreria `renv/library/linux-ubuntu-noble/R-4.6` con `rsimsum` 0.13.1 aggiunto in apertura (binario PPM). Nessuna simulazione: lo step legge i chunk e rigenera solo i disegni AR1 (stesso seme e RNGkind di D-07).
+
+| script | parte | durata | output principali |
+|---|---|---|---|
+| `R/s4/s4_q0.sh` | Q0 prima e dopo | pochi minuti (non cronometrato) | `reports/morris/S4_logs/S4_q0_{pre,post}.log` |
+| `R/s4/s4_load.R` | insieme di righe v4 (D-15), usabilita' U0/U1/U2, `glmer_bobyqa` | 110 s | `results_v4/S4/rows_v4.rds`, `lrt_v3_m3m5.rds`, `sims_s3.rds` |
+| `R/s4/s4_truth.R` | verita' AR1 per replicato (1.008.000), verita' di M1c GLMM-native, Q6 | 909 s, 45 core | `results_v4/S4/truth_ar1_rep.rds`, `tables/V4_S4_truth_by_cell.csv`, `V4_S4_truth_m1c_native.csv`, `V4_S4_ar1_generator_spec.csv`, `V4_S4_q6_truth_checks.csv` |
+| `R/postrun/agg_v4.R` | misure, MCSE, bootstrap per blocchi, Q1-Q2 | 12,7 min, 40 core | `tables/V4_perf_all.csv.gz`, `V4_perf_primary.csv`, `V4_S4_q1_q2.csv`, `results_v4/S4/boot_idx.rds` |
+| `R/s4/s4_checks.R` | Q3, Q4, Q5, Q7, Q8, Q9 | circa 2 min | `tables/V4_S4_q3_*.csv` ... `V4_S4_q9_*.csv`, `V4_S4_d08_*.csv` |
+| `R/s4/s4_tables.R` | tabelle di questo report | secondi | `reports/morris/S4_results.md`, `tables/V4_S4_expectations.csv` |
+
+```{r md5}
+f <- c("results_v4/S2/rows_timetrt.rds", "baseline/results_full_md5.txt", "baseline/results_v4_S3_md5.txt", "baseline/results_v4_S4_md5.txt",
+       "R/s4/s4_common.R", "R/s4/s4_load.R", "R/s4/s4_truth.R", "R/postrun/agg_v4.R", "R/s4/s4_checks.R", "R/s4/s4_tables.R",
+       "tables/V4_perf_all.csv.gz", "tables/V4_perf_primary.csv", "tables/V4_S4_truth_by_cell.csv")
+ruolo <- c("input (V-15)", "input, sola lettura", "input S3", "intermedi di S4 (non tracciati)", rep("codice eseguito", 6),
+           "output: tutte le combinazioni", "output: analisi primaria (U0, own)", "output: valori veri per cella")
+knitr::kable(data.table(file = f, ruolo = ruolo, md5 = vapply(f, m5, "")), row.names = FALSE)
+```
+
+**Correzioni durante lo step.** Tutte riguardano strumenti; nessuna ha cambiato un'attesa, una misura o una regola di D-19.
+
+1. `s4_truth.R`: una sostituzione con `sed` aveva lasciato `"\1"` (carattere ottale) al posto di `"\\1"` nell'estrazione del numero di scenario; il job si e' fermato su `set.seed(NA)` prima di produrre risultati. Corretto e rilanciato.
+2. `agg_v4.R`, prova su 3 design point: il conteggio dei duplicati raggruppava per una chiave che contiene la colonna `N` (numero di cluster) e il filtro `N > 1` leggeva quella invece del conteggio; con un nome esplicito i duplicati sono 0. Nella stessa prova il controllo Q1c guardava solo le righe `time:trt`: affiancata la versione "qualunque riga", che e' quella pre-registrata.
+3. `agg_v4.R`, primo run completo: 5 design point fallivano nel bootstrap perche' `apply(..., cumsum)` su una matrice a una colonna restituisce un vettore (celle con un solo replicato H1 usabile). Corretto con una funzione che conserva la forma; rilanciato per intero.
+4. `s4_load.R`: le righe `glmer_lrt` del v3 venivano messe da parte dopo aver rimosso le celle F1 e F2, quindi i gruppi "D-01 + D-08" e "D-02 + D-08" di Q8 erano vuoti. Spostata l'estrazione prima della rimozione e rigenerato: `rows_v4.rds` ha lo stesso md5 prima e dopo (`ca455b76895a3b8209a80dfa82aced82`, `S4_logs/S4_rows_md5_run{1,2}.txt`); cambia solo `lrt_v3_m3m5.rds`. Controlli rilanciati.
+5. `s4_tables.R`: `.libPaths()` mancante (lettura del `.gz`) e filtro delle righe di Q0 che includeva l'intestazione con la data.
+
+## 3. Esito
+
+{{< include S4_results.md >}}
+
+```{r fig-q7, fig.width = 7, fig.height = 3.2}
+P <- fread(file.path(TAB, "V4_perf_all.csv.gz"))
+q7 <- P[arm == "H1" & rej >= 0.05 & rej <= 0.95 & n_obs >= 100 & is.finite(boot_se_power_raw)]
+ggplot(q7, aes(boot_se_power_raw / mcse_rej)) + geom_histogram(bins = 80) + geom_vline(xintercept = c(0.9, 1.1), linetype = 2) +
+  labs(x = "bootstrap SE of raw power / binomial MCSE", y = "cell x method x U x set") + theme_bw()
+```
+
+*Cosa guardare*: la distribuzione del rapporto fra la SE bootstrap della potenza grezza e la MCSE binomiale, centrata su 1 e tutta dentro le linee al 10% (Q7). *Segnale d'errore*: un rapporto sistematicamente diverso da 1, che indicherebbe ricampionamenti sbagliati (indici non accoppiati fra H0 e H1, o chiavi degeneri non escluse). La stessa macchina produce la MCSE della potenza size-adjusted.
+
+```{r fig-d08, fig.width = 8, fig.height = 5.5}
+D8 <- fread(file.path(TAB, "V4_S4_d08_lrt_effect.csv"))[arm == "H0" & n_both > 0]
+D8[, pannello := paste(dgp, scen, sep = " ")]
+ggplot(D8, aes(N, d_rej, colour = factor(ntime))) + geom_hline(yintercept = 0) + geom_point(size = 1.1) +
+  facet_wrap(~ pannello, ncol = 4) + labs(x = "N (clusters)", y = "type I error, v4 LRT - v3 LRT (paired)", colour = "T") + theme_bw()
+```
+
+*Cosa guardare*: sotto H0 la differenza appaiata dell'errore di I tipo del LRT fra la versione con pendenze casuali (v4) e quella con sola intercetta (v3), per cella; i pannelli GenBinaryY e GLMM-AR1 M5 sommano D-01 o D-02 a D-08. *Segnale d'errore*: differenze diverse da zero in M1-M2 (dove il LRT non cambia: non compaiono qui perche' fuori dal confronto) o uno spostamento positivo, che contraddirebbe S3 (V-42: -0,046 in GenBinaryY M3-M4).
+
+```{r fig-bq, fig.width = 8, fig.height = 3.4}
+W <- P[usab == "U0" & set == "own" & arm == "H0" & method %in% c("glmer", "glmer_bobyqa") & n_obs >= 100 & scen != "M1c"]
+W <- dcast(W[, .(dgp, scen, N, ntime, method, rej)], dgp + scen + N + ntime ~ method, value.var = "rej")[is.finite(glmer) & is.finite(glmer_bobyqa)]
+ggplot(W, aes(glmer, glmer_bobyqa, colour = dgp)) + geom_abline(linetype = 2) + geom_point(size = 0.8, alpha = 0.7) +
+  facet_wrap(~ scen, nrow = 1) + coord_equal() + labs(x = "type I error, Wald glmer (default optimiser)", y = "Wald bobyqa (D-16)", colour = NULL) +
+  theme_bw() + theme(legend.position = "bottom")
+```
+
+*Cosa guardare*: in M1-M2 (sola intercetta casuale) i punti stanno sulla diagonale; in M3-M5 (pendenze casuali) se ne allontanano, soprattutto in GenBinaryY, nelle due direzioni. *Segnale d'errore*: punti lontani dalla diagonale anche in M1-M2, che indicherebbero righe `glmer_bobyqa` costruite male invece di una differenza fra ottimizzatori.
+
+### Come leggere le tabelle
+
+- **Tabella E.** Cosa guardare: la colonna "superato". *Segnale d'errore*: un "si" con un "osservato" che contraddice la tolleranza.
+- **E1.** Cosa guardare: tutte le coppie cella x metodo senza righe `time:trt` sono M3-M4 a T = 2 o M5 a T <= 3, con il solo errore di identificabilita' delle pendenze casuali; `shrink` manca dove `glmer` non converge mai. *Segnale d'errore*: una coppia in M1-M2 o a T >= 4 (M3-M4), oppure un motivo diverso.
+- **E2.** Cosa guardare: la caduta di U1 per `glmer`, `shrink` e `mmm` (warning frequenti), e `glmer_lrt` a 0,865 (era 0,997 nel v3) per le celle non stimabili. *Segnale d'errore*: U2 piu' basso di U1, impossibile per costruzione.
+- **E3.** Cosa guardare: la MCSE mediana dell'I tipo (0,0077) vicina al valore atteso con 1.000 replicati (0,0069, protocollo sez. 6). *Segnale d'errore*: MCSE nulle dove n_obs > 0 e la misura non e' 0 o 1.
+- **E4.** Cosa guardare: la verita' marginale di M1c in GLMM-native (0,191-0,198 sotto H1; 0,00057 sotto H0, non 0) da dichiarare in S7 come per M1-M5 (D-12).
+- **E6.** Cosa guardare: segno negativo in tutte le righe; d usabile di circa -1/6 in M3-M4 e -1/3 in M5, cioe' le colonne T = 2 (e T = 3) perse. *Segnale d'errore*: d usabile negativo anche a T >= 4.
+- **E7.** Cosa guardare: medie quasi uguali ma molte celle con differenze oltre 2 MCSE (z non appaiato, quindi conservativo). *Segnale d'errore*: differenze in M1-M2.
+
+### Attese non superate (D-20)
+
+- **Q1c** (ogni cella con righe per tutti gli 8 metodi primari): 342 celle su 3.024 senza righe `time:trt` per `glmer`, `glmer_lrt` e `shrink` (1.026 coppie, E1). Causa: con pendenze casuali il GLMM non e' identificabile in M3-M4 a T = 2 e in M5 a T <= 3 (lme4: "number of observations < number of random effects"); `glmer` e `glmer_lrt` lasciano solo righe di fallimento, e `shrink` non ha righe perche' nasce da un `glmer` convergente (S2, Q2.2). L'attesa presupponeva una riga per ogni metodo in ogni cella. Nell'aggregazione queste celle hanno n_obs = 0 e quota usabile 0, come devono.
+- **Q8** (ogni cella del blocco L con replicati appaiati v4/v3): 1.021/1.248. Le 227 celle senza coppie sono tutte celle in cui il LRT v4 non e' mai usabile e tutte compaiono nella lista di Q1c (`S4_logs/S4_q8_cells_without_pairs.csv`): stessa causa.
+- **Q5b** (MSE = bias^2 + SE empirico^2 (n - 1)/n): vale entro 2,1e-13 con verita' costante (111.472 combinazioni), non con la verita' AR1 per replicato (10.052 su 10.580 oltre 1e-12). Con una verita' che cambia per replicato l'identita' corretta usa la varianza di (stima - vero), non quella della stima: l'attesa era formulata senza tenerne conto. Il valore dell'MSE e' confermato da `rsimsum` anche sulle combinazioni con verita' per replicato (Q5a).
+
+## 4. Controprova
+
+Il test che smentirebbe lo step e' Q3 insieme a Q5a. Se l'insieme di righe, il filtro di usabilita' o il denominatore fossero sbagliati, l'aggregatore non riprodurrebbe le tabelle del v3 nelle righe non toccate da S3: 12.395/12.395 righe di `O_level_all` e 13.144/13.144 di `O_coverage_all`, con n identico e differenza massima 1,1e-15. Se una formula di Morris fosse codificata male, `rsimsum`, scritto da altri e con selezione dei replicati rifatta in modo indipendente, darebbe valori diversi: 17 misure e MCSE su 300 combinazioni, differenza massima 4,4e-13. Q4 aggiunge la riproduzione delle tre definizioni di usabilita' di S2 (17.725/17.725).
+
+## Verdetto
+
+**Chiuso.** Tabelle `V4_perf_*` complete (163.296 righe, Q1d), con insieme di righe v4 conforme a D-15 (Q1a, Q1b), denominatori di D-11 (Q2), riproduzione esatta del v3 e di S2 nelle parti invariate (Q3, Q4), formule e MCSE verificate in modo indipendente (Q5a), valori veri verificati (Q6), bootstrap verificato (Q7). Le tre attese non superate (Q1c, Q5b, Q8) erano formulate male; la causa e' documentata e il PI ha deciso in chat di registrarle come tali (D-20), senza nuovi calcoli.
+
+Requisiti Morris aggiornati in `docs/audit/MORRIS2019_conformita.csv`: E1 calcolato (tutte le misure dichiarate con MCSE; il reporting si chiude in S6-S7), E2 calcolato (U0/U1/U2 per cella e metodo), C2 applicato (verita' per estimando, D-18), E4 avanzato (MCSE bootstrap della potenza size-adjusted; rango, worst case e Spearman in S5).

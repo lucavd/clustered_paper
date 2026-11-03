@@ -1,0 +1,44 @@
+D-82: interval of the test$ui switched off on 9711 of 9711 constant-outcome rows
+D-82: copula GEE exchangeable FG$use switched off on 1367 of 1378 constant-outcome rows
+A: 4752000 replicates, 4752 point-arms; B: 480000 replicates, 480 points, 8 clearly above
+    label points match_file assessed_i  hi_t  lo_t  hi_i  lo_i hi_fin lo_fin
+   <char>  <int>      <int>      <int> <int> <int> <int> <int>  <int>  <int>
+1: manual   2376       2376       2376     0     0     0   112      0     33
+2:   mmlb   2376       2376       2376     0     0     0    97      0     24
+   hi_i_unbnc lo_i_unbnc mean_cov_t mean_cov_i mean_cov_fin
+        <int>      <int>      <num>      <num>        <num>
+1:       1096          0   94.55572   95.14631     95.43444
+2:       1095          0   94.50126   95.07275     95.38592
+    label points    T2    T3 N_le25 median_share_unb min_share_unb
+   <char>  <int> <int> <int>  <int>            <num>         <num>
+1: manual    112   102    10    101         97.37780      87.40157
+2:   mmlb     97    90     7     90         97.41176      85.82202
+   max_share_unb pooled_share_unb pooled_cov_i pooled_cov_fin pooled_cov_t
+           <num>            <num>        <num>          <num>        <num>
+1:     100.00000         95.80442     99.47605       98.86899     94.91872
+2:      99.75124         95.77832     99.50916       98.79913     94.84974
+   still_lo_if_unb_not_cover hi_if_unb_not_cover lo_fin  lo_t
+                       <int>               <int>  <int> <int>
+1:                         0                 112      0     0
+2:                         0                  97      0     0
+Key: <scen, N, ntime>
+     scen     N ntime        dgp    nd     n     k      rate     hi     lo
+   <char> <int> <int>     <char> <int> <int> <int>     <num> <lgcl> <lgcl>
+1:     M1    10     3 Copula-AR1   992   293    33 11.262799   TRUE  FALSE
+2:     M1    10     4 Copula-AR1   997   447    49 10.961969   TRUE  FALSE
+3:     M1    10     6 Copula-AR1   998   722    70  9.695291   TRUE  FALSE
+4:     M1    15     4 Copula-AR1  1000   653    66 10.107198   TRUE  FALSE
+5:     M1    20     4 Copula-AR1  1000   807    78  9.665428   TRUE  FALSE
+6:     M1    25     4 Copula-AR1  1000   896    86  9.598214   TRUE  FALSE
+7:     M3    15     4 Copula-AR1  1000   676    67  9.911243   TRUE  FALSE
+8:     M4    15     4 Copula-AR1  1000   748    72  9.625668   TRUE  FALSE
+     f_n    f_rate   f_hi
+   <int>     <num> <lgcl>
+1:   293 11.262799   TRUE
+2:   447 10.961969   TRUE
+3:   722  9.695291   TRUE
+4:   653 10.107198   TRUE
+5:   807  9.665428   TRUE
+6:   896  9.598214   TRUE
+7:   676  9.911243   TRUE
+8:   748  9.625668   TRUE

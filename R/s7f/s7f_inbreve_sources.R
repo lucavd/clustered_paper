@@ -1,0 +1,47 @@
+# s7f_inbreve_sources.R -- S7f: every number of the "In breve" summary read back from its file (rule 1 of the protocol).
+# Output: tables/V5_S7f_inbreve_sources.csv (sentence, file, row, value). Fails if a value differs from the one written.
+.libPaths(c(path.expand("~/MMM/renv/library/linux-ubuntu-noble/R-4.6/x86_64-pc-linux-gnu"), .libPaths()))
+suppressMessages(library(data.table)); setwd(path.expand("~/MMM"))
+T4 <- fread("tables/V5_S7f_table4.csv"); HB <- fread("tables/V5_S7f_h2h_boot.csv"); EX <- fread("tables/V5_S7f_extra.csv")
+R7 <- fread("tables/V4_S7e_rule.csv")[grepl("all four", set)]; FC <- fread("tables/V5_S7f_fewclust_condition.csv")
+T2 <- fread("tables/V5_S7f_table2_recompute.csv"); T3 <- fread("tables/V5_S7f_table3_recompute.csv"); T5 <- fread("tables/V5_S7f_table5_recompute.csv")
+PF <- readLines("reports/morris/S7f_logs/S7f_PF1PF2.log"); G3 <- readLines("reports/morris/S7f_logs/S7f_GF3a.log")
+hb <- function(r, q, col = "est") HB[region == r & q == q, ][[col]][1]
+hbq <- function(r, qq, col = "est") HB[region == r & q == qq][[col]][1]
+ex <- function(k) as.numeric(EX[key == k, value])
+L <- list()
+add <- function(sentence, file, row, value, written) { L[[length(L) + 1]] <<- data.table(sentence, file, row, value = as.character(value), written = as.character(written)) }
+add("1. nessuna delle due supera mai chiaramente 7,5% (GEE)", "tables/V5_S7f_table4.csv", "strategy=gee_ar1_fg, hi_all", T4[strategy=="gee_ar1_fg", hi_all], 0)
+add("1. nessuna delle due supera mai chiaramente 7,5% (MMM)", "tables/V5_S7f_table4.csv", "strategy=mmm_cc, hi_all", T4[strategy=="mmm_cc", hi_all], 0)
+add("1. 2.376 situazioni", "tables/V5_S7f_table4.csv", "strategy=gee_ar1_fg, n_dp", T4[strategy=="gee_ar1_fg", n_dp], 2376)
+add("1. GEE risponde nel 92%", "tables/V5_S7f_table4.csv", "strategy=gee_ar1_fg, pu", round(T4[strategy=="gee_ar1_fg", pu]), 92)
+add("1. MMM risponde nel 91%", "tables/V5_S7f_table4.csv", "strategy=mmm_cc, pu", round(T4[strategy=="mmm_cc", pu]), 91)
+add("1. differenza di usabilita' sotto la soglia (2,5 punti)", "tables/V5_S7f_h2h_boot.csv", "region=all, q=pu_gee_minus_mmm, class", hbq("all","pu_gee_minus_mmm","class"), "similar")
+add("1. a 10 cluster con 3+ occasioni: MMM 2,1 falsi positivi su 100", "tables/V5_S7f_h2h_boot.csv", "region=N10_T3p, q=rate_mmm", round(hbq("N10_T3p","rate_mmm"), 1), 2.1)
+add("1. a 10 cluster con 3+ occasioni: GEE 4,0", "tables/V5_S7f_h2h_boot.csv", "region=N10_T3p, q=rate_gee", round(hbq("N10_T3p","rate_gee"), 1), 4)
+add("1. a 10 cluster con 3+ occasioni la differenza e' oltre la soglia, a favore della GEE", "tables/V5_S7f_h2h_boot.csv", "region=N10_T3p, q=mad_gee_minus_mmm, class", hbq("N10_T3p","mad_gee_minus_mmm","class"), "GEE")
+add("2. distanza media dal 5%: 1,1 punti (GEE)", "tables/V5_S7f_h2h_boot.csv", "region=all, q=mad_gee", round(hbq("all","mad_gee"), 1), 1.1)
+add("2. distanza media dal 5%: 1,1 punti (MMM)", "tables/V5_S7f_h2h_boot.csv", "region=all, q=mad_mmm", round(hbq("all","mad_mmm"), 1), 1.1)
+add("2. con 2 occasioni e almeno 15 cluster: circa un punto, a cavallo della soglia", "tables/V5_S7f_h2h_boot.csv", "region=N15p_T2, q=mad_gee_minus_mmm, est / class", paste(round(hbq("N15p_T2","mad_gee_minus_mmm"), 1), hbq("N15p_T2","mad_gee_minus_mmm","class")), "1 about the margin")
+add("2. li' la GEE e' conservativa: 2,5 falsi positivi su 100", "tables/V5_S7f_h2h_boot.csv", "region=N15p_T2, q=rate_gee", round(hbq("N15p_T2","rate_gee"), 1), 2.5)
+cl <- HB[grepl("^map", region) & q == "mad_gee_minus_mmm", .(region, class)]
+add("2. Figura 1 a: 'GEE' solo a 10 cluster con 3 e con 4+ occasioni", "tables/V5_S7f_h2h_boot.csv", "region=map|*, q=mad_gee_minus_mmm, class in (GEE, MMM)", paste(cl[class %in% c("GEE","MMM"), paste0(region, ":", class)], collapse = "; "), "map|10|3:GEE; map|10|4+:GEE")
+add("3. modello misto sopra 7,5% sul suo stesso meccanismo: 55 situazioni", "tables/V5_S7f_extra.csv", "key=glmer_hi_native", ex("glmer_hi_native"), 55)
+add("3. ... su 696", "tables/V5_S7f_extra.csv", "key=glmer_ndp_native", ex("glmer_ndp_native"), 696)
+add("3. test a inversione di segno con 2-3 visite e fino a 25 soggetti: effetto trovato in circa 4 dataset su 100", "tables/V5_S7f_extra.csv", "key=flip_upow_small", round(ex("flip_upow_small")), 4)
+add("3. 'chiaramente sotto 2,5%' prima: GEE 136", "tables/V4_S7e_rule.csv", "set=all four mechanisms, strategy=gee_ar1_fg, n_lo", R7[strategy=="gee_ar1_fg", n_lo], 136)
+add("3. 'chiaramente sotto 2,5%' prima: MMM 86", "tables/V4_S7e_rule.csv", "set=all four mechanisms, strategy=mmm_cc, n_lo", R7[strategy=="mmm_cc", n_lo], 86)
+add("3. con intervalli esatti: GEE 116", "tables/V5_S7f_table4.csv", "strategy=gee_ar1_fg, lo_all", T4[strategy=="gee_ar1_fg", lo_all], 116)
+add("3. con intervalli esatti: MMM 24", "tables/V5_S7f_table4.csv", "strategy=mmm_cc, lo_all", T4[strategy=="mmm_cc", lo_all], 24)
+mx <- max(abs(c(T2$diff, T3$est - T3$pu, T5$est - T5$recomp)), na.rm = TRUE)
+add("4. Tabelle 2, 3 e 5 ricostruite coincidono (differenza massima sotto 1e-12)", "tables/V5_S7f_table{2,3,5}_recompute.csv", "max |stampato - ricalcolato| sulle celle con righe", signif(mx, 2), "< 1e-12")
+add("4. celle confrontate (72 + 96 + 48)", "tables/V5_S7f_table{2,3,5}_recompute.csv", "righe", nrow(T2) + nrow(T3) + nrow(T5), 216)
+add("4. numeri del manoscritto riletti: 2.297, nessuno discordante", "reports/morris/S7f_logs/S7f_GF3a.log", "riga GF3a", G3[grepl("^GF3a:", G3)][1], "GF3a: 2297 numbers, 48 source files, 0 discordances")
+add("5. 8.858 parole", "reports/morris/S7f_logs/S7f_PF1PF2.log", "riga P1", PF[grepl("^P1", PF)][1], "P1: words 7458 + 200 x 7 display items = 8858")
+add("5. abstract 200 parole", "reports/morris/S7f_logs/S7f_PF1PF2.log", "riga abstract", PF[grepl("^abstract", PF)][1], "abstract words 200")
+add("Comunque: fewclust registrato sceglie il modello marginalizzato (dati del pacchetto)", "tables/V5_S7f_fewclust_condition.csv", "dataset=fc_trial, chosen", FC[dataset=="fc_trial", chosen], "mmm")
+add("Comunque: fewclust registrato sceglie il modello marginalizzato (25 soggetti, 4 visite)", "tables/V5_S7f_fewclust_condition.csv", "dataset=simulated, chosen", FC[grepl("simulated", dataset), chosen], "mmm")
+D <- rbindlist(L)
+D[, ok := value == written | (written == "< 1e-12" & as.numeric(value) < 1e-12)]
+fwrite(D, "tables/V5_S7f_inbreve_sources.csv")
+cat("sources", nrow(D), "ok", sum(D$ok), "\n"); if (!all(D$ok)) { print(D[ok == FALSE]); quit(status = 1) }

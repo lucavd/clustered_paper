@@ -1,0 +1,92 @@
+############ DIAGNOSI DEL MIO ERRORE: il round-trip x100 / /100 ############
+celle > 0.999 forma DIRETTA : 608 
+celle > 0.999 forma x100/100: 638 
+celle che CAMBIANO bin fra le due forme: 30 
+
+le celle incriminate (prime 8), con 17 cifre significative:
+Key: <key>
+                 key              direct              pct100 eq_direct gt_pct
+              <char>              <char>              <char>    <lgcl> <lgcl>
+1:   GLMM-AR1 2 45 6 0.99900000000000000 0.99900000000000011      TRUE   TRUE
+2:  GLMM-AR1 3 55 10 0.99900000000000000 0.99900000000000011      TRUE   TRUE
+3:  GLMM-AR1 3 75 10 0.99900000000000000 0.99900000000000011      TRUE   TRUE
+4:   GLMM-AR1 3 95 3 0.99900000000000000 0.99900000000000011      TRUE   TRUE
+5: GLMM-AR1 4 105 10 0.99900000000000000 0.99900000000000011      TRUE   TRUE
+6: GLMM-AR1 4 135 10 0.99900000000000000 0.99900000000000011      TRUE   TRUE
+7:   GLMM-AR1 4 35 8 0.99900000000000000 0.99900000000000011      TRUE   TRUE
+8:  GLMM-AR1 5 145 3 0.99900000000000000 0.99900000000000011      TRUE   TRUE
+
+verifica algebrica: 0.999 rappresentato in doppia precisione
+  0.999            = 0.99900000000000000
+  mean(c(99.9)*)/100 puo' dare 0.99900000000000011
+  identico a 0.999? FALSE
+  differenza = 1.110e-16
+
+CONCLUSIONE: le celle con proporzione ESATTAMENTE 0.999 (una replica non usabile
+su 1000, per tutti e cinque i metodi in media) cadono nel 4o bin con right=TRUE,
+ma il round-trip x100 poi /100 le porta a 0.999+1e-16, spingendole nel 5o bin.
+celle con pu5 esattamente == 0.999 (forma diretta): 30 
+638 - 608 = 30  celle spostate; 502 + 30 = 532 
+
+############ CONTEGGI DEFINITIVI (forma diretta, corretta) ############
+denominatore n_attempt  -> 83/100/147/502/608
+denominatore 1000       -> 83/100/147/502/608
+
+############ MCSE per le celle di tabella (punto 6 del discriminatore) ############
+MCSE del tasso per (metodo,N) aggregato sugli scenari: mediana 0.1571064  range 0.1226429 - 0.2995445 
+
+MCSE della riga pooled di 3.1 per metodo/dgp:
+Key: <method>
+      method GLMM-AR1 GLMM-native GenBinaryY
+      <char>    <num>       <num>      <num>
+1:       gee   0.0397      0.0394     0.0411
+2:    gee_fg   0.0338      0.0337     0.0353
+3:    gee_kc   0.0465      0.0459     0.0509
+4:    gee_md   0.0345      0.0343     0.0360
+5:     glmer   0.0396      0.0389     0.0450
+6: glmer_lrt   0.0395      0.0380     0.0454
+7:       mmm   0.0371      0.0365     0.0378
+8:    shrink   0.0404      0.0396     0.0462
+
+MCSE della coverage pooled di 3.15 per metodo/dgp:
+Key: <method>
+      method GLMM-AR1 GLMM-native GenBinaryY
+      <char>    <num>       <num>      <num>
+1:       gee   0.0392      0.0393     0.0406
+2:    gee_fg   0.0330      0.0332     0.0342
+3:    gee_kc   0.0473      0.0470     0.0517
+4:    gee_md   0.0338      0.0339     0.0351
+5:     glmer   0.0426      0.0406     0.0517
+6: glmer_lrt   0.0394      0.0373     0.0469
+7:       mmm   0.0380      0.0379     0.0383
+8:    shrink   0.0416      0.0407     0.0477
+
+repliche per cella della tabella 3.15 (n_cov aggregato):
+Key: <method>
+      method GLMM-AR1 GLMM-native GenBinaryY
+      <char>    <int>       <int>      <int>
+1:       gee   452720      453507     451503
+2:    gee_fg   444294      445757     441094
+3:    gee_kc   444055      445493     440837
+4:    gee_md   443999      445447     440856
+5:     glmer   391773      392903     385639
+6: glmer_lrt   478763      478911     478399
+7:       mmm   437150      438541     434232
+8:    shrink   395564      396454     393292
+
+MCSE dell'estimabilita' di 3.8 (proporzione su ~96.000-144.000 tentativi):
+Key: <slope, ntime>
+    slope ntime gee_fg  glmer glmer_lrt    mmm  shrink
+   <char> <int>  <num>  <num>     <num>  <num>   <num>
+1:   M1M2     2 0.1437 0.1498    0.0330 0.1503 0.14145
+2:   M1M2     3 0.1037 0.1056    0.0193 0.1081 0.10142
+3:   M3M5     2 0.1167 0.0012    0.0263 0.1233 0.00334
+4:   M3M5     3 0.0842 0.1306    0.0159 0.0892 0.12949
+
+repliche: attempts per cella di 3.8:
+    slope ntime     a
+   <char> <int> <int>
+1:   M1M2    10 95988
+2:   M1M2     2 95814
+3:   M1M2     3 95946
+4:   M1M2     4 95976

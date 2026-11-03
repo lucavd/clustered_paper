@@ -1,0 +1,10 @@
+key,value,reference,note
+k11_reviewed,100,[11],trials reviewed
+k11_reported,99,[11],trials reporting the number of clusters
+k11_median,25,[11],median clusters
+k11_q1,15,[11],lower quartile
+k11_q3,44,[11],upper quartile
+k12_pct,45,[12],% stepped-wedge trials with fewer than ten clusters
+k9_size,4,[9],"observations per cluster, smallest"
+k8_size,150,[8],"mean cluster size, largest"
+k6_coef,4,[6],random regression coefficients generated

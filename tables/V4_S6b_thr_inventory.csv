@@ -1,0 +1,8 @@
+item,n
+usable MMM fits of M3-M5,1685204
+"converged, 1e-4 <= min exp(a_k) < 1e-3 (back to the study fit with 1e-4)",21879
+"converged, 1e-3 <= min exp(a_k) < 1e-2 (fit without slope needed with 1e-2)",19962
+  of which the fit without slope is usable,19862
+"fit without slope used, threshold 1e-4",1117930
+"fit without slope used, threshold 1e-3",1139699
+"fit without slope used, threshold 1e-2",1159561

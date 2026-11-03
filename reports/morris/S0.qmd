@@ -1,0 +1,64 @@
+---
+title: "S0: baseline sul server e protocollo di sessione"
+subtitle: "Roadmap Morris 2019, ramo morris-v4"
+date: 2026-10-15
+format:
+  html:
+    embed-resources: true
+    toc: true
+lang: it
+---
+
+## In breve (TL;DR) {.unnumbered}
+
+::: {.callout-note appearance="simple"}
+**Domanda.** Prima di correggere qualunque cosa: il punto di partenza e' integro e documentato?
+
+**Cosa abbiamo fatto.** Aperto il ramo `morris-v4` sul server e registrato l'impronta (md5) di tutti i 28.800 file di risultati grezzi, delle 34 tabelle e del manoscritto.
+
+**Risultato.** 5 attese su 5 rispettate. Nessun file grezzo e' alterato (28.800/28.800) e il manoscritto sul server e' identico a quello del Mac.
+
+**Cosa cambia per il paper.** Nessun numero. Da qui in poi possiamo dimostrare che i dati originali non vengono toccati.
+
+**Prossimo passo.** S1: scrivere e datare il protocollo prima di rifare qualsiasi calcolo.
+:::
+
+## 1. Pre-registrazione
+
+Attese scritte prima del run (`docs/sessions/2026-10-15_S0.md`):
+
+| # | attesa | tolleranza |
+|---|---|---|
+| A1 | `results_full/` contiene 28.800 chunk | esatta |
+| A2 | `md5sum -c` sul manifest: tutti OK | 0 errori |
+| A3 | md5 del manoscritto sul server = md5 sul Mac | identici |
+| A4 | `O_level_all.csv` e `O_coverage_all.csv` presenti con md5 | presenti |
+| A5 | `morris-v4` pubblicato, `main` invariato | |
+
+## 2. Esecuzione
+
+- Ramo `morris-v4` da `5a22e67`; `origin/main` = `9b6cb68`; `main` avanti 8 e indietro 27 (non toccato, D-00).
+- Manifest: `baseline/results_full_md5.txt` (28800 righe, md5 del file `cb9cfde75e4a62de2ac4aa5a2996cb7a`), `baseline/tables_md5.txt` (34 tabelle), `baseline/rev2_large_md5.txt` (19 file oltre 1 MB, fuori da git), `baseline/manuscript_md5.txt`.
+- R 4.6.1, Quarto 1.6.42.
+
+## 3. Esito
+
+| # | osservato | esito |
+|---|---|---|
+| A1 | 28800 chunk | superato |
+| A2 | 28800 OK, 0 falliti | superato |
+| A3 | md `3ca4ae440dfb4c8a4078b2aa93da0380`, docx `ff59b812b6079df18b23e6f3513fe9aa`, log `75e7a49b86cded1f9845f9017c7ed52a` | superato |
+| A4 | `O_level_all.csv` `b4d6bb87f498efe17f83210dc10a91d4`; `O_coverage_all.csv` `e39bc13bd2ed7d4d6f628f02ba166004` | superato |
+| A5 | push di `morris-v4` nel commit di chiusura; `main` resta a `5a22e67` | vedi il messaggio di commit |
+
+Md5 del manoscritto sul Mac: md `3ca4ae440dfb4c8a4078b2aa93da0380`, docx `ff59b812b6079df18b23e6f3513fe9aa`, log `75e7a49b86cded1f9845f9017c7ed52a`.
+
+## 4. Controprova
+
+`md5sum -c baseline/results_full_md5.txt`, eseguito dopo la scrittura dei manifest e prima del commit, rilegge tutti i 28.800 file. Se anche un solo chunk fosse stato modificato o troncato durante la copia del manoscritto o l'aggiornamento di `.gitignore`, il conteggio OK sarebbe minore di 28.800.
+
+## Verdetto
+
+Chiuso. Requisiti Morris toccati: H5 (base per la disponibilita del codice: ramo pubblico con manifest) e H6 (protocollo di sessione e registro delle decisioni pronti per il protocollo datato di S1). Restano entrambi *Parziali* fino a S1 e S7.
+
+Decisioni aperte prima di S3: D-01 ... D-06 (vedi `DECISIONS.md`).

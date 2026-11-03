@@ -1,0 +1,13 @@
+what,reason,N
+no interval,|estimate| >= 10,246464
+no interval,not computed,9711
+no interval,full fit diverged,705
+no interval,full fit failed,59
+test at truth not usable,score numerically zero,155174
+test at truth not usable,information singular,779
+test at truth not usable,reduced fit diverged,613
+test at truth not usable,reduced fit failed,84
+test at truth not usable,zero score variance,11
+interval not finite,both unbounded,277386
+interval not finite,upper unbounded,267890
+interval not finite,lower unbounded,212968

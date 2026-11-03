@@ -1,0 +1,21 @@
+D-90: V$U0 switched off on 210211 of 255407 rows of the MMM with the check on a no-result key
+D-90: V$U1 switched off on 199337 of 255407 rows of the MMM with the check on a no-result key
+D-90: V$U2 switched off on 210211 of 255407 rows of the MMM with the check on a no-result key
+   method   scen  label     N
+   <char> <char> <char> <int>
+1:    mmm     M3 manual 15035
+2:    mmm     M3   mmlb 13625
+3:    mmm     M4 manual 31626
+4:    mmm     M4   mmlb 31307
+5:    mmm     M5 manual 61489
+6:    mmm     M5   mmlb 57129
+                                check    value
+                               <char>   <char>
+1:                    U0 switched off   210211
+2:                    U1 switched off   199337
+3:                    U2 switched off   210211
+4:                       rows changed   210211
+5:                    columns changed U0 U1 U2
+6: changed rows all mmm M3-M5 on keys        1
+7:                               rows 26416021
+variant cv rows written: 26416021 

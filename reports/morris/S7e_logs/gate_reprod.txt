@@ -1,0 +1,1276 @@
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.098612  -18.467456  -18.467456   36.647230 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.098612  -18.467456  -18.467456   36.647230 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.098612  -18.467456  -18.467456   36.647230 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.098612  -18.467456  -18.467456   36.647230 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.098612  -18.467456  -18.467456   36.647230 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.098612  -18.467456  -18.467456   36.647230 
+  (Intercept) time trt time:trt
+1           1    0   0        0
+2           1    1   0        0
+3           1    0   0        0
+4           1    1   0        0
+5           1    0   0        0
+6           1    0   0        0
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+  (Intercept) time trt time:trt
+1           1    0   0        0
+2           1    1   0        0
+3           1    0   0        0
+4           1    1   0        0
+5           1    0   0        0
+6           1    0   0        0
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+  (Intercept) time trt time:trt
+1           1    0   0        0
+2           1    1   0        0
+3           1    0   0        0
+4           1    1   0        0
+5           1    0   0        0
+6           1    0   0        0
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+  (Intercept) time trt time:trt
+1           1    0   0        0
+2           1    1   0        0
+3           1    0   0        0
+4           1    1   0        0
+5           1    0   0        0
+6           1    0   0        0
+boundary (singular) fit: see help('isSingular')
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.6094379   0.2231436 -17.9566306  -0.2231436 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.6094379   0.2231436 -17.9566306  -0.2231436 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.6094379   0.2231436 -17.9566306  -0.2231436 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.6094379   0.2231436 -17.9566306  -0.2231436 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.6094379   0.2231436 -17.9566306  -0.2231436 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.6094379   0.2231436 -17.9566306  -0.2231436 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.6094379   0.9162907 -16.9566306  17.6497778 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.6094379   0.9162907 -16.9566306  17.6497778 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.6094379   0.9162907 -16.9566306  17.6497778 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.6094379   0.9162907 -16.9566306  17.6497778 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.6094379   0.9162907 -16.9566306  17.6497778 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.6094379   0.9162907 -16.9566306  17.6497778 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.098612  -18.467456  -18.467456   36.934912 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.098612  -18.467456  -18.467456   36.934912 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.098612  -18.467456  -18.467456   36.934912 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.098612  -18.467456  -18.467456   36.934912 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.098612  -18.467456  -18.467456   36.934912 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.098612  -18.467456  -18.467456   36.934912 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123   0.4054651  -0.5108256 -17.3620957 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123   0.4054651  -0.5108256 -17.3620957 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123   0.4054651  -0.5108256 -17.3620957 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123   0.4054651  -0.5108256 -17.3620957 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123   0.4054651  -0.5108256 -17.3620957 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123   0.4054651  -0.5108256 -17.3620957 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01  4.570092e-15  4.686317e-15 -4.686317e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01  4.570092e-15  4.686317e-15 -4.686317e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01  4.570092e-15  4.686317e-15 -4.686317e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01  4.570092e-15  4.686317e-15 -4.686317e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01  4.570092e-15  4.686317e-15 -4.686317e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01  4.570092e-15  4.686317e-15 -4.686317e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  1.049148e-12  2.448561e-11  2.017977e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  1.049148e-12  2.448561e-11  2.017977e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  1.049148e-12  2.448561e-11  2.017977e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  1.049148e-12  2.448561e-11  2.017977e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  1.049148e-12  2.448561e-11  2.017977e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  1.049148e-12  2.448561e-11  2.017977e+01 
+boundary (singular) fit: see help('isSingular')
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01 -5.007654e-14 -4.695411e-12  2.056607e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01 -5.007654e-14 -4.695411e-12  2.056607e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01 -5.007654e-14 -4.695411e-12  2.056607e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01 -5.007654e-14 -4.695411e-12  2.056607e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01 -5.007654e-14 -4.695411e-12  2.056607e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01 -5.007654e-14 -4.695411e-12  2.056607e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01 -2.160872e-15 -2.160872e-15  2.160872e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01 -2.160872e-15 -2.160872e-15  2.160872e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01 -2.160872e-15 -2.160872e-15  2.160872e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01 -2.160872e-15 -2.160872e-15  2.160872e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01 -2.160872e-15 -2.160872e-15  2.160872e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01 -2.160872e-15 -2.160872e-15  2.160872e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.609438    1.609438  -17.956631   -1.609438 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.609438    1.609438  -17.956631   -1.609438 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.609438    1.609438  -17.956631   -1.609438 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.609438    1.609438  -17.956631   -1.609438 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.609438    1.609438  -17.956631   -1.609438 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.609438    1.609438  -17.956631   -1.609438 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01 -1.174808e-30  4.095168e-15 -4.095168e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01 -1.174808e-30  4.095168e-15 -4.095168e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01 -1.174808e-30  4.095168e-15 -4.095168e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01 -1.174808e-30  4.095168e-15 -4.095168e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01 -1.174808e-30  4.095168e-15 -4.095168e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01 -1.174808e-30  4.095168e-15 -4.095168e-15 
+  (Intercept) time trt time:trt
+1           1    0   0        0
+2           1    1   0        0
+3           1    0   0        0
+4           1    1   0        0
+5           1    0   1        0
+6           1    0   0        0
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+  (Intercept) time trt time:trt
+1           1    0   0        0
+2           1    1   0        0
+3           1    0   0        0
+4           1    1   0        0
+5           1    0   1        0
+6           1    0   0        0
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+  (Intercept) time trt time:trt
+1           1    0   0        0
+2           1    1   0        0
+3           1    0   0        0
+4           1    1   0        0
+5           1    0   1        0
+6           1    0   0        0
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+  (Intercept) time trt time:trt
+1           1    0   0        0
+2           1    1   0        0
+3           1    0   0        0
+4           1    1   0        0
+5           1    0   1        0
+6           1    0   0        0
+  (Intercept) time trt time:trt
+1           1    0   0        0
+2           1    0   1        0
+3           1    1   1        1
+4           1    0   1        0
+5           1    1   1        1
+6           1    0   1        0
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+  (Intercept) time trt time:trt
+1           1    0   0        0
+2           1    0   1        0
+3           1    1   1        1
+4           1    0   1        0
+5           1    1   1        1
+6           1    0   1        0
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+  (Intercept) time trt time:trt
+1           1    0   0        0
+2           1    0   1        0
+3           1    1   1        1
+4           1    0   1        0
+5           1    1   1        1
+6           1    0   1        0
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+  (Intercept) time trt time:trt
+1           1    0   0        0
+2           1    0   1        0
+3           1    1   1        1
+4           1    0   1        0
+5           1    1   1        1
+6           1    0   1        0
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01  1.307557e-16  8.059901e-15 -8.190657e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01  1.307557e-16  8.059901e-15 -8.190657e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01  1.307557e-16  8.059901e-15 -8.190657e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01  1.307557e-16  8.059901e-15 -8.190657e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01  1.307557e-16  8.059901e-15 -8.190657e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01  1.307557e-16  8.059901e-15 -8.190657e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-1.956607e+01 -5.192084e-09  1.795663e+01  1.203973e+00 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-1.956607e+01 -5.192084e-09  1.795663e+01  1.203973e+00 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-1.956607e+01 -5.192084e-09  1.795663e+01  1.203973e+00 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-1.956607e+01 -5.192084e-09  1.795663e+01  1.203973e+00 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-1.956607e+01 -5.192084e-09  1.795663e+01  1.203973e+00 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-1.956607e+01 -5.192084e-09  1.795663e+01  1.203973e+00 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.791759    1.386294    1.098612  -18.259216 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.791759    1.386294    1.098612  -18.259216 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.791759    1.386294    1.098612  -18.259216 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.791759    1.386294    1.098612  -18.259216 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.791759    1.386294    1.098612  -18.259216 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.791759    1.386294    1.098612  -18.259216 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-1.386294e+00 -1.717977e+01 -6.794753e-17  1.717977e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-1.386294e+00 -1.717977e+01 -6.794753e-17  1.717977e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-1.386294e+00 -1.717977e+01 -6.794753e-17  1.717977e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-1.386294e+00 -1.717977e+01 -6.794753e-17  1.717977e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-1.386294e+00 -1.717977e+01 -6.794753e-17  1.717977e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-1.386294e+00 -1.717977e+01 -6.794753e-17  1.717977e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -19.56607    18.46746    19.56607   -38.03352 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -19.56607    18.46746    19.56607   -38.03352 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -19.56607    18.46746    19.56607   -38.03352 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -19.56607    18.46746    19.56607   -38.03352 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -19.56607    18.46746    19.56607   -38.03352 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -19.56607    18.46746    19.56607   -38.03352 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123 -17.4674562   0.4054651  18.5660685 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123 -17.4674562   0.4054651  18.5660685 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123 -17.4674562   0.4054651  18.5660685 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123 -17.4674562   0.4054651  18.5660685 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123 -17.4674562   0.4054651  18.5660685 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123 -17.4674562   0.4054651  18.5660685 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.386294  -20.179774  -20.179774   20.179774 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.386294  -20.179774  -20.179774   20.179774 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.386294  -20.179774  -20.179774   20.179774 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.386294  -20.179774  -20.179774   20.179774 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.386294  -20.179774  -20.179774   20.179774 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.386294  -20.179774  -20.179774   20.179774 
+boundary (singular) fit: see help('isSingular')
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  2.056607e+01 -1.103322e-08 -6.931472e-01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  2.056607e+01 -1.103322e-08 -6.931472e-01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  2.056607e+01 -1.103322e-08 -6.931472e-01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  2.056607e+01 -1.103322e-08 -6.931472e-01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  2.056607e+01 -1.103322e-08 -6.931472e-01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  2.056607e+01 -1.103322e-08 -6.931472e-01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  1.053881e-08  2.016060e+01 -2.876821e-01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  1.053881e-08  2.016060e+01 -2.876821e-01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  1.053881e-08  2.016060e+01 -2.876821e-01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  1.053881e-08  2.016060e+01 -2.876821e-01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  1.053881e-08  2.016060e+01 -2.876821e-01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  1.053881e-08  2.016060e+01 -2.876821e-01 
+boundary (singular) fit: see help('isSingular')
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -2.0794415   0.1335314  20.6455101  -0.1335314 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -2.0794415   0.1335314  20.6455101  -0.1335314 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -2.0794415   0.1335314  20.6455101  -0.1335314 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -2.0794415   0.1335314  20.6455101  -0.1335314 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -2.0794415   0.1335314  20.6455101  -0.1335314 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -2.0794415   0.1335314  20.6455101  -0.1335314 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  3.624158e-11  2.149176e-11  1.917977e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  3.624158e-11  2.149176e-11  1.917977e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  3.624158e-11  2.149176e-11  1.917977e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  3.624158e-11  2.149176e-11  1.917977e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  3.624158e-11  2.149176e-11  1.917977e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  3.624158e-11  2.149176e-11  1.917977e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01  6.885871e-16  6.885871e-16 -6.885871e-16 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01  6.885871e-16  6.885871e-16 -6.885871e-16 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01  6.885871e-16  6.885871e-16 -6.885871e-16 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01  6.885871e-16  6.885871e-16 -6.885871e-16 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01  6.885871e-16  6.885871e-16 -6.885871e-16 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01  6.885871e-16  6.885871e-16 -6.885871e-16 
+boundary (singular) fit: see help('isSingular')
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  1.489359e-10  2.484328e-10  2.087292e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  1.489359e-10  2.484328e-10  2.087292e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  1.489359e-10  2.484328e-10  2.087292e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  1.489359e-10  2.484328e-10  2.087292e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  1.489359e-10  2.484328e-10  2.087292e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  1.489359e-10  2.484328e-10  2.087292e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -25.56607     0.00000     0.00000     0.00000 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -25.56607     0.00000     0.00000     0.00000 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -25.56607     0.00000     0.00000     0.00000 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -25.56607     0.00000     0.00000     0.00000 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -25.56607     0.00000     0.00000     0.00000 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -25.56607     0.00000     0.00000     0.00000 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123 -17.4674562  -0.5108256  18.6714290 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123 -17.4674562  -0.5108256  18.6714290 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123 -17.4674562  -0.5108256  18.6714290 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123 -17.4674562  -0.5108256  18.6714290 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123 -17.4674562  -0.5108256  18.6714290 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123 -17.4674562  -0.5108256  18.6714290 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -0.6931472   0.6931472 -18.8729213  -0.6931472 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -0.6931472   0.6931472 -18.8729213  -0.6931472 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -0.6931472   0.6931472 -18.8729213  -0.6931472 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -0.6931472   0.6931472 -18.8729213  -0.6931472 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -0.6931472   0.6931472 -18.8729213  -0.6931472 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -0.6931472   0.6931472 -18.8729213  -0.6931472 
+boundary (singular) fit: see help('isSingular')
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  1.3862944  -0.6931472 -20.9523629   0.6931472 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  1.3862944  -0.6931472 -20.9523629   0.6931472 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  1.3862944  -0.6931472 -20.9523629   0.6931472 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  1.3862944  -0.6931472 -20.9523629   0.6931472 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  1.3862944  -0.6931472 -20.9523629   0.6931472 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  1.3862944  -0.6931472 -20.9523629   0.6931472 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-1.856607e+01  6.523966e-09  1.746746e+01  6.931472e-01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-1.856607e+01  6.523966e-09  1.746746e+01  6.931472e-01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-1.856607e+01  6.523966e-09  1.746746e+01  6.931472e-01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-1.856607e+01  6.523966e-09  1.746746e+01  6.931472e-01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-1.856607e+01  6.523966e-09  1.746746e+01  6.931472e-01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-1.856607e+01  6.523966e-09  1.746746e+01  6.931472e-01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01 -8.779923e-15 -8.779923e-15  9.021376e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01 -8.779923e-15 -8.779923e-15  9.021376e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01 -8.779923e-15 -8.779923e-15  9.021376e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01 -8.779923e-15 -8.779923e-15  9.021376e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01 -8.779923e-15 -8.779923e-15  9.021376e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01 -8.779923e-15 -8.779923e-15  9.021376e-15 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  2.156607e+01  1.132994e-11 -2.156607e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  2.156607e+01  1.132994e-11 -2.156607e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  2.156607e+01  1.132994e-11 -2.156607e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  2.156607e+01  1.132994e-11 -2.156607e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  2.156607e+01  1.132994e-11 -2.156607e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  2.156607e+01  1.132994e-11 -2.156607e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123   0.4054651   0.4054651  -1.0986123 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123   0.4054651   0.4054651  -1.0986123 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123   0.4054651   0.4054651  -1.0986123 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123   0.4054651   0.4054651  -1.0986123 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123   0.4054651   0.4054651  -1.0986123 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123   0.4054651   0.4054651  -1.0986123 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123 -17.4674562   0.4054651  17.0619911 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123 -17.4674562   0.4054651  17.0619911 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123 -17.4674562   0.4054651  17.0619911 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123 -17.4674562   0.4054651  17.0619911 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123 -17.4674562   0.4054651  17.0619911 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -1.0986123 -17.4674562   0.4054651  17.0619911 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -0.4054651  -0.2876821  -0.9808293   0.2876821 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -0.4054651  -0.2876821  -0.9808293   0.2876821 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -0.4054651  -0.2876821  -0.9808293   0.2876821 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -0.4054651  -0.2876821  -0.9808293   0.2876821 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -0.4054651  -0.2876821  -0.9808293   0.2876821 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -0.4054651  -0.2876821  -0.9808293   0.2876821 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  2.443967e-08  2.046746e+01 -2.046746e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  2.443967e-08  2.046746e+01 -2.046746e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  2.443967e-08  2.046746e+01 -2.046746e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  2.443967e-08  2.046746e+01 -2.046746e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  2.443967e-08  2.046746e+01 -2.046746e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  2.443967e-08  2.046746e+01 -2.046746e+01 
+boundary (singular) fit: see help('isSingular')
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.791759    1.791759  -16.774309   16.774309 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.791759    1.791759  -16.774309   16.774309 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.791759    1.791759  -16.774309   16.774309 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.791759    1.791759  -16.774309   16.774309 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.791759    1.791759  -16.774309   16.774309 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.791759    1.791759  -16.774309   16.774309 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -0.4054651  -0.2876821 -18.1606034  17.4674562 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -0.4054651  -0.2876821 -18.1606034  17.4674562 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -0.4054651  -0.2876821 -18.1606034  17.4674562 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -0.4054651  -0.2876821 -18.1606034  17.4674562 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -0.4054651  -0.2876821 -18.1606034  17.4674562 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+ -0.4054651  -0.2876821 -18.1606034  17.4674562 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  5.251929e-10  1.895663e+01 -1.895663e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  5.251929e-10  1.895663e+01 -1.895663e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  5.251929e-10  1.895663e+01 -1.895663e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  5.251929e-10  1.895663e+01 -1.895663e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  5.251929e-10  1.895663e+01 -1.895663e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  5.251929e-10  1.895663e+01 -1.895663e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.609438  -17.956631  -17.956631   36.829552 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.609438  -17.956631  -17.956631   36.829552 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.609438  -17.956631  -17.956631   36.829552 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.609438  -17.956631  -17.956631   36.829552 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.609438  -17.956631  -17.956631   36.829552 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.609438  -17.956631  -17.956631   36.829552 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  2.087292e+01  7.134856e-12 -2.087292e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  2.087292e+01  7.134856e-12 -2.087292e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  2.087292e+01  7.134856e-12 -2.087292e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  2.087292e+01  7.134856e-12 -2.087292e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  2.087292e+01  7.134856e-12 -2.087292e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.156607e+01  2.087292e+01  7.134856e-12 -2.087292e+01 
+boundary (singular) fit: see help('isSingular')
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  8.797753e-09  2.016060e+01 -2.016060e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  8.797753e-09  2.016060e+01 -2.016060e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  8.797753e-09  2.016060e+01 -2.016060e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  8.797753e-09  2.016060e+01 -2.016060e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  8.797753e-09  2.016060e+01 -2.016060e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01  8.797753e-09  2.016060e+01 -2.016060e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01 -1.970746e-30 -9.026171e-17  1.473023e-14 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01 -1.970746e-30 -9.026171e-17  1.473023e-14 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01 -1.970746e-30 -9.026171e-17  1.473023e-14 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01 -1.970746e-30 -9.026171e-17  1.473023e-14 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01 -1.970746e-30 -9.026171e-17  1.473023e-14 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01 -1.970746e-30 -9.026171e-17  1.473023e-14 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.791759    1.386294  -16.774309   -1.386294 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.791759    1.386294  -16.774309   -1.386294 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.791759    1.386294  -16.774309   -1.386294 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.791759    1.386294  -16.774309   -1.386294 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.791759    1.386294  -16.774309   -1.386294 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -1.791759    1.386294  -16.774309   -1.386294 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01  6.006082e-32  6.334820e-16 -6.334820e-16 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01  6.006082e-32  6.334820e-16 -6.334820e-16 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01  6.006082e-32  6.334820e-16 -6.334820e-16 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01  6.006082e-32  6.334820e-16 -6.334820e-16 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01  6.006082e-32  6.334820e-16 -6.334820e-16 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.556607e+01  6.006082e-32  6.334820e-16 -6.334820e-16 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01 -1.069951e-11  1.917977e+01 -1.917977e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01 -1.069951e-11  1.917977e+01 -1.917977e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01 -1.069951e-11  1.917977e+01 -1.917977e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01 -1.069951e-11  1.917977e+01 -1.917977e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01 -1.069951e-11  1.917977e+01 -1.917977e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+  (Intercept)          time           trt      time:trt 
+-2.056607e+01 -1.069951e-11  1.917977e+01 -1.917977e+01 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -19.56607    39.13214    17.95663   -37.11723 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -19.56607    39.13214    17.95663   -37.11723 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -19.56607    39.13214    17.95663   -37.11723 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -19.56607    39.13214    17.95663   -37.11723 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -19.56607    39.13214    17.95663   -37.11723 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -19.56607    39.13214    17.95663   -37.11723 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -19.56607    18.46746    18.17977   -17.08116 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -19.56607    18.46746    18.17977   -17.08116 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -19.56607    18.46746    18.17977   -17.08116 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -19.56607    18.46746    18.17977   -17.08116 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -19.56607    18.46746    18.17977   -17.08116 
+Beginning Cgee S-function, @(#) geeformula.q 4.13 98/01/27
+running glm to get initial regression estimate
+(Intercept)        time         trt    time:trt 
+  -19.56607    18.46746    18.17977   -17.08116 
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+There were 50 or more warnings (use warnings() to see the first 50)
+                               chunk   recs  study     cc    gee   pass
+                              <char> <lgcl> <lgcl> <lgcl> <lgcl> <lgcl>
+1:     copula_m1_N10_T2_mmlb_c01.rds   TRUE   TRUE   TRUE   TRUE   TRUE
+2:   copula_m3_N55_T4_manual_c10.rds   TRUE   TRUE   TRUE   TRUE   TRUE
+3: copula_m5_N145_T10_manual_c03.rds   TRUE   TRUE   TRUE   TRUE   TRUE

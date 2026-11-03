@@ -1,0 +1,75 @@
+Key: <dgp>
+           dgp     n n_stored   n_A same_est same_se
+        <char> <int>    <int> <int>    <int>   <int>
+1:    GLMM-AR1 16000    15294 15309    15294   14955
+2: GLMM-native 16000    15357 15380    15357   15050
+3:  GenBinaryY 16000    15351 15376    15351   14963
+There were 50 or more warnings (use warnings() to see the first 50)
+       id confirmed
+   <char>    <lgcl>
+1:     P5     FALSE
+2:     P6     FALSE
+3:     P7     FALSE
+4:     P8      TRUE
+                                                                                                                    detail
+                                                                                                                    <char>
+1: non-boundary rejection 6.3/7.2/6.7/5.1/7.4/11.7/6.0/7.1/10.9; boundary rejection 8.2/8.6/10.5/7.0/9.5/10.0/7.8/8.7/10.1
+2:                                            cells where boundary share at N=145 is not below N=10 minus 2 MCSE: 18 of 45
+3:                                                      M1 non-convergence 8.87%; M1 cells (n>=100) outside band: 11 of 60
+4:                                                                      rule rejection 5.6/5.7/5.2/4.6/6.6/6.0/5.3/5.7/5.9
+            dgp model     Tb n_use pct_bnd pct_nonconv pct_slope0 rej_all
+         <char> <int> <char> <int>   <num>       <num>      <num>   <num>
+ 1:    GLMM-AR1     1   T<=6  2227   12.66       12.66        0.0    4.40
+ 2:    GLMM-AR1     1   T>=8  1585    2.59        2.59        0.0    5.30
+ 3: GLMM-native     1   T<=6  2253   12.74       12.74        0.0    3.99
+ 4: GLMM-native     1   T>=8  1589    2.27        2.27        0.0    4.59
+ 5:  GenBinaryY     1   T<=6  2269   14.54       14.54        0.0    3.88
+ 6:  GenBinaryY     1   T>=8  1586    2.84        2.84        0.0    4.98
+ 7:    GLMM-AR1     3   T<=6  2268   59.13       34.48       33.6    4.32
+ 8:    GLMM-AR1     3   T>=8  1575   59.56       41.27       35.4    7.43
+ 9: GLMM-native     3   T<=6  2296   58.28       35.24       31.4    5.57
+10: GLMM-native     3   T>=8  1570   56.50       39.24       34.3    6.18
+11:  GenBinaryY     3   T<=6  2273   58.82       35.55       29.8    4.62
+12:  GenBinaryY     3   T>=8  1554   55.02       37.58       33.6    7.01
+13:    GLMM-AR1     4   T<=6  2097   61.90       45.73       29.6    5.44
+14:    GLMM-AR1     4   T>=8  1573   73.49       66.05       25.7    8.20
+15: GLMM-native     4   T<=6  2125   62.35       44.99       30.5    3.86
+16: GLMM-native     4   T>=8  1557   72.13       64.61       25.6    8.93
+17:  GenBinaryY     4   T<=6  2084   59.12       41.75       28.8    5.76
+18:  GenBinaryY     4   T>=8  1551   69.12       59.70       27.8    8.19
+19:    GLMM-AR1     5   T<=6  2104   85.60       77.33       31.9    6.32
+20:    GLMM-AR1     5   T>=8  1526   97.05       96.33       18.2   10.35
+21: GLMM-native     5   T<=6  2132   86.96       79.08       35.2    7.08
+22: GLMM-native     5   T>=8  1528   96.07       95.16       20.3   10.08
+23:  GenBinaryY     5   T<=6  2116   85.82       76.65       32.8    7.66
+24:  GenBinaryY     5   T>=8  1530   96.41       95.23       18.2   10.13
+            dgp model     Tb n_use pct_bnd pct_nonconv pct_slope0 rej_all
+         <char> <int> <char> <int>   <num>       <num>      <num>   <num>
+    rej_int rej_bnd rej_rule rej_rob rej_B
+      <num>   <num>    <num>   <num> <num>
+ 1:    3.80    8.51     4.40    16.2   NaN
+ 2:    5.25    7.32     5.30    11.7   NaN
+ 3:    3.66    6.27     3.99    16.2   NaN
+ 4:    4.57    5.56     4.59    10.6   NaN
+ 5:    3.56    5.76     3.88    16.1   NaN
+ 6:    4.87    8.89     4.98    11.2   NaN
+ 7:    4.42    4.25     4.32    16.7  4.48
+ 8:    6.28    8.21     5.59    12.4  5.41
+ 9:    4.70    6.20     5.18    18.0  4.94
+10:    5.12    6.99     4.59    12.1  4.43
+11:    4.06    5.01     4.44    16.0  4.48
+12:    6.01    7.84     5.28    12.5  4.78
+13:    4.76    5.86     4.67    14.0  4.73
+14:    7.19    8.56     5.66    11.4  5.43
+15:    2.88    4.45     3.81    12.6  3.88
+16:    7.37    9.53     6.55    11.9  6.50
+17:    5.52    5.93     5.28    14.2  4.89
+18:    7.10    8.68     5.67    11.7  5.20
+19:    2.97    6.89     4.47    13.2  4.15
+20:    6.67   10.47     5.24    11.3  5.14
+21:    4.68    7.44     5.07    12.5  5.23
+22:   11.67   10.01     5.96    10.9  5.81
+23:    5.67    7.98     5.15    13.6  5.14
+24:   10.91   10.10     5.88    11.7  5.69
+    rej_int rej_bnd rej_rule rej_rob rej_B
+      <num>   <num>    <num>   <num> <num>

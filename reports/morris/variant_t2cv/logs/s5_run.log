@@ -1,0 +1,6 @@
+agg loaded (B = 2000) 0.2 min
+claims: main 560, bobyqa 560, M1c 93 columns; 2001 replicates | 11.7 min
+  C01|GB   C02|GB  C01|NAT  C02|NAT  C01|AR1  C02|AR1   C03|GB  C03b|GB 
+   3.030   -0.719    1.278   -0.323    1.413   -0.271   -0.355   -0.453 
+ C03|NAT C03b|NAT  C03|AR1 C03b|AR1  C04|all 
+  -0.195   -0.297   -0.051   -0.127  317.683 

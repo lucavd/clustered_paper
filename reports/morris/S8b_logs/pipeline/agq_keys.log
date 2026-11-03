@@ -1,0 +1,190 @@
+                 key             value   kind
+              <char>            <char> <char>
+  1:            npts               123    int
+  2:           nodes                10    int
+  3:     nodes_check                25    int
+  4:      check_reps               100    int
+  5:     check_agree           99.8984   sig2
+  6:         check_n              9844    int
+  7:  check_disagree                10    int
+  8:        gg2_rows            122904    int
+  9:        diff_min  3.07479298086628   sig2
+ 10:        diff_max  3.96136674024477   sig2
+ 11:  t2n145_lap_min  10.1010101010101   sig2
+ 12:  t2n145_lap_max  19.8161389172625   sig2
+ 13:  t2n145_agq_min  2.60782347041123   sig2
+ 14:  t2n145_agq_max  4.51807228915663   sig2
+ 15:          hi_lap                33    int
+ 16:          hi_agq                 8    int
+ 17:      hi_agq_cop                 6    int
+ 18:       hi_agq_gb                 2    int
+ 19:      hi_agq_nat                 0    int
+ 20:      hi_lap_nat                 6    int
+ 21:        hi_agq_T                10   text
+ 22:      hi_cop_min              11.7   sig2
+ 23:      hi_cop_max              15.7   sig2
+ 24:       hi_gb_min               9.3   sig2
+ 25:       hi_gb_max               9.6   sig2
+ 26:     hi_cop_Nmin                25    int
+ 27:          lo_lap                 3    int
+ 28:          lo_agq                37    int
+ 29:     lo_agq_Nmax                55    int
+ 30:      lo_agq_nat                10    int
+ 31: cop_t10_lap_min              12.3   sig2
+ 32: cop_t10_lap_max              17.5   sig2
+ 33: cop_t10_agq_min              11.7   sig2
+ 34: cop_t10_agq_max              15.7   sig2
+ 35:    cop_t10_Nmin                25    int
+ 36:       t_COP_2_n                 8    int
+ 37:    t_COP_2_rlap  12.0965081787461   tab1
+ 38:    t_COP_2_ragq  3.05951356286253   tab1
+ 39:    t_COP_2_hlap                 3    int
+ 40:    t_COP_2_hagq                 0    int
+ 41:    t_COP_2_llap                 0    int
+ 42:    t_COP_2_lagq                 1    int
+ 43:    t_COP_2_plap  48.0242424542502   tab1
+ 44:    t_COP_2_pagq  51.2002039927117   tab1
+ 45:       t_COP_4_n                 8    int
+ 46:    t_COP_4_rlap  6.96854280513237   tab1
+ 47:    t_COP_4_ragq  4.56710182717346   tab1
+ 48:    t_COP_4_hlap                 3    int
+ 49:    t_COP_4_hagq                 0    int
+ 50:    t_COP_4_llap                 0    int
+ 51:    t_COP_4_lagq                 2    int
+ 52:    t_COP_4_plap  82.1151835531721   tab1
+ 53:    t_COP_4_pagq  82.4159617672112   tab1
+ 54:      t_COP_10_n                 8    int
+ 55:   t_COP_10_rlap  12.7733736883352   tab1
+ 56:   t_COP_10_ragq  10.8155783134368   tab1
+ 57:   t_COP_10_hlap                 6    int
+ 58:   t_COP_10_hagq                 6    int
+ 59:   t_COP_10_llap                 0    int
+ 60:   t_COP_10_lagq                 0    int
+ 61:   t_COP_10_plap   98.258740146867   tab1
+ 62:   t_COP_10_pagq   98.258715046541   tab1
+ 63:       t_AR1_2_n                11    int
+ 64:    t_AR1_2_rlap  5.68808527751365   tab1
+ 65:    t_AR1_2_ragq   1.8637292605425   tab1
+ 66:    t_AR1_2_hlap                 2    int
+ 67:    t_AR1_2_hagq                 0    int
+ 68:    t_AR1_2_llap                 0    int
+ 69:    t_AR1_2_lagq                 6    int
+ 70:    t_AR1_2_plap  56.2183659457604   tab1
+ 71:    t_AR1_2_pagq  57.5743100017044   tab1
+ 72:       t_AR1_4_n                11    int
+ 73:    t_AR1_4_rlap  3.80340333113948   tab1
+ 74:    t_AR1_4_ragq  2.50025556253653   tab1
+ 75:    t_AR1_4_hlap                 0    int
+ 76:    t_AR1_4_hagq                 0    int
+ 77:    t_AR1_4_llap                 2    int
+ 78:    t_AR1_4_lagq                 4    int
+ 79:    t_AR1_4_plap  88.6331370081006   tab1
+ 80:    t_AR1_4_pagq  88.8792847248919   tab1
+ 81:       t_AR1_6_n                 3    int
+ 82:    t_AR1_6_rlap  8.42226996061583   tab1
+ 83:    t_AR1_6_ragq  3.27373304782298   tab1
+ 84:    t_AR1_6_hlap                 2    int
+ 85:    t_AR1_6_hagq                 0    int
+ 86:    t_AR1_6_llap                 0    int
+ 87:    t_AR1_6_lagq                 1    int
+ 88:    t_AR1_6_plap  97.7621910487642   tab1
+ 89:    t_AR1_6_pagq  97.8623914495658   tab1
+ 90:      t_AR1_10_n                 8    int
+ 91:   t_AR1_10_rlap  7.06868790605255   tab1
+ 92:   t_AR1_10_ragq  4.08083878457726   tab1
+ 93:   t_AR1_10_hlap                 2    int
+ 94:   t_AR1_10_hagq                 0    int
+ 95:   t_AR1_10_llap                 0    int
+ 96:   t_AR1_10_lagq                 2    int
+ 97:   t_AR1_10_plap  98.7101067968671   tab1
+ 98:   t_AR1_10_pagq  98.7101067968671   tab1
+ 99:       t_NAT_2_n                11    int
+100:    t_NAT_2_rlap  6.32154939353999   tab1
+101:    t_NAT_2_ragq  1.75449465226929   tab1
+102:    t_NAT_2_hlap                 2    int
+103:    t_NAT_2_hagq                 0    int
+104:    t_NAT_2_llap                 0    int
+105:    t_NAT_2_lagq                 3    int
+106:    t_NAT_2_plap  57.6691791558939   tab1
+107:    t_NAT_2_pagq  58.6227537995818   tab1
+108:       t_NAT_4_n                11    int
+109:    t_NAT_4_rlap  3.78860136248151   tab1
+110:    t_NAT_4_ragq  2.33014002251618   tab1
+111:    t_NAT_4_hlap                 0    int
+112:    t_NAT_4_hagq                 0    int
+113:    t_NAT_4_llap                 1    int
+114:    t_NAT_4_lagq                 4    int
+115:    t_NAT_4_plap  89.0155129619099   tab1
+116:    t_NAT_4_pagq  89.2526794636995   tab1
+117:       t_NAT_6_n                 3    int
+118:    t_NAT_6_rlap  8.04206008583691   tab1
+119:    t_NAT_6_ragq               2.8   tab1
+120:    t_NAT_6_hlap                 2    int
+121:    t_NAT_6_hagq                 0    int
+122:    t_NAT_6_llap                 0    int
+123:    t_NAT_6_lagq                 1    int
+124:    t_NAT_6_plap  97.7955911823647   tab1
+125:    t_NAT_6_pagq  97.8289913159653   tab1
+126:      t_NAT_10_n                 8    int
+127:   t_NAT_10_rlap  7.10639282490436   tab1
+128:   t_NAT_10_ragq   3.0413960223387   tab1
+129:   t_NAT_10_hlap                 2    int
+130:   t_NAT_10_hagq                 0    int
+131:   t_NAT_10_llap                 0    int
+132:   t_NAT_10_lagq                 2    int
+133:   t_NAT_10_plap  98.7975562950112   tab1
+134:   t_NAT_10_pagq  98.7725061696601   tab1
+135:        t_GB_2_n                11    int
+136:     t_GB_2_rlap  7.99124973128617   tab1
+137:     t_GB_2_ragq  1.91828323940348   tab1
+138:     t_GB_2_hlap                 3    int
+139:     t_GB_2_hagq                 0    int
+140:     t_GB_2_llap                 0    int
+141:     t_GB_2_lagq                 4    int
+142:     t_GB_2_plap  53.4218598085745   tab1
+143:     t_GB_2_pagq  56.0900018964901   tab1
+144:        t_GB_4_n                11    int
+145:     t_GB_4_rlap  5.96097342388606   tab1
+146:     t_GB_4_ragq  3.43913705355991   tab1
+147:     t_GB_4_hlap                 1    int
+148:     t_GB_4_hagq                 0    int
+149:     t_GB_4_llap                 0    int
+150:     t_GB_4_lagq                 4    int
+151:     t_GB_4_plap  85.9523881832799   tab1
+152:     t_GB_4_pagq  86.5538842200425   tab1
+153:        t_GB_6_n                 3    int
+154:     t_GB_6_rlap  9.82700329308452   tab1
+155:     t_GB_6_ragq  4.79855072463768   tab1
+156:     t_GB_6_hlap                 2    int
+157:     t_GB_6_hagq                 0    int
+158:     t_GB_6_llap                 0    int
+159:     t_GB_6_lagq                 1    int
+160:     t_GB_6_plap  97.0941883767535   tab1
+161:     t_GB_6_pagq  97.3947895791583   tab1
+162:       t_GB_10_n                 8    int
+163:    t_GB_10_rlap  7.55219039622841   tab1
+164:    t_GB_10_ragq  6.35865872026423   tab1
+165:    t_GB_10_hlap                 3    int
+166:    t_GB_10_hagq                 2    int
+167:    t_GB_10_llap                 0    int
+168:    t_GB_10_lagq                 2    int
+169:    t_GB_10_plap  98.1336275342544   tab1
+170:    t_GB_10_pagq  98.1085774089034   tab1
+171:       m_GB_diff -3.43486228332107   tab1
+172:       m_GB_lo95 -3.68345627900019   tab1
+173:       m_GB_hi95 -3.18791388939718   tab1
+174:       m_GB_npts                33    int
+175:      m_NAT_diff  -3.3016695334917   tab1
+176:      m_NAT_lo95 -3.63048961234123   tab1
+177:      m_NAT_hi95 -3.04009420113618   tab1
+178:      m_NAT_npts                33    int
+179:      m_AR1_diff -3.07479298086628   tab1
+180:      m_AR1_lo95 -3.54858731328394   tab1
+181:      m_AR1_hi95 -2.70303133963251   tab1
+182:      m_AR1_npts                33    int
+183:      m_COP_diff -3.96136674024477   tab1
+184:      m_COP_lo95 -4.60544465509385   tab1
+185:      m_COP_hi95 -3.46937853664707   tab1
+186:      m_COP_npts                24    int
+                 key             value   kind
+              <char>            <char> <char>

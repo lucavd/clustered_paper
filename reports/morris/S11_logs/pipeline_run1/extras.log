@@ -1,0 +1,58 @@
+          name     est      lo      hi margin               class
+        <char>   <num>   <num>   <num>  <num>              <char>
+ 1:     wc_ind -0.2926 -0.3104 -0.2736    1.0        trascurabile
+ 2:     wc_ar1 -0.3097 -0.3271 -0.2913    1.0        trascurabile
+ 3:    impl_fg  0.0605  0.0462  0.0745    1.0        trascurabile
+ 4: impl_fg_pu  0.2105  0.2035  0.2178    2.5        trascurabile
+ 5:    impl_kc -4.1490 -4.1922 -4.1080    1.0 risolta e rilevante
+ 6:    cop_mmm  0.7025  0.6069  0.7950    1.0        trascurabile
+ 7:    cop_gee  0.2340  0.1561  0.3105    1.0        trascurabile
+ 8:   cop_glmm  3.1987  3.0173  3.4592    1.0 risolta e rilevante
+ 9:   cop_flip -0.0414 -0.1132  0.0296    1.0        trascurabile
+10:     ci_cov -1.2546 -1.2818 -1.2277    1.0 risolta e rilevante
+11:    kc10_GB 12.2653 11.7442 12.7484    7.5          confermata
+12:   kc10_NAT  9.3830  8.9405  9.8123    7.5          confermata
+13:   kc10_AR1  9.8503  9.4141 10.3086    7.5          confermata
+extras: 28 values -> tables/V5_S7f_extra.csv
+                     key                value
+                  <char>               <char>
+ 1:              cop_rho                  0.6
+ 2:               flip_B                 1999
+ 3:       flip_enum_maxn                   12
+ 4:         flip_coefmax                   10
+ 5:            guard_div                 1000
+ 6:             guard_u0                1e-06
+ 7:   upow_small_ceiling                    2
+ 8:         ci_width_pct      16.674425436044
+ 9:     ci_width_pct_N75     6.40435173924401
+10:     cop_glmm_ser_min    0.642724919322579
+11:     cop_glmm_ser_max    0.807180127498632
+12:           cop_exfg_T                    4
+13:          cop_exfg_nT                    6
+14:        cop_exfg_Nmin                   10
+15:        cop_exfg_Nmax                   25
+16:        null_exc_main   0.0291994451501576
+17:         null_exc_m67    0.259682282655516
+18:           null_flips                    0
+19:              ge4_max 8.65055827881513e-13
+20:             ndp_all5                 2376
+21:              ndp_cop                  480
+22:            ndp_three                 1896
+23:           git_commit              0e32cec
+24:             fg_bound                 0.75
+25:      flip_upow_small     4.15265210106066
+26: lus_bias_mmm_50_mcse   0.0137180271482903
+27:      glmer_hi_native                   55
+28:     glmer_ndp_native                  696
+                     key                value
+                  <char>               <char>
+       df    strategy  n_hi  n_lo n_lo_N10    pu chosen
+   <char>      <char> <int> <int>    <int> <num> <lgcl>
+1:  N - 2      mmm_cc     0    21       13 84.23   TRUE
+2:  N - 2  gee_ind_fg     4    80        5 92.22  FALSE
+3:  N - 2 gee_exch_fg    12    85        3 92.12  FALSE
+4:  N - 2  gee_ar1_fg     2    86        4 92.04  FALSE
+5:  N - p      mmm_cc     0    39       30 84.23   TRUE
+6:  N - p  gee_ind_fg     4    84        7 92.22  FALSE
+7:  N - p gee_exch_fg     7    87        3 92.12  FALSE
+8:  N - p  gee_ar1_fg     2    89        5 92.04  FALSE

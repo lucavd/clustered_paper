@@ -1,0 +1,54 @@
+[31m
+
+processing file: S9.qmd
+[39m1/27            
+2/27 [setup]    
+3/27            
+4/27 [inbreve]  
+5/27            
+6/27 [decisioni]
+7/27            
+8/27 [rinvii]   
+9/27            
+10/27 [esiti]    
+11/27            
+12/27 [logs]     
+13/27            
+14/27 [md5]      
+15/27            
+16/27 [preds]    
+17/27            
+18/27 [h2h]      
+19/27            
+20/27 [gs3]      
+21/27            
+22/27 [gs2]      
+23/27            
+24/27 [reg]      
+25/27            
+26/27 [fc]       
+27/27            
+[31moutput file: S9.knit.md
+
+[39m[1mpandoc [22m
+  to: html
+  output-file: S9.html
+  standalone: true
+  embed-resources: true
+  section-divs: true
+  html-math-method: mathjax
+  wrap: none
+  default-image-extension: png
+  toc: true
+  
+[1mmetadata[22m
+  document-css: false
+  link-citations: true
+  date-format: long
+  lang: it
+  title: 'S9: esito costante come nessun risultato, ricalcolo di tabelle, figure e testo'
+  subtitle: Roadmap Morris 2019, ramo morris-v4
+  date: '2026-11-02'
+  
+Output created: S9.html
+

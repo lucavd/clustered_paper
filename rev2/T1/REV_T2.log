@@ -1,0 +1,271 @@
+##### A. 3.15 coverage table, pooled (k_cov/n_cov, truth = MARGINAL per scenario) #####
+Key: <method>
+      method GLMM-AR1 GLMM-native GenBinaryY
+      <char>    <num>       <num>      <num>
+1:       gee  92.4697     92.4414    91.9044
+2:    gee_fg  94.9126     94.8299    94.5531
+3:    gee_kc  88.8361     88.9424    86.3578
+4:    gee_md  94.6410     94.5881    94.2360
+5:     glmer  92.2812     93.0311    88.3230
+6: glmer_lrt  91.9117     92.8010    88.0290
+7:       mmm  93.2447     93.2442    93.1675
+8:    shrink  92.5891     92.9379    90.0608
+
+MMM departure from 95 by dgp:
+           dgp   dep
+        <char> <num>
+1:    GLMM-AR1 1.755
+2: GLMM-native 1.756
+3:  GenBinaryY 1.833
+
+##### B. 3.1-style: rate/worst/MAD replicate-weighted within N (16 values) #####
+Key: <method>
+      method worst_GLMM-AR1 worst_GLMM-native worst_GenBinaryY mad_N_GLMM-AR1
+      <char>          <num>             <num>            <num>          <num>
+1:       gee         18.360            17.398           20.898         3.1145
+2:    gee_fg          2.906             2.834            4.553         0.5528
+3:    gee_kc          6.719             6.479            9.229         5.5724
+4:    gee_md          6.157             5.897            8.327         0.9668
+5:     glmer          2.176             1.825            4.429         1.5749
+6: glmer_lrt          4.087             3.850            7.163         3.1120
+7:       mmm          1.553             1.497            2.063         1.3730
+8:    shrink          2.494             2.305            4.856         1.8500
+   mad_N_GLMM-native mad_N_GenBinaryY
+               <num>            <num>
+1:            3.0039           3.8045
+2:            0.5186           0.9989
+3:            5.3188           7.9270
+4:            0.8802           1.4129
+5:            1.3756           3.3801
+6:            2.4829           6.0603
+7:            1.1971           1.6142
+8:            1.6051           4.0898
+
+##### C. mean |departure| OVER CELLS, per dgp (panel d x-axis) #####
+Key: <method>
+      method GLMM-AR1 GLMM-native GenBinaryY
+      <char>    <num>       <num>      <num>
+1:       gee    3.295       3.208      3.916
+2:    gee_fg    1.252       1.220      1.614
+3:    gee_kc    5.540       5.336      7.751
+4:    gee_md    1.573       1.483      1.979
+5:     glmer    2.000       1.850      3.923
+6: glmer_lrt    3.161       2.657      6.058
+7:       mmm    1.692       1.590      1.853
+8:    shrink    2.744       2.336      4.707
+
+##### D. MAD by T, per method, mean over cells (panel b) #####
+Key: <method>
+      method      2     3     4     6     8     10
+      <char>  <num> <num> <num> <num> <num>  <num>
+1:       gee  2.170 3.551 4.352 4.031 3.527  3.208
+2:    gee_fg  2.416 1.024 1.372 1.222 1.097  1.041
+3:    gee_kc  2.465 3.453 4.830 7.226 9.038 10.243
+4:    gee_md  2.532 1.145 1.864 1.769 1.493  1.266
+5:     glmer  5.594 3.703 2.853 1.417 1.367  2.587
+6: glmer_lrt 11.088 3.680 2.372 2.155 2.163  2.293
+7:       mmm  1.804 1.503 1.278 1.137 1.840  2.708
+8:    shrink 10.827 4.657 3.224 1.429 1.367  2.585
+cells per (method,T):
+Key: <method>
+      method     2     3     4     6     8    10
+      <char> <int> <int> <int> <int> <int> <int>
+1:       gee   240   240   240   240   240   240
+2:    gee_fg   240   240   240   240   240   240
+3:    gee_kc   240   240   240   240   240   240
+4:    gee_md   240   240   240   240   240   240
+5:     glmer    98   200   240   240   240   240
+6: glmer_lrt   240   240   240   240   240   240
+7:       mmm   240   240   240   240   240   240
+8:    shrink   104   201   240   240   240   240
+
+## Spearman between the T=2 and T=10 orderings on MAD (8 methods)
+[1] -0.3571429
+ranks T2: gee 2 gee_fg 3 gee_kc 4 gee_md 5 glmer 6 glmer_lrt 8 mmm 1 shrink 7 
+ranks T10: gee 7 gee_fg 1 gee_kc 8 gee_md 2 glmer 5 glmer_lrt 3 mmm 6 shrink 4 
+6 methods only (excl gee, shrink):
+[1] -0.1428571
+
+##### E. panel c: unconditional validity by N, GenBinaryY (and all dgp) #####
+Key: <N>
+        N   gee gee_fg gee_kc gee_md glmer glmer_lrt   mmm shrink
+    <int> <num>  <num>  <num>  <num> <num>     <num> <num>  <num>
+ 1:    10 53.12  49.19  48.32  46.48 48.40     86.06 48.38  50.69
+ 2:    15 65.01  63.05  61.10  61.55 59.64     87.89 61.92  61.98
+ 3:    20 72.54  71.82  68.94  71.09 65.61     88.29 70.20  67.87
+ 4:    25 77.93  78.15  73.89  77.69 69.40     88.58 75.80  71.29
+ 5:    35 84.20  84.87  79.33  84.85 73.13     87.79 82.36  74.52
+ 6:    45 88.73  89.53  82.60  89.63 75.49     88.16 86.64  76.61
+ 7:    55 90.60  91.51  83.83  91.57 76.36     88.18 88.62  77.14
+ 8:    65 92.15  92.95  85.10  93.08 77.14     88.48 90.26  77.62
+ 9:    75 93.16  93.86  85.60  93.97 77.32     88.72 91.28  77.74
+10:    85 93.58  94.32  85.88  94.39 78.04     89.05 91.70  78.35
+11:    95 93.97  94.52  86.08  94.62 77.87     89.17 92.10  78.14
+12:   105 94.18  94.68  85.88  94.74 78.01     89.34 92.23  78.21
+13:   115 94.27  94.73  85.86  94.77 78.07     89.48 92.57  78.24
+14:   125 94.50  94.84  86.38  94.92 78.37     89.79 92.75  78.48
+15:   135 94.74  95.13  85.84  95.19 78.93     89.96 93.14  79.04
+16:   145 94.54  94.88  85.76  94.94 78.25     89.46 92.81  78.35
+
+maximiser of validity by N and dgp:
+Key: <N>
+        N  GLMM-AR1 GLMM-native GenBinaryY
+    <int>    <char>      <char>     <char>
+ 1:    10 glmer_lrt   glmer_lrt  glmer_lrt
+ 2:    15 glmer_lrt   glmer_lrt  glmer_lrt
+ 3:    20 glmer_lrt   glmer_lrt  glmer_lrt
+ 4:    25 glmer_lrt   glmer_lrt  glmer_lrt
+ 5:    35 glmer_lrt   glmer_lrt  glmer_lrt
+ 6:    45 glmer_lrt   glmer_lrt     gee_md
+ 7:    55    gee_md      gee_md     gee_md
+ 8:    65    gee_md      gee_md     gee_md
+ 9:    75    gee_md      gee_md     gee_md
+10:    85    gee_md      gee_md     gee_md
+11:    95    gee_md      gee_md     gee_md
+12:   105    gee_md      gee_md     gee_md
+13:   115    gee_md      gee_md     gee_md
+14:   125    gee_md      gee_md     gee_md
+15:   135    gee_md      gee_md     gee_md
+16:   145    gee_md      gee_md     gee_md
+
+LRT advantage at N=10 by dgp:
+           dgp   adv
+        <char> <num>
+1:    GLMM-AR1 32.85
+2: GLMM-native 32.51
+3:  GenBinaryY 32.93
+
+##### F. 3.9 under the two denominators (N<=20) #####
+      method us_att us_1000 val_att val_1000 cells
+      <char>  <num>   <num>   <num>    <num> <int>
+1: glmer_lrt 98.668  98.413  89.287   89.054   270
+2:       gee 78.745  78.607  65.243   65.132   270
+3:    gee_fg 69.012  68.935  63.874   63.803   270
+4:    gee_kc 68.762  68.687  62.256   62.187   270
+5:    gee_md 68.721  68.645  62.360   62.291   270
+6:    shrink 66.902  66.830  62.693   62.626   251
+7:       mmm 66.559  66.487  62.264   62.196   270
+8:     glmer 64.520  64.455  61.042   60.980   244
+
+whole grid, both denominators:
+      method us_att us_1000
+      <char>  <num>   <num>
+1: glmer_lrt 99.741  99.692
+2:       gee 94.080  94.054
+3:    gee_fg 91.956  91.942
+4:    gee_kc 91.906  91.891
+5:    gee_md 91.902  91.888
+6:       mmm 90.330  90.316
+7:    shrink 81.903  81.889
+8:     glmer 80.853  80.841
+
+alternative convention (cells attempted only), both denominators:
+      method us_att us_1000
+      <char>  <num>   <num>
+1: glmer_lrt 98.668  98.413
+2:       gee 78.745  78.607
+3:    shrink 71.967  71.889
+4:     glmer 71.395  71.323
+5:    gee_fg 69.012  68.935
+6:    gee_kc 68.762  68.687
+7:    gee_md 68.721  68.645
+8:       mmm 66.559  66.487
+
+##### G. strata under the 1000 denominator #####
+
+--- denominator: pu_att --- counts:
+    stratum     N
+     <fctr> <int>
+1:     <50%    83
+2:   50-80%   100
+3:   80-95%   147
+4: 95-99.9%   472
+5:     100%   638
+Key: <method>
+      method   <50% 50-80% 80-95% 95-99.9%   100%
+      <char>  <num>  <num>  <num>    <num>  <num>
+1:       gee  8.361  9.950  8.685    2.890 1.0523
+2:    gee_fg  3.891  2.831  2.751    1.153 0.6372
+3:    gee_kc  3.060  1.950  3.067    5.984 8.1768
+4:    gee_md  4.240  4.248  4.121    1.356 0.6178
+5:     glmer  5.461  2.225  2.470    2.681 2.3842
+6: glmer_lrt  5.354  8.786  8.361    4.518 1.5923
+7:       mmm  2.616  1.560  1.999    2.342 1.0855
+8:    shrink 10.917  5.373  3.876    2.975 2.3976
+Key: <method>
+      method  <50% 50-80% 80-95% 95-99.9%  100%
+      <char> <int>  <int>  <int>    <int> <int>
+1:       gee     7      8      8        5     3
+2:    gee_fg     3      4      3        1     2
+3:    gee_kc     2      2      4        8     8
+4:    gee_md     4      5      6        2     1
+5:     glmer     6      3      2        4     6
+6: glmer_lrt     5      7      7        7     5
+7:       mmm     1      1      1        3     4
+8:    shrink     8      6      5        6     7
+  <50%      gap=-1.2746 n=83 p=4.83e-08
+  50-80%    gap=-1.2716 n=100 p=1.34e-07
+  80-95%    gap=-0.7514 n=147 p=1.3e-05
+  95-99.9%  gap=+1.1889 n=472 p=0
+  100%      gap=+0.4483 n=638 p=0
+  Spearman rho=0.2446 p=4.699e-21 n=1440
+
+--- denominator: pu_1000 --- counts:
+    stratum     N
+     <fctr> <int>
+1:     <50%    83
+2:   50-80%   100
+3:   80-95%   147
+4: 95-99.9%   472
+5:     100%   638
+Key: <method>
+      method   <50% 50-80% 80-95% 95-99.9%   100%
+      <char>  <num>  <num>  <num>    <num>  <num>
+1:       gee  8.361  9.950  8.685    2.890 1.0523
+2:    gee_fg  3.891  2.831  2.751    1.153 0.6372
+3:    gee_kc  3.060  1.950  3.067    5.984 8.1768
+4:    gee_md  4.240  4.248  4.121    1.356 0.6178
+5:     glmer  5.461  2.225  2.470    2.681 2.3842
+6: glmer_lrt  5.354  8.786  8.361    4.518 1.5923
+7:       mmm  2.616  1.560  1.999    2.342 1.0855
+8:    shrink 10.917  5.373  3.876    2.975 2.3976
+Key: <method>
+      method  <50% 50-80% 80-95% 95-99.9%  100%
+      <char> <int>  <int>  <int>    <int> <int>
+1:       gee     7      8      8        5     3
+2:    gee_fg     3      4      3        1     2
+3:    gee_kc     2      2      4        8     8
+4:    gee_md     4      5      6        2     1
+5:     glmer     6      3      2        4     6
+6: glmer_lrt     5      7      7        7     5
+7:       mmm     1      1      1        3     4
+8:    shrink     8      6      5        6     7
+  <50%      gap=-1.2746 n=83 p=4.83e-08
+  50-80%    gap=-1.2716 n=100 p=1.34e-07
+  80-95%    gap=-0.7514 n=147 p=1.3e-05
+  95-99.9%  gap=+1.1889 n=472 p=0
+  100%      gap=+0.4483 n=638 p=0
+  Spearman rho=0.2445 p=4.867e-21 n=1440
+
+##### H. t-reference worst case (3.12 cross-check) #####
+Key: <method>
+      method worst_GLMM-AR1 worst_GLMM-native worst_GenBinaryY rate_GLMM-AR1
+      <char>          <num>             <num>            <num>         <num>
+1:       gee        10.6027             9.638          12.8652         6.564
+2:    gee_fg         0.9546             1.077           0.8039         4.629
+3:    gee_kc         6.3388             6.143           8.8523         9.717
+4:    gee_md         1.3866             1.162           3.0547         4.815
+5:     glmer         2.6561             2.672           4.2284         5.974
+6: glmer_lrt         4.0868             3.850           7.1627         8.109
+7:       mmm         2.6258             2.497           2.0246         5.576
+8:    shrink         2.1887             1.904           4.4349         6.318
+   rate_GLMM-native rate_GenBinaryY
+              <num>           <num>
+1:            6.495           7.155
+2:            4.576           5.033
+3:            9.452          11.998
+4:            4.729           5.235
+5:            5.772           7.856
+6:            7.480          11.061
+7:            5.390           5.789
+8:            6.099           8.484

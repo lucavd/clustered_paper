@@ -1,0 +1,20 @@
+
+.libPaths("/home/user/MMM/renv/library/linux-ubuntu-noble/R-4.6/x86_64-pc-linux-gnu")
+suppressMessages(library(data.table)); setDTthreads(2)
+R <- "~/MMM/results_v4/"
+sh <- function(f) { x <- readRDS(f); cat("\n#####", f, class(x), "\n"); if (is.data.frame(x)) { x <- as.data.table(x); str(x); print(head(x,3)) } else str(x, max.level=2, list.len=20); invisible(x) }
+t0 <- Sys.time()
+V <- readRDS(file.path(R, "variant_cc/S4/rows_v4.rds")); setDT(V); str(V); print(head(V,3))
+print(V[, .N, by=.(method)]); print(V[, .N, by=.(dgp, scen)][order(dgp, scen)])
+print(V[, .(n=.N, conv_false=sum(!converged %in% TRUE), conv_false_finite=sum(!converged %in% TRUE & is.finite(estimate) & is.finite(se))), by=method])
+cat("load secs", Sys.time()-t0, "\n")
+rm(V); gc()
+f <- list.files(file.path(R,"S6cc/rows"), full.names=TRUE); cat("S6cc rows", length(f), head(basename(f)), "\n"); sh(f[1])
+sh(file.path(R,"S6cc/cc_all.rds"))
+f <- list.files(file.path(R,"S6b/ns/rows"), full.names=TRUE); cat("S6b ns rows", length(f), head(basename(f)), "\n")
+sh(file.path(R,"S6b/ns/rows_ns.rds"))
+f <- list.files(file.path(R,"S7g/rows"), full.names=TRUE); cat("S7g rows", length(f), head(basename(f)), "\n"); sh(f[1])
+f <- list.files(file.path(R,"S7d2/rows"), full.names=TRUE); cat("S7d2 rows", length(f), head(basename(f)), "\n"); sh(f[1])
+print(list.files(file.path(R,"S7d2/agg"))); print(list.files(file.path(R,"S7e/agg")))
+sh(file.path(R,"S7f/per_replicate_gee_ar1_fg_mmm_cc.rds"))
+sh(file.path(R,"S4/truth_ar1_rep.rds")); sh(file.path(R,"S4/sims_s3.rds"))

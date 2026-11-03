@@ -1,0 +1,26 @@
+read 37920 chunks: 3792000 recs, 7582840 gee rows (1.6 min)
+[PASS] replicate keys unique 
+[PASS] 1,896 design points under the null 1896
+[PASS] gate 1 (t): md/kc/fg per-point n, k, nd, flags equal V5_S7f_cp_S7d_dp_rates.csv 11376 point x strategy rows
+[PASS] gate 1 (t2): md/kc/fg per-point n, k, nd, flags equal V5_S7f_cp_S7d_dp_rates.csv 11376 point x strategy rows
+[PASS] gate 2: md/kc/fg rows reproduce V5_S7f_rule_t2.csv (both df) 12 rows
+[PASS] gate 3: avgvar flags of main+M1c and M6-M7 equal V5_S8b_mdkc_avg.csv gee_ar1_avgvar 20+17; gee_exch_avgvar 42+32
+           strategy     df  n_dp  n_hi  n_lo n_lo_N10    pu
+             <char> <char> <int> <int> <int>    <int> <num>
+ 1:  gee_ar1_avgvar  N - 2  1896    62    80        3 92.01
+ 2:      gee_ar1_fg  N - 2  1896     0    94        9 92.24
+ 3:      gee_ar1_kc  N - 2  1896   132    64        3 92.04
+ 4:      gee_ar1_md  N - 2  1896    26    90        7 92.13
+ 5: gee_exch_avgvar  N - 2  1896   104    80        3 92.09
+ 6:     gee_exch_fg  N - 2  1896     9    93        8 92.32
+ 7:     gee_exch_kc  N - 2  1896   171    64        3 92.12
+ 8:     gee_exch_md  N - 2  1896    61    90        7 92.21
+ 9:  gee_ar1_avgvar  N - p  1896    37    83        3 92.01
+10:      gee_ar1_fg  N - p  1896     0    97       10 92.24
+11:      gee_ar1_kc  N - p  1896    95    68        3 92.04
+12:      gee_ar1_md  N - p  1896    10    94        8 92.13
+13: gee_exch_avgvar  N - p  1896    74    83        3 92.09
+14:     gee_exch_fg  N - p  1896     4    95        8 92.32
+15:     gee_exch_kc  N - p  1896   141    68        3 92.12
+16:     gee_exch_md  N - p  1896    31    92        7 92.21
+keys 21 | checks failed 0 | 1.9 min

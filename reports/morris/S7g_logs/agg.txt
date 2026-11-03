@@ -1,0 +1,92 @@
+     gate   pass
+   <char> <lgcl>
+1:    GG3  FALSE
+2:    GG2   TRUE
+3:    GG4   TRUE
+                                                                                                                                                                                                                                       detail
+                                                                                                                                                                                                                                       <char>
+1: 1230 chunk files, 123 points, 123000 replicates, 96 generation errors; fits per point: nAGQ 1 10-145, 10 10-145, 25 10-145 | explanation: replicates not generated here 96, in the study runs 96, same set and same degenerate flags: TRUE
+2:                                                                                                                          122904 replicate rows compared (stored: 122688, refit: 122904), 0 differ beyond 1e-8; max |d est| 0, max |d se| 0
+3:                                                                                                                                   9844 fits usable for both; same t decision in 99.8984%; median |z25 - z10| 2.3e-05, 99th percentile 0.11
+   explained
+      <lgcl>
+1:      TRUE
+2:        NA
+3:        NA
+           dgp n_points mean_diff_t lo95_t hi95_t mcse_t mean_diff_n lo95_n
+        <char>    <int>       <num>  <num>  <num>  <num>       <num>  <num>
+1:  GenBinaryY       33       -3.43  -3.68  -3.19  0.126       -3.57  -3.83
+2: GLMM-native       33       -3.30  -3.63  -3.04  0.151       -3.33  -3.66
+3:    GLMM-AR1       33       -3.07  -3.55  -2.70  0.219       -3.14  -3.61
+4:  Copula-AR1       24       -3.96  -4.61  -3.47  0.298       -4.05  -4.69
+   hi95_n mean_rate_lap mean_rate_agq hi_lap hi_agq hi_both pu_lap pu_agq
+    <num>         <num>         <num>  <int>  <int>   <int>  <num>  <num>
+1:  -3.31          7.37          3.76      9      2       2   79.1   80.2
+2:  -3.07          5.82          2.35      6      0       0   81.7   82.1
+3:  -2.76          5.64          2.74      6      0       0   81.1   81.6
+4:  -3.55         10.61          6.15     12      6       6   76.1   77.3
+   pg2_confirmed pg2_indeterminate pg2_refuted     pg1
+           <int>             <int>       <int>  <char>
+1:             7                18           8 refuted
+2:             8                14          11 refuted
+3:             9                15           9 refuted
+4:             3                16           5 refuted
+     pred        unit
+   <char>      <char>
+1:    PG1  GenBinaryY
+2:    PG1 GLMM-native
+3:    PG1    GLMM-AR1
+4:    PG1  Copula-AR1
+5:    PG2  all points
+6:    PG3  Copula-AR1
+                                                                value
+                                                               <char>
+1:                                               -3.43 [-3.68, -3.19]
+2:                                               -3.30 [-3.63, -3.04]
+3:                                               -3.07 [-3.55, -2.70]
+4:                                               -3.96 [-4.61, -3.47]
+5:                  27 confirmed, 63 indeterminate, 33 refuted of 123
+6: 6 of 12 points clearly above with Laplace stay clearly above (50%)
+                  outcome
+                   <char>
+1:                refuted
+2:                refuted
+3:                refuted
+4:                refuted
+5: refuted in some points
+6:                refuted
+            dgp   scen     N ntime n_both diff_t  mc_t rate_t_lap rate_t_agq
+         <char> <char> <int> <int>  <int>  <num> <num>      <num>      <num>
+ 1:  Copula-AR1     M2   145     2    967 -17.79 1.230      19.44      2.616
+ 2:  GenBinaryY     M1   145     2    979 -17.26 1.234      19.82      3.500
+ 3:  GenBinaryY     M2   145     2    979 -15.22 1.158      18.78      4.518
+ 4:  Copula-AR1     M1   145     2    971 -15.04 1.148      17.40      3.417
+ 5:  GenBinaryY     M1    55     2    704  -9.23 1.198      10.60      1.410
+ 6: GLMM-native     M1   145     2    993  -8.86 0.902      12.08      3.407
+ 7:  Copula-AR1     M2    55     2    650  -8.77 1.232      10.18      1.436
+ 8:    GLMM-AR1     M2   145     2    994  -8.35 0.889      11.67      3.900
+ 9: GLMM-native     M2   145     2    995  -8.14 0.890      12.06      4.104
+10:    GLMM-AR1     M1   145     2    990  -7.78 0.852      10.10      2.608
+11:  Copula-AR1     M1    55     2    669  -7.77 1.139       8.83      0.787
+12:  GenBinaryY     M2    55     2    704  -6.82 0.992       7.77      1.282
+13:  GenBinaryY    M1c    45     6   1000  -6.80 0.845      14.40      7.600
+14: GLMM-native    M1c    45     6   1000  -6.70 0.804      11.30      4.600
+15:    GLMM-AR1     M1    55     2    721  -6.66 0.970       7.79      1.139
+    hi_t_lap hi_t_agq     pg2
+      <lgcl>   <lgcl>  <char>
+ 1:     TRUE    FALSE refuted
+ 2:     TRUE    FALSE refuted
+ 3:     TRUE    FALSE refuted
+ 4:     TRUE    FALSE refuted
+ 5:     TRUE    FALSE refuted
+ 6:     TRUE    FALSE refuted
+ 7:     TRUE    FALSE refuted
+ 8:     TRUE    FALSE refuted
+ 9:     TRUE    FALSE refuted
+10:     TRUE    FALSE refuted
+11:    FALSE    FALSE refuted
+12:    FALSE    FALSE refuted
+13:     TRUE    FALSE refuted
+14:     TRUE    FALSE refuted
+15:    FALSE    FALSE refuted
+done in 0.6 min

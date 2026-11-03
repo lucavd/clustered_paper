@@ -1,0 +1,111 @@
+version,quantity,value
+a,"Abstract/3.4: flip usable % (all; T2-3 & N<=25), integer as printed",97%; 72%
+b,"Abstract/3.4: flip usable % (all; T2-3 & N<=25), integer as printed",92%; 43%
+base,"Abstract/3.4: flip usable % (all; T2-3 & N<=25), integer as printed",97%; 72%
+c,"Abstract/3.4: flip usable % (all; T2-3 & N<=25), integer as printed",97%; 72%
+d,"Abstract/3.4: flip usable % (all; T2-3 & N<=25), integer as printed",97%; 72%
+a,"Abstract/3.4: gee_ar1_fg usable % (all; T2-3 & N<=25), integer as printed",92%; 42%
+b,"Abstract/3.4: gee_ar1_fg usable % (all; T2-3 & N<=25), integer as printed",92%; 42%
+base,"Abstract/3.4: gee_ar1_fg usable % (all; T2-3 & N<=25), integer as printed",92%; 44%
+c,"Abstract/3.4: gee_ar1_fg usable % (all; T2-3 & N<=25), integer as printed",92%; 42%
+d,"Abstract/3.4: gee_ar1_fg usable % (all; T2-3 & N<=25), integer as printed",91%; 40%
+a,"Abstract/3.4: mmm_cc usable % (all; T2-3 & N<=25), integer as printed",91%; 39%
+b,"Abstract/3.4: mmm_cc usable % (all; T2-3 & N<=25), integer as printed",91%; 39%
+base,"Abstract/3.4: mmm_cc usable % (all; T2-3 & N<=25), integer as printed",91%; 39%
+c,"Abstract/3.4: mmm_cc usable % (all; T2-3 & N<=25), integer as printed",91%; 39%
+d,"Abstract/3.4: mmm_cc usable % (all; T2-3 & N<=25), integer as printed",91%; 38%
+a,Section 3.4/4.1: flip power in T2-3 & N<=25 (%),4.15
+b,Section 3.4/4.1: flip power in T2-3 & N<=25 (%),1.67
+base,Section 3.4/4.1: flip power in T2-3 & N<=25 (%),4.15
+c,Section 3.4/4.1: flip power in T2-3 & N<=25 (%),4.15
+d,Section 3.4/4.1: flip power in T2-3 & N<=25 (%),4.15
+a,Section 3.4/4.1: gee_ar1_fg power in T2-3 & N<=25 (%),1.30
+b,Section 3.4/4.1: gee_ar1_fg power in T2-3 & N<=25 (%),1.30
+base,Section 3.4/4.1: gee_ar1_fg power in T2-3 & N<=25 (%),1.44
+c,Section 3.4/4.1: gee_ar1_fg power in T2-3 & N<=25 (%),1.30
+d,Section 3.4/4.1: gee_ar1_fg power in T2-3 & N<=25 (%),1.24
+a,Section 3.4/4.1: mmm_cc power in T2-3 & N<=25 (%),1.42
+b,Section 3.4/4.1: mmm_cc power in T2-3 & N<=25 (%),1.42
+base,Section 3.4/4.1: mmm_cc power in T2-3 & N<=25 (%),1.42
+c,Section 3.4/4.1: mmm_cc power in T2-3 & N<=25 (%),1.42
+d,Section 3.4/4.1: mmm_cc power in T2-3 & N<=25 (%),1.41
+a,"Section 3.4: GLMM Wald clearly above 7.5%, of which GLMM-native","507, 55"
+b,"Section 3.4: GLMM Wald clearly above 7.5%, of which GLMM-native","507, 55"
+base,"Section 3.4: GLMM Wald clearly above 7.5%, of which GLMM-native","515, 55"
+c,"Section 3.4: GLMM Wald clearly above 7.5%, of which GLMM-native","507, 55"
+d,"Section 3.4: GLMM Wald clearly above 7.5%, of which GLMM-native","507, 55"
+a,Section 3.4: H0 rejections of gee_ar1_fg at M2 N=10 T=2 GLMM-AR1,0 of 34
+b,Section 3.4: H0 rejections of gee_ar1_fg at M2 N=10 T=2 GLMM-AR1,0 of 34
+base,Section 3.4: H0 rejections of gee_ar1_fg at M2 N=10 T=2 GLMM-AR1,12 of 61
+c,Section 3.4: H0 rejections of gee_ar1_fg at M2 N=10 T=2 GLMM-AR1,0 of 34
+d,Section 3.4: H0 rejections of gee_ar1_fg at M2 N=10 T=2 GLMM-AR1,0 of 28
+a,Section 3.4: H0 rejections of gee_ar1_fg at M2 N=10 T=2 GLMM-native,0 of 37
+b,Section 3.4: H0 rejections of gee_ar1_fg at M2 N=10 T=2 GLMM-native,0 of 37
+base,Section 3.4: H0 rejections of gee_ar1_fg at M2 N=10 T=2 GLMM-native,11 of 63
+c,Section 3.4: H0 rejections of gee_ar1_fg at M2 N=10 T=2 GLMM-native,0 of 37
+d,Section 3.4: H0 rejections of gee_ar1_fg at M2 N=10 T=2 GLMM-native,0 of 31
+a,Section 3.4: H0 rejections of mmm_cc at M2 N=10 T=2 GLMM-AR1,0 of 35
+b,Section 3.4: H0 rejections of mmm_cc at M2 N=10 T=2 GLMM-AR1,0 of 35
+base,Section 3.4: H0 rejections of mmm_cc at M2 N=10 T=2 GLMM-AR1,0 of 35
+c,Section 3.4: H0 rejections of mmm_cc at M2 N=10 T=2 GLMM-AR1,0 of 35
+d,Section 3.4: H0 rejections of mmm_cc at M2 N=10 T=2 GLMM-AR1,0 of 27
+a,Section 3.4: H0 rejections of mmm_cc at M2 N=10 T=2 GLMM-native,0 of 38
+b,Section 3.4: H0 rejections of mmm_cc at M2 N=10 T=2 GLMM-native,0 of 38
+base,Section 3.4: H0 rejections of mmm_cc at M2 N=10 T=2 GLMM-native,0 of 38
+c,Section 3.4: H0 rejections of mmm_cc at M2 N=10 T=2 GLMM-native,0 of 38
+d,Section 3.4: H0 rejections of mmm_cc at M2 N=10 T=2 GLMM-native,0 of 31
+a,Section 3.4: gee_ar1_fg clearly below 2.5% (all; N=10),105; 7
+b,Section 3.4: gee_ar1_fg clearly below 2.5% (all; N=10),105; 7
+base,Section 3.4: gee_ar1_fg clearly below 2.5% (all; N=10),106; 5
+c,Section 3.4: gee_ar1_fg clearly below 2.5% (all; N=10),105; 7
+d,Section 3.4: gee_ar1_fg clearly below 2.5% (all; N=10),100; 7
+a,Section 3.4: gee_ar1_kc clearly above 7.5%,126
+b,Section 3.4: gee_ar1_kc clearly above 7.5%,126
+base,Section 3.4: gee_ar1_kc clearly above 7.5%,138
+c,Section 3.4: gee_ar1_kc clearly above 7.5%,126
+d,Section 3.4: gee_ar1_kc clearly above 7.5%,123
+a,Section 3.4: gee_ar1_md clearly above 7.5%,15
+b,Section 3.4: gee_ar1_md clearly above 7.5%,15
+base,Section 3.4: gee_ar1_md clearly above 7.5%,20
+c,Section 3.4: gee_ar1_md clearly above 7.5%,15
+d,Section 3.4: gee_ar1_md clearly above 7.5%,14
+a,"Section 3.4: gee_exch_fg clearly above 7.5%, of which main grid (all N=10?)","8, 0 main, N=10 among them 1"
+b,"Section 3.4: gee_exch_fg clearly above 7.5%, of which main grid (all N=10?)","8, 0 main, N=10 among them 1"
+base,"Section 3.4: gee_exch_fg clearly above 7.5%, of which main grid (all N=10?)","15, 3 main, N=10 among them 7"
+c,"Section 3.4: gee_exch_fg clearly above 7.5%, of which main grid (all N=10?)","8, 0 main, N=10 among them 1"
+d,"Section 3.4: gee_exch_fg clearly above 7.5%, of which main grid (all N=10?)","6, 0 main, N=10 among them 0"
+a,Section 3.4: gee_exch_kc clearly above 7.5%,194
+b,Section 3.4: gee_exch_kc clearly above 7.5%,194
+base,Section 3.4: gee_exch_kc clearly above 7.5%,207
+c,Section 3.4: gee_exch_kc clearly above 7.5%,194
+d,Section 3.4: gee_exch_kc clearly above 7.5%,187
+a,Section 3.4: gee_exch_md clearly above 7.5%,59
+b,Section 3.4: gee_exch_md clearly above 7.5%,59
+base,Section 3.4: gee_exch_md clearly above 7.5%,63
+c,Section 3.4: gee_exch_md clearly above 7.5%,59
+d,Section 3.4: gee_exch_md clearly above 7.5%,57
+a,"Section 3.4: gee_ind_fg clearly above 7.5%, of which main grid (all N=10?)","2, 0 main, N=10 among them 0"
+b,"Section 3.4: gee_ind_fg clearly above 7.5%, of which main grid (all N=10?)","2, 0 main, N=10 among them 0"
+base,"Section 3.4: gee_ind_fg clearly above 7.5%, of which main grid (all N=10?)","5, 3 main, N=10 among them 3"
+c,"Section 3.4: gee_ind_fg clearly above 7.5%, of which main grid (all N=10?)","2, 0 main, N=10 among them 0"
+d,"Section 3.4: gee_ind_fg clearly above 7.5%, of which main grid (all N=10?)","2, 0 main, N=10 among them 0"
+a,Section 3.4: gee_ind_kc clearly above 7.5%,183
+b,Section 3.4: gee_ind_kc clearly above 7.5%,183
+base,Section 3.4: gee_ind_kc clearly above 7.5%,189
+c,Section 3.4: gee_ind_kc clearly above 7.5%,183
+d,Section 3.4: gee_ind_kc clearly above 7.5%,182
+a,Section 3.4: gee_ind_md clearly above 7.5%,52
+b,Section 3.4: gee_ind_md clearly above 7.5%,52
+base,Section 3.4: gee_ind_md clearly above 7.5%,58
+c,Section 3.4: gee_ind_md clearly above 7.5%,52
+d,Section 3.4: gee_ind_md clearly above 7.5%,50
+a,Section 3.4: glmer_lrt clearly above 7.5%,412
+b,Section 3.4: glmer_lrt clearly above 7.5%,337
+base,Section 3.4: glmer_lrt clearly above 7.5%,412
+c,Section 3.4: glmer_lrt clearly above 7.5%,412
+d,Section 3.4: glmer_lrt clearly above 7.5%,412
+a,Section 3.4: mmm_cc clearly below 2.5% (all; N=10),24; 18
+b,Section 3.4: mmm_cc clearly below 2.5% (all; N=10),24; 18
+base,Section 3.4: mmm_cc clearly below 2.5% (all; N=10),24; 18
+c,Section 3.4: mmm_cc clearly below 2.5% (all; N=10),24; 18
+d,Section 3.4: mmm_cc clearly below 2.5% (all; N=10),20; 15

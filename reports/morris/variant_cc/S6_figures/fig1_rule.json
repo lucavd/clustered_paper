@@ -1,0 +1,9 @@
+{
+ "option": "MMM with convergence check and t reference first, FG with t as alternative (PI, D-35, 2026-10-21)",
+ "lines": [
+  ["q", "Testing the time x treatment\ninteraction with few clusters"],
+  ["mmm", "Marginalized multilevel model with a\nt reference (N - p df) and a convergence\ncheck: refit without the latent-SD slope\nif the fit fails or the slope is at 0;\nany number of clusters and occasions"],
+  ["fg", "Alternative: GEE, Fay-Graubard, t\n(about 10% false positives with <= 25\nclusters and growing variability)"],
+  ["end", "2-3 occasions, <= 25 clusters: both\nanswer in about 4 datasets of 10; no\nmethod is both available and calibrated"]
+ ]
+}

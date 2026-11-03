@@ -1,0 +1,4 @@
+gate,pass,detail
+GE2,TRUE,"gee exch: 562 saved finite rows, 0 without new value, max |d est| 0.00e+00, max |d se| 0.00e+00; geesmv (i<=50): gee_fg both 204, only saved 0, only new 0, max rel 0.00e+00; gee_kc both 204, only saved 0, only new 0, max rel 0.00e+00; gee_md both 204, only saved 0, only new 0, max rel 0.00e+00"
+GE3,TRUE,"200 pilot replicates, mismatches primary 0, strict 0"
+GE5,TRUE,"md: both 201, only geesmv 2, only fewclust 10, max rel 1.83e-14; kc: both 200, only geesmv 3, only fewclust 10, max rel 8.15e-01; fg: both 201, only geesmv 2, only fewclust 13, max rel 3.52e-14"

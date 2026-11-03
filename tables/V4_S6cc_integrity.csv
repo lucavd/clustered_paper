@@ -1,0 +1,4 @@
+check,pass
+row set identical outside MMM rows of M3-M5,TRUE
+"V4_perf_all identical outside M3-M5 and, in M3-M5, for the other methods in their own set",TRUE
+boot_idx.rds identical (md5),TRUE

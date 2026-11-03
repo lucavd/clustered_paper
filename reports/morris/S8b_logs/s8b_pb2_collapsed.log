@@ -1,0 +1,37 @@
+   quantity   est    mcse    lo    hi cells cells_q95_above_37
+     <char> <num>   <num> <num> <num> <int>              <int>
+1:     mean 2.282 0.04677 2.190 2.369  1254                193
+2:   pooled 2.126 0.01358 2.099 2.152  1254                193
+   cells_Q_above_2.5 max_Q mean_pow_sa null_big_share
+               <int> <num>       <num>          <num>
+1:               456    50       23.76           2.22
+2:               456    50       23.76           2.22
+            dgp   scen     N ntime model    n1     k  kbig     q95    n0  big0
+         <char> <char> <int> <int> <int> <int> <int> <int>   <num> <int> <int>
+ 1:    GLMM-AR1     M5    15     3     5     2     1     1 187.180     2     2
+ 2:  GenBinaryY     M3    10     2     3     2     1     1 226.917     2     1
+ 3:  GenBinaryY     M5   145     4     5   981    82    82 299.165   980    89
+ 4:    GLMM-AR1     M1    75    10     1  1000   758    81   2.483  1000    13
+ 5:  GenBinaryY     M4   105     4     4  1000    80    80  74.038  1000    58
+ 6:  GenBinaryY     M3   105     4     3  1000    79    79  48.515  1000    52
+ 7: GLMM-native     M1   105    10     1  1000    78    76   8.031  1000    30
+ 8: GLMM-native     M1    55    10     1  1000    75    75   9.753  1000    28
+ 9:  GenBinaryY     M5    85     4     5   947    69    69 509.018   939   104
+10:  GenBinaryY     M5    20     4     5   619    44    44 969.341   567    72
+    pow_sa      Q                   key
+     <num>  <num>                <char>
+ 1: 50.000 50.000      GLMM-AR1 M5 15 3
+ 2: 50.000 50.000    GenBinaryY M3 10 2
+ 3:  8.359  8.359   GenBinaryY M5 145 4
+ 4: 75.800  8.100     GLMM-AR1 M1 75 10
+ 5:  8.000  8.000   GenBinaryY M4 105 4
+ 6:  7.900  7.900   GenBinaryY M3 105 4
+ 7:  7.800  7.600 GLMM-native M1 105 10
+ 8:  7.500  7.500  GLMM-native M1 55 10
+ 9:  7.286  7.286    GenBinaryY M5 85 4
+10:  7.108  7.108    GenBinaryY M5 20 4
+           dgp cells meanQ meanpow
+        <char> <int> <num>   <num>
+1:    GLMM-AR1   418 2.210   24.66
+2: GLMM-native   418 2.180   22.76
+3:  GenBinaryY   418 2.457   23.85

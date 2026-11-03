@@ -1,0 +1,66 @@
+key,value,mcse,kind,source,how
+cap|S3|rate,0.0471941303254473,,sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 24 registry ids of columns ['Rate AR1', 'Rate GB', 'Rate NAT'] of Table S3 (block bootstrap)"
+cap|S3|worst,0.3151791064346989,,sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 24 registry ids of columns ['Worst AR1', 'Worst GB', 'Worst NAT'] of Table S3 (block bootstrap)"
+cap|S3|mad,0.0471240785396113,,sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 24 registry ids of columns ['MAD AR1', 'MAD GB', 'MAD NAT'] of Table S3 (block bootstrap)"
+cap|S16|rate,0.216170829566151,,sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 24 registry ids of columns ['Rate AR1', 'Rate GB', 'Rate NAT'] of Table S16 (block bootstrap)"
+cap|S16|worst,0.6506459911947229,,sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 24 registry ids of columns ['Worst AR1', 'Worst GB', 'Worst NAT'] of Table S16 (block bootstrap)"
+cap|S16|mad,0.21564580822306,,sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 24 registry ids of columns ['MAD AR1', 'MAD GB', 'MAD NAT'] of Table S16 (block bootstrap)"
+cap|S4|mad,0.496574178607454,,sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 24 registry ids of columns ['T = 2', 'T = 3', 'T ≥ 4'] of Table S4 (block bootstrap)"
+cap|S17|mad,0.2841687029765039,,sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 24 registry ids of columns ['T = 2', 'T = 3', 'T ≥ 4'] of Table S17 (block bootstrap)"
+cap|S5|share,1.09586462042439,,sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 16 registry ids of columns ['BH', 'BY'] of Table S5 (block bootstrap)"
+cap|S18|share,5.02429876668564,,sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 16 registry ids of columns ['BH', 'BY'] of Table S18 (block bootstrap)"
+cap|S6|rate,0.0471941303254473,,sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 48 registry ids of columns ['Common AR1', 'Common GB', 'Common NAT', 'Own AR1', 'Own GB', 'Own NAT'] of Table S6 (block bootstrap)"
+cap|S6|shift,0.0228868681127865,,sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 24 registry ids of columns ['Shift AR1', 'Shift GB', 'Shift NAT'] of Table S6 (block bootstrap)"
+cap|S19|rate,0.216170829566151,,sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 48 registry ids of columns ['Common AR1', 'Common GB', 'Common NAT', 'Own AR1', 'Own GB', 'Own NAT'] of Table S19 (block bootstrap)"
+cap|S19|shift,0.131599023026329,,sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 24 registry ids of columns ['Shift AR1', 'Shift GB', 'Shift NAT'] of Table S19 (block bootstrap)"
+cap|S7|usable,0.126261001004289,,sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 96 registry ids of columns ['GEE, Fay-Graubard', 'GEE, Kauermann-Carroll', 'GEE, Mancl-DeRouen', 'GEE, uncorrected', 'GLMM, Wald', 'GLMM, likelihood ratio', 'Marginalized model', 'Shrinkage GLM'] of Table S7 (block bootstrap)"
+cap|S20|usable,0.349940003318224,,sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 32 registry ids of columns ['GEE, Fay-Graubard', 'GEE, Kauermann-Carroll', 'GEE, Mancl-DeRouen', 'GEE, uncorrected', 'GLMM, Wald', 'GLMM, likelihood ratio', 'Marginalized model', 'Shrinkage GLM'] of Table S20 (block bootstrap)"
+cap|S8|usable,0.0962589473250264,,sig2,tables/V5_S7f_numbers.csv,registry: max of column mcse over the 8 registry ids of columns ['Usable'] of Table S8 (block bootstrap)
+cap|S8|uncond,0.104049635973042,,sig2,tables/V5_S7f_numbers.csv,registry: max of column mcse over the 8 registry ids of columns ['Unconditional validity'] of Table S8 (block bootstrap)
+cap|S21|usable,0.259589480343746,,sig2,tables/V5_S7f_numbers.csv,registry: max of column mcse over the 8 registry ids of columns ['Usable'] of Table S21 (block bootstrap)
+cap|S21|uncond,0.276635378790899,,sig2,tables/V5_S7f_numbers.csv,registry: max of column mcse over the 8 registry ids of columns ['Unconditional validity'] of Table S21 (block bootstrap)
+cap|S9|mad,1.19367029057644,,sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 40 registry ids of columns ['x:hdr_T9_1', 'x:hdr_T9_2', 'x:hdr_T9_3', 'x:hdr_T9_4', 'x:hdr_T9_5'] of Table S9 (block bootstrap)"
+cap|S22|mad,0.909176121282504,,sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 40 registry ids of columns ['x:hdr_T9_1', 'x:hdr_T9_2', 'x:hdr_T9_3', 'x:hdr_T9_4', 'x:hdr_T9_5'] of Table S22 (block bootstrap)"
+cap|S10|raw,0.0632386745881545,,sig2,tables/V5_S7f_numbers.csv,registry: max of column mcse over the 24 registry ids of columns ['Raw'] of Table S10 (block bootstrap)
+cap|S10|sa,0.264057311896992,,sig2,tables/V5_S7f_numbers.csv,registry: max of column mcse over the 24 registry ids of columns ['Size-adjusted'] of Table S10 (block bootstrap)
+cap|S23|raw,0.236004822806548,,sig2,tables/V5_S7f_numbers.csv,registry: max of column mcse over the 24 registry ids of columns ['Raw'] of Table S23 (block bootstrap)
+cap|S23|sa,0.2850988680966249,,sig2,tables/V5_S7f_numbers.csv,registry: max of column mcse over the 24 registry ids of columns ['Size-adjusted'] of Table S23 (block bootstrap)
+cap|S11|rate,0.0471941303254473,,sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 42 registry ids of columns ['Normal AR1', 'Normal GB', 'Normal NAT', 't AR1', 't GB', 't NAT'] of Table S11 (block bootstrap)"
+cap|S11|shift,0.0353302124443478,,sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 28 registry ids of columns ['Normal minus t at N ≤ 25', 't minus normal AR1', 't minus normal GB', 't minus normal NAT'] of Table S11 (block bootstrap)"
+cap|S24|rate,0.216170829566151,,sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 42 registry ids of columns ['Normal AR1', 'Normal GB', 'Normal NAT', 't AR1', 't GB', 't NAT'] of Table S24 (block bootstrap)"
+cap|S24|shift,0.104015997508892,,sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 28 registry ids of columns ['Normal minus t at N ≤ 25', 't minus normal AR1', 't minus normal GB', 't minus normal NAT'] of Table S24 (block bootstrap)"
+cap|S12|cov,0.0490260358915671,,sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 20 registry ids of columns ['GLMM-AR1', 'GLMM-native', 'GenBinaryY'] of Table S12 (block bootstrap)"
+cap|S25|cov,0.20293094008208,,sig2,tables/V5_S7f_numbers.csv,"registry: max of column mcse over the 20 registry ids of columns ['GLMM-AR1', 'GLMM-native', 'GenBinaryY'] of Table S25 (block bootstrap)"
+cap|S30|usable,2.23605008888442,,sig2,tables/V5_S7f_numbers.csv,registry: max of column mcse over the 30 registry ids of columns ['Usable (%)'] of Table S30 (block bootstrap)
+cap|S30|bias,0.2146875190599039,,sig2,tables/V5_S7f_numbers.csv,registry: max of column mcse over the 30 registry ids of columns ['Bias'] of Table S30 (block bootstrap)
+cap|S30|seratio,0.152362631176855,,sig2,tables/V5_S7f_seratio_fpc.csv,"registry: max of mcse_ratio over the 30 rows of the respiratory trial in Table S30 (ratio before the finite-population factor, which is below 1, so conservative)"
+cap|S31|rate,0.470123140082634,,sig2,tables/V5_S7f_h2h_boot.csv,bootstrap: max of the block-bootstrap mcse over the 20 cells (rate)
+cap|S31|mad,0.421863343004918,,sig2,tables/V5_S7f_h2h_boot.csv,bootstrap: max of the block-bootstrap mcse over the 20 cells (mad)
+cap|S31|diff,0.540565250050324,,sig2,tables/V5_S7f_h2h_boot.csv,bootstrap: max of the block-bootstrap mcse over the 10 cells (diff)
+cap|S31|pu,0.298774453744622,,sig2,tables/V5_S7f_h2h_boot.csv,bootstrap: max of the block-bootstrap mcse over the 20 cells (pu)
+cap|S31|upow,0.0690815691648106,,sig2,tables/V5_S7f_h2h_boot.csv,bootstrap: max of the block-bootstrap mcse over the 20 cells (upow)
+cap|t4|pu,0.56,,sig2,tables/V5_S7f_cp_S7d_dp_rates.csv; V5_S7f_cp_S7e_dp_rates.csv; V5_S7f_cp_S7b_rule_dp.csv; V5_S7f_cp_S7d2_flip_rules_dp.csv,bound: max over the 14 strategies of Table 4 of the mean over design points of 100 sqrt(p(1-p)/nd) (at mmm_cc; power with the H1 estimable designs)
+cap|t4|upow,1.1,,sig2,tables/V5_S7f_cp_S7d_dp_rates.csv; V5_S7f_cp_S7e_dp_rates.csv; V5_S7f_cp_S7b_rule_dp.csv; V5_S7f_cp_S7d2_flip_rules_dp.csv,bound: max over the 14 strategies of Table 4 of the mean over design points of 100 sqrt(p(1-p)/nd) (at gee_exch_unc; power with the H1 estimable designs)
+cap|t4|pu_small,1.4000000000000001,,sig2,tables/V5_S7f_cp_S7d_dp_rates.csv; V5_S7f_cp_S7e_dp_rates.csv; V5_S7f_cp_S7b_rule_dp.csv; V5_S7f_cp_S7d2_flip_rules_dp.csv,bound: max over the 14 strategies of Table 4 of the mean over design points of 100 sqrt(p(1-p)/nd) (at gee_exch_unc; power with the H1 estimable designs)
+cap|S26|pu,0.55,,sig2,tables/V5_S7f_cp_S7d_dp_rates.csv; V5_S7f_cp_S7b_rule_dp.csv,"bound: max over the 8 strategies of Table S26 of the mean over the 1,896 points of 100 sqrt(p(1-p)/nd)"
+cap|S28|type1,1.2000000000000002,,sig2,tables/V5_S7f_cp_S7e_dp_rates.csv; V5_S7f_cp_S7d2_flip_rules_dp.csv,bound: max over the strategies of the mean over the 480 points of the per-point binomial MCSE of the rate
+cap|S28|usable,0.58,,sig2,tables/V5_S7f_cp_S7e_dp_rates.csv,bound: max over the strategies of the mean over the 480 points of 100 sqrt(p(1-p)/nd)
+cap|S28|power,1.1,,sig2,tables/V5_S7f_cp_S7e_dp_rates.csv,bound: max over the strategies of the mean over the 480 points of 100 sqrt(q(1-q)/nd_H1)
+cap|S28|biasse,0.041,,sig2,tables/V4_S7e_bias_cov.csv,bound: max over the marginal estimators of the mean over points of mcse_bias / empse
+cap|S28|cov,0.91,,sig2,tables/V4_S7e_bias_cov.csv,bound: max over estimators and references of the mean over points of the binomial MCSE of coverage
+cap|S14|maxrate,1.2828880501708395,,sig2,tables/V4_S6b_ns_rule_safety_dp.csv,binomial: max over the 24 rows of 100 sqrt(p(1-p)/n) at the design point with the largest rate
+cap|S14|pu,0.5700000000000001,,sig2,tables/V4_S6b_ns_rule_safety_dp.csv,bound: max over the 24 rows of the mean over the 96 points of 100 sqrt(p(1-p)/nd)
+cap|S15|share,2.2356207191739834,,sig2,tables/V5_S7f_lus_tab316.csv,"binomial: max over the 120 cells of 100 sqrt(p(1-p)/500), 500 subsamples (x:lus_nsub)"
+cap|S27|finite,0.3226523597331494,,sig2,tables/V4_S7d2_explain_finite.csv,"binomial: max over the 24 rows of 100 sqrt(p(1-p)/datasets); approximate, the datasets of a row share replicate seeds across N"
+cap|S27|gee,0.3023636210561903,,sig2,tables/V4_S7d2_explain_finite.csv,"binomial: max over the 24 rows of 100 sqrt(p(1-p)/datasets); approximate, as above"
+cap|S32|maxrate,5.96065548112562,,sig2,tables/V5_S7g_calib.csv,"binomial: max of max_mc over the 19 strategies (binomial MCSE at the point of the highest rate, at gee_ar1_kc)"
+cap|S33|pu,0.56,,sig2,tables/V5_S7g_filter_dp.csv,bound: max over the 51 strategy x limit cells of the mean over points of 100 sqrt(p(1-p)/nd)
+cap|S34|type1,3.1,,sig2,tables/V5_S7g_agq_dp.csv,bound: max over the 30 cells (mechanism x T x method) of the mean over points of the binomial MCSE of the rate (mc_t)
+cap|S34|pu,1.1,,sig2,tables/V5_S7g_agq_dp.csv,bound: max over the 30 cells of the mean over points of 100 sqrt(p(1-p)/nd)
+cap|S35|rb,0.038492317521675375,,sig2,tables/V5_S7g_m67_cc_dp.csv,"approx: max over the 8 rows of the mean over points of 1 / sqrt(n) (bias / SE, empirical SE treated as known; bound for the mean)"
+cap|S35|rbmax,0.22360679774997896,,sig2,tables/V5_S7g_m67_cc_dp.csv,approx: max over rows of 1 / sqrt(n) at the point with the largest |bias / SE|
+cap|S35|ser,2.206481415683872,,sig2,tables/V5_S7g_m67_cc_dp.csv,"approx: max over the 8 rows of the median over points of 100 (1 + ratio) / sqrt(2 (n - 1)) (typical per-point MCSE of the ratio, empirical-SE component only; not a bound for the median over points)"
+cap|S35|cov,0.73,,sig2,tables/V5_S7g_m67_cc_dp.csv,bound: max over rows of the mean over points of the binomial MCSE of coverage
+cap|S35|covmin,0.8568944817345686,,sig2,tables/V5_S7g_m67_cc_dp.csv,binomial: max over rows of the binomial MCSE at the point with the smallest coverage
+cap|S35|sh,1.8,,sig2,tables/V5_S7g_m67_cc_dp.csv,bound: max over rows of the mean over points of the binomial MCSE of the share of fits in which the check intervened
+cap|fig2|mcse_max,6.36030377172783,,sig2,tables/variant_cv/V4_S6_nestedloop.csv,"binomial: largest per-point MCSE of a drawn rate (n_obs >= 20), all methods (percentage points)"

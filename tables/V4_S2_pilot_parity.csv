@@ -1,0 +1,13 @@
+model,N,ntime,v4H0_vs_H1_differs_in,beta_diff_positions,beta_len,origH0_vs_H1_differs_in,sigma_H1,sigma_v4H0,gamma_H1,gamma_v4H0,pass,instr_ok
+3,10,2,beta,4,4,"beta,sigma","1,0.01","1,0.01",1,1,TRUE,TRUE
+3,25,4,beta,4,4,"beta,sigma","1,0.01","1,0.01",1,1,TRUE,TRUE
+3,65,6,beta,4,4,"beta,sigma","1,0.01","1,0.01",1,1,TRUE,TRUE
+3,145,10,beta,4,4,"beta,sigma","1,0.01","1,0.01",1,1,TRUE,TRUE
+4,10,2,beta,4,4,"beta,sigma,gamma","1,0.01","1,0.01","1,0.01","1,0.01",TRUE,TRUE
+4,25,4,beta,4,4,"beta,sigma,gamma","1,0.01","1,0.01","1,0.01","1,0.01",TRUE,TRUE
+4,65,6,beta,4,4,"beta,sigma,gamma","1,0.01","1,0.01","1,0.01","1,0.01",TRUE,TRUE
+4,145,10,beta,4,4,"beta,sigma,gamma","1,0.01","1,0.01","1,0.01","1,0.01",TRUE,TRUE
+5,10,2,beta,5,5,"beta,sigma,gamma","1,0.01,0.01","1,0.01,0.01","1,0.1,0.05","1,0.1,0.05",TRUE,TRUE
+5,25,4,beta,5,5,"beta,sigma,gamma","1,0.01,0.01","1,0.01,0.01","1,0.1,0.05","1,0.1,0.05",TRUE,TRUE
+5,65,6,beta,5,5,"beta,sigma,gamma","1,0.01,0.01","1,0.01,0.01","1,0.1,0.05","1,0.1,0.05",TRUE,TRUE
+5,145,10,beta,5,5,"beta,sigma,gamma","1,0.01,0.01","1,0.01,0.01","1,0.1,0.05","1,0.1,0.05",TRUE,TRUE

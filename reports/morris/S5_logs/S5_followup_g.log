@@ -1,0 +1,15 @@
+Key: <method, N, ntime_grp, sgrp>
+       method     N ntime_grp   sgrp        v4        v3
+       <char> <int>    <char> <char>     <num>     <num>
+ 1:    gee_fg    35      T<=3  M1-M2  74.52500  74.52500
+ 2:    gee_fg    35      T<=3  M3-M5  75.47222  75.59444
+ 3:    gee_fg    35      T>=4  M1-M2  99.45417  99.45417
+ 4:    gee_fg    35      T>=4  M3-M5  99.57500  99.59444
+ 5:    gee_md    35      T<=3  M1-M2  74.52500  74.52500
+ 6:    gee_md    35      T<=3  M3-M5  75.47778  75.60000
+ 7:    gee_md    35      T>=4  M1-M2  99.45417  99.45417
+ 8:    gee_md    35      T>=4  M3-M5  99.57500  99.59444
+ 9: glmer_lrt    35      T<=3  M1-M2  99.95000  99.95000
+10: glmer_lrt    35      T<=3  M3-M5  33.32778  99.88889
+11: glmer_lrt    35      T>=4  M1-M2 100.00000 100.00000
+12: glmer_lrt    35      T>=4  M3-M5  99.88333 100.00000

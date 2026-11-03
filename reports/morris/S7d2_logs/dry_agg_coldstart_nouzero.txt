@@ -1,0 +1,70 @@
+Warning message:
+In fifelse(scen == "M1c", 1L, as.integer(sub("M", "", scen))) :
+  NAs introduced by coercion
+read 8 chunks, 800 replicates (0.0 min)
+      gate                                   check value  target   pass
+    <char>                                  <char> <int>   <num> <lgcl>
+ 1:    GG1                             chunk files     8   47520  FALSE
+ 2:    GG1                              replicates   800 4752000  FALSE
+ 3:    GG1                   unique replicate keys   800 4752000  FALSE
+ 4:    GG1                      md5 before = after     0       1  FALSE
+ 5:    GG1                   md5 before = S7b list     1       1   TRUE
+ 6:    GG2        n_obs and sum_y equal to S7d/S7e     0       0   TRUE
+ 7:    GG2            p0 s7d_flip() = saved p_flip     0       0   TRUE
+ 8:    GG2          p0 new function = saved p_flip     0       0   TRUE
+ 9:    GG2                               CI errors     0       0   TRUE
+10:    GG4                       intervals checked   648      NA   TRUE
+11:    GG4                lo <= est <= hi violated     0       0   TRUE
+12:    GG4              p < 0.05 at a reported end     0       0   TRUE
+13:    GG4   not rejected 1e-4 beyond a finite end     8       0  FALSE
+14:    GG4   of which p not computable 1e-4 beyond     0      NA     NA
+                  what           reason     N
+                <char>           <char> <int>
+1:         no interval |estimate| >= 10   146
+2: interval not finite  upper unbounded    99
+3: interval not finite  lower unbounded    47
+4: interval not finite   both unbounded   111
+Warning message:
+In fifelse(scen == "M1c", 1L, as.integer(sub("^M", "", scen))) :
+  NAs introduced by coercion
+                                                        q    est      lo
+                                                   <char>  <num>   <num>
+ 1:             PG1 coverage of the test at the truth, H1 96.388 94.6767
+ 2:             PG4 coverage interval - coverage test, H1  1.167  0.3327
+ 3:                         PG5 finite interval share, H1 51.806 48.8128
+ 4:           PG6 finite interval share, H1, small points  1.031  0.0000
+ 5: PG7 width ratio flip / GEE AR(1) FG t (geometric), H1  1.198  1.1477
+ 6:                       PG8 coverage GEE AR(1) FG t, H1 97.867 96.4239
+ 7:                 coverage of the test at the truth, H0 94.282 91.6505
+ 8:                           coverage GEE AR(1) FG t, H0 98.667 97.3064
+ 9:                             finite interval share, H0 44.021 40.9622
+10:                      coverage of the test, H1, copula 98.000 94.8953
+11:            coverage of the test, H1, study mechanisms 95.985 93.8940
+12:                         width ratio, H1, small points    NaN      NA
+13:           coverage test - coverage GEE AR(1) FG t, H1 -1.480 -3.0487
+          hi      sd
+       <num>   <num>
+ 1:  97.9063 0.82991
+ 2:   2.2348 0.48413
+ 3:  54.6293 1.51674
+ 4:   3.2258 0.97692
+ 5:   1.2542 0.02751
+ 6:  99.0902 0.68505
+ 7:  96.7061 1.31665
+ 8:  99.6914 0.64592
+ 9:  47.3619 1.61163
+10: 100.0000 1.39365
+11:  97.7548 0.96869
+12:       NA      NA
+13:   0.1406 0.82133
+     code   obs    lo    hi     a     b       verdict
+   <char> <num> <num> <num> <num> <num>        <char>
+1:    PG1 96.39 94.68 97.91  92.5  97.5 indeterminate
+2:    PG2  0.00  0.00  0.00   0.0   0.0     confirmed
+3:    PG3  0.00  0.00  0.00   0.0  60.0     confirmed
+4:    PG4 96.39 94.68 97.91  -1.0   1.0       refuted
+5:    PG5 96.39 94.68 97.91  90.0 100.0     confirmed
+6:    PG6 96.39 94.68 97.91  60.0 100.0     confirmed
+7:    PG7 96.39 94.68 97.91   0.9   1.1       refuted
+8:    PG8 96.39 94.68 97.91  92.5  97.5 indeterminate
+done in 0.0 min

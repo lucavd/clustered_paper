@@ -1,0 +1,7 @@
+check,value,pass
+trial: rows matched to stored,5000,TRUE
+trial: status equal to stored,5000,TRUE
+trial: max |estimate - stored|,5.32907051820075e-14,TRUE
+trial: max |robust SE - stored SE|,4.54747350886464e-13,TRUE
+trial full data: |estimate - stored|,1.55431223447522e-15,TRUE
+cohort full data (pieno): estimate,0.352150994012782,TRUE

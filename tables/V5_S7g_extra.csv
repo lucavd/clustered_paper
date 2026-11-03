@@ -1,0 +1,125 @@
+key,value,mcse,kind,source,note
+cal_maxrate_flip,8.78378378378378,1.64524655264192,sig2,tables/V5_S7g_calib.csv,largest rate among assessed points
+cal_maxn_flip,296,"",int,tables/V5_S7g_calib.csv,usable replicates at that point
+cal_notexcl_flip,760,"",int,tables/V5_S7g_calib.csv,"assessed, not clearly above, exact upper limit > 7.5%"
+cal_notass_flip,0,"",int,tables/V5_S7g_calib.csv,points with < 20 usable
+cal_maxrate_gee_ar1_fg,19.672131147541,5.0897202262445997,sig2,tables/V5_S7g_calib.csv,largest rate among assessed points
+cal_maxn_gee_ar1_fg,61,"",int,tables/V5_S7g_calib.csv,usable replicates at that point
+cal_notexcl_gee_ar1_fg,227,"",int,tables/V5_S7g_calib.csv,"assessed, not clearly above, exact upper limit > 7.5%"
+cal_notass_gee_ar1_fg,0,"",int,tables/V5_S7g_calib.csv,points with < 20 usable
+cal_maxrate_gee_ar1_kc,22.4489795918367,5.9606554811256203,sig2,tables/V5_S7g_calib.csv,largest rate among assessed points
+cal_maxn_gee_ar1_kc,49,"",int,tables/V5_S7g_calib.csv,usable replicates at that point
+cal_notexcl_gee_ar1_kc,589,"",int,tables/V5_S7g_calib.csv,"assessed, not clearly above, exact upper limit > 7.5%"
+cal_notass_gee_ar1_kc,0,"",int,tables/V5_S7g_calib.csv,points with < 20 usable
+cal_maxrate_gee_ar1_md,18.9655172413793,5.1475820904255896,sig2,tables/V5_S7g_calib.csv,largest rate among assessed points
+cal_maxn_gee_ar1_md,58,"",int,tables/V5_S7g_calib.csv,usable replicates at that point
+cal_notexcl_gee_ar1_md,369,"",int,tables/V5_S7g_calib.csv,"assessed, not clearly above, exact upper limit > 7.5%"
+cal_notass_gee_ar1_md,0,"",int,tables/V5_S7g_calib.csv,points with < 20 usable
+cal_maxrate_gee_ar1_unc,24.6913580246914,1.6939765480423099,sig2,tables/V5_S7g_calib.csv,largest rate among assessed points
+cal_maxn_gee_ar1_unc,648,"",int,tables/V5_S7g_calib.csv,usable replicates at that point
+cal_notexcl_gee_ar1_unc,737,"",int,tables/V5_S7g_calib.csv,"assessed, not clearly above, exact upper limit > 7.5%"
+cal_notass_gee_ar1_unc,0,"",int,tables/V5_S7g_calib.csv,points with < 20 usable
+cal_maxrate_gee_exch_cr2,22.3042836041359,1.5999202774266399,sig2,tables/V5_S7g_calib.csv,largest rate among assessed points
+cal_maxn_gee_exch_cr2,677,"",int,tables/V5_S7g_calib.csv,usable replicates at that point
+cal_notexcl_gee_exch_cr2,660,"",int,tables/V5_S7g_calib.csv,"assessed, not clearly above, exact upper limit > 7.5%"
+cal_notass_gee_exch_cr2,0,"",int,tables/V5_S7g_calib.csv,points with < 20 usable
+cal_maxrate_gee_exch_fg,19.672131147541,5.0897202262445997,sig2,tables/V5_S7g_calib.csv,largest rate among assessed points
+cal_maxn_gee_exch_fg,61,"",int,tables/V5_S7g_calib.csv,usable replicates at that point
+cal_notexcl_gee_exch_fg,404,"",int,tables/V5_S7g_calib.csv,"assessed, not clearly above, exact upper limit > 7.5%"
+cal_notass_gee_exch_fg,0,"",int,tables/V5_S7g_calib.csv,points with < 20 usable
+cal_maxrate_gee_exch_kc,22.4489795918367,5.9606554811256203,sig2,tables/V5_S7g_calib.csv,largest rate among assessed points
+cal_maxn_gee_exch_kc,49,"",int,tables/V5_S7g_calib.csv,usable replicates at that point
+cal_notexcl_gee_exch_kc,651,"",int,tables/V5_S7g_calib.csv,"assessed, not clearly above, exact upper limit > 7.5%"
+cal_notass_gee_exch_kc,0,"",int,tables/V5_S7g_calib.csv,points with < 20 usable
+cal_maxrate_gee_exch_md,18.9655172413793,5.1475820904255896,sig2,tables/V5_S7g_calib.csv,largest rate among assessed points
+cal_maxn_gee_exch_md,58,"",int,tables/V5_S7g_calib.csv,usable replicates at that point
+cal_notexcl_gee_exch_md,453,"",int,tables/V5_S7g_calib.csv,"assessed, not clearly above, exact upper limit > 7.5%"
+cal_notass_gee_exch_md,0,"",int,tables/V5_S7g_calib.csv,points with < 20 usable
+cal_maxrate_gee_exch_unc,26.7254038179148,1.69576356153324,sig2,tables/V5_S7g_calib.csv,largest rate among assessed points
+cal_maxn_gee_exch_unc,681,"",int,tables/V5_S7g_calib.csv,usable replicates at that point
+cal_notexcl_gee_exch_unc,799,"",int,tables/V5_S7g_calib.csv,"assessed, not clearly above, exact upper limit > 7.5%"
+cal_notass_gee_exch_unc,0,"",int,tables/V5_S7g_calib.csv,points with < 20 usable
+cal_maxrate_gee_ind_cr2,22.1565731166913,1.59612880065872,sig2,tables/V5_S7g_calib.csv,largest rate among assessed points
+cal_maxn_gee_ind_cr2,677,"",int,tables/V5_S7g_calib.csv,usable replicates at that point
+cal_notexcl_gee_ind_cr2,561,"",int,tables/V5_S7g_calib.csv,"assessed, not clearly above, exact upper limit > 7.5%"
+cal_notass_gee_ind_cr2,0,"",int,tables/V5_S7g_calib.csv,points with < 20 usable
+cal_maxrate_gee_ind_fg,19.2982456140351,5.2271260723133199,sig2,tables/V5_S7g_calib.csv,largest rate among assessed points
+cal_maxn_gee_ind_fg,57,"",int,tables/V5_S7g_calib.csv,usable replicates at that point
+cal_notexcl_gee_ind_fg,271,"",int,tables/V5_S7g_calib.csv,"assessed, not clearly above, exact upper limit > 7.5%"
+cal_notass_gee_ind_fg,0,"",int,tables/V5_S7g_calib.csv,points with < 20 usable
+cal_maxrate_gee_ind_kc,22.6415094339623,5.7486881094864897,sig2,tables/V5_S7g_calib.csv,largest rate among assessed points
+cal_maxn_gee_ind_kc,53,"",int,tables/V5_S7g_calib.csv,usable replicates at that point
+cal_notexcl_gee_ind_kc,595,"",int,tables/V5_S7g_calib.csv,"assessed, not clearly above, exact upper limit > 7.5%"
+cal_notass_gee_ind_kc,0,"",int,tables/V5_S7g_calib.csv,points with < 20 usable
+cal_maxrate_gee_ind_md,19.6428571428571,5.3090957623131203,sig2,tables/V5_S7g_calib.csv,largest rate among assessed points
+cal_maxn_gee_ind_md,56,"",int,tables/V5_S7g_calib.csv,usable replicates at that point
+cal_notexcl_gee_ind_md,402,"",int,tables/V5_S7g_calib.csv,"assessed, not clearly above, exact upper limit > 7.5%"
+cal_notass_gee_ind_md,0,"",int,tables/V5_S7g_calib.csv,points with < 20 usable
+cal_maxrate_gee_ind_unc,25.748502994012,1.5131617740523799,sig2,tables/V5_S7g_calib.csv,largest rate among assessed points
+cal_maxn_gee_ind_unc,835,"",int,tables/V5_S7g_calib.csv,usable replicates at that point
+cal_notexcl_gee_ind_unc,770,"",int,tables/V5_S7g_calib.csv,"assessed, not clearly above, exact upper limit > 7.5%"
+cal_notass_gee_ind_unc,0,"",int,tables/V5_S7g_calib.csv,points with < 20 usable
+cal_maxrate_glmer,19.8161389172625,1.27397720001871,sig2,tables/V5_S7g_calib.csv,largest rate among assessed points
+cal_maxn_glmer,979,"",int,tables/V5_S7g_calib.csv,usable replicates at that point
+cal_notexcl_glmer,702,"",int,tables/V5_S7g_calib.csv,"assessed, not clearly above, exact upper limit > 7.5%"
+cal_notass_glmer,322,"",int,tables/V5_S7g_calib.csv,points with < 20 usable
+cal_maxrate_glmer_lrt,28.4,1.4259873772232301,sig2,tables/V5_S7g_calib.csv,largest rate among assessed points
+cal_maxn_glmer_lrt,1000,"",int,tables/V5_S7g_calib.csv,usable replicates at that point
+cal_notexcl_glmer_lrt,450,"",int,tables/V5_S7g_calib.csv,"assessed, not clearly above, exact upper limit > 7.5%"
+cal_notass_glmer_lrt,304,"",int,tables/V5_S7g_calib.csv,points with < 20 usable
+cal_maxrate_mmm_cc,8.47628657921292,0.884774922633911,sig2,tables/V5_S7g_calib.csv,largest rate among assessed points
+cal_maxn_mmm_cc,991,"",int,tables/V5_S7g_calib.csv,usable replicates at that point
+cal_notexcl_mmm_cc,402,"",int,tables/V5_S7g_calib.csv,"assessed, not clearly above, exact upper limit > 7.5%"
+cal_notass_mmm_cc,15,"",int,tables/V5_S7g_calib.csv,points with < 20 usable
+cal_maxrate_shrink,25.2897787144363,1.4110078171586,sig2,tables/V5_S7g_calib.csv,largest rate among assessed points
+cal_maxn_shrink,949,"",int,tables/V5_S7g_calib.csv,usable replicates at that point
+cal_notexcl_shrink,687,"",int,tables/V5_S7g_calib.csv,"assessed, not clearly above, exact upper limit > 7.5%"
+cal_notass_shrink,320,"",int,tables/V5_S7g_calib.csv,points with < 20 usable
+cal_thr1000,9.3,"",plain,computed,smallest rate flagged clearly above with 1000 usable
+cal_thr500,10,"",plain,computed,smallest rate flagged clearly above with 500 usable
+cal_thr100,14,"",plain,computed,smallest rate flagged clearly above with 100 usable
+fgwc_q05_d_ind,-1.30804366739955,"",sig2,tables/V5_S7g_fg_wc.csv,""
+fgwc_q95_d_ind,0.4,"",sig2,tables/V5_S7g_fg_wc.csv,""
+fgwc_max_d_ind,5.14228715601713,"",sig2,tables/V5_S7g_fg_wc.csv,""
+fgwc_gt25_d_ind,18,"",int,tables/V5_S7g_fg_wc.csv,""
+fgwc_npts,1896,"",int,tables/V5_S7g_fg_wc.csv,points assessed for all three working correlations
+fgwc_q05_d_ar1,-1.41442021453723,"",sig2,tables/V5_S7g_fg_wc.csv,""
+fgwc_q95_d_ar1,0.399999999999999,"",sig2,tables/V5_S7g_fg_wc.csv,""
+fgwc_max_d_ar1,3.68436293804082,"",sig2,tables/V5_S7g_fg_wc.csv,""
+fgwc_gt25_d_ar1,11,"",int,tables/V5_S7g_fg_wc.csv,""
+den_points_same,1896,"",int,V5_S7f_cp_S7d_dp_rates.csv vs V5_S7f_cp_S7b_rule_dp.csv,of 1896 points
+den_deg_total,247,"",int,tables/V4_S2_degenerate_designs.csv,"degenerate (model, N, T, replicate) designs"
+pt_nsub,20000,"",int,R/s7e/s7e_glmm_pseudotrue.R,subjects per dataset
+pt_min,0.00456818232646691,"",sig2,tables/V4_S7e_glmm_pseudotrue.csv,"random intercept, T 2/4/10"
+pt_max,0.0604902147652213,"",sig2,tables/V4_S7e_glmm_pseudotrue.csv,""
+pt_semax,0.115241214007263,"",sig2,tables/V4_S7e_glmm_pseudotrue.csv,""
+m67_rb_max,0.546130828439806,"",sig2,tables/V5_S7g_m67_cc.csv,"largest |bias / empirical SE| over points, both arms"
+m67_ser_min,-26.8206081419314,"",sig2,tables/V5_S7g_m67_cc.csv,smallest model SE / empirical SE - 1 (%) over points
+m67_ser_max,91.8887024556043,"",sig2,tables/V5_S7g_m67_cc.csv,largest (%)
+m67_ser_med_min,-4.16434827061668,"",sig2,tables/V5_S7g_m67_cc.csv,smallest scenario median (%)
+m67_ser_med_max,-1.98627118517689,"",sig2,tables/V5_S7g_m67_cc.csv,largest scenario median (%)
+m67_cov_min,95.2254551258802,"",sig2,tables/V5_S7g_m67_cc.csv,"smallest scenario mean coverage (%), t"
+m67_cov_max,95.9057165644867,"",sig2,tables/V5_S7g_m67_cc.csv,"largest scenario mean coverage (%), t"
+m67_cov_low,0,"",int,tables/V5_S7g_m67_cc.csv,points with non-coverage clearly above 7.5%
+m67_cov_high,18,"",int,tables/V5_S7g_m67_cc.csv,points with non-coverage clearly below 2.5%
+m67_npts,762,"",int,tables/V5_S7g_m67_cc.csv,point x arm assessed
+m67_cov_A_min,94.7607421171206,"",sig2,tables/V5_S7g_m67_cc_byused.csv,""
+m67_cov_A_max,95.5905703058787,"",sig2,tables/V5_S7g_m67_cc_byused.csv,""
+m67_rb_A_maxabs,0.0216832998752087,"",sig2,tables/V5_S7g_m67_cc_byused.csv,""
+m67_ser_A_min,-3.60413885676663,"",sig2,tables/V5_S7g_m67_cc_byused.csv,""
+m67_ser_A_max,-1.5751707174985,"",sig2,tables/V5_S7g_m67_cc_byused.csv,""
+m67_cov_B_min,95.5579808810845,"",sig2,tables/V5_S7g_m67_cc_byused.csv,""
+m67_cov_B_max,96.125992002874,"",sig2,tables/V5_S7g_m67_cc_byused.csv,""
+m67_rb_B_maxabs,0.085654091265879,"",sig2,tables/V5_S7g_m67_cc_byused.csv,""
+m67_ser_B_min,-4.70080968257723,"",sig2,tables/V5_S7g_m67_cc_byused.csv,""
+m67_ser_B_max,-3.06137756480791,"",sig2,tables/V5_S7g_m67_cc_byused.csv,""
+lus_u500_GLMM,78.2,"",sig2,tables/V5_S7f_lus_tab316.csv,"usable over all 500 subsamples, smallest N"
+lus_u500_MMM,77.2,"",sig2,tables/V5_S7f_lus_tab316.csv,"usable over all 500 subsamples, smallest N"
+lus_u500_GEE,70,"",sig2,tables/V5_S7f_lus_tab316.csv,"usable over all 500 subsamples, smallest N"
+lus_u500_GEE-FG,34.2,"",sig2,tables/V5_S7f_lus_tab316.csv,"usable over all 500 subsamples, smallest N"
+lus_u500_GEE-MD,15,"",sig2,tables/V5_S7f_lus_tab316.csv,"usable over all 500 subsamples, smallest N"
+lus_draw_z10,-2.50862130297306,"",sig2,tables/V5_S7g_lus_draws.csv,"binomial z of draws with no ventilated patient, smallest N"
+lus_draw_p10,0.0115245101378962,"",sig2,tables/V5_S7g_lus_draws.csv,"two-sided exact binomial p, smallest N"
+lus_draw_zmax_other,1.1276688307217,"",sig2,tables/V5_S7g_lus_draws.csv,largest |z| at the other sizes with p0 > 0.001
+lus_draw_meaninv10,1.276,"",sig2,tables/V5_S7g_lus_draws.csv,"mean ventilated patients per draw, smallest N"
+lus_draw_expinv10,1.20772946859903,"",sig2,tables/V5_S7g_lus_draws.csv,expected under simple random sampling

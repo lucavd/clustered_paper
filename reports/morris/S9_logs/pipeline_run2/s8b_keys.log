@@ -1,0 +1,55 @@
+                  key              value                mcse
+               <char>             <char>              <char>
+ 1:    cop_exfg4_Nmin                 10                    
+ 2:    cop_exfg4_Nmax                 25                    
+ 3:    cop_exfg_oth_n                  2                    
+ 4:    cop_exfg_oth_T                  3                    
+ 5:    cop_exfg_oth_N                 10                    
+ 6:   cop_exfg_oth2_T                  6                    
+ 7:   cop_exfg_oth2_N                 10                    
+ 8:       m67_exfg_hi                  4                    
+ 9:  m67_exfg_hi_gbm7                  3                    
+10:    ndp_short_main                 44                    
+11:     ndp_short_m1c                  6                    
+12:          deg_main                247                    
+13:           deg_m1c                 43                    
+14:            deg_m6                 47                    
+15:            deg_m7                 55                    
+16:    n_fits_total_m               52.1                    
+17:     flipci_cov_h1    95.072748804231                    
+18:      flipci_lo_h1                 97                    
+19:      flipci_lo_h0                112                    
+20:     flipci_points               2376                    
+21:        nat_h1_min 0.0435821148520879                    
+22:        nat_h1_max  0.201789406956594                    
+23:    nat_h1_m1c_min   0.19084349728897                    
+24:    nat_h1_m1c_max  0.197848798642472                    
+25:       mdkc_ar1_hi                 56                    
+26:      mdkc_exch_hi                121                    
+27:          pb2_mean   2.28236881075321  0.0467677686875519
+28:         pb2_cells               1254                    
+29:     pb2_cells_q37                193                    
+30:      pb2_mean_pow   23.7570578741272                    
+31:           pb5_neo 0.0428444130101624 0.00284981078543186
+32:          pb5_resp 0.0553932248046418  0.0105860168569745
+33:       rob_neo_min  0.851325007575958                    
+34:       rob_neo_max  0.990284366178669                    
+35:      rob_resp_min  0.548266816624386                    
+36:      rob_resp_max  0.871682530054103                    
+37:      resp_mmm_min  0.653897139481685                    
+38:      resp_mmm_max  0.850656002035925                    
+39:     resp_glmm_min  0.641082498057618                    
+40:     resp_glmm_max  0.694723595734423                    
+41:    lus_mmm_se_rob  0.166844793192107                    
+42:   resp_mmm_se_rob  0.345254348028074                    
+43:    lus_lateral_lv   1.05796773854268                    
+44:          nongen_n                580                    
+45:     nongen_nondeg                  0                    
+46:   flipci_lo_h1_T2                 90                    
+47: lus_bias_mmm_50_z   1.20749566117937                    
+48: lus_bias_mmm_10_z   3.34177636701086                    
+49:   fl7_small_pu_1d               99.9                    
+50:     ag_resp_md_1d               99.9                    
+51:     ag_resp_fg_1d               99.6                    
+                  key              value                mcse
+               <char>             <char>              <char>

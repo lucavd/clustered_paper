@@ -1,0 +1,83 @@
+################ PERIZIA: 608 o 638? ################
+righe di A: 1440  chiavi distinte: 1440 
+chiavi con piu' di una riga in A (n_attempt divergente per metodo!): 0 
+      key     N
+   <char> <int>
+1:   <NA>    NA
+2:   <NA>    NA
+3:   <NA>    NA
+4:   <NA>    NA
+5:   <NA>    NA
+
+>>> ECCO IL PUNTO: n_attempt e' UNICO per punto di disegno o varia?
+punti di disegno con n_attempt non unico: 0 
+
+righe di CJ(A$key, ALL8): 11520  attese se A$key unico: 11520 
+righe dopo merge con A: 11520   <-- se > 11520 il merge ha DUPLICATO
+righe per (key,method) dopo merge:
+       N     N
+   <int> <int>
+1:     1 11520
+righe finali: 11520 
+righe per (key,method) finali:
+       N     N
+   <int> <int>
+1:     1 11520
+
+### conteggio del quinto strato sotto le due formule ###
+
+-- pu_att -- righe per chiave nel calcolo di pu5:
+   nrows     N
+   <int> <int>
+1:     5  1440
+  pu5 > 0.999 : 608 
+  cut right=TRUE, ultimo bin: 608 
+  conteggi completi: 83/100/147/502/608 
+  valori nell'intorno di 0.999 (15 piu' vicini):
+                     key          pu5
+                  <char>       <char>
+ 1:      GLMM-AR1 2 45 6 0.9990000000
+ 2:     GLMM-AR1 3 55 10 0.9990000000
+ 3:     GLMM-AR1 3 75 10 0.9990000000
+ 4:      GLMM-AR1 3 95 3 0.9990000000
+ 5:    GLMM-AR1 4 105 10 0.9990000000
+ 6:    GLMM-AR1 4 135 10 0.9990000000
+ 7:      GLMM-AR1 4 35 8 0.9990000000
+ 8:     GLMM-AR1 5 145 3 0.9990000000
+ 9:      GLMM-AR1 5 55 8 0.9990000000
+10:      GLMM-AR1 5 65 6 0.9990000000
+11:      GLMM-AR1 5 75 4 0.9990000000
+12:   GLMM-native 1 55 4 0.9990000000
+13:   GLMM-native 2 35 8 0.9990000000
+14: GLMM-native 3 125 10 0.9990000000
+15:   GLMM-native 3 45 8 0.9990000000
+
+-- pu_1000 -- righe per chiave nel calcolo di pu5:
+   nrows     N
+   <int> <int>
+1:     5  1440
+  pu5 > 0.999 : 608 
+  cut right=TRUE, ultimo bin: 608 
+  conteggi completi: 83/100/147/502/608 
+  valori nell'intorno di 0.999 (15 piu' vicini):
+                     key          pu5
+                  <char>       <char>
+ 1:      GLMM-AR1 2 45 6 0.9990000000
+ 2:     GLMM-AR1 3 55 10 0.9990000000
+ 3:     GLMM-AR1 3 75 10 0.9990000000
+ 4:      GLMM-AR1 3 95 3 0.9990000000
+ 5:    GLMM-AR1 4 105 10 0.9990000000
+ 6:    GLMM-AR1 4 135 10 0.9990000000
+ 7:      GLMM-AR1 4 35 8 0.9990000000
+ 8:     GLMM-AR1 5 145 3 0.9990000000
+ 9:      GLMM-AR1 5 55 8 0.9990000000
+10:      GLMM-AR1 5 65 6 0.9990000000
+11:      GLMM-AR1 5 75 4 0.9990000000
+12:   GLMM-native 1 55 4 0.9990000000
+13:   GLMM-native 2 35 8 0.9990000000
+14: GLMM-native 3 125 10 0.9990000000
+15:   GLMM-native 3 45 8 0.9990000000
+
+### il colpevole: quante righe per chiave se il merge duplica? ###
+uniqueN(o[,.(key,method)]): 11163  nrow(o): 11163 
+righe duplicate in o per (key,method): 0 

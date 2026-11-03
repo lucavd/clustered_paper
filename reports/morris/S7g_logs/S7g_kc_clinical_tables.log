@@ -1,0 +1,119 @@
+                app
+             <char>
+ 1: neonatal cohort
+ 2: neonatal cohort
+ 3: neonatal cohort
+ 4: neonatal cohort
+ 5: neonatal cohort
+ 6: neonatal cohort
+ 7: neonatal cohort
+ 8:     respiratory
+ 9:     respiratory
+10:     respiratory
+11:     respiratory
+12:     respiratory
+13:     respiratory
+14:     respiratory
+15:            both
+                                                                                      check
+                                                                                     <char>
+ 1:                           GEE estimate refitted = stored (draws compared; max abs diff)
+ 2:                              MD: fewclust within 1% of geesmv (draws compared; share %)
+ 3:                              FG: fewclust within 1% of geesmv (draws compared; share %)
+ 4:                                                      GEE-KC rows without a fewclust row
+ 5:                tab316: non-KC rows equal to rev2/T5_tab316.csv (rows; discordant cells)
+ 6:              seratio: non-KC rows equal to rev2/T5_seratio.csv (rows; discordant cells)
+ 7:                    bias: non-KC rows equal to rev2/T7_bias.csv (rows; discordant cells)
+ 8:                           GEE estimate refitted = stored (draws compared; max abs diff)
+ 9:                              MD: fewclust within 1% of geesmv (draws compared; share %)
+10:                              FG: fewclust within 1% of geesmv (draws compared; share %)
+11:                                                      GEE-KC rows without a fewclust row
+12:            usable: non-KC rows equal to V4_S7b_resp_usable.csv (rows; discordant cells)
+13:                bias: non-KC rows equal to V4_S7b_resp_bias.csv (rows; discordant cells)
+14:  full-data estimates: non-KC rows equal to V4_S7b_resp_ref.csv (rows; discordant cells)
+15: SE ratio with fpc: non-KC rows equal to V4_S7b_seratio_fpc.csv (rows; discordant cells)
+          value   pass
+         <char> <lgcl>
+ 1:     5261; 0   TRUE
+ 2: 4406; 99.39   TRUE
+ 3: 4810; 99.19   TRUE
+ 4:           0   TRUE
+ 5:       55; 0   TRUE
+ 6:       55; 0   TRUE
+ 7:       55; 0   TRUE
+ 8:     4934; 0   TRUE
+ 9: 4157; 99.86   TRUE
+10: 4229; 99.60   TRUE
+11:           0   TRUE
+12:       50; 0   TRUE
+13:       50; 0   TRUE
+14:       10; 0   TRUE
+15:      100; 0   TRUE
+
+Kauermann-Carroll, full model, by N (fewclust):
+    method     N pct_usable_500 pct_no_se_500
+    <char> <int>          <num>         <num>
+ 1: GEE-FG    10           34.2          41.4
+ 2: GEE-FG    15           61.2          23.8
+ 3: GEE-FG    20           80.0          14.2
+ 4: GEE-FG    25           88.4           8.0
+ 5: GEE-FG    50           99.8           0.2
+ 6: GEE-KC    10           11.2          63.6
+ 7: GEE-KC    15           34.8          49.0
+ 8: GEE-KC    20           61.2          31.4
+ 9: GEE-KC    25           79.6          16.0
+10: GEE-KC    50           98.8           1.2
+11: GEE-MD    10           15.0          60.4
+12: GEE-MD    15           37.2          47.4
+13: GEE-MD    20           62.2          31.8
+14: GEE-MD    25           80.0          16.6
+15: GEE-MD    50           98.8           1.2
+    method     N pct_usable_500 pct_no_se_500
+    <char> <int>          <num>         <num>
+ 1: GEE-FG    10           23.4          61.8
+ 2: GEE-FG    15           67.8          28.4
+ 3: GEE-FG    20           88.2          11.0
+ 4: GEE-FG    25           97.6           2.4
+ 5: GEE-FG    50          100.0           0.0
+ 6: GEE-KC    10           21.6          65.4
+ 7: GEE-KC    15           69.2          27.6
+ 8: GEE-KC    20           89.4           9.2
+ 9: GEE-KC    25           97.2           2.2
+10: GEE-KC    50          100.0           0.0
+11: GEE-MD    10           23.0          63.4
+12: GEE-MD    15           67.6          30.0
+13: GEE-MD    20           87.6          11.4
+14: GEE-MD    25           97.4           2.6
+15: GEE-MD    50          100.0           0.0
+        application method     N ratio_fpc
+             <char> <char> <int>     <num>
+ 1: neonatal cohort GEE-FG    10 1.0536408
+ 2: neonatal cohort GEE-FG    15 1.0228416
+ 3: neonatal cohort GEE-FG    20 0.9270142
+ 4: neonatal cohort GEE-FG    25 1.0253581
+ 5: neonatal cohort GEE-FG    50 1.0101565
+ 6: neonatal cohort GEE-KC    10 1.1068902
+ 7: neonatal cohort GEE-KC    15 1.0236487
+ 8: neonatal cohort GEE-KC    20 0.9452919
+ 9: neonatal cohort GEE-KC    25 1.0420351
+10: neonatal cohort GEE-KC    50 1.0087441
+11:     respiratory GEE-FG    10 2.2137147
+12:     respiratory GEE-FG    15 1.2972725
+13:     respiratory GEE-FG    20 0.9963344
+14:     respiratory GEE-FG    25 0.8845216
+15:     respiratory GEE-FG    50 0.9078864
+16:     respiratory GEE-KC    10 1.0332258
+17:     respiratory GEE-KC    15 0.8679896
+18:     respiratory GEE-KC    20 0.8705989
+19:     respiratory GEE-KC    25 0.8711873
+20:     respiratory GEE-KC    50 0.9436838
+        application method     N ratio_fpc
+             <char> <char> <int>     <num>
+   method estimate        se status    spec
+   <char>    <num>     <num> <char>  <char>
+1:    GEE 1.255523 0.3463268     ok   pieno
+2: GEE-KC 1.255523 0.3568783     ok   pieno
+3: GEE-FG 1.255523 0.3499246     ok   pieno
+4:    GEE 1.246546 0.3286504     ok ridotto
+5: GEE-KC 1.246546 0.3331379     ok ridotto
+6: GEE-FG 1.246546 0.3334872     ok ridotto

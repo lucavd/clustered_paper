@@ -1,0 +1,2 @@
+4c9b6f73f8a7dc35458a40c465658b6b  tables/V5_S8b_fits_by_run.csv
+4c9b6f73f8a7dc35458a40c465658b6b  /home/user/MMM_rev_S8/Dubbi/dus7g1/dus7g1_fits_by_run.csv

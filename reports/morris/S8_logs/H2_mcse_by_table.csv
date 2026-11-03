@@ -1,0 +1,29 @@
+table,quantities,mcse_shown,mcse_computable_from_source,how,note
+Table 4 (main),"Usable (%), Power (%), Usable T<=3 N<=25",no,no,tables/V5_S7f_table4.csv has no mcse or per-point n; needs per-replicate rows and the block bootstrap (as Table S31),"counts of flagged points: exact interval per point, MCSE n/a"
+Figure 2 (main),type I error per design point,no,yes (binomial),"rate and usable n per point: sqrt(p(1-p)/n); max about 0.7 pp at 1,000 usable",caption could state the maximum
+S1,DGM parameters,n/a,n/a,not Monte Carlo quantities,
+S2,software versions,n/a,n/a,not Monte Carlo quantities,
+S3,"rate, worst, MAD (MMM without check)",no,yes,"registry mcse filled for 72/72 cells (tables/V4_S6_table_cells.csv, variant)",
+S4,MAD by T,"announced, no value",yes,registry mcse 24/24,
+S5,% cells off nominal,"announced, no value",yes,registry mcse 16/16,
+S6,type I error own/common set,"announced, no value",yes,registry mcse 72/72,
+S7,usable % by T,"announced, no value",yes,registry mcse 96/96,
+S8,usable and unconditional validity N<=20,"announced, no value",yes,registry mcse 16/24 (the other 8 are counts),
+S9,MAD by estimability stratum,"announced, no value",yes,registry mcse 40/50 (the rest are counts or labels),
+S10,raw and size-adjusted power,"announced, no value",yes,registry mcse 48/48,
+S11,"type I error normal vs t, shift","announced, no value",yes,registry mcse 70/70,
+S12,coverage,"announced, no value",yes,registry mcse 20/20,
+S13,type I error U0/U1,yes (max 0.044 pp),yes,compliant,
+S14,"M6-M7: max rate, usable %",no,partly,"max_rate: binomial if the usable n of that point is added (file has n_point_above, not n); pu: needs rows/bootstrap",n_hi/n_lo counts: MCSE n/a
+S15,clinical: % not returned / no SE / usable,no,yes (binomial),counts per 500 subsamples in tables/V5_S7f_lus_tab316.csv,
+S16-S25,M1c: all measures,no,yes,registry mcse filled for all non-count cells (same source as S3-S12),
+S26,rule with N-2: usable %,no,no,tables/V5_S7f_rule_t2.csv: pu without mcse; needs rows/bootstrap,counts n/a
+S27,"sign-flip interval: finite %, GEE usable %",no,"yes (binomial, approximate)",datasets count in tables/V4_S7d2_explain_finite.csv; binomial ignores common random numbers across N,
+S28,"Copula: mean type I, usable, power, bias/SE, coverage",no,no,tables/V4_S7e_bias_summary.csv and V5_S7f_cp_S7e_summary.csv have no mcse; needs rows/bootstrap,counts n/a
+S29,full-data estimates,n/a,n/a,not Monte Carlo quantities,
+S30,"respiratory subsamples: usable, bias, SE ratio",no,yes,registry mcse for usable and bias (60/60); mcse_ratio column in tables/V5_S7f_seratio_fpc.csv for the SE ratio,
+S31,GEE vs MMM by region,only for the difference,partly,"difference: mcse shown; rates, MAD, usable, power: not in caption",
+S32,highest rate per strategy,no,yes (binomial),rate and its usable n are both in the table,counts n/a
+S33,usable share by usability limit,no,no,tables/V5_S7g_tab_keys.csv mcse column empty (0/308); needs rows/bootstrap,counts n/a
+S34,"AGQ vs Laplace: mean type I, usable",only for Q-L difference (interval),partly,mcse filled 4/186 in tables/V5_S7g_agq_keys.csv; means need rows/bootstrap,
+S35,"M6-M7 MMM: bias/SE, SE ratio, coverage",no,no,tables/V5_S7g_tab_keys.csv mcse column empty; needs rows/bootstrap,

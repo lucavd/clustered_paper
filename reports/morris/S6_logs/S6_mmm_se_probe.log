@@ -1,0 +1,11 @@
+Key: <model>
+   model     n same_est same_se emp_sd mean_se_mod mean_se_rob rej_mod rej_rob
+   <int> <int>    <num>   <num>  <num>       <num>       <num>   <num>   <num>
+1:     1   200        1       1 0.0542      0.0548      0.0547     5.5     4.5
+2:     3   200        1       1 0.0695         NaN         NaN      NA      NA
+3:     5   200        1       1 0.0753         NaN      0.1386      NA    10.5
+   ratio_mod ratio_rob mcse_rej
+       <num>     <num>    <num>
+1:      1.01      1.01     1.54
+2:       NaN       NaN     1.54
+3:       NaN      1.84     1.54

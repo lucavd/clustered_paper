@@ -1,0 +1,15 @@
+- One or more packages recorded in the lockfile are not installed.
+- Use `renv::status()` for more details.
+fewclust 0.3.1 
+                            dataset        formula  group   time chosen
+                             <char>         <char> <char> <char> <char>
+1:                         fc_trial y ~ arm * time     id   time    mmm
+2: simulated N=25 T=4 seed 20261027 y ~ arm * time     id   time    mmm
+   paper_rule condition_met fewclust_version
+       <char>        <lgcl>           <char>
+1:   mmm_cc_t          TRUE            0.3.1
+2:   mmm_cc_t          TRUE            0.3.1
+                            fewclust_commit
+                                     <char>
+1: c688eccdee52026b79370b107bf3a2e852f8d08c
+2: c688eccdee52026b79370b107bf3a2e852f8d08c

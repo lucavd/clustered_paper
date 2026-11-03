@@ -1,0 +1,42 @@
+key,value,mcse,kind,source,how
+ndp|GLMM-AR1|M1-M5,480,"",int,tables/V5_S7f_rule_dp.csv,design points of the mechanism in the scenario group
+ndp|GLMM-AR1|M1c,24,"",int,tables/V5_S7f_rule_dp.csv,design points of the mechanism in the scenario group
+ndp|GLMM-native|M1-M5,480,"",int,tables/V5_S7f_rule_dp.csv,design points of the mechanism in the scenario group
+ndp|GLMM-native|M1c,24,"",int,tables/V5_S7f_rule_dp.csv,design points of the mechanism in the scenario group
+ndp|GLMM-native|M6-M7,192,"",int,tables/V5_S7f_rule_dp.csv,design points of the mechanism in the scenario group
+ndp|GenBinaryY|M1-M5,480,"",int,tables/V5_S7f_rule_dp.csv,design points of the mechanism in the scenario group
+ndp|GenBinaryY|M1c,24,"",int,tables/V5_S7f_rule_dp.csv,design points of the mechanism in the scenario group
+ndp|GenBinaryY|M6-M7,192,"",int,tables/V5_S7f_rule_dp.csv,design points of the mechanism in the scenario group
+ndp|Copula-AR1|M1-M5,480,"",int,tables/V5_S7f_rule_dp.csv,design points of the mechanism in the scenario group
+grid_N_min,10,"",int,tables/V5_S7f_rule_dp.csv,smallest N of the main grid
+grid_N_max,145,"",int,tables/V5_S7f_rule_dp.csv,largest N of the main grid
+grid_T_min,2,"",int,tables/V5_S7f_rule_dp.csv,smallest T of the main grid
+grid_T_max,10,"",int,tables/V5_S7f_rule_dp.csv,largest T of the main grid
+m1c_N_max,45,"",int,tables/V5_S7f_rule_dp.csv,largest N of M1c
+m1c_T_max,6,"",int,tables/V5_S7f_rule_dp.csv,largest T of M1c
+const_n,9711,"",int,tables/V6_S9_const_keys_summary.csv,non-degenerate datasets with a constant outcome
+const_all0_pct,99.9382143960457,"",sig2,tables/V6_S9_const_keys_summary.csv,of which all outcomes 0 (%)
+const_small_pct,91.8443002780352,"",sig2,tables/V6_S9_const_keys_summary.csv,of which with T 2-3 and N <= 25 (%)
+datasets_n,4752000,"",int,tables/V6_S9_const_keys_summary.csv,"datasets of the 2,376 design points"
+fgpt|n,2,"",int,tables/V5_S7f_cp_S7d_dp_rates.csv,points with GEE AR(1) FG t clearly above 7.5%
+fgpt|same_cell,1,"",int,tables/V5_S7f_cp_S7d_dp_rates.csv,"1 = all at the same scenario, N and T"
+fgpt|1|N,10,"",int,tables/V5_S7f_cp_S7d_dp_rates.csv,N of point 1 GLMM-AR1 M2
+fgpt|1|T,2,"",int,tables/V5_S7f_cp_S7d_dp_rates.csv,T of point 1
+fgpt|1|n,61,"",int,tables/V5_S7f_cp_S7d_dp_rates.csv,usable replicates under H0 at point 1
+fgpt|1|k,12,"",int,tables/V5_S7f_cp_S7d_dp_rates.csv,rejections at point 1
+fgpt|1|rate,19.672131147541,"",sig2,tables/V5_S7f_cp_S7d_dp_rates.csv,rejection rate (%) at point 1
+fgpt|1|n_pre,172,"",int,results_v4/S9/pre/tables/V5_S7f_cp_S7d_dp_rates.csv,usable replicates before the constant-outcome rule at point 1
+fgpt|1|k_pre,12,"",int,results_v4/S9/pre/tables/V5_S7f_cp_S7d_dp_rates.csv,rejections before the rule at point 1
+fgpt|1|mmm_n,35,"",int,tables/V5_S7f_cp_S7d_dp_rates.csv,usable replicates of the marginalized model at point 1
+fgpt|1|mmm_k,0,"",int,tables/V5_S7f_cp_S7d_dp_rates.csv,rejections of the marginalized model at point 1
+fgpt|2|N,10,"",int,tables/V5_S7f_cp_S7d_dp_rates.csv,N of point 2 GLMM-native M2
+fgpt|2|T,2,"",int,tables/V5_S7f_cp_S7d_dp_rates.csv,T of point 2
+fgpt|2|n,63,"",int,tables/V5_S7f_cp_S7d_dp_rates.csv,usable replicates under H0 at point 2
+fgpt|2|k,11,"",int,tables/V5_S7f_cp_S7d_dp_rates.csv,rejections at point 2
+fgpt|2|rate,17.4603174603175,"",sig2,tables/V5_S7f_cp_S7d_dp_rates.csv,rejection rate (%) at point 2
+fgpt|2|n_pre,136,"",int,results_v4/S9/pre/tables/V5_S7f_cp_S7d_dp_rates.csv,usable replicates before the constant-outcome rule at point 2
+fgpt|2|k_pre,11,"",int,results_v4/S9/pre/tables/V5_S7f_cp_S7d_dp_rates.csv,rejections before the rule at point 2
+fgpt|2|mmm_n,38,"",int,tables/V5_S7f_cp_S7d_dp_rates.csv,usable replicates of the marginalized model at point 2
+fgpt|2|mmm_k,0,"",int,tables/V5_S7f_cp_S7d_dp_rates.csv,rejections of the marginalized model at point 2
+fc|n_cmp,127,"",int,tables/V6_S9_fewclust_coherence.csv,datasets regenerated from the study and compared with fewclust 0.3.1
+fc|n_coh,4,"",int,tables/V6_S9_fewclust_coherence.csv,of which the default coherence condition changed the reported fit

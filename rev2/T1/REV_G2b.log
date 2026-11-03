@@ -1,0 +1,319 @@
+################ 2. ordinamento congiunto: ranghi PER MECCANISMO ################
+
+---- ties.method = min ----
+ranghi per meccanismo (lev/cov/usa):
+Key: <method>
+      method r_lev_GLMM-AR1 r_lev_GLMM-native r_lev_GenBinaryY r_cov_GLMM-AR1
+      <char>          <int>             <int>            <int>          <int>
+1:       gee              7                 7                4              5
+2:    gee_fg              1                 1                1              1
+3:    gee_kc              8                 8                8              7
+4:    gee_md              2                 2                3              2
+5:     glmer              4                 4                5              6
+6: glmer_lrt              6                 6                7              8
+7:       mmm              3                 3                2              3
+8:    shrink              5                 5                6              4
+   r_cov_GLMM-native r_cov_GenBinaryY r_usa_GLMM-AR1 r_usa_GLMM-native
+               <int>            <int>          <int>             <int>
+1:                 6                4              2                 2
+2:                 1                1              3                 3
+3:                 7                7              4                 4
+4:                 2                2              5                 5
+5:                 4                6              8                 8
+6:                 8                8              1                 1
+7:                 3                3              6                 6
+8:                 5                5              7                 7
+   r_usa_GenBinaryY
+              <int>
+1:                2
+2:                3
+3:                5
+4:                4
+5:                8
+6:                1
+7:                6
+8:                7
+
+media dei 9 ranghi per metodo (media sui 3 meccanismi delle 3 medie):
+      method mean9
+      <char> <num>
+1:    gee_fg 1.667
+2:    gee_md 3.000
+3:       mmm 3.889
+4:       gee 4.333
+5: glmer_lrt 5.111
+6:    shrink 5.667
+7:     glmer 5.889
+8:    gee_kc 6.444
+
+media per meccanismo poi media sui meccanismi:
+      method    mr
+      <char> <num>
+1:    gee_fg 1.667
+2:    gee_md 3.000
+3:       mmm 3.889
+4:       gee 4.333
+5: glmer_lrt 5.111
+6:    shrink 5.667
+7:     glmer 5.889
+8:    gee_kc 6.444
+
+---- ties.method = average ----
+ranghi per meccanismo (lev/cov/usa):
+Key: <method>
+      method r_lev_GLMM-AR1 r_lev_GLMM-native r_lev_GenBinaryY r_cov_GLMM-AR1
+      <char>          <num>             <num>            <num>          <num>
+1:       gee              7                 7                4              5
+2:    gee_fg              1                 1                1              1
+3:    gee_kc              8                 8                8              7
+4:    gee_md              2                 2                3              2
+5:     glmer              4                 4                5              6
+6: glmer_lrt              6                 6                7              8
+7:       mmm              3                 3                2              3
+8:    shrink              5                 5                6              4
+   r_cov_GLMM-native r_cov_GenBinaryY r_usa_GLMM-AR1 r_usa_GLMM-native
+               <num>            <num>          <num>             <num>
+1:                 6                4              2                 2
+2:                 1                1              3                 3
+3:                 7                7              4                 4
+4:                 2                2              5                 5
+5:                 4                6              8                 8
+6:                 8                8              1                 1
+7:                 3                3              6                 6
+8:                 5                5              7                 7
+   r_usa_GenBinaryY
+              <num>
+1:                2
+2:                3
+3:                5
+4:                4
+5:                8
+6:                1
+7:                6
+8:                7
+
+media dei 9 ranghi per metodo (media sui 3 meccanismi delle 3 medie):
+      method mean9
+      <char> <num>
+1:    gee_fg 1.667
+2:    gee_md 3.000
+3:       mmm 3.889
+4:       gee 4.333
+5: glmer_lrt 5.111
+6:    shrink 5.667
+7:     glmer 5.889
+8:    gee_kc 6.444
+
+media per meccanismo poi media sui meccanismi:
+      method    mr
+      <char> <num>
+1:    gee_fg 1.667
+2:    gee_md 3.000
+3:       mmm 3.889
+4:       gee 4.333
+5: glmer_lrt 5.111
+6:    shrink 5.667
+7:     glmer 5.889
+8:    gee_kc 6.444
+
+---- versione GRIGLIA AGGREGATA (quella del giro 1): ranghi su valori pooled ----
+
+ties= min 
+      method level covdep usable r_lev r_cov r_usa    mr
+      <char> <num>  <num>  <num> <int> <int> <int> <num>
+1:    gee_fg 1.362 0.2342  91.94     1     1     3 1.667
+2:    gee_md 1.678 0.5109  91.89     2     2     5 3.000
+3:       gee 3.473 2.7278  94.05     6     4     2 4.000
+4:       mmm 1.712 1.7811  90.32     3     3     6 4.000
+5: glmer_lrt 3.959     NA  99.69     7     8     1 5.333
+6:    shrink 3.263 3.1331  81.89     5     5     7 5.667
+7:     glmer 2.594 3.7713  80.84     4     6     8 6.000
+8:    gee_kc 6.209 6.9495  91.89     8     7     4 6.333
+
+ties= average 
+      method level covdep usable r_lev r_cov r_usa    mr
+      <char> <num>  <num>  <num> <num> <num> <num> <num>
+1:    gee_fg 1.362 0.2342  91.94     1     1     3 1.667
+2:    gee_md 1.678 0.5109  91.89     2     2     5 3.000
+3:       gee 3.473 2.7278  94.05     6     4     2 4.000
+4:       mmm 1.712 1.7811  90.32     3     3     6 4.000
+5: glmer_lrt 3.959     NA  99.69     7     8     1 5.333
+6:    shrink 3.263 3.1331  81.89     5     5     7 5.667
+7:     glmer 2.594 3.7713  80.84     4     6     8 6.000
+8:    gee_kc 6.209 6.9495  91.89     8     7     4 6.333
+
+################ 3. bias 0,0366 / 0,0640: matrice delle varianti ################
+               variante marg_repw cond_repw marg_cell cond_cell marg_med
+                 <char>     <num>     <num>     <num>     <num>    <num>
+ 1:  (a) tutte le celle    0.0798    0.0460    0.0909    0.0572   0.0583
+ 2:      (c) solo M1-M2    0.0823    0.0433    0.0761    0.0373   0.0591
+ 3:          solo M3-M5    0.0778    0.0483    0.1034    0.0739   0.0583
+ 4: (c') solo M1 (base)    0.0828    0.0439    0.0741    0.0354   0.0591
+ 5:          escluso M4    0.0927    0.0534    0.1067    0.0676   0.0725
+ 6:    (b) solo H1 mmlb    0.0798    0.0460    0.0909    0.0572   0.0583
+ 7:                T>=3    0.0735    0.0399    0.0915    0.0579   0.0572
+ 8:                T>=4    0.0717    0.0375    0.0736    0.0394   0.0533
+ 9:                T=10    0.0599    0.0245    0.0601    0.0247   0.0465
+10:               N>=25    0.0775    0.0438    0.0779    0.0442   0.0549
+11:               N>=45    0.0771    0.0434    0.0779    0.0442   0.0522
+12:              N==145    0.0789    0.0452    0.0792    0.0455   0.0486
+13:     n>=500 repliche    0.0801    0.0463    0.0810    0.0472   0.0584
+14:              n>=900    0.0770    0.0431    0.0775    0.0437   0.0559
+15:     solo GenBinaryY    0.1289    0.1016    0.1521    0.1247   0.1121
+16:    solo GLMM-native    0.0485    0.0213    0.0534    0.0260   0.0375
+17:       solo GLMM-AR1    0.0628    0.0162    0.0670    0.0206   0.0533
+18:       T>=4 & n>=900    0.0673    0.0330    0.0676    0.0334   0.0505
+19:        M1-M2 & T>=4    0.0624    0.0224    0.0631    0.0232   0.0504
+    cond_med cells
+       <num> <int>
+ 1:   0.0234  1260
+ 2:   0.0200   576
+ 3:   0.0260   684
+ 4:   0.0197   288
+ 5:   0.0310  1019
+ 6:   0.0234  1260
+ 7:   0.0205  1161
+ 8:   0.0150   960
+ 9:   0.0060   240
+10:   0.0179  1014
+11:   0.0146   858
+12:   0.0084    78
+13:   0.0228  1196
+14:   0.0183  1075
+15:   0.0820   421
+16:   0.0065   419
+17:   0.0019   420
+18:   0.0119   891
+19:   0.0067   384
+
+(e) bias contro il plim di O_glmer_plim.csv:
+  repw: 0.006192846  cellmean: -0.01179185  mediana: 0.003829905  celle: 1260 
+  escludendo le celle plim con n_plim<50: 0.006219988 
+
+(f) FINAL_ademp_own.csv esiste?
+ls: cannot access '/home/user/MMM/tables/FINAL_ademp_own.csv': No such file or directory
+ls: cannot access '/home/user/MMM/FINAL_ademp_own.csv': No such file or directory 
+Warning message:
+In system("ls -la ~/MMM/tables/FINAL_ademp_own.csv ~/MMM/FINAL_ademp_own.csv 2>&1",  :
+  running command 'ls -la ~/MMM/tables/FINAL_ademp_own.csv ~/MMM/FINAL_ademp_own.csv 2>&1' had status 2
+
+MMM per confronto (bias sul marginale, che e' il suo bersaglio):
+  repw: 0.003524484  cellmean: -0.001909659 
+
+VALORI CERCATI: 0.0366 (proprio estimando) e 0.0640 (bersaglio marginale)
+scarto minimo dal target 0.0366 fra tutte le varianti cond_*:
+              variante  variable    value
+                <char>    <fctr>    <num>
+1:      (c) solo M1-M2 cond_cell 0.037338
+2:                T>=4 cond_repw 0.037500
+3: (c') solo M1 (base) cond_cell 0.035355
+4:                T>=4 cond_cell 0.039386
+5:       T>=4 & n>=900 cond_cell 0.033358
+scarto minimo dal target 0.0640 fra tutte le varianti marg_*:
+        variante  variable    value
+          <char>    <fctr>    <num>
+1:  M1-M2 & T>=4 marg_cell 0.063142
+2: solo GLMM-AR1 marg_repw 0.062809
+3:  M1-M2 & T>=4 marg_repw 0.062395
+4: solo GLMM-AR1 marg_cell 0.066952
+5: T>=4 & n>=900 marg_repw 0.067264
+
+################ 4. RMSE: tutte le convenzioni ################
+
+-- A cellmean RMSE --
+Key: <method>
+   method GLMM-AR1 GLMM-native GenBinaryY
+   <char>    <num>       <num>      <num>
+1:    gee  0.47616     0.47720    0.47642
+2: gee_fg  0.43740     0.43806    0.43855
+3: gee_kc  0.43479     0.43732    0.43721
+4: gee_md  0.43731     0.43785    0.43841
+5:  glmer  0.63125     0.59867    0.87224
+6:    mmm  0.44917     0.44935    0.44736
+7: shrink  0.39152     0.36905    0.40864
+   spread 4 metodi: 2.32 / 2.75 / 3.31   spread 3 (senza KC): 2.04 / 2.63 / 2.71
+   TARGET pubblicato: 1.4 / 0.8 / 1.3
+
+-- B pooled RMSE --
+Key: <method>
+   method GLMM-AR1 GLMM-native GenBinaryY
+   <char>    <num>       <num>      <num>
+1:    gee  0.57360     0.57916    0.56734
+2: gee_fg  0.50672     0.51090    0.49473
+3: gee_kc  0.50618     0.51078    0.49447
+4: gee_md  0.50677     0.51144    0.49497
+5:  glmer  0.85765     0.80564    1.10929
+6:    mmm  0.51226     0.51607    0.49969
+7: shrink  0.44057     0.43980    0.45841
+   spread 4 metodi: 1.06 / 1.04 / 1.20   spread 3 (senza KC): 1.00 / 1.01 / 1.09
+   TARGET pubblicato: 1.4 / 0.8 / 1.3
+
+-- C sqrt(mean MSE cell) --
+Key: <method>
+   method GLMM-AR1 GLMM-native GenBinaryY
+   <char>    <num>       <num>      <num>
+1:    gee  0.66539     0.67897    0.65524
+2: gee_fg  0.57936     0.58884    0.57107
+3: gee_kc  0.57336     0.58649    0.56790
+4: gee_md  0.57912     0.58766    0.57067
+5:  glmer  0.98575     0.94817    1.37058
+6:    mmm  0.59212     0.59981    0.58146
+7: shrink  0.58937     0.52435    0.58453
+   spread 4 metodi: 2.39 / 2.27 / 3.27   spread 3 (senza KC): 1.89 / 2.07 / 2.24
+   TARGET pubblicato: 1.4 / 0.8 / 1.3
+
+-- D cellmean MSE --
+Key: <method>
+   method GLMM-AR1 GLMM-native GenBinaryY
+   <char>    <num>       <num>      <num>
+1:    gee  0.44275     0.46100    0.42935
+2: gee_fg  0.33566     0.34673    0.32613
+3: gee_kc  0.32874     0.34397    0.32251
+4: gee_md  0.33538     0.34534    0.32567
+5:  glmer  0.97170     0.89903    1.87849
+6:    mmm  0.35061     0.35977    0.33810
+7: shrink  0.34736     0.27494    0.34168
+   spread 4 metodi: 4.83 / 4.59 / 6.65   spread 3 (senza KC): 3.82 / 4.18 / 4.54
+   TARGET pubblicato: 1.4 / 0.8 / 1.3
+
+-- E median RMSE --
+Key: <method>
+   method GLMM-AR1 GLMM-native GenBinaryY
+   <char>    <num>       <num>      <num>
+1:    gee  0.29322     0.28244    0.30985
+2: gee_fg  0.29150     0.27888    0.30941
+3: gee_kc  0.29095     0.27895    0.30823
+4: gee_md  0.29038     0.27895    0.30825
+5:  glmer  0.28671     0.27624    0.37448
+6:    mmm  0.29535     0.28098    0.30939
+7: shrink  0.23643     0.22504    0.24843
+   spread 4 metodi: 0.38 / 0.75 / 1.71   spread 3 (senza KC): 0.37 / 0.75 / 1.71
+   TARGET pubblicato: 1.4 / 0.8 / 1.3
+
+-- F cellmean SD --
+Key: <method>
+   method GLMM-AR1 GLMM-native GenBinaryY
+   <char>    <num>       <num>      <num>
+1:    gee  0.47550     0.47642    0.47558
+2: gee_fg  0.43695     0.43718    0.43796
+3: gee_kc  0.43440     0.43633    0.43645
+4: gee_md  0.43697     0.43722    0.43779
+5:  glmer       NA          NA         NA
+6:    mmm  0.44889     0.44825    0.44656
+7: shrink       NA          NA         NA
+   spread 4 metodi: 2.32 / 2.73 / 3.34   spread 3 (senza KC): 2.00 / 2.53 / 2.73
+   TARGET pubblicato: 1.4 / 0.8 / 1.3
+
+-- G pooled sqrt sum/ncell --
+Key: <method>
+   method GLMM-AR1 GLMM-native GenBinaryY
+   <char>    <num>       <num>      <num>
+1:    gee  0.66539     0.67897    0.65524
+2: gee_fg  0.57936     0.58884    0.57107
+3: gee_kc  0.57336     0.58649    0.56790
+4: gee_md  0.57912     0.58766    0.57067
+5:  glmer  0.98575     0.94817    1.37058
+6:    mmm  0.59212     0.59981    0.58146
+7: shrink  0.58937     0.52435    0.58453
+   spread 4 metodi: 2.39 / 2.27 / 3.27   spread 3 (senza KC): 1.89 / 2.07 / 2.24
+   TARGET pubblicato: 1.4 / 0.8 / 1.3

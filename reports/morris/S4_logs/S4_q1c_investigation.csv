@@ -1,0 +1,1027 @@
+dgp,scen,N,ntime,label,method,n_rows,n_failure_rows,top_status,glmer_converged_any
+GLMM-AR1,M3,20,2,manual,glmer,1000,1000,number of observations (=34) < number of random effects (=40) for term,FALSE
+GLMM-AR1,M3,20,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,20,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M3,20,2,mmlb,glmer,1000,1000,number of observations (=34) < number of random effects (=40) for term,FALSE
+GLMM-AR1,M3,20,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,20,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M3,25,2,manual,glmer,1000,1000,number of observations (=43) < number of random effects (=50) for term,FALSE
+GLMM-AR1,M3,25,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,25,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M3,25,2,mmlb,glmer,1000,1000,number of observations (=43) < number of random effects (=50) for term,FALSE
+GLMM-AR1,M3,25,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,25,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M3,35,2,manual,glmer,1000,1000,number of observations (=60) < number of random effects (=70) for term,FALSE
+GLMM-AR1,M3,35,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,35,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M3,35,2,mmlb,glmer,1000,1000,number of observations (=60) < number of random effects (=70) for term,FALSE
+GLMM-AR1,M3,35,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,35,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M3,45,2,manual,glmer,1000,1000,number of observations (=75) < number of random effects (=90) for term,FALSE
+GLMM-AR1,M3,45,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,45,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M3,45,2,mmlb,glmer,1000,1000,number of observations (=75) < number of random effects (=90) for term,FALSE
+GLMM-AR1,M3,45,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,45,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M3,55,2,manual,glmer,1000,1000,number of observations (=91) < number of random effects (=110) for ter,FALSE
+GLMM-AR1,M3,55,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,55,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M3,55,2,mmlb,glmer,1000,1000,number of observations (=91) < number of random effects (=110) for ter,FALSE
+GLMM-AR1,M3,55,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,55,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M3,65,2,manual,glmer,1000,1000,number of observations (=109) < number of random effects (=130) for te,FALSE
+GLMM-AR1,M3,65,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,65,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M3,65,2,mmlb,glmer,1000,1000,number of observations (=109) < number of random effects (=130) for te,FALSE
+GLMM-AR1,M3,65,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,65,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M3,75,2,manual,glmer,1000,1000,number of observations (=129) < number of random effects (=150) for te,FALSE
+GLMM-AR1,M3,75,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,75,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M3,75,2,mmlb,glmer,1000,1000,number of observations (=129) < number of random effects (=150) for te,FALSE
+GLMM-AR1,M3,75,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,75,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M3,85,2,manual,glmer,1000,1000,number of observations (=145) < number of random effects (=170) for te,FALSE
+GLMM-AR1,M3,85,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,85,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M3,85,2,mmlb,glmer,1000,1000,number of observations (=145) < number of random effects (=170) for te,FALSE
+GLMM-AR1,M3,85,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,85,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M3,95,2,manual,glmer,1000,1000,number of observations (=162) < number of random effects (=190) for te,FALSE
+GLMM-AR1,M3,95,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,95,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M3,95,2,mmlb,glmer,1000,1000,number of observations (=162) < number of random effects (=190) for te,FALSE
+GLMM-AR1,M3,95,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,95,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M3,105,2,manual,glmer,1000,1000,number of observations (=179) < number of random effects (=210) for te,FALSE
+GLMM-AR1,M3,105,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,105,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M3,105,2,mmlb,glmer,1000,1000,number of observations (=179) < number of random effects (=210) for te,FALSE
+GLMM-AR1,M3,105,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,105,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M3,115,2,manual,glmer,1000,1000,number of observations (=194) < number of random effects (=230) for te,FALSE
+GLMM-AR1,M3,115,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,115,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M3,115,2,mmlb,glmer,1000,1000,number of observations (=194) < number of random effects (=230) for te,FALSE
+GLMM-AR1,M3,115,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,115,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M3,125,2,manual,glmer,1000,1000,number of observations (=214) < number of random effects (=250) for te,FALSE
+GLMM-AR1,M3,125,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,125,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M3,125,2,mmlb,glmer,1000,1000,number of observations (=214) < number of random effects (=250) for te,FALSE
+GLMM-AR1,M3,125,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,125,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M3,135,2,manual,glmer,1000,1000,number of observations (=226) < number of random effects (=270) for te,FALSE
+GLMM-AR1,M3,135,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,135,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M3,135,2,mmlb,glmer,1000,1000,number of observations (=226) < number of random effects (=270) for te,FALSE
+GLMM-AR1,M3,135,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,135,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M3,145,2,manual,glmer,1000,1000,number of observations (=245) < number of random effects (=290) for te,FALSE
+GLMM-AR1,M3,145,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,145,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M3,145,2,mmlb,glmer,1000,1000,number of observations (=245) < number of random effects (=290) for te,FALSE
+GLMM-AR1,M3,145,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M3,145,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M4,20,2,manual,glmer,999,999,number of observations (=35) < number of random effects (=40) for term,FALSE
+GLMM-AR1,M4,20,2,manual,glmer_lrt,999,999,fit returned NULL,FALSE
+GLMM-AR1,M4,20,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M4,20,2,mmlb,glmer,999,999,number of observations (=35) < number of random effects (=40) for term,FALSE
+GLMM-AR1,M4,20,2,mmlb,glmer_lrt,999,999,fit returned NULL,FALSE
+GLMM-AR1,M4,20,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M4,25,2,manual,glmer,998,998,number of observations (=42) < number of random effects (=50) for term,FALSE
+GLMM-AR1,M4,25,2,manual,glmer_lrt,998,998,fit returned NULL,FALSE
+GLMM-AR1,M4,25,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M4,25,2,mmlb,glmer,998,998,number of observations (=42) < number of random effects (=50) for term,FALSE
+GLMM-AR1,M4,25,2,mmlb,glmer_lrt,998,998,fit returned NULL,FALSE
+GLMM-AR1,M4,25,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M4,35,2,manual,glmer,1000,1000,number of observations (=59) < number of random effects (=70) for term,FALSE
+GLMM-AR1,M4,35,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M4,35,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M4,35,2,mmlb,glmer,1000,1000,number of observations (=59) < number of random effects (=70) for term,FALSE
+GLMM-AR1,M4,35,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M4,35,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M4,45,2,manual,glmer,1000,1000,number of observations (=77) < number of random effects (=90) for term,FALSE
+GLMM-AR1,M4,45,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M4,45,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M4,45,2,mmlb,glmer,1000,1000,number of observations (=77) < number of random effects (=90) for term,FALSE
+GLMM-AR1,M4,45,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M4,45,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M4,55,2,manual,glmer,1000,1000,number of observations (=93) < number of random effects (=110) for ter,FALSE
+GLMM-AR1,M4,55,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M4,55,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M4,55,2,mmlb,glmer,1000,1000,number of observations (=93) < number of random effects (=110) for ter,FALSE
+GLMM-AR1,M4,55,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M4,55,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M4,65,2,manual,glmer,1000,1000,number of observations (=111) < number of random effects (=130) for te,FALSE
+GLMM-AR1,M4,65,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M4,65,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M4,65,2,mmlb,glmer,1000,1000,number of observations (=111) < number of random effects (=130) for te,FALSE
+GLMM-AR1,M4,65,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M4,65,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M4,75,2,manual,glmer,1000,1000,number of observations (=128) < number of random effects (=150) for te,FALSE
+GLMM-AR1,M4,75,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M4,75,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M4,75,2,mmlb,glmer,1000,1000,number of observations (=128) < number of random effects (=150) for te,FALSE
+GLMM-AR1,M4,75,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M4,75,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M4,85,2,manual,glmer,1000,1000,number of observations (=145) < number of random effects (=170) for te,FALSE
+GLMM-AR1,M4,85,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M4,85,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M4,85,2,mmlb,glmer,1000,1000,number of observations (=145) < number of random effects (=170) for te,FALSE
+GLMM-AR1,M4,85,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M4,85,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M4,95,2,manual,glmer,1000,1000,number of observations (=162) < number of random effects (=190) for te,FALSE
+GLMM-AR1,M4,95,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M4,95,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M4,95,2,mmlb,glmer,1000,1000,number of observations (=162) < number of random effects (=190) for te,FALSE
+GLMM-AR1,M4,95,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M4,95,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M4,105,2,manual,glmer,1000,1000,number of observations (=178) < number of random effects (=210) for te,FALSE
+GLMM-AR1,M4,105,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M4,105,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M4,105,2,mmlb,glmer,1000,1000,number of observations (=178) < number of random effects (=210) for te,FALSE
+GLMM-AR1,M4,105,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M4,105,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M4,115,2,manual,glmer,1000,1000,number of observations (=195) < number of random effects (=230) for te,FALSE
+GLMM-AR1,M4,115,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M4,115,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M4,115,2,mmlb,glmer,1000,1000,number of observations (=195) < number of random effects (=230) for te,FALSE
+GLMM-AR1,M4,115,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M4,115,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M4,125,2,manual,glmer,1000,1000,number of observations (=213) < number of random effects (=250) for te,FALSE
+GLMM-AR1,M4,125,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M4,125,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M4,125,2,mmlb,glmer,1000,1000,number of observations (=213) < number of random effects (=250) for te,FALSE
+GLMM-AR1,M4,125,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M4,125,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M4,135,2,manual,glmer,1000,1000,number of observations (=231) < number of random effects (=270) for te,FALSE
+GLMM-AR1,M4,135,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M4,135,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M4,135,2,mmlb,glmer,1000,1000,number of observations (=231) < number of random effects (=270) for te,FALSE
+GLMM-AR1,M4,135,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M4,135,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M4,145,2,manual,glmer,1000,1000,number of observations (=248) < number of random effects (=290) for te,FALSE
+GLMM-AR1,M4,145,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M4,145,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M4,145,2,mmlb,glmer,1000,1000,number of observations (=248) < number of random effects (=290) for te,FALSE
+GLMM-AR1,M4,145,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M4,145,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,10,2,manual,glmer,976,976,number of observations (=18) < number of random effects (=30) for term,FALSE
+GLMM-AR1,M5,10,2,manual,glmer_lrt,976,976,fit returned NULL,FALSE
+GLMM-AR1,M5,10,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,10,2,mmlb,glmer,976,976,number of observations (=18) < number of random effects (=30) for term,FALSE
+GLMM-AR1,M5,10,2,mmlb,glmer_lrt,976,976,fit returned NULL,FALSE
+GLMM-AR1,M5,10,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,15,2,manual,glmer,995,995,number of observations (=26) < number of random effects (=45) for term,FALSE
+GLMM-AR1,M5,15,2,manual,glmer_lrt,995,995,fit returned NULL,FALSE
+GLMM-AR1,M5,15,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,15,2,mmlb,glmer,995,995,number of observations (=26) < number of random effects (=45) for term,FALSE
+GLMM-AR1,M5,15,2,mmlb,glmer_lrt,995,995,fit returned NULL,FALSE
+GLMM-AR1,M5,15,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,20,2,manual,glmer,1000,1000,number of observations (=34) < number of random effects (=60) for term,FALSE
+GLMM-AR1,M5,20,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,20,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,20,2,mmlb,glmer,1000,1000,number of observations (=34) < number of random effects (=60) for term,FALSE
+GLMM-AR1,M5,20,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,20,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,25,2,manual,glmer,1000,1000,number of observations (=42) < number of random effects (=75) for term,FALSE
+GLMM-AR1,M5,25,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,25,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,25,2,mmlb,glmer,1000,1000,number of observations (=42) < number of random effects (=75) for term,FALSE
+GLMM-AR1,M5,25,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,25,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,25,3,manual,glmer,1000,1000,number of observations (=65) < number of random effects (=75) for term,FALSE
+GLMM-AR1,M5,25,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,25,3,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,25,3,mmlb,glmer,1000,1000,number of observations (=65) < number of random effects (=75) for term,FALSE
+GLMM-AR1,M5,25,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,25,3,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,35,2,manual,glmer,1000,1000,number of observations (=61) < number of random effects (=105) for ter,FALSE
+GLMM-AR1,M5,35,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,35,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,35,2,mmlb,glmer,1000,1000,number of observations (=61) < number of random effects (=105) for ter,FALSE
+GLMM-AR1,M5,35,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,35,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,35,3,manual,glmer,1000,1000,number of observations (=88) < number of random effects (=105) for ter,FALSE
+GLMM-AR1,M5,35,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,35,3,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,35,3,mmlb,glmer,1000,1000,number of observations (=88) < number of random effects (=105) for ter,FALSE
+GLMM-AR1,M5,35,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,35,3,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,45,2,manual,glmer,1000,1000,number of observations (=77) < number of random effects (=135) for ter,FALSE
+GLMM-AR1,M5,45,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,45,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,45,2,mmlb,glmer,1000,1000,number of observations (=77) < number of random effects (=135) for ter,FALSE
+GLMM-AR1,M5,45,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,45,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,45,3,manual,glmer,1000,1000,number of observations (=115) < number of random effects (=135) for te,FALSE
+GLMM-AR1,M5,45,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,45,3,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,45,3,mmlb,glmer,1000,1000,number of observations (=115) < number of random effects (=135) for te,FALSE
+GLMM-AR1,M5,45,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,45,3,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,55,2,manual,glmer,1000,1000,number of observations (=94) < number of random effects (=165) for ter,FALSE
+GLMM-AR1,M5,55,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,55,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,55,2,mmlb,glmer,1000,1000,number of observations (=94) < number of random effects (=165) for ter,FALSE
+GLMM-AR1,M5,55,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,55,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,55,3,manual,glmer,1000,1000,number of observations (=141) < number of random effects (=165) for te,FALSE
+GLMM-AR1,M5,55,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,55,3,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,55,3,mmlb,glmer,1000,1000,number of observations (=141) < number of random effects (=165) for te,FALSE
+GLMM-AR1,M5,55,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,55,3,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,65,2,manual,glmer,1000,1000,number of observations (=111) < number of random effects (=195) for te,FALSE
+GLMM-AR1,M5,65,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,65,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,65,2,mmlb,glmer,1000,1000,number of observations (=111) < number of random effects (=195) for te,FALSE
+GLMM-AR1,M5,65,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,65,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,65,3,manual,glmer,1000,1000,number of observations (=166) < number of random effects (=195) for te,FALSE
+GLMM-AR1,M5,65,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,65,3,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,65,3,mmlb,glmer,1000,1000,number of observations (=166) < number of random effects (=195) for te,FALSE
+GLMM-AR1,M5,65,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,65,3,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,75,2,manual,glmer,1000,1000,number of observations (=128) < number of random effects (=225) for te,FALSE
+GLMM-AR1,M5,75,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,75,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,75,2,mmlb,glmer,1000,1000,number of observations (=128) < number of random effects (=225) for te,FALSE
+GLMM-AR1,M5,75,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,75,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,75,3,manual,glmer,1000,1000,number of observations (=190) < number of random effects (=225) for te,FALSE
+GLMM-AR1,M5,75,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,75,3,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,75,3,mmlb,glmer,1000,1000,number of observations (=190) < number of random effects (=225) for te,FALSE
+GLMM-AR1,M5,75,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,75,3,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,85,2,manual,glmer,1000,1000,number of observations (=144) < number of random effects (=255) for te,FALSE
+GLMM-AR1,M5,85,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,85,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,85,2,mmlb,glmer,1000,1000,number of observations (=144) < number of random effects (=255) for te,FALSE
+GLMM-AR1,M5,85,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,85,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,85,3,manual,glmer,1000,1000,number of observations (=216) < number of random effects (=255) for te,FALSE
+GLMM-AR1,M5,85,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,85,3,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,85,3,mmlb,glmer,1000,1000,number of observations (=216) < number of random effects (=255) for te,FALSE
+GLMM-AR1,M5,85,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,85,3,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,95,2,manual,glmer,1000,1000,number of observations (=164) < number of random effects (=285) for te,FALSE
+GLMM-AR1,M5,95,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,95,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,95,2,mmlb,glmer,1000,1000,number of observations (=164) < number of random effects (=285) for te,FALSE
+GLMM-AR1,M5,95,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,95,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,95,3,manual,glmer,1000,1000,number of observations (=246) < number of random effects (=285) for te,FALSE
+GLMM-AR1,M5,95,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,95,3,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,95,3,mmlb,glmer,1000,1000,number of observations (=246) < number of random effects (=285) for te,FALSE
+GLMM-AR1,M5,95,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,95,3,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,105,2,manual,glmer,1000,1000,number of observations (=180) < number of random effects (=315) for te,FALSE
+GLMM-AR1,M5,105,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,105,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,105,2,mmlb,glmer,1000,1000,number of observations (=180) < number of random effects (=315) for te,FALSE
+GLMM-AR1,M5,105,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,105,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,105,3,manual,glmer,1000,1000,number of observations (=268) < number of random effects (=315) for te,FALSE
+GLMM-AR1,M5,105,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,105,3,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,105,3,mmlb,glmer,1000,1000,number of observations (=268) < number of random effects (=315) for te,FALSE
+GLMM-AR1,M5,105,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,105,3,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,115,2,manual,glmer,1000,1000,number of observations (=197) < number of random effects (=345) for te,FALSE
+GLMM-AR1,M5,115,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,115,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,115,2,mmlb,glmer,1000,1000,number of observations (=197) < number of random effects (=345) for te,FALSE
+GLMM-AR1,M5,115,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,115,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,115,3,manual,glmer,1000,1000,number of observations (=294) < number of random effects (=345) for te,FALSE
+GLMM-AR1,M5,115,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,115,3,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,115,3,mmlb,glmer,1000,1000,number of observations (=294) < number of random effects (=345) for te,FALSE
+GLMM-AR1,M5,115,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,115,3,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,125,2,manual,glmer,1000,1000,number of observations (=213) < number of random effects (=375) for te,FALSE
+GLMM-AR1,M5,125,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,125,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,125,2,mmlb,glmer,1000,1000,number of observations (=213) < number of random effects (=375) for te,FALSE
+GLMM-AR1,M5,125,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,125,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,125,3,manual,glmer,1000,1000,number of observations (=319) < number of random effects (=375) for te,FALSE
+GLMM-AR1,M5,125,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,125,3,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,125,3,mmlb,glmer,1000,1000,number of observations (=319) < number of random effects (=375) for te,FALSE
+GLMM-AR1,M5,125,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,125,3,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,135,2,manual,glmer,1000,1000,number of observations (=228) < number of random effects (=405) for te,FALSE
+GLMM-AR1,M5,135,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,135,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,135,2,mmlb,glmer,1000,1000,number of observations (=228) < number of random effects (=405) for te,FALSE
+GLMM-AR1,M5,135,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,135,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,135,3,manual,glmer,1000,1000,number of observations (=346) < number of random effects (=405) for te,FALSE
+GLMM-AR1,M5,135,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,135,3,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,135,3,mmlb,glmer,1000,1000,number of observations (=346) < number of random effects (=405) for te,FALSE
+GLMM-AR1,M5,135,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,135,3,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,145,2,manual,glmer,1000,1000,number of observations (=248) < number of random effects (=435) for te,FALSE
+GLMM-AR1,M5,145,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,145,2,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,145,2,mmlb,glmer,1000,1000,number of observations (=248) < number of random effects (=435) for te,FALSE
+GLMM-AR1,M5,145,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,145,2,mmlb,shrink,0,0,,FALSE
+GLMM-AR1,M5,145,3,manual,glmer,1000,1000,number of observations (=368) < number of random effects (=435) for te,FALSE
+GLMM-AR1,M5,145,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,145,3,manual,shrink,0,0,,FALSE
+GLMM-AR1,M5,145,3,mmlb,glmer,1000,1000,number of observations (=368) < number of random effects (=435) for te,FALSE
+GLMM-AR1,M5,145,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-AR1,M5,145,3,mmlb,shrink,0,0,,FALSE
+GLMM-native,M3,20,2,manual,glmer,1000,1000,number of observations (=34) < number of random effects (=40) for term,FALSE
+GLMM-native,M3,20,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,20,2,manual,shrink,0,0,,FALSE
+GLMM-native,M3,20,2,mmlb,glmer,1000,1000,number of observations (=34) < number of random effects (=40) for term,FALSE
+GLMM-native,M3,20,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,20,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M3,25,2,manual,glmer,1000,1000,number of observations (=43) < number of random effects (=50) for term,FALSE
+GLMM-native,M3,25,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,25,2,manual,shrink,0,0,,FALSE
+GLMM-native,M3,25,2,mmlb,glmer,1000,1000,number of observations (=43) < number of random effects (=50) for term,FALSE
+GLMM-native,M3,25,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,25,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M3,35,2,manual,glmer,1000,1000,number of observations (=60) < number of random effects (=70) for term,FALSE
+GLMM-native,M3,35,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,35,2,manual,shrink,0,0,,FALSE
+GLMM-native,M3,35,2,mmlb,glmer,1000,1000,number of observations (=60) < number of random effects (=70) for term,FALSE
+GLMM-native,M3,35,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,35,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M3,45,2,manual,glmer,1000,1000,number of observations (=75) < number of random effects (=90) for term,FALSE
+GLMM-native,M3,45,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,45,2,manual,shrink,0,0,,FALSE
+GLMM-native,M3,45,2,mmlb,glmer,1000,1000,number of observations (=75) < number of random effects (=90) for term,FALSE
+GLMM-native,M3,45,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,45,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M3,55,2,manual,glmer,1000,1000,number of observations (=91) < number of random effects (=110) for ter,FALSE
+GLMM-native,M3,55,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,55,2,manual,shrink,0,0,,FALSE
+GLMM-native,M3,55,2,mmlb,glmer,1000,1000,number of observations (=91) < number of random effects (=110) for ter,FALSE
+GLMM-native,M3,55,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,55,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M3,65,2,manual,glmer,1000,1000,number of observations (=109) < number of random effects (=130) for te,FALSE
+GLMM-native,M3,65,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,65,2,manual,shrink,0,0,,FALSE
+GLMM-native,M3,65,2,mmlb,glmer,1000,1000,number of observations (=109) < number of random effects (=130) for te,FALSE
+GLMM-native,M3,65,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,65,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M3,75,2,manual,glmer,1000,1000,number of observations (=129) < number of random effects (=150) for te,FALSE
+GLMM-native,M3,75,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,75,2,manual,shrink,0,0,,FALSE
+GLMM-native,M3,75,2,mmlb,glmer,1000,1000,number of observations (=129) < number of random effects (=150) for te,FALSE
+GLMM-native,M3,75,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,75,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M3,85,2,manual,glmer,1000,1000,number of observations (=145) < number of random effects (=170) for te,FALSE
+GLMM-native,M3,85,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,85,2,manual,shrink,0,0,,FALSE
+GLMM-native,M3,85,2,mmlb,glmer,1000,1000,number of observations (=145) < number of random effects (=170) for te,FALSE
+GLMM-native,M3,85,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,85,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M3,95,2,manual,glmer,1000,1000,number of observations (=162) < number of random effects (=190) for te,FALSE
+GLMM-native,M3,95,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,95,2,manual,shrink,0,0,,FALSE
+GLMM-native,M3,95,2,mmlb,glmer,1000,1000,number of observations (=162) < number of random effects (=190) for te,FALSE
+GLMM-native,M3,95,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,95,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M3,105,2,manual,glmer,1000,1000,number of observations (=179) < number of random effects (=210) for te,FALSE
+GLMM-native,M3,105,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,105,2,manual,shrink,0,0,,FALSE
+GLMM-native,M3,105,2,mmlb,glmer,1000,1000,number of observations (=179) < number of random effects (=210) for te,FALSE
+GLMM-native,M3,105,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,105,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M3,115,2,manual,glmer,1000,1000,number of observations (=194) < number of random effects (=230) for te,FALSE
+GLMM-native,M3,115,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,115,2,manual,shrink,0,0,,FALSE
+GLMM-native,M3,115,2,mmlb,glmer,1000,1000,number of observations (=194) < number of random effects (=230) for te,FALSE
+GLMM-native,M3,115,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,115,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M3,125,2,manual,glmer,1000,1000,number of observations (=214) < number of random effects (=250) for te,FALSE
+GLMM-native,M3,125,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,125,2,manual,shrink,0,0,,FALSE
+GLMM-native,M3,125,2,mmlb,glmer,1000,1000,number of observations (=214) < number of random effects (=250) for te,FALSE
+GLMM-native,M3,125,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,125,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M3,135,2,manual,glmer,1000,1000,number of observations (=226) < number of random effects (=270) for te,FALSE
+GLMM-native,M3,135,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,135,2,manual,shrink,0,0,,FALSE
+GLMM-native,M3,135,2,mmlb,glmer,1000,1000,number of observations (=226) < number of random effects (=270) for te,FALSE
+GLMM-native,M3,135,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,135,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M3,145,2,manual,glmer,1000,1000,number of observations (=245) < number of random effects (=290) for te,FALSE
+GLMM-native,M3,145,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,145,2,manual,shrink,0,0,,FALSE
+GLMM-native,M3,145,2,mmlb,glmer,1000,1000,number of observations (=245) < number of random effects (=290) for te,FALSE
+GLMM-native,M3,145,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M3,145,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M4,20,2,manual,glmer,1000,1000,number of observations (=35) < number of random effects (=40) for term,FALSE
+GLMM-native,M4,20,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,20,2,manual,shrink,0,0,,FALSE
+GLMM-native,M4,20,2,mmlb,glmer,1000,1000,number of observations (=35) < number of random effects (=40) for term,FALSE
+GLMM-native,M4,20,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,20,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M4,25,2,manual,glmer,1000,1000,number of observations (=42) < number of random effects (=50) for term,FALSE
+GLMM-native,M4,25,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,25,2,manual,shrink,0,0,,FALSE
+GLMM-native,M4,25,2,mmlb,glmer,1000,1000,number of observations (=42) < number of random effects (=50) for term,FALSE
+GLMM-native,M4,25,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,25,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M4,35,2,manual,glmer,1000,1000,number of observations (=59) < number of random effects (=70) for term,FALSE
+GLMM-native,M4,35,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,35,2,manual,shrink,0,0,,FALSE
+GLMM-native,M4,35,2,mmlb,glmer,1000,1000,number of observations (=59) < number of random effects (=70) for term,FALSE
+GLMM-native,M4,35,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,35,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M4,45,2,manual,glmer,1000,1000,number of observations (=77) < number of random effects (=90) for term,FALSE
+GLMM-native,M4,45,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,45,2,manual,shrink,0,0,,FALSE
+GLMM-native,M4,45,2,mmlb,glmer,1000,1000,number of observations (=77) < number of random effects (=90) for term,FALSE
+GLMM-native,M4,45,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,45,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M4,55,2,manual,glmer,1000,1000,number of observations (=93) < number of random effects (=110) for ter,FALSE
+GLMM-native,M4,55,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,55,2,manual,shrink,0,0,,FALSE
+GLMM-native,M4,55,2,mmlb,glmer,1000,1000,number of observations (=93) < number of random effects (=110) for ter,FALSE
+GLMM-native,M4,55,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,55,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M4,65,2,manual,glmer,1000,1000,number of observations (=111) < number of random effects (=130) for te,FALSE
+GLMM-native,M4,65,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,65,2,manual,shrink,0,0,,FALSE
+GLMM-native,M4,65,2,mmlb,glmer,1000,1000,number of observations (=111) < number of random effects (=130) for te,FALSE
+GLMM-native,M4,65,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,65,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M4,75,2,manual,glmer,1000,1000,number of observations (=128) < number of random effects (=150) for te,FALSE
+GLMM-native,M4,75,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,75,2,manual,shrink,0,0,,FALSE
+GLMM-native,M4,75,2,mmlb,glmer,1000,1000,number of observations (=128) < number of random effects (=150) for te,FALSE
+GLMM-native,M4,75,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,75,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M4,85,2,manual,glmer,1000,1000,number of observations (=145) < number of random effects (=170) for te,FALSE
+GLMM-native,M4,85,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,85,2,manual,shrink,0,0,,FALSE
+GLMM-native,M4,85,2,mmlb,glmer,1000,1000,number of observations (=145) < number of random effects (=170) for te,FALSE
+GLMM-native,M4,85,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,85,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M4,95,2,manual,glmer,1000,1000,number of observations (=162) < number of random effects (=190) for te,FALSE
+GLMM-native,M4,95,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,95,2,manual,shrink,0,0,,FALSE
+GLMM-native,M4,95,2,mmlb,glmer,1000,1000,number of observations (=162) < number of random effects (=190) for te,FALSE
+GLMM-native,M4,95,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,95,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M4,105,2,manual,glmer,1000,1000,number of observations (=178) < number of random effects (=210) for te,FALSE
+GLMM-native,M4,105,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,105,2,manual,shrink,0,0,,FALSE
+GLMM-native,M4,105,2,mmlb,glmer,1000,1000,number of observations (=178) < number of random effects (=210) for te,FALSE
+GLMM-native,M4,105,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,105,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M4,115,2,manual,glmer,1000,1000,number of observations (=195) < number of random effects (=230) for te,FALSE
+GLMM-native,M4,115,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,115,2,manual,shrink,0,0,,FALSE
+GLMM-native,M4,115,2,mmlb,glmer,1000,1000,number of observations (=195) < number of random effects (=230) for te,FALSE
+GLMM-native,M4,115,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,115,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M4,125,2,manual,glmer,1000,1000,number of observations (=213) < number of random effects (=250) for te,FALSE
+GLMM-native,M4,125,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,125,2,manual,shrink,0,0,,FALSE
+GLMM-native,M4,125,2,mmlb,glmer,1000,1000,number of observations (=213) < number of random effects (=250) for te,FALSE
+GLMM-native,M4,125,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,125,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M4,135,2,manual,glmer,1000,1000,number of observations (=231) < number of random effects (=270) for te,FALSE
+GLMM-native,M4,135,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,135,2,manual,shrink,0,0,,FALSE
+GLMM-native,M4,135,2,mmlb,glmer,1000,1000,number of observations (=231) < number of random effects (=270) for te,FALSE
+GLMM-native,M4,135,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,135,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M4,145,2,manual,glmer,1000,1000,number of observations (=248) < number of random effects (=290) for te,FALSE
+GLMM-native,M4,145,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,145,2,manual,shrink,0,0,,FALSE
+GLMM-native,M4,145,2,mmlb,glmer,1000,1000,number of observations (=248) < number of random effects (=290) for te,FALSE
+GLMM-native,M4,145,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M4,145,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,10,2,manual,glmer,1000,1000,number of observations (=18) < number of random effects (=30) for term,FALSE
+GLMM-native,M5,10,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,10,2,manual,shrink,0,0,,FALSE
+GLMM-native,M5,10,2,mmlb,glmer,1000,1000,number of observations (=18) < number of random effects (=30) for term,FALSE
+GLMM-native,M5,10,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,10,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,15,2,manual,glmer,1000,1000,number of observations (=26) < number of random effects (=45) for term,FALSE
+GLMM-native,M5,15,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,15,2,manual,shrink,0,0,,FALSE
+GLMM-native,M5,15,2,mmlb,glmer,1000,1000,number of observations (=26) < number of random effects (=45) for term,FALSE
+GLMM-native,M5,15,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,15,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,20,2,manual,glmer,1000,1000,number of observations (=34) < number of random effects (=60) for term,FALSE
+GLMM-native,M5,20,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,20,2,manual,shrink,0,0,,FALSE
+GLMM-native,M5,20,2,mmlb,glmer,1000,1000,number of observations (=34) < number of random effects (=60) for term,FALSE
+GLMM-native,M5,20,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,20,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,25,2,manual,glmer,1000,1000,number of observations (=42) < number of random effects (=75) for term,FALSE
+GLMM-native,M5,25,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,25,2,manual,shrink,0,0,,FALSE
+GLMM-native,M5,25,2,mmlb,glmer,1000,1000,number of observations (=42) < number of random effects (=75) for term,FALSE
+GLMM-native,M5,25,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,25,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,25,3,manual,glmer,1000,1000,number of observations (=65) < number of random effects (=75) for term,FALSE
+GLMM-native,M5,25,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,25,3,manual,shrink,0,0,,FALSE
+GLMM-native,M5,25,3,mmlb,glmer,1000,1000,number of observations (=65) < number of random effects (=75) for term,FALSE
+GLMM-native,M5,25,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,25,3,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,35,2,manual,glmer,1000,1000,number of observations (=61) < number of random effects (=105) for ter,FALSE
+GLMM-native,M5,35,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,35,2,manual,shrink,0,0,,FALSE
+GLMM-native,M5,35,2,mmlb,glmer,1000,1000,number of observations (=61) < number of random effects (=105) for ter,FALSE
+GLMM-native,M5,35,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,35,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,35,3,manual,glmer,1000,1000,number of observations (=88) < number of random effects (=105) for ter,FALSE
+GLMM-native,M5,35,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,35,3,manual,shrink,0,0,,FALSE
+GLMM-native,M5,35,3,mmlb,glmer,1000,1000,number of observations (=88) < number of random effects (=105) for ter,FALSE
+GLMM-native,M5,35,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,35,3,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,45,2,manual,glmer,1000,1000,number of observations (=77) < number of random effects (=135) for ter,FALSE
+GLMM-native,M5,45,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,45,2,manual,shrink,0,0,,FALSE
+GLMM-native,M5,45,2,mmlb,glmer,1000,1000,number of observations (=77) < number of random effects (=135) for ter,FALSE
+GLMM-native,M5,45,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,45,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,45,3,manual,glmer,1000,1000,number of observations (=115) < number of random effects (=135) for te,FALSE
+GLMM-native,M5,45,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,45,3,manual,shrink,0,0,,FALSE
+GLMM-native,M5,45,3,mmlb,glmer,1000,1000,number of observations (=115) < number of random effects (=135) for te,FALSE
+GLMM-native,M5,45,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,45,3,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,55,2,manual,glmer,1000,1000,number of observations (=94) < number of random effects (=165) for ter,FALSE
+GLMM-native,M5,55,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,55,2,manual,shrink,0,0,,FALSE
+GLMM-native,M5,55,2,mmlb,glmer,1000,1000,number of observations (=94) < number of random effects (=165) for ter,FALSE
+GLMM-native,M5,55,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,55,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,55,3,manual,glmer,1000,1000,number of observations (=141) < number of random effects (=165) for te,FALSE
+GLMM-native,M5,55,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,55,3,manual,shrink,0,0,,FALSE
+GLMM-native,M5,55,3,mmlb,glmer,1000,1000,number of observations (=141) < number of random effects (=165) for te,FALSE
+GLMM-native,M5,55,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,55,3,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,65,2,manual,glmer,1000,1000,number of observations (=111) < number of random effects (=195) for te,FALSE
+GLMM-native,M5,65,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,65,2,manual,shrink,0,0,,FALSE
+GLMM-native,M5,65,2,mmlb,glmer,1000,1000,number of observations (=111) < number of random effects (=195) for te,FALSE
+GLMM-native,M5,65,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,65,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,65,3,manual,glmer,1000,1000,number of observations (=166) < number of random effects (=195) for te,FALSE
+GLMM-native,M5,65,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,65,3,manual,shrink,0,0,,FALSE
+GLMM-native,M5,65,3,mmlb,glmer,1000,1000,number of observations (=166) < number of random effects (=195) for te,FALSE
+GLMM-native,M5,65,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,65,3,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,75,2,manual,glmer,1000,1000,number of observations (=128) < number of random effects (=225) for te,FALSE
+GLMM-native,M5,75,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,75,2,manual,shrink,0,0,,FALSE
+GLMM-native,M5,75,2,mmlb,glmer,1000,1000,number of observations (=128) < number of random effects (=225) for te,FALSE
+GLMM-native,M5,75,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,75,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,75,3,manual,glmer,1000,1000,number of observations (=190) < number of random effects (=225) for te,FALSE
+GLMM-native,M5,75,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,75,3,manual,shrink,0,0,,FALSE
+GLMM-native,M5,75,3,mmlb,glmer,1000,1000,number of observations (=190) < number of random effects (=225) for te,FALSE
+GLMM-native,M5,75,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,75,3,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,85,2,manual,glmer,1000,1000,number of observations (=144) < number of random effects (=255) for te,FALSE
+GLMM-native,M5,85,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,85,2,manual,shrink,0,0,,FALSE
+GLMM-native,M5,85,2,mmlb,glmer,1000,1000,number of observations (=144) < number of random effects (=255) for te,FALSE
+GLMM-native,M5,85,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,85,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,85,3,manual,glmer,1000,1000,number of observations (=216) < number of random effects (=255) for te,FALSE
+GLMM-native,M5,85,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,85,3,manual,shrink,0,0,,FALSE
+GLMM-native,M5,85,3,mmlb,glmer,1000,1000,number of observations (=216) < number of random effects (=255) for te,FALSE
+GLMM-native,M5,85,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,85,3,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,95,2,manual,glmer,1000,1000,number of observations (=164) < number of random effects (=285) for te,FALSE
+GLMM-native,M5,95,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,95,2,manual,shrink,0,0,,FALSE
+GLMM-native,M5,95,2,mmlb,glmer,1000,1000,number of observations (=164) < number of random effects (=285) for te,FALSE
+GLMM-native,M5,95,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,95,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,95,3,manual,glmer,1000,1000,number of observations (=246) < number of random effects (=285) for te,FALSE
+GLMM-native,M5,95,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,95,3,manual,shrink,0,0,,FALSE
+GLMM-native,M5,95,3,mmlb,glmer,1000,1000,number of observations (=246) < number of random effects (=285) for te,FALSE
+GLMM-native,M5,95,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,95,3,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,105,2,manual,glmer,1000,1000,number of observations (=180) < number of random effects (=315) for te,FALSE
+GLMM-native,M5,105,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,105,2,manual,shrink,0,0,,FALSE
+GLMM-native,M5,105,2,mmlb,glmer,1000,1000,number of observations (=180) < number of random effects (=315) for te,FALSE
+GLMM-native,M5,105,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,105,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,105,3,manual,glmer,1000,1000,number of observations (=268) < number of random effects (=315) for te,FALSE
+GLMM-native,M5,105,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,105,3,manual,shrink,0,0,,FALSE
+GLMM-native,M5,105,3,mmlb,glmer,1000,1000,number of observations (=268) < number of random effects (=315) for te,FALSE
+GLMM-native,M5,105,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,105,3,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,115,2,manual,glmer,1000,1000,number of observations (=197) < number of random effects (=345) for te,FALSE
+GLMM-native,M5,115,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,115,2,manual,shrink,0,0,,FALSE
+GLMM-native,M5,115,2,mmlb,glmer,1000,1000,number of observations (=197) < number of random effects (=345) for te,FALSE
+GLMM-native,M5,115,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,115,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,115,3,manual,glmer,1000,1000,number of observations (=294) < number of random effects (=345) for te,FALSE
+GLMM-native,M5,115,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,115,3,manual,shrink,0,0,,FALSE
+GLMM-native,M5,115,3,mmlb,glmer,1000,1000,number of observations (=294) < number of random effects (=345) for te,FALSE
+GLMM-native,M5,115,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,115,3,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,125,2,manual,glmer,1000,1000,number of observations (=213) < number of random effects (=375) for te,FALSE
+GLMM-native,M5,125,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,125,2,manual,shrink,0,0,,FALSE
+GLMM-native,M5,125,2,mmlb,glmer,1000,1000,number of observations (=213) < number of random effects (=375) for te,FALSE
+GLMM-native,M5,125,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,125,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,125,3,manual,glmer,1000,1000,number of observations (=319) < number of random effects (=375) for te,FALSE
+GLMM-native,M5,125,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,125,3,manual,shrink,0,0,,FALSE
+GLMM-native,M5,125,3,mmlb,glmer,1000,1000,number of observations (=319) < number of random effects (=375) for te,FALSE
+GLMM-native,M5,125,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,125,3,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,135,2,manual,glmer,1000,1000,number of observations (=228) < number of random effects (=405) for te,FALSE
+GLMM-native,M5,135,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,135,2,manual,shrink,0,0,,FALSE
+GLMM-native,M5,135,2,mmlb,glmer,1000,1000,number of observations (=228) < number of random effects (=405) for te,FALSE
+GLMM-native,M5,135,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,135,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,135,3,manual,glmer,1000,1000,number of observations (=346) < number of random effects (=405) for te,FALSE
+GLMM-native,M5,135,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,135,3,manual,shrink,0,0,,FALSE
+GLMM-native,M5,135,3,mmlb,glmer,1000,1000,number of observations (=346) < number of random effects (=405) for te,FALSE
+GLMM-native,M5,135,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,135,3,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,145,2,manual,glmer,1000,1000,number of observations (=248) < number of random effects (=435) for te,FALSE
+GLMM-native,M5,145,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,145,2,manual,shrink,0,0,,FALSE
+GLMM-native,M5,145,2,mmlb,glmer,1000,1000,number of observations (=248) < number of random effects (=435) for te,FALSE
+GLMM-native,M5,145,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,145,2,mmlb,shrink,0,0,,FALSE
+GLMM-native,M5,145,3,manual,glmer,1000,1000,number of observations (=368) < number of random effects (=435) for te,FALSE
+GLMM-native,M5,145,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,145,3,manual,shrink,0,0,,FALSE
+GLMM-native,M5,145,3,mmlb,glmer,1000,1000,number of observations (=368) < number of random effects (=435) for te,FALSE
+GLMM-native,M5,145,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GLMM-native,M5,145,3,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M3,20,2,manual,glmer,1000,1000,number of observations (=34) < number of random effects (=40) for term,FALSE
+GenBinaryY,M3,20,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,20,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M3,20,2,mmlb,glmer,1000,1000,number of observations (=34) < number of random effects (=40) for term,FALSE
+GenBinaryY,M3,20,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,20,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M3,25,2,manual,glmer,1000,1000,number of observations (=43) < number of random effects (=50) for term,FALSE
+GenBinaryY,M3,25,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,25,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M3,25,2,mmlb,glmer,1000,1000,number of observations (=43) < number of random effects (=50) for term,FALSE
+GenBinaryY,M3,25,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,25,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M3,35,2,manual,glmer,1000,1000,number of observations (=60) < number of random effects (=70) for term,FALSE
+GenBinaryY,M3,35,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,35,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M3,35,2,mmlb,glmer,1000,1000,number of observations (=60) < number of random effects (=70) for term,FALSE
+GenBinaryY,M3,35,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,35,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M3,45,2,manual,glmer,1000,1000,number of observations (=75) < number of random effects (=90) for term,FALSE
+GenBinaryY,M3,45,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,45,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M3,45,2,mmlb,glmer,1000,1000,number of observations (=75) < number of random effects (=90) for term,FALSE
+GenBinaryY,M3,45,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,45,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M3,55,2,manual,glmer,1000,1000,number of observations (=91) < number of random effects (=110) for ter,FALSE
+GenBinaryY,M3,55,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,55,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M3,55,2,mmlb,glmer,1000,1000,number of observations (=91) < number of random effects (=110) for ter,FALSE
+GenBinaryY,M3,55,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,55,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M3,65,2,manual,glmer,1000,1000,number of observations (=109) < number of random effects (=130) for te,FALSE
+GenBinaryY,M3,65,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,65,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M3,65,2,mmlb,glmer,1000,1000,number of observations (=109) < number of random effects (=130) for te,FALSE
+GenBinaryY,M3,65,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,65,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M3,75,2,manual,glmer,1000,1000,number of observations (=129) < number of random effects (=150) for te,FALSE
+GenBinaryY,M3,75,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,75,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M3,75,2,mmlb,glmer,1000,1000,number of observations (=129) < number of random effects (=150) for te,FALSE
+GenBinaryY,M3,75,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,75,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M3,85,2,manual,glmer,1000,1000,number of observations (=145) < number of random effects (=170) for te,FALSE
+GenBinaryY,M3,85,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,85,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M3,85,2,mmlb,glmer,1000,1000,number of observations (=145) < number of random effects (=170) for te,FALSE
+GenBinaryY,M3,85,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,85,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M3,95,2,manual,glmer,1000,1000,number of observations (=162) < number of random effects (=190) for te,FALSE
+GenBinaryY,M3,95,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,95,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M3,95,2,mmlb,glmer,1000,1000,number of observations (=162) < number of random effects (=190) for te,FALSE
+GenBinaryY,M3,95,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,95,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M3,105,2,manual,glmer,1000,1000,number of observations (=179) < number of random effects (=210) for te,FALSE
+GenBinaryY,M3,105,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,105,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M3,105,2,mmlb,glmer,1000,1000,number of observations (=179) < number of random effects (=210) for te,FALSE
+GenBinaryY,M3,105,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,105,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M3,115,2,manual,glmer,1000,1000,number of observations (=194) < number of random effects (=230) for te,FALSE
+GenBinaryY,M3,115,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,115,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M3,115,2,mmlb,glmer,1000,1000,number of observations (=194) < number of random effects (=230) for te,FALSE
+GenBinaryY,M3,115,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,115,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M3,125,2,manual,glmer,1000,1000,number of observations (=214) < number of random effects (=250) for te,FALSE
+GenBinaryY,M3,125,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,125,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M3,125,2,mmlb,glmer,1000,1000,number of observations (=214) < number of random effects (=250) for te,FALSE
+GenBinaryY,M3,125,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,125,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M3,135,2,manual,glmer,1000,1000,number of observations (=226) < number of random effects (=270) for te,FALSE
+GenBinaryY,M3,135,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,135,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M3,135,2,mmlb,glmer,1000,1000,number of observations (=226) < number of random effects (=270) for te,FALSE
+GenBinaryY,M3,135,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,135,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M3,145,2,manual,glmer,1000,1000,number of observations (=245) < number of random effects (=290) for te,FALSE
+GenBinaryY,M3,145,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,145,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M3,145,2,mmlb,glmer,1000,1000,number of observations (=245) < number of random effects (=290) for te,FALSE
+GenBinaryY,M3,145,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M3,145,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M4,20,2,manual,glmer,1000,1000,number of observations (=35) < number of random effects (=40) for term,FALSE
+GenBinaryY,M4,20,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,20,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M4,20,2,mmlb,glmer,1000,1000,number of observations (=35) < number of random effects (=40) for term,FALSE
+GenBinaryY,M4,20,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,20,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M4,25,2,manual,glmer,1000,1000,number of observations (=42) < number of random effects (=50) for term,FALSE
+GenBinaryY,M4,25,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,25,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M4,25,2,mmlb,glmer,1000,1000,number of observations (=42) < number of random effects (=50) for term,FALSE
+GenBinaryY,M4,25,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,25,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M4,35,2,manual,glmer,1000,1000,number of observations (=59) < number of random effects (=70) for term,FALSE
+GenBinaryY,M4,35,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,35,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M4,35,2,mmlb,glmer,1000,1000,number of observations (=59) < number of random effects (=70) for term,FALSE
+GenBinaryY,M4,35,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,35,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M4,45,2,manual,glmer,1000,1000,number of observations (=77) < number of random effects (=90) for term,FALSE
+GenBinaryY,M4,45,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,45,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M4,45,2,mmlb,glmer,1000,1000,number of observations (=77) < number of random effects (=90) for term,FALSE
+GenBinaryY,M4,45,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,45,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M4,55,2,manual,glmer,1000,1000,number of observations (=93) < number of random effects (=110) for ter,FALSE
+GenBinaryY,M4,55,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,55,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M4,55,2,mmlb,glmer,1000,1000,number of observations (=93) < number of random effects (=110) for ter,FALSE
+GenBinaryY,M4,55,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,55,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M4,65,2,manual,glmer,1000,1000,number of observations (=111) < number of random effects (=130) for te,FALSE
+GenBinaryY,M4,65,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,65,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M4,65,2,mmlb,glmer,1000,1000,number of observations (=111) < number of random effects (=130) for te,FALSE
+GenBinaryY,M4,65,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,65,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M4,75,2,manual,glmer,1000,1000,number of observations (=128) < number of random effects (=150) for te,FALSE
+GenBinaryY,M4,75,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,75,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M4,75,2,mmlb,glmer,1000,1000,number of observations (=128) < number of random effects (=150) for te,FALSE
+GenBinaryY,M4,75,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,75,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M4,85,2,manual,glmer,1000,1000,number of observations (=145) < number of random effects (=170) for te,FALSE
+GenBinaryY,M4,85,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,85,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M4,85,2,mmlb,glmer,1000,1000,number of observations (=145) < number of random effects (=170) for te,FALSE
+GenBinaryY,M4,85,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,85,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M4,95,2,manual,glmer,1000,1000,number of observations (=162) < number of random effects (=190) for te,FALSE
+GenBinaryY,M4,95,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,95,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M4,95,2,mmlb,glmer,1000,1000,number of observations (=162) < number of random effects (=190) for te,FALSE
+GenBinaryY,M4,95,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,95,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M4,105,2,manual,glmer,1000,1000,number of observations (=178) < number of random effects (=210) for te,FALSE
+GenBinaryY,M4,105,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,105,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M4,105,2,mmlb,glmer,1000,1000,number of observations (=178) < number of random effects (=210) for te,FALSE
+GenBinaryY,M4,105,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,105,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M4,115,2,manual,glmer,1000,1000,number of observations (=195) < number of random effects (=230) for te,FALSE
+GenBinaryY,M4,115,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,115,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M4,115,2,mmlb,glmer,1000,1000,number of observations (=195) < number of random effects (=230) for te,FALSE
+GenBinaryY,M4,115,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,115,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M4,125,2,manual,glmer,1000,1000,number of observations (=213) < number of random effects (=250) for te,FALSE
+GenBinaryY,M4,125,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,125,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M4,125,2,mmlb,glmer,1000,1000,number of observations (=213) < number of random effects (=250) for te,FALSE
+GenBinaryY,M4,125,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,125,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M4,135,2,manual,glmer,1000,1000,number of observations (=231) < number of random effects (=270) for te,FALSE
+GenBinaryY,M4,135,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,135,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M4,135,2,mmlb,glmer,1000,1000,number of observations (=231) < number of random effects (=270) for te,FALSE
+GenBinaryY,M4,135,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,135,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M4,145,2,manual,glmer,1000,1000,number of observations (=248) < number of random effects (=290) for te,FALSE
+GenBinaryY,M4,145,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,145,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M4,145,2,mmlb,glmer,1000,1000,number of observations (=248) < number of random effects (=290) for te,FALSE
+GenBinaryY,M4,145,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M4,145,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,10,2,manual,glmer,1000,1000,number of observations (=18) < number of random effects (=30) for term,FALSE
+GenBinaryY,M5,10,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,10,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,10,2,mmlb,glmer,1000,1000,number of observations (=18) < number of random effects (=30) for term,FALSE
+GenBinaryY,M5,10,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,10,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,15,2,manual,glmer,1000,1000,number of observations (=26) < number of random effects (=45) for term,FALSE
+GenBinaryY,M5,15,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,15,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,15,2,mmlb,glmer,1000,1000,number of observations (=26) < number of random effects (=45) for term,FALSE
+GenBinaryY,M5,15,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,15,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,20,2,manual,glmer,1000,1000,number of observations (=34) < number of random effects (=60) for term,FALSE
+GenBinaryY,M5,20,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,20,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,20,2,mmlb,glmer,1000,1000,number of observations (=34) < number of random effects (=60) for term,FALSE
+GenBinaryY,M5,20,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,20,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,25,2,manual,glmer,1000,1000,number of observations (=42) < number of random effects (=75) for term,FALSE
+GenBinaryY,M5,25,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,25,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,25,2,mmlb,glmer,1000,1000,number of observations (=42) < number of random effects (=75) for term,FALSE
+GenBinaryY,M5,25,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,25,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,25,3,manual,glmer,1000,1000,number of observations (=65) < number of random effects (=75) for term,FALSE
+GenBinaryY,M5,25,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,25,3,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,25,3,mmlb,glmer,1000,1000,number of observations (=65) < number of random effects (=75) for term,FALSE
+GenBinaryY,M5,25,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,25,3,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,35,2,manual,glmer,1000,1000,number of observations (=61) < number of random effects (=105) for ter,FALSE
+GenBinaryY,M5,35,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,35,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,35,2,mmlb,glmer,1000,1000,number of observations (=61) < number of random effects (=105) for ter,FALSE
+GenBinaryY,M5,35,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,35,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,35,3,manual,glmer,1000,1000,number of observations (=88) < number of random effects (=105) for ter,FALSE
+GenBinaryY,M5,35,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,35,3,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,35,3,mmlb,glmer,1000,1000,number of observations (=88) < number of random effects (=105) for ter,FALSE
+GenBinaryY,M5,35,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,35,3,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,45,2,manual,glmer,1000,1000,number of observations (=77) < number of random effects (=135) for ter,FALSE
+GenBinaryY,M5,45,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,45,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,45,2,mmlb,glmer,1000,1000,number of observations (=77) < number of random effects (=135) for ter,FALSE
+GenBinaryY,M5,45,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,45,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,45,3,manual,glmer,1000,1000,number of observations (=115) < number of random effects (=135) for te,FALSE
+GenBinaryY,M5,45,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,45,3,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,45,3,mmlb,glmer,1000,1000,number of observations (=115) < number of random effects (=135) for te,FALSE
+GenBinaryY,M5,45,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,45,3,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,55,2,manual,glmer,1000,1000,number of observations (=94) < number of random effects (=165) for ter,FALSE
+GenBinaryY,M5,55,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,55,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,55,2,mmlb,glmer,1000,1000,number of observations (=94) < number of random effects (=165) for ter,FALSE
+GenBinaryY,M5,55,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,55,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,55,3,manual,glmer,1000,1000,number of observations (=141) < number of random effects (=165) for te,FALSE
+GenBinaryY,M5,55,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,55,3,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,55,3,mmlb,glmer,1000,1000,number of observations (=141) < number of random effects (=165) for te,FALSE
+GenBinaryY,M5,55,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,55,3,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,65,2,manual,glmer,1000,1000,number of observations (=111) < number of random effects (=195) for te,FALSE
+GenBinaryY,M5,65,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,65,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,65,2,mmlb,glmer,1000,1000,number of observations (=111) < number of random effects (=195) for te,FALSE
+GenBinaryY,M5,65,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,65,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,65,3,manual,glmer,1000,1000,number of observations (=166) < number of random effects (=195) for te,FALSE
+GenBinaryY,M5,65,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,65,3,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,65,3,mmlb,glmer,1000,1000,number of observations (=166) < number of random effects (=195) for te,FALSE
+GenBinaryY,M5,65,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,65,3,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,75,2,manual,glmer,1000,1000,number of observations (=128) < number of random effects (=225) for te,FALSE
+GenBinaryY,M5,75,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,75,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,75,2,mmlb,glmer,1000,1000,number of observations (=128) < number of random effects (=225) for te,FALSE
+GenBinaryY,M5,75,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,75,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,75,3,manual,glmer,1000,1000,number of observations (=190) < number of random effects (=225) for te,FALSE
+GenBinaryY,M5,75,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,75,3,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,75,3,mmlb,glmer,1000,1000,number of observations (=190) < number of random effects (=225) for te,FALSE
+GenBinaryY,M5,75,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,75,3,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,85,2,manual,glmer,1000,1000,number of observations (=144) < number of random effects (=255) for te,FALSE
+GenBinaryY,M5,85,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,85,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,85,2,mmlb,glmer,1000,1000,number of observations (=144) < number of random effects (=255) for te,FALSE
+GenBinaryY,M5,85,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,85,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,85,3,manual,glmer,1000,1000,number of observations (=216) < number of random effects (=255) for te,FALSE
+GenBinaryY,M5,85,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,85,3,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,85,3,mmlb,glmer,1000,1000,number of observations (=216) < number of random effects (=255) for te,FALSE
+GenBinaryY,M5,85,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,85,3,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,95,2,manual,glmer,1000,1000,number of observations (=164) < number of random effects (=285) for te,FALSE
+GenBinaryY,M5,95,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,95,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,95,2,mmlb,glmer,1000,1000,number of observations (=164) < number of random effects (=285) for te,FALSE
+GenBinaryY,M5,95,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,95,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,95,3,manual,glmer,1000,1000,number of observations (=246) < number of random effects (=285) for te,FALSE
+GenBinaryY,M5,95,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,95,3,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,95,3,mmlb,glmer,1000,1000,number of observations (=246) < number of random effects (=285) for te,FALSE
+GenBinaryY,M5,95,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,95,3,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,105,2,manual,glmer,1000,1000,number of observations (=180) < number of random effects (=315) for te,FALSE
+GenBinaryY,M5,105,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,105,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,105,2,mmlb,glmer,1000,1000,number of observations (=180) < number of random effects (=315) for te,FALSE
+GenBinaryY,M5,105,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,105,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,105,3,manual,glmer,1000,1000,number of observations (=268) < number of random effects (=315) for te,FALSE
+GenBinaryY,M5,105,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,105,3,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,105,3,mmlb,glmer,1000,1000,number of observations (=268) < number of random effects (=315) for te,FALSE
+GenBinaryY,M5,105,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,105,3,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,115,2,manual,glmer,1000,1000,number of observations (=197) < number of random effects (=345) for te,FALSE
+GenBinaryY,M5,115,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,115,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,115,2,mmlb,glmer,1000,1000,number of observations (=197) < number of random effects (=345) for te,FALSE
+GenBinaryY,M5,115,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,115,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,115,3,manual,glmer,1000,1000,number of observations (=294) < number of random effects (=345) for te,FALSE
+GenBinaryY,M5,115,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,115,3,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,115,3,mmlb,glmer,1000,1000,number of observations (=294) < number of random effects (=345) for te,FALSE
+GenBinaryY,M5,115,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,115,3,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,125,2,manual,glmer,1000,1000,number of observations (=213) < number of random effects (=375) for te,FALSE
+GenBinaryY,M5,125,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,125,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,125,2,mmlb,glmer,1000,1000,number of observations (=213) < number of random effects (=375) for te,FALSE
+GenBinaryY,M5,125,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,125,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,125,3,manual,glmer,1000,1000,number of observations (=319) < number of random effects (=375) for te,FALSE
+GenBinaryY,M5,125,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,125,3,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,125,3,mmlb,glmer,1000,1000,number of observations (=319) < number of random effects (=375) for te,FALSE
+GenBinaryY,M5,125,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,125,3,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,135,2,manual,glmer,1000,1000,number of observations (=228) < number of random effects (=405) for te,FALSE
+GenBinaryY,M5,135,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,135,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,135,2,mmlb,glmer,1000,1000,number of observations (=228) < number of random effects (=405) for te,FALSE
+GenBinaryY,M5,135,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,135,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,135,3,manual,glmer,1000,1000,number of observations (=346) < number of random effects (=405) for te,FALSE
+GenBinaryY,M5,135,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,135,3,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,135,3,mmlb,glmer,1000,1000,number of observations (=346) < number of random effects (=405) for te,FALSE
+GenBinaryY,M5,135,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,135,3,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,145,2,manual,glmer,1000,1000,number of observations (=248) < number of random effects (=435) for te,FALSE
+GenBinaryY,M5,145,2,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,145,2,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,145,2,mmlb,glmer,1000,1000,number of observations (=248) < number of random effects (=435) for te,FALSE
+GenBinaryY,M5,145,2,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,145,2,mmlb,shrink,0,0,,FALSE
+GenBinaryY,M5,145,3,manual,glmer,1000,1000,number of observations (=368) < number of random effects (=435) for te,FALSE
+GenBinaryY,M5,145,3,manual,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,145,3,manual,shrink,0,0,,FALSE
+GenBinaryY,M5,145,3,mmlb,glmer,1000,1000,number of observations (=368) < number of random effects (=435) for te,FALSE
+GenBinaryY,M5,145,3,mmlb,glmer_lrt,1000,1000,fit returned NULL,FALSE
+GenBinaryY,M5,145,3,mmlb,shrink,0,0,,FALSE

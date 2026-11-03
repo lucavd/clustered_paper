@@ -1,0 +1,272 @@
+cells matched: 54432 of 54432 
+                    check     n          max   pass
+                   <char> <num>        <num> <lgcl>
+1:                  n_obs 54432 0.000000e+00   TRUE
+2:                    rej 49637 5.551115e-16   TRUE
+3:               p_usable 54432 5.551115e-16   TRUE
+4:                  cover 40670 6.661338e-16   TRUE
+5:      power_sa (H1 own) 12879 5.714286e-01  FALSE
+6:      boot_se_power_raw 24759 4.996004e-16   TRUE
+7: mcse_power_sa (H1 own) 12879 2.137624e-01  FALSE
+              quantity     est_lin    est_boot     se_lin    se_boot
+                <char>       <num>       <num>      <num>      <num>
+ 1:        rate|GB|mmm  5.34289337  5.34289337 0.03548642 0.03599539
+ 2:        rate|GB|gee  8.36855019  8.36855019 0.04097208 0.04146812
+ 3:     rate|GB|gee_md  6.08874611  6.08874611 0.03621298 0.03651412
+ 4:     rate|GB|gee_kc  6.94964248  6.94964248 0.03832519 0.03858021
+ 5:     rate|GB|gee_fg  5.82570544  5.82570544 0.03526680 0.03561804
+ 6:      rate|GB|glmer  8.61163506  8.61163506 0.04540538 0.04534521
+ 7:     rate|GB|shrink  9.28377756  9.28377756 0.04627020 0.04719413
+ 8:  rate|GB|glmer_lrt  7.80045078  7.80045078 0.04142998 0.04147365
+ 9:       rate|NAT|mmm  5.09688478  5.09688478 0.03464669 0.03490968
+10:       rate|NAT|gee  7.62598912  7.62598912 0.03862226 0.03920130
+11:    rate|NAT|gee_md  5.50730328  5.50730328 0.03396713 0.03378102
+12:    rate|NAT|gee_kc  6.34172286  6.34172286 0.03622400 0.03641938
+13:    rate|NAT|gee_fg  5.32219581  5.32219581 0.03369199 0.03303607
+14:     rate|NAT|glmer  6.29781487  6.29781487 0.03927631 0.03954249
+15:    rate|NAT|shrink  6.64424632  6.64424632 0.03991087 0.04021508
+16: rate|NAT|glmer_lrt  5.77026373  5.77026373 0.03611718 0.03625599
+17:       rate|AR1|mmm  5.25641634  5.25641634 0.03564205 0.03479099
+18:       rate|AR1|gee  7.71749506  7.71749506 0.03959566 0.03868964
+19:    rate|AR1|gee_md  5.56350821  5.56350821 0.03491434 0.03414238
+20:    rate|AR1|gee_kc  6.39727670  6.39727670 0.03730629 0.03632883
+21:    rate|AR1|gee_fg  5.34336284  5.34336284 0.03389534 0.03277813
+22:     rate|AR1|glmer  6.55274385  6.55274385 0.03938956 0.03907987
+23:    rate|AR1|shrink  6.91019516  6.91019516 0.04009751 0.03930651
+24: rate|AR1|glmer_lrt  6.14199940  6.14199940 0.03772175 0.03677826
+25:             C03|GB -0.35200807 -0.35200807 0.02844368 0.02864900
+26:            C03|NAT -0.19370400 -0.19370400 0.02607236 0.02564620
+27:            C03|AR1 -0.04773974 -0.04773974 0.02650123 0.02628372
+              quantity     est_lin    est_boot     se_lin    se_boot
+                <char>       <num>       <num>      <num>      <num>
+             rel   pass
+           <num> <lgcl>
+ 1:  0.014342822   TRUE
+ 2:  0.012106721   TRUE
+ 3:  0.008315589   TRUE
+ 4:  0.006654020   TRUE
+ 5:  0.009959562   TRUE
+ 6: -0.001325171   TRUE
+ 7:  0.019968179   TRUE
+ 8:  0.001053999   TRUE
+ 9:  0.007590682   TRUE
+10:  0.014992576   TRUE
+11: -0.005479069   TRUE
+12:  0.005393662   TRUE
+13: -0.019468283   TRUE
+14:  0.006777097   TRUE
+15:  0.007622232   TRUE
+16:  0.003843331   TRUE
+17: -0.023878157   TRUE
+18: -0.022881760   TRUE
+19: -0.022110101   TRUE
+20: -0.026201071   TRUE
+21: -0.032960644   TRUE
+22: -0.007862235   TRUE
+23: -0.019726918   TRUE
+24: -0.025011806   TRUE
+25:  0.007218566   TRUE
+26: -0.016345028   TRUE
+27: -0.008207636   TRUE
+             rel   pass
+           <num> <lgcl>
+              quantity    se_boot     se_ind     ratio confirmed
+                <char>      <num>      <num>     <num>    <lgcl>
+ 1:       rate|AR1|gee 0.03868964 0.03912595 0.9888485     FALSE
+ 2:    rate|AR1|gee_fg 0.03277813 0.03376427 0.9707935     FALSE
+ 3:    rate|AR1|gee_kc 0.03632883 0.03652054 0.9947507     FALSE
+ 4:    rate|AR1|gee_md 0.03414238 0.03436054 0.9936507     FALSE
+ 5:     rate|AR1|glmer 0.03907987 0.03948511 0.9897369     FALSE
+ 6: rate|AR1|glmer_lrt 0.03677826 0.03694193 0.9955695     FALSE
+ 7:       rate|AR1|mmm 0.03479099 0.03523223 0.9874762     FALSE
+ 8:    rate|AR1|shrink 0.03930651 0.04020392 0.9776785     FALSE
+ 9:        rate|GB|gee 0.04146812 0.04048808 1.0242056     FALSE
+10:     rate|GB|gee_fg 0.03561804 0.03526390 1.0100427     FALSE
+11:     rate|GB|gee_kc 0.03858021 0.03799186 1.0154862     FALSE
+12:     rate|GB|gee_md 0.03651412 0.03591391 1.0167122     FALSE
+13:      rate|GB|glmer 0.04534521 0.04505396 1.0064645     FALSE
+14:  rate|GB|glmer_lrt 0.04147365 0.04107061 1.0098133     FALSE
+15:        rate|GB|mmm 0.03599539 0.03546394 1.0149856     FALSE
+16:     rate|GB|shrink 0.04719413 0.04600691 1.0258053     FALSE
+17:       rate|NAT|gee 0.03920130 0.03891524 1.0073510     FALSE
+18:    rate|NAT|gee_fg 0.03303607 0.03364026 0.9820397     FALSE
+19:    rate|NAT|gee_kc 0.03641938 0.03632334 1.0026439     FALSE
+20:    rate|NAT|gee_md 0.03378102 0.03413884 0.9895186     FALSE
+21:     rate|NAT|glmer 0.03954249 0.03869195 1.0219823     FALSE
+22: rate|NAT|glmer_lrt 0.03625599 0.03588680 1.0102876     FALSE
+23:       rate|NAT|mmm 0.03490968 0.03463540 1.0079192     FALSE
+24:    rate|NAT|shrink 0.04021508 0.03943012 1.0199076     FALSE
+25:            C03|AR1 0.02628372 0.02624425 1.0015039     FALSE
+26:             C03|GB 0.02864900 0.02846355 1.0065154     FALSE
+27:            C03|NAT 0.02564620 0.02563642 1.0003816     FALSE
+              quantity    se_boot     se_ind     ratio confirmed
+                <char>      <num>      <num>     <num>    <lgcl>
+    source         status     N
+    <char>         <char> <int>
+ 1:    3.1     reproduced   104
+ 2:   3.10     reproduced    51
+ 3:   3.12     reproduced    21
+ 4:   3.15     reproduced    21
+ 5:    3.2     reproduced     9
+ 6:    3.3     reproduced    24
+ 7:    3.9     reproduced    16
+ 8:   V-67 not reproduced    12
+ 9:   V-81     reproduced     3
+10:   V-83     reproduced    21
+11:   V-90     reproduced     1
+12:   V-91     reproduced     1
+13:   V-92     reproduced     3
+14:   V-92 not reproduced     1
+                 name printed digits source       rev      olev      ocov  oref
+               <char>   <num>  <num> <char>     <num>     <num>     <num> <num>
+ 1:           C08|mad   0.833      3   V-92 0.9285714 0.9285714 0.9285714    NA
+ 2:      crank|gee_fg   2.330      2   V-67 1.6666667        NA 1.3333333    NA
+ 3:      crank|gee_md   3.670      2   V-67 2.8888889        NA 2.5555556    NA
+ 4:         crank|gee   4.000      2   V-67 4.3333333        NA 3.7777778    NA
+ 5:      crank|shrink   4.330      2   V-67 5.6666667        NA 5.3333333    NA
+ 6:       crank|glmer   4.670      2   V-67 5.8888889        NA 5.5555556    NA
+ 7:         crank|mmm   4.670      2   V-67 4.0000000        NA 3.6666667    NA
+ 8:   crank|glmer_lrt   5.000      2   V-67 4.7777778        NA        NA    NA
+ 9:      crank|gee_kc   7.330      2   V-67 6.7777778        NA 5.7777778    NA
+10:     crank25|glmer   2.670      2   V-67 3.7777778        NA 3.2222222    NA
+11: crank25|glmer_lrt   2.670      2   V-67 3.0000000        NA        NA    NA
+12:    crank25|shrink   3.330      2   V-67 4.7777778        NA 4.1111111    NA
+13:    crank25|gee_fg   3.670      2   V-67 3.0000000        NA 2.4444444    NA
+      primary         status rev_status
+        <num>         <char>     <char>
+ 1: 0.9285714 not reproduced    differs
+ 2: 1.6666667 not reproduced    differs
+ 3: 2.8888889 not reproduced    differs
+ 4: 4.3333333 not reproduced    differs
+ 5: 5.6666667 not reproduced    differs
+ 6: 5.8888889 not reproduced    differs
+ 7: 4.0000000 not reproduced    differs
+ 8: 4.7777778 not reproduced    differs
+ 9: 6.7777778 not reproduced    differs
+10: 3.7777778 not reproduced    differs
+11: 3.0000000 not reproduced    differs
+12: 4.7777778 not reproduced    differs
+13: 3.0000000 not reproduced    differs
+   weighting                      pair       rho
+      <char>                    <char>     <num>
+1:      perN GenBinaryY vs GLMM-native 0.9285714
+2:      perN    GenBinaryY vs GLMM-AR1 0.9285714
+3:      perN   GLMM-native vs GLMM-AR1 1.0000000
+4:   perCell GenBinaryY vs GLMM-native 0.8333333
+5:   perCell    GenBinaryY vs GLMM-AR1 0.8333333
+6:   perCell   GLMM-native vs GLMM-AR1 1.0000000
+7:     perNT GenBinaryY vs GLMM-native 0.8809524
+8:     perNT    GenBinaryY vs GLMM-AR1 0.9047619
+9:     perNT   GLMM-native vs GLMM-AR1 0.9761905
+     mech switch_v4 claimed p_claimed modal_switch p_modal next_v4 p_next_md
+   <char>     <num>   <num>     <num>        <num>   <num>  <char>     <num>
+1:     GB        25      35         0           25       1  gee_fg    0.0485
+2:    NAT        25      45         0           25       1  gee_md    0.9730
+3:    AR1        25      45         0           25       1  gee_fg    0.0070
+   wc_argmax_distinctN
+                 <int>
+1:                  15
+2:                  16
+3:                  15
+                               class     N
+                              <char> <int>
+ 1:                     trascurabile    31
+ 2:                         smentita    28
+ 3:              risolta e rilevante    23
+ 4:                      descrittiva    20
+ 5:                       confermata    17
+ 6:             smentita e rilevante    14
+ 7: risolta, rilevanza indeterminata     7
+ 8: vedi tabella dei punti di cambio     6
+ 9:                       superseded     3
+10:                     out_of_scope     3
+11:                          risolta     2
+12:                    indeterminata     1
+13:              not_operationalized     1
+    mean_diff  mean_abs  max_abs n_conf     n
+        <num>     <num>    <num>  <int> <int>
+1: -0.3238084 0.8852427 6.150358     42    63
+Key: <name>
+               name    v3         v4         se       diff          lo
+             <char> <num>      <num>      <num>      <num>       <num>
+ 1:  mad|AR1|gee_kc  5.57  1.7934754 0.03721891 -3.7765246 -3.85096238
+ 2:     mad|AR1|mmm  1.37  0.2783270 0.03361980 -1.0916730 -1.15891260
+ 3:   mad|GB|gee_kc  7.93  2.4870456 0.04161164 -5.4429544 -5.52617763
+ 4:      mad|GB|mmm  1.61  0.3282296 0.03328273 -1.2817704 -1.34833587
+ 5:  mad|NAT|gee_kc  5.32  1.7051027 0.03714808 -3.6148973 -3.68919344
+ 6:     mad|NAT|mmm  1.20  0.1962414 0.02967627 -1.0037586 -1.06311116
+ 7: rate|AR1|gee_kc 10.71  6.3972767 0.03632883 -4.3127233 -4.38538096
+ 8:    rate|AR1|mmm  6.38  5.2564163 0.03479099 -1.1235837 -1.19316564
+ 9:  rate|GB|gee_kc 13.10  6.9496425 0.03858021 -6.1503575 -6.22751793
+10:     rate|GB|mmm  6.59  5.3428934 0.03599539 -1.2471066 -1.31909741
+11: rate|NAT|gee_kc 10.43  6.3417229 0.03641938 -4.0882771 -4.16111589
+12:    rate|NAT|mmm  6.19  5.0968848 0.03490968 -1.0931152 -1.16293458
+13:      wc|AR1|gee 18.36 19.1121853 0.29660555  0.7521853  0.15897422
+14:   wc|AR1|gee_kc  6.72 11.2199791 0.27960970  4.4999791  3.94075971
+15:      wc|AR1|mmm  1.55  0.4282226 0.08655690 -1.1217774 -1.29489123
+16:       wc|GB|gee 20.90 22.0786626 0.31517911  1.1786626  0.54830442
+17:    wc|GB|gee_kc  9.23 14.1244382 0.31015228  4.8944382  4.27413358
+18:       wc|GB|mmm  2.06  0.6249737 0.09825519 -1.4350263 -1.63153668
+19:      wc|NAT|gee 17.40 17.9961697 0.29418487  0.5961697  0.00779992
+20:   wc|NAT|gee_kc  6.48 10.7406881 0.27664624  4.2606881  3.70739560
+21:      wc|NAT|mmm  1.50  0.4913497 0.11264286 -1.0086503 -1.23393605
+               name    v3         v4         se       diff          lo
+             <char> <num>      <num>      <num>      <num>       <num>
+            hi         class
+         <num>        <char>
+ 1: -3.7020867      smentita
+ 2: -1.0244334      smentita
+ 3: -5.3597311      smentita
+ 4: -1.2152050      smentita
+ 5: -3.5406011      smentita
+ 6: -0.9444061 indeterminata
+ 7: -4.2400656      smentita
+ 8: -1.0540017      smentita
+ 9: -6.0731971      smentita
+10: -1.1751158      smentita
+11: -4.0154384      smentita
+12: -1.0232959      smentita
+13:  1.3453964 indeterminata
+14:  5.0591985      smentita
+15: -0.9486636 indeterminata
+16:  1.8090209 indeterminata
+17:  5.5147427      smentita
+18: -1.2385159      smentita
+19:  1.1845394 indeterminata
+20:  4.8139806      smentita
+21: -0.7833646 indeterminata
+            hi         class
+         <num>        <char>
+Key: <name>
+                     name     v3         v4          se
+                   <char>  <num>      <num>       <num>
+ 1:     madT|T2|glmer_lrt  11.09  10.430254  0.19905742
+ 2:     madT|T3|glmer_lrt   3.68   2.389355  0.06299433
+ 3: madT|T4plus|glmer_lrt   2.25   1.428867  0.02013214
+ 4:     mad|AR1|glmer_lrt   3.11   1.143383  0.03678383
+ 5:      mad|GB|glmer_lrt   6.06   2.800533  0.04147659
+ 6:     mad|NAT|glmer_lrt   2.48   0.771764  0.03624402
+ 7:    rate|AR1|glmer_lrt   8.11   6.141999  0.03677826
+ 8:     rate|GB|glmer_lrt  11.06   7.800451  0.04147365
+ 9:    rate|NAT|glmer_lrt   7.48   5.770264  0.03625599
+10:      wc|AR1|glmer_lrt   4.09   1.841752  0.13676238
+11:       wc|GB|glmer_lrt   7.16   3.648295  0.15402741
+12:      wc|NAT|glmer_lrt   3.85   1.757553  0.16063791
+13:        wins|glmer_lrt 117.00 215.400000 11.35805948
+     gate                                                                  what
+   <char>                                                                <char>
+1:     G2      b = 0 reproduces V4_perf_all and the S4 bootstrap SEs (<= 1e-12)
+2:     G3            bootstrap SE vs linearization SE within 7% (27 quantities)
+3:     G4 every inventory row classified; finite values in >= B - 10 replicates
+4:     P1                            v3 numbers reproduced at the printed digit
+5:     P2                                   v4 - v3 within +/- 1 pp (63 values)
+6:     P3                      block SE / independent SE > 1.25 (27 quantities)
+                                                        result   pass
+                                                        <char> <lgcl>
+1:                               5 of 7 checks pass (max 0.57)  FALSE
+2:                   27 of 27 pass; rel. diff. -0.033 to 0.020   TRUE
+3:               missing 0; sub-claims with < B - 10 finite: 0   TRUE
+4: 275 of 288 reproduced, 0 within one unit, 13 not reproduced  FALSE
+5:                        mean diff -0.324; 42 of 63 confirmed  FALSE
+6:                      ratio 0.97 to 1.03; 0 of 27 above 1.25  FALSE
+elapsed 0.3 min

@@ -1,0 +1,12 @@
+
+.libPaths(path.expand("~/MMM/renv/library/linux-ubuntu-noble/R-4.6/x86_64-pc-linux-gnu"))
+d <- readRDS(path.expand("~/MMM/results_full/GenBinaryY_m1_N105_T10_manual_c01.rds"))
+cat("class:", class(d), " dim:", dim(d), "\n")
+print(str(d))
+cat("--- terms:\n"); print(table(d$term))
+cat("--- methods:\n"); print(table(d$method))
+cat("--- head:\n"); print(head(as.data.frame(d), 12))
+cat("--- superseded models:\n")
+fs <- list.files(path.expand("~/MMM/results_superseded_m3m5"))
+print(table(sub("^([A-Za-z0-9]+)_m([0-9]).*$","\\2", fs)))
+print(table(sub("^([A-Za-z0-9]+)_m.*$","\\1", fs)))

@@ -1,0 +1,1088 @@
+file,class,digits,context
+manuscript/v5/MMM_v5_trace.md,c-grid-N,10,"-time interaction over § design points (10-145 clusters, 2-10 occasions,"
+manuscript/v5/MMM_v5_trace.md,c-grid-N,145,"me interaction over § design points (10-145 clusters, 2-10 occasions, fou"
+manuscript/v5/MMM_v5_trace.md,c-grid-T,2," over § design points (10-145 clusters, 2-10 occasions, four mechanisms"
+manuscript/v5/MMM_v5_trace.md,c-grid-N,10,"ver § design points (10-145 clusters, 2-10 occasions, four mechanisms, o"
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,check had no design point clearly above 7.5% type I error among strategie
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5," more occasions, but were clearly above 7.5% at § design points with ten "
+manuscript/v5/MMM_v5_trace.md,c-grid-N,25,  With two or three occasions and up to 25 clusters both answered in und
+manuscript/v5/MMM_v5_trace.md,b-label,1, model; estimand; simulation study.  ## 1. Introduction  Binary outcome
+manuscript/v5/MMM_v5_trace.md,b-label,2,e full-data estimate as reference.   ## 2. Methods  The study is report
+manuscript/v5/MMM_v5_trace.md,b-label,1,rerun and released with the code. Table 1 summarizes it. The full param
+manuscript/v5/MMM_v5_trace.md,identifier,1,"ed from the executed code, is in Table S1.  ### 2.1 Aims  The aims conc"
+manuscript/v5/MMM_v5_trace.md,b-label,2.1,"the executed code, is in Table S1.  ### 2.1 Aims  The aims concern the tr"
+manuscript/v5/MMM_v5_trace.md,b-label,2.6,ations and the decision rule of Section 2.6 build on these aims but are n
+manuscript/v5/MMM_v5_trace.md,b-label,2.2, aims but are not simulation aims.  ### 2.2 Data-generating mechanisms  T
+manuscript/v5/MMM_v5_trace.md,b-label,2,# 2.2 Data-generating mechanisms  Table 2 summarizes the four mechanism
+manuscript/v5/MMM_v5_trace.md,identifier,1,rios; the full parameters are in Table S1. The main grid crossed § clus
+manuscript/v5/MMM_v5_trace.md,c-grid-N,10,"ain grid crossed § cluster counts, N ∈ {10, 15, 20, 25, 35, 45, 55, 65, "
+manuscript/v5/MMM_v5_trace.md,c-grid-N,15,"grid crossed § cluster counts, N ∈ {10, 15, 20, 25, 35, 45, 55, 65, 75, "
+manuscript/v5/MMM_v5_trace.md,c-grid-N,20," crossed § cluster counts, N ∈ {10, 15, 20, 25, 35, 45, 55, 65, 75, 85, "
+manuscript/v5/MMM_v5_trace.md,c-grid-N,25,"ssed § cluster counts, N ∈ {10, 15, 20, 25, 35, 45, 55, 65, 75, 85, 95, "
+manuscript/v5/MMM_v5_trace.md,c-grid-N,35," § cluster counts, N ∈ {10, 15, 20, 25, 35, 45, 55, 65, 75, 85, 95, 105,"
+manuscript/v5/MMM_v5_trace.md,c-grid-N,45,"luster counts, N ∈ {10, 15, 20, 25, 35, 45, 55, 65, 75, 85, 95, 105, 115"
+manuscript/v5/MMM_v5_trace.md,c-grid-N,55,"er counts, N ∈ {10, 15, 20, 25, 35, 45, 55, 65, 75, 85, 95, 105, 115, 12"
+manuscript/v5/MMM_v5_trace.md,c-grid-N,65,"ounts, N ∈ {10, 15, 20, 25, 35, 45, 55, 65, 75, 85, 95, 105, 115, 125, 1"
+manuscript/v5/MMM_v5_trace.md,c-grid-N,75,"s, N ∈ {10, 15, 20, 25, 35, 45, 55, 65, 75, 85, 95, 105, 115, 125, 135, "
+manuscript/v5/MMM_v5_trace.md,c-grid-N,85," ∈ {10, 15, 20, 25, 35, 45, 55, 65, 75, 85, 95, 105, 115, 125, 135, 145}"
+manuscript/v5/MMM_v5_trace.md,c-grid-N,95,"10, 15, 20, 25, 35, 45, 55, 65, 75, 85, 95, 105, 115, 125, 135, 145}, wi"
+manuscript/v5/MMM_v5_trace.md,c-grid-N,105,"15, 20, 25, 35, 45, 55, 65, 75, 85, 95, 105, 115, 125, 135, 145}, with § "
+manuscript/v5/MMM_v5_trace.md,c-grid-N,115,"0, 25, 35, 45, 55, 65, 75, 85, 95, 105, 115, 125, 135, 145}, with § maxim"
+manuscript/v5/MMM_v5_trace.md,c-grid-N,125,", 35, 45, 55, 65, 75, 85, 95, 105, 115, 125, 135, 145}, with § maximum nu"
+manuscript/v5/MMM_v5_trace.md,c-grid-N,135," 45, 55, 65, 75, 85, 95, 105, 115, 125, 135, 145}, with § maximum numbers"
+manuscript/v5/MMM_v5_trace.md,c-grid-N,145,"55, 65, 75, 85, 95, 105, 115, 125, 135, 145}, with § maximum numbers of o"
+manuscript/v5/MMM_v5_trace.md,c-grid-T,2,"th § maximum numbers of occasions, T ∈ {2, 3, 4, 6, 8, 10}. It also cro"
+manuscript/v5/MMM_v5_trace.md,c-grid-T,3,"§ maximum numbers of occasions, T ∈ {2, 3, 4, 6, 8, 10}. It also crosse"
+manuscript/v5/MMM_v5_trace.md,c-grid-T,4,"aximum numbers of occasions, T ∈ {2, 3, 4, 6, 8, 10}. It also crossed f"
+manuscript/v5/MMM_v5_trace.md,c-grid-T,6,"mum numbers of occasions, T ∈ {2, 3, 4, 6, 8, 10}. It also crossed five"
+manuscript/v5/MMM_v5_trace.md,c-grid-T,8," numbers of occasions, T ∈ {2, 3, 4, 6, 8, 10}. It also crossed five me"
+manuscript/v5/MMM_v5_trace.md,c-grid-T,10,"mbers of occasions, T ∈ {2, 3, 4, 6, 8, 10}. It also crossed five mean-m"
+manuscript/v5/MMM_v5_trace.md,identifier,1,lso crossed five mean-model scenarios (M1-M5) and the first three mecha
+manuscript/v5/MMM_v5_trace.md,identifier,5, crossed five mean-model scenarios (M1-M5) and the first three mechanis
+manuscript/v5/MMM_v5_trace.md,identifier,1,"t was simulated under the alternative (H1) and the null (H0), and the t"
+manuscript/v5/MMM_v5_trace.md,identifier,0,"der the alternative (H1) and the null (H0), and the two hypotheses diff"
+manuscript/v5/MMM_v5_trace.md,c-grid-T,2,"uniformly from  MATH  to  MATH . At T = 2, between §% and §% of subject"
+manuscript/v5/MMM_v5_trace.md,identifier,1,ability §.  The mean model of scenario M1 is  MATH . Its marginal coeff
+manuscript/v5/MMM_v5_trace.md,identifier,1,"MATH . Its marginal coefficients under H1 are (§), which give a margina"
+manuscript/v5/MMM_v5_trace.md,c-grid-T,2,a marginal prevalence of about § at T = 2. M2 adds a subject-level cova
+manuscript/v5/MMM_v5_trace.md,identifier,2,rginal prevalence of about § at T = 2. M2 adds a subject-level covariat
+manuscript/v5/MMM_v5_trace.md,identifier,3, adds a subject-level covariate (age). M3 and M4 add a random slope on 
+manuscript/v5/MMM_v5_trace.md,identifier,4, subject-level covariate (age). M3 and M4 add a random slope on time; i
+manuscript/v5/MMM_v5_trace.md,identifier,4,dard deviation that changes over time. M4 uses a smaller interaction (§
+manuscript/v5/MMM_v5_trace.md,identifier,5,me. M4 uses a smaller interaction (§). M5 adds a second covariate that 
+manuscript/v5/MMM_v5_trace.md,b-label,1,er in how the dependence is generated.  1.  GenBinaryY is a marginalize
+manuscript/v5/MMM_v5_trace.md,identifier,3,"iation is a linear predictor, which in M3-M5 grows by § per     occasio"
+manuscript/v5/MMM_v5_trace.md,identifier,5,"ion is a linear predictor, which in M3-M5 grows by § per     occasion. "
+manuscript/v5/MMM_v5_trace.md,b-label,2,he mechanism of the marginalized model. 2.  GLMM-native is a logistic m
+manuscript/v5/MMM_v5_trace.md,identifier,3,"andom intercept has variance § and, in M3-M5, the random slope     on t"
+manuscript/v5/MMM_v5_trace.md,identifier,5,"om intercept has variance § and, in M3-M5, the random slope     on time"
+manuscript/v5/MMM_v5_trace.md,identifier,1,   marginal ones multiplied by § (§ in M1c). This is the mechanism of  
+manuscript/v5/MMM_v5_trace.md,b-label,3,s the mechanism of     the mixed model. 3.  GLMM-AR1 adds a latent firs
+manuscript/v5/MMM_v5_trace.md,identifier,1,nism of     the mixed model. 3.  GLMM-AR1 adds a latent first-order aut
+manuscript/v5/MMM_v5_trace.md,b-label,4,rcept is still constant within subject. 4.  Copula-AR1 is a Gaussian co
+manuscript/v5/MMM_v5_trace.md,identifier,1,l constant within subject. 4.  Copula-AR1 is a Gaussian copula with log
+manuscript/v5/MMM_v5_trace.md,identifier,1,"els this mechanism.  A sixth scenario, M1c, simulated with the first th"
+manuscript/v5/MMM_v5_trace.md,identifier,1,"ree mechanisms, uses the mean model of M1 with the prevalence (§) and t"
+manuscript/v5/MMM_v5_trace.md,b-label,2.7,"e (§) of the clinical cohort of Section 2.7. It covers § design points, w"
+manuscript/v5/MMM_v5_trace.md,c-grid-N,45,"It covers § design points, with N up to 45 and T up to 6. Four further s"
+manuscript/v5/MMM_v5_trace.md,c-grid-T,6,"ign points, with N up to 45 and T up to 6. Four further scenarios, M6 a"
+manuscript/v5/MMM_v5_trace.md,identifier,6,"and T up to 6. Four further scenarios, M6 and M7 on GenBinaryY and on G"
+manuscript/v5/MMM_v5_trace.md,identifier,7,"p to 6. Four further scenarios, M6 and M7 on GenBinaryY and on GLMM-nat"
+manuscript/v5/MMM_v5_trace.md,b-label,2.4,", test the convergence check of Section 2.4 where the latent variability "
+manuscript/v5/MMM_v5_trace.md,b-label,2.7,red with the clinical cohort of Section 2.7. Their marginal prevalence (§
+manuscript/v5/MMM_v5_trace.md,c-grid-T,2,.7. Their marginal prevalence (§ at T = 2 and § at T = 10 in M1) is muc
+manuscript/v5/MMM_v5_trace.md,c-grid-T,10,nal prevalence (§ at T = 2 and § at T = 10 in M1) is much lower than in 
+manuscript/v5/MMM_v5_trace.md,identifier,1,valence (§ at T = 2 and § at T = 10 in M1) is much lower than in the co
+manuscript/v5/MMM_v5_trace.md,identifier,1,t variance of the cohort (§); scenario M1c was added for this reason. T
+manuscript/v5/MMM_v5_trace.md,identifier,1," the main grid of each mechanism, § in M1c, and § and § in M6 and M7). "
+manuscript/v5/MMM_v5_trace.md,identifier,6,"ch mechanism, § in M1c, and § and § in M6 and M7). Replicate i of scena"
+manuscript/v5/MMM_v5_trace.md,identifier,7,"anism, § in M1c, and § and § in M6 and M7). Replicate i of scenario m u"
+manuscript/v5/MMM_v5_trace.md,b-label,2.3,andom numbers across cells  CITE .  ### 2.3 Estimands and true values  Th
+manuscript/v5/MMM_v5_trace.md,identifier,0,"adrature on the realized design; under H0 it is not exactly zero, rangi"
+manuscript/v5/MMM_v5_trace.md,identifier,1,", ranging from § to § across scenarios M1-M5 and T, and under H1 it ran"
+manuscript/v5/MMM_v5_trace.md,identifier,5,"anging from § to § across scenarios M1-M5 and T, and under H1 it ranges"
+manuscript/v5/MMM_v5_trace.md,identifier,1,"cross scenarios M1-M5 and T, and under H1 it ranges from § to § (§ to §"
+manuscript/v5/MMM_v5_trace.md,identifier,1,er H1 it ranges from § to § (§ to § in M1c). In GLMM-AR1 the marginal t
+manuscript/v5/MMM_v5_trace.md,identifier,1, from § to § (§ to § in M1c). In GLMM-AR1 the marginal true value is th
+manuscript/v5/MMM_v5_trace.md,identifier,1,omputed for each replicate. In Copula-AR1 the marginal true value is th
+manuscript/v5/MMM_v5_trace.md,b-label,2.4,here is no conditional true value.  ### 2.4 Methods compared  The eight m
+manuscript/v5/MMM_v5_trace.md,b-label,3,ds compared  The eight methods of Table 3 and the further strategies of
+manuscript/v5/MMM_v5_trace.md,b-label,1,e 3 and the further strategies of Table 1 were applied to every dataset
+manuscript/v5/MMM_v5_trace.md,identifier,1,ence and first-order autoregressive (AR(1)) working correlations. They 
+manuscript/v5/MMM_v5_trace.md,identifier,2,"d with the R package *fewclust* (Table S2), written for this study and "
+manuscript/v5/MMM_v5_trace.md,identifier,4,ed with a computation by hand (Section S4). With exchangeable correlati
+manuscript/v5/MMM_v5_trace.md,b-label,3,eRouen and Fay-Graubard values in Table 3 and Table 4 were computed wit
+manuscript/v5/MMM_v5_trace.md,b-label,4,ay-Graubard values in Table 3 and Table 4 were computed with *geesmv*  
+manuscript/v5/MMM_v5_trace.md,b-label,5,"ith *geesmv*  CITE , and those in Table 5 with *fewclust* (Section S4)."
+manuscript/v5/MMM_v5_trace.md,identifier,4,se in Table 5 with *fewclust* (Section S4). The CR2 estimator of *clubS
+manuscript/v5/MMM_v5_trace.md,identifier,2,e 5 with *fewclust* (Section S4). The CR2 estimator of *clubSandwich*  
+manuscript/v5/MMM_v5_trace.md,identifier,4,ns. The mixed model was fitted with *lme4::glmer*  CITE  (Laplace appro
+manuscript/v5/MMM_v5_trace.md,b-label,3.10,a subset of null design points (Section 3.10). It had a random intercept i
+manuscript/v5/MMM_v5_trace.md,identifier,1,on 3.10). It had a random intercept in M1-M2 and the random slopes of t
+manuscript/v5/MMM_v5_trace.md,identifier,2,3.10). It had a random intercept in M1-M2 and the random slopes of the 
+manuscript/v5/MMM_v5_trace.md,identifier,3,ndom slopes of the generating model in M3-M5. It was tested by a Wald t
+manuscript/v5/MMM_v5_trace.md,identifier,5,m slopes of the generating model in M3-M5. It was tested by a Wald test
+manuscript/v5/MMM_v5_trace.md,identifier,2,riance. Software versions are in Table S2.  *MMLB::mm* writes the laten
+manuscript/v5/MMM_v5_trace.md,identifier,3,"dard deviation that changes over time (M3-M5), the generating slope is "
+manuscript/v5/MMM_v5_trace.md,identifier,5,"d deviation that changes over time (M3-M5), the generating slope is clo"
+manuscript/v5/MMM_v5_trace.md,identifier,20,inalized model with the check. Section S20 compares this rule with versi
+manuscript/v5/MMM_v5_trace.md,identifier,7, inverting it are described in Section S7.  ### 2.5 Performance measure
+manuscript/v5/MMM_v5_trace.md,b-label,2.5,ng it are described in Section S7.  ### 2.5 Performance measures  A repli
+manuscript/v5/MMM_v5_trace.md,c-grid-N,25,"with two or three occasions and at most 25 clusters. Separated datasets,"
+manuscript/v5/MMM_v5_trace.md,c-grid-N,25,with two or three occasions and at most 25 clusters (Section S19). The p
+manuscript/v5/MMM_v5_trace.md,identifier,19,sions and at most 25 clusters (Section S19). The probability of a usable
+manuscript/v5/MMM_v5_trace.md,b-label,2.2,"icate with an estimable design (Section 2.2) in the denominator, includin"
+manuscript/v5/MMM_v5_trace.md,b-label,4,"including those whose fit failed; Table 4, Table 5 and the supplementar"
+manuscript/v5/MMM_v5_trace.md,b-label,5," those whose fit failed; Table 4, Table 5 and the supplementary tables "
+manuscript/v5/MMM_v5_trace.md,identifier,13,eturned with warnings were kept (Table S13). Rates under the null and th
+manuscript/v5/MMM_v5_trace.md,b-label,5,"es; the exception is the power of Table 5 and Table S31, computed per a"
+manuscript/v5/MMM_v5_trace.md,identifier,31,"tion is the power of Table 5 and Table S31, computed per attempted datas"
+manuscript/v5/MMM_v5_trace.md,identifier,6, computed per attempted dataset. Table S6 repeats the type I error on t
+manuscript/v5/MMM_v5_trace.md,identifier,9,"ates usable for all methods, and Table S9 by stratum of estimability.  "
+manuscript/v5/MMM_v5_trace.md,d-nominal,5,r was the rejection rate at the nominal 5% under H0. Over the grid we r
+manuscript/v5/MMM_v5_trace.md,identifier,0,rejection rate at the nominal 5% under H0. Over the grid we report the 
+manuscript/v5/MMM_v5_trace.md,d-nominal,5,nts we took the absolute departure from 5% of the replicate-weighted ra
+manuscript/v5/MMM_v5_trace.md,b-label,3.1,"r mean. By number of occasions (Section 3.1, Table S4) and in the direct "
+manuscript/v5/MMM_v5_trace.md,identifier,4,"umber of occasions (Section 3.1, Table S4) and in the direct comparison"
+manuscript/v5/MMM_v5_trace.md,b-label,3.4,"the two strategies of the rule (Section 3.4, Figure 1, Table S31), the ab"
+manuscript/v5/MMM_v5_trace.md,b-label,1,"tegies of the rule (Section 3.4, Figure 1, Table S31), the absolute dep"
+manuscript/v5/MMM_v5_trace.md,identifier,31,"the rule (Section 3.4, Figure 1, Table S31), the absolute departure is i"
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,"ign point, a strategy was clearly above 7.5% when the lower limit of the "
+manuscript/v5/MMM_v5_trace.md,d-nominal,95,er limit of the exact (Clopper-Pearson) 95% interval of its rejection ra
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,"interval of its rejection rate exceeded 7.5%, and clearly below 2.5% when"
+manuscript/v5/MMM_v5_trace.md,d-nominal,2.5,"n rate exceeded 7.5%, and clearly below 2.5% when the upper limit fell be"
+manuscript/v5/MMM_v5_trace.md,d-nominal,2.5,ow 2.5% when the upper limit fell below 2.5%; a design point with fewer t
+manuscript/v5/MMM_v5_trace.md,d-nominal,95,minal level  CITE ; for the coverage of 95% intervals they were applied 
+manuscript/v5/MMM_v5_trace.md,d-nominal,95,sed standard errors and coverage of the 95% interval were computed again
+manuscript/v5/MMM_v5_trace.md,identifier,36,nst the estimand of each method (Table S36).  Monte Carlo standard error
+manuscript/v5/MMM_v5_trace.md,d-nominal,5,"icates, the MCSE of a rejection rate at 5% is § percentage points. This"
+manuscript/v5/MMM_v5_trace.md,d-nominal,5,a single cell resolves a departure from 5% of about § points. The datas
+manuscript/v5/MMM_v5_trace.md,d-nominal,2," its bootstrap interval, the estimate ± 2 MCSE, lies entirely beyond a "
+manuscript/v5/MMM_v5_trace.md,d-nominal,2.5," error or coverage averaged over cells, 2.5 points for a single cell, two"
+manuscript/v5/MMM_v5_trace.md,d-nominal,2.5,two points for differences in power and 2.5 points for differences in usa
+manuscript/v5/MMM_v5_trace.md,b-label,2.6, of about the size of the margin.   ### 2.6 Decision rule  The recommenda
+manuscript/v5/MMM_v5_trace.md,b-label,1,sion rule  The recommendation of Figure 1 comes from a rule applied to 
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,d if its type I error was clearly above 7.5% at any design point. With § 
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,from §%: a strategy never clearly above 7.5% is one in which no excess wa
+manuscript/v5/MMM_v5_trace.md,identifier,1,"n compared post hoc with GEE with an AR(1) working correlation, the Fay"
+manuscript/v5/MMM_v5_trace.md,b-label,3.4, the rule at few design points (Section 3.4).   ### 2.7 Clinical applicat
+manuscript/v5/MMM_v5_trace.md,b-label,2.7, few design points (Section 3.4).   ### 2.7 Clinical applications  The co
+manuscript/v5/MMM_v5_trace.md,identifier,1, with an intercept only as in scenario M1 and a first-order transition 
+manuscript/v5/MMM_v5_trace.md,b-label,3,"status, visit, age, sex and centre.  ## 3. Results  ### 3.1 Type I erro"
+manuscript/v5/MMM_v5_trace.md,b-label,3.1,"ge, sex and centre.  ## 3. Results  ### 3.1 Type I error on the main grid"
+manuscript/v5/MMM_v5_trace.md,b-label,3,.1 Type I error on the main grid  Table 3 gives the type I error of the
+manuscript/v5/MMM_v5_trace.md,b-label,2,"s, under a normal reference, and Figure 2 shows the type I error of the"
+manuscript/v5/MMM_v5_trace.md,d-nominal,5," the smallest worst-case departure from 5% on all three mechanisms: §, "
+manuscript/v5/MMM_v5_trace.md,identifier,1,"s on GenBinaryY, GLMM-native and GLMM-AR1, respectively. Its worst-case"
+manuscript/v5/MMM_v5_trace.md,identifier,4, occasions to § at four or more (Table S4). At two occasions the five m
+manuscript/v5/MMM_v5_trace.md,b-label,3,ions the five marginal methods of Table 3 other than the shrinkage GLM 
+manuscript/v5/MMM_v5_trace.md,b-label,3.2," it to a marginal estimand, by §.   ### 3.2 The convergence check of the "
+manuscript/v5/MMM_v5_trace.md,identifier,3,f the marginalized model  In scenarios M3-M5 the check declared §% of t
+manuscript/v5/MMM_v5_trace.md,identifier,5,he marginalized model  In scenarios M3-M5 the check declared §% of the 
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,he marginalized model was clearly above 7.5% at § of the § null design po
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,ns. With the check it was clearly above 7.5% at §.  Its mean absolute dep
+manuscript/v5/MMM_v5_trace.md,identifier,6,ell from § to § points.   In scenarios M6-M7 the fit without the time t
+manuscript/v5/MMM_v5_trace.md,identifier,7, from § to § points.   In scenarios M6-M7 the fit without the time tren
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5, with the check was never clearly above 7.5% at the § design points. With
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,"ith a t reference, it was clearly above 7.5% at § design points.  Bias, s"
+manuscript/v5/MMM_v5_trace.md,identifier,13,heck in these scenarios are in Section S13.   ### 3.3 Availability of a 
+manuscript/v5/MMM_v5_trace.md,b-label,3.3,ese scenarios are in Section S13.   ### 3.3 Availability of a result  The
+manuscript/v5/MMM_v5_trace.md,b-label,4,ostly on the number of occasions (Table 4). With random slopes and two 
+manuscript/v5/MMM_v5_trace.md,b-label,2.4, not converge leaves no result (Section 2.4).  With a random intercept on
+manuscript/v5/MMM_v5_trace.md,c-grid-N,20,"esult in more than §% of attempts.   At 20 clusters or fewer, unconditio"
+manuscript/v5/MMM_v5_trace.md,identifier,8,% for the likelihood-ratio test (Table S8).  A criterion that maximized
+manuscript/v5/MMM_v5_trace.md,b-label,3.4,ch of the three study mechanisms.   ### 3.4 Reference distribution and th
+manuscript/v5/MMM_v5_trace.md,c-grid-N,25,ints over the grid and § to § points at 25 clusters or fewer (Table S11)
+manuscript/v5/MMM_v5_trace.md,identifier,11, points at 25 clusters or fewer (Table S11).  Under the t reference the 
+manuscript/v5/MMM_v5_trace.md,d-nominal,2.5,"en clusters. There it was clearly below 2.5% at § of § design points, aga"
+manuscript/v5/MMM_v5_trace.md,b-label,5,"ts, against § for Fay-Graubard.   Table 5 applies the rule of Section 2"
+manuscript/v5/MMM_v5_trace.md,b-label,2.6,.   Table 5 applies the rule of Section 2.6 to the § design points of the
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,"d a t reference was never clearly above 7.5%, and the rule selected it; i"
+manuscript/v5/MMM_v5_trace.md,identifier,1," result in §% of datasets.  GEE with AR(1) working correlation, Fay-Gra"
+manuscript/v5/MMM_v5_trace.md,b-label,2.5,"d the margin for usable shares (Section 2.5), but was clearly above 7.5% "
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,"es (Section 2.5), but was clearly above 7.5% at § design points, both in "
+manuscript/v5/MMM_v5_trace.md,identifier,2,"% at § design points, both in scenario M2 with N = § and T = §, on GLMM"
+manuscript/v5/MMM_v5_trace.md,identifier,1,"ario M2 with N = § and T = §, on GLMM-AR1 and GLMM-native.  There it re"
+manuscript/v5/MMM_v5_trace.md,identifier,10,ed model in § of § and § of § (Section S10). Every one of these rejectio
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,the GEE strategy would be clearly above 7.5% at § design points and the r
+manuscript/v5/MMM_v5_trace.md,identifier,19, and the rule would select it (Section S19).  The choice rests on these 
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,he GEE strategy was never clearly above 7.5% and the rule would have sele
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,"ted it, and with § it was clearly above 7.5% at § design points (Section "
+manuscript/v5/MMM_v5_trace.md,identifier,11,above 7.5% at § design points (Section S11).  The GEE strategy was clear
+manuscript/v5/MMM_v5_trace.md,d-nominal,2.5,1).  The GEE strategy was clearly below 2.5% at § design points and the m
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,"rd with a t reference was clearly above 7.5% at § and § design points, § "
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,en with a t reference was clearly above 7.5% at § to § design points acro
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,likelihood-ratio test was clearly above 7.5% at § design points.   With t
+manuscript/v5/MMM_v5_trace.md,c-grid-N,25,"With two or three occasions and at most 25 clusters, the GEE strategy an"
+manuscript/v5/MMM_v5_trace.md,identifier,31,r than §% of attempted datasets (Table S31).  With N - 2 degrees of free
+manuscript/v5/MMM_v5_trace.md,e-math,2,"tempted datasets (Table S31).  With N - 2 degrees of freedom  CITE , on"
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,"zed model was again never clearly above 7.5%, and clearly below 2.5% at §"
+manuscript/v5/MMM_v5_trace.md,d-nominal,2.5,"r clearly above 7.5%, and clearly below 2.5% at § instead of § design poi"
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5, and the GEE strategy was clearly above 7.5% at § (Table S26).   Compared
+manuscript/v5/MMM_v5_trace.md,identifier,26,"egy was clearly above 7.5% at § (Table S26).   Compared directly, with t"
+manuscript/v5/MMM_v5_trace.md,b-label,2.5,"ck bootstrap and the margins of Section 2.5 (Figure 1, Table S31), the ma"
+manuscript/v5/MMM_v5_trace.md,b-label,1," and the margins of Section 2.5 (Figure 1, Table S31), the marginalized"
+manuscript/v5/MMM_v5_trace.md,identifier,31,"argins of Section 2.5 (Figure 1, Table S31), the marginalized model and "
+manuscript/v5/MMM_v5_trace.md,d-nominal,5,d similar mean absolute departures from 5% over all design points (§ an
+manuscript/v5/MMM_v5_trace.md,d-nominal,5,oints).  The GEE strategy was closer to 5% at ten clusters with three o
+manuscript/v5/MMM_v5_trace.md,c-grid-N,15,§% against §%).  With two occasions and 15 or more clusters the GEE stra
+manuscript/v5/MMM_v5_trace.md,c-grid-N,15,"le result more often, by § points. With 15 or more clusters and three or"
+manuscript/v5/MMM_v5_trace.md,d-nominal,5, §% of datasets) and both were far from 5% (mean absolute departures § 
+manuscript/v5/MMM_v5_trace.md,b-label,3.5,olute departures § and § points).   ### 3.5 Working correlation and imple
+manuscript/v5/MMM_v5_trace.md,identifier,1,from exchangeable to independence or AR(1) changed its type I error by 
+manuscript/v5/MMM_v5_trace.md,identifier,4,he corrections are compared in Section S4.   ### 3.6 The fourth mechani
+manuscript/v5/MMM_v5_trace.md,b-label,3.6,tions are compared in Section S4.   ### 3.6 The fourth mechanism  On Copu
+manuscript/v5/MMM_v5_trace.md,identifier,1,# 3.6 The fourth mechanism  On Copula-AR1 (§ design points) neither the
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5, model with the check was clearly above 7.5% at any design point (Table 5
+manuscript/v5/MMM_v5_trace.md,b-label,5,y above 7.5% at any design point (Table 5). Their mean type I errors wi
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,"study mechanisms, and was clearly above 7.5% at § of the § design points."
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,"tion and Fay-Graubard was clearly above 7.5% at § design points, § with T"
+manuscript/v5/MMM_v5_trace.md,b-label,3.7,", and § with N = § and T = § or §.  ### 3.7 Sign-flip score test  Over th"
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,"ts on average, and it was clearly above 7.5% or clearly below 2.5% at no "
+manuscript/v5/MMM_v5_trace.md,d-nominal,2.5,was clearly above 7.5% or clearly below 2.5% at no design point.  It answ
+manuscript/v5/MMM_v5_trace.md,c-grid-N,25,"with two or three occasions and at most 25 clusters, in §%, against §% f"
+manuscript/v5/MMM_v5_trace.md,b-label,5, against §% for the GEE strategy (Table 5).  Its type I error in those 
+manuscript/v5/MMM_v5_trace.md,d-nominal,2.5,"ets; its non-coverage was clearly below 2.5% at § design points, § of the"
+manuscript/v5/MMM_v5_trace.md,identifier,7,"gn points, less over datasets (Section S7, Table S27).   ### 3.8 Power "
+manuscript/v5/MMM_v5_trace.md,identifier,27," less over datasets (Section S7, Table S27).   ### 3.8 Power and coverag"
+manuscript/v5/MMM_v5_trace.md,b-label,3.8,"datasets (Section S7, Table S27).   ### 3.8 Power and coverage  Raw and s"
+manuscript/v5/MMM_v5_trace.md,identifier,10,ower of the eight methods are in Table S10.   Coverage of the 95% interv
+manuscript/v5/MMM_v5_trace.md,d-nominal,95,ods are in Table S10.   Coverage of the 95% interval was §% to §% for Fa
+manuscript/v5/MMM_v5_trace.md,identifier,12, §% to §% for Kauermann-Carroll (Table S12).   ### 3.9 Scenario anchored
+manuscript/v5/MMM_v5_trace.md,b-label,3.9,or Kauermann-Carroll (Table S12).   ### 3.9 Scenario anchored to the coho
+manuscript/v5/MMM_v5_trace.md,identifier,1,nario anchored to the cohort  Scenario M1c has the prevalence and betwe
+manuscript/v5/MMM_v5_trace.md,b-label,3.10,nd that of Fay-Graubard §% to §%.   ### 3.10 Adaptive quadrature for the m
+manuscript/v5/MMM_v5_trace.md,c-grid-N,10,"efit covered § null design points: N ∈ {10, 25, 55, 145} and T ∈ {2, 4, "
+manuscript/v5/MMM_v5_trace.md,c-grid-N,25," covered § null design points: N ∈ {10, 25, 55, 145} and T ∈ {2, 4, 10} "
+manuscript/v5/MMM_v5_trace.md,c-grid-N,55,"ered § null design points: N ∈ {10, 25, 55, 145} and T ∈ {2, 4, 10} in M"
+manuscript/v5/MMM_v5_trace.md,c-grid-N,145," § null design points: N ∈ {10, 25, 55, 145} and T ∈ {2, 4, 10} in M1 and"
+manuscript/v5/MMM_v5_trace.md,c-grid-T,2," points: N ∈ {10, 25, 55, 145} and T ∈ {2, 4, 10} in M1 and M2, and N ∈"
+manuscript/v5/MMM_v5_trace.md,c-grid-T,4,"ints: N ∈ {10, 25, 55, 145} and T ∈ {2, 4, 10} in M1 and M2, and N ∈ {1"
+manuscript/v5/MMM_v5_trace.md,c-grid-T,10,"s: N ∈ {10, 25, 55, 145} and T ∈ {2, 4, 10} in M1 and M2, and N ∈ {10, 2"
+manuscript/v5/MMM_v5_trace.md,identifier,1,"10, 25, 55, 145} and T ∈ {2, 4, 10} in M1 and M2, and N ∈ {10, 25, 45} "
+manuscript/v5/MMM_v5_trace.md,identifier,2," 55, 145} and T ∈ {2, 4, 10} in M1 and M2, and N ∈ {10, 25, 45} and T ∈"
+manuscript/v5/MMM_v5_trace.md,c-grid-N,10,"d T ∈ {2, 4, 10} in M1 and M2, and N ∈ {10, 25, 45} and T ∈ {2, 4, 6} in"
+manuscript/v5/MMM_v5_trace.md,c-grid-N,25,"∈ {2, 4, 10} in M1 and M2, and N ∈ {10, 25, 45} and T ∈ {2, 4, 6} in M1c"
+manuscript/v5/MMM_v5_trace.md,c-grid-N,45,", 4, 10} in M1 and M2, and N ∈ {10, 25, 45} and T ∈ {2, 4, 6} in M1c (Se"
+manuscript/v5/MMM_v5_trace.md,c-grid-T,2,"1 and M2, and N ∈ {10, 25, 45} and T ∈ {2, 4, 6} in M1c (Section S12, T"
+manuscript/v5/MMM_v5_trace.md,c-grid-T,4,"nd M2, and N ∈ {10, 25, 45} and T ∈ {2, 4, 6} in M1c (Section S12, Tabl"
+manuscript/v5/MMM_v5_trace.md,c-grid-T,6,"M2, and N ∈ {10, 25, 45} and T ∈ {2, 4, 6} in M1c (Section S12, Table S"
+manuscript/v5/MMM_v5_trace.md,identifier,1," N ∈ {10, 25, 45} and T ∈ {2, 4, 6} in M1c (Section S12, Table S34).  W"
+manuscript/v5/MMM_v5_trace.md,identifier,12," 45} and T ∈ {2, 4, 6} in M1c (Section S12, Table S34).  With a t refere"
+manuscript/v5/MMM_v5_trace.md,identifier,34,"∈ {2, 4, 6} in M1c (Section S12, Table S34).  With a t reference, on the"
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,hanism. The Wald test was clearly above 7.5% at § of these design points 
+manuscript/v5/MMM_v5_trace.md,identifier,1,"adrature, all with T = §: § on Copula-AR1 (§% to §%) and § on GenBinary"
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,wn model it was no longer clearly above 7.5% at any of them. Quadrature a
+manuscript/v5/MMM_v5_trace.md,d-nominal,2.5,"with few clusters: it was clearly below 2.5% at § design points, against "
+manuscript/v5/MMM_v5_trace.md,identifier,34,under the Laplace approximation (Table S34).   ### 3.11 Clinical applica
+manuscript/v5/MMM_v5_trace.md,b-label,3.11,aplace approximation (Table S34).   ### 3.11 Clinical applications  In the
+manuscript/v5/MMM_v5_trace.md,identifier,15, mean model could not be fitted (Table S15). Over all subsamples of this
+manuscript/v5/MMM_v5_trace.md,identifier,15,"timate without a standard error (Table S15).  Across subsample sizes, af"
+manuscript/v5/MMM_v5_trace.md,identifier,9,ith its robust standard error (Section S9).  In the respiratory trial t
+manuscript/v5/MMM_v5_trace.md,identifier,29,"to § with the three corrections; Table S29), and § on the conditional sc"
+manuscript/v5/MMM_v5_trace.md,identifier,30, estimate but no standard error (Table S30).   ## 4. Discussion  ### 4.1
+manuscript/v5/MMM_v5_trace.md,b-label,4,but no standard error (Table S30).   ## 4. Discussion  ### 4.1 The reco
+manuscript/v5/MMM_v5_trace.md,b-label,4.1,or (Table S30).   ## 4. Discussion  ### 4.1 The recommendation  One strat
+manuscript/v5/MMM_v5_trace.md,b-label,2.6,n  One strategy met the rule of Section 2.6: the marginalized model with 
+manuscript/v5/MMM_v5_trace.md,b-label,1,ergence check and a t reference (Figure 1). Across the § design points 
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,"r mechanisms it was never clearly above 7.5%, and it returned a usable re"
+manuscript/v5/MMM_v5_trace.md,identifier,1,"sult in §% of datasets.  GEE with an AR(1) working correlation, the Fay"
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,relation Fay-Graubard was clearly above 7.5% at § design points).  The ma
+manuscript/v5/MMM_v5_trace.md,b-label,3.4,"ith a stricter usability limit (Section 3.4). In the direct comparison, w"
+manuscript/v5/MMM_v5_trace.md,c-grid-N,15,oser to nominal; with two occasions and 15 or more clusters it is conser
+manuscript/v5/MMM_v5_trace.md,identifier,1,e.  Because the fourth mechanism has AR(1) dependence on the latent sca
+manuscript/v5/MMM_v5_trace.md,identifier,1,"he latent scale, it could favour the AR(1) working correlation. The wor"
+manuscript/v5/MMM_v5_trace.md,identifier,26,he three study mechanisms alone (Table S26).  The R package *fewclust* (
+manuscript/v5/MMM_v5_trace.md,b-label,2.5,ch are common in small designs (Section 2.5). There GEE returned a plausi
+manuscript/v5/MMM_v5_trace.md,b-label,3.4,almost never returned a result (Section 3.4). We therefore advise checkin
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,"clusters, a test that was clearly above 7.5% at § design points.  Fay-Gra"
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,"with a t reference it was clearly above 7.5% at § design points, § in sce"
+manuscript/v5/MMM_v5_trace.md,identifier,6,".5% at § design points, § in scenarios M6-M7 and § on the fourth mechan"
+manuscript/v5/MMM_v5_trace.md,identifier,7," at § design points, § in scenarios M6-M7 and § on the fourth mechanism"
+manuscript/v5/MMM_v5_trace.md,b-label,5,M7 and § on the fourth mechanism (Table 5).   With two or three occasio
+manuscript/v5/MMM_v5_trace.md,c-grid-N,25,"  With two or three occasions and up to 25 clusters, no strategy with an"
+manuscript/v5/MMM_v5_trace.md,b-label,3.7,ded intervals in those designs (Section 3.7). We therefore do not propose
+manuscript/v5/MMM_v5_trace.md,b-label,4.2,should be planned where possible.   ### 4.2 The convergence check  The ch
+manuscript/v5/MMM_v5_trace.md,b-label,2.4,ls in the two ways described in Section 2.4. Replacing such fits with the
+manuscript/v5/MMM_v5_trace.md,b-label,3.2,ess.  The cost is availability (Section 3.2): accepting a refit that did 
+manuscript/v5/MMM_v5_trace.md,b-label,5,"e would raise the usable share in Table 5 to §%, and keeping the origin"
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,fit would leave the model clearly above 7.5% at § design points (Section 
+manuscript/v5/MMM_v5_trace.md,identifier,20,"above 7.5% at § design points (Section S20).  In M6-M7, where the reason"
+manuscript/v5/MMM_v5_trace.md,identifier,6," at § design points (Section S20).  In M6-M7, where the reasons were re"
+manuscript/v5/MMM_v5_trace.md,identifier,7," § design points (Section S20).  In M6-M7, where the reasons were recor"
+manuscript/v5/MMM_v5_trace.md,identifier,6,"ominal. It also remained calibrated in M6-M7, where the fit without the"
+manuscript/v5/MMM_v5_trace.md,identifier,7,"nal. It also remained calibrated in M6-M7, where the fit without the ti"
+manuscript/v5/MMM_v5_trace.md,b-label,4.3, and how often it left no result.   ### 4.3 Relation to previous work  We
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,he four mechanisms it was clearly above 7.5% at § to § of § design points
+manuscript/v5/MMM_v5_trace.md,e-math,2,"ters, a cluster-level treatment and K - 2 degrees of freedom  CITE , so"
+manuscript/v5/MMM_v5_trace.md,identifier,4,ed with a computation by hand (Section S4); *geesmv* computes a differe
+manuscript/v5/MMM_v5_trace.md,identifier,4,"computes a different quantity (Section S4), and Thompson et al. also re"
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,"ation it was nevertheless clearly above 7.5% at § design points, § of the"
+manuscript/v5/MMM_v5_trace.md,identifier,6," design points, § of them in scenarios M6-M7 and § on the fourth mechan"
+manuscript/v5/MMM_v5_trace.md,identifier,7,"sign points, § of them in scenarios M6-M7 and § on the fourth mechanism"
+manuscript/v5/MMM_v5_trace.md,b-label,4.4, CITE ; it was not evaluated here.  ### 4.4 The clinical applications and
+manuscript/v5/MMM_v5_trace.md,b-label,3.11,"ample size, by similar amounts (Section 3.11, Section S9, Table S30). The "
+manuscript/v5/MMM_v5_trace.md,identifier,9,"similar amounts (Section 3.11, Section S9, Table S30). The robust stand"
+manuscript/v5/MMM_v5_trace.md,identifier,30,"ounts (Section 3.11, Section S9, Table S30). The robust standard error o"
+manuscript/v5/MMM_v5_trace.md,identifier,9,"n the trial with few patients (Section S9).  In the trial, with seven m"
+manuscript/v5/MMM_v5_trace.md,c-grid-N,85,"roximation, with a random intercept and 85 or more clusters, was on aver"
+manuscript/v5/MMM_v5_trace.md,identifier,8," its estimates under the null (Section S8), and with a random intercept"
+manuscript/v5/MMM_v5_trace.md,b-label,4.5, observations per cluster  CITE .   ### 4.5 Limitations  In the main scen
+manuscript/v5/MMM_v5_trace.md,identifier,6,"pes therefore rest mainly on scenarios M6-M7, which cover one structure"
+manuscript/v5/MMM_v5_trace.md,identifier,7," therefore rest mainly on scenarios M6-M7, which cover one structure (a"
+manuscript/v5/MMM_v5_trace.md,identifier,6,main scenarios (§ per occasion) and of M6 (§) were not simulated; repor
+manuscript/v5/MMM_v5_trace.md,b-label,4.2,how often the check intervenes (Section 4.2) is the safeguard. The number
+manuscript/v5/MMM_v5_trace.md,identifier,1,ance function was not simulated. The AR(1) working correlation is safe 
+manuscript/v5/MMM_v5_trace.md,b-label,4.1,rth has only serial dependence (Section 4.1). In a replication of the stu
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,rginalized model could be clearly above 7.5% at one or more design points
+manuscript/v5/MMM_v5_trace.md,identifier,37,"rates shrunk by empirical Bayes (Table S37), the marginalized model had "
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,st expected design points clearly above 7.5% (Section S11).  In GLMM-nati
+manuscript/v5/MMM_v5_trace.md,identifier,11,ign points clearly above 7.5% (Section S11).  In GLMM-native the margina
+manuscript/v5/MMM_v5_trace.md,identifier,6, points in the main scenarios and § in M6-M7 for the marginalized model
+manuscript/v5/MMM_v5_trace.md,identifier,7,ints in the main scenarios and § in M6-M7 for the marginalized model an
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,changes none of the flags clearly above 7.5% or clearly below 2.5% of the
+manuscript/v5/MMM_v5_trace.md,d-nominal,2.5,ags clearly above 7.5% or clearly below 2.5% of these methods.  The conve
+manuscript/v5/MMM_v5_trace.md,identifier,4,"place approximation, the default of *lme4*; adaptive quadrature, which "
+manuscript/v5/MMM_v5_trace.md,identifier,4," *lme4*; adaptive quadrature, which *lme4* offers only with a single ra"
+manuscript/v5/MMM_v5_trace.md,b-label,3.10,n on a subset of design points (Section 3.10) and could not be examined wi
+manuscript/v5/MMM_v5_trace.md,identifier,6,evaluated and failed the rule (Section S6). Treatment was assigned by s
+manuscript/v5/MMM_v5_trace.md,identifier,1,degenerate design were excluded. The AR(1) and independence versions of
+manuscript/v5/MMM_v5_trace.md,identifier,4,against a computation by hand (Section S4). The clinical applications u
+manuscript/v5/MMM_v5_trace.md,b-label,5, patients measured more than once.   ## 5. Conclusions  With few cluste
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,d a t reference was never clearly above 7.5% at any simulated design poin
+manuscript/v5/MMM_v5_trace.md,identifier,1,"oint of four mechanisms. GEE with an AR(1) working correlation, the Fay"
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,ion and a t reference was clearly above 7.5% only at two design points wi
+manuscript/v5/MMM_v5_trace.md,c-grid-N,25,". With two or three occasions and up to 25 clusters, neither strategy re"
+manuscript/v5/MMM_v5_trace.md,identifier,1,"t met the decision rule. GEE with an AR(1) working correlation, the Fay"
+manuscript/v5/MMM_v5_trace.md,b-label,4.1,ments the recommended strategy (Section 4.1); the link and the archived v
+manuscript/v5/MMM_v5_trace.md,b-label,1, CITE .  ## Tables and figures  **Table 1.** Summary of the simulation 
+manuscript/v5/MMM_v5_trace.md,identifier,1,"M-native (logistic mixed model), GLMM-AR1 (mixed model with latent firs"
+manuscript/v5/MMM_v5_trace.md,identifier,1,"t first-order autoregression), Copula-AR1 (Gaussian copula with logisti"
+manuscript/v5/MMM_v5_trace.md,identifier,1,nd serial correlation only); scenarios M1-M5 on the full grid of § clus
+manuscript/v5/MMM_v5_trace.md,identifier,5,serial correlation only); scenarios M1-M5 on the full grid of § cluster
+manuscript/v5/MMM_v5_trace.md,c-grid-N,10,5 on the full grid of § cluster counts (10 to 145) and § series lengths 
+manuscript/v5/MMM_v5_trace.md,c-grid-N,145,he full grid of § cluster counts (10 to 145) and § series lengths (2 to 1
+manuscript/v5/MMM_v5_trace.md,c-grid-T,2,"ounts (10 to 145) and § series lengths (2 to 10), § design points with "
+manuscript/v5/MMM_v5_trace.md,c-grid-T,10," (10 to 145) and § series lengths (2 to 10), § design points with the fi"
+manuscript/v5/MMM_v5_trace.md,identifier,1,hree mechanisms and § with the fourth; M1c anchored to the clinical coh
+manuscript/v5/MMM_v5_trace.md,identifier,6,the clinical cohort (§ design points); M6-M7 with a steep time trend of
+manuscript/v5/MMM_v5_trace.md,identifier,7, clinical cohort (§ design points); M6-M7 with a steep time trend of th
+manuscript/v5/MMM_v5_trace.md,identifier,1," with exchangeable, independence and AR(1) working correlation, with un"
+manuscript/v5/MMM_v5_trace.md,identifier,2,"(*geepack*, *fewclust*, *geesmv*) and CR2 (*clubSandwich*); GLMM with W"
+manuscript/v5/MMM_v5_trace.md,identifier,4,th Wald and likelihood-ratio tests (*lme4*); shrinkage GLM (rescaled GL
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,"ture over cluster counts, clearly above 7.5% or below 2.5% per design poi"
+manuscript/v5/MMM_v5_trace.md,d-nominal,2.5,"ter counts, clearly above 7.5% or below 2.5% per design point); raw and s"
+manuscript/v5/MMM_v5_trace.md,b-label,2,ck bootstrap over replicates |  **Table 2.** Data-generating mechanisms
+manuscript/v5/MMM_v5_trace.md,c-grid-N,10,"ons T; the full grid has § values of N (10 to 145) and § of T (2 to 10),"
+manuscript/v5/MMM_v5_trace.md,c-grid-N,145," the full grid has § values of N (10 to 145) and § of T (2 to 10), that i"
+manuscript/v5/MMM_v5_trace.md,c-grid-T,2,"s § values of N (10 to 145) and § of T (2 to 10), that is § design poin"
+manuscript/v5/MMM_v5_trace.md,c-grid-T,10,"alues of N (10 to 145) and § of T (2 to 10), that is § design points per"
+manuscript/v5/MMM_v5_trace.md,identifier,1,"native uses them multiplied by § (§ in M1c, whose random-intercept vari"
+manuscript/v5/MMM_v5_trace.md,identifier,1,rd deviation. Full parameters in Table S1.  **(a) Mechanisms**  | Mecha
+manuscript/v5/MMM_v5_trace.md,identifier,3,"t SD constant, or growing over time in M3-M7 | Yes | Marginalized model"
+manuscript/v5/MMM_v5_trace.md,identifier,7,"D constant, or growing over time in M3-M7 | Yes | Marginalized model | "
+manuscript/v5/MMM_v5_trace.md,identifier,1," Generating coefficient; not defined | M1-M5 (§), M1c (§), M6-M7 (§) | "
+manuscript/v5/MMM_v5_trace.md,identifier,5,"nerating coefficient; not defined | M1-M5 (§), M1c (§), M6-M7 (§) | | G"
+manuscript/v5/MMM_v5_trace.md,identifier,1," coefficient; not defined | M1-M5 (§), M1c (§), M6-M7 (§) | | GLMM-nati"
+manuscript/v5/MMM_v5_trace.md,identifier,6,"ent; not defined | M1-M5 (§), M1c (§), M6-M7 (§) | | GLMM-native | Logi"
+manuscript/v5/MMM_v5_trace.md,identifier,7,"; not defined | M1-M5 (§), M1c (§), M6-M7 (§) | | GLMM-native | Logisti"
+manuscript/v5/MMM_v5_trace.md,identifier,3,tercept (variance §); random slopes in M3-M7 | Yes | Mixed model | Gaus
+manuscript/v5/MMM_v5_trace.md,identifier,7,cept (variance §); random slopes in M3-M7 | Yes | Mixed model | Gauss-H
+manuscript/v5/MMM_v5_trace.md,identifier,1,"lized design; generating coefficient | M1-M5 (§), M1c (§), M6-M7 (§) | "
+manuscript/v5/MMM_v5_trace.md,identifier,5,"ed design; generating coefficient | M1-M5 (§), M1c (§), M6-M7 (§) | | G"
+manuscript/v5/MMM_v5_trace.md,identifier,1,"n; generating coefficient | M1-M5 (§), M1c (§), M6-M7 (§) | | GLMM-AR1 "
+manuscript/v5/MMM_v5_trace.md,identifier,6,"ting coefficient | M1-M5 (§), M1c (§), M6-M7 (§) | | GLMM-AR1 | GLMM-na"
+manuscript/v5/MMM_v5_trace.md,identifier,7,"g coefficient | M1-M5 (§), M1c (§), M6-M7 (§) | | GLMM-AR1 | GLMM-nativ"
+manuscript/v5/MMM_v5_trace.md,identifier,1,"1-M5 (§), M1c (§), M6-M7 (§) | | GLMM-AR1 | GLMM-native plus a latent f"
+manuscript/v5/MMM_v5_trace.md,identifier,1," target; computed for each replicate | M1-M5 (§), M1c (§) | | Copula-AR"
+manuscript/v5/MMM_v5_trace.md,identifier,5,"rget; computed for each replicate | M1-M5 (§), M1c (§) | | Copula-AR1 |"
+manuscript/v5/MMM_v5_trace.md,identifier,1,"mputed for each replicate | M1-M5 (§), M1c (§) | | Copula-AR1 | Gaussia"
+manuscript/v5/MMM_v5_trace.md,identifier,1,"icate | M1-M5 (§), M1c (§) | | Copula-AR1 | Gaussian copula with logist"
+manuscript/v5/MMM_v5_trace.md,identifier,1, Generating coefficient; not defined | M1-M5 (§) | | Total |  |  |  |  
+manuscript/v5/MMM_v5_trace.md,identifier,5,nerating coefficient; not defined | M1-M5 (§) | | Total |  |  |  |  | §
+manuscript/v5/MMM_v5_trace.md,identifier,1,"hanisms | |----|----|----|----|----| | M1 | time, treatment, time by tr"
+manuscript/v5/MMM_v5_trace.md,identifier,2,"tment (§) | None | Full | All four | | M2 | M1 plus age, per subject (§"
+manuscript/v5/MMM_v5_trace.md,identifier,1," (§) | None | Full | All four | | M2 | M1 plus age, per subject (§) | N"
+manuscript/v5/MMM_v5_trace.md,identifier,3,bject (§) | None | Full | All four | | M3 | As M1 | Random slope on tim
+manuscript/v5/MMM_v5_trace.md,identifier,1,) | None | Full | All four | | M3 | As M1 | Random slope on time (varia
+manuscript/v5/MMM_v5_trace.md,identifier,4,"y § per occasion | Full | All four | | M4 | time, treatment, time by tr"
+manuscript/v5/MMM_v5_trace.md,identifier,1,"tment, with a smaller interaction than M1 (§) | As M3; in GenBinaryY th"
+manuscript/v5/MMM_v5_trace.md,identifier,3,a smaller interaction than M1 (§) | As M3; in GenBinaryY the transition
+manuscript/v5/MMM_v5_trace.md,identifier,5,"nds on treatment | Full | All four | | M5 | M1 plus dose, per occasion "
+manuscript/v5/MMM_v5_trace.md,identifier,1,"n treatment | Full | All four | | M5 | M1 plus dose, per occasion (§) |"
+manuscript/v5/MMM_v5_trace.md,identifier,1,"ent and steroids | Full | All four | | M1c | As M1, with the prevalence"
+manuscript/v5/MMM_v5_trace.md,identifier,1,"teroids | Full | All four | | M1c | As M1, with the prevalence (§) and "
+manuscript/v5/MMM_v5_trace.md,c-grid-N,45,"of the clinical cohort | None | N up to 45, T up to 6 | First three | | "
+manuscript/v5/MMM_v5_trace.md,c-grid-T,6,"cal cohort | None | N up to 45, T up to 6 | First three | | M6, M7 | As"
+manuscript/v5/MMM_v5_trace.md,identifier,6," up to 45, T up to 6 | First three | | M6, M7 | As M3 | Random-slope va"
+manuscript/v5/MMM_v5_trace.md,identifier,7,"to 45, T up to 6 | First three | | M6, M7 | As M3 | Random-slope varian"
+manuscript/v5/MMM_v5_trace.md,identifier,3," up to 6 | First three | | M6, M7 | As M3 | Random-slope variance § (M6"
+manuscript/v5/MMM_v5_trace.md,identifier,6, M7 | As M3 | Random-slope variance § (M6) or § (M7); latent SD grows b
+manuscript/v5/MMM_v5_trace.md,identifier,7,3 | Random-slope variance § (M6) or § (M7); latent SD grows by § (M6) o
+manuscript/v5/MMM_v5_trace.md,identifier,6, (M6) or § (M7); latent SD grows by § (M6) or § (M7) per occasion | Ful
+manuscript/v5/MMM_v5_trace.md,identifier,7, (M7); latent SD grows by § (M6) or § (M7) per occasion | Full | GenBin
+manuscript/v5/MMM_v5_trace.md,identifier,1,"l | GenBinaryY, GLMM-native |  Copula-AR1 takes only the mean model of "
+manuscript/v5/MMM_v5_trace.md,b-label,3,e mean model of each scenario.  **Table 3.** Type I error at the nomina
+manuscript/v5/MMM_v5_trace.md,d-nominal,5,*Table 3.** Type I error at the nominal 5% on the main grid (§ design p
+manuscript/v5/MMM_v5_trace.md,d-nominal,5, Worst: largest absolute departure from 5% over the § cluster counts (p
+manuscript/v5/MMM_v5_trace.md,identifier,1,". GB = GenBinaryY, NAT = GLMM-native, AR1 = GLMM-AR1. Monte Carlo stand"
+manuscript/v5/MMM_v5_trace.md,identifier,1,"inaryY, NAT = GLMM-native, AR1 = GLMM-AR1. Monte Carlo standard errors "
+manuscript/v5/MMM_v5_trace.md,identifier,3,lized model without the check in Table S3.  | Method | Rate GB | Rate N
+manuscript/v5/MMM_v5_trace.md,identifier,1, | Method | Rate GB | Rate NAT | Rate AR1 | Worst GB | Worst NAT | Wors
+manuscript/v5/MMM_v5_trace.md,identifier,1,te AR1 | Worst GB | Worst NAT | Worst AR1 | MAD GB | MAD NAT | MAD AR1 
+manuscript/v5/MMM_v5_trace.md,identifier,1, | Worst AR1 | MAD GB | MAD NAT | MAD AR1 | |----|----|----|----|----|-
+manuscript/v5/MMM_v5_trace.md,b-label,4, | § | § | § | § | § | § | § |  **Table 4.** Replicates returning a usa
+manuscript/v5/MMM_v5_trace.md,c-grid-T,8,o standard errors at most § points. T = 8 is omitted for space; all met
+manuscript/v5/MMM_v5_trace.md,identifier,7,ce; all methods and all T are in Table S7.  | Random effects | Occasion
+manuscript/v5/MMM_v5_trace.md,identifier,1,----|----|----|----|----| | Intercept (M1-M2) | T = 2 | § | § | § | § |
+manuscript/v5/MMM_v5_trace.md,identifier,2,-|----|----|----|----| | Intercept (M1-M2) | T = 2 | § | § | § | § | § 
+manuscript/v5/MMM_v5_trace.md,c-grid-T,2,--|----|----| | Intercept (M1-M2) | T = 2 | § | § | § | § | § | |  | T 
+manuscript/v5/MMM_v5_trace.md,c-grid-T,3, | T = 2 | § | § | § | § | § | |  | T = 3 | § | § | § | § | § | |  | T 
+manuscript/v5/MMM_v5_trace.md,c-grid-T,4, | T = 3 | § | § | § | § | § | |  | T = 4 | § | § | § | § | § | |  | T 
+manuscript/v5/MMM_v5_trace.md,c-grid-T,6, | T = 4 | § | § | § | § | § | |  | T = 6 | § | § | § | § | § | |  | T 
+manuscript/v5/MMM_v5_trace.md,c-grid-T,10, | T = 6 | § | § | § | § | § | |  | T = 10 | § | § | § | § | § | | Inter
+manuscript/v5/MMM_v5_trace.md,identifier,3, | § | § | § | | Intercept and slopes (M3-M5) | T = 2 | § | § | § | § |
+manuscript/v5/MMM_v5_trace.md,identifier,5,§ | § | § | | Intercept and slopes (M3-M5) | T = 2 | § | § | § | § | § 
+manuscript/v5/MMM_v5_trace.md,c-grid-T,2, | | Intercept and slopes (M3-M5) | T = 2 | § | § | § | § | § | |  | T 
+manuscript/v5/MMM_v5_trace.md,c-grid-T,3, | T = 2 | § | § | § | § | § | |  | T = 3 | § | § | § | § | § | |  | T 
+manuscript/v5/MMM_v5_trace.md,c-grid-T,4, | T = 3 | § | § | § | § | § | |  | T = 4 | § | § | § | § | § | |  | T 
+manuscript/v5/MMM_v5_trace.md,c-grid-T,6, | T = 4 | § | § | § | § | § | |  | T = 6 | § | § | § | § | § | |  | T 
+manuscript/v5/MMM_v5_trace.md,c-grid-T,10, | T = 6 | § | § | § | § | § | |  | T = 10 | § | § | § | § | § |  **Tabl
+manuscript/v5/MMM_v5_trace.md,b-label,5,| T = 10 | § | § | § | § | § |  **Table 5.** The decision rule applied 
+manuscript/v5/MMM_v5_trace.md,identifier,1," of the four mechanisms: main grid and M1c (§), scenarios M6-M7 (§) and"
+manuscript/v5/MMM_v5_trace.md,identifier,6,"isms: main grid and M1c (§), scenarios M6-M7 (§) and Copula-AR1 (§). Wa"
+manuscript/v5/MMM_v5_trace.md,identifier,7,"s: main grid and M1c (§), scenarios M6-M7 (§) and Copula-AR1 (§). Wald "
+manuscript/v5/MMM_v5_trace.md,identifier,1,"c (§), scenarios M6-M7 (§) and Copula-AR1 (§). Wald tests with a t refe"
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5, with a  MATH  reference. Clearly above 7.5% and clearly below 2.5%: lowe
+manuscript/v5/MMM_v5_trace.md,d-nominal,2.5,e. Clearly above 7.5% and clearly below 2.5%: lower limit of the exact 95
+manuscript/v5/MMM_v5_trace.md,d-nominal,95,ly below 2.5%: lower limit of the exact 95% interval of the rejection ra
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,"the rejection rate under the null above 7.5%, upper limit below 2.5%; des"
+manuscript/v5/MMM_v5_trace.md,d-nominal,2.5," the null above 7.5%, upper limit below 2.5%; design points with fewer th"
+manuscript/v5/MMM_v5_trace.md,c-grid-N,25,vers two or three occasions and at most 25 clusters (§ design points). T
+manuscript/v5/MMM_v5_trace.md,c-grid-T,3,power and § for the usable share at T ≤ 3 and N ≤ 25. These are upper b
+manuscript/v5/MMM_v5_trace.md,c-grid-N,25,§ for the usable share at T ≤ 3 and N ≤ 25. These are upper bounds: the 
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5," each design point.  | Strategy | Above 7.5%, main and M1c | Above 7.5%, "
+manuscript/v5/MMM_v5_trace.md,identifier,1,"nt.  | Strategy | Above 7.5%, main and M1c | Above 7.5%, M6-M7 | Above "
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,"tegy | Above 7.5%, main and M1c | Above 7.5%, M6-M7 | Above 7.5%, Copula-"
+manuscript/v5/MMM_v5_trace.md,identifier,6,"Above 7.5%, main and M1c | Above 7.5%, M6-M7 | Above 7.5%, Copula-AR1 |"
+manuscript/v5/MMM_v5_trace.md,identifier,7,"ve 7.5%, main and M1c | Above 7.5%, M6-M7 | Above 7.5%, Copula-AR1 | Be"
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,"ain and M1c | Above 7.5%, M6-M7 | Above 7.5%, Copula-AR1 | Below 2.5%, al"
+manuscript/v5/MMM_v5_trace.md,identifier,1,"bove 7.5%, M6-M7 | Above 7.5%, Copula-AR1 | Below 2.5%, all | Below 2.5"
+manuscript/v5/MMM_v5_trace.md,d-nominal,2.5," M6-M7 | Above 7.5%, Copula-AR1 | Below 2.5%, all | Below 2.5%, ten clust"
+manuscript/v5/MMM_v5_trace.md,d-nominal,2.5,"%, Copula-AR1 | Below 2.5%, all | Below 2.5%, ten clusters | Usable (%) |"
+manuscript/v5/MMM_v5_trace.md,c-grid-T,3," | Usable (%) | Power (%) | Usable, T ≤ 3 and N ≤ 25 (%) | |----|----|-"
+manuscript/v5/MMM_v5_trace.md,c-grid-N,25,"(%) | Power (%) | Usable, T ≤ 3 and N ≤ 25 (%) | |----|----|----|----|--"
+manuscript/v5/MMM_v5_trace.md,identifier,1," | § | § | § | § | § | § | § | | GEE AR(1), Fay-Graubard | § | § | § | "
+manuscript/v5/MMM_v5_trace.md,identifier,1," | § | § | § | § | § | § | § | | GEE AR(1), Mancl-DeRouen | § | § | § |"
+manuscript/v5/MMM_v5_trace.md,identifier,1," | § | § | § | § | § | § | § | | GEE AR(1), Kauermann-Carroll | § | § |"
+manuscript/v5/MMM_v5_trace.md,identifier,2,"| § | § | § | § | | GEE exchangeable, CR2 | § | § | § | § | § | § | § |"
+manuscript/v5/MMM_v5_trace.md,b-label,1, | § | § | § | § | § |   IMG   **Figure 1.** Recommended analysis for t
+manuscript/v5/MMM_v5_trace.md,d-nominal,5,ean absolute departure from the nominal 5% (block bootstrap; Table S31)
+manuscript/v5/MMM_v5_trace.md,identifier,31,the nominal 5% (block bootstrap; Table S31): the strategy is named where
+manuscript/v5/MMM_v5_trace.md,b-label,2.5,"re than the one-point margin of Section 2.5 over the whole interval, “GEE"
+manuscript/v5/MMM_v5_trace.md,identifier,1,"dom, the recommended strategy; GEE = AR(1) working correlation, Fay-Gra"
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5," the simpler alternative, clearly above 7.5% at two design points with te"
+manuscript/v5/MMM_v5_trace.md,c-grid-N,25,"ame: two or three occasions and at most 25 clusters, where on average bo"
+manuscript/v5/MMM_v5_trace.md,b-label,5, in fewer than half the datasets (Table 5) and the sign-flip test is a 
+manuscript/v5/MMM_v5_trace.md,d-nominal,5,ean absolute departure from the nominal 5% (percentage points) by numbe
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5,"at which each strategy is clearly above 7.5% (exact 95% interval), by num"
+manuscript/v5/MMM_v5_trace.md,d-nominal,95,"h strategy is clearly above 7.5% (exact 95% interval), by number of clus"
+manuscript/v5/MMM_v5_trace.md,b-label,5,"interval), by number of clusters (Table 5). (d) Mean absolute departure"
+manuscript/v5/MMM_v5_trace.md,d-nominal,5,le 5). (d) Mean absolute departure from 5% of the two strategies by num
+manuscript/v5/MMM_v5_trace.md,d-nominal,2,erence. Bars in (b) and (d): estimate ± 2 Monte Carlo standard errors b
+manuscript/v5/MMM_v5_trace.md,identifier,1,"k bootstrap, for the two strategies. AR(1) = first-order autoregressive"
+manuscript/v5/MMM_v5_trace.md,b-label,2,ized multilevel model.   IMG   **Figure 2.** Type I error at every desi
+manuscript/v5/MMM_v5_trace.md,identifier,1,very design point of the main grid and M1c (nested-loop plot) for the e
+manuscript/v5/MMM_v5_trace.md,b-label,3,"op plot) for the eight methods of Table 3, Wald tests with a normal ref"
+manuscript/v5/MMM_v5_trace.md,d-nominal,2.5,l); rows are the mechanisms. Grey band: 2.5% to 7.5%; line: nominal 5%. P
+manuscript/v5/MMM_v5_trace.md,d-nominal,7.5, are the mechanisms. Grey band: 2.5% to 7.5%; line: nominal 5%. Points wi
+manuscript/v5/MMM_v5_trace.md,d-nominal,5, Grey band: 2.5% to 7.5%; line: nominal 5%. Points with fewer than § us
+manuscript/v5/MMM_v5_trace.md,d-nominal,5,Monte Carlo standard error of a rate of 5% is § points with § usable re
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,". GB = GenBinaryY, NAT = GLMM-native, AR1 = GLMM-AR1, COP = Copula-AR1;"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"inaryY, NAT = GLMM-native, AR1 = GLMM-AR1, COP = Copula-AR1; MMM = marg"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"-native, AR1 = GLMM-AR1, COP = Copula-AR1; MMM = marginalized multileve"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,4,n is computed with *fewclust* (Section S4). Numbers in square brackets 
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,e reference list of the main text.  ## S1. Parameters of the data-gener
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,he data-generating mechanisms  **Table S1.** Parameters under the alter
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"tive and the marginal target for GLMM-AR1, whose conditional coefficien"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"--|----|----|----|----| | GenBinaryY | M1 | § | § | lv §, σ = (§); tran"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,2,"transition §, γ = (§) | | GenBinaryY | M2 | § | § | lv §, σ = (§); tran"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,3,"transition §, γ = (§) | | GenBinaryY | M3 | § | § | lv §, σ = (§); tran"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,4,"transition §, γ = (§) | | GenBinaryY | M4 | § | § | lv §, σ = (§); tran"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,5,"transition §, γ = (§) | | GenBinaryY | M5 | § | § | lv §, σ = (§); tran"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"ransition §, γ = (§) | | GLMM-native | M1 | § | § | random effects §, D"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,2,"effects §, D = \[§\] | | GLMM-native | M2 | § | § | random effects §, D"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,3,"effects §, D = \[§\] | | GLMM-native | M3 | § | § | random effects §, D"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,4,"effects §, D = \[§\] | | GLMM-native | M4 | § | § | random effects §, D"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,5,"effects §, D = \[§\] | | GLMM-native | M5 | § | § | random effects §, D"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1," random effects §, D = \[§\] | | GLMM-AR1 | M1 | § | § | random effects"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"om effects §, D = \[§\] | | GLMM-AR1 | M1 | § | § | random effects §, D"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"§ | § | random effects §, D = \[§\]; AR(1) ρ = §, variance § | | GLMM-A"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"§\]; AR(1) ρ = §, variance § | | GLMM-AR1 | M2 | § | § | random effects"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,2,"AR(1) ρ = §, variance § | | GLMM-AR1 | M2 | § | § | random effects §, D"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"§ | § | random effects §, D = \[§\]; AR(1) ρ = §, variance § | | GLMM-A"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"§\]; AR(1) ρ = §, variance § | | GLMM-AR1 | M3 | § | § | random effects"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,3,"AR(1) ρ = §, variance § | | GLMM-AR1 | M3 | § | § | random effects §, D"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"§ | § | random effects §, D = \[§\]; AR(1) ρ = §, variance § | | GLMM-A"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"§\]; AR(1) ρ = §, variance § | | GLMM-AR1 | M4 | § | § | random effects"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,4,"AR(1) ρ = §, variance § | | GLMM-AR1 | M4 | § | § | random effects §, D"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"§ | § | random effects §, D = \[§\]; AR(1) ρ = §, variance § | | GLMM-A"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"§\]; AR(1) ρ = §, variance § | | GLMM-AR1 | M5 | § | § | random effects"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,5,"AR(1) ρ = §, variance § | | GLMM-AR1 | M5 | § | § | random effects §, D"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"§ | § | random effects §, D = \[§\]; AR(1) ρ = §, variance § |  Scenari"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,ms not in the table use the same code. M1c has the mean model of M1 wit
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,e same code. M1c has the mean model of M1 with the prevalence (§) and b
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,6,t variance (§) of the clinical cohort. M6 and M7 let the latent standar
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,7,nce (§) of the clinical cohort. M6 and M7 let the latent standard devia
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,ndom-slope variance of § or §. Copula-AR1 has the marginal coefficients
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,8, and latent correlation ρ = § (Section S8). Covariates are drawn as fol
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,5, in the transition model of GenBinaryY M5 only. Treatment is § per subj
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1, The conditional coefficients of GLMM-AR1 are calibrated on each replic
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,6,"inal coefficients equal the target. In M6 and M7, with 10 occasions the"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,7,"efficients equal the target. In M6 and M7, with 10 occasions the latent"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,10,"ts equal the target. In M6 and M7, with 10 occasions the latent standard"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,3,"Y grows from § to § or §, against § in M3. The autoregressive parameter"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,The autoregressive parameters of GLMM-AR1 add a serial dependence to th
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"esign points of the main grid and § of M1c, all in GLMM-AR1, only § to "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"e main grid and § of M1c, all in GLMM-AR1, only § to § datasets could b"
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,2.2,"a degenerate design, defined in Section 2.2 of the main text.  ## S2. Sof"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,2,d in Section 2.2 of the main text.  ## S2. Software  **Table S2.** Vers
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,2,e main text.  ## S2. Software  **Table S2.** Versions in the project li
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,8,"rovided with the code (*reports/morris/S8b_logs/sessionInfo.txt*, with "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,4,  | | MMLB             | §       | | lme4             | §       | | gee
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,3,regenerated them from their seeds.  ## S3. Tables of the main grid  The
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,3,orted as a sensitivity analysis (Table S3). Fits that returned with war
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,13, them is a sensitivity analysis (Table S13). Counts of miscalibrated cel
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,5, §% and Kauermann-Carroll in §% (Table S5).  The uncorrected GEE was ab
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,ble S5).  The uncorrected GEE was above 7.5% by § points at N = 10 on Gen
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,10,d GEE was above 7.5% by § points at N = 10 on GenBinaryY. Its smallest e
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,5,on GenBinaryY. Its smallest excess over 5% across cluster counts was un
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,45,"half a point on every mechanism.  Above 45 clusters, Fay-Graubard and th"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,5, were both within about half a point of 5% on the random-effects mechan
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,o § between pairs of mechanisms. GLMM-AR1 differed from GLMM-native by 
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,3.5,ts on average across methods.   Section 3.5 of the main text compares Fay
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1," with exchangeable, independence and AR(1) working correlations over th"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,erences with independence and § with AR(1) exceeded 2.5 points in absol
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,2.5, independence and § with AR(1) exceeded 2.5 points in absolute value (at 
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,3,ute value (at most § and §).   **Table S3.** Type I error at the nomina
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,5,"Table S3.** Type I error at the nominal 5% (%): pooled rate, worst case"
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,3,"e marginalized model differs from Table 3. GB = GenBinaryY, NAT = GLMM-"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,". GB = GenBinaryY, NAT = GLMM-native, AR1 = GLMM-AR1. Largest Monte Car"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"inaryY, NAT = GLMM-native, AR1 = GLMM-AR1. Largest Monte Carlo standard"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1, MAD.  |  | Rate GB | Rate NAT | Rate AR1 | Worst GB | Worst NAT | Wors
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,te AR1 | Worst GB | Worst NAT | Worst AR1 | MAD GB | MAD NAT | MAD AR1 
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1, | Worst AR1 | MAD GB | MAD NAT | MAD AR1 | |----|----|----|----|----|-
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,4,| § | § | § | § | § | § | § |  **Table S4.** Mean absolute departure fr
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,5,able S4.** Mean absolute departure from 5% by number of occasions (perc
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,2,points.  |                        | T = 2 | T = 3 | T ≥ 4 | |----------
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,3, |                        | T = 2 | T = 3 | T ≥ 4 | |------------------
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,4,                  | T = 2 | T = 3 | T ≥ 4 | |------------------------|-
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,5,oll | §     | §     | §     |  **Table S5.** Method-cells detectably of
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,6,uermann-Carroll | §   | §   |  **Table S6.** Type I error on each metho
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,e shift.  |  | Own GB | Own NAT | Own AR1 | Common GB | Common NAT | Co
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,AR1 | Common GB | Common NAT | Common AR1 | Shift GB | Shift NAT | Shif
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,on AR1 | Shift GB | Shift NAT | Shift AR1 | |----|----|----|----|----|-
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,7,| § | § | § | § | § | § | § |  **Table S7.** Replicates returning a usa
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,2,"----|----|----| | Random intercept, T = 2 | § | § | § | § | § | § | § |"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,3,"§ | § | § | § | | Random intercept, T = 3 | § | § | § | § | § | § | § |"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,4,"§ | § | § | § | | Random intercept, T = 4 | § | § | § | § | § | § | § |"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,6,"§ | § | § | § | | Random intercept, T = 6 | § | § | § | § | § | § | § |"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,8,"§ | § | § | § | | Random intercept, T = 8 | § | § | § | § | § | § | § |"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,10,"§ | § | § | § | | Random intercept, T = 10 | § | § | § | § | § | § | § |"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,2," | § | § | § | § | | Random slopes, T = 2 | § | § | § | § | § | § | § |"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,3," | § | § | § | § | | Random slopes, T = 3 | § | § | § | § | § | § | § |"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,4," | § | § | § | § | | Random slopes, T = 4 | § | § | § | § | § | § | § |"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,6," | § | § | § | § | | Random slopes, T = 6 | § | § | § | § | § | § | § |"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,8," | § | § | § | § | | Random slopes, T = 8 | § | § | § | § | § | § | § |"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,10," | § | § | § | § | | Random slopes, T = 10 | § | § | § | § | § | § | § |"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,20,"0 | § | § | § | § | § | § | § | § |  At 20 clusters or fewer, the likeli"
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,2.4,"rgence check does not converge (Section 2.4 of the main text), in fewer, "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,8,"he main text), in fewer, §%.   **Table S8.** Usable result and uncondit"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,20,"le result and unconditional validity at 20 clusters or fewer (%), under "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,9,uermann-Carroll | § | § | § |  **Table S9.** Mean absolute departure fr
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,5,able S9.** Mean absolute departure from 5% by estimability stratum (per
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,95,he size-adjusted critical value was the 95th percentile of \|estimate/SE
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,5,or the likelihood-ratio test it was the 5th percentile of the null p-va
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,10, compare methods at equal level. Table S10 gives raw and size-adjusted p
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,4,points with the default optimizer of lme4 and by § points with the opti
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,15,nts with the optimizer bobyqa (Section S15). On GLMM-AR1 the difference 
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,timizer bobyqa (Section S15). On GLMM-AR1 the difference was about two 
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,37,adjusted critical value itself exceeded 37.   **Table S10.** Raw and siz
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,10,al value itself exceeded 37.   **Table S10.** Raw and size-adjusted powe
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,95,th *fewclust*. Size adjustment uses the 95th percentile of \|estimate/SE
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,5,"ell (for the likelihood-ratio test, the 5th percentile of the null p-va"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"arroll | §   | §             | | GLMM-AR1, GEE, Fay-Graubard         | "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"       | §   | §             | | GLMM-AR1, GEE, Mancl-DeRouen        | "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"       | §   | §             | | GLMM-AR1, Marginalized model        | "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"       | §   | §             | | GLMM-AR1, GLMM, Wald                | "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"       | §   | §             | | GLMM-AR1, Shrinkage GLM             | "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"       | §   | §             | | GLMM-AR1, GEE, uncorrected          | "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"       | §   | §             | | GLMM-AR1, GLMM, likelihood ratio    | "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"tio    | §   | §             | | GLMM-AR1, GEE, Kauermann-Carroll    | "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,11, to § points against § to §.   **Table S11.** Type I error under a norma
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1, |  | Normal GB | Normal NAT | Normal AR1 | t GB | t NAT | t AR1 | t mi
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,l NAT | Normal AR1 | t GB | t NAT | t AR1 | t minus normal GB | t minus
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,| t minus normal NAT | t minus normal AR1 | Normal minus t at N ≤ 25 | 
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,25,inus normal AR1 | Normal minus t at N ≤ 25 | |----|----|----|----|----|-
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,12,| § | § | § | § | § | § | § |  **Table S12.** Coverage of the 95% confid
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,95,§ | § |  **Table S12.** Coverage of the 95% confidence interval against 
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,    | GenBinaryY | GLMM-native | GLMM-AR1 | |------------------------|-
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,13,   | §           | §        |  **Table S13.** Pooled type I error (%) on
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,0,"with fits that returned warnings kept (U0, primary) and excluded (U1), "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"nings kept (U0, primary) and excluded (U1), replicate-weighted over the"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,0,"| Method                         | GB, U0 | GB, U1 | NAT, U0 | NAT, U1 "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"                        | GB, U0 | GB, U1 | NAT, U0 | NAT, U1 | AR1, U0"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,0,"              | GB, U0 | GB, U1 | NAT, U0 | NAT, U1 | AR1, U0 | AR1, U1"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"    | GB, U0 | GB, U1 | NAT, U0 | NAT, U1 | AR1, U0 | AR1, U1 | |------"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"GB, U0 | GB, U1 | NAT, U0 | NAT, U1 | AR1, U0 | AR1, U1 | |------------"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,0,"U0 | GB, U1 | NAT, U0 | NAT, U1 | AR1, U0 | AR1, U1 | |----------------"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"B, U1 | NAT, U0 | NAT, U1 | AR1, U0 | AR1, U1 | |----------------------"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"1 | NAT, U0 | NAT, U1 | AR1, U0 | AR1, U1 | |--------------------------"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,14,§       | §       | §       |  **Table S14.** Scenarios M6-M7 (§ design 
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,6, | §       |  **Table S14.** Scenarios M6-M7 (§ design points each): de
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,7,§       |  **Table S14.** Scenarios M6-M7 (§ design points each): desig
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,ints each): design points clearly above 7.5% and clearly below 2.5% under
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,2.5,"ts clearly above 7.5% and clearly below 2.5% under the null, largest reje"
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,3,"tions computed by *geesmv*, as in Table 3, so their counts can differ s"
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,5,"can differ slightly from those of Table 5 and Figure S1, which use *few"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"ghtly from those of Table 5 and Figure S1, which use *fewclust*. Monte "
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5, error).  | Scenario | Strategy | Above 7.5% | Below 2.5% | Largest rate 
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,2.5,cenario | Strategy | Above 7.5% | Below 2.5% | Largest rate (%) | Usable 
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,15,ihood ratio | § | § | § | § |  **Table S15.** Clinical application: outc
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,4,      | §     | §       | §      |  ## S4. Numerical behaviour of the s
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1, was renamed before every call. With AR(1) working correlation *geesmv*
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,2,h that correlation.  *fewclust* (Table S2) computes the three correctio
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,"with *geesmv*, and it was clearly above 7.5% at § instead of § design poi"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,2,"mentation, not of the estimator.  The CR2 estimator of *clubSandwich* i"
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,3,"sable fit, and these values enter Table 3, Table 4 and Table S10. Every"
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,4,", and these values enter Table 3, Table 4 and Table S10. Every Kauerman"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,10,"alues enter Table 3, Table 4 and Table S10. Every Kauermann-Carroll resu"
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,3,eference.  Its rejection rates in Table 3 and Table S10 are therefore l
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,10,s rejection rates in Table 3 and Table S10 are therefore lower than thos
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,5,han those obtained with *geesmv*.   ## S5. Tables of the scenario ancho
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"f the scenario anchored to the cohort (M1c)  In scenario M1c, the size-"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"hored to the cohort (M1c)  In scenario M1c, the size-adjusted power of "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"out two points on GenBinaryY and GLMM-AR1, and the two were similar on "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"s with a near-zero standard error.  In M1c, the method with the fewest "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,16,lls could not be identified.   **Table S16.** Type I error at the nomina
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,5,"able S16.** Type I error at the nominal 5% (%): pooled rate, worst case"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"r counts (percentage points), scenario M1c (§ design points). Largest M"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1, MAD.  |  | Rate GB | Rate NAT | Rate AR1 | Worst GB | Worst NAT | Wors
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,te AR1 | Worst GB | Worst NAT | Worst AR1 | MAD GB | MAD NAT | MAD AR1 
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1, | Worst AR1 | MAD GB | MAD NAT | MAD AR1 | |----|----|----|----|----|-
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,17,| § | § | § | § | § | § | § |  **Table S17.** Mean absolute departure fr
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,5,ble S17.** Mean absolute departure from 5% by number of occasions (perc
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"ntage points), cell-weighted, scenario M1c (§ design points). Largest M"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,2,points.  |                        | T = 2 | T = 3 | T ≥ 4 | |----------
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,3, |                        | T = 2 | T = 3 | T ≥ 4 | |------------------
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,4,                  | T = 2 | T = 3 | T ≥ 4 | |------------------------|-
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,18,oll | §     | §     | §     |  **Table S18.** Method-cells detectably of
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"Y) corrections within method, scenario M1c (§ design points). Largest M"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,19,uermann-Carroll | §   | §   |  **Table S19.** Type I error on each metho
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"all methods (common set) (%), scenario M1c (§ design points). Largest M"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,e shift.  |  | Own GB | Own NAT | Own AR1 | Common GB | Common NAT | Co
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,AR1 | Common GB | Common NAT | Common AR1 | Shift GB | Shift NAT | Shif
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,on AR1 | Shift GB | Shift NAT | Shift AR1 | |----|----|----|----|----|-
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,20,| § | § | § | § | § | § | § |  **Table S20.** Replicates returning a usa
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"le design in the denominator, scenario M1c (§ design points). Largest M"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,2,"----|----|----| | Random intercept, T = 2 | § | § | § | § | § | § | § |"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,3,"§ | § | § | § | | Random intercept, T = 3 | § | § | § | § | § | § | § |"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,4,"§ | § | § | § | | Random intercept, T = 4 | § | § | § | § | § | § | § |"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,6,"§ | § | § | § | | Random intercept, T = 6 | § | § | § | § | § | § | § |"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,21,| § | § | § | § | § | § | § |  **Table S21.** Usable result and uncondit
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,20,"le result and unconditional validity at 20 clusters or fewer (%), under "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1," averaged over design points, scenario M1c (§ design points). Largest M"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,22,uermann-Carroll | § | § | § |  **Table S22.** Mean absolute departure fr
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,5,ble S22.** Mean absolute departure from 5% by estimability stratum (per
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"of the five marginal methods, scenario M1c (§ design points). Largest M"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,23,§   | §   | §   | §   | §   |  **Table S23.** Raw and size-adjusted powe
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"the interaction contrast (%), scenario M1c (§ design points). Largest M"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"arroll | §   | §             | | GLMM-AR1, GEE, Fay-Graubard         | "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"       | §   | §             | | GLMM-AR1, GEE, Mancl-DeRouen        | "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"       | §   | §             | | GLMM-AR1, Marginalized model        | "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"       | §   | §             | | GLMM-AR1, GLMM, Wald                | "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"       | §   | §             | | GLMM-AR1, Shrinkage GLM             | "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"       | §   | §             | | GLMM-AR1, GEE, uncorrected          | "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"       | §   | §             | | GLMM-AR1, GLMM, likelihood ratio    | "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"tio    | §   | §             | | GLMM-AR1, GEE, Kauermann-Carroll    | "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,24,ll    | §   | §             |  **Table S24.** Type I error under a norma
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,", shift in percentage points, scenario M1c (§ design points). Largest M"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1, |  | Normal GB | Normal NAT | Normal AR1 | t GB | t NAT | t AR1 | t mi
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,l NAT | Normal AR1 | t GB | t NAT | t AR1 | t minus normal GB | t minus
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,| t minus normal NAT | t minus normal AR1 | Normal minus t at N ≤ 25 | 
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,25,inus normal AR1 | Normal minus t at N ≤ 25 | |----|----|----|----|----|-
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,25,| § | § | § | § | § | § | § |  **Table S25.** Coverage of the 95% confid
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,95,§ | § |  **Table S25.** Coverage of the 95% confidence interval against 
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,") for the GLMM on GenBinaryY, scenario M1c (§ design points). Largest M"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,    | GenBinaryY | GLMM-native | GLMM-AR1 | |------------------------|-
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,6,        | §           | §        |  ## S6. Degrees of freedom of the t 
+manuscript/v5/MMM_v5_supplement_trace.md,e-math,2,"the t reference  Degrees of freedom N - 2, as used by Li and Redden  CI"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,a strategy that was never clearly above 7.5%. With N - p degrees of freed
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"h N - p degrees of freedom, GEE with AR(1) working correlation and the "
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,the averaged variance was clearly above 7.5% at § of the § design points 
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,26, and the averaged variance at § (Table S26 gives the three study mechani
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,26,the three study mechanisms).   **Table S26.** The decision rule with N -
+manuscript/v5/MMM_v5_supplement_trace.md,e-math,2,"e decision rule with N - p and with N - 2 degrees of freedom, as used b"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,ly). Above: design points clearly above 7.5%; below: clearly below 2.5%; 
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,2.5,learly above 7.5%; below: clearly below 2.5%; usable: replicates returnin
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,with the convergence check; GEE with AR(1) working correlation and Fay-
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,ation and Fay-Graubard is clearly above 7.5% at § design points with N - 
+manuscript/v5/MMM_v5_supplement_trace.md,e-math,2,ign points with N - p and at § with N - 2. The rows for the average of 
+manuscript/v5/MMM_v5_supplement_trace.md,e-math,2,"low at ten clusters, N - p | Above, N - 2 | Below, N - 2 | Below at ten"
+manuscript/v5/MMM_v5_supplement_trace.md,e-math,2,"ters, N - p | Above, N - 2 | Below, N - 2 | Below at ten clusters, N - "
+manuscript/v5/MMM_v5_supplement_trace.md,e-math,2,"low, N - 2 | Below at ten clusters, N - 2 | Usable (%) | |----|----|---"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"----|----|----|----|----|----| | GEE AR(1), Fay-Graubard | § | § | § | "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1," | § | § | § | § | § | § | § | | GEE AR(1), Mancl-DeRouen | § | § | § |"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1," | § | § | § | § | § | § | § | | GEE AR(1), average of Mancl-DeRouen an"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,7,Wald | § | § | § | § | § | § | § |  ## S7. Sign-flip score test and the
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,5,"ing the values that are not rejected at 5%, gives a confidence interval"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"of datasets, against §% for GEE with AR(1) working correlation, Fay-Gra"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,2.5,nce; its non-coverage was clearly below 2.5% at § design points under the
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,25,with two or three occasions and at most 25 clusters (Table S27). Where b
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,27,casions and at most 25 clusters (Table S27). Where both intervals were f
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,75,"hen over design points), and by §% with 75 clusters or more; over datase"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,75,"gns, the geometric mean was §% (§% with 75 clusters or more).   With the"
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,2.4,s or more).   With the rules of Section 2.4 of the main text the test was
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,25,With two or three occasions and at most 25 clusters it answered in §% of
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5," datasets on average, was clearly above 7.5% at § design points and answe"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,27, answered in §% of datasets.   **Table S27.** Interval obtained by inver
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1," (%), and datasets in which GEE with AR(1) working correlation, Fay-Gra"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"Datasets | Interval finite (%) | GEE AR(1), Fay-Graubard usable (%) | |"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,2, (%) | |----|----|----|----|----| | T = 2 | N = 10 | § | § | § | |  | N
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,10,----|----|----|----|----| | T = 2 | N = 10 | § | § | § | |  | N = 15-25 
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,15,| T = 2 | N = 10 | § | § | § | |  | N = 15-25 | § | § | § | |  | N = 35-
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,25, = 2 | N = 10 | § | § | § | |  | N = 15-25 | § | § | § | |  | N = 35-65 
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,35,| |  | N = 15-25 | § | § | § | |  | N = 35-65 | § | § | § | |  | N = 75-
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,65,  | N = 15-25 | § | § | § | |  | N = 35-65 | § | § | § | |  | N = 75-145
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,75,| |  | N = 35-65 | § | § | § | |  | N = 75-145 | § | § | § | | T = 3 | N
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,145,  | N = 35-65 | § | § | § | |  | N = 75-145 | § | § | § | | T = 3 | N = 1
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,3,§ | |  | N = 75-145 | § | § | § | | T = 3 | N = 10 | § | § | § | |  | N
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,10, N = 75-145 | § | § | § | | T = 3 | N = 10 | § | § | § | |  | N = 15-25 
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,15,| T = 3 | N = 10 | § | § | § | |  | N = 15-25 | § | § | § | |  | N = 35-
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,25, = 3 | N = 10 | § | § | § | |  | N = 15-25 | § | § | § | |  | N = 35-65 
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,35,| |  | N = 15-25 | § | § | § | |  | N = 35-65 | § | § | § | |  | N = 75-
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,65,  | N = 15-25 | § | § | § | |  | N = 35-65 | § | § | § | |  | N = 75-145
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,75,| |  | N = 35-65 | § | § | § | |  | N = 75-145 | § | § | § | | T = 4 | N
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,145,  | N = 35-65 | § | § | § | |  | N = 75-145 | § | § | § | | T = 4 | N = 1
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,4,§ | |  | N = 75-145 | § | § | § | | T = 4 | N = 10 | § | § | § | |  | N
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,10, N = 75-145 | § | § | § | | T = 4 | N = 10 | § | § | § | |  | N = 15-25 
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,15,| T = 4 | N = 10 | § | § | § | |  | N = 15-25 | § | § | § | |  | N = 35-
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,25, = 4 | N = 10 | § | § | § | |  | N = 15-25 | § | § | § | |  | N = 35-65 
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,35,| |  | N = 15-25 | § | § | § | |  | N = 35-65 | § | § | § | |  | N = 75-
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,65,  | N = 15-25 | § | § | § | |  | N = 35-65 | § | § | § | |  | N = 75-145
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,75,| |  | N = 35-65 | § | § | § | |  | N = 75-145 | § | § | § | | T = 6 | N
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,145,  | N = 35-65 | § | § | § | |  | N = 75-145 | § | § | § | | T = 6 | N = 1
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,6,§ | |  | N = 75-145 | § | § | § | | T = 6 | N = 10 | § | § | § | |  | N
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,10, N = 75-145 | § | § | § | | T = 6 | N = 10 | § | § | § | |  | N = 15-25 
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,15,| T = 6 | N = 10 | § | § | § | |  | N = 15-25 | § | § | § | |  | N = 35-
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,25, = 6 | N = 10 | § | § | § | |  | N = 15-25 | § | § | § | |  | N = 35-65 
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,35,| |  | N = 15-25 | § | § | § | |  | N = 35-65 | § | § | § | |  | N = 75-
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,65,  | N = 15-25 | § | § | § | |  | N = 35-65 | § | § | § | |  | N = 75-145
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,75,| |  | N = 35-65 | § | § | § | |  | N = 75-145 | § | § | § | | T = 8 | N
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,145,  | N = 35-65 | § | § | § | |  | N = 75-145 | § | § | § | | T = 8 | N = 1
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,8,§ | |  | N = 75-145 | § | § | § | | T = 8 | N = 10 | § | § | § | |  | N
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,10, N = 75-145 | § | § | § | | T = 8 | N = 10 | § | § | § | |  | N = 15-25 
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,15,| T = 8 | N = 10 | § | § | § | |  | N = 15-25 | § | § | § | |  | N = 35-
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,25, = 8 | N = 10 | § | § | § | |  | N = 15-25 | § | § | § | |  | N = 35-65 
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,35,| |  | N = 15-25 | § | § | § | |  | N = 35-65 | § | § | § | |  | N = 75-
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,65,  | N = 15-25 | § | § | § | |  | N = 35-65 | § | § | § | |  | N = 75-145
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,75,| |  | N = 35-65 | § | § | § | |  | N = 75-145 | § | § | § | | T = 10 | 
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,145,  | N = 35-65 | § | § | § | |  | N = 75-145 | § | § | § | | T = 10 | N = 
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,10,§ | |  | N = 75-145 | § | § | § | | T = 10 | N = 10 | § | § | § | |  | N
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,10,N = 75-145 | § | § | § | | T = 10 | N = 10 | § | § | § | |  | N = 15-25 
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,15, T = 10 | N = 10 | § | § | § | |  | N = 15-25 | § | § | § | |  | N = 35-
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,25,= 10 | N = 10 | § | § | § | |  | N = 15-25 | § | § | § | |  | N = 35-65 
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,35,| |  | N = 15-25 | § | § | § | |  | N = 35-65 | § | § | § | |  | N = 75-
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,65,  | N = 15-25 | § | § | § | |  | N = 35-65 | § | § | § | |  | N = 75-145
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,75,| |  | N = 35-65 | § | § | § | |  | N = 75-145 | § | § | § |  ## S8. The
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,145,  | N = 35-65 | § | § | § | |  | N = 75-145 | § | § | § |  ## S8. The fou
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,8, § | |  | N = 75-145 | § | § | § |  ## S8. The fourth mechanism  Copula
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"  ## S8. The fourth mechanism  Copula-AR1 draws, for each subject, a ve"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,he marginalized model was clearly above 7.5% at § of the § design points.
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,2,"ts was generated under the null for T = 2, 4 and 10 and fitted with a r"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,4,"was generated under the null for T = 2, 4 and 10 and fitted with a rand"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,10,"nerated under the null for T = 2, 4 and 10 and fitted with a random inte"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,atent scale the correlation of Copula-AR1 is that of the AR(1) working 
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,elation of Copula-AR1 is that of the AR(1) working correlation of Secti
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,2.4,he AR(1) working correlation of Section 2.4 of the main text; on the bina
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"rt, so it decays more slowly than an AR(1) correlation with the same fi"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,85,"  With a random intercept only, and N ≥ 85, under the null and averaged "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,28, misspecified on this mechanism (Table S28).   **Table S28.** Copula-AR1
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,28, this mechanism (Table S28).   **Table S28.** Copula-AR1 (§ design point
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1," (Table S28).   **Table S28.** Copula-AR1 (§ design points), Wald tests"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5," error (%), design points clearly above 7.5% and clearly below 2.5%, repl"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,2.5,"ts clearly above 7.5% and clearly below 2.5%, replicates returning a usab"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,95,cal standard errors and coverage of the 95% interval with a normal and a
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,ror.  | Strategy | Type I error | Above 7.5% | Below 2.5% | Usable | Powe
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,2.5,egy | Type I error | Above 7.5% | Below 2.5% | Usable | Power | Bias / em
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"----|----|----|----|----|----| | GEE AR(1), Fay-Graubard | § | § | § | "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,9,| § | § | § | n.a. | n.a. | n.a. |  ## S9. Second clinical application:
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,2.7,rd error the corrected ratio of Section 2.7 of the main text was § to § i
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,30,"t § patients and reached § at § (Table S30). Its corrected ratio, with t"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,29, § at § patients and § at §.   **Table S29.** Full-data estimate (SE) of
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,30, § (§)      | § (§)         |  **Table S30.** Subsamples of whole patien
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,2.7,the finite-population factor of Section 2.7 of the main text. Largest Mon
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,10,| |  | § | § | § | § | § | § | § |  ## S10. The marginalized model and t
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1," was compared with the GEE strategy (AR(1) working correlation, Fay-Gra"
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,2.5, margin for mean differences of Section 2.5 of the main text. The margina
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,ginalized model was never clearly above 7.5%; the GEE strategy was clearl
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,".5%; the GEE strategy was clearly above 7.5% at § design points, both wit"
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,3.4,ten clusters and two occasions (Section 3.4 of the main text). Before the
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,2.5,"constant outcome were excluded (Section 2.5 of the main text), the GEE st"
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,5,mparison does not enter the rule (Table 5). With two or three occasions
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,25,With two or three occasions and at most 25 clusters the GEE strategy ret
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,31,"ult more often, by § points.   **Table S31.** GEE with AR(1) working cor"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1, § points.   **Table S31.** GEE with AR(1) working correlation and Fay-
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,5,"error (%), mean absolute departure from 5% (percentage points), their d"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,5,ne-point margin (the strategy closer to 5% when the interval of ± 2 sta
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,2,egy closer to 5% when the interval of ± 2 standard errors lies beyond t
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,5," type I error, § for the departure from 5%, § for the usable share and "
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,5,"ype I error, GEE / MMM | Departure from 5%, GEE / MMM | Difference (MCS"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,10,--|----|----|----|----|----|----| | N = 10 | T = 2 | § / § | § / § | § (
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,2,---|----|----|----|----| | N = 10 | T = 2 | § / § | § / § | § (§) | § |
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,10,/ § | § (§) | § | § / § | § / § | | N = 10 | T = 3 | § / § | § / § | § (
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,3,§) | § | § / § | § / § | | N = 10 | T = 3 | § / § | § / § | § (§) | § |
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,10,/ § | § (§) | § | § / § | § / § | | N = 10 | T ≥ 4 | § / § | § / § | § (
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,4,§) | § | § / § | § / § | | N = 10 | T ≥ 4 | § / § | § / § | § (§) | § |
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,15,/ § | § (§) | § | § / § | § / § | | N = 15-25 | T = 2 | § / § | § / § | 
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,25, | § (§) | § | § / § | § / § | | N = 15-25 | T = 2 | § / § | § / § | § (
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,2,| § | § / § | § / § | | N = 15-25 | T = 2 | § / § | § / § | § (§) | § |
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,15,/ § | § (§) | § | § / § | § / § | | N = 15-25 | T = 3 | § / § | § / § | 
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,25, | § (§) | § | § / § | § / § | | N = 15-25 | T = 3 | § / § | § / § | § (
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,3,| § | § / § | § / § | | N = 15-25 | T = 3 | § / § | § / § | § (§) | § |
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,15,/ § | § (§) | § | § / § | § / § | | N = 15-25 | T ≥ 4 | § / § | § / § | 
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,25, | § (§) | § | § / § | § / § | | N = 15-25 | T ≥ 4 | § / § | § / § | § (
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,4,| § | § / § | § / § | | N = 15-25 | T ≥ 4 | § / § | § / § | § (§) | § |
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,25, § | § (§) | § | § / § | § / § | | N \> 25 | T = 2 | § / § | § / § | § (
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,2,) | § | § / § | § / § | | N \> 25 | T = 2 | § / § | § / § | § (§) | § |
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,25, § | § (§) | § | § / § | § / § | | N \> 25 | T = 3 | § / § | § / § | § (
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,3,) | § | § / § | § / § | | N \> 25 | T = 3 | § / § | § / § | § (§) | § |
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,25, § | § (§) | § | § / § | § / § | | N \> 25 | T ≥ 4 | § / § | § / § | § (
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,4,) | § | § / § | § / § | | N \> 25 | T ≥ 4 | § / § | § / § | § (§) | § |
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,11, / § | § (§) | § | § / § | § / § |  ## S11. What the decision rule guara
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,4.1,d that criterion had been seen (Section 4.1 of the main text).   A design
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,ext).   A design point is clearly above 7.5% when the lower limit of the 
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,95, 7.5% when the lower limit of the exact 95% interval of its rejection ra
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5, interval of its rejection rate exceeds 7.5%. With § usable replicates th
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5, A strategy that is never clearly above 7.5% is therefore one in which no
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,32,"in which no excess was detected. Table S32 gives, for every strategy of "
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,5," S32 gives, for every strategy of Table 5, the design points at which a"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,"upper limit of the exact interval above 7.5%, but not clearly above) and "
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,"limit of the exact interval lying above 7.5%, at § and § design points (T"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,32," 7.5%, at § and § design points (Table S32).   **Table S32.** Strategies"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,32,§ design points (Table S32).   **Table S32.** Strategies of Table 5 over
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,5,).   **Table S32.** Strategies of Table 5 over the § design points of t
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,"r the null: design points clearly above 7.5%, design points at which an e"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,t § points.  | Strategy | Clearly above 7.5% | Excess not excluded | Not 
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"----|----|----|----|----|----| | GEE AR(1), Fay-Graubard | § | § | § | "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"Graubard | § | § | § | § | § | | GEE AR(1), Mancl-DeRouen | § | § | § |"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"-DeRouen | § | § | § | § | § | | GEE AR(1), Kauermann-Carroll | § | § |"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,2,"| § | § | § | § | | GEE independence, CR2 | § | § | § | § | § | | GEE e"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,2,"| § | § | § | § | | GEE exchangeable, CR2 | § | § | § | § | § | | GEE A"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"ble, CR2 | § | § | § | § | § | | GEE AR(1), uncorrected | § | § | § | §"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"dy. In the block bootstrap, GEE with AR(1) working correlation and Fay-"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,"at least one design point clearly above 7.5% in §% of resamples, and the "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,37,ized model with the check in §% (Table S37 in Section S18). Among the ei
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,18, the check in §% (Table S37 in Section S18). Among the eight strategies 
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,37,). Among the eight strategies of Table S37 the marginalized model has th
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,st expected design points clearly above 7.5% in all three calculations: i
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,2.5,ates.   The usability limits of Section 2.5 of the main text (\|estimate\
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,5, to § and § for the strategies of Table 5 with an estimate and an inter
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,5,imit the recomputation reproduced Table 5 exactly. With usability limit
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,ginalized model was never clearly above 7.5%. The GEE strategy was never 
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,"he GEE strategy was never clearly above 7.5% with the limit of §, so that"
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,2.6,"limit of §, so that the rule of Section 2.6 of the main text would have s"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,"e §% against §%), and was clearly above 7.5% at § design points with the "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,33,sign points with the limit of § (Table S33). Its two design points with 
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,33,n § and § in absolute value.   **Table S33.** Design points clearly abov
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,able S33.** Design points clearly above 7.5% under the null and usable sh
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,"al standard error).  | Strategy | Above 7.5%, limit § | Above 7.5%, limit"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5," Strategy | Above 7.5%, limit § | Above 7.5%, limit § | Above 7.5%, limit"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,", limit § | Above 7.5%, limit § | Above 7.5%, limit § | Usable, limit § |"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"----|----|----|----|----|----| | GEE AR(1), Fay-Graubard | § | § | § | "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"bard | § | § | § | § | § | § | | GEE AR(1), Mancl-DeRouen | § | § | § |"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"ouen | § | § | § | § | § | § | | GEE AR(1), Kauermann-Carroll | § | § |"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,2,"| § | § | § | § | | GEE independence, CR2 | § | § | § | § | § | § | | G"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,2,"| § | § | § | § | | GEE exchangeable, CR2 | § | § | § | § | § | § | | G"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1," CR2 | § | § | § | § | § | § | | GEE AR(1), uncorrected | § | § | § | §"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,12,"MM, Wald | § | § | § | § | § | § |  ## S12. Adaptive quadrature for the "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"del with a random intercept (scenarios M1, M2 and M1c) was refitted wit"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,2,"with a random intercept (scenarios M1, M2 and M1c) was refitted with *l"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"random intercept (scenarios M1, M2 and M1c) was refitted with *lme4::gl"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,4,"s M1, M2 and M1c) was refitted with *lme4::glmer* and *nAGQ* = § on the"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,10,"null datasets, at § design points: N ∈ {10, 25, 55, 145} and T ∈ {2, 4, "
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,25," datasets, at § design points: N ∈ {10, 25, 55, 145} and T ∈ {2, 4, 10} "
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,55,"asets, at § design points: N ∈ {10, 25, 55, 145} and T ∈ {2, 4, 10} in M"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,145,"s, at § design points: N ∈ {10, 25, 55, 145} and T ∈ {2, 4, 10} in M1 and"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,2," points: N ∈ {10, 25, 55, 145} and T ∈ {2, 4, 10} in M1 and M2 on the f"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,4,"ints: N ∈ {10, 25, 55, 145} and T ∈ {2, 4, 10} in M1 and M2 on the four"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,10,"s: N ∈ {10, 25, 55, 145} and T ∈ {2, 4, 10} in M1 and M2 on the four mec"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"10, 25, 55, 145} and T ∈ {2, 4, 10} in M1 and M2 on the four mechanisms"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,2," 55, 145} and T ∈ {2, 4, 10} in M1 and M2 on the four mechanisms, and N"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,10,"and M2 on the four mechanisms, and N ∈ {10, 25, 45} and T ∈ {2, 4, 6} in"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,25,"M2 on the four mechanisms, and N ∈ {10, 25, 45} and T ∈ {2, 4, 6} in M1c"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,45,"n the four mechanisms, and N ∈ {10, 25, 45} and T ∈ {2, 4, 6} in M1c on "
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,2,"chanisms, and N ∈ {10, 25, 45} and T ∈ {2, 4, 6} in M1c on the three st"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,4,"nisms, and N ∈ {10, 25, 45} and T ∈ {2, 4, 6} in M1c on the three study"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,6,"ms, and N ∈ {10, 25, 45} and T ∈ {2, 4, 6} in M1c on the three study me"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1," N ∈ {10, 25, 45} and T ∈ {2, 4, 6} in M1c on the three study mechanism"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,145,"jection rate most at two occasions with 145 clusters, from §% to §% under"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,34,e approximation to §% to §%.   **Table S34.** Wald test of the mixed mod
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5," error (%), design points clearly above 7.5% and clearly below 2.5% (exac"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,2.5,"ts clearly above 7.5% and clearly below 2.5% (exact 95% interval), and me"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,95,"bove 7.5% and clearly below 2.5% (exact 95% interval), and mean usable s"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,95,"mechanism (percentage points), with its 95% block-bootstrap interval. Mo"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,"pe I error, L | Type I error, Q | Above 7.5%, L | Above 7.5%, Q | Below 2"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,"Type I error, Q | Above 7.5%, L | Above 7.5%, Q | Below 2.5%, L | Below 2"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,2.5,"| Above 7.5%, L | Above 7.5%, Q | Below 2.5%, L | Below 2.5%, Q | Usable,"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,2.5,"| Above 7.5%, Q | Below 2.5%, L | Below 2.5%, Q | Usable, L | Usable, Q |"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,2,----|----|----|----| | GenBinaryY | T = 2 | § | § | § | § | § | § | § |
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,4,| § | § | § | § | § (§ to §) | |  | T = 4 | § | § | § | § | § | § | § |
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,6,§ | § | § | § | § | § | § |  | |  | T = 6 | § | § | § | § | § | § | § |
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,10,§ | § | § | § | § | § | § |  | |  | T = 10 | § | § | § | § | § | § | § |
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,2, § | § | § | § |  | | GLMM-native | T = 2 | § | § | § | § | § | § | § |
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,4,| § | § | § | § | § (§ to §) | |  | T = 4 | § | § | § | § | § | § | § |
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,6,§ | § | § | § | § | § | § |  | |  | T = 6 | § | § | § | § | § | § | § |
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,10,§ | § | § | § | § | § | § |  | |  | T = 10 | § | § | § | § | § | § | § |
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,§ | § | § | § | § | § | § |  | | GLMM-AR1 | T = 2 | § | § | § | § | § |
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,2,§ | § | § | § | § |  | | GLMM-AR1 | T = 2 | § | § | § | § | § | § | § |
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,4,| § | § | § | § | § (§ to §) | |  | T = 4 | § | § | § | § | § | § | § |
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,6,§ | § | § | § | § | § | § |  | |  | T = 6 | § | § | § | § | § | § | § |
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,10,§ | § | § | § | § | § | § |  | |  | T = 10 | § | § | § | § | § | § | § |
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,| § | § | § | § | § | § |  | | Copula-AR1 | T = 2 | § | § | § | § | § |
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,2,| § | § | § | § |  | | Copula-AR1 | T = 2 | § | § | § | § | § | § | § |
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,4,| § | § | § | § | § (§ to §) | |  | T = 4 | § | § | § | § | § | § | § |
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,10,§ | § | § | § | § | § | § |  | |  | T = 10 | § | § | § | § | § | § | § |
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,13,§ | § | § | § | § | § | § | § |  |  ## S13. Estimation by the marginaliz
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,6,ized model with the check in scenarios M6-M7  In M6-M7 the fit that the
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,7,d model with the check in scenarios M6-M7  In M6-M7 the fit that the co
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,6, with the check in scenarios M6-M7  In M6-M7 the fit that the convergen
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,7,th the check in scenarios M6-M7  In M6-M7 the fit that the convergence 
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,35,"dard deviation, is misspecified. Table S35 gives bias, standard error an"
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,2.4,onverge gives no usable result (Section 2.4 of the main text). Interventi
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,"verage, with non-coverage clearly above 7.5% at no design point (Table S3"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,35,y above 7.5% at no design point (Table S35). Usable fits that are the fi
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,35,ue value as often as the others (Table S35). Under a normal reference it
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,"rd with a t reference was clearly above 7.5% at § design points, § of the"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,7, on GenBinaryY with the steeper slope (M7) (Table 5 and Figure S1).    
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,5,aryY with the steeper slope (M7) (Table 5 and Figure S1).    IMG   **Fi
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,steeper slope (M7) (Table 5 and Figure S1).    IMG   **Figure S1.** Typ
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,le 5 and Figure S1).    IMG   **Figure S1.** Type I error at every desi
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,6,ror at every design point of scenarios M6-M7 (§ design points each) for
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,7, at every design point of scenarios M6-M7 (§ design points each) for th
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,1,"ints each) for the strategies of Figure 1, with the corrections from *f"
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,5,corrections from *fewclust* as in Table 5: Wald tests with a t referenc
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,2.5,s) and number of clusters N. Grey band: 2.5% to 7.5%; line: nominal 5%. D
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,umber of clusters N. Grey band: 2.5% to 7.5%; line: nominal 5%. Design po
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,5, Grey band: 2.5% to 7.5%; line: nominal 5%. Design points with fewer th
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,). Circles: design points clearly above 7.5% (lower limit of the exact 95
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,95,"ly above 7.5% (lower limit of the exact 95% interval above 7.5%), as in "
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,"r limit of the exact 95% interval above 7.5%), as in Table 5: § for GEE e"
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,5,"t 95% interval above 7.5%), as in Table 5: § for GEE exchangeable with "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"aubard, all on GenBinaryY; § for GEE AR(1) with Fay-Graubard, § for the"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,35,awn rate is at most § points.  **Table S35.** Marginalized model with th
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,6,"ith the convergence check in scenarios M6-M7, by hypothesis, over desig"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,7," the convergence check in scenarios M6-M7, by hypothesis, over design p"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,95,"tes), mean and smallest coverage of the 95% t interval (%), design point"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5," points with non-coverage clearly above 7.5%, mean share of usable fits t"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,llest coverage (%) | Non-coverage above 7.5% | Fit without trend (%) | Co
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,0,"---|----|----| | GenBinaryY, slope § | H0 | § | § | § | § | § | § | § |"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,| § | § | § | § | § / § | § / § | |  | H1 | § | § | § | § | § | § | § |
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,0," / § | § / § | | GenBinaryY, slope § | H0 | § | § | § | § | § | § | § |"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,| § | § | § | § | § / § | § / § | |  | H1 | § | § | § | § | § | § | § |
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,0," § | | GLMM-native, slope variance § | H0 | § | § | § | § | § | § | § |"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,| § | § | § | § | § / § | § / § | |  | H1 | § | § | § | § | § | § | § |
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,0," § | | GLMM-native, slope variance § | H0 | § | § | § | § | § | § | § |"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,| § | § | § | § | § / § | § / § | |  | H1 | § | § | § | § | § | § | § |
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,14, | § | § | § | § | § / § | § / § |  ## S14. Previous evaluations of the 
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,15,ditional estimands differ  CITE .   ## S15. Further details of the metho
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,4,"s the Wald test used the default of *lme4* § (bobyqa, then Nelder-Mead)"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,3,s the mixed model with bobyqa (Section S3 and Section S5).  The Wald st
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,5,el with bobyqa (Section S3 and Section S5).  The Wald statistic of the 
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,2.5,because the usability limits of Section 2.5 of the main text apply to the
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,31," the two strategies of the rule (Table S31), scenario M1c, whose seeds a"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"gies of the rule (Table S31), scenario M1c, whose seeds are those of M1"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"scenario M1c, whose seeds are those of M1, was resampled with its own i"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,s own indices rather than jointly with M1; this affects only the Monte 
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,16,"rts, with the MCSE in the caption.  ## S16. The convergence check of the"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,3," the parameter space, and in scenarios M3-M5 the generating slope was c"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,5,"e parameter space, and in scenarios M3-M5 the generating slope was clos"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,3,before the reanalysis of the § fits of M3-M5 that returned an estimate.
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,5,ore the reanalysis of the § fits of M3-M5 that returned an estimate. Th
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,6,"as sensitivity analyses, and scenarios M6-M7 were simulated afterwards "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,7,"sensitivity analyses, and scenarios M6-M7 were simulated afterwards to "
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,2.5,"e, similar or about the margin; Section 2.5 of the main text) changed in "
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,el with a t reference was clearly above 7.5% at § and § design points of 
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,d § design points of the main grid and M1c.   ## S17. The neonatal coho
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,17, points of the main grid and M1c.   ## S17. The neonatal cohort: subsamp
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,2.7,"nder the simple random draws of Section 2.7 of the main text, a deviation"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,15, mean model could not be fitted (Table S15). Among the fits that were re
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,3.11,"ate without a standard error.   Section 3.11 of the main text reports, for"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,18,arlo standard errors of zero at §.  ## S18. Standard errors and coverage
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,36," stability of the decision rule  Table S36 gives, under the alternative,"
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,2.5,"verage of each method, cited in Section 2.5 of the main text. Table S37 g"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,37,in Section 2.5 of the main text. Table S37 gives the stability of the co
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,he count of design points clearly above 7.5% in a replication of the stud
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,11,"ion of the study, discussed in Section S11.   **Table S36.** Bias in emp"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,36,"y, discussed in Section S11.   **Table S36.** Bias in empirical standard"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,95, replicates  CITE ) and coverage of the 95% confidence interval against 
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"cates, main grid (§ design points) and M1c (§ design points), marginali"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"a mechanism in the main grid, all § in M1c. Not available (n.a.) for th"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1, | Bias/SE GB | Bias/SE NAT | Bias/SE AR1 | SE ratio GB | SE ratio NAT 
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,SE ratio GB | SE ratio NAT | SE ratio AR1 | Coverage GB | Coverage NAT 
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,Coverage GB | Coverage NAT | Coverage AR1 | |----|----|----|----|----|-
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,| § | § | § | § | § | § | § | § | |  | M1c | § | § | § | § | § | § | § 
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,| § | § | § | § | § | § | § | § | |  | M1c | § | § | § | § | § | § | § 
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,| § | § | § | § | § | § | § | § | |  | M1c | § | § | § | § | § | § | § 
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1, | § | § | § | § | n.a. | § | § | |  | M1c | n.a. | § | § | § | § | § |
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,| § | § | § | § | § | § | § | § | |  | M1c | § | § | § | § | § | § | § 
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,| § | § | § | § | § | § | § | § | |  | M1c | § | § | § | § | § | § | § 
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,| § | § | § | § | § | § | § | § | |  | M1c | § | § | § | § | § | § | § 
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,37,| § | § | § | § | § | § | § |  **Table S37.** Stability of the count of 
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,he count of design points clearly above 7.5% over the § design points of 
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,5,"isms, for the eight strategies of Table 5 with a small-sample correctio"
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,5,Observed: the count in the study (Table 5). Bootstrap: § block-bootstra
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,"ples with no design point clearly above 7.5% (%), mean and 90th percentil"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,90," point clearly above 7.5% (%), mean and 90th percentile of the count. Pl"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,bility of no design point clearly above 7.5% (%) and expected count.  | S
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,90,"none (%) | Bootstrap, mean | Bootstrap, 90th percentile | Raw plug-in, n"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"----|----|----|----|----|----| | GEE AR(1), Fay-Graubard | § | § | § | "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1," | § | § | § | § | § | § | § | | GEE AR(1), Mancl-DeRouen | § | § | § |"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1," | § | § | § | § | § | § | § | | GEE AR(1), Kauermann-Carroll | § | § |"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,19, | § | § | § | § | § | § | § | § |  ## S19. Separated datasets  In a sep
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,2,"ent and their interaction, plus age in M2 and dose in M5); the R packag"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,5,"nteraction, plus age in M2 and dose in M5); the R package *detectsepara"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,25,"with two or three occasions and at most 25 clusters, and §% of those wit"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,45," most 25 clusters, and §% of those with 45 clusters or more. In § the es"
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,2.5,nfinite. The usability limit of Section 2.5 of the main text does not ide
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,2.5, on them by the usability rule (Section 2.5 of the main text). Over all d
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,"here the GEE strategy was clearly above 7.5% (M2, N = 10, T = 2; GLMM-AR1"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,2,"e GEE strategy was clearly above 7.5% (M2, N = 10, T = 2; GLMM-AR1 and "
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,10,"trategy was clearly above 7.5% (M2, N = 10, T = 2; GLMM-AR1 and GLMM-nat"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,2,"was clearly above 7.5% (M2, N = 10, T = 2; GLMM-AR1 and GLMM-native), i"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"y above 7.5% (M2, N = 10, T = 2; GLMM-AR1 and GLMM-native), it rejected"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,38,"on the logit scale, in § of §.   Table S38 repeats the rule of Table 5 w"
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,5,.   Table S38 repeats the rule of Table 5 with separated datasets remov
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,"GEE strategy is no longer clearly above 7.5% at any design point and, ans"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,38, § subsamples of the cohort.   **Table S38.** The decision rule of Table
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,5,Table S38.** The decision rule of Table 5 with separated datasets remov
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5, and below: design points clearly above 7.5% and clearly below 2.5% (exac
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,2.5,"ts clearly above 7.5% and clearly below 2.5% (exact 95% interval, at leas"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,95,"bove 7.5% and clearly below 2.5% (exact 95% interval, at least § usable "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,19,ed dataset (%). Versions as in Section S19.  | Version | Strategy | Abov
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,tion S19.  | Version | Strategy | Above 7.5% | Below 2.5% | Usable (%) | 
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,2.5,"Version | Strategy | Above 7.5% | Below 2.5% | Usable (%) | Usable, T ≤ 3"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,3,"| Below 2.5% | Usable (%) | Usable, T ≤ 3 and N ≤ 25 (%) | Power (%) | "
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,25,"5% | Usable (%) | Usable, T ≤ 3 and N ≤ 25 (%) | Power (%) | |----|----|"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"check | § | § | § | § | § | |  | GEE AR(1), Fay-Graubard | § | § | § | "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"check | § | § | § | § | § | |  | GEE AR(1), Fay-Graubard | § | § | § | "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"check | § | § | § | § | § | |  | GEE AR(1), Fay-Graubard | § | § | § | "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"check | § | § | § | § | § | |  | GEE AR(1), Fay-Graubard | § | § | § | "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"check | § | § | § | § | § | |  | GEE AR(1), Fay-Graubard | § | § | § | "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,20,no interval) | § | § | § | § | § |  ## S20. Versions of the convergence 
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,2.4, standard deviation is below § (Section 2.4 of the main text). The primar
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,3,", the check declared §% of the fits of M3-M5 at the boundary on the mai"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,5,he check declared §% of the fits of M3-M5 at the boundary on the main g
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,6,"t the boundary on the main grid, §% in M6-M7 and §% on the fourth mecha"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,7,"he boundary on the main grid, §% in M6-M7 and §% on the fourth mechanis"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,39,"%, §% and §% without a result.   Table S39 compares the primary rule wit"
+manuscript/v5/MMM_v5_supplement_trace.md,b-label,5,; for version (iii) it reproduces Table 5. Keeping the original fit whe
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,"es the marginalized model clearly above 7.5% at § design points, so that "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,39,ises the usable share to §%.   **Table S39.** The marginalized model wit
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,"mechanisms: design points clearly above 7.5% (main grid and M1c, M6-M7, C"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"ints clearly above 7.5% (main grid and M1c, M6-M7, Copula-AR1) and clea"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,6,"clearly above 7.5% (main grid and M1c, M6-M7, Copula-AR1) and clearly b"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,7,"arly above 7.5% (main grid and M1c, M6-M7, Copula-AR1) and clearly belo"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,".5% (main grid and M1c, M6-M7, Copula-AR1) and clearly below 2.5% (all)"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,2.5,"c, M6-M7, Copula-AR1) and clearly below 2.5% (all), usable share under th"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,25,"with two or three occasions and at most 25 clusters, and power per attem"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,"approximate minimum.  | Version | Above 7.5%, main and M1c | Above 7.5%, "
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"mum.  | Version | Above 7.5%, main and M1c | Above 7.5%, M6-M7 | Above "
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,"sion | Above 7.5%, main and M1c | Above 7.5%, M6-M7 | Above 7.5%, Copula-"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,6,"Above 7.5%, main and M1c | Above 7.5%, M6-M7 | Above 7.5%, Copula-AR1 |"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,7,"ve 7.5%, main and M1c | Above 7.5%, M6-M7 | Above 7.5%, Copula-AR1 | Be"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,7.5,"ain and M1c | Above 7.5%, M6-M7 | Above 7.5%, Copula-AR1 | Below 2.5% | U"
+manuscript/v5/MMM_v5_supplement_trace.md,identifier,1,"bove 7.5%, M6-M7 | Above 7.5%, Copula-AR1 | Below 2.5% | Usable (%) | U"
+manuscript/v5/MMM_v5_supplement_trace.md,d-nominal,2.5," M6-M7 | Above 7.5%, Copula-AR1 | Below 2.5% | Usable (%) | Usable, T ≤ 3"
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-T,3,"| Below 2.5% | Usable (%) | Usable, T ≤ 3 and N ≤ 25 (%) | Power (%) | "
+manuscript/v5/MMM_v5_supplement_trace.md,c-grid-N,25,"5% | Usable (%) | Usable, T ≤ 3 and N ≤ 25 (%) | Power (%) | |----|----|"

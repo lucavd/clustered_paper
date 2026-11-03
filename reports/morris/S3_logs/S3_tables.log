@@ -1,0 +1,40 @@
+There were 18 warnings (use warnings() to see them)
+Warning messages:
+1: In prettyNum(r, big.mark = big.mark, big.interval = big.interval,  :
+  'big.mark' and 'decimal.mark' are both '.', which could be confusing
+2: In prettyNum(r, big.mark = big.mark, big.interval = big.interval,  :
+  'big.mark' and 'decimal.mark' are both '.', which could be confusing
+3: In prettyNum(r, big.mark = big.mark, big.interval = big.interval,  :
+  'big.mark' and 'decimal.mark' are both '.', which could be confusing
+4: In prettyNum(r, big.mark = big.mark, big.interval = big.interval,  :
+  'big.mark' and 'decimal.mark' are both '.', which could be confusing
+5: In prettyNum(r, big.mark = big.mark, big.interval = big.interval,  :
+  'big.mark' and 'decimal.mark' are both '.', which could be confusing
+6: In prettyNum(r, big.mark = big.mark, big.interval = big.interval,  :
+  'big.mark' and 'decimal.mark' are both '.', which could be confusing
+Warning messages:
+1: In prettyNum(r, big.mark = big.mark, big.interval = big.interval,  :
+  'big.mark' and 'decimal.mark' are both '.', which could be confusing
+2: In prettyNum(r, big.mark = big.mark, big.interval = big.interval,  :
+  'big.mark' and 'decimal.mark' are both '.', which could be confusing
+Warning messages:
+1: In prettyNum(r, big.mark = big.mark, big.interval = big.interval,  :
+  'big.mark' and 'decimal.mark' are both '.', which could be confusing
+2: In prettyNum(r, big.mark = big.mark, big.interval = big.interval,  :
+  'big.mark' and 'decimal.mark' are both '.', which could be confusing
+3: In prettyNum(r, big.mark = big.mark, big.interval = big.interval,  :
+  'big.mark' and 'decimal.mark' are both '.', which could be confusing
+4: In prettyNum(r, big.mark = big.mark, big.interval = big.interval,  :
+  'big.mark' and 'decimal.mark' are both '.', which could be confusing
+5: In prettyNum(r, big.mark = big.mark, big.interval = big.interval,  :
+  'big.mark' and 'decimal.mark' are both '.', which could be confusing
+Warning messages:
+1: In prettyNum(r, big.mark = big.mark, big.interval = big.interval,  :
+  'big.mark' and 'decimal.mark' are both '.', which could be confusing
+2: In prettyNum(r, big.mark = big.mark, big.interval = big.interval,  :
+  'big.mark' and 'decimal.mark' are both '.', which could be confusing
+3: In prettyNum(r, big.mark = big.mark, big.interval = big.interval,  :
+  'big.mark' and 'decimal.mark' are both '.', which could be confusing
+4: In prettyNum(r, big.mark = big.mark, big.interval = big.interval,  :
+  'big.mark' and 'decimal.mark' are both '.', which could be confusing
+S3_results.md written: 330 lines; expectations passed 14/16

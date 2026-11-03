@@ -1,0 +1,7 @@
+run,file,done_lines,hours_last_segment,all_done_hours
+S3,results_v4/S3/run.log,2,20.0666666666667,0.3;20.07
+S6b_ns,results_v4/S6b/ns/run_progress.log,1,6.38,6.38
+S7d,results_v4/S7d/run_progress.log,1,11.51,11.51
+S7e,results_v4/S7e/run_progress.log,1,26.38,26.38
+S7d2,results_v4/S7d2/run_progress.log,1,7.98,7.98
+S7g,results_v4/S7g/run_progress.log,1,0.92,0.92

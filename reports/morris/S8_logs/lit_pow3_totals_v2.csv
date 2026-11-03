@@ -1,0 +1,3 @@
+label,design_points,datasets,usable,est_bad,se_singular,se_other,geeglm_err,share_sep_signature,share_usable
+manual,216,215012,98992,85797,29681,542,0,0.537077000353469,0.460402210109203
+mmlb,216,215012,101331,84226,28925,530,0,0.526254348594497,0.47128067270664

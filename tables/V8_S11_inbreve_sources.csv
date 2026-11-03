@@ -1,0 +1,15 @@
+sentence,file,row,value
+84 su 100 (prima 91); 28 su 100 (prima 39),tables/V5_S7f_table4.csv; results_v4/S11/tables_pre_S11.tgz:tables/V5_S7f_table4.csv,"mmm_cc, pu e pu_small","84,01; 90,89; 27,64; 39,16"
+"falsi positivi 5,3, 5,1 e 5,3; da 0,1 a 0,2 in meno","tables/V5_S7f_numbers.csv (Tabella 3, mmm), pre-step nello stesso file dell'archivio","rate GB, NAT, AR1","5,34 (5,54); 5,10 (5,23); 5,26 (5,39)"
+GEE 92 su 100; 2 scenari con 10 cluster e 2 occasioni,tables/V5_S7f_table4.csv,"gee_ar1_fg, pu e hi_all","91,90; 2"
+"12 su 61, 11 su 63; altri 71 mai",tables/V8_S11_keys.csv,"f:n11|sep|fgpt|1|2|gee_ar1_fg|k, n, n_ns, k_ns","12/61, 11/63; 34 + 37 = 71, 0 + 0"
+4 volte su 4 milioni,tables/V8_S11_keys.csv,"f:n11|sep|mmm_cc|usable_Si, usable",4; 4.014.389
+"pendenza casuale: 42 invece di 71 (T = 2), 90 invece di 98 (T = 6); intercetta: nessun cambio","tables/V5_S7f_numbers.csv, prima e dopo","v:puT|RS|mmm|2, |6; v:puT|RI|mmm|*","42,19 (71,00); 90,35 (97,78); differenze RI 0"
+"stessa distanza media 1,2 e 1,1; GEE 8 su 100 in più",tables/V5_S7f_h2h_boot.csv,"f:hb|all|mad_mmm, mad_gee, pu_gee_minus_mmm","1,18; 1,08; 7,88"
+nessuna delle 156 affermazioni cambia (soglia 10 volte più stretta o larga),tables/V8_S11_thr_summary.csv,"thr|t4cv|changed, thr|t2cv|changed, n",0; 0; 156
+"replica: 58% (prima 82%), GEE quasi sempre",tables/V5_S7f_numbers.csv,"f:s9|s37|mmm_pfail_boot, fg_pfail_boot","58,45 (82); 99,45"
+"32 rilievi: 26 corretti, 1 in parte, 1 ricalcolato, 1 spiegato, 1 ritirato, 1 non applicabile, 1 verificato",tables/V8_S11_findings_outcome.csv,colonna esito,26/1/1/1/1/1/1
+"3.376 numeri, nessuna discordanza",reports/morris/S11_logs/pipeline_final3/GB2_verify.log,GF3a,3.376; 0
+fewclust 0.4.2,MMM-package fewclust/DESCRIPTION@f05c914,Version,0.4.2
+7.969 parole; abstract 224,reports/morris/S11_logs/pipeline_final3/wordcount.log,P1; abstract words,7.969; 224
+"tempi: 35, 5, 22 minuti; 36 e 59 minuti",reports/morris/S11_logs/*.out (somma dei passi OK),pipeline_final.out 1.298 s; thr_t4cv.out 2.161 s; thr_t2cv.out 3.517 s,22; 36; 59 minuti (35 e 5 dalla catena cv e da upstream.out)

@@ -1,0 +1,3 @@
+table,rows,n_equal,max_diff,missing,reverse_missing,pass
+O_level_all (H0),12395,12395,5.27355936696949e-16,0,0,TRUE
+O_coverage_all (H1),13144,13144,1.11022302462516e-15,0,,TRUE

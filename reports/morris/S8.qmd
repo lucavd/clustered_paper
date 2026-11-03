@@ -1,0 +1,170 @@
+---
+title: "S8: revisione avversariale finale, ri-audit Morris e piano di implementazione"
+subtitle: "Roadmap Morris 2019, ramo morris-v4"
+date: 2026-11-01
+format:
+  html:
+    embed-resources: true
+    toc: true
+lang: it
+execute:
+  echo: false
+  warning: false
+---
+
+```{r setup}
+.libPaths(path.expand("~/MMM/renv/library/linux-ubuntu-noble/R-4.6/x86_64-pc-linux-gnu"))
+suppressMessages({ library(data.table); library(jsonlite) })
+REPO <- path.expand("~/MMM"); LOGS <- file.path(REPO, "reports/morris/S8_logs")
+md <- function(D) { D <- as.data.frame(D); for (j in seq_along(D)) if (is.numeric(D[[j]])) D[[j]] <- format(signif(D[[j]], 4), trim = TRUE, drop0trailing = TRUE)
+  h <- paste0("| ", paste(names(D), collapse = " | "), " |"); s <- paste0("|", paste(rep("---", ncol(D)), collapse = "|"), "|")
+  b <- apply(D, 1, function(r) paste0("| ", paste(gsub("|", "\\|", gsub("\n", " ", r), fixed = TRUE), collapse = " | "), " |")); cat(c(h, s, b, ""), sep = "\n") }
+sec <- function(file, head, level = 1) {
+  x <- readLines(file.path(REPO, file)); pat <- paste(strrep("#", level), head); i <- which(x == pat); if (!length(i)) return(""); i <- max(i)
+  nxt <- which(grepl(paste0("^", strrep("#", level), " "), x) & seq_along(x) > i); j <- if (length(nxt)) min(nxt) - 1 else length(x)
+  x <- x[(i + 1):j]; x <- x[!grepl("^\\[\\^", x)]
+  x <- gsub("\\]\\(/", "](../../docs/", gsub("\\]\\((\\.\\./)+", "](../../docs/", x))
+  gsub("\\]\\(S([0-9a-z]+)\\.md", "](../../docs/steps/S\\1.md", x) }
+rl <- function(f) fread(file.path(LOGS, f), encoding = "UTF-8")
+LOG <- rl("revisione_n2_log_S8.csv"); INV <- as.data.table(fromJSON(file.path(LOGS, "inventario_S8.json"))$rows)
+LED <- rl("ledger_S8.csv"); ARB <- rl("arbitrati_S8.csv"); PF <- rl("prev_findings_S8.csv"); ADJ <- rl("adjpower_fix_S8.csv")
+MOR <- fread(file.path(REPO, "docs/audit/MORRIS2019_conformita.csv")); MDKC <- rl("du8_table4_mdkc_avg.csv"); FLIP <- rl("disc_r2_flip_summary.csv")
+SER <- rl("s8m_r2c_lus_mmm_seratio.csv"); TIM <- rl("s8m_r3_timing.csv"); P1 <- rl("lit_pow1_pass_v2.csv"); P3 <- rl("lit_pow3_totals_v2.csv")
+DUR <- rl("dus7g1_durations_table.csv"); TS1 <- rl("s8m_r2_tableS1_cells.csv")
+acc <- readLines(file.path(LOGS, "accorciamento_S8.md"))
+g1b <- readLines(file.path(LOGS, "S8_GS1_before.log")); g1a <- readLines(file.path(LOGS, "S8_GS1_after.log")); g2 <- readLines(file.path(LOGS, "S8_GS2.log"))
+```
+
+```{r inbreve, results = "asis"}
+cat(sec("docs/steps/S8.md", "In breve"), sep = "\n")
+```
+
+# Dubbi rinviati
+
+```{r rinv, results = "asis"}
+cat(sec("docs/steps/S8.md", "Dubbi rinviati"), sep = "\n")
+```
+
+# Cancelli e previsioni
+
+Pre-registrati nel commit cc192d7, prima di ogni verifica. Le previsioni di questo step sono conteggi, senza MCSE.
+
+```{r gates, results = "asis"}
+cov_ok <- INV[, sum(iid %in% LOG$iid)]
+md(data.table(codice = c("GS1", "GS2", "GS3"), esito = c(fifelse(all(grepl("diff_vs_S7b_after=0", c(g1b, g1a[1]))), "superato", "fallito"),
+  fifelse(any(grepl("GS2 exit 0", g2)), "superato", "fallito"), fifelse(cov_ok == nrow(INV), "superato", "fallito")),
+  dettaglio = c(paste(c(g1b, g1a), collapse = " / "), grep("^GF3a", g2, value = TRUE)[1], sprintf("%d righe dell'inventario su %d con un esito; %d righe nel log", cov_ok, nrow(INV), nrow(LOG)))))
+cat(sec("docs/steps/S8.md", "Cancelli", 2), sep = "\n")
+cat(sec("docs/steps/S8.md", "Previsioni", 2), sep = "\n")
+```
+
+# Cosa e' girato
+
+- Inventario: `inventario_S8.json`, `r nrow(INV)` asserzioni (testo principale e supplemento), costruito dall'agente dal qmd prima della revisione.
+- Nove verifiche in parallelo (numeri, tabelle del supplemento, figure, metodi, citazioni, discussione, audit Morris, dubbi ricevuti, letteratura), fino a tre giri di contestazione; poi accorciamento e tre revisori del piano. Lavoro in `~/MMM_rev_S8/` sul server, `~/MMM` in sola lettura; al massimo 8 processi R insieme.
+- Esiti del log per verifica:
+
+```{r logtab, results = "asis"}
+md(dcast(LOG[, .N, by = .(track, status)], track ~ status, value.var = "N", fill = 0))
+```
+
+# Appendice
+
+## Potenza aggiustata: le cifre che cambiano
+
+```{r adj, results = "asis"}
+md(ADJ[printed_digit_changes == "yes", .(id, used_in, attuale = current_text, corretto = corrected_text_same_digits, mcse = corrected_mcse, note)])
+```
+
+## Applicazioni cliniche: rapporto fra errore standard e dispersione delle stime (coorte neonatale, modello marginalizzato)
+
+```{r ser, results = "asis"}
+md(SER[, .(N, n, tipo = fifelse(se_type == "se_rob", "robusto (stampato)", "del modello"), rapporto = ratio_fpc)])
+```
+
+Tempi misurati (seriale, tre sottocampioni per dimensione):
+
+```{r tim, results = "asis"}
+md(TIM)
+```
+
+## Intervallo del test a inversione di segno
+
+```{r flip, results = "asis"}
+md(FLIP[, .(ipotesi = fifelse(label == "mmlb", "con effetto", "senza effetto"), punti = points, test_fuori = hi_t + lo_t, intervallo_sotto_2.5 = lo_i, copertura_test = mean_cov_t, copertura_intervallo = mean_cov_i)])
+```
+
+## Stabilita' del verdetto della regola in replica
+
+```{r p1, results = "asis"}
+md(P1[strategy %in% c("gee_ar1_fg", "mmm_cc", "gee_ind_fg", "gee_exch_fg"), .(strategy, hi_obs, p_bootstrap = p_pass_boot, p_plugin = plugin_p_pass, p_contratto = eb_p_pass, flag_attesi = plugin_exp_flags)])
+```
+
+## Piccoli disegni (2-3 occasioni, al massimo 25 cluster), GEE AR(1) con Fay e Graubard
+
+```{r p3, results = "asis"}
+md(P3)
+```
+
+## Media di Mancl-DeRouen e Kauermann-Carroll
+
+```{r mdkc, results = "asis"}
+md(MDKC[, .(strategy, n_dp, hi_main, hi_m67, hi_copula, hi_all, lo_all, pu, max_rate)])
+```
+
+## Audit Morris
+
+```{r mor, results = "asis"}
+md(MOR[, .(id, requisito, esito_v8, nota_v8)])
+```
+
+## Revisione precedente: esito attuale dei 19 rilievi
+
+```{r pf, results = "asis"}
+md(PF[, .(aid, esito_attuale)][, .N, by = esito_attuale])
+```
+
+## Accorciamento
+
+```{r acc, results = "asis"}
+cat(acc[1:min(60, length(acc))], sep = "\n")
+```
+
+## Testi proposti per le decisioni
+
+Abstract proposto (200 parole):
+
+```{r abs, results = "asis"}
+cat("> ", paste(readLines(file.path(LOGS, "abstract_proposal_qmd.txt")), collapse = " "), "\n")
+```
+
+Frase proposta per 4.1 e S7 (intervallo del test a inversione di segno):
+
+```{r f41, results = "asis"}
+cat("> ", LOG[iid == "I03463" & track == "Discussione", note][1], "\n")
+```
+
+## Piano e arbitrato
+
+```{r arb, results = "asis"}
+md(LED[, .N, by = .(level, decision)])
+md(ARB[, .N, by = .(reviewer, verdict)])
+```
+
+## Da dove vengono i numeri del riassunto
+
+```{r src, results = "asis"}
+md(data.table(
+ frase = c("3.517 affermazioni", "19 punti della revisione di fine ottobre risolti", "22 cifre cambiano", "sei valori salgono di 0,4-1,3 punti", "101 situazioni su 2.376",
+   "più di metà dei dataset fallisce, quasi sempre con i segni della separazione", "58-65% contro 84-99% (modello marginalizzato), 51-58% (modello misto)", "22 punti su 28 rispettati, 1 dichiarato",
+   "una cella 0,01 invece di 0,001", "da 0,38 a 0,35", "da circa 9.900 a circa 7.800 parole; 83 frasi", "probabilità fra 0,4 e 0,9", "51 situazioni", "52 milioni di stime", "circa un minuto"),
+ fonte = c("inventario_S8.json", "prev_findings_S8.csv", "adjpower_fix_S8.csv (23 sì meno x:cc_p11)", "adjpower_fix_S8.csv, righe v:sa|*|glmer@tab e v:sa|*|shrink@tab", "disc_r2_flip_summary.csv, riga mmlb, lo_i",
+   "lit_pow3_totals_v2.csv, riga manual", "s8m_r2c_lus_mmm_seratio.csv; modello misto dal registro (f:sr|neo|GLMM|min, f:sr|neo|GLMM|max)", "docs/audit/MORRIS2019_conformita.csv, esito_v8", "s8m_r2_tableS1_cells.csv",
+   "log Metodi M094 (0,378384 e 0,352151)", "accorciamento_S8.md", "lit_pow1_pass_v2.csv, gee_ar1_fg: plugin_p_pass ed eb_p_pass", "du8_table4_mdkc_avg.csv", "dus7g1_durations_table.csv, somma di model_fits", "s8m_r3_timing.csv"),
+ valore = c(nrow(INV), sprintf("%d su %d", PF[esito_attuale %in% c("corretto", "spiegato", "deciso"), .N], nrow(PF)), ADJ[printed_digit_changes == "yes" & id != "x:cc_p11", .N],
+   sprintf("%.1f-%.1f", min(abs(ADJ[grepl("^v:sa\\|", id) & grepl("glmer@tab|shrink@tab", id), corrected_value - current_value])), max(abs(ADJ[grepl("^v:sa\\|", id) & grepl("glmer@tab|shrink@tab", id), corrected_value - current_value]))),
+   FLIP[label == "mmlb", lo_i], sprintf("falliti %.1f%%; firme %.1f%% dei falliti", 100 * (1 - P3[label == "manual", share_usable]), 100 * P3[label == "manual", (est_bad + se_singular) / (datasets - usable)]),
+   sprintf("del modello %.2f-%.2f; robusto %.2f-%.2f", SER[se_type == "se_mod", min(ratio_fpc)], SER[se_type == "se_mod", max(ratio_fpc)], SER[se_type == "se_rob", min(ratio_fpc)], SER[se_type == "se_rob", max(ratio_fpc)]),
+   sprintf("Conforme %d, Dichiarato %d, su %d", MOR[esito_v8 == "Conforme", .N], MOR[esito_v8 == "Dichiarato", .N], nrow(MOR)), "vedi tabella", "0,378 -> 0,352", grep("7.824|7,824", acc, value = TRUE)[1],
+   sprintf("%.2f-%.2f", P1[strategy == "gee_ar1_fg", plugin_p_pass], P1[strategy == "gee_ar1_fg", eb_p_pass]), sprintf("%d (AR(1)) e %d (scambiabile)", MDKC[strategy == "gee_ar1_avgvar", hi_all], MDKC[strategy == "gee_exch_avgvar", hi_all]), format(DUR[, sum(model_fits)], big.mark = "."), "vedi tabella dei tempi")))
+```

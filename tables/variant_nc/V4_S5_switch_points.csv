@@ -1,0 +1,4 @@
+mech,switch_v4,claimed,p_claimed,modal_switch,p_modal,next_v4,p_next_md,wc_argmax_distinctN
+GB,25,35,0,25,1,gee_fg,0.0485,15
+NAT,25,45,0,25,1,gee_md,0.973,15
+AR1,25,45,0,25,1,gee_fg,0.007,15

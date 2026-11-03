@@ -1,0 +1,86 @@
+---
+title: "S8b: attuazione della revisione finale, accorciamento, secondo passaggio del revisore n.2 e revisione di stile"
+subtitle: "Roadmap Morris 2019, ramo morris-v4"
+date: 2026-11-01
+format:
+  html:
+    embed-resources: true
+    toc: true
+lang: it
+execute:
+  echo: false
+  warning: false
+---
+
+```{r setup}
+.libPaths(path.expand("~/MMM/renv/library/linux-ubuntu-noble/R-4.6/x86_64-pc-linux-gnu"))
+suppressMessages({ library(data.table) })
+REPO <- path.expand("~/MMM"); LOGS <- file.path(REPO, "reports/morris/S8b_logs")
+md <- function(D) { D <- as.data.frame(D); for (j in seq_along(D)) if (is.numeric(D[[j]])) D[[j]] <- format(signif(D[[j]], 4), trim = TRUE, drop0trailing = TRUE)
+  h <- paste0("| ", paste(names(D), collapse = " | "), " |"); s <- paste0("|", paste(rep("---", ncol(D)), collapse = "|"), "|")
+  b <- apply(D, 1, function(r) paste0("| ", paste(gsub("|", "\\|", gsub("\n", " ", r), fixed = TRUE), collapse = " | "), " |")); cat(c(h, s, b, ""), sep = "\n") }
+sec <- function(file, head, level = 1) {
+  x <- readLines(file.path(REPO, file)); pat <- paste(strrep("#", level), head); i <- which(x == pat); if (!length(i)) return(""); i <- max(i)
+  nxt <- which(grepl(paste0("^", strrep("#", level), " "), x) & seq_along(x) > i); j <- if (length(nxt)) min(nxt) - 1 else length(x)
+  x <- x[(i + 1):j]; gsub("\\]\\(\\.\\./", "](../../docs/", x) }
+ATT <- fread(file.path(LOGS, "attuazione_S8b.csv")); REV <- fread(file.path(LOGS, "revisione_n2_S8b2_log.csv"))
+MOR <- fread(file.path(REPO, "docs/audit/MORRIS2019_conformita.csv")); STY <- fread(file.path(LOGS, "style_S8b_changes.csv"))
+wc <- readLines(file.path(LOGS, "pipeline/wordcount.log")); g1b <- readLines(file.path(LOGS, "S8b_GB1_before.log")); g1a <- readLines(file.path(LOGS, "S8b_GB1_after.log"))
+g2 <- readLines(file.path(LOGS, "pipeline/GB2_verify.log")); gf2 <- readLines(file.path(LOGS, "pipeline/GF2.log")); gf4 <- readLines(file.path(LOGS, "pipeline/GF4.log")); gf4s <- readLines(file.path(LOGS, "pipeline/GF4_supp.log"))
+```
+
+```{r inbreve, results = "asis"}
+cat(sec("docs/steps/S8b.md", "In breve"), sep = "\n")
+```
+
+# Cancelli e previsioni
+
+Pre-registrati nel commit 57598ee, prima di ogni calcolo. Righe dei log alla chiusura:
+
+```{r logs, results = "asis"}
+md(data.table(log = c("GB1 prima", "GB1 dopo", "GF3a registro", "GF2", "GF4 testo", "GF4 supplemento", "parole"),
+  riga = c(g1b[1], g1a[1], grep("^GF3a", g2, value = TRUE)[1], grep("^GF2:", gf2, value = TRUE)[1], gf4[1], gf4s[1], wc[1])))
+cat(sec("docs/steps/S8b.md", "Esiti (2026-11-01)"), sep = "\n")
+```
+
+# Attuazione del piano (64 voci)
+
+```{r att, results = "asis"}
+md(ATT[, .N, by = esito])
+md(ATT[esito != "fatta", .(id, esito, nota)])
+```
+
+# Secondo passaggio del revisore n.2
+
+```{r rev, results = "asis"}
+md(REV[, .N, by = .(track, status)][order(track, status)])
+md(REV[status != "PASS", .(id, track, location, status, severity, azione = azione_S8b)])
+```
+
+# Requisiti di Morris
+
+```{r mor, results = "asis"}
+md(MOR[, .N, by = .(esito_S8b)])
+md(MOR[id %in% c("B1", "C2", "E1", "F4", "H2"), .(id, requisito, esito_v8, esito_S8b, evidenza_S8b)])
+```
+
+# Revisione di stile
+
+```{r sty, results = "asis"}
+md(STY)
+cat(readLines(file.path(LOGS, "style_S8b_flags.md"))[-1], sep = "\n")
+```
+
+# Dubbi rinviati
+
+```{r rinv, results = "asis"}
+cat(sec("docs/steps/S8b.md", "Dubbi rinviati"), sep = "\n")
+```
+
+# Appendice: da dove vengono i numeri del riassunto
+
+```{r fonti, results = "asis"}
+md(data.table(frase = c("8.111 parole contate", "cinque affermazioni senza sostegno", "sei fonti lette per intero", "tre errori nella catena", "voci con esito", "requisiti di Morris"),
+  fonte = c("reports/morris/S8b_logs/pipeline/wordcount.log, riga P1", "revisione_n2_S8b2_log.csv, righe con severity blocking", "revisione_n2_S8b2_log.csv, righe CIT-07, CIT-08, CIT-13, D45-01 (azione) e PDF in Zotero", "decisioni D-73, D-74, D-75", "attuazione_S8b.csv, colonna esito", "docs/audit/MORRIS2019_conformita.csv, colonna esito_S8b"),
+  valore = c(wc[1], REV[severity == "blocking", .N], 6, 3, paste(capture.output(print(ATT[, .N, by = esito])), collapse = " "), paste(capture.output(print(MOR[, .N, by = esito_S8b])), collapse = " "))))
+```

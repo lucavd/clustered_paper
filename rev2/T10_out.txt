@@ -1,0 +1,22 @@
+repliche discordanti (autori non usable, mio usable): 135, 185, 186, 249, 305, 313, 498 
+Key: <rep>
+     rep  u_aut    se_aut  u_mio    se_mio status
+   <int> <lgcl>     <num> <lgcl>     <num> <char>
+1:   135  FALSE 0.7592073   TRUE 0.7592073     ok
+2:   185  FALSE 0.6369655   TRUE 0.6369655     ok
+3:   186  FALSE 1.2331367   TRUE 1.2331367     ok
+4:   249  FALSE 0.6263836   TRUE 0.6263836     ok
+5:   305  FALSE 0.8209510   TRUE 0.8209510     ok
+6:   313  FALSE 0.8888019   TRUE 0.8888019     ok
+7:   498  FALSE 0.8714448   TRUE 0.8714448     ok
+
+=== per ciascuna: il base geeglm converge con e senza scale.fix? ===
+rep 135: scale.fix=TRUE ok | scale.fix libero ok | livelli invasive 2, disease 4
+rep 185: scale.fix=TRUE ok | scale.fix libero ok | livelli invasive 2, disease 3
+rep 186: scale.fix=TRUE ok | scale.fix libero ok | livelli invasive 2, disease 4
+rep 249: scale.fix=TRUE ok | scale.fix libero ok | livelli invasive 2, disease 3
+rep 305: scale.fix=TRUE ok | scale.fix libero ok | livelli invasive 2, disease 3
+rep 313: scale.fix=TRUE ok | scale.fix libero ok | livelli invasive 2, disease 4
+rep 498: scale.fix=TRUE ok | scale.fix libero ok | livelli invasive 2, disease 4
+
+DONE_T10

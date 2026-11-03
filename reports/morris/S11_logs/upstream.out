@@ -1,0 +1,12 @@
+OK   s9_ns_tables 12 s
+OK   s7b_df 80 s
+OK   s7b_null 1 s
+OK   s7d_agg 120 s
+OK   s7e_agg 97 s
+OK   s7e_summary 2 s
+FAIL s11_cc_cells (see reports/morris/S11_logs/upstream/s11_cc_cells.log)
+reproduction of the stored table with the variant cc: FALSE 
+Error: rep_ok is not TRUE
+Execution halted
+OK   s11_cc_cells
+OK   s11_cc_shares

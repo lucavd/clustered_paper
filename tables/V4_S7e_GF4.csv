@@ -1,0 +1,5 @@
+part,n,n_mismatch,max_abs_diff,pass
+b: study GEE exch = added GEE exch,959506,0,0,TRUE
+b: MMM fit A = study MMM (M3-M5),559769,0,0,TRUE
+"c: geesmv = fewclust MD (ind, 1-50)",44026,0,2.54551935086056e-12,TRUE
+"c: geesmv = fewclust FG (ind, 1-50)",44050,0,1.27586829989923e-12,TRUE

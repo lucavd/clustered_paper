@@ -1,0 +1,118 @@
+---
+title: "S3: rerun correttivo e scenario ancorato alla coorte"
+subtitle: "Roadmap Morris 2019, ramo morris-v4"
+date: 2026-10-17
+format:
+  html:
+    embed-resources: true
+    toc: true
+lang: it
+execute:
+  echo: false
+  warning: false
+---
+
+```{r setup}
+.libPaths(path.expand("~/MMM/renv/library/linux-ubuntu-noble/R-4.6/x86_64-pc-linux-gnu"))
+suppressMessages({ library(data.table); library(ggplot2) })
+REPO <- path.expand("~/MMM")
+m5 <- function(f) unname(tools::md5sum(file.path(REPO, f)))
+```
+
+## In breve (TL;DR) {.unnumbered}
+
+::: {.callout-note appearance="simple"}
+**Domanda.** Rifare solo le parti della simulazione che S1 e S2 hanno trovato difettose, senza rompere l'accoppiamento con i run originali (stessi semi).
+
+**Cosa abbiamo fatto.** 18.720 nuovi chunk in 20,1 ore su 50 core: H0 corretto per GenBinaryY M3-M5, GLMM-AR1 M5 corretto, LRT del GLMM con la struttura casuale giusta in M3-M5, nuovo scenario M1c ancorato alla coorte.
+
+**Risultato.** Run completo, zero errori. I semi sono intatti: il codice originale riproduce 300/300 replicati bit per bit e la GEE rieseguita coincide in 12.480/12.480 chunk. Ora tutti i 18 generatori differiscono fra H0 e H1 solo nell'effetto testato, e M1c ha la prevalenza della coorte (circa 0,59). 14 attese su 16 superate.
+
+**Due sorprese.**
+
+- **LRT e Wald del glmer non sempre concordano**, anche ora che sono lo stesso modello: nei fit singolari (M5) o con pochi cluster i due ottimizzatori si fermano in punti diversi (concordanza minima 0,61 contro il 95% atteso). Quindi il Wald glmer con le opzioni di default non sempre trova il massimo. In S4 si aggiunge una sensibilita' "Wald bobyqa", senza nuovi run (D-16).
+- **Il LRT corretto e' molto meno liberale.** In GenBinaryY M3-M4 sotto H0 il suo errore di I tipo scende in media di 4,6 punti percentuali. L'attesa Q9 mescolava le due correzioni ed era formulata male (D-17). Per gli altri 7 metodi la correzione GenBinaryY non cambia nulla (1.184 su 1.185 confronti entro 3 MCSE).
+
+**Cosa cambia per il paper.** Il `glmer_lrt` del v3 era troppo liberale, almeno in GenBinaryY M3-M4; l'effetto sull'intera griglia si misura in S4.
+
+**Prossimo passo.** Ok del PI su questo report, poi S4 (riaggregazione con MCSE).
+:::
+
+## 1. Pre-registrazione
+
+Attese Q0-Q10 scritte in `docs/sessions/2026-10-16_S3.md` e committate **prima** di qualsiasi calcolo dello step: commit `b380452`, 2026-10-16 14:18:48 +0200. Nello stesso commit: D-14 (parametri di M1c: intercetta marginale calibrata per T sull'arm H0; in AR1 D = 3,545 con AR(1) sommato sopra, scelte del PI in chat), D-15 (struttura dei chunk, tecnica) e protocollo v1.5. Requisiti Morris toccati: B3, B4, B6, E3, D1.
+
+Perimetro fissato in apertura dal codice e da D-08: 18.720 chunk in quattro blocchi, F1 (GenBinaryY M3-M5 H0, 2.880), F2 (GLMM-AR1 M5, 1.920), L (solo LRT v4 piu' `gee` di controllo nel resto di M3-M5, 12.480), C (M1c, 1.440). La roadmap stimava 6.240 chunk e 8-10 h: il blocco L discende da D-08 e non era nella stima. Il testo completo delle attese e' nella nota di sessione e non e' stato modificato dopo i risultati.
+
+## 2. Esecuzione
+
+Tutto su lesexp-server, R 4.6.1, `Rscript --vanilla`, libreria `renv/library/linux-ubuntu-noble/R-4.6` (isolata con `R_LIBS_USER=/nonexistent`), RNGkind `L'Ecuyer-CMRG, Inversion, Rejection` impostato prima di ogni `set.seed()` (D-07), schema dei semi invariato (`20260805 + 1000 model + i`; M1c usa i semi di M1).
+
+| script | parte | output principali |
+|---|---|---|
+| `R/s3/s3_build_v4_code.R` | costruisce `R/v4/rundir/` da `.rundir/` con asserzione su ogni riga modificata: D-01 (corpo identico alle copie del pilota S2), D-02, D-08, generatori M1c (`R/v4/src/`) | `R/v4/rundir_md5.txt` |
+| `R/s3/s3_common.R` | replicato come `run_full.R` (seme, generazione, analisi, nulla in mezzo) piu' tracce di fallimento (E3), `design_degenerate` (D-11), identita' del disegno | |
+| `R/testing/test_h0h1_parity.R` | Q1, Q2 | `tables/V4_S3_parity_v4.csv`, `V4_S3_parity_orig.csv`, `V4_S3_q2_d02.csv` |
+| `R/s3/s3_q3_bench.R` | Q3 | `tables/V4_S3_q3_bench.csv` |
+| `R/s3/s3_q10_m1c.R` | Q10 | `tables/V4_S3_m1c_calibration.csv`, `V4_S3_m1c_prevalence.csv`, `V4_S3_m1c_constants.csv` |
+| `R/s3/run_s3.R` | run di produzione, crew 50 worker, ripartibile | `results_v4/S3/{F1,F2,L,C}/` (18.720 RDS) |
+| `R/s3/s3_checks_post.R` | Q4-Q9 | `tables/V4_S3_chunk_checks.csv`, `V4_S3_post_checks.rds`, `V4_S3_q7_*.csv`, `V4_S3_q8_*.csv`, `V4_S3_q9_*.csv` |
+| `R/s3/s3_inv_q8.R` | indagine esplorativa su Q8b | `tables/V4_S3_q8_investigation.csv` |
+| `R/s3/s3_tables.R` | tabelle di questo report | `reports/morris/S3_results.md`, `tables/V4_S3_expectations.csv` |
+
+Commit del codice eseguito: `f53184c`. Pilota di tempo: 13 chunk reali in 17,9 min. Run di produzione: 2026-10-16 14:49 - 2026-10-17 10:53, 18.707 chunk (i 13 del pilota erano gia' scritti), 0 errori, 1.204,0 min (log in `reports/morris/S3_logs/S3_run.log`). La durata prevista dal pilota (16-18 h) e' stata rivista a meta' run a circa 23-24 h; quella osservata e' 20,1 h.
+
+```{r md5}
+md5tab <- data.table(file = c("baseline/results_full_md5.txt", "baseline/results_v4_S2_md5.txt", "baseline/results_v4_S3_md5.txt", "R/v4/rundir_md5.txt"),
+                     ruolo = c("input, sola lettura (28.800 chunk)", "input S2 (126 file)", "output S3 (18.720 chunk)", "codice v4 eseguito"))
+md5tab[, righe := vapply(file, function(f) length(readLines(file.path(REPO, f))), 0L)][, md5 := m5(file)]
+knitr::kable(md5tab)
+```
+
+**Correzioni durante lo step.** Tutte riguardano strumenti di costruzione o di controllo; nessuna ha cambiato un'attesa, una misura o il codice di generazione e analisi.
+
+1. `s3_build_v4_code.R`: l'asserzione sulle righe da modificare usava `identical()`, ma la riga 35 di `generation_model4.R` ha un commento in coda. Sostituita con `startsWith()`, la stessa regola del pilota S2; il controllo successivo conferma che i corpi di `generation_model3-5.R` coincidono con `R/s2/pilot_gen/`.
+2. Q0, primo controllo: `md5sum -c` lanciato dalla radice del repo, mentre i manifest hanno percorsi relativi a `results_full/` e `results_v4/`; tutti i file risultavano "non leggibili". Rilanciato dalle cartelle giuste: 28.800/28.800 e 126/126 OK.
+3. `test_h0h1_parity.R`: un `else` a capo (errore di sintassi), poi l'arresto su un disegno degenere in AR1 (la calibrazione fallisce, come in S2; gli argomenti sono registrati prima, quindi la chiamata e' protetta con `tryCatch`), poi la gestione di `gen_ar1_data` non raggiunto. Nessun esito prodotto prima delle correzioni.
+4. `s3_checks_post.R`: nella prova a secco sul pilota, somme per blocco senza `na.rm`; nel primo run completo **Q5 dava 0/12.480** perche' `identical()` confrontava `sim_id` integer (v4) con numeric (`results_full/`). Su un chunk di prova estimate, se, p, stat, status e converged erano identici (differenza massima 0); confronto rifatto con `as.integer()`: 12.480/12.480. Il log del primo run resta in `S3_logs/S3_post_checks_run1.log`.
+5. `s3_tables.R`: `data.table(key = )` e' un argomento riservato; separatori numerici in conflitto.
+
+## 3. Esito
+
+{{< include S3_results.md >}}
+
+```{r fig-q9, fig.width = 7, fig.height = 3.6}
+q9 <- fread(file.path(REPO, "tables/V4_S3_q9_h0_paired.csv"))[model %in% 3:4 & mcse_d_t1 > 0]
+q9[, gruppo := ifelse(method == "glmer_lrt", "glmer_lrt (D-01 + D-08)", "altri 7 metodi (solo D-01)")]
+ggplot(q9, aes(z_t1)) + geom_histogram(binwidth = 0.5, boundary = 0) + geom_vline(xintercept = c(-3, 3), linetype = 2) +
+  facet_wrap(~ gruppo, scales = "free_y") + labs(x = "z of the paired type I error difference (v4 H0 - original H0)", y = "cell x method") + theme_bw()
+```
+
+*Cosa guardare*: a destra la distribuzione dei z degli altri metodi, centrata su 0 e quasi tutta dentro +/- 3; a sinistra lo spostamento di `glmer_lrt`, dovuto al cambio di struttura casuale. *Segnale d'errore*: uno spostamento sistematico anche negli altri metodi, che indicherebbe un effetto di D-01 non atteso o un difetto del confronto appaiato.
+
+### Come leggere le tabelle
+
+- **Tabella E.** Cosa guardare: la colonna "superato". *Segnale d'errore*: un "si" la cui colonna "osservato" contraddice la tolleranza.
+- **E1.** Cosa guardare: v4 differisce solo nel coefficiente testato in tutte le 18 righe; l'originale differisce in sigma (e gamma) solo in GenBinaryY M3-M5. *Segnale d'errore*: una differenza in altri argomenti, o una riga AR1 in cui cambia la D.
+- **E2-E3.** Cosa guardare: beta0(T) decrescente con T e prevalenze H0 vicine a 0,5945 (0,589 in GLMM-native). *Segnale d'errore*: |z| > 3 in E3, o una prevalenza AR1 che deriva con T.
+- **E4.** Cosa guardare: chunk scritti = attesi e errori di generazione solo in F2, L (AR1) e C. *Segnale d'errore*: errori in GenBinaryY o GLMM-native, dove S2 non ne aveva.
+- **E5 e E5b.** Cosa guardare: la quota per M5 e la colonna "singolare" fra i discordanti; "stessi theta" = n verifica D-08. *Segnale d'errore*: un LRT con meno parametri di varianza del Wald.
+- **E6 e E6b.** Cosa guardare: superamenti concentrati in `glmer_lrt`. *Segnale d'errore*: superamenti diffusi negli altri metodi.
+
+### Attese non superate
+
+- **Q8b** (|LRT - Wald| < 1e-3 in almeno il 95% delle coppie senza warning): non superata in 6 righe su 12 (GenBinaryY M3 0,944, M4 0,948, M5 0,608; GLMM-AR1 M5 0,760; GLMM-native M5 0,787; GenBinaryY M1c 0,950). Causa, dall'indagine E5b: i due fit sono lo stesso modello (stesso numero di parametri di varianza in 400/400, quindi D-08 e' applicato) e le stime salvate si riproducono 400/400; le discordanze sono fit singolari (M5 60/60 nei tre meccanismi) o superfici piatte con pochi cluster (M1c), dove i due ottimizzatori si fermano in punti diversi. Nei discordanti di M5 `bobyqa` (LRT) raggiunge una log-verosimiglianza piu' alta del Wald (ottimizzatore di default) in 28-35 casi su 60; in M1c GenBinaryY il Wald e' piu' alto in 32/60. Il criterio presupponeva che due ottimizzatori diversi trovassero lo stesso massimo: questo non vale per una quota non trascurabile dei fit. Conseguenza per S4 e S7: la stima del Wald `glmer` con le opzioni di default non e' sempre al massimo della verosimiglianza di Laplace.
+- **Q9** (differenza appaiata entro 3 MCSE in almeno il 99% delle combinazioni, M3-M4): I tipo 0,883, quota usabile 0,989. Causa: il confronto per `glmer_lrt` misura D-01 e D-08 insieme, perche' in F1 il LRT usa ora le pendenze casuali; 156 dei 157 superamenti di I tipo sono di `glmer_lrt` (differenza media -0,046). Senza `glmer_lrt` i valori sono in E6b. L'attesa era formulata male: non separava i due cambiamenti. L'effetto di D-01 si legge sui 7 metodi restanti, dove resta un superamento su 1.185 (I tipo) e uno su 454 (quota usabile); lo spostamento di `glmer_lrt` e' l'effetto di D-08 e si quantifica in S4.
+
+## 4. Controprova
+
+Il test che smentirebbe lo step e' Q3 insieme a Q5: se lo schema dei semi o l'RNGkind fossero stati alterati, il banco con il codice originale non riprodurrebbe `results_full/` (300/300 bit per bit) e la `gee` rieseguita nei 12.480 chunk L non coinciderebbe con quella originale (12.480/12.480, 5.277.866 righe). La controprova degli strumenti di parita' e' la riga "originale" di E1: lo stesso test, sui generatori originali, trova esattamente le tre violazioni note da S1 (P2).
+
+## Verdetto
+
+**Chiuso.** Il rerun e' completo (18.720/18.720 chunk, zero errori), lo schema dei semi e' intatto (Q3, Q5), la parita' H0/H1 vale in tutti i 18 generatori (Q1), D-02 e D-08 sono applicati (Q2, Q8a), i fallimenti sono registrati con il motivo e cadono solo sui disegni degeneri di S2 (Q6, Q7), M1c e' calibrato come pre-registrato (Q10). Due attese non superate, decise dal PI in chat il 2026-10-17:
+
+- **Q8b, D-16**: si dichiara in S7 che il Wald `glmer` usa le opzioni di default di lme4 e che sui fit singolari o piatti non sempre raggiunge il massimo; in S4 si aggiunge la sensibilita' "Wald bobyqa" con stima e SE gia' salvati nelle righe `glmer_lrt` (modello completo con bobyqa), senza nuovi run.
+- **Q9, D-17**: attesa formulata male (confondeva D-01 e D-08 per `glmer_lrt`); registrata come tale. Nessun run aggiuntivo.
+
+Requisiti Morris aggiornati in `docs/audit/MORRIS2019_conformita.csv`: B3 e B4 risolti nei dati (testo in S7), E3 risolto nei dati (registrazione dei fallimenti), D1 avanzato (struttura del LRT; opzioni del Wald da dichiarare, D-16), B6 avanzato (scenario M1c generato; confronto in S4-S7).

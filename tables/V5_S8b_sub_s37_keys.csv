@@ -1,0 +1,98 @@
+key,value,mcse,kind,source,how
+s37|rank_same|table4,1,"",int,tables/V5_S8b_rule_stability.csv,1 = identical ordering by expected flags in the three calculations (table4 strategies)
+s37|rule_top2|table4,1,"",int,tables/V5_S8b_rule_stability.csv,1 = gee_ar1_fg and mmm_cc have the fewest expected flags in all three (table4)
+s37|rank_same|file,0,"",int,tables/V5_S8b_rule_stability.csv,1 = identical ordering by expected flags in the three calculations (file strategies)
+s37|rule_top2|file,1,"",int,tables/V5_S8b_rule_stability.csv,1 = gee_ar1_fg and mmm_cc have the fewest expected flags in all three (file)
+s37|rank_same_ppass,0,"",int,tables/V5_S8b_rule_stability.csv,1 = identical ordering by P(zero flags) in the three calculations (Table 4 rows)
+s37|mmm_cc|hi_obs,0,"",int,tables/V5_S8b_rule_stability.csv,observed design points clearly above 7.5% (Table 4)
+s37|mmm_cc|p_pass_boot,41.55,1.10195224488178,sig2,tables/V5_S8b_rule_stability.csv,% of 2000 block-bootstrap resamples with zero flags
+s37|mmm_cc|mean_flags_boot,0.86,"",sig2,tables/V5_S8b_rule_stability.csv,mean number of flags over the resamples
+s37|mmm_cc|q90_flags_boot,2,"",int,tables/V5_S8b_rule_stability.csv,90th percentile of the number of flags over the resamples
+s37|mmm_cc|plugin_p_pass,41.8023343339868,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: P(zero flags) (%)"
+s37|mmm_cc|plugin_exp_flags,0.84307534156183,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: expected flags"
+s37|mmm_cc|eb_p_pass,88.2364025380302,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: P(zero flags) (%)"
+s37|mmm_cc|eb_exp_flags,0.124473606957808,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: expected flags"
+s37|gee_ar1_fg|hi_obs,2,"",int,tables/V5_S8b_rule_stability.csv,observed design points clearly above 7.5% (Table 4)
+s37|gee_ar1_fg|p_pass_boot,0.55,0.165374574829385,sig2,tables/V5_S8b_rule_stability.csv,% of 2000 block-bootstrap resamples with zero flags
+s37|gee_ar1_fg|mean_flags_boot,3.7325,"",sig2,tables/V5_S8b_rule_stability.csv,mean number of flags over the resamples
+s37|gee_ar1_fg|q90_flags_boot,6,"",int,tables/V5_S8b_rule_stability.csv,90th percentile of the number of flags over the resamples
+s37|gee_ar1_fg|plugin_p_pass,0.583619251941559,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: P(zero flags) (%)"
+s37|gee_ar1_fg|plugin_exp_flags,3.66852514618667,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: expected flags"
+s37|gee_ar1_fg|eb_p_pass,86.0549714476605,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: P(zero flags) (%)"
+s37|gee_ar1_fg|eb_exp_flags,0.149375998872453,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: expected flags"
+s37|gee_ind_fg|hi_obs,5,"",int,tables/V5_S8b_rule_stability.csv,observed design points clearly above 7.5% (Table 4)
+s37|gee_ind_fg|p_pass_boot,0.05,0.0499874984371093,sig2,tables/V5_S8b_rule_stability.csv,% of 2000 block-bootstrap resamples with zero flags
+s37|gee_ind_fg|mean_flags_boot,5.744,"",sig2,tables/V5_S8b_rule_stability.csv,mean number of flags over the resamples
+s37|gee_ind_fg|q90_flags_boot,8,"",int,tables/V5_S8b_rule_stability.csv,90th percentile of the number of flags over the resamples
+s37|gee_ind_fg|plugin_p_pass,0.0370871535875687,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: P(zero flags) (%)"
+s37|gee_ind_fg|plugin_exp_flags,5.61209477552686,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: expected flags"
+s37|gee_ind_fg|eb_p_pass,41.4185313708211,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: P(zero flags) (%)"
+s37|gee_ind_fg|eb_exp_flags,0.818081859129488,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: expected flags"
+s37|gee_exch_fg|hi_obs,15,"",int,tables/V5_S8b_rule_stability.csv,observed design points clearly above 7.5% (Table 4)
+s37|gee_exch_fg|p_pass_boot,0,0,sig2,tables/V5_S8b_rule_stability.csv,% of 2000 block-bootstrap resamples with zero flags
+s37|gee_exch_fg|mean_flags_boot,17.289,"",sig2,tables/V5_S8b_rule_stability.csv,mean number of flags over the resamples
+s37|gee_exch_fg|q90_flags_boot,21,"",int,tables/V5_S8b_rule_stability.csv,90th percentile of the number of flags over the resamples
+s37|gee_exch_fg|plugin_p_pass,2.21132353451744e-09,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: P(zero flags) (%)"
+s37|gee_exch_fg|plugin_exp_flags,17.2763261305921,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: expected flags"
+s37|gee_exch_fg|eb_p_pass,0.331167622983101,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: P(zero flags) (%)"
+s37|gee_exch_fg|eb_exp_flags,5.0161159746427,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: expected flags"
+s37|gee_ar1_md|hi_obs,20,"",int,tables/V5_S8b_rule_stability.csv,observed design points clearly above 7.5% (Table 4)
+s37|gee_ar1_md|p_pass_boot,0,0,sig2,tables/V5_S8b_rule_stability.csv,% of 2000 block-bootstrap resamples with zero flags
+s37|gee_ar1_md|mean_flags_boot,28.0975,"",sig2,tables/V5_S8b_rule_stability.csv,mean number of flags over the resamples
+s37|gee_ar1_md|q90_flags_boot,33,"",int,tables/V5_S8b_rule_stability.csv,90th percentile of the number of flags over the resamples
+s37|gee_ar1_md|plugin_p_pass,1.00661026521935e-19,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: P(zero flags) (%)"
+s37|gee_ar1_md|plugin_exp_flags,28.1461653636707,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: expected flags"
+s37|gee_ar1_md|eb_p_pass,4.48936613159863e-05,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: P(zero flags) (%)"
+s37|gee_ar1_md|eb_exp_flags,10.8470673036657,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: expected flags"
+s37|gee_exch_md|hi_obs,63,"",int,tables/V5_S8b_rule_stability.csv,observed design points clearly above 7.5% (Table 4)
+s37|gee_exch_md|p_pass_boot,0,0,sig2,tables/V5_S8b_rule_stability.csv,% of 2000 block-bootstrap resamples with zero flags
+s37|gee_exch_md|mean_flags_boot,73.286,"",sig2,tables/V5_S8b_rule_stability.csv,mean number of flags over the resamples
+s37|gee_exch_md|q90_flags_boot,80,"",int,tables/V5_S8b_rule_stability.csv,90th percentile of the number of flags over the resamples
+s37|gee_exch_md|plugin_p_pass,1.07573062106887e-83,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: P(zero flags) (%)"
+s37|gee_exch_md|plugin_exp_flags,73.6164895944358,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: expected flags"
+s37|gee_exch_md|eb_p_pass,4.54301375198004e-46,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: P(zero flags) (%)"
+s37|gee_exch_md|eb_exp_flags,48.8559953817725,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: expected flags"
+s37|gee_ar1_kc|hi_obs,138,"",int,tables/V5_S8b_rule_stability.csv,observed design points clearly above 7.5% (Table 4)
+s37|gee_ar1_kc|p_pass_boot,0,0,sig2,tables/V5_S8b_rule_stability.csv,% of 2000 block-bootstrap resamples with zero flags
+s37|gee_ar1_kc|mean_flags_boot,141.8045,"",sig2,tables/V5_S8b_rule_stability.csv,mean number of flags over the resamples
+s37|gee_ar1_kc|q90_flags_boot,149,"",int,tables/V5_S8b_rule_stability.csv,90th percentile of the number of flags over the resamples
+s37|gee_ar1_kc|plugin_p_pass,8.36884410805793e-200,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: P(zero flags) (%)"
+s37|gee_ar1_kc|plugin_exp_flags,142.13536972714,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: expected flags"
+s37|gee_ar1_kc|eb_p_pass,1.40284498977544e-123,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: P(zero flags) (%)"
+s37|gee_ar1_kc|eb_exp_flags,109.5389991272,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: expected flags"
+s37|gee_exch_kc|hi_obs,207,"",int,tables/V5_S8b_rule_stability.csv,observed design points clearly above 7.5% (Table 4)
+s37|gee_exch_kc|p_pass_boot,0,0,sig2,tables/V5_S8b_rule_stability.csv,% of 2000 block-bootstrap resamples with zero flags
+s37|gee_exch_kc|mean_flags_boot,208.423,"",sig2,tables/V5_S8b_rule_stability.csv,mean number of flags over the resamples
+s37|gee_exch_kc|q90_flags_boot,217,"",int,tables/V5_S8b_rule_stability.csv,90th percentile of the number of flags over the resamples
+s37|gee_exch_kc|plugin_p_pass,0,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: P(zero flags) (%)"
+s37|gee_exch_kc|plugin_exp_flags,208.715763968407,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, observed rates: expected flags"
+s37|gee_exch_kc|eb_p_pass,0,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: P(zero flags) (%)"
+s37|gee_exch_kc|eb_exp_flags,179.976224223816,"",sig2,tables/V5_S8b_rule_stability.csv,"binomial plug-in, empirical-Bayes rates: expected flags"
+s37|mmm_cc|p_pass_boot|disp,42,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|mmm_cc|plugin_p_pass|disp,42,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|mmm_cc|eb_p_pass|disp,88,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_ar1_fg|p_pass_boot|disp,0.5,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_ar1_fg|plugin_p_pass|disp,0.6,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_ar1_fg|eb_p_pass|disp,86,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_ind_fg|p_pass_boot|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_ind_fg|plugin_p_pass|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_ind_fg|eb_p_pass|disp,41,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_exch_fg|p_pass_boot|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_exch_fg|plugin_p_pass|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_exch_fg|eb_p_pass|disp,0.3,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_ar1_md|p_pass_boot|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_ar1_md|plugin_p_pass|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_ar1_md|eb_p_pass|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_exch_md|p_pass_boot|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_exch_md|plugin_p_pass|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_exch_md|eb_p_pass|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_ar1_kc|p_pass_boot|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_ar1_kc|plugin_p_pass|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_ar1_kc|eb_p_pass|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_exch_kc|p_pass_boot|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_exch_kc|plugin_p_pass|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|gee_exch_kc|eb_p_pass|disp,< 0.1,"",text,tables/V5_S8b_rule_stability.csv,"display of the percentage: '< 0.1' below 0.1, else 1 decimal below 10 and 0 decimals from 10"
+s37|B,2000,"",int,R/s8b/provenance/lit_pow_rule_stability_v2.R,block-bootstrap resamples
+s37|nrows,8,"",int,tables/V5_S8b_rule_stability.csv,strategies of Table 4 in the stability file
+s37|fg_pfail_boot,99.45,"",sig2,tables/V5_S8b_rule_stability.csv,"% of resamples with at least one flag, GEE AR(1) FG"
+s37|mmm_pfail_boot,58.45,"",sig2,tables/V5_S8b_rule_stability.csv,"% of resamples with at least one flag, MMM with check"

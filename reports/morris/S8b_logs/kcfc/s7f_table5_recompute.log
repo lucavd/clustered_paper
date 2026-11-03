@@ -1,0 +1,5 @@
+Key: <q>
+        q cells max_abs_diff
+   <char> <int>        <num>
+1:    raw    24 5.329071e-14
+2:     sa    24 4.618528e-14

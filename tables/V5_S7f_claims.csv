@@ -1,0 +1,14 @@
+name,est,lo,hi,margin,class,source,q,what
+wc_ind,-0.292621324486618,-0.310364186713421,-0.27361280575057,1,trascurabile,tables/V4_S7d_boot_means.csv,FG ind - FG exch rate (fewclust),"type I error, FG independence minus exchangeable (pp)"
+wc_ar1,-0.309657503785551,-0.327081931898971,-0.29133764550108,1,trascurabile,tables/V4_S7d_boot_means.csv,FG ar1 - FG exch rate (fewclust),"type I error, FG AR(1) minus exchangeable (pp)"
+impl_fg,0.0605045311800178,0.0462349040287711,0.0745164951877449,1,trascurabile,tables/V4_S7d_boot_means.csv,fewclust FG exch - study FG rate,"type I error, FG fewclust minus geesmv (pp)"
+impl_fg_pu,0.210547672066658,0.203470787723796,0.217828823581187,2.5,trascurabile,tables/V4_S7d_boot_means.csv,pu fewclust FG exch - study FG,"usable share, FG fewclust minus geesmv (pp)"
+impl_kc,-4.14895794122748,-4.19219920758388,-4.10801670691323,1,risolta e rilevante,tables/V4_S7d_boot_means.csv,fewclust KC - study KC rate,"type I error, KC fewclust minus geesmv (pp)"
+cop_mmm,0.70245306636993,0.606911568567465,0.794958250225206,1,trascurabile,tables/V4_S7e_boot_means.csv,"MMM cc t rate H0, copula - study mechanisms","MMM with check, t: copula minus study mechanisms (pp)"
+cop_gee,0.234013206562934,0.156079402642124,0.310478791138436,1,trascurabile,tables/V4_S7e_boot_means.csv,"GEE AR(1) FG t rate H0, copula - study mechanisms",GEE AR(1) FG t: copula minus study mechanisms (pp)
+cop_glmm,3.19867797895563,3.01730338730742,3.45918246579096,1,risolta e rilevante,tables/V4_S7e_boot_means.csv,"GLMM Wald t rate H0, copula - study mechanisms",GLMM Wald t: copula minus study mechanisms (pp)
+cop_flip,-0.0413514450945732,-0.113247397883136,0.029620908778093,1,trascurabile,tables/V4_S7e_boot_means.csv,"flip rate H0, copula - study mechanisms",sign-flip test: copula minus study mechanisms (pp)
+ci_cov,-1.2545686228895,-1.2818444836075,-1.22766830994084,1,risolta e rilevante,tables/V4_S7d2_boot_means.csv,"coverage test - coverage GEE AR(1) FG t, H1","coverage, test-inversion interval minus GEE AR(1) FG t (pp)"
+kc10_GB,12.2652546025491,11.7441790961007,12.7483544708986,7.5,confermata,tables/variant_cv/V4_S5_claims.csv,C24a|GB,rate of KC with t at N = 10 above 7.5% (lo > 7.5)
+kc10_NAT,9.38299687233438,8.94052733503798,9.81225424458295,7.5,confermata,tables/variant_cv/V4_S5_claims.csv,C24a|NAT,rate of KC with t at N = 10 above 7.5% (lo > 7.5)
+kc10_AR1,9.8503306648103,9.41407558936185,10.3085847575775,7.5,confermata,tables/variant_cv/V4_S5_claims.csv,C24a|AR1,rate of KC with t at N = 10 above 7.5% (lo > 7.5)

@@ -1,0 +1,24 @@
+OK   s6cc_cv 64 s
+OK   cpflags 1 s
+OK   s11_keys 21 s
+OK   spec0 0 s
+OK   registry0 4 s
+OK   mcse_captions 2 s
+OK   sub_keys 0 s
+OK   spec 0 s
+OK   registry 5 s
+GF3a: 3376 numbers, 52 source files, 0 discordances
+verify exit 0
+GF2: 0 violations
+GF2 exit 0
+GF4: 95 tags, 0 not ok; 0 comparative sentences without a tag
+GF4 exit 0
+GF4: 39 tags, 0 not ok; 0 comparative sentences without a tag
+GF4 supp exit 0
+P1: words 7969 + 200 x 7 display items = 9369
+P2: sentences 326, median 22.0, mean 24.6, p90 43, max 64
+abstract words 224
+em dashes 0, en dashes 0
+manuscript/v5/MMM_v5_supplement.docx | text runs departing: 0
+format exit 0
+text pipeline final2 done

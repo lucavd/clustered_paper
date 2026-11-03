@@ -1,0 +1,149 @@
+---
+title: "S7c: disegno e pilota dei test con il valore nullo del paper"
+subtitle: "Roadmap Morris 2019, ramo morris-v4"
+date: 2026-10-22
+format:
+  html:
+    embed-resources: true
+    toc: true
+lang: it
+execute:
+  echo: false
+  warning: false
+---
+
+```{r setup}
+.libPaths(path.expand("~/MMM/renv/library/linux-ubuntu-noble/R-4.6/x86_64-pc-linux-gnu"))
+suppressMessages({ library(data.table) })
+REPO <- path.expand("~/MMM"); TAB <- file.path(REPO, "tables")
+md <- function(D) { D <- as.data.frame(D); for (j in seq_along(D)) if (is.numeric(D[[j]])) D[[j]] <- format(signif(D[[j]], 4), trim = TRUE, drop0trailing = TRUE)
+  h <- paste0("| ", paste(names(D), collapse = " | "), " |"); s <- paste0("|", paste(rep("---", ncol(D)), collapse = "|"), "|")
+  b <- apply(D, 1, function(r) paste0("| ", paste(gsub("|", "\\|", r, fixed = TRUE), collapse = " | "), " |")); cat(c(h, s, b, ""), sep = "\n") }
+sec <- function(file, head, level = 1) {
+  x <- readLines(file.path(REPO, file)); pat <- paste(strrep("#", level), head); i <- which(x == pat); if (!length(i)) return(""); i <- max(i)
+  nxt <- which(grepl(paste0("^", strrep("#", level), " "), x) & seq_along(x) > i); j <- if (length(nxt)) min(nxt) - 1 else length(x)
+  x <- x[(i + 1):j]; x <- x[!grepl("^\\[\\^", x)]
+  x <- gsub("\\]\\(/", "](../../docs/", gsub("\\]\\((\\.\\./)+", "](../../docs/", x))
+  gsub("\\]\\(S([0-9a-z]+)\\.md", "](../../docs/steps/S\\1.md", x) }
+C  <- fread(file.path(TAB, "V4_S7c_cells.csv")); PC <- fread(file.path(TAB, "V4_S7c_posthoc_cells.csv"))
+A  <- fread(file.path(TAB, "V4_S7c_aggregate.csv")); PA <- fread(file.path(TAB, "V4_S7c_posthoc_aggregate.csv"))
+U5 <- fread(file.path(TAB, "V4_S7c_usable_vs_fg.csv")); VR <- fread(file.path(TAB, "V4_S7c_variance_ratio.csv"))
+TP <- fread(file.path(TAB, "V4_S7c_timing_projection.csv")); TS <- fread(file.path(TAB, "V4_S7c_timing_summary.csv"))
+E8 <- fread(file.path(TAB, "V4_S7c_slope_null.csv")); PR <- fread(file.path(TAB, "V4_S7c_predictions.csv"))
+```
+
+```{r inbreve, results = "asis"}
+cat(sec("docs/steps/S7c.md", "In breve"), sep = "\n")
+```
+
+# Dubbi rinviati
+
+```{r rinv, results = "asis"}
+cat(sec("docs/steps/S7c.md", "Dubbi rinviati"), sep = "\n")
+```
+
+# Cancelli e previsioni
+
+```{r gates, results = "asis"}
+cat(sec("docs/steps/S7c.md", "Cancelli", 2), sep = "\n")
+cat("\n")
+cat(sec("docs/steps/S7c.md", "Previsioni", 2)[-1], sep = "\n")
+```
+
+Valori calcolati delle previsioni (`tables/V4_S7c_predictions.csv`; intervallo = percentili 2,5 e 97,5 del bootstrap per blocchi di replicato, B = 2000, seed 20261015; per PD8 +/- 2 MCSE):
+
+```{r pred, results = "asis"}
+md(PR[, .(code, what, est, lo, hi, outcome)])
+```
+
+# Analisi aggiunte dopo i risultati
+
+```{r ph, results = "asis"}
+cat(sec("docs/steps/S7c.md", "Analisi aggiunte dopo i risultati (dichiarate, esplorative)", 2), sep = "\n")
+```
+
+# Cosa e' girato
+
+- Pre-registrazione: commit `dd8a3e6` (2026-10-22), prima di ogni calcolo dello step.
+- Codice: `R/s7c/s7c_tests.R` (test A-E), `s7c_common.R`, `s7c_run.R` (36.000 dataset, 20 processi, circa 41 minuti, temperatura massima osservata 74 gradi), `s7c_agg.R`, `s7c_gates_pre.R`, `s7c_md5.sh`, `s7c_posthoc.R`, `s7c_posthoc_agg.R`, `s7c_timing.R` (417 dataset in serie, circa 40 minuti), `setup_lib.R`.
+- Risultati: `results_v4/S7c/pilot/` e `results_v4/S7c/posthoc/` (360 file ciascuno), `results_v4/S7c/timing.csv`, md5 di `results_full/` in `results_v4/S7c/md5_results_full_{before,after}.txt`.
+- Software: R 4.6.1, libreria del progetto; flipscores 1.3.2 e fewclust 0.1.0 (commit `5103bb3`) in `~/R/s7c_lib`.
+
+# Appendice
+
+## Errore di I tipo per cella (scenari senza effetto del trattamento)
+
+Tasso in percentuale sui replicati usabili; disegni degeneri esclusi. `gee_fg_t` e `mmm_t` dai risultati salvati, t con N - 4 gradi di liberta'; `gee_t` e' la GEE senza correzione con la stessa t.
+
+```{r c0, results = "asis"}
+md(dcast(C[label == "manual"], dgp + N + ntime ~ method, value.var = "rate", fun.aggregate = function(x) round(x, 1)))
+```
+
+Quota usabile (%):
+
+```{r c1, results = "asis"}
+md(dcast(C[label == "manual"], dgp + N + ntime ~ method, value.var = "pu", fun.aggregate = function(x) round(x, 0)))
+```
+
+## Potenza per cella (scenari con effetto del trattamento)
+
+```{r c2, results = "asis"}
+md(dcast(C[label == "mmlb"], dgp + N + ntime ~ method, value.var = "rate", fun.aggregate = function(x) round(x, 1)))
+```
+
+## Medie sulle celle
+
+```{r ag, results = "asis"}
+md(A)
+md(PA)
+```
+
+## Varianti aggiunte: per cella
+
+```{r phc, results = "asis"}
+md(dcast(PC[label == "manual"], dgp + N + ntime ~ method, value.var = "rate", fun.aggregate = function(x) round(x, 1)))
+md(dcast(PC[label == "mmlb"], dgp + N + ntime ~ method, value.var = "rate", fun.aggregate = function(x) round(x, 1)))
+```
+
+## Rapporto di varianza che spiega B e C
+
+```{r vr, results = "asis"}
+md(VR)
+```
+
+## Scarto del nullo della pendenza per soggetto
+
+```{r e8, results = "asis"}
+md(E8[order(-excess)])
+```
+
+## Tempi
+
+Secondi per dataset, media sui replicati misurati, e ore di processore proiettate sul run su tutte le situazioni.
+
+```{r tim, results = "asis"}
+md(dcast(TS, op ~ N, value.var = "sec_mean"))
+md(TP[, .(op, core_h)])
+```
+
+## Da dove vengono i numeri del riassunto
+
+| frase | fonte | valore letto |
+|---|---|---|
+| test a segni alterni, 5,2 falsi positivi su 100 in media | `V4_S7c_aggregate.csv`, flip, H0 | 5,19 |
+| massimo 6,7 | `V4_S7c_cells.csv`, flip, manual, massimo di rate | 6,72 (GLMM-native, 10, 10) |
+| 25 soggetti, 2 visite: circa 8 su 10 contro circa 4 su 10 | `V4_S7c_usable_vs_fg.csv`, flip, N 25, T 2 | pu 80,9-86,0; pu_fg 36,3-40,2 |
+| 10 soggetti, 2 visite: 3 su 10 contro meno di 1 su 10 | idem, N 10, T 2 | pu 31,0-35,1; pu_fg 5,0-6,3 |
+| 0,8 test su 100 in più | `V4_S7c_predictions.csv`, PD9_flip | 0,81 |
+| senza filtro: 4,2 su 100, quasi tutti i dataset, 1,5 su 100 | `V4_S7c_posthoc_aggregate.csv`, p_flip_relaxed; `V4_S7c_posthoc_cells.csv` | 4,15; pu 99,4-100; minimo 1,54 (GLMM-native, 10, 2) |
+| 0,5 e 1,9 falsi positivi; meno di 2 su 100 con effetto | `V4_S7c_aggregate.csv`, subj_t, subj_perm | H0 0,51 e 1,93; H1 0,61 e 1,73 |
+| varianza gonfiata da 2 a 8 volte | `V4_S7c_variance_ratio.csv`, ratio_r | 2,10-8,06 (ratio_w 1,04-1,58) |
+| t con il tempo centrato: 4,9 su 100, stessa potenza | `V4_S7c_posthoc_aggregate.csv`, p_within_t | 4,89; potenza -0,30 (-0,73 a 0,18) |
+| 9,5 su 100, meno di un decimo di punto | `V4_S7c_posthoc_cells.csv`, p_within_t, GenBinaryY, 10, 2 | 9,45; rate - 2 mc = 7,45 |
+| permutazione centrata fuori taratura in 2 su 18 | idem, p_within_perm, hi | 2 |
+| permutazione dell'assegnazione: 4,6 su 100, mai fuori taratura | `V4_S7c_aggregate.csv`, naive_perm; `V4_S7c_cells.csv` | 4,55; celle 2,94-5,50, hi 0, lo 0 |
+| un terzo del tempo; 1.070 ore; quasi due giorni | `V4_S7c_timing_projection.csv` | 1.065,5 su 3.278; 44 ore con 24 processi |
+| pendenza: al più 0,6; 30% senza pendenza | `V4_S7c_predictions.csv`, PD8, PD7 | 0,16 (hi 0,62); 29,8 |
+| test a segni alterni circa 4 ore | `V4_S7c_timing_projection.csv`, test_null_and_flip | 3,7 |
+| run pianificato 3.300 ore, 6 giorni, 93%, 34 volte | idem | 3.278; 5,7 giorni; 92,8%; 3.043,6 / 90,2 |
+| geesmv AR(1) 2 centesimi di secondo, CR2 AR(1) 6 su 10 | `V4_S7c_timing_summary.csv` | 0,021-0,025 s, ok 100%; cr2_ar1 ok 41% |

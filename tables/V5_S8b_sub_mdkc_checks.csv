@@ -1,0 +1,7 @@
+check,pass,detail
+replicate keys unique,TRUE,""
+"1,896 design points under the null",TRUE,1896
+"gate 1 (t): md/kc/fg per-point n, k, nd, flags equal V5_S7f_cp_S7d_dp_rates.csv",TRUE,11376 point x strategy rows
+"gate 1 (t2): md/kc/fg per-point n, k, nd, flags equal V5_S7f_cp_S7d_dp_rates.csv",TRUE,11376 point x strategy rows
+gate 2: md/kc/fg rows reproduce V5_S7f_rule_t2.csv (both df),TRUE,12 rows
+gate 3: avgvar flags of main+M1c and M6-M7 equal V5_S8b_mdkc_avg.csv,TRUE,gee_ar1_avgvar 24+17; gee_exch_avgvar 47+33

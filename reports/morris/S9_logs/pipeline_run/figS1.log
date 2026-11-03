@@ -1,0 +1,32 @@
+[PASS] every plotted point has a Table 4 flag 1920 rows
+[PASS] per-point flags equal V5_S7f_rule_dp.csv 
+[PASS] assessed = at least x:min_obs_dp usable replicates 
+[PASS] 384 points per strategy 
+[PASS] circled points of gee_ar1_fg equal Table 4 f:t4|gee_ar1_fg|hi_m67 0 vs 0
+[PASS] circled points of mmm_cc equal Table 4 f:t4|mmm_cc|hi_m67 0 vs 0
+[PASS] circled points of gee_exch_fg equal Table 4 f:t4|gee_exch_fg|hi_m67 4 vs 4
+[PASS] circled points of gee_exch_md equal Table 4 f:t4|gee_exch_md|hi_m67 18 vs 18
+[PASS] circled points of glmer_lrt equal Table 4 f:t4|glmer_lrt|hi_m67 0 vs 0
+                              drawn   max_rate  n_hi
+dgp         scen strategy                           
+GLMM-native M6   gee_ar1_fg      96   7.500000     0
+                 gee_exch_fg     96   7.061069     0
+                 gee_exch_md     96   9.477756     0
+                 glmer_lrt       81   6.100000     0
+                 mmm_cc          96   6.900000     0
+            M7   gee_ar1_fg      96   6.312625     0
+                 gee_exch_fg     96   6.946984     0
+                 gee_exch_md     96   9.007982     0
+                 glmer_lrt       81   6.600000     0
+                 mmm_cc          96   7.800000     0
+GenBinaryY  M6   gee_ar1_fg      96   6.900000     0
+                 gee_exch_fg     96   9.718310     1
+                 gee_exch_md     96  13.617021     8
+                 glmer_lrt       81   7.314629     0
+                 mmm_cc          96   7.000000     0
+            M7   gee_ar1_fg      96   8.618128     0
+                 gee_exch_fg     96  10.307018     3
+                 gee_exch_md     96  14.236111    10
+                 glmer_lrt       81   7.507508     0
+                 mmm_cc          96   7.763023     0
+figS1 written; keys 36

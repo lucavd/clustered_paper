@@ -1,0 +1,41 @@
+rows 25556985 | load 37.5 s
+            used   (Mb) gc trigger   (Mb)   max used   (Mb)
+Ncells    397586   21.3    1338002   71.5    1338002   71.5
+Vcells 365544630 2788.9 1161864615 8864.4 1157833231 8833.6
+Key: <dgp>
+           dgp     b     c      n
+        <char> <int> <int>  <int>
+1:    GLMM-AR1 11385  6904 433204
+2: GLMM-native 10614  6929 434775
+3:  GenBinaryY 11763  8633 429638
+design points 1512 | cells 60480
+model 1 done (14400 cells) 1.2 min
+model 2 done (11520 cells) 1.3 min
+model 3 done (11520 cells) 1.4 min
+model 4 done (11520 cells) 1.5 min
+model 5 done (11520 cells) 1.6 min
+KSA 2001 x 13608 | 7.9 min
+saved | elapsed 8.0 min
+	Command being timed: "Rscript --vanilla R/s5/s5_build.R"
+	User time (seconds): 1113.23
+	System time (seconds): 2406.98
+	Percent of CPU this job got: 730%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 8:01.72
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 17192308
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 447130829
+	Voluntary context switches: 11863
+	Involuntary context switches: 7268
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 9943936
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,149 @@
+Warning message:
+In fifelse(scen == "M1c", 1L, as.integer(sub("M", "", scen))) :
+  NAs introduced by coercion
+read 37920 chunks: 3792000 recs, 11374260 rows (0.4 min)
+   chunks chunks_expected    recs recs_unique generated gen_errors
+    <int>           <int>   <int>       <int>     <int>      <int>
+1:  37920           37920 3792000     3792000   3791420        580
+   gen_errors_nondegenerate rows_per_generated_ok pass_completeness
+                      <int>                <lgcl>            <lgcl>
+1:                        0                  TRUE              TRUE
+        strategy                src  n_dp mean_rate  n_hi  n_lo mean_pu
+          <char>             <char> <int>     <num> <int> <int>   <num>
+ 1:         flip            S7d run  1896      5.29     0     4   100.0
+ 2:  flip_strict            S7d run  1896      5.45     0     0    96.6
+ 3:   gee_ar1_fg            S7d run  1896      4.29     0   112    92.2
+ 4:    paper_mmm study (saved rows)  1896      4.49     0    77    91.0
+ 5:    study_mmm            S7d run  1896      4.49     0    77    91.0
+ 6:  gee_ind_unc            S7d run  1896      6.74   277     5    94.2
+ 7:    paper_gee study (saved rows)  1896      6.94   290     4    94.1
+ 8: gee_exch_unc            S7d run  1896      6.94   290     4    94.1
+ 9:    study_gee            S7d run  1896      6.94   290     4    94.1
+10:  gee_ar1_unc            S7d run  1896      6.65   260     4    94.0
+11:  gee_ind_cr2            S7d run  1896      5.81   179    14    93.9
+12: gee_exch_cr2            S7d run  1896      6.01   175    13    93.6
+13:   gee_ind_fg            S7d run  1896      4.31     1   123    92.4
+14:  gee_exch_fg            S7d run  1896      4.60     2   109    92.3
+15:   gee_ind_kc            S7d run  1896      5.44   122    93    92.3
+16:   gee_ind_md            S7d run  1896      4.69    30   120    92.3
+17:  gee_exch_md            S7d run  1896      4.80    31   118    92.2
+18:   gee_ar1_md            S7d run  1896      4.55     8   121    92.1
+19:  gee_exch_kc            S7d run  1896      5.55   133   100    92.1
+20:   gee_ar1_kc            S7d run  1896      5.28    87   100    92.0
+21: paper_gee_fg study (saved rows)  1896      4.57     2   116    91.9
+22: study_gee_fg            S7d run  1896      4.57     2   116    91.9
+23: paper_gee_kc study (saved rows)  1896      9.75   951    48    91.9
+24: study_gee_kc            S7d run  1896      9.75   951    48    91.9
+25: paper_gee_md study (saved rows)  1896      4.78    32   124    91.8
+26: study_gee_md            S7d run  1896      4.78    32   124    91.8
+27: paper_shrink study (saved rows)  1896      7.45   340    11    81.8
+28:  paper_glmer study (saved rows)  1896      6.70   265    18    80.7
+        strategy                src  n_dp mean_rate  n_hi  n_lo mean_pu
+          <char>             <char> <int>     <num> <int> <int>   <num>
+    mean_upow pu_small rate_small hi_small   wald eligible chosen_wald
+        <num>    <num>      <num>    <int> <lgcl>   <lgcl>      <lgcl>
+ 1:      21.6     99.9       4.00        0  FALSE     TRUE       FALSE
+ 2:      21.6     73.4       5.27        0  FALSE     TRUE       FALSE
+ 3:      19.9     47.1       2.43        0   TRUE     TRUE        TRUE
+ 4:      21.2     40.4       2.19        0   TRUE     TRUE       FALSE
+ 5:      21.2     40.4       2.19        0   TRUE     TRUE       FALSE
+ 6:      23.0     60.1       7.79       55   TRUE    FALSE       FALSE
+ 7:      23.3     59.1       9.16       65   TRUE    FALSE       FALSE
+ 8:      23.3     59.1       9.16       65   TRUE    FALSE       FALSE
+ 9:      23.3     59.1       9.16       65   TRUE    FALSE       FALSE
+10:      22.8     59.0       8.78       60   TRUE    FALSE       FALSE
+11:      21.7     58.0       6.38       31   TRUE    FALSE       FALSE
+12:      22.0     55.5       7.68       34   TRUE    FALSE       FALSE
+13:      19.9     47.5       2.23        0   TRUE    FALSE       FALSE
+14:      20.5     47.3       2.72        0   TRUE    FALSE       FALSE
+15:      21.4     46.8       3.57        2   TRUE    FALSE       FALSE
+16:      20.3     46.8       2.55        0   TRUE    FALSE       FALSE
+17:      20.6     46.7       2.87        0   TRUE    FALSE       FALSE
+18:      20.1     46.5       2.61        0   TRUE    FALSE       FALSE
+19:      21.7     45.9       3.87        4   TRUE    FALSE       FALSE
+20:      21.2     45.8       3.53        2   TRUE    FALSE       FALSE
+21:      20.5     43.6       2.43        0   TRUE    FALSE       FALSE
+22:      20.5     43.6       2.43        0   TRUE    FALSE       FALSE
+23:      29.1     43.5       2.77        0   TRUE    FALSE       FALSE
+24:      29.1     43.5       2.77        0   TRUE    FALSE       FALSE
+25:      20.6     43.5       2.59        0   TRUE    FALSE       FALSE
+26:      20.6     43.5       2.59        0   TRUE    FALSE       FALSE
+27:      23.6     35.4      11.45       36   TRUE    FALSE       FALSE
+28:      23.2     30.2       6.33        3   TRUE    FALSE       FALSE
+    mean_upow pu_small rate_small hi_small   wald eligible chosen_wald
+        <num>    <num>      <num>    <int> <lgcl>   <lgcl>      <lgcl>
+    chosen_all
+        <lgcl>
+ 1:       TRUE
+ 2:      FALSE
+ 3:      FALSE
+ 4:      FALSE
+ 5:      FALSE
+ 6:      FALSE
+ 7:      FALSE
+ 8:      FALSE
+ 9:      FALSE
+10:      FALSE
+11:      FALSE
+12:      FALSE
+13:      FALSE
+14:      FALSE
+15:      FALSE
+16:      FALSE
+17:      FALSE
+18:      FALSE
+19:      FALSE
+20:      FALSE
+21:      FALSE
+22:      FALSE
+23:      FALSE
+24:      FALSE
+25:      FALSE
+26:      FALSE
+27:      FALSE
+28:      FALSE
+    chosen_all
+        <lgcl>
+                                   q      est      lo       hi       sd
+                              <char>    <num>   <num>    <num>    <num>
+ 1:                     flip rate H0  5.28579  5.2537  5.31778 0.016612
+ 2:              flip_strict rate H0  5.45031  5.4161  5.48460 0.017376
+ 3: fewclust FG exch - study FG rate  0.02393  0.0146  0.03304 0.004748
+ 4: FG ind - FG exch rate (fewclust) -0.28585 -0.3028 -0.26792 0.008936
+ 5: FG ar1 - FG exch rate (fewclust) -0.30836 -0.3258 -0.29015 0.008992
+ 6:            fewclust KC exch rate  5.55301  5.5188  5.58873 0.017865
+ 7:           study KC (geesmv) rate  9.74570  9.7019  9.79142 0.022699
+ 8:      fewclust KC - study KC rate -4.19269 -4.2332 -4.15230 0.020735
+ 9:   pu fewclust FG exch - study FG  0.41767  0.4077  0.42805 0.005067
+10:            fewclust FG exch rate  4.59660  4.5666  4.62827 0.015910
+11:                    study FG rate  4.57267  4.5425  4.60529 0.015964
+Index: <code>
+      code      obs      lo       hi     a     b    verdict
+    <char>    <num>   <num>    <num> <num> <num>     <char>
+ 1:    PE1  5.28579  5.2537  5.31778   2.5   7.5 confermata
+ 2:    PE2  0.00000  0.0000  0.00000   0.0   0.0 confermata
+ 3:    PE3  4.00000  4.0000  4.00000   0.0  60.0 confermata
+ 4:    PE4  0.00000  0.0000      Inf  -2.5   Inf confermata
+ 5:    PE5 99.89639 99.8964 99.89639  90.0 100.0 confermata
+ 6:    PE6  0.02393  0.0146  0.03304  -1.0   1.0 confermata
+ 7:    PE7  0.00000  0.0000  0.00000   0.0   2.0 confermata
+ 8:    PE8  0.41767  0.4077  0.42805   0.0   2.0 confermata
+ 9:    PE9 -0.28585 -0.3028 -0.26792  -1.0   1.0 confermata
+10:   PE10 -0.30836 -0.3258 -0.29015  -1.0   1.0 confermata
+11:   PE11  5.55301  5.5188  5.58873   4.8   6.8 confermata
+12:   PE12  1.00000  1.0000  1.00000   0.0   0.0   smentita
+                          extra
+                         <char>
+ 1:                        <NA>
+ 2:                        <NA>
+ 3:                        <NA>
+ 4:                        <NA>
+ 5: rate small 4.00, hi small 0
+ 6:                        <NA>
+ 7:                        <NA>
+ 8:         min per point -0.20
+ 9:                        <NA>
+10:                        <NA>
+11:                        <NA>
+12:                        <NA>
+done 1.9 min

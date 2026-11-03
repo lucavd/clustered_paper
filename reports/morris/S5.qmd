@@ -1,0 +1,86 @@
+---
+title: "S5: inferenza fra celle sotto numeri casuali comuni e adeguatezza dei replicati"
+subtitle: "Roadmap Morris 2019, ramo morris-v4"
+date: 2026-10-18
+format:
+  html:
+    embed-resources: true
+    toc: true
+lang: it
+execute:
+  echo: false
+  warning: false
+---
+
+```{r setup}
+.libPaths(path.expand("~/MMM/renv/library/linux-ubuntu-noble/R-4.6/x86_64-pc-linux-gnu"))
+suppressMessages({ library(data.table) })
+REPO <- path.expand("~/MMM")
+m5 <- function(f) unname(tools::md5sum(file.path(REPO, f)))
+sec <- function(file, head) {           # one section of the step file, so the TL;DR exists once (D-22)
+  x <- readLines(file.path(REPO, file)); i <- which(x == paste("#", head)); if (!length(i)) return("")
+  nxt <- which(grepl("^# ", x) & seq_along(x) > i); j <- if (length(nxt)) min(nxt) - 1 else length(x)
+  x <- x[(i + 1):j]; x <- x[!grepl("^\\[\\^", x)]
+  gsub("\\]\\((\\.\\./)+", "](../../docs/", gsub("\\]\\(/", "](../../docs/", x)) }
+```
+
+## In breve (TL;DR) {.unnumbered}
+
+::: {.callout-note appearance="simple"}
+```{r tldr, results='asis'}
+cat(sec("docs/steps/S5.md", "TL;DR"), sep = "\n")
+```
+:::
+
+## Decisioni del PI e dubbi rinviati {.unnumbered}
+
+```{r dec, results='asis'}
+cat(sec("docs/steps/S5.md", "Decisioni del PI"), sep = "\n")
+cat("\n\n**Dubbi rinviati**\n\n")
+cat(sec("docs/steps/S5.md", "Dubbi rinviati"), sep = "\n")
+```
+
+## 1. Pre-registrazione
+
+Cancelli G1-G4 e previsioni P1-P4 scritti in `docs/steps/S5.md` e committati prima di qualsiasi calcolo dello step (commit `c054aa0`, 2026-10-18), insieme all'inventario delle affermazioni (`reports/morris/S5_claims_inventory.csv`, 71 righe) e alle regole tecniche D-23. Due aggiunte dopo i risultati, entrambe come sensibilita' e senza toccare la classificazione primaria: l'intervallo *basic* per le statistiche non lisce (sez. 3, punto 3) e il conteggio delle celle vinte con la regola del v3 sui pareggi (sez. 3, punto 4).
+
+## 2. Cancelli e previsioni
+
+{{< include S5_results.md >}}
+
+## 3. Dubbi aperti durante il lavoro e come si sono chiusi
+
+1. **G2 non superato al primo passaggio (strumento, corretto).** Il controllo della MCSE della potenza size-adjusted indicizzava la colonna due volte (`j[ii]` dentro `M[ii, ...]`): confrontava celle sbagliate. Ricalcolata fuori dalla tabella, coincide con S4 in tutte le 12.879 celle H1 (`tables/V4_S5_fu_a_g2.csv`, 0 righe discordanti; Tabella A5).
+2. **P3 smentita (spiegata).** Il rapporto fra MCSE per blocchi e SE a celle indipendenti e' 0,97-1,04, non circa 2. Il motivo e' nella Tabella A3: gli indicatori di rifiuto dello stesso replicato hanno correlazione praticamente nulla fra celle con N o T diversi e anche fra meccanismi alla stessa N e T. La dipendenza indotta dal seme comune e' forte solo fra H0 e H1 della stessa cella, che i tassi di I tipo non mescolano. Conseguenza per il paper: per le misure di livello i valori p del v3 a celle indipendenti non erano gonfiati da questa dipendenza; il bootstrap per blocchi conta dove si combinano le due ipotesi (potenza size-adjusted) e per le statistiche non lisce.
+3. **Statistiche non lisce (spiegato).** Per quote di test significativi, massimi e valori assoluti la distribuzione bootstrap e' spostata rispetto alla stima (Tabella A6): ricampionare con reinserimento aggiunge rumore, e il rumore fa crescere le deviazioni assolute. In 7 sotto-affermazioni l'intervallo *basic* (che corregge lo spostamento) da' un'altra classe (colonna in Tabella A); in nessuna cambia il verso. La classificazione primaria resta quella pre-registrata (percentile).
+4. **C04 e P4d smentite (spiegato).** Il pari merito del v3 fra MMM e FG (321 contro 308) dipendeva dalla regola sui pareggi: FG e MD hanno lo stesso tasso in 158 punti di disegno, e la regola del v3 (primo in ordine alfabetico) li dava tutti a FG. Con i pareggi divisi gia' il v3 dava MMM 337, FG 214. Nel v4: 306 contro 272 con la regola del v3, 323 contro 188 con i pareggi divisi (Tabella A7). Il conteggio dipende dalla regola: il PI ha scelto di toglierlo dal manoscritto (D-25).
+5. **P1: 13 numeri del v3 non riprodotti (spiegato).** 12 sono il rango combinato (V-67): lo script del v3 che li cita (`rev2/REV_core3.R`), rieseguito sulla stessa tabella, da' FG 1,67 e MD 2,89, gli stessi valori del codice di S5, e non 2,33 e 3,67 (`reports/morris/S5_logs/S5_v3_ranking_script.log`). Il numero del paper era sbagliato; il v4 lo sostituisce (rinvio a S7). Il tredicesimo e' C08 sulla deviazione media: il paper usa la media sulle celle, non quella sulle 16 N; con quella pesatura il valore 0,833 si riproduce (Tabella A1).
+6. **P4c smentita su GenBinaryY e GLMM-native (previsione formulata male).** I valori v3 di C03 su questi due meccanismi (0,80 e 0,85) avevano gia' l'intervallo sotto il margine di 1 punto; solo GLMM-AR1 (1,01) era a cavallo. Il v4 lo conferma.
+7. **C19a smentita (spiegato).** Lo shrinkage aveva l'RMSE piu' basso perche' ogni metodo era mediato sulle proprie celle e lo shrinkage manca proprio nelle celle piu' difficili (T corti con pendenze casuali). Sulle stesse celle per tutti i metodi non e' il piu' basso (Tabella A8).
+8. **C23 e C14: le soglie cambiano (spiegato).** Con le pendenze casuali ([LRT del GLMM con le pendenze casuali del Wald (D-08)](../../docs/decisions/D-08.md)) il LRT in M3-M5 a T <= 3 e' usabile nel 33% dei casi a N = 35, contro il 99,9% del v3 (Tabella A9). Per questo il LRT massimizza la validita' incondizionata solo fino a 25 cluster (Tabella C).
+9. **Sensibilita' bobyqa** ([Sensibilita' del Wald del GLMM con ottimizzatore bobyqa (D-16)](../../docs/decisions/D-16.md)): cambia la classe di 6 sotto-affermazioni (Tabella A10). Il vantaggio di potenza del GLMM su FG (C16a) sparisce su GLMM-AR1 e si inverte su GLMM-native. Rinvio a S7.
+
+## 4. Cosa e' girato
+
+Tutto su lesexp-server, R 4.6.1, `Rscript --vanilla`. Nessuna simulazione: lo step legge gli intermedi di S4 e la matrice degli indici bootstrap salvata li'.
+
+| script | parte | durata | output |
+|---|---|---|---|
+| `R/s5/s5_q0.sh` | G1 prima e dopo | circa 1 min | `reports/morris/S5_logs/S5_g1_{pre,post}.log` |
+| `R/s5/s5_build.R` | indicatori per replicato di 60.480 celle, aggregati per B = 2.000, potenza size-adjusted bootstrap | 8,0 min, 40 core | `results_v4/S5/agg.rds` |
+| `R/s5/s5_run.R` + `s5_engine.R` | le affermazioni su ogni replicato bootstrap (griglia, bobyqa, M1c) | 4,2 min, 45 core | `results_v4/S5/claims_boot.rds`, `pbin.rds` |
+| `R/s5/s5_checks.R` | G2-G4, P1-P4, classificazione | 0,2 min | `tables/V4_S5_claims.csv`, `V4_S5_values.csv`, `V4_S5_gates.csv`, `V4_S5_p*.csv`, `V4_S5_g*.csv` |
+| `R/s5/s5_followup.R`, `s5_followup_g.R`, `s5_crn_corr.R` | indagine sui dubbi della sez. 3 | pochi minuti | `tables/V4_S5_fu_*.csv` |
+| `R/s5/s5_tables.R` | tabelle di questo report | secondi | `reports/morris/S5_results.md`, `tables/V4_S5_expectations.csv` |
+| `R/s5/s5_verify_tldr.R` | rilettura dai file dei 42 numeri del TL;DR e delle decisioni | secondi | `tables/V4_S5_tldr_receipts.csv` |
+
+```{r md5}
+f <- c("results_v4/S4/rows_v4.rds", "results_v4/S4/boot_idx.rds", "results_v4/S5/agg.rds", "results_v4/S5/claims_boot.rds", "results_v4/S5/pbin.rds",
+       "R/s5/s5_common.R", "R/s5/s5_build.R", "R/s5/s5_engine.R", "R/s5/s5_run.R", "R/s5/s5_checks.R", "R/s5/s5_tables.R", "R/s5/s5_verify_tldr.R",
+       "reports/morris/S5_claims_inventory.csv", "tables/V4_S5_claims.csv", "tables/V4_S5_tldr_receipts.csv")
+ruolo <- c("input (S4, non tracciato)", "input (S4, indici bootstrap)", rep("intermedio di S5 (non tracciato)", 3), rep("codice eseguito", 7),
+           "inventario pre-registrato", "output: matrice affermazione x MCSE", "ricevute dei numeri del TL;DR")
+knitr::kable(data.table(file = f, ruolo = ruolo, md5 = vapply(f, m5, "")), row.names = FALSE)
+```
+
+Requisiti Morris toccati: E4 (MCSE delle misure complesse: caso peggiore, celle vinte, rango combinato, Spearman, divari per strato), F1 (adeguatezza di n_sim), F3 (dipendenza fra dataset trattata nell'inferenza fra celle).

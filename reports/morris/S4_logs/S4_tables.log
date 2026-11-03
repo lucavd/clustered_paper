@@ -1,0 +1,22 @@
+There were 35 warnings (use warnings() to see them)
+Warning messages:
+Warning messages:
+Warning messages:
+Warning messages:
+S4_results.md written: 148 lines; expectations passed 11/14
+        id superato
+    <char>   <char>
+ 1:     Q0       si
+ 2:    Q1a       si
+ 3:    Q1b       si
+ 4:    Q1c       no
+ 5:    Q1d       si
+ 6:     Q2       si
+ 7:     Q3       si
+ 8:     Q4       si
+ 9:    Q5a       si
+10:    Q5b       no
+11:     Q6       si
+12:     Q7       si
+13:     Q8       no
+14:     Q9       si

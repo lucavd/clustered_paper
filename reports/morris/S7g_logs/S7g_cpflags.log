@@ -1,0 +1,25 @@
+Key: <strategy, dgp>
+   strategy         dgp points mean_type1 clearly_above clearly_below
+     <char>      <char>  <int>      <num>         <int>         <int>
+1:     flip  Copula-AR1    480   5.421326             0             0
+2:     flip    GLMM-AR1    480   5.244086            NA            NA
+3:     flip GLMM-native    480   5.292731            NA            NA
+4:     flip  GenBinaryY    480   5.299916            NA            NA
+   mean_usable mean_power                label
+         <num>      <num>               <char>
+1:    96.07498   18.21971 Sign-flip score test
+2:    99.98200   22.34387 Sign-flip score test
+3:    99.98785   22.00391 Sign-flip score test
+4:    99.97779   21.10906 Sign-flip score test
+                   table hi_wald hi_cp lo_wald lo_cp hi_changed lo_changed
+                  <char>   <int> <int>   <int> <int>      <int>      <int>
+1:          S7d dp_rates   10931 11258    3823  2653        327       1170
+2:          S7e dp_rates    3289  3375     440   286         86        154
+3:           S7b rule_dp    6542  6781     997   537        239        460
+4:    S7d2 flip_rules_dp    2367  2386       8     3         19          5
+5: S6b ns rule_safety_dp    1089  1141     128    65         52         63
+6:   kcfc rule_safety_dp    2219  2336     604   353        117        251
+gates: 25 passed
+             key value
+          <char> <int>
+1: null_flips_cp     0

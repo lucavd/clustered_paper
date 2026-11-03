@@ -1,0 +1,21 @@
+{
+ "option": "Marginalized model with convergence check + t recommended (the only strategy with an interval that met the rule after the constant-outcome rule, D-82); GEE AR(1) + Fay-Graubard + t as the simpler alternative, clearly above 7.5% at two design points with 10 clusters and 2 occasions; sign-flip test as complement (S9). Text fields are provenance only: py/s7f/s7f_figures.py does not draw them.",
+ "lines": [
+  [
+   "q",
+   "Testing the time x treatment\ninteraction with few clusters"
+  ],
+  [
+   "mmm",
+   "Marginalized multilevel model,\nt reference (N - p df), convergence\ncheck; any number of clusters\nand occasions"
+  ],
+  [
+   "fg",
+   "Simpler alternative: GEE with AR(1)\nworking correlation, Fay-Graubard,\nt reference; not with 10 clusters\nand 2 occasions"
+  ],
+  [
+   "end",
+   "2-3 occasions, <= 25 clusters: both\nanswer in fewer than half the datasets;\nsign-flip score test as a complement\n(p-value only)"
+  ]
+ ]
+}

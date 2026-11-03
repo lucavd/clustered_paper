@@ -1,0 +1,4 @@
+gate,pass,detail
+GA3a,TRUE,"19962 study fits redone, 0 mismatches (estimate, SE, p)"
+GA3b,TRUE,"2000 stored fits without slope redone, 0 mismatches (estimate, SE)"
+GA4,TRUE,"threshold 1e-3: 1685204 fits, 0 mismatches with cc_est/cc_se/cc_p/used; row set identical to variant_cc: TRUE; inventory 21879/19962 found: TRUE (21879/19962)"

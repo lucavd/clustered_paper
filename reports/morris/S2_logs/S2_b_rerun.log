@@ -1,0 +1,22 @@
+missing ids 494 | partial ids 671
+           dgp missing_tech     N
+        <char>       <char> <int>
+1: GLMM-native    mmm,glmer   190
+2:  GenBinaryY    mmm,glmer   181
+3: GLMM-native        glmer    96
+4:  GenBinaryY        glmer    91
+5:  GenBinaryY          mmm    61
+6: GLMM-native          mmm    52
+Q2.3 missing ids re-run: 494; generation errors reproduced: 494 (100.0%)
+       ok                          msg               call     N
+   <lgcl>                       <char>             <char> <int>
+1:  FALSE singular matrix 'a' in solve qr.solve(X, eta_m)   494
+Q2.3 controprova: neighbours 494, generated cleanly 494
+Q2.2 partial ids re-run: 671 ids, 1042 technique runs; outer errors reproduced 0
+           dgp   tech     ok    msg   call     N
+        <char> <char> <lgcl> <char> <char> <int>
+1: GLMM-native  glmer   TRUE   <NA>   <NA>   286
+2:  GenBinaryY  glmer   TRUE   <NA>   <NA>   272
+3:  GenBinaryY    mmm   TRUE   <NA>   <NA>   242
+4: GLMM-native    mmm   TRUE   <NA>   <NA>   242
+elapsed 8.2 s

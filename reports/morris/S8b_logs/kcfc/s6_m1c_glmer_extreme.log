@@ -1,0 +1,221 @@
+      grid         dgp  label       method ntime     n n_extreme pct_extreme
+    <char>      <char> <char>       <char> <int> <int>     <int>       <num>
+ 1:    M1c    GLMM-AR1 manual        glmer     2  4243       101   2.3803912
+ 2:    M1c    GLMM-AR1 manual        glmer     3  5512       132   2.3947750
+ 3:    M1c    GLMM-AR1 manual        glmer     4  5813       162   2.7868570
+ 4:    M1c    GLMM-AR1 manual        glmer     6  5925       311   5.2489451
+ 5:    M1c    GLMM-AR1   mmlb        glmer     2  4163       108   2.5942830
+ 6:    M1c    GLMM-AR1   mmlb        glmer     3  5417       109   2.0121839
+ 7:    M1c    GLMM-AR1   mmlb        glmer     4  5767       122   2.1154847
+ 8:    M1c    GLMM-AR1   mmlb        glmer     6  5885       155   2.6338148
+ 9:    M1c    GLMM-AR1 manual glmer_bobyqa     2  4253        27   0.6348460
+10:    M1c    GLMM-AR1 manual glmer_bobyqa     3  5519        27   0.4892191
+11:    M1c    GLMM-AR1 manual glmer_bobyqa     4  5813        37   0.6365044
+12:    M1c    GLMM-AR1 manual glmer_bobyqa     6  5923       156   2.6338004
+13:    M1c    GLMM-AR1   mmlb glmer_bobyqa     2  4169        28   0.6716239
+14:    M1c    GLMM-AR1   mmlb glmer_bobyqa     3  5424        21   0.3871681
+15:    M1c    GLMM-AR1   mmlb glmer_bobyqa     4  5769        41   0.7106951
+16:    M1c    GLMM-AR1   mmlb glmer_bobyqa     6  5885        81   1.3763806
+17:    M1c GLMM-native manual        glmer     2  4268       118   2.7647610
+18:    M1c GLMM-native manual        glmer     3  5540       138   2.4909747
+19:    M1c GLMM-native manual        glmer     4  5797       168   2.8980507
+20:    M1c GLMM-native manual        glmer     6  5921       309   5.2187131
+21:    M1c GLMM-native   mmlb        glmer     2  4193       102   2.4326258
+22:    M1c GLMM-native   mmlb        glmer     3  5487       109   1.9865136
+23:    M1c GLMM-native   mmlb        glmer     4  5732       131   2.2854152
+24:    M1c GLMM-native   mmlb        glmer     6  5878       149   2.5348758
+25:    M1c GLMM-native manual glmer_bobyqa     2  4275        27   0.6315789
+26:    M1c GLMM-native manual glmer_bobyqa     3  5536        23   0.4154624
+27:    M1c GLMM-native manual glmer_bobyqa     4  5797        46   0.7935139
+28:    M1c GLMM-native manual glmer_bobyqa     6  5923       126   2.1273004
+29:    M1c GLMM-native   mmlb glmer_bobyqa     2  4204        27   0.6422455
+30:    M1c GLMM-native   mmlb glmer_bobyqa     3  5479        26   0.4745391
+31:    M1c GLMM-native   mmlb glmer_bobyqa     4  5733        35   0.6105006
+32:    M1c GLMM-native   mmlb glmer_bobyqa     6  5878        90   1.5311330
+33:    M1c  GenBinaryY manual        glmer     2  3846       113   2.9381175
+34:    M1c  GenBinaryY manual        glmer     3  5282       175   3.3131390
+35:    M1c  GenBinaryY manual        glmer     4  5659       199   3.5165224
+36:    M1c  GenBinaryY manual        glmer     6  5890       323   5.4838710
+37:    M1c  GenBinaryY   mmlb        glmer     2  3736       122   3.2655246
+38:    M1c  GenBinaryY   mmlb        glmer     3  5161       140   2.7126526
+39:    M1c  GenBinaryY   mmlb        glmer     4  5574       153   2.7448870
+40:    M1c  GenBinaryY   mmlb        glmer     6  5825       126   2.1630901
+41:    M1c  GenBinaryY manual glmer_bobyqa     2  3847        42   1.0917598
+42:    M1c  GenBinaryY manual glmer_bobyqa     3  5280        38   0.7196970
+43:    M1c  GenBinaryY manual glmer_bobyqa     4  5661        43   0.7595831
+44:    M1c  GenBinaryY manual glmer_bobyqa     6  5891       124   2.1049058
+45:    M1c  GenBinaryY   mmlb glmer_bobyqa     2  3736        43   1.1509636
+46:    M1c  GenBinaryY   mmlb glmer_bobyqa     3  5162        34   0.6586594
+47:    M1c  GenBinaryY   mmlb glmer_bobyqa     4  5572        33   0.5922469
+48:    M1c  GenBinaryY   mmlb glmer_bobyqa     6  5828        55   0.9437200
+49:   main    GLMM-AR1 manual        glmer     6 15561       319   2.0499968
+50:   main    GLMM-AR1 manual        glmer     8 15838        75   0.4735446
+51:   main    GLMM-AR1 manual        glmer    10 15932        85   0.5335174
+52:   main    GLMM-AR1   mmlb        glmer     6 15683       178   1.1349869
+53:   main    GLMM-AR1   mmlb        glmer     8 15889        79   0.4971993
+54:   main    GLMM-AR1   mmlb        glmer    10 15947       223   1.3983821
+55:   main    GLMM-AR1 manual glmer_bobyqa     6 47091       463   0.9832027
+56:   main    GLMM-AR1 manual glmer_bobyqa     8 47643       756   1.5868018
+57:   main    GLMM-AR1 manual glmer_bobyqa    10 47852      1789   3.7386107
+58:   main    GLMM-AR1   mmlb glmer_bobyqa     6 47258       400   0.8464175
+59:   main    GLMM-AR1   mmlb glmer_bobyqa     8 47733       891   1.8666331
+60:   main    GLMM-AR1   mmlb glmer_bobyqa    10 47878      2456   5.1297047
+61:   main GLMM-native manual glmer_bobyqa     6 47123       413   0.8764298
+62:   main GLMM-native manual glmer_bobyqa     8 47686       859   1.8013673
+63:   main GLMM-native manual glmer_bobyqa    10 47856      2036   4.2544300
+64:   main GLMM-native   mmlb glmer_bobyqa     6 47292       398   0.8415800
+65:   main GLMM-native   mmlb glmer_bobyqa     8 47757      1054   2.2070063
+66:   main GLMM-native   mmlb glmer_bobyqa    10 47881      2671   5.5784131
+67:   main  GenBinaryY manual        glmer     6 46536      1921   4.1279869
+68:   main  GenBinaryY manual        glmer     8 47468       527   1.1102216
+69:   main  GenBinaryY manual        glmer    10 47718       344   0.7209020
+70:   main  GenBinaryY manual glmer_bobyqa     6 46563      1224   2.6286966
+71:   main  GenBinaryY manual glmer_bobyqa     8 47478       651   1.3711614
+72:   main  GenBinaryY manual glmer_bobyqa    10 47723      1243   2.6046141
+73:   main  GenBinaryY   mmlb glmer_bobyqa     6 46825      1032   2.2039509
+74:   main  GenBinaryY   mmlb glmer_bobyqa     8 47593       599   1.2585884
+75:   main  GenBinaryY   mmlb glmer_bobyqa    10 47782      1631   3.4134193
+      grid         dgp  label       method ntime     n n_extreme pct_extreme
+    <char>      <char> <char>       <char> <int> <int>     <int>       <num>
+    med_abs_est_extreme med_se_extreme med_se_all warn_extreme
+                  <num>          <num>      <num>        <num>
+ 1:          1.04170575    0.002714929 1.67022108    100.00000
+ 2:          0.53967985    0.002755801 0.89445246    100.00000
+ 3:          0.33955134    0.002173347 0.56973354    100.00000
+ 4:          0.20637098    0.002008565 0.29767820    100.00000
+ 5:          1.00052652    0.002742562 1.67110194    100.00000
+ 6:          0.67974707    0.002561354 0.90938595    100.00000
+ 7:          0.42761187    0.002729312 0.59717424     99.18033
+ 8:          0.28374665    0.002521109 0.32804969    100.00000
+ 9:          3.95693837    0.003552521 1.68731855    100.00000
+10:          1.02150039    0.002903746 0.89989588    100.00000
+11:          0.54429839    0.003181877 0.57341992    100.00000
+12:          0.20287607    0.002125625 0.29932588    100.00000
+13:          2.23642766    0.003404224 1.69162417    100.00000
+14:          0.68449019    0.004250207 0.91675414    100.00000
+15:          0.41517814    0.002858411 0.60115403    100.00000
+16:          0.27337831    0.002558404 0.33021916    100.00000
+17:          1.36237069    0.002666753 1.66027413    100.00000
+18:          0.52714593    0.002460107 0.89178875    100.00000
+19:          0.37201441    0.002347777 0.56802880    100.00000
+20:          0.21689443    0.001905586 0.29931169    100.00000
+21:          1.27846682    0.002846860 1.66948035    100.00000
+22:          0.65586648    0.002810835 0.91222663    100.00000
+23:          0.47164890    0.002584404 0.58592070    100.00000
+24:          0.25729345    0.002238872 0.32837216    100.00000
+25:          3.61934220    0.004369519 1.67572243    100.00000
+26:          0.99038801    0.003093664 0.89857666    100.00000
+27:          0.45334295    0.002655262 0.57102745    100.00000
+28:          0.18522265    0.001959026 0.30257742    100.00000
+29:          4.49287444    0.004096449 1.68003581    100.00000
+30:          0.97846612    0.003095715 0.91798855    100.00000
+31:          0.57722700    0.002904887 0.59001829    100.00000
+32:          0.23546185    0.002216538 0.32978973    100.00000
+33:          1.17816009    0.002585624 1.89699397    100.00000
+34:          0.68311524    0.002097836 1.01279393    100.00000
+35:          0.41354229    0.001907320 0.63790196    100.00000
+36:          0.21457504    0.001713709 0.33801888    100.00000
+37:          1.06465805    0.002605695 1.90189127    100.00000
+38:          0.77708868    0.002106012 1.04127401    100.00000
+39:          0.65890697    0.002001441 0.66949165    100.00000
+40:          0.34923625    0.002030357 0.37568728     99.20635
+41:          2.62554621    0.003122573 1.90711552    100.00000
+42:          1.55832938    0.002475866 1.02619286     97.36842
+43:          0.65341887    0.002041159 0.64622209    100.00000
+44:          0.26063588    0.001788930 0.34127681    100.00000
+45:          2.20947076    0.003230528 1.92727183    100.00000
+46:          3.18935178    0.003075077 1.05748744     97.05882
+47:          1.20447034    0.002995911 0.67738239    100.00000
+48:          0.34982105    0.002475196 0.37824401     98.18182
+49:          0.27498459    0.001730959 0.21037948    100.00000
+50:          0.22232137    0.002048422 0.13184953    100.00000
+51:          0.08630984    0.002064158 0.09165777    100.00000
+52:          0.46769510    0.002007079 0.20627926    100.00000
+53:          0.29886877    0.002686563 0.13128401    100.00000
+54:          0.26899568    0.001791457 0.09360132     97.30942
+55:          0.31659278    0.002029877 0.20429289    100.00000
+56:          0.08792156    0.001494429 0.12549121    100.00000
+57:          0.06346269    0.001337846 0.08618104    100.00000
+58:          0.40115631    0.002272508 0.19661591    100.00000
+59:          0.15343524    0.001522979 0.12254641     99.77553
+60:          0.21850857    0.001362710 0.08577886     97.23127
+61:          0.26830450    0.002143047 0.19579034    100.00000
+62:          0.09014866    0.001498292 0.12040504    100.00000
+63:          0.05844894    0.001255300 0.08249453    100.00000
+64:          0.24941590    0.002254016 0.18895926    100.00000
+65:          0.16305347    0.001509295 0.11747428    100.00000
+66:          0.21269043    0.001311578 0.08166607     98.65219
+67:          0.20048484    0.001059133 0.24590615    100.00000
+68:          0.20122787    0.001630384 0.15161482    100.00000
+69:          0.13239247    0.001912231 0.10585452    100.00000
+70:          0.26047194    0.001260983 0.25247094    100.00000
+71:          0.18561499    0.001579974 0.15125950    100.00000
+72:          0.07911077    0.001229348 0.10417466    100.00000
+73:          0.52283256    0.001416743 0.24486181     99.90310
+74:          0.25362634    0.001733123 0.15204750     99.33222
+75:          0.19212181    0.001273695 0.10706267     95.27897
+    med_abs_est_extreme med_se_extreme med_se_all warn_extreme
+                  <num>          <num>      <num>        <num>
+            dgp     N ntime  label sim_id    estimate           se
+         <char> <int> <int> <char>  <int>       <num>        <num>
+ 1:  GenBinaryY    20     2 manual    562 -9.17337705 2.502718e-05
+ 2:  GenBinaryY    20     2   mmlb    562 -9.17337705 2.502718e-05
+ 3:    GLMM-AR1    10     2 manual    554 -3.28074569 7.476428e-05
+ 4:  GenBinaryY    45     6   mmlb    793 -0.44798821 9.335299e-04
+ 5: GLMM-native    45     6 manual    950  0.03270720 1.045335e-03
+ 6:  GenBinaryY    45     6 manual    779  0.07287191 1.046403e-03
+ 7:  GenBinaryY    35     6 manual    692 -0.46200375 1.064243e-03
+ 8:  GenBinaryY    35     6   mmlb    578  0.44044834 1.074205e-03
+ 9:  GenBinaryY    45     4 manual    650 -0.84996548 1.077206e-03
+10:    GLMM-AR1    45     6 manual    648 -0.18635145 1.079909e-03
+11:  GenBinaryY    45     4   mmlb    179  0.02529323 1.087816e-03
+12:  GenBinaryY    45     6 manual    507 -0.31969635 1.092438e-03
+13: GLMM-native    45     3 manual    646  2.82948251 1.095275e-03
+14:  GenBinaryY    45     4   mmlb    457  0.07229962 1.102731e-03
+15:  GenBinaryY    45     3 manual    155  3.22821627 1.114114e-03
+                p
+            <num>
+ 1:  0.000000e+00
+ 2:  0.000000e+00
+ 3:  0.000000e+00
+ 4:  0.000000e+00
+ 5: 6.644721e-215
+ 6:  0.000000e+00
+ 7:  0.000000e+00
+ 8:  0.000000e+00
+ 9:  0.000000e+00
+10:  0.000000e+00
+11: 1.377166e-119
+12:  0.000000e+00
+13:  0.000000e+00
+14:  0.000000e+00
+15:  0.000000e+00
+                                                                               status
+                                                                               <char>
+ 1: Model failed to converge with max|grad| = 2.82536 (tol = 0.002, component 1)\n  S
+ 2: Model failed to converge with max|grad| = 2.82536 (tol = 0.002, component 1)\n  S
+ 3: Model failed to converge with max|grad| = 0.945782 (tol = 0.002, component 1)\n  
+ 4: Model failed to converge with max|grad| = 0.0758468 (tol = 0.002, component 1)\n 
+ 5: Model failed to converge with max|grad| = 0.067788 (tol = 0.002, component 1)\n  
+ 6: Model failed to converge with max|grad| = 0.0677149 (tol = 0.002, component 1)\n 
+ 7: Model failed to converge with max|grad| = 0.066467 (tol = 0.002, component 1)\n  
+ 8: Model failed to converge with max|grad| = 0.0658394 (tol = 0.002, component 1)\n 
+ 9: Model failed to converge with max|grad| = 0.065669 (tol = 0.002, component 1)\n  
+10: Model failed to converge with max|grad| = 0.0655532 (tol = 0.002, component 1)\n 
+11: Model failed to converge with max|grad| = 0.065004 (tol = 0.002, component 1)\n  
+12: Model failed to converge with max|grad| = 0.0648476 (tol = 0.002, component 1)\n 
+13: Model failed to converge with max|grad| = 0.0646007 (tol = 0.002, component 1)\n 
+14: Model failed to converge with max|grad| = 0.0641218 (tol = 0.002, component 1)\n 
+15: Model failed to converge with max|grad| = 0.0635113 (tol = 0.002, component 1)\n 
+                                                          status     N
+                                                          <char> <int>
+ 1: Model failed to converge with max|grad| = 0.0260452 (tol = 0     4
+ 2: Model failed to converge with max|grad| = 0.00499547 (tol =      4
+ 3: Model failed to converge with max|grad| = 0.0425029 (tol = 0     3
+ 4: Model failed to converge with max|grad| = 0.0320154 (tol = 0     3
+ 5: Model failed to converge with max|grad| = 0.0229436 (tol = 0     3
+ 6: Model failed to converge with max|grad| = 0.00518165 (tol =      3
+ 7: Model failed to converge with max|grad| = 2.82536 (tol = 0.0     2
+ 8: Model failed to converge with max|grad| = 0.063245 (tol = 0.     2
+ 9: Model failed to converge with max|grad| = 0.0582726 (tol = 0     2
+10: Model failed to converge with max|grad| = 0.0553134 (tol = 0     2

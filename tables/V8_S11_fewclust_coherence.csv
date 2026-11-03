@@ -1,0 +1,10 @@
+item,value,source
+n_cmp,125,MMM-package@45c7946:fewclust/dev/checks_0.4.1/c3_coherence.R -> out/c3_coherence_rows.csv
+n_mismatch,18,MMM-package@45c7946:fewclust/dev/checks_0.4.1/c3_coherence.R -> out/c3_coherence_rows.csv
+n_usable_study,119,MMM-package@45c7946:fewclust/dev/checks_0.4.1/c3_coherence.R -> out/c3_coherence_rows.csv
+n_mismatch_usable,12,MMM-package@45c7946:fewclust/dev/checks_0.4.1/c3_coherence.R -> out/c3_coherence_rows.csv
+n_coh,4,MMM-package@45c7946:fewclust/dev/checks_0.4.1/c3_coherence.R -> out/c3_coherence_rows.csv
+n_cmp_d90,114,MMM-package@45c7946:fewclust/dev/checks_0.4.1/c3_coherence.R -> out/c3_coherence_rows.csv
+n_mismatch_d90,7,MMM-package@45c7946:fewclust/dev/checks_0.4.1/c3_coherence.R -> out/c3_coherence_rows.csv
+n_study_no_result_d90,11,MMM-package@45c7946:fewclust/dev/checks_0.4.1/c3_coherence.R -> out/c3_coherence_rows.csv
+n_study_no_result_d90_pkg_no_mmm,11,MMM-package@45c7946:fewclust/dev/checks_0.4.1/c3_coherence.R -> out/c3_coherence_rows.csv

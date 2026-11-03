@@ -1,0 +1,49 @@
+Q2.2 partial ids 671; with all 5 techniques present on SOME term: 671
+terms returned by the 'missing' technique:
+            dgp method                  terms     N
+         <char> <char>                 <char> <int>
+ 1: GLMM-native  glmer            (Intercept)   286
+ 2: GLMM-native  glmer                   time   286
+ 3: GLMM-native  glmer                    trt   194
+ 4: GLMM-native  glmer                    age   103
+ 5: GLMM-native  glmer                   dose    31
+ 6: GLMM-native    mmm            (Intercept)   242
+ 7: GLMM-native    mmm                   time   242
+ 8: GLMM-native    mmm                    trt   187
+ 9: GLMM-native    mmm                    age   105
+10: GLMM-native    mmm      gamma:(Intercept)    52
+11: GLMM-native    mmm log(sigma):(Intercept)    52
+12: GLMM-native    mmm        log(sigma):time    52
+13: GLMM-native    mmm                   dose     2
+14: GLMM-native shrink            (Intercept)   286
+15: GLMM-native shrink                   time   286
+16: GLMM-native shrink                    trt   194
+17: GLMM-native shrink                    age   103
+18: GLMM-native shrink                   dose    31
+19:  GenBinaryY  glmer            (Intercept)   272
+20:  GenBinaryY  glmer                   time   272
+21:  GenBinaryY  glmer                    trt   178
+22:  GenBinaryY  glmer                    age    94
+23:  GenBinaryY  glmer                   dose    32
+24:  GenBinaryY    mmm            (Intercept)   242
+25:  GenBinaryY    mmm                   time   242
+26:  GenBinaryY    mmm                    trt   187
+27:  GenBinaryY    mmm                    age   110
+28:  GenBinaryY    mmm      gamma:(Intercept)    54
+29:  GenBinaryY    mmm log(sigma):(Intercept)    54
+30:  GenBinaryY    mmm        log(sigma):time    54
+31:  GenBinaryY shrink            (Intercept)   272
+32:  GenBinaryY shrink                   time   272
+33:  GenBinaryY shrink                    trt   178
+34:  GenBinaryY shrink                    age    94
+35:  GenBinaryY shrink                   dose    32
+            dgp method                  terms     N
+         <char> <char>                 <char> <int>
+Q2.2 partial ids that are also missing in GLMM-AR1: 671 of 671
+AR1-missing ids, in the other mechanisms: number of methods with a time:trt row
+           dgp  n_tt     N
+        <char> <int> <int>
+1: GLMM-native     0   494
+2:  GenBinaryY     0   494
+manuscript definition: design points with < 1000 'attempted' in at least one arm: 132 (by dgp: GenBinaryY 44; GLMM-AR1 44; GLMM-native 44); min 971
+replicates lost under the manuscript definition: 494 (model,N,T,arm,sim_id) keys; lost in all 3 mechanisms: 494

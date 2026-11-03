@@ -1,0 +1,64 @@
+- One or more packages recorded in the lockfile are not installed.
+- Use `renv::status()` for more details.
+[31m
+
+processing file: S7e.qmd
+[39m1/35          
+2/35 [setup]  
+3/35          
+4/35 [inbreve]
+5/35          
+6/35 [rinv]   
+7/35          
+8/35 [gates]  
+9/35          
+10/35 [esito]  
+11/35          
+12/35 [pred]   
+13/35          
+14/35 [bm]     
+15/35          
+16/35 [scelta] 
+17/35          
+18/35 [ds]     
+19/35          
+20/35 [sm]     
+21/35          
+22/35 [rule]   
+23/35          
+24/35 [bs]     
+25/35          
+26/35 [pt]     
+27/35          
+28/35 [sr]     
+29/35          
+30/35 [gt]     
+31/35          
+32/35 [app]    
+33/35          
+34/35 [fonti]  
+35/35          
+[31moutput file: S7e.knit.md
+
+[39m[1mpandoc [22m
+  to: html
+  output-file: S7e.html
+  standalone: true
+  embed-resources: true
+  section-divs: true
+  html-math-method: mathjax
+  wrap: none
+  default-image-extension: png
+  toc: true
+  
+[1mmetadata[22m
+  document-css: false
+  link-citations: true
+  date-format: long
+  lang: it
+  title: 'S7e: terzo meccanismo generatore (copula gaussiana, correlazione solo seriale)'
+  subtitle: Roadmap Morris 2019, ramo morris-v4
+  date: '2026-10-24'
+  
+Output created: S7e.html
+

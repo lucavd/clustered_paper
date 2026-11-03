@@ -1,0 +1,73 @@
+extras: 67 values -> tables/V4_S7_extra.csv
+check cc_nfits = 1685204 (S6b inventory: 1685204)
+                 key                 value
+              <char>                <char>
+ 1:       n_levels_N                    16
+ 2:       n_levels_T                     6
+ 3:         ndp_grid                  1440
+ 4:        n_nt_comb                    96
+ 5:             nsim                  1000
+ 6:   nrep_max_short                   999
+ 7:          ndp_m1c                    72
+ 8:          ndp_m67                   384
+ 9:     n_degenerate                   247
+10:            p_trt                   0.5
+11:         beta3_m4                  0.05
+12:     gby_sigma_m3                  0.01
+13:           m3_sd0                     1
+14:             mm_q                    20
+15:         glmm_d11                     1
+16:         glmm_d22                 0.001
+17:          zeger_f                  1.16
+18:          ar1_rho                   0.6
+19:           ar1_s2                   0.5
+20:        seed_rule  20260805 + 1000m + i
+21:           m6_gby                   0.1
+22:           m7_gby                  0.25
+23:           m6_nat                  0.01
+24:           m7_nat                  0.04
+25:          m3_sd10                  1.09
+26:          m6_sd10                   1.9
+27:          m7_sd10                  3.25
+28:       prev_m1_t2     0.141125819306222
+29:         m1c_prev     0.594512195121951
+30:          m1c_var      3.54482462536461
+31:       nat_h0_min  -0.00304490964568286
+32:       nat_h0_max  -0.00112032882577836
+33:   geesmv_timeout                     5
+34:         usab_max                    10
+35:           nlm_ok                1 or 2
+36:           cc_thr                 0.001
+37:        cc_thr_lo                 1e-04
+38:        cc_thr_hi                  0.01
+39:           boot_B                  2000
+40:       min_obs_dp                    20
+41:         nl_trunc                    30
+42:        mcse_5pct     0.689202437604511
+43:     mcse_5pct_2x      1.37840487520902
+44:         cc_nfits               1685204
+45:   cc_share_study      67.6297350350462
+46:     t2_mcse_rate    0.0471941303254474
+47:       t2_mcse_wc     0.315179106434699
+48:          t3_mcse     0.126261001004289
+49:          t5_mcse     0.264057311896992
+50:        pu_T4_min                    80
+51:         lus_npat                   207
+52:          lus_npt                   230
+53:         lus_nobs                  2296
+54:       lus_nmulti                    22
+55:         lus_ninv                    25
+56:         lus_prev     0.594512195121951
+57:       lus_var_id      3.54482462536461
+58:       lus_var_pt      3.78354343285087
+59:         lus_chi2      46.7350562229935
+60:         lus_nsub                   500
+61:          lus_N10                    10
+62:          lus_N50                    50
+63:           lus_Ns 10, 15, 20, 25 and 50
+64:     lus_inv_none                  21.8
+65:       lus_phyper      0.26767111875257
+66: upow_T23_ceiling                     2
+67:       git_commit               0e32cec
+                 key                 value
+              <char>                <char>

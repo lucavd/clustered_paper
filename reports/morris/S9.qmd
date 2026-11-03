@@ -1,0 +1,143 @@
+---
+title: "S9: esito costante come nessun risultato, ricalcolo di tabelle, figure e testo"
+subtitle: "Roadmap Morris 2019, ramo morris-v4"
+date: 2026-11-02
+format:
+  html:
+    embed-resources: true
+    toc: true
+lang: it
+execute:
+  echo: false
+  warning: false
+---
+
+```{r setup}
+.libPaths(path.expand("~/MMM/renv/library/linux-ubuntu-noble/R-4.6/x86_64-pc-linux-gnu"))
+suppressMessages({ library(data.table) })
+REPO <- path.expand("~/MMM"); LOGS <- file.path(REPO, "reports/morris/S9_logs")
+md <- function(D) { D <- as.data.frame(D); for (j in seq_along(D)) if (is.numeric(D[[j]])) D[[j]] <- format(signif(D[[j]], 4), trim = TRUE, drop0trailing = TRUE)
+  h <- paste0("| ", paste(names(D), collapse = " | "), " |"); s <- paste0("|", paste(rep("---", ncol(D)), collapse = "|"), "|")
+  b <- apply(D, 1, function(r) paste0("| ", paste(gsub("|", "\\|", gsub("\n", " ", r), fixed = TRUE), collapse = " | "), " |")); cat(c(h, s, b, ""), sep = "\n") }
+sec <- function(file, head, level = 1) {
+  x <- readLines(file.path(REPO, file)); pat <- paste(strrep("#", level), head); i <- which(x == pat); if (!length(i)) return(""); i <- max(i)
+  nxt <- which(grepl(paste0("^", strrep("#", level), " "), x) & seq_along(x) > i); j <- if (length(nxt)) min(nxt) - 1 else length(x)
+  x <- x[(i + 1):j]; gsub("\\]\\(\\.\\./", "](../../docs/", x) }
+tab <- function(f) fread(file.path(REPO, "tables", f))
+fin <- readLines(file.path(LOGS, "pipeline_final.out")); fin7 <- readLines(file.path(LOGS, "pipeline_run7.out"))
+```
+
+```{r inbreve, results = "asis"}
+cat(sec("docs/steps/S9.md", "In breve"), sep = "\n")
+```
+
+# Decisioni del PI
+
+```{r decisioni, results = "asis"}
+cat(sec("docs/steps/S9.md", "Decisioni del PI (2026-11-02)"), sep = "\n")
+```
+
+# Dubbi rinviati
+
+```{r rinvii, results = "asis"}
+cat(sec("docs/steps/S9.md", "Dubbi rinviati"), sep = "\n")
+```
+
+# Cancelli e previsioni
+
+Pre-registrati nel commit 699792e (correzioni della descrizione in a472150 e 08bc6aa, cancelli e previsioni invariati), prima di ogni calcolo.
+
+```{r esiti, results = "asis"}
+cat(sec("docs/steps/S9.md", "Esiti (2026-11-02)"), sep = "\n")
+```
+
+Righe dei log del passaggio completo da capo a fondo (`pipeline_final`) e dell'ultimo passaggio, dopo le decisioni del PI (`pipeline_run7`, ripreso dal registro):
+
+```{r logs, results = "asis"}
+md(data.table(passaggio = "completo", riga = grep("^(GF|verify|P1|abstract|format|pipeline_exit)", fin, value = TRUE)))
+md(data.table(passaggio = "run7", riga = grep("^(GF|verify|P1|abstract|format|pipeline_exit)", fin7, value = TRUE)))
+```
+
+# Cosa e' girato
+
+| fase | script | durata | note |
+|---|---|---|---|
+| chiavi dei dataset con esito costante | `R/s9/s9_const_keys.R` | pochi minuti | `results_v4/S9/const_keys.rds` (9.711 chiavi) |
+| catena delle tabelle, variante nc | `R/s9/s9_nc_pipeline.sh` | 62 minuti (somma dei passi registrati) | `tables/variant_nc/`, `results_v4/variant_nc/` |
+| aggregazioni a valle | `R/s9/s9_upstream.sh` | circa 30 minuti | S7b, S7d, S7d2, S7e, S6b |
+| pipeline di chiusura | `R/s9/s9_pipeline.sh` | circa 20 minuti per passaggio completo | run1-run3 con riprese dopo correzioni di strumenti; run4-run5 dal registro dopo correzioni del testo; passaggio finale completo `pipeline_final` |
+| cancelli e previsioni | `R/s9/s9_gates_preds.R` | meno di un minuto | `tables/V6_S9_*.csv` |
+| condizione per citare fewclust | `R/s9/s9_fewclust_condition.sh` | pochi minuti | fewclust 0.3.1 dal commit c688ecc |
+| dopo le decisioni del PI | `R/s9/s9_fewclust_coherence.R`, `R/s9/s9_ref_style.py`, pipeline run6 (da `s9_keys`) e run7 (dal registro) | circa 20 minuti | frasi su fewclust, titolo Word |
+
+Commit dello step sul ramo `morris-v4`: 699792e, a472150, 08bc6aa (pre-registrazione), 679bee1 (codice), 6b2159e (porting della v6, GS5), f28ce5b (tabelle, testo riscritto, cancelli), e il commit di chiusura che contiene questo report. Pacchetto: ramo `package`, e4a7968 (pre-registrazione della 0.3.1), c688ecc (0.3.1) e 626393b (chiusura, solo documentazione).
+
+Integrita' (GS1): elenchi md5 in `results_v4/S9/md5_inputs_before.txt` e `md5_inputs_after.txt`.
+
+```{r md5, results = "asis"}
+b <- fread(file.path(REPO, "results_v4/S9/md5_inputs_before.txt"), header = FALSE, col.names = c("archivio", "md5_prima", "file"))
+a <- fread(file.path(REPO, "results_v4/S9/md5_inputs_after.txt"), header = FALSE, col.names = c("archivio", "md5_dopo", "file_dopo"))
+m <- merge(b, a, by = "archivio"); m[, uguale := md5_prima == md5_dopo]; md(m[, .(archivio, file, md5_prima, md5_dopo, uguale)])
+```
+
+# Appendice
+
+## Previsioni, valori
+
+```{r preds, results = "asis"}
+md(tab("V6_S9_predictions.csv"))
+```
+
+## Confronto diretto prima e dopo, differenza di scarto medio assoluto (GEE meno modello marginalizzato)
+
+```{r h2h, results = "asis"}
+h <- tab("V6_S9_h2h_before_after.csv")[q == "mad_gee_minus_mmm"]
+md(h[, .(regione = region, punti = n_dp.n, prima = est.o, dopo = est.n, differenza = est.n - est.o, mcse_dopo = mcse.n, classe_prima = class.o, classe_dopo = class.n)])
+```
+
+## Controprova della Tabella 5 (GS3)
+
+```{r gs3, results = "asis"}
+md(tab("V6_S9_GS3.csv"))
+```
+
+## Righe invariate (GS2)
+
+```{r gs2, results = "asis"}
+md(tab("V6_S9_GS2.csv"))
+```
+
+## Registro dei numeri prima e dopo
+
+```{r reg, results = "asis"}
+r <- tab("V6_S9_registry_diff.csv"); st <- intersect(c("status", "change", "kind"), names(r))[1]
+if (!is.na(st)) md(r[, .N, by = st]) else md(data.table(righe = nrow(r)))
+```
+
+## Condizione per citare fewclust
+
+```{r fc, results = "asis"}
+md(tab("V6_S9_fewclust_condition.csv"))
+```
+
+## Da dove vengono i numeri del riassunto
+
+| frase | file, riga | valore letto |
+|---|---|---|
+| 9.711 dei 4.752.000 dataset; 92 su 100 con 2-3 occasioni e al massimo 25 cluster | `tables/V5_S7f_numbers.csv`, `f:n9|const_n`, `f:n9|datasets_n`, `f:n9|const_small_pct` | 9,711; 4,752,000; 92 |
+| GEE AR(1) Fay-Graubard fuori taratura in 2 scenari | `tables/V5_S7f_table4.csv`, `gee_ar1_fg`, `hi_all` | 2 |
+| circa 20 e 18 falsi positivi su 100; 61 e 63 dataset; prima 12 e 11 su 172 e 136 | `tables/V5_S7f_numbers.csv`, `f:n9|fgpt|1|k`, `|n`, `|k_pre`, `|n_pre` e lo stesso per `fgpt|2` | 12/61 = 19,7%; 11/63 = 17,5%; 12/172; 11/136 |
+| 91 contro 92 dataset su 100 | `tables/V5_S7f_table4.csv`, `pu` di `mmm_cc` e `gee_ar1_fg` | 90,89; 91,90 |
+| limite 5: 0 scenari, la regola sceglierebbe la GEE; limite 20: 6 | `tables/V5_S7f_numbers.csv`, `f:gt|flt|gee_ar1_fg|5|hi`, `f:gt|flt|gee_ar1_fg|20|hi` | 0; 6 |
+| 99 e 82 volte su 100 | `tables/V5_S7f_numbers.csv`, `f:s9|s37|fg_pfail_boot`, `f:s9|s37|mmm_pfail_boot` | 99; 82 |
+| Bayes empirico 0,15 contro 0,22 | `tables/V5_S8b_rule_stability.csv`, `eb_exp_flags` | 0,149 (`gee_ar1_fg`); 0,219 (`mmm_cc`) |
+| 10 cluster e 3 o più occasioni: 1,6 contro 2,9 punti | `tables/V5_S7f_numbers.csv`, `f:hb|N10_T3p|mad_gee`, `mad_mmm` | 1,6; 2,9 |
+| meno di 0,1 punti in media, al più 1,1 nel caso peggiore | `tables/V6_S9_predictions.csv`, PS1 e PS2 | da 0,009 a 0,084; da 0,40 a 1,06 |
+| quota usabile al più 0,9 punti in meno; potenza invariata | `tables/V6_S9_predictions.csv`, PS3 e PS4 | da -0,87 a 0; da 0 a 0,061 |
+| Fay-Graubard scambiabile 15 (prima 11), indipendenza 5 (prima 2); 3 e 3 nella griglia principale | `tables/V5_S7f_table4.csv`, `hi_all`, `hi_main`; prima: `results_v4/S9/tables_pre_S9.tgz`, stessa tabella | 15, 5; 3, 3; 11, 2 |
+| nessun sottocampione clinico con esiti tutti uguali | `docs/steps/S9.md`, attese pre-registrate (controllo di portata) | 0 su 33.000; 0 su 30.000 |
+| fewclust: 9 controlli su 10; 117 di 119 dataset usabili | ramo `package`, `fewclust/dev/aggiornamento_0.3.1.md`, tabella dei controlli | 9 su 10; 2 differenze su 119 |
+| fewclust sceglie la strategia del paper sui due dataset di prova | `tables/V6_S9_fewclust_condition.csv` | `mmm`, 2 su 2 |
+| condizione di coerenza: 4 dei 127 dataset | `fewclust/dev/aggiornamento_0.3.1.md`, descrizione pre-registrata del controllo 3 | 4 su 127 |
+| 7.287 parole, 8.687 con tabelle e figure | `reports/morris/S9_logs/pipeline_final.out`, riga `P1` | 7287; 8687 |
+| tempi: 62, circa 30, circa 20 minuti | somma dei passi della catena nc nei log della sessione; date dei file in `reports/morris/S9_logs/upstream` e `pipeline_run2` | 3.744 s; 29,8 min; 20,3 min |

@@ -1,0 +1,248 @@
+dgp,model,N,ntime,label,sim_id,n_trt1,n_trt0,trt1_followed,trt0_followed,type
+GLMM-AR1,1,10,2,mmlb,2,2,8,0,6,one arm never beyond time 0
+GLMM-AR1,1,10,2,mmlb,13,3,7,0,6,one arm never beyond time 0
+GLMM-AR1,1,10,2,mmlb,14,7,3,4,0,one arm never beyond time 0
+GLMM-AR1,1,10,2,mmlb,114,2,8,0,7,one arm never beyond time 0
+GLMM-AR1,1,10,2,mmlb,147,2,8,0,6,one arm never beyond time 0
+GLMM-AR1,1,10,2,mmlb,215,8,2,6,0,one arm never beyond time 0
+GLMM-AR1,1,10,2,mmlb,360,8,2,6,0,one arm never beyond time 0
+GLMM-AR1,1,10,2,mmlb,398,8,2,7,0,one arm never beyond time 0
+GLMM-AR1,1,10,2,mmlb,462,6,4,5,0,one arm never beyond time 0
+GLMM-AR1,1,10,2,mmlb,477,1,9,0,7,one arm never beyond time 0
+GLMM-AR1,1,10,2,mmlb,483,9,1,4,0,one arm never beyond time 0
+GLMM-AR1,1,10,2,mmlb,506,6,4,4,0,one arm never beyond time 0
+GLMM-AR1,1,10,2,mmlb,534,0,10,0,8,single arm
+GLMM-AR1,1,10,2,mmlb,535,9,1,9,0,one arm never beyond time 0
+GLMM-AR1,1,10,2,mmlb,601,1,9,0,4,one arm never beyond time 0
+GLMM-AR1,1,10,2,mmlb,625,0,10,0,9,single arm
+GLMM-AR1,1,10,2,mmlb,709,3,7,0,7,one arm never beyond time 0
+GLMM-AR1,1,10,2,mmlb,718,2,8,0,5,one arm never beyond time 0
+GLMM-AR1,1,10,2,mmlb,743,2,8,0,6,one arm never beyond time 0
+GLMM-AR1,1,10,2,mmlb,865,2,8,0,6,one arm never beyond time 0
+GLMM-AR1,1,10,2,mmlb,878,7,3,7,0,one arm never beyond time 0
+GLMM-AR1,1,10,2,mmlb,907,2,8,0,5,one arm never beyond time 0
+GLMM-AR1,1,10,2,mmlb,911,5,5,0,5,one arm never beyond time 0
+GLMM-AR1,1,10,2,mmlb,964,5,5,2,0,one arm never beyond time 0
+GLMM-AR1,1,10,2,mmlb,967,8,2,6,0,one arm never beyond time 0
+GLMM-AR1,1,10,3,mmlb,114,2,8,0,7,one arm never beyond time 0
+GLMM-AR1,1,10,3,mmlb,147,2,8,0,7,one arm never beyond time 0
+GLMM-AR1,1,10,3,mmlb,398,8,2,8,0,one arm never beyond time 0
+GLMM-AR1,1,10,3,mmlb,477,1,9,0,7,one arm never beyond time 0
+GLMM-AR1,1,10,3,mmlb,534,0,10,0,9,single arm
+GLMM-AR1,1,10,3,mmlb,625,0,10,0,10,single arm
+GLMM-AR1,1,10,3,mmlb,709,3,7,0,7,one arm never beyond time 0
+GLMM-AR1,1,10,3,mmlb,865,2,8,0,7,one arm never beyond time 0
+GLMM-AR1,1,10,4,mmlb,260,1,9,0,8,one arm never beyond time 0
+GLMM-AR1,1,10,4,mmlb,536,8,2,6,0,one arm never beyond time 0
+GLMM-AR1,1,10,4,mmlb,733,10,0,8,0,single arm
+GLMM-AR1,1,10,6,mmlb,24,0,10,0,10,single arm
+GLMM-AR1,1,10,6,mmlb,625,0,10,0,10,single arm
+GLMM-AR1,1,10,8,mmlb,24,0,10,0,10,single arm
+GLMM-AR1,1,10,8,mmlb,147,1,9,0,9,one arm never beyond time 0
+GLMM-AR1,1,10,8,mmlb,625,0,10,0,10,single arm
+GLMM-AR1,1,10,10,mmlb,24,0,10,0,10,single arm
+GLMM-AR1,1,10,10,mmlb,260,1,9,0,9,one arm never beyond time 0
+GLMM-AR1,1,10,10,mmlb,733,10,0,9,0,single arm
+GLMM-AR1,1,15,2,mmlb,39,13,2,9,0,one arm never beyond time 0
+GLMM-AR1,1,15,2,mmlb,121,5,10,0,8,one arm never beyond time 0
+GLMM-AR1,1,15,2,mmlb,384,2,13,0,10,one arm never beyond time 0
+GLMM-AR1,1,15,2,mmlb,797,3,12,0,10,one arm never beyond time 0
+GLMM-AR1,1,15,3,mmlb,384,2,13,0,10,one arm never beyond time 0
+GLMM-AR1,2,10,2,mmlb,72,3,7,0,6,one arm never beyond time 0
+GLMM-AR1,2,10,2,mmlb,89,0,10,0,9,single arm
+GLMM-AR1,2,10,2,mmlb,153,8,2,5,0,one arm never beyond time 0
+GLMM-AR1,2,10,2,mmlb,159,8,2,5,0,one arm never beyond time 0
+GLMM-AR1,2,10,2,mmlb,208,2,8,0,5,one arm never beyond time 0
+GLMM-AR1,2,10,2,mmlb,216,2,8,0,5,one arm never beyond time 0
+GLMM-AR1,2,10,2,mmlb,228,7,3,6,0,one arm never beyond time 0
+GLMM-AR1,2,10,2,mmlb,240,1,9,0,6,one arm never beyond time 0
+GLMM-AR1,2,10,2,mmlb,250,3,7,0,5,one arm never beyond time 0
+GLMM-AR1,2,10,2,mmlb,311,1,9,0,5,one arm never beyond time 0
+GLMM-AR1,2,10,2,mmlb,346,2,8,0,4,one arm never beyond time 0
+GLMM-AR1,2,10,2,mmlb,423,8,2,5,0,one arm never beyond time 0
+GLMM-AR1,2,10,2,mmlb,512,0,10,0,6,single arm
+GLMM-AR1,2,10,2,mmlb,539,2,8,0,6,one arm never beyond time 0
+GLMM-AR1,2,10,2,mmlb,561,1,9,0,8,one arm never beyond time 0
+GLMM-AR1,2,10,2,mmlb,612,7,3,5,0,one arm never beyond time 0
+GLMM-AR1,2,10,2,mmlb,647,8,2,3,0,one arm never beyond time 0
+GLMM-AR1,2,10,2,mmlb,655,1,9,0,7,one arm never beyond time 0
+GLMM-AR1,2,10,2,mmlb,683,3,7,0,4,one arm never beyond time 0
+GLMM-AR1,2,10,2,mmlb,728,1,9,0,7,one arm never beyond time 0
+GLMM-AR1,2,10,2,mmlb,742,9,1,5,0,one arm never beyond time 0
+GLMM-AR1,2,10,2,mmlb,757,7,3,5,0,one arm never beyond time 0
+GLMM-AR1,2,10,2,mmlb,764,7,3,3,0,one arm never beyond time 0
+GLMM-AR1,2,10,2,mmlb,853,6,4,0,2,one arm never beyond time 0
+GLMM-AR1,2,10,2,mmlb,866,3,7,0,6,one arm never beyond time 0
+GLMM-AR1,2,10,2,mmlb,894,9,1,8,0,one arm never beyond time 0
+GLMM-AR1,2,10,2,mmlb,907,1,9,0,7,one arm never beyond time 0
+GLMM-AR1,2,10,2,mmlb,909,2,8,0,5,one arm never beyond time 0
+GLMM-AR1,2,10,2,mmlb,988,2,8,0,6,one arm never beyond time 0
+GLMM-AR1,2,10,3,mmlb,89,0,10,0,9,single arm
+GLMM-AR1,2,10,3,mmlb,153,8,2,6,0,one arm never beyond time 0
+GLMM-AR1,2,10,3,mmlb,159,8,2,6,0,one arm never beyond time 0
+GLMM-AR1,2,10,3,mmlb,346,2,8,0,7,one arm never beyond time 0
+GLMM-AR1,2,10,3,mmlb,512,0,10,0,8,single arm
+GLMM-AR1,2,10,3,mmlb,757,7,3,6,0,one arm never beyond time 0
+GLMM-AR1,2,10,3,mmlb,866,3,7,0,6,one arm never beyond time 0
+GLMM-AR1,2,10,3,mmlb,894,9,1,9,0,one arm never beyond time 0
+GLMM-AR1,2,10,3,mmlb,907,1,9,0,9,one arm never beyond time 0
+GLMM-AR1,2,10,4,mmlb,199,1,9,0,8,one arm never beyond time 0
+GLMM-AR1,2,10,4,mmlb,204,9,1,9,0,one arm never beyond time 0
+GLMM-AR1,2,10,4,mmlb,338,8,2,7,0,one arm never beyond time 0
+GLMM-AR1,2,10,4,mmlb,463,0,10,0,10,single arm
+GLMM-AR1,2,10,4,mmlb,655,0,10,0,9,single arm
+GLMM-AR1,2,10,6,mmlb,25,1,9,0,9,one arm never beyond time 0
+GLMM-AR1,2,10,6,mmlb,250,2,8,0,6,one arm never beyond time 0
+GLMM-AR1,2,10,6,mmlb,463,0,10,0,10,single arm
+GLMM-AR1,2,10,8,mmlb,89,0,10,0,10,single arm
+GLMM-AR1,2,10,8,mmlb,655,0,10,0,10,single arm
+GLMM-AR1,2,10,8,mmlb,656,0,10,0,10,single arm
+GLMM-AR1,2,10,8,mmlb,742,10,0,10,0,single arm
+GLMM-AR1,2,10,8,mmlb,984,1,9,0,7,one arm never beyond time 0
+GLMM-AR1,2,10,10,mmlb,742,10,0,9,0,single arm
+GLMM-AR1,2,15,2,mmlb,468,12,3,8,0,one arm never beyond time 0
+GLMM-AR1,2,15,2,mmlb,643,2,13,0,9,one arm never beyond time 0
+GLMM-AR1,2,15,2,mmlb,943,11,4,6,0,one arm never beyond time 0
+GLMM-AR1,2,20,2,mmlb,224,14,6,12,0,one arm never beyond time 0
+GLMM-AR1,3,10,2,mmlb,15,0,10,0,7,single arm
+GLMM-AR1,3,10,2,mmlb,122,4,6,0,4,one arm never beyond time 0
+GLMM-AR1,3,10,2,mmlb,193,2,8,0,5,one arm never beyond time 0
+GLMM-AR1,3,10,2,mmlb,203,2,8,0,4,one arm never beyond time 0
+GLMM-AR1,3,10,2,mmlb,212,5,5,5,0,one arm never beyond time 0
+GLMM-AR1,3,10,2,mmlb,266,9,1,6,0,one arm never beyond time 0
+GLMM-AR1,3,10,2,mmlb,282,7,3,3,0,one arm never beyond time 0
+GLMM-AR1,3,10,2,mmlb,297,4,6,0,6,one arm never beyond time 0
+GLMM-AR1,3,10,2,mmlb,459,6,4,5,0,one arm never beyond time 0
+GLMM-AR1,3,10,2,mmlb,538,9,1,7,0,one arm never beyond time 0
+GLMM-AR1,3,10,2,mmlb,690,2,8,0,6,one arm never beyond time 0
+GLMM-AR1,3,10,2,mmlb,759,2,8,0,5,one arm never beyond time 0
+GLMM-AR1,3,10,2,mmlb,845,7,3,5,0,one arm never beyond time 0
+GLMM-AR1,3,10,2,mmlb,863,8,2,5,0,one arm never beyond time 0
+GLMM-AR1,3,10,2,mmlb,891,10,0,9,0,single arm
+GLMM-AR1,3,10,2,mmlb,951,1,9,0,6,one arm never beyond time 0
+GLMM-AR1,3,10,2,mmlb,966,2,8,0,7,one arm never beyond time 0
+GLMM-AR1,3,10,3,mmlb,15,0,10,0,8,single arm
+GLMM-AR1,3,10,3,mmlb,266,9,1,8,0,one arm never beyond time 0
+GLMM-AR1,3,10,3,mmlb,538,9,1,8,0,one arm never beyond time 0
+GLMM-AR1,3,10,3,mmlb,891,10,0,10,0,single arm
+GLMM-AR1,3,10,3,mmlb,951,1,9,0,8,one arm never beyond time 0
+GLMM-AR1,3,10,4,mmlb,204,9,1,9,0,one arm never beyond time 0
+GLMM-AR1,3,10,4,mmlb,360,9,1,9,0,one arm never beyond time 0
+GLMM-AR1,3,10,4,mmlb,652,1,9,0,8,one arm never beyond time 0
+GLMM-AR1,3,10,4,mmlb,711,0,10,0,9,single arm
+GLMM-AR1,3,10,6,mmlb,711,0,10,0,9,single arm
+GLMM-AR1,3,10,8,mmlb,891,10,0,10,0,single arm
+GLMM-AR1,3,15,2,mmlb,111,14,1,11,0,one arm never beyond time 0
+GLMM-AR1,3,15,2,mmlb,979,13,2,7,0,one arm never beyond time 0
+GLMM-AR1,3,15,3,mmlb,111,14,1,12,0,one arm never beyond time 0
+GLMM-AR1,3,15,3,mmlb,979,13,2,9,0,one arm never beyond time 0
+GLMM-AR1,4,10,2,mmlb,93,8,2,5,0,one arm never beyond time 0
+GLMM-AR1,4,10,2,mmlb,116,7,3,3,0,one arm never beyond time 0
+GLMM-AR1,4,10,2,mmlb,204,7,3,5,0,one arm never beyond time 0
+GLMM-AR1,4,10,2,mmlb,239,6,4,6,0,one arm never beyond time 0
+GLMM-AR1,4,10,2,mmlb,241,4,6,0,6,one arm never beyond time 0
+GLMM-AR1,4,10,2,mmlb,315,10,0,6,0,single arm
+GLMM-AR1,4,10,2,mmlb,327,7,3,6,0,one arm never beyond time 0
+GLMM-AR1,4,10,2,mmlb,377,3,7,0,4,one arm never beyond time 0
+GLMM-AR1,4,10,2,mmlb,394,5,5,4,0,one arm never beyond time 0
+GLMM-AR1,4,10,2,mmlb,438,7,3,6,0,one arm never beyond time 0
+GLMM-AR1,4,10,2,mmlb,463,9,1,7,0,one arm never beyond time 0
+GLMM-AR1,4,10,2,mmlb,567,10,0,7,0,single arm
+GLMM-AR1,4,10,2,mmlb,600,8,2,5,0,one arm never beyond time 0
+GLMM-AR1,4,10,2,mmlb,643,4,6,0,4,one arm never beyond time 0
+GLMM-AR1,4,10,2,mmlb,772,7,3,5,0,one arm never beyond time 0
+GLMM-AR1,4,10,2,mmlb,821,1,9,0,8,one arm never beyond time 0
+GLMM-AR1,4,10,2,mmlb,840,9,1,5,0,one arm never beyond time 0
+GLMM-AR1,4,10,2,mmlb,860,8,2,6,0,one arm never beyond time 0
+GLMM-AR1,4,10,2,mmlb,890,2,8,0,8,one arm never beyond time 0
+GLMM-AR1,4,10,2,mmlb,892,7,3,6,0,one arm never beyond time 0
+GLMM-AR1,4,10,2,mmlb,894,9,1,5,0,one arm never beyond time 0
+GLMM-AR1,4,10,2,mmlb,899,7,3,5,0,one arm never beyond time 0
+GLMM-AR1,4,10,2,mmlb,980,7,3,4,0,one arm never beyond time 0
+GLMM-AR1,4,10,2,mmlb,983,3,7,0,5,one arm never beyond time 0
+GLMM-AR1,4,10,3,mmlb,93,8,2,6,0,one arm never beyond time 0
+GLMM-AR1,4,10,3,mmlb,204,7,3,6,0,one arm never beyond time 0
+GLMM-AR1,4,10,3,mmlb,315,10,0,10,0,single arm
+GLMM-AR1,4,10,3,mmlb,567,10,0,9,0,single arm
+GLMM-AR1,4,10,3,mmlb,840,9,1,7,0,one arm never beyond time 0
+GLMM-AR1,4,10,3,mmlb,894,9,1,6,0,one arm never beyond time 0
+GLMM-AR1,4,10,3,mmlb,980,7,3,6,0,one arm never beyond time 0
+GLMM-AR1,4,10,3,mmlb,983,3,7,0,7,one arm never beyond time 0
+GLMM-AR1,4,10,4,mmlb,158,10,0,8,0,single arm
+GLMM-AR1,4,10,4,mmlb,261,7,3,7,0,one arm never beyond time 0
+GLMM-AR1,4,10,4,mmlb,580,9,1,6,0,one arm never beyond time 0
+GLMM-AR1,4,10,4,mmlb,631,8,2,8,0,one arm never beyond time 0
+GLMM-AR1,4,10,4,mmlb,894,10,0,9,0,single arm
+GLMM-AR1,4,10,4,mmlb,951,9,1,8,0,one arm never beyond time 0
+GLMM-AR1,4,10,6,mmlb,463,10,0,10,0,single arm
+GLMM-AR1,4,10,6,mmlb,580,9,1,6,0,one arm never beyond time 0
+GLMM-AR1,4,10,6,mmlb,638,10,0,9,0,single arm
+GLMM-AR1,4,10,6,mmlb,894,10,0,8,0,single arm
+GLMM-AR1,4,10,8,mmlb,463,10,0,10,0,single arm
+GLMM-AR1,4,10,8,mmlb,894,10,0,9,0,single arm
+GLMM-AR1,4,10,10,mmlb,463,10,0,10,0,single arm
+GLMM-AR1,4,10,10,mmlb,638,10,0,9,0,single arm
+GLMM-AR1,4,10,10,mmlb,852,0,10,0,10,single arm
+GLMM-AR1,4,10,10,mmlb,895,10,0,8,0,single arm
+GLMM-AR1,4,15,2,mmlb,86,3,12,0,6,one arm never beyond time 0
+GLMM-AR1,4,15,2,mmlb,340,11,4,6,0,one arm never beyond time 0
+GLMM-AR1,4,20,2,mmlb,598,18,2,11,0,one arm never beyond time 0
+GLMM-AR1,4,20,3,mmlb,598,18,2,14,0,one arm never beyond time 0
+GLMM-AR1,4,25,2,mmlb,3,7,18,0,13,one arm never beyond time 0
+GLMM-AR1,4,25,2,mmlb,275,20,5,14,0,one arm never beyond time 0
+GLMM-AR1,5,10,2,mmlb,5,8,2,7,0,one arm never beyond time 0
+GLMM-AR1,5,10,2,mmlb,27,6,4,4,0,one arm never beyond time 0
+GLMM-AR1,5,10,2,mmlb,88,8,2,5,0,one arm never beyond time 0
+GLMM-AR1,5,10,2,mmlb,118,7,3,6,0,one arm never beyond time 0
+GLMM-AR1,5,10,2,mmlb,133,2,8,0,7,one arm never beyond time 0
+GLMM-AR1,5,10,2,mmlb,213,8,2,6,0,one arm never beyond time 0
+GLMM-AR1,5,10,2,mmlb,306,1,9,0,6,one arm never beyond time 0
+GLMM-AR1,5,10,2,mmlb,321,4,6,0,5,one arm never beyond time 0
+GLMM-AR1,5,10,2,mmlb,343,7,3,4,0,one arm never beyond time 0
+GLMM-AR1,5,10,2,mmlb,356,3,7,0,7,one arm never beyond time 0
+GLMM-AR1,5,10,2,mmlb,370,9,1,6,0,one arm never beyond time 0
+GLMM-AR1,5,10,2,mmlb,505,0,10,0,6,single arm
+GLMM-AR1,5,10,2,mmlb,522,9,1,6,0,one arm never beyond time 0
+GLMM-AR1,5,10,2,mmlb,635,9,1,6,0,one arm never beyond time 0
+GLMM-AR1,5,10,2,mmlb,669,8,2,4,0,one arm never beyond time 0
+GLMM-AR1,5,10,2,mmlb,730,4,6,0,5,one arm never beyond time 0
+GLMM-AR1,5,10,2,mmlb,827,3,7,0,4,one arm never beyond time 0
+GLMM-AR1,5,10,2,mmlb,836,7,3,4,0,one arm never beyond time 0
+GLMM-AR1,5,10,2,mmlb,851,1,9,0,8,one arm never beyond time 0
+GLMM-AR1,5,10,2,mmlb,894,2,8,0,7,one arm never beyond time 0
+GLMM-AR1,5,10,2,mmlb,918,1,9,0,5,one arm never beyond time 0
+GLMM-AR1,5,10,2,mmlb,931,9,1,5,0,one arm never beyond time 0
+GLMM-AR1,5,10,2,mmlb,945,1,9,0,7,one arm never beyond time 0
+GLMM-AR1,5,10,2,mmlb,978,10,0,7,0,single arm
+GLMM-AR1,5,10,3,mmlb,370,9,1,9,0,one arm never beyond time 0
+GLMM-AR1,5,10,3,mmlb,505,0,10,0,8,single arm
+GLMM-AR1,5,10,3,mmlb,522,9,1,8,0,one arm never beyond time 0
+GLMM-AR1,5,10,3,mmlb,635,9,1,9,0,one arm never beyond time 0
+GLMM-AR1,5,10,3,mmlb,836,7,3,5,0,one arm never beyond time 0
+GLMM-AR1,5,10,3,mmlb,851,1,9,0,9,one arm never beyond time 0
+GLMM-AR1,5,10,3,mmlb,931,9,1,8,0,one arm never beyond time 0
+GLMM-AR1,5,10,3,mmlb,978,10,0,8,0,single arm
+GLMM-AR1,5,10,4,mmlb,248,9,1,7,0,one arm never beyond time 0
+GLMM-AR1,5,10,4,mmlb,801,0,10,0,10,single arm
+GLMM-AR1,5,10,4,mmlb,868,9,1,8,0,one arm never beyond time 0
+GLMM-AR1,5,10,4,mmlb,931,9,1,9,0,one arm never beyond time 0
+GLMM-AR1,5,10,4,mmlb,978,9,1,8,0,one arm never beyond time 0
+GLMM-AR1,5,10,6,mmlb,217,1,9,0,8,one arm never beyond time 0
+GLMM-AR1,5,10,6,mmlb,316,0,10,0,10,single arm
+GLMM-AR1,5,10,6,mmlb,371,10,0,10,0,single arm
+GLMM-AR1,5,10,6,mmlb,774,1,9,0,9,one arm never beyond time 0
+GLMM-AR1,5,10,8,mmlb,522,9,1,9,0,one arm never beyond time 0
+GLMM-AR1,5,10,8,mmlb,931,9,1,9,0,one arm never beyond time 0
+GLMM-AR1,5,10,8,mmlb,978,10,0,9,0,single arm
+GLMM-AR1,5,10,10,mmlb,183,0,10,0,9,single arm
+GLMM-AR1,5,10,10,mmlb,316,0,10,0,10,single arm
+GLMM-AR1,5,10,10,mmlb,513,9,1,9,0,one arm never beyond time 0
+GLMM-AR1,5,15,2,mmlb,89,3,12,0,9,one arm never beyond time 0
+GLMM-AR1,5,15,2,mmlb,108,2,13,0,9,one arm never beyond time 0
+GLMM-AR1,5,15,2,mmlb,165,3,12,0,9,one arm never beyond time 0
+GLMM-AR1,5,15,2,mmlb,531,12,3,6,0,one arm never beyond time 0
+GLMM-AR1,5,15,2,mmlb,739,12,3,8,0,one arm never beyond time 0
+GLMM-AR1,5,15,3,mmlb,108,2,13,0,12,one arm never beyond time 0
+GLMM-AR1,5,15,6,mmlb,101,14,1,13,0,one arm never beyond time 0
+GLMM-AR1,5,15,10,mmlb,101,14,1,14,0,one arm never beyond time 0
+GLMM-AR1,5,20,4,mmlb,48,1,19,0,17,one arm never beyond time 0

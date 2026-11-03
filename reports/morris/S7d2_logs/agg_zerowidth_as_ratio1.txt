@@ -1,0 +1,89 @@
+Warning message:
+In fifelse(scen == "M1c", 1L, as.integer(sub("M", "", scen))) :
+  NAs introduced by coercion
+read 47520 chunks, 4752000 replicates (0.2 min)
+      gate                                   check   value  target   pass
+    <char>                                  <char>   <int>   <num> <lgcl>
+ 1:    GG1                             chunk files   47520   47520   TRUE
+ 2:    GG1                              replicates 4752000 4752000   TRUE
+ 3:    GG1                   unique replicate keys 4752000 4752000   TRUE
+ 4:    GG1                      md5 before = after       1       1   TRUE
+ 5:    GG1                   md5 before = S7b list       1       1   TRUE
+ 6:    GG2        n_obs and sum_y equal to S7d/S7e       0       0   TRUE
+ 7:    GG2            p0 s7d_flip() = saved p_flip       0       0   TRUE
+ 8:    GG2          p0 new function = saved p_flip       0       0   TRUE
+ 9:    GG2                               CI errors       0       0   TRUE
+10:    GG4                       intervals checked 4502130      NA   TRUE
+11:    GG4                lo <= est <= hi violated       0       0   TRUE
+12:    GG4              p < 0.05 at a reported end       0       0   TRUE
+13:    GG4   not rejected 1e-4 beyond a finite end      78       0  FALSE
+14:    GG4   of which p not computable 1e-4 beyond      78      NA     NA
+    label  small points pu_flip_s7d pu_flip_guard rate_flip_guard  pfin  pu_g
+   <char> <lgcl>  <int>       <num>         <num>           <num> <num> <num>
+1: manual  FALSE   2160       99.99         98.93           5.468 84.71 96.74
+2: manual   TRUE    216       99.88         72.27           5.211 12.86 45.94
+3:   mmlb  FALSE   2160       99.99         99.13          22.641 85.53 97.11
+4:   mmlb   TRUE    216       99.89         74.01           5.543 13.61 47.03
+   cov_t n_noise0
+   <num>    <int>
+1: 94.54    22820
+2: 94.75    59115
+3: 94.49    18484
+4: 94.58    55393
+                        what                 reason      N
+                      <char>                 <char>  <int>
+ 1:              no interval       |estimate| >= 10 246464
+ 2:              no interval      full fit diverged    705
+ 3:              no interval        full fit failed     59
+ 4: test at truth not usable score numerically zero 155174
+ 5: test at truth not usable   information singular    779
+ 6: test at truth not usable   reduced fit diverged    613
+ 7: test at truth not usable     reduced fit failed     84
+ 8: test at truth not usable    zero score variance     11
+ 9:      interval not finite         both unbounded 287097
+10:      interval not finite        upper unbounded 267890
+11:      interval not finite        lower unbounded 212968
+Warning message:
+In fifelse(scen == "M1c", 1L, as.integer(sub("^M", "", scen))) :
+  NAs introduced by coercion
+                                                        q     est      lo
+                                                   <char>   <num>   <num>
+ 1:             PG1 coverage of the test at the truth, H1 94.5013 94.4705
+ 2:             PG4 coverage interval - coverage test, H1  0.5737  0.5614
+ 3:                         PG5 finite interval share, H1 78.9943 78.9343
+ 4:           PG6 finite interval share, H1, small points 13.6076 13.4470
+ 5: PG7 width ratio flip / GEE AR(1) FG t (geometric), H1  1.1664  1.1576
+ 6:                       PG8 coverage GEE AR(1) FG t, H1 95.7998 95.7723
+ 7:                 coverage of the test at the truth, H0 94.5557 94.5251
+ 8:                           coverage GEE AR(1) FG t, H0 95.6590 95.6316
+ 9:                             finite interval share, H0 78.1798 78.1198
+10:                      coverage of the test, H1, copula 94.5009 94.4363
+11:            coverage of the test, H1, study mechanisms 94.5014 94.4662
+12:                         width ratio, H1, small points  1.9390  1.8057
+13:           coverage test - coverage GEE AR(1) FG t, H1 -1.2985 -1.3245
+         hi       sd
+      <num>    <num>
+ 1: 94.5295 0.015352
+ 2:  0.5853 0.006006
+ 3: 79.0542 0.030409
+ 4: 13.7640 0.083407
+ 5:  1.1681 0.002720
+ 6: 95.8278 0.014241
+ 7: 94.5865 0.015461
+ 8: 95.6868 0.013956
+ 9: 78.2385 0.030243
+10: 94.5687 0.033581
+11: 94.5345 0.017371
+12:  1.9822 0.046187
+13: -1.2737 0.013093
+     code     obs      lo      hi     a     b   verdict
+   <char>   <num>   <num>   <num> <num> <num>    <char>
+1:    PG1 94.5013 94.4705 94.5295  92.5  97.5 confirmed
+2:    PG2  0.0000  0.0000  0.0000   0.0   0.0 confirmed
+3:    PG3  0.0000  0.0000  0.0000   0.0  60.0 confirmed
+4:    PG4  0.5737  0.5614  0.5853  -1.0   1.0 confirmed
+5:    PG5 78.9943 78.9343 79.0542  90.0 100.0   refuted
+6:    PG6 13.6076 13.4470 13.7640  60.0 100.0   refuted
+7:    PG7  1.1664  1.1576  1.1681   0.9   1.1   refuted
+8:    PG8 95.7998 95.7723 95.8278  92.5  97.5 confirmed
+done in 0.6 min

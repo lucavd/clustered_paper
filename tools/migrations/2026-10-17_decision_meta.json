@@ -1,0 +1,122 @@
+{
+ "D-00": {
+  "group": "Organizzazione del lavoro e dei file",
+  "title": "Si lavora solo sul server, su un ramo dedicato",
+  "description": "Tutto il lavoro si fa sul server lesexp, sul ramo morris-v4 nato dallo stato del server; il ramo principale non si tocca e non si riconcilia con la copia sul Mac."
+ },
+ "D-00b": {
+  "group": "Organizzazione del lavoro e dei file",
+  "title": "Manoscritto di partenza: la versione del Mac",
+  "description": "Si parte dal manoscritto del Mac (testo del 17 agosto, Word del 27 agosto con 7 commenti), copiato come file sul server dove mancava; la storia git non si fonde."
+ },
+ "D-00c": {
+  "group": "Organizzazione del lavoro e dei file",
+  "title": "File grandi della revisione precedente fuori da git",
+  "description": "Nella cartella rev2 si versionano solo i file sotto 1 MB; i 19 file piu' grandi (63,1 MB) restano fuori da git, elencati con il loro md5 per conservarne la provenienza."
+ },
+ "D-01": {
+  "group": "Dati simulati: generatori e scenari",
+  "title": "Dati sotto H0 di GenBinaryY rigenerati in M3-M5",
+  "description": "Negli scenari M3-M5 i dati sotto H0 del generatore GenBinaryY differivano da H1 anche in sigma e gamma, non solo nell'effetto testato: H0 si rigenera con i valori di H1, stesso seme."
+ },
+ "D-02": {
+  "group": "Dati simulati: generatori e scenari",
+  "title": "Varianza della pendenza su dose allineata in M5",
+  "description": "Nello scenario M5 il generatore GLMM-AR1 usava varianza 0,01 per la pendenza casuale su dose, GLMM-native 0,001: AR1 si allinea a 0,001 e si rigenera."
+ },
+ "D-03": {
+  "group": "Analisi e misure di prestazione",
+  "title": "Replicati per cella: restano 1.000",
+  "description": "Si tengono 1.000 replicati per cella, giustificati dalla MCSE (0,69 punti percentuali al 5%); se ne aggiungono solo dove una conclusione del paper poggia su una differenza entro 2 MCSE."
+ },
+ "D-04": {
+  "group": "Analisi e misure di prestazione",
+  "title": "Fit con warning tenuti nell'analisi principale",
+  "description": "L'analisi principale tiene i fit con warning, come la versione precedente, e la sensibilita' li esclude, perche' escluderli abbassa l'errore di I tipo del glmer di 2,5 punti in media: la selezione dipende dall'esito."
+ },
+ "D-05": {
+  "group": "Analisi e misure di prestazione",
+  "title": "Stesso seme fra celle, inferenza per blocchi di replicato",
+  "description": "Si mantiene lo stesso seme fra ipotesi, N, T e meccanismi (numeri casuali comuni), lo si dichiara e i confronti fra celle si correggono con un bootstrap che ricampiona i replicati in blocco."
+ },
+ "D-06": {
+  "group": "Organizzazione del lavoro e dei file",
+  "title": "Codice pubblico alla sottomissione, con DOI",
+  "description": "Il codice si pubblica al tag di sottomissione con DOI Zenodo; la dichiarazione di disponibilita' riporta commit, script principale e sessionInfo."
+ },
+ "D-07": {
+  "group": "Dati simulati: generatori e scenari",
+  "title": "Generatore di numeri casuali fissato nei rerun",
+  "description": "I rerun impostano esplicitamente il generatore L'Ecuyer-CMRG prima del seme, perche' i risultati originali sono stati prodotti con quello: senza, lo stesso seme non riproduce gli stessi dati."
+ },
+ "D-08": {
+  "group": "Analisi e misure di prestazione",
+  "title": "LRT del GLMM con le pendenze casuali del Wald",
+  "description": "In M3-M5 il LRT del GLMM usava solo l'intercetta casuale mentre il Wald usava anche le pendenze: il LRT si allinea al Wald e si riesegue, con un costo di calcolo 2,6-3,3 volte maggiore."
+ },
+ "D-09": {
+  "group": "Organizzazione del lavoro e dei file",
+  "title": "Nessuno step nuovo finche' restano riserve aperte",
+  "description": "Non si apre lo step successivo, ne' una nuova chat, finche' ogni riserva dello step corrente non e' decisa dal PI, corretta o dichiarata con il motivo; il verdetto chiuso con riserve non basta."
+ },
+ "D-10": {
+  "group": "Dati simulati: generatori e scenari",
+  "title": "Valori del modello simulato confrontati con la coorte LUS",
+  "description": "L'effetto 0,2, l'intercetta -2 e la varianza dell'intercetta 1 del modello simulato si motivano confrontandoli con la coorte LUS neonatale; il testo riportera' il confronto e gli scarti."
+ },
+ "D-10b": {
+  "group": "Dati simulati: generatori e scenari",
+  "title": "Confronto con la coorte attraverso grandezze analoghe",
+  "description": "La coorte LUS non ha trattamento ne' vere serie temporali (22 pazienti su 207 con piu' di una visita), quindi si confrontano prevalenza, varianze dell'intercetta e contrasti logit; l'effetto 0,2 resta senza ancoraggio diretto."
+ },
+ "D-11": {
+  "group": "Analisi e misure di prestazione",
+  "title": "Replicati con disegno non stimabile esclusi dal denominatore",
+  "description": "Si escludono dal denominatore i 247 replicati (per ciascuna ipotesi) in cui uno dei due gruppi di trattamento non e' osservato dopo il tempo 0, dichiarandolo come condizione del disegno, uguale nei tre meccanismi."
+ },
+ "D-12": {
+  "group": "Analisi e misure di prestazione",
+  "title": "Valori veri ricalcolati, tabelle precedenti superate",
+  "description": "I valori veri della nuova versione sono quelli ricalcolati sul disegno realizzato: la tabella precedente di GLMM-AR1 e' superata in M3-M5, la verita' condizionale di AR1 si ricalcola per replicato e quella marginale di GLMM-native sotto H0 (fino a -0,003) va dichiarata."
+ },
+ "D-13": {
+  "group": "Dati simulati: generatori e scenari",
+  "title": "Nuovo scenario ancorato alla coorte (M1c)",
+  "description": "Si aggiunge uno scenario con prevalenza (0,59) e varianza dell'intercetta (3,5) della coorte LUS, perche' il modello simulato aveva eventi molto piu' rari (0,12) e correlazione minore, due fattori da cui dipendono le conclusioni."
+ },
+ "D-14": {
+  "group": "Dati simulati: generatori e scenari",
+  "title": "Parametri dello scenario ancorato alla coorte",
+  "description": "Nello scenario M1c l'intercetta marginale e' calibrata per ogni T sulla prevalenza 0,5945 sotto H0 (la stessa intercetta vale sotto H1); in GLMM-AR1 la varianza dell'intercetta resta 3,545 e la componente autoregressiva si somma sopra."
+ },
+ "D-15": {
+  "group": "Organizzazione del lavoro e dei file",
+  "title": "Organizzazione dei file del rerun correttivo",
+  "description": "Il rerun scrive chunk completi dove i dati cambiano e chunk con il solo LRT (piu' una GEE di controllo) altrove, registra ogni errore di generazione e non tocca i risultati originali, sostituiti solo in aggregazione."
+ },
+ "D-16": {
+  "group": "Analisi e misure di prestazione",
+  "title": "Sensibilita' del Wald del GLMM con ottimizzatore bobyqa",
+  "description": "Il Wald del glmer con le opzioni di default non sempre raggiunge il massimo della verosimiglianza nei fit singolari o piatti: lo si dichiara e si aggiunge una sensibilita' con bobyqa, da stime gia' salvate."
+ },
+ "D-17": {
+  "group": "Attese non superate",
+  "title": "Attesa sul LRT formulata male, nessun rerun",
+  "description": "L'attesa sull'effetto della rigenerazione di H0 mescolava, per il LRT, due correzioni: resta non superata; sui 7 altri metodi l'effetto e' nullo e lo spostamento del LRT (-4,6 punti) si misura in aggregazione."
+ },
+ "D-18": {
+  "group": "Analisi e misure di prestazione",
+  "title": "Nessun valore vero condizionale per GenBinaryY",
+  "description": "Con il generatore marginale GenBinaryY il GLMM non ha un valore vero nel modello generatore: bias, MSE e copertura del glmer si riportano come non definiti, al posto dell'approssimazione precedente che faceva calare la copertura con N."
+ },
+ "D-19": {
+  "group": "Analisi e misure di prestazione",
+  "title": "Regole tecniche dell'aggregazione",
+  "description": "Fissa le regole di calcolo dell'aggregazione: soglia z, copertura, bias con verita' per replicato, potenza corretta per la size come nella versione precedente, MCSE dal bootstrap per blocchi con gli indici salvati."
+ },
+ "D-20": {
+  "group": "Attese non superate",
+  "title": "GLMM con pendenze casuali non stimabile nelle serie piu' corte",
+  "description": "Tre attese dell'aggregazione restano non superate con la causa: con le pendenze casuali il GLMM non e' identificabile in M3-M4 a T = 2 e in M5 a T fino a 3 (342 celle), e il testo lo dichiarera'."
+ }
+}

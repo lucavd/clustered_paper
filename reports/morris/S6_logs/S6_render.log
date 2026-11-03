@@ -1,0 +1,54 @@
+[31m
+
+processing file: S6.qmd
+[39m1/27            
+2/27 [setup]    
+3/27            
+4/27 [insummary]
+5/27            
+6/27 [rinvii]   
+7/27            
+8/27 [gates]    
+9/27            
+10/27 [ccgates]  
+11/27            
+12/27 [cccmp]    
+13/27            
+14/27 [nl]       
+15/27            
+16/27 [dubbi]    
+17/27            
+18/27 [run]      
+19/27            
+20/27 [a1]       
+21/27            
+22/27 [a3s]      
+23/27            
+24/27 [a3]       
+25/27            
+26/27 [a4]       
+27/27            
+[31moutput file: S6.knit.md
+
+[39m[1mpandoc [22m
+  to: html
+  output-file: S6.html
+  standalone: true
+  embed-resources: true
+  section-divs: true
+  html-math-method: mathjax
+  wrap: none
+  default-image-extension: png
+  toc: true
+  
+[1mmetadata[22m
+  document-css: false
+  link-citations: true
+  date-format: long
+  lang: it
+  title: 'S6: tabelle e figure secondo Morris'
+  subtitle: Roadmap Morris 2019, ramo morris-v4
+  date: '2026-10-18'
+  
+Output created: S6.html
+

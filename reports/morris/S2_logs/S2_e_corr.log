@@ -1,0 +1,97 @@
+Q5.1 combos (mmm, gee, glmer; >= 100 pairs): 4093; rho > 0.5: 3955 (96.6%); pass >= 95%: TRUE
+Q5.1 lower CI > 0: 4093 of 4093 combos with >= 100 pairs (all methods: 9596 of 9596); all combos with >= 4 pairs: 9702 of 9704
+Q5.1 rho between arms, median [min, max] by dgp x method (>= 100 pairs):
+Key: <method>
+   method             GLMM-AR1          GLMM-native           GenBinaryY
+   <char>               <char>               <char>               <char>
+1:    gee 0.866 [0.507, 0.989] 0.869 [0.559, 0.997] 0.918 [0.647, 0.997]
+2: gee_fg 0.877 [0.679, 0.991] 0.877 [0.632, 0.989] 0.929 [0.752, 0.991]
+3: gee_kc 0.877 [0.679, 0.991] 0.877 [0.632, 0.989] 0.929 [0.753, 0.991]
+4: gee_md 0.877 [0.679, 0.991] 0.877 [0.632, 0.989] 0.929 [0.753, 0.991]
+5:  glmer 0.772 [0.142, 0.966] 0.770 [0.368, 0.977] 0.845 [0.235, 0.961]
+6:    mmm 0.832 [0.292, 0.991] 0.840 [0.251, 0.987] 0.897 [0.313, 0.990]
+7: shrink 0.791 [0.429, 0.981] 0.790 [0.494, 0.981] 0.859 [0.385, 0.992]
+Q5.1 combos with rho <= 0.5 (mmm, gee, glmer):
+            dgp model     N ntime method n_pairs       rho        lo        hi
+         <char> <int> <int> <int> <char>   <int>     <num>     <num>     <num>
+ 1:    GLMM-AR1     5   135     4  glmer     990 0.1422942 0.0807042 0.2028018
+ 2:    GLMM-AR1     5   115     4  glmer     988 0.2347559 0.1749488 0.2928370
+ 3:  GenBinaryY     5   115     4  glmer     950 0.2351027 0.1741018 0.2943060
+ 4:    GLMM-AR1     5   105     4  glmer     991 0.2369284 0.1772698 0.2948521
+ 5: GLMM-native     5   115    10    mmm     978 0.2511731 0.1915016 0.3089947
+ 6: GLMM-native     5   145    10    mmm     982 0.2516597 0.1921255 0.3093484
+ 7: GLMM-native     5   125    10    mmm     981 0.2530097 0.1934829 0.3106805
+ 8:    GLMM-AR1     5   145     4  glmer     995 0.2544333 0.1953739 0.3116539
+ 9:  GenBinaryY     5   145     4  glmer     967 0.2564142 0.1965490 0.3143748
+10:  GenBinaryY     5   105     4  glmer     944 0.2736299 0.2135521 0.3316458
+11: GLMM-native     5   135    10    mmm     987 0.2750075 0.2163194 0.3317153
+12:  GenBinaryY     5   135     4  glmer     962 0.2793044 0.2199817 0.3365689
+13:  GenBinaryY     5   125     4  glmer     969 0.2877045 0.2288741 0.3444410
+14:    GLMM-AR1     5   125    10    mmm     973 0.2924041 0.2338539 0.3488412
+15:    GLMM-AR1     5   125     4  glmer     993 0.2943233 0.2364412 0.3501237
+16: GLMM-native     5    85    10    mmm     971 0.2989992 0.2406128 0.3552295
+17:    GLMM-AR1     5   135     8    mmm     984 0.3038802 0.2460578 0.3595473
+18: GLMM-native     5    75    10    mmm     971 0.3049725 0.2467953 0.3609594
+19:    GLMM-AR1     5   105    10    mmm     982 0.3092425 0.2515500 0.3647451
+20:    GLMM-AR1     5   115    10    mmm     980 0.3095446 0.2518029 0.3650902
+21:  GenBinaryY     5   135    10    mmm     979 0.3128002 0.2551459 0.3682381
+22:    GLMM-AR1     5   145    10    mmm     978 0.3176103 0.2601022 0.3728732
+23: GLMM-native     5   105    10    mmm     977 0.3271513 0.2699718 0.3820314
+24:    GLMM-AR1     5    85     4  glmer     971 0.3285546 0.2712489 0.3835392
+25: GLMM-native     4   125    10    mmm     987 0.3289345 0.2721197 0.3834639
+26: GLMM-native     3   125    10    mmm     989 0.3298134 0.2730910 0.3842504
+27:    GLMM-AR1     5    55    10    mmm     976 0.3302787 0.2731897 0.3850494
+28: GLMM-native     5    95    10    mmm     981 0.3316126 0.2747240 0.3861878
+29:    GLMM-AR1     5    65     4  glmer     944 0.3324127 0.2744271 0.3879896
+30:  GenBinaryY     5    75     4  glmer     866 0.3387250 0.2783879 0.3963992
+            dgp model     N ntime method n_pairs       rho        lo        hi
+         <char> <int> <int> <int> <char>   <int>     <num>     <num>     <num>
+Q5.2 between-mechanism rho (cells with >= 100 pairs):
+                    pair method    m14 cells median_rho     q10    q90
+                  <char> <char> <lgcl> <int>      <num>   <num>  <num>
+ 1:    GenBinaryY_vs_AR1    gee  FALSE   190  -0.006106 -0.0501 0.0379
+ 2:    GenBinaryY_vs_AR1    gee   TRUE   768   0.002827 -0.0405 0.0471
+ 3: GenBinaryY_vs_native    gee  FALSE   190   0.009246 -0.0340 0.0556
+ 4: GenBinaryY_vs_native    gee   TRUE   766   0.003532 -0.0420 0.0457
+ 5:        native_vs_AR1    gee  FALSE   188   0.023006 -0.0271 0.0754
+ 6:        native_vs_AR1    gee   TRUE   766   0.022365 -0.0247 0.0737
+ 7:    GenBinaryY_vs_AR1 gee_fg  FALSE   184  -0.005308 -0.0484 0.0398
+ 8:    GenBinaryY_vs_AR1 gee_fg   TRUE   737   0.003473 -0.0372 0.0446
+ 9: GenBinaryY_vs_native gee_fg  FALSE   184   0.008202 -0.0328 0.0506
+10: GenBinaryY_vs_native gee_fg   TRUE   739   0.001527 -0.0417 0.0450
+11:        native_vs_AR1 gee_fg  FALSE   185   0.026213 -0.0255 0.0786
+12:        native_vs_AR1 gee_fg   TRUE   744   0.022306 -0.0234 0.0719
+13:    GenBinaryY_vs_AR1 gee_kc  FALSE   184  -0.005468 -0.0484 0.0400
+14:    GenBinaryY_vs_AR1 gee_kc   TRUE   736   0.003483 -0.0370 0.0446
+15: GenBinaryY_vs_native gee_kc  FALSE   184   0.007062 -0.0328 0.0502
+16: GenBinaryY_vs_native gee_kc   TRUE   739   0.001469 -0.0417 0.0448
+17:        native_vs_AR1 gee_kc  FALSE   185   0.026213 -0.0255 0.0786
+18:        native_vs_AR1 gee_kc   TRUE   744   0.022411 -0.0238 0.0724
+19:    GenBinaryY_vs_AR1 gee_md  FALSE   184  -0.005237 -0.0479 0.0409
+20:    GenBinaryY_vs_AR1 gee_md   TRUE   737   0.003492 -0.0372 0.0454
+21: GenBinaryY_vs_native gee_md  FALSE   184   0.007310 -0.0328 0.0502
+22: GenBinaryY_vs_native gee_md   TRUE   739   0.001469 -0.0417 0.0448
+23:        native_vs_AR1 gee_md  FALSE   185   0.026213 -0.0255 0.0786
+24:        native_vs_AR1 gee_md   TRUE   744   0.022411 -0.0234 0.0724
+25:    GenBinaryY_vs_AR1  glmer  FALSE   127  -0.000385 -0.0482 0.0439
+26:    GenBinaryY_vs_AR1  glmer   TRUE   682   0.002199 -0.0408 0.0447
+27: GenBinaryY_vs_native  glmer  FALSE   128   0.003704 -0.0491 0.0461
+28: GenBinaryY_vs_native  glmer   TRUE   683   0.003407 -0.0394 0.0458
+29:        native_vs_AR1  glmer  FALSE   128   0.031576 -0.0215 0.0673
+30:        native_vs_AR1  glmer   TRUE   687   0.018976 -0.0249 0.0668
+31:    GenBinaryY_vs_AR1    mmm  FALSE   184  -0.006167 -0.0525 0.0374
+32:    GenBinaryY_vs_AR1    mmm   TRUE   729   0.003444 -0.0382 0.0440
+33: GenBinaryY_vs_native    mmm  FALSE   184   0.005650 -0.0364 0.0500
+34: GenBinaryY_vs_native    mmm   TRUE   737   0.000662 -0.0425 0.0439
+35:        native_vs_AR1    mmm  FALSE   185   0.012708 -0.0317 0.0623
+36:        native_vs_AR1    mmm   TRUE   743   0.018641 -0.0251 0.0627
+37:    GenBinaryY_vs_AR1 shrink  FALSE   128  -0.003120 -0.0520 0.0417
+38:    GenBinaryY_vs_AR1 shrink   TRUE   691   0.002888 -0.0344 0.0471
+39: GenBinaryY_vs_native shrink  FALSE   128   0.000345 -0.0458 0.0525
+40: GenBinaryY_vs_native shrink   TRUE   692   0.001504 -0.0422 0.0425
+41:        native_vs_AR1 shrink  FALSE   128   0.034914 -0.0137 0.0720
+42:        native_vs_AR1 shrink   TRUE   693   0.019492 -0.0240 0.0672
+                    pair method    m14 cells median_rho     q10    q90
+                  <char> <char> <lgcl> <int>      <num>   <num>  <num>
+Q5.2 gee: median rho native-AR1 (M1-M4) 0.022 vs GenBinaryY-native (M1-M4) 0.004 -> pass TRUE; |median GB-native| (all M) 0.005 < 0.3: TRUE
+Q5.2 glmer: median rho native-AR1 (M1-M4) 0.019 vs GenBinaryY-native (M1-M4) 0.003 -> pass TRUE; |median GB-native| (all M) 0.003 < 0.3: TRUE

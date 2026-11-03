@@ -1,0 +1,7 @@
+gate,what,result,pass
+G2,b = 0 reproduces V4_perf_all and the S4 bootstrap SEs (<= 1e-12),7 of 7 checks pass (max 6.7e-16),TRUE
+G3,bootstrap SE vs linearization SE within 7% (27 quantities),27 of 27 pass; rel. diff. -0.033 to 0.031,TRUE
+G4,every inventory row classified; finite values in >= B - 10 replicates,missing 0; sub-claims with < B - 10 finite: 0,TRUE
+P1,v3 numbers reproduced at the printed digit,"275 of 288 reproduced, 0 within one unit, 13 not reproduced",FALSE
+P2,v4 - v3 within +/- 1 pp (63 values),mean diff -0.131; 54 of 63 confirmed,FALSE
+P3,block SE / independent SE > 1.25 (27 quantities),ratio 0.97 to 1.04; 0 of 27 above 1.25,FALSE

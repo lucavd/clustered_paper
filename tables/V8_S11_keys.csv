@@ -1,0 +1,249 @@
+key,value,mcse,kind,source,how
+sep|eligible,4739647,"",int,tables/V7_S10_degen_classes.csv,datasets with an estimable design and a non-constant outcome
+sep|S,357701,"",int,tables/V7_S10_degen_classes.csv,"separated: ML estimate of the mean model does not exist (linear programming, Konis 2007)"
+sep|S_pct,7.54699664342091,"",sig2,tables/V7_S10_degen_classes.csv,"separated, % of eligible"
+sep|Si,357545,"",int,tables/V7_S10_degen_classes.csv,separated with an infinite interaction coefficient (detectseparation)
+sep|S_pct_small,55.1368423552321,"",sig2,tables/V7_S10_degen_classes.csv,"separated, % of eligible, T 2-3 and N <= 25"
+sep|S_pct_N45,0.977977722396182,"",sig2,tables/V7_S10_degen_classes.csv,"separated, % of eligible, N >= 45"
+sep|gd3_n,9504,"",int,tables/V7_S10_degen_gd3.csv,datasets in the stratified sample of the separation cross-check
+sep|gd3_sep,729,"",int,tables/V7_S10_degen_gd3.csv,"separated datasets in the stratified sample of 9,504"
+sep|gd3_big,503,"",int,tables/V7_S10_degen_gd3.csv,of which plain glm gives |interaction| > 10
+sep|iter_n,53,"",int,results_v4/S10/degen/verify_flagged_divergence.csv,"usable separated datasets at the two flagged points, refitted with 25 and 200 geese iterations"
+sep|iter_out,35,"",int,results_v4/S10/degen/verify_flagged_divergence.csv,of which the estimate moves outward with 200 iterations
+sep|resp_Si,365,"",int,tables/V7_S10_degen_clinical.csv,respiratory subsamples (both mean models) with an infinite treatment contrast
+sep|resp_draws,5000,"",int,tables/V7_S10_degen_clinical.csv,respiratory subsamples (both mean models)
+sep|neo_Si,0,"",int,tables/V7_S10_degen_clinical.csv,cohort subsamples with an infinite contrast
+sep|mmm_cc|usable,4014389,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,"usable results, both hypotheses, 2,376 design points"
+sep|mmm_cc|usable_Si,4,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,of which on datasets with an infinite interaction
+sep|mmm_cc|usable_Si_pct,9.9641564382525e-05,"",sig2,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,% of usable results on such datasets
+sep|gee_ar1_fg|usable,4377361,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,"usable results, both hypotheses, 2,376 design points"
+sep|gee_ar1_fg|usable_Si,8420,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,of which on datasets with an infinite interaction
+sep|gee_ar1_fg|usable_Si_pct,0.192353338004336,"",sig2,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,% of usable results on such datasets
+sep|fgpt|1|gee_ar1_fg|n,61,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,"usable, H0, GLMM-AR1 M2 N=10 T=2"
+sep|fgpt|1|gee_ar1_fg|k,12,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,rejections
+sep|fgpt|1|gee_ar1_fg|n_si,27,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,usable on datasets with an infinite interaction
+sep|fgpt|1|gee_ar1_fg|k_si,12,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,rejections on such datasets
+sep|fgpt|1|gee_ar1_fg|n_ns,34,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,usable on datasets that are not separated
+sep|fgpt|1|gee_ar1_fg|k_ns,0,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,rejections on datasets that are not separated
+sep|fgpt|1|mmm_cc|n,35,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,"usable, H0, GLMM-AR1 M2 N=10 T=2"
+sep|fgpt|1|mmm_cc|k,0,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,rejections
+sep|fgpt|1|mmm_cc|n_si,0,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,usable on datasets with an infinite interaction
+sep|fgpt|1|mmm_cc|k_si,0,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,rejections on such datasets
+sep|fgpt|1|mmm_cc|n_ns,35,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,usable on datasets that are not separated
+sep|fgpt|1|mmm_cc|k_ns,0,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,rejections on datasets that are not separated
+sep|fgpt|2|gee_ar1_fg|n,63,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,"usable, H0, GLMM-native M2 N=10 T=2"
+sep|fgpt|2|gee_ar1_fg|k,11,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,rejections
+sep|fgpt|2|gee_ar1_fg|n_si,26,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,usable on datasets with an infinite interaction
+sep|fgpt|2|gee_ar1_fg|k_si,11,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,rejections on such datasets
+sep|fgpt|2|gee_ar1_fg|n_ns,37,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,usable on datasets that are not separated
+sep|fgpt|2|gee_ar1_fg|k_ns,0,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,rejections on datasets that are not separated
+sep|fgpt|2|mmm_cc|n,38,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,"usable, H0, GLMM-native M2 N=10 T=2"
+sep|fgpt|2|mmm_cc|k,0,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,rejections
+sep|fgpt|2|mmm_cc|n_si,0,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,usable on datasets with an infinite interaction
+sep|fgpt|2|mmm_cc|k_si,0,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,rejections on such datasets
+sep|fgpt|2|mmm_cc|n_ns,38,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,usable on datasets that are not separated
+sep|fgpt|2|mmm_cc|k_ns,0,"",int,results_v4/S7f/per_replicate_gee_ar1_fg_mmm_cc.rds + results_v4/S10/degen/classes.rds,rejections on datasets that are not separated
+cc|main|boundary,70.5901697341975,"",sig2,tables/V8_S11_cc_shares.csv,"main M3-M5, H0, % of study fits"
+cc|main|boundary|T23,70.6631258587321,"",sig2,tables/V8_S11_cc_shares.csv,"main M3-M5, H0, T 2-3"
+cc|main|replaced,54.9492649441956,"",sig2,tables/V8_S11_cc_shares.csv,"main M3-M5, H0, % of study fits"
+cc|main|replaced|T23,38.6152436952443,"",sig2,tables/V8_S11_cc_shares.csv,"main M3-M5, H0, T 2-3"
+cc|main|no_result,15.6409047900019,"",sig2,tables/V8_S11_cc_shares.csv,"main M3-M5, H0, % of study fits"
+cc|main|no_result|T23,32.0478821634878,"",sig2,tables/V8_S11_cc_shares.csv,"main M3-M5, H0, T 2-3"
+cc|main|no_result_of_boundary,22.1573412401424,"",sig2,tables/V8_S11_cc_shares.csv,"main M3-M5, H0, % of study fits"
+cc|main|no_result_of_boundary|T23,45.3530490960124,"",sig2,tables/V8_S11_cc_shares.csv,"main M3-M5, H0, T 2-3"
+cc|m67|boundary,45.4901981414214,"",sig2,tables/V8_S11_cc_shares.csv,"M6-M7, H0, % of study fits"
+cc|m67|boundary|T23,63.5298548727031,"",sig2,tables/V8_S11_cc_shares.csv,"M6-M7, H0, T 2-3"
+cc|m67|replaced,37.2930930630775,"",sig2,tables/V8_S11_cc_shares.csv,"M6-M7, H0, % of study fits"
+cc|m67|replaced|T23,45.1753788455528,"",sig2,tables/V8_S11_cc_shares.csv,"M6-M7, H0, T 2-3"
+cc|m67|no_result,8.19710507834385,"",sig2,tables/V8_S11_cc_shares.csv,"M6-M7, H0, % of study fits"
+cc|m67|no_result|T23,18.3544760271503,"",sig2,tables/V8_S11_cc_shares.csv,"M6-M7, H0, T 2-3"
+cc|m67|no_result_of_boundary,18.0194974153782,"",sig2,tables/V8_S11_cc_shares.csv,"M6-M7, H0, % of study fits"
+cc|m67|no_result_of_boundary|T23,28.8911033464939,"",sig2,tables/V8_S11_cc_shares.csv,"M6-M7, H0, T 2-3"
+cc|cop|boundary,76.4360140834006,"",sig2,tables/V8_S11_cc_shares.csv,"Copula-AR1 M3-M5, H0, % of study fits"
+cc|cop|boundary|T23,70.0315948736205,"",sig2,tables/V8_S11_cc_shares.csv,"Copula-AR1 M3-M5, H0, T 2-3"
+cc|cop|replaced,60.5700492062018,"",sig2,tables/V8_S11_cc_shares.csv,"Copula-AR1 M3-M5, H0, % of study fits"
+cc|cop|replaced|T23,37.1428889284443,"",sig2,tables/V8_S11_cc_shares.csv,"Copula-AR1 M3-M5, H0, T 2-3"
+cc|cop|no_result,15.8659648771987,"",sig2,tables/V8_S11_cc_shares.csv,"Copula-AR1 M3-M5, H0, % of study fits"
+cc|cop|no_result|T23,32.8887059451762,"",sig2,tables/V8_S11_cc_shares.csv,"Copula-AR1 M3-M5, H0, T 2-3"
+cc|cop|no_result_of_boundary,20.7571850356916,"",sig2,tables/V8_S11_cc_shares.csv,"Copula-AR1 M3-M5, H0, % of study fits"
+cc|cop|no_result_of_boundary|T23,46.9626687847498,"",sig2,tables/V8_S11_cc_shares.csv,"Copula-AR1 M3-M5, H0, T 2-3"
+cc|m67|no_result|min,7.36494098571233,"",sig2,tables/V8_S11_cc_shares.csv,"M6-M7, H0, smallest no-result share over the four scenarios"
+cc|m67|no_result|max,9.13210800807537,"",sig2,tables/V8_S11_cc_shares.csv,largest
+ccv|i|hi_all,0,"",int,tables/V7_S10_testo_cc_variants.csv,"variant i, Table 5 mmm_cc"
+ccv|i|hi_main,0,"",int,tables/V7_S10_testo_cc_variants.csv,"variant i, Table 5 mmm_cc"
+ccv|i|hi_m67,0,"",int,tables/V7_S10_testo_cc_variants.csv,"variant i, Table 5 mmm_cc"
+ccv|i|hi_copula,0,"",int,tables/V7_S10_testo_cc_variants.csv,"variant i, Table 5 mmm_cc"
+ccv|i|lo_all,24,"",int,tables/V7_S10_testo_cc_variants.csv,"variant i, Table 5 mmm_cc"
+ccv|i|pu,90.8947665903178,"",sig2,tables/V7_S10_testo_cc_variants.csv,"variant i, Table 5 mmm_cc"
+ccv|i|pu_small,39.1642227156373,"",sig2,tables/V7_S10_testo_cc_variants.csv,"variant i, Table 5 mmm_cc"
+ccv|i|upow,20.8002064387953,"",sig2,tables/V7_S10_testo_cc_variants.csv,"variant i, Table 5 mmm_cc"
+ccv|i|chosen,mmm_cc,"",text,tables/V7_S10_testo_cc_variants.csv,"variant i, strategy chosen by the rule"
+ccv|ii|hi_all,4,"",int,tables/V7_S10_testo_cc_variants.csv,"variant ii, Table 5 mmm_cc"
+ccv|ii|hi_main,3,"",int,tables/V7_S10_testo_cc_variants.csv,"variant ii, Table 5 mmm_cc"
+ccv|ii|hi_m67,0,"",int,tables/V7_S10_testo_cc_variants.csv,"variant ii, Table 5 mmm_cc"
+ccv|ii|hi_copula,1,"",int,tables/V7_S10_testo_cc_variants.csv,"variant ii, Table 5 mmm_cc"
+ccv|ii|lo_all,28,"",int,tables/V7_S10_testo_cc_variants.csv,"variant ii, Table 5 mmm_cc"
+ccv|ii|pu,90.5575008317734,"",sig2,tables/V7_S10_testo_cc_variants.csv,"variant ii, Table 5 mmm_cc"
+ccv|ii|pu_small,38.5132487026537,"",sig2,tables/V7_S10_testo_cc_variants.csv,"variant ii, Table 5 mmm_cc"
+ccv|ii|upow,20.8432535615305,"",sig2,tables/V7_S10_testo_cc_variants.csv,"variant ii, Table 5 mmm_cc"
+ccv|ii|chosen,none (no interval strategy with 0 flags),"",text,tables/V7_S10_testo_cc_variants.csv,"variant ii, strategy chosen by the rule"
+ccv|iii|hi_all,0,"",int,tables/V7_S10_testo_cc_variants.csv,"variant iii, Table 5 mmm_cc"
+ccv|iii|hi_main,0,"",int,tables/V7_S10_testo_cc_variants.csv,"variant iii, Table 5 mmm_cc"
+ccv|iii|hi_m67,0,"",int,tables/V7_S10_testo_cc_variants.csv,"variant iii, Table 5 mmm_cc"
+ccv|iii|hi_copula,0,"",int,tables/V7_S10_testo_cc_variants.csv,"variant iii, Table 5 mmm_cc"
+ccv|iii|lo_all,42,"",int,tables/V7_S10_testo_cc_variants.csv,"variant iii, Table 5 mmm_cc"
+ccv|iii|pu,84.0148734723118,"",sig2,tables/V7_S10_testo_cc_variants.csv,"variant iii, Table 5 mmm_cc"
+ccv|iii|pu_small,27.6377270741345,"",sig2,tables/V7_S10_testo_cc_variants.csv,"variant iii, Table 5 mmm_cc"
+ccv|iii|upow,20.3089752762771,"",sig2,tables/V7_S10_testo_cc_variants.csv,"variant iii, Table 5 mmm_cc"
+ccv|iii|chosen,mmm_cc,"",text,tables/V7_S10_testo_cc_variants.csv,"variant iii, strategy chosen by the rule"
+ccv|ii3|hi_all,3,"",int,tables/V7_S10_testo_cc_variants.csv,"variant ii3, Table 5 mmm_cc"
+ccv|ii3|hi_main,2,"",int,tables/V7_S10_testo_cc_variants.csv,"variant ii3, Table 5 mmm_cc"
+ccv|ii3|hi_m67,0,"",int,tables/V7_S10_testo_cc_variants.csv,"variant ii3, Table 5 mmm_cc"
+ccv|ii3|hi_copula,1,"",int,tables/V7_S10_testo_cc_variants.csv,"variant ii3, Table 5 mmm_cc"
+ccv|ii3|lo_all,29,"",int,tables/V7_S10_testo_cc_variants.csv,"variant ii3, Table 5 mmm_cc"
+ccv|ii3|pu,90.6386664251176,"",sig2,tables/V7_S10_testo_cc_variants.csv,"variant ii3, Table 5 mmm_cc"
+ccv|ii3|pu_small,38.7269634770429,"",sig2,tables/V7_S10_testo_cc_variants.csv,"variant ii3, Table 5 mmm_cc"
+ccv|ii3|upow,20.8554673107028,"",sig2,tables/V7_S10_testo_cc_variants.csv,"variant ii3, Table 5 mmm_cc"
+ccv|ii3|chosen,none (no interval strategy with 0 flags),"",text,tables/V7_S10_testo_cc_variants.csv,"variant ii3, strategy chosen by the rule"
+ccv|iii3|hi_all,0,"",int,tables/V7_S10_testo_cc_variants.csv,"variant iii3, Table 5 mmm_cc"
+ccv|iii3|hi_main,0,"",int,tables/V7_S10_testo_cc_variants.csv,"variant iii3, Table 5 mmm_cc"
+ccv|iii3|hi_m67,0,"",int,tables/V7_S10_testo_cc_variants.csv,"variant iii3, Table 5 mmm_cc"
+ccv|iii3|hi_copula,0,"",int,tables/V7_S10_testo_cc_variants.csv,"variant iii3, Table 5 mmm_cc"
+ccv|iii3|lo_all,30,"",int,tables/V7_S10_testo_cc_variants.csv,"variant iii3, Table 5 mmm_cc"
+ccv|iii3|pu,84.6984814555449,"",sig2,tables/V7_S10_testo_cc_variants.csv,"variant iii3, Table 5 mmm_cc"
+ccv|iii3|pu_small,29.474114766709,"",sig2,tables/V7_S10_testo_cc_variants.csv,"variant iii3, Table 5 mmm_cc"
+ccv|iii3|upow,20.3923475018941,"",sig2,tables/V7_S10_testo_cc_variants.csv,"variant iii3, Table 5 mmm_cc"
+ccv|iii3|chosen,mmm_cc,"",text,tables/V7_S10_testo_cc_variants.csv,"variant iii3, strategy chosen by the rule"
+sepv|base|mmm_cc|hi_all,0,"",int,tables/V8_S11_degen_table5_versions.csv,"version base, mmm_cc"
+sepv|base|mmm_cc|lo_all,42,"",int,tables/V8_S11_degen_table5_versions.csv,"version base, mmm_cc"
+sepv|base|mmm_cc|pu,84.0148734723118,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version base, mmm_cc"
+sepv|base|mmm_cc|pu_small,27.6377270741345,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version base, mmm_cc"
+sepv|base|mmm_cc|upow,20.3089752762771,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version base, mmm_cc"
+sepv|base|gee_ar1_fg|hi_all,2,"",int,tables/V8_S11_degen_table5_versions.csv,"version base, gee_ar1_fg"
+sepv|base|gee_ar1_fg|lo_all,106,"",int,tables/V8_S11_degen_table5_versions.csv,"version base, gee_ar1_fg"
+sepv|base|gee_ar1_fg|pu,91.8974372240942,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version base, gee_ar1_fg"
+sepv|base|gee_ar1_fg|pu_small,43.720315201475,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version base, gee_ar1_fg"
+sepv|base|gee_ar1_fg|upow,19.3633330830881,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version base, gee_ar1_fg"
+sepv|base|flip|hi_all,0,"",int,tables/V8_S11_degen_table5_versions.csv,"version base, flip"
+sepv|base|flip|lo_all,0,"",int,tables/V8_S11_degen_table5_versions.csv,"version base, flip"
+sepv|base|flip|pu,96.5072858755117,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version base, flip"
+sepv|base|flip|pu_small,72.2703772598972,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version base, flip"
+sepv|base|flip|upow,20.9064343479589,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version base, flip"
+sepv|base|glmer_lrt|hi_all,412,"",int,tables/V8_S11_degen_table5_versions.csv,"version base, glmer_lrt"
+sepv|base|glmer_lrt|lo_all,13,"",int,tables/V8_S11_degen_table5_versions.csv,"version base, glmer_lrt"
+sepv|base|glmer_lrt|pu,86.3679994168263,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version base, glmer_lrt"
+sepv|base|glmer_lrt|pu_small,61.8981304611237,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version base, glmer_lrt"
+sepv|base|glmer_lrt|upow,24.4801862027844,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version base, glmer_lrt"
+sepv|base|chosen,mmm_cc,"",text,tables/V8_S11_degen_table5_versions.csv,"version base, strategy chosen by the rule"
+sepv|a|mmm_cc|hi_all,0,"",int,tables/V8_S11_degen_table5_versions.csv,"version a, mmm_cc"
+sepv|a|mmm_cc|lo_all,42,"",int,tables/V8_S11_degen_table5_versions.csv,"version a, mmm_cc"
+sepv|a|mmm_cc|pu,84.0147891282014,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version a, mmm_cc"
+sepv|a|mmm_cc|pu_small,27.6372641111715,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version a, mmm_cc"
+sepv|a|mmm_cc|upow,20.3089752762771,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version a, mmm_cc"
+sepv|a|gee_ar1_fg|hi_all,0,"",int,tables/V8_S11_degen_table5_versions.csv,"version a, gee_ar1_fg"
+sepv|a|gee_ar1_fg|lo_all,105,"",int,tables/V8_S11_degen_table5_versions.csv,"version a, gee_ar1_fg"
+sepv|a|gee_ar1_fg|pu,91.6911619841955,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version a, gee_ar1_fg"
+sepv|a|gee_ar1_fg|pu_small,41.9492821546409,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version a, gee_ar1_fg"
+sepv|a|gee_ar1_fg|upow,19.3471006617122,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version a, gee_ar1_fg"
+sepv|a|flip|hi_all,0,"",int,tables/V8_S11_degen_table5_versions.csv,"version a, flip"
+sepv|a|flip|lo_all,0,"",int,tables/V8_S11_degen_table5_versions.csv,"version a, flip"
+sepv|a|flip|pu,96.5072858755117,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version a, flip"
+sepv|a|flip|pu_small,72.2703772598972,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version a, flip"
+sepv|a|flip|upow,20.9064343479589,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version a, flip"
+sepv|a|glmer_lrt|hi_all,412,"",int,tables/V8_S11_degen_table5_versions.csv,"version a, glmer_lrt"
+sepv|a|glmer_lrt|lo_all,13,"",int,tables/V8_S11_degen_table5_versions.csv,"version a, glmer_lrt"
+sepv|a|glmer_lrt|pu,86.3679994168263,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version a, glmer_lrt"
+sepv|a|glmer_lrt|pu_small,61.8981304611237,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version a, glmer_lrt"
+sepv|a|glmer_lrt|upow,24.4801862027844,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version a, glmer_lrt"
+sepv|a|chosen,gee_ar1_fg,"",text,tables/V8_S11_degen_table5_versions.csv,"version a, strategy chosen by the rule"
+sepv|b|mmm_cc|hi_all,0,"",int,tables/V8_S11_degen_table5_versions.csv,"version b, mmm_cc"
+sepv|b|mmm_cc|lo_all,42,"",int,tables/V8_S11_degen_table5_versions.csv,"version b, mmm_cc"
+sepv|b|mmm_cc|pu,84.0147891282014,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version b, mmm_cc"
+sepv|b|mmm_cc|pu_small,27.6372641111715,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version b, mmm_cc"
+sepv|b|mmm_cc|upow,20.3089752762771,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version b, mmm_cc"
+sepv|b|gee_ar1_fg|hi_all,0,"",int,tables/V8_S11_degen_table5_versions.csv,"version b, gee_ar1_fg"
+sepv|b|gee_ar1_fg|lo_all,105,"",int,tables/V8_S11_degen_table5_versions.csv,"version b, gee_ar1_fg"
+sepv|b|gee_ar1_fg|pu,91.6911619841955,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version b, gee_ar1_fg"
+sepv|b|gee_ar1_fg|pu_small,41.9492821546409,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version b, gee_ar1_fg"
+sepv|b|gee_ar1_fg|upow,19.3471006617122,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version b, gee_ar1_fg"
+sepv|b|flip|hi_all,0,"",int,tables/V8_S11_degen_table5_versions.csv,"version b, flip"
+sepv|b|flip|lo_all,32,"",int,tables/V8_S11_degen_table5_versions.csv,"version b, flip"
+sepv|b|flip|pu,91.9642062710036,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version b, flip"
+sepv|b|flip|pu_small,42.8834223198832,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version b, flip"
+sepv|b|flip|upow,20.3860748741143,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version b, flip"
+sepv|b|glmer_lrt|hi_all,337,"",int,tables/V8_S11_degen_table5_versions.csv,"version b, glmer_lrt"
+sepv|b|glmer_lrt|lo_all,14,"",int,tables/V8_S11_degen_table5_versions.csv,"version b, glmer_lrt"
+sepv|b|glmer_lrt|pu,81.6573300623657,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version b, glmer_lrt"
+sepv|b|glmer_lrt|pu_small,32.9349255359275,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version b, glmer_lrt"
+sepv|b|glmer_lrt|upow,23.8120968887826,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version b, glmer_lrt"
+sepv|b|chosen,gee_ar1_fg,"",text,tables/V8_S11_degen_table5_versions.csv,"version b, strategy chosen by the rule"
+sepv|c|mmm_cc|hi_all,0,"",int,tables/V8_S11_degen_table5_versions.csv,"version c, mmm_cc"
+sepv|c|mmm_cc|lo_all,42,"",int,tables/V8_S11_degen_table5_versions.csv,"version c, mmm_cc"
+sepv|c|mmm_cc|pu,84.0144935858462,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version c, mmm_cc"
+sepv|c|mmm_cc|pu_small,27.6372641111715,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version c, mmm_cc"
+sepv|c|mmm_cc|upow,20.3089752762771,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version c, mmm_cc"
+sepv|c|gee_ar1_fg|hi_all,0,"",int,tables/V8_S11_degen_table5_versions.csv,"version c, gee_ar1_fg"
+sepv|c|gee_ar1_fg|lo_all,105,"",int,tables/V8_S11_degen_table5_versions.csv,"version c, gee_ar1_fg"
+sepv|c|gee_ar1_fg|pu,91.6909932540995,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version c, gee_ar1_fg"
+sepv|c|gee_ar1_fg|pu_small,41.9492821546409,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version c, gee_ar1_fg"
+sepv|c|gee_ar1_fg|upow,19.3470163599855,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version c, gee_ar1_fg"
+sepv|c|flip|hi_all,0,"",int,tables/V8_S11_degen_table5_versions.csv,"version c, flip"
+sepv|c|flip|lo_all,0,"",int,tables/V8_S11_degen_table5_versions.csv,"version c, flip"
+sepv|c|flip|pu,96.5072858755117,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version c, flip"
+sepv|c|flip|pu_small,72.2703772598972,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version c, flip"
+sepv|c|flip|upow,20.9064343479589,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version c, flip"
+sepv|c|glmer_lrt|hi_all,412,"",int,tables/V8_S11_degen_table5_versions.csv,"version c, glmer_lrt"
+sepv|c|glmer_lrt|lo_all,13,"",int,tables/V8_S11_degen_table5_versions.csv,"version c, glmer_lrt"
+sepv|c|glmer_lrt|pu,86.3679994168263,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version c, glmer_lrt"
+sepv|c|glmer_lrt|pu_small,61.8981304611237,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version c, glmer_lrt"
+sepv|c|glmer_lrt|upow,24.4801862027844,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version c, glmer_lrt"
+sepv|c|chosen,gee_ar1_fg,"",text,tables/V8_S11_degen_table5_versions.csv,"version c, strategy chosen by the rule"
+sepv|d|mmm_cc|hi_all,0,"",int,tables/V8_S11_degen_table5_versions.csv,"version d, mmm_cc"
+sepv|d|mmm_cc|lo_all,38,"",int,tables/V8_S11_degen_table5_versions.csv,"version d, mmm_cc"
+sepv|d|mmm_cc|pu,83.9062263491408,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version d, mmm_cc"
+sepv|d|mmm_cc|pu_small,27.0253837172922,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version d, mmm_cc"
+sepv|d|mmm_cc|upow,20.3074144859548,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version d, mmm_cc"
+sepv|d|gee_ar1_fg|hi_all,0,"",int,tables/V8_S11_degen_table5_versions.csv,"version d, gee_ar1_fg"
+sepv|d|gee_ar1_fg|lo_all,100,"",int,tables/V8_S11_degen_table5_versions.csv,"version d, gee_ar1_fg"
+sepv|d|gee_ar1_fg|pu,91.4303252744351,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version d, gee_ar1_fg"
+sepv|d|gee_ar1_fg|pu_small,40.0593909912071,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version d, gee_ar1_fg"
+sepv|d|gee_ar1_fg|upow,19.3286144582633,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version d, gee_ar1_fg"
+sepv|d|flip|hi_all,0,"",int,tables/V8_S11_degen_table5_versions.csv,"version d, flip"
+sepv|d|flip|lo_all,0,"",int,tables/V8_S11_degen_table5_versions.csv,"version d, flip"
+sepv|d|flip|pu,96.5072858755117,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version d, flip"
+sepv|d|flip|pu_small,72.2703772598972,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version d, flip"
+sepv|d|flip|upow,20.9064343479589,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version d, flip"
+sepv|d|glmer_lrt|hi_all,412,"",int,tables/V8_S11_degen_table5_versions.csv,"version d, glmer_lrt"
+sepv|d|glmer_lrt|lo_all,13,"",int,tables/V8_S11_degen_table5_versions.csv,"version d, glmer_lrt"
+sepv|d|glmer_lrt|pu,86.3679994168263,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version d, glmer_lrt"
+sepv|d|glmer_lrt|pu_small,61.8981304611237,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version d, glmer_lrt"
+sepv|d|glmer_lrt|upow,24.4801862027844,"",sig2,tables/V8_S11_degen_table5_versions.csv,"version d, glmer_lrt"
+sepv|d|chosen,gee_ar1_fg,"",text,tables/V8_S11_degen_table5_versions.csv,"version d, strategy chosen by the rule"
+madT2|marg|min,1.61829953296328,"",sig2,tables/variant_cv/V4_S6_values.csv,"smallest mean absolute departure at T = 2 among mmm, gee, gee_md, gee_kc, gee_fg"
+madT2|marg|max,2.59766065503781,"",sig2,tables/variant_cv/V4_S6_values.csv,largest
+madT2|marg|argmin,mmm,"",text,tables/variant_cv/V4_S6_values.csv,method with the smallest
+madT2|marg|argmax,gee,"",text,tables/variant_cv/V4_S6_values.csv,method with the largest
+zeger_f_m1c,1.49,"",plain,tables/V4_S7_extra.csv,"sqrt(1 + k^2 sigma^2), k = 16 sqrt(3) / (15 pi), sigma^2 = m1c_var (GLMM-native M1c)"
+ciw|ds,8.74553722528759,"",sig2,results_v4/S10/supplemento/s10s_ciwidth.csv (R/s10/supplemento/s10s_main.R),"inverted sign-flip interval wider than the GEE strategy's, geometric mean over datasets where both are finite, H1 (%)"
+ciw|ds_N75,5.60423697924468,"",sig2,results_v4/S10/supplemento/s10s_ciwidth.csv (R/s10/supplemento/s10s_main.R),"same, N >= 75 (%)"
+ge4|both_min,666,"",int,tables/V4_S7d_GE4.csv,"smallest number of datasets on which fewclust and the hand computation both returned a standard error, over corrections and working correlations"
+to_max_prod,20,"",sig2,tables/V7_S10_supplemento_geesmv_timeouts.csv,largest share of geesmv time-outs per design point and hypothesis in the production rows (%)
+sep|iter_lo,25,"",int,R/s10/degen/s10_degen_verify_flagged.R,"geese iteration limit of the study (maxit, default)"
+sep|iter_hi,200,"",int,R/s10/degen/s10_degen_verify_flagged.R,geese iteration limit of the refit
+sep|iter_shift,0.5,"",plain,R/s10/degen/s10_degen_verify_flagged.R,an estimate 'moved outward' when |est200| > |est25| + this value
+nlm_code3,3,"",int,R/s10/testo/s10t_ccvar.R,additional nlm code accepted by variants (ii') and (iii')
+smv_max_i,50,"",int,R/s7d/s7d_common.R,geesmv run on replicates 1 to this value of each design point and hypothesis
+thr|t4cv|n,156,"",int,tables/V8_S11_thr_summary.csv,threshold variants with D-82 and D-90 against the primary threshold
+thr|t4cv|changed,0,"",int,tables/V8_S11_thr_summary.csv,threshold variants with D-82 and D-90 against the primary threshold
+thr|t4cv|cited,37,"",int,tables/V8_S11_thr_summary.csv,threshold variants with D-82 and D-90 against the primary threshold
+thr|t4cv|cited_changed,0,"",int,tables/V8_S11_thr_summary.csv,threshold variants with D-82 and D-90 against the primary threshold
+thr|t4cv|mmm_t_hi,0,"",int,tables/V8_S11_thr_summary.csv,threshold variants with D-82 and D-90 against the primary threshold
+thr|t2cv|n,156,"",int,tables/V8_S11_thr_summary.csv,threshold variants with D-82 and D-90 against the primary threshold
+thr|t2cv|changed,0,"",int,tables/V8_S11_thr_summary.csv,threshold variants with D-82 and D-90 against the primary threshold
+thr|t2cv|cited,37,"",int,tables/V8_S11_thr_summary.csv,threshold variants with D-82 and D-90 against the primary threshold
+thr|t2cv|cited_changed,0,"",int,tables/V8_S11_thr_summary.csv,threshold variants with D-82 and D-90 against the primary threshold
+thr|t2cv|mmm_t_hi,0,"",int,tables/V8_S11_thr_summary.csv,threshold variants with D-82 and D-90 against the primary threshold
+fc|n_cmp,125,"",int,tables/V8_S11_fewclust_coherence.csv,"datasets regenerated from the study compared with fewclust 0.4.1 (copy of MMM-package@45c7946:fewclust/dev/checks_0.4.1/out/c3_coherence.csv; fitting code unchanged in 0.4.2, f05c914)"
+fc|n_coh,4,"",int,tables/V8_S11_fewclust_coherence.csv,of which the coherence condition changed the reported fit
+fc|version,0.4.2,"",text,/home/user/MMM-package/fewclust/DESCRIPTION@f05c914,fewclust version
+fc|commit,f05c914,"",text,git -C /home/user/MMM-package log,closing commit of fewclust 0.4.2 on branch package

@@ -1,0 +1,38 @@
+############ 9. 'No other method moves': variazione per TUTTI gli otto ############
+Key: <method>
+   method GLMM-AR1 GLMM-native GenBinaryY
+   <char>    <num>       <num>      <num>
+1:    gee 0.000000    0.000000    0.00000
+2: gee_fg 0.000000    0.000000    0.00000
+3: gee_kc 0.000000    0.000000    0.00000
+4: gee_md 0.000000    0.000000    0.00000
+5:  glmer 0.971481    0.454565    3.10938
+6:    mmm 0.000000    0.000000    0.00000
+7: shrink 0.000000    0.000000    0.00000
+
+metodi con delta esattamente 0 su tutti e tre: mmm, gee, shrink, gee_md, gee_kc, gee_fg 
+metodi con delta != 0: glmer 
+
+Il LRT non ha intervallo: e' nella tabella di coverage? FALSE 
+metodi presenti in REV_H1_targets: gee, gee_fg, gee_kc, gee_md, glmer, mmm, shrink 
+
+############ 8. ordinamento della tabella 3.15 ############
+    riga method pub_gen GenBinaryY pub_nat GLMM-native pub_ar1 GLMM-AR1
+   <int> <char>   <num>      <num>   <num>       <num>   <num>    <num>
+1:     1 gee_fg   94.55      94.55   94.83       94.83   94.91    94.91
+2:     2 gee_md   94.24      94.24   94.59       94.59   94.64    94.64
+3:     3    mmm   93.17      93.17   93.24       93.24   93.24    93.24
+4:     4  glmer   88.32      88.32   93.03       93.03   92.28    92.28
+5:     5    gee   91.90      91.90   92.44       92.44   92.47    92.47
+6:     6 shrink   90.06      90.06   92.94       92.94   92.59    92.59
+7:     7 gee_kc   86.36      86.36   88.94       88.94   88.84    88.84
+
+ordine PUBBLICATO (per riga): gee_fg > gee_md > mmm > glmer > gee > shrink > gee_kc 
+ordine per GenBinaryY decrescente: gee_fg > gee_md > mmm > gee > shrink > glmer > gee_kc 
+ordine per media dei tre: gee_fg > gee_md > mmm > gee > shrink > glmer > gee_kc 
+ordine per GLMM-native decr: gee_fg > gee_md > mmm > glmer > shrink > gee > gee_kc 
+
+righe fuori posto rispetto a GenBinaryY decrescente:
+  riga 4: pubblicato glmer, atteso gee
+  riga 5: pubblicato gee, atteso shrink
+  riga 6: pubblicato shrink, atteso glmer

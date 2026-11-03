@@ -1,0 +1,25 @@
+agg loaded (B = 2000) 0.1 min
+S6 boot: main 560, M1c 500, extras 2092 / 862 columns; 2001 replicates | 3.6 min
+	Command being timed: "Rscript --vanilla R/s6/s6_run.R"
+	User time (seconds): 3472.76
+	System time (seconds): 1200.74
+	Percent of CPU this job got: 2160%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:36.33
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5643456
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 268275307
+	Voluntary context switches: 10278
+	Involuntary context switches: 10051
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 61520
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

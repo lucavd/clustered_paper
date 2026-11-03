@@ -1,0 +1,20 @@
+rows 22632942 | files 28800 | 29.9 s
+      method       N
+      <char>   <int>
+1:       gee 2879506
+2:    gee_fg 2878518
+3:    gee_kc 2878518
+4:    gee_md 2878518
+5:    gee_ss     988
+6:     glmer 2878948
+7: glmer_lrt 2879506
+8:       mmm 2879022
+9:    shrink 2479418
+      method      N
+      <char>  <int>
+1:       gee    988
+2:    gee_ss    988
+3:     glmer 399530
+4: glmer_lrt   7863
+5:       mmm  63503
+092a5ad60b60e0ea28cb6b78ba2adbeb  results_v4/S2/rows_timetrt.rds

@@ -1,0 +1,52 @@
+- One or more packages recorded in the lockfile are not installed.
+- Use `renv::status()` for more details.
+[31m
+
+processing file: S10.qmd
+[39m1/23            
+2/23 [setup]    
+3/23            
+4/23 [inbreve]  
+5/23            
+6/23 [decisioni]
+7/23            
+8/23 [rinvii]   
+9/23            
+10/23 [esiti]    
+11/23            
+12/23 [findings] 
+13/23            
+14/23 [classes]  
+15/23            
+16/23 [t5v]      
+17/23            
+18/23 [ccv]      
+19/23            
+20/23 [lead]     
+21/23            
+22/23 [fonti]    
+23/23            
+[31moutput file: S10.knit.md
+
+[39m[1mpandoc [22m
+  to: html
+  output-file: S10.html
+  standalone: true
+  embed-resources: true
+  section-divs: true
+  html-math-method: mathjax
+  wrap: none
+  default-image-extension: png
+  toc: true
+  
+[1mmetadata[22m
+  document-css: false
+  link-citations: true
+  date-format: long
+  lang: it
+  title: 'S10: revisione indipendente di numeri e definizioni del manoscritto v7'
+  subtitle: Roadmap Morris 2019, ramo morris-v4
+  date: '2026-11-02'
+  
+Output created: S10.html
+

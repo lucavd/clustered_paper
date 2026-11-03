@@ -1,0 +1,3 @@
+dataset,formula,group,time,chosen,paper_rule,condition_met,fewclust_version,fewclust_commit
+fc_trial,y ~ arm * time,id,time,mmm,mmm_cc_t,TRUE,0.3.1,c688eccdee52026b79370b107bf3a2e852f8d08c
+simulated N=25 T=4 seed 20261027,y ~ arm * time,id,time,mmm,mmm_cc_t,TRUE,0.3.1,c688eccdee52026b79370b107bf3a2e852f8d08c

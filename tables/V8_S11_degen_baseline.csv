@@ -1,0 +1,6 @@
+check,pass,detail
+"baseline Table 5: 19 strategies, every numeric column within 1e-9, flags identical",TRUE,"rows 19, max |diff| 5.68e-14"
+"baseline Table 5 per point: 45,144 rows, pu/upow within 1e-9, hi/lo identical",TRUE,"rows 45144, max |pu| 7.11e-14, max |upow| 1.01e-13, hi diff 0, lo diff 0"
+baseline rule: same chosen strategy,TRUE,mmm_cc
+"baseline Table 3: 72 values (rate, wc, mad x 3 mechanisms x 8 methods) within 1e-9",TRUE,"rows 72, max |diff| 4.26e-14"
+"baseline Table 4 (puT, all methods and T): values within 1e-9",TRUE,"rows 96, max |diff| 9.95e-14"

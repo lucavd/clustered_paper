@@ -1,0 +1,34 @@
+    variant     id expected    est    mcse    outcome
+     <char> <char>    <num>  <num>   <num>     <char>
+ 1:      t4    PA1      0.1  0.000 0.00068 confermata
+ 2:      t4    PA2      0.4  0.001 0.00049 confermata
+ 3:      t4    PA3      0.1  0.000 0.00059 confermata
+ 4:      t4    PA4      0.0  0.000 0.00000 confermata
+ 5:      t4    PA5      0.0  0.000 0.00000 confermata
+ 6:      t4    PA6      0.0  0.000 0.00000 confermata
+ 7:      t2    PA1      0.0 -0.001 0.00093 confermata
+ 8:      t2    PA2     -0.1  0.000 0.00110 confermata
+ 9:      t2    PA3     -0.1  0.000 0.00080 confermata
+10:      t2    PA4      0.0  0.000 0.00000 confermata
+11:      t2    PA5      0.0  0.000 0.00000 confermata
+12:      t2    PA6      0.0  0.000 0.00000 confermata
+   variant                                                    check   pass
+    <char>                                                   <char> <lgcl>
+1:      t4 row set identical to the study outside MMM rows of M3-M5   TRUE
+2:      t2 row set identical to the study outside MMM rows of M3-M5   TRUE
+   variant strategy  n_hi  n_lo       pu     upow  max_rate
+    <char>   <char> <int> <int>    <num>    <num>     <num>
+1:      t4 gee_fg|t     0    94 91.96906 20.13546  9.038737
+2:      t4    mmm|n     1    15 90.98389 21.96264 10.035419
+3:      t4    mmm|t     0    67 90.98389 20.68826  8.459215
+4:      t2 gee_fg|t     0    94 91.96906 20.13546  9.038737
+5:      t2    mmm|n     1    15 90.98522 21.96277 10.035419
+6:      t2    mmm|t     0    68 90.98522 20.68859  8.358510
+7:      cc gee_fg|t     0    94 91.96906 20.13546  9.038737
+8:      cc    mmm|n     1    15 90.98416 21.96264 10.035419
+9:      cc    mmm|t     0    68 90.98416 20.68826  8.442211
+Empty data.table (0 rows and 11 cols): name,class_cc,est_cc,lo_cc,hi_cc,class_v...
+   variant    outcome     N
+    <char>     <char> <int>
+1:      t4 confermata   864
+2:      t2 confermata   864

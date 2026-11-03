@@ -1,0 +1,164 @@
+celle: 48  tentativi previsti: 12000 
+[15:37:42] GenBinaryY  m1 N= 10 T= 4 : 228 fit (0.0 min)
+[15:37:42] GenBinaryY  m1 N= 10 T=10 : 247 fit (0.0 min)
+[15:37:43] GenBinaryY  m1 N= 25 T= 4 : 248 fit (0.0 min)
+[15:37:44] GenBinaryY  m1 N= 25 T=10 : 250 fit (0.0 min)
+[15:37:45] GenBinaryY  m1 N= 45 T= 4 : 250 fit (0.1 min)
+[15:37:47] GenBinaryY  m1 N= 45 T=10 : 250 fit (0.1 min)
+[15:37:48] GenBinaryY  m1 N=145 T= 4 : 250 fit (0.1 min)
+[15:37:52] GenBinaryY  m1 N=145 T=10 : 250 fit (0.2 min)
+[15:37:53] GenBinaryY  m3 N= 10 T= 4 : 243 fit (0.2 min)
+[15:37:54] GenBinaryY  m3 N= 10 T=10 : 244 fit (0.2 min)
+[15:37:55] GenBinaryY  m3 N= 25 T= 4 : 246 fit (0.2 min)
+[15:37:58] GenBinaryY  m3 N= 25 T=10 : 249 fit (0.3 min)
+[15:37:59] GenBinaryY  m3 N= 45 T= 4 : 250 fit (0.3 min)
+[15:38:04] GenBinaryY  m3 N= 45 T=10 : 250 fit (0.4 min)
+[15:38:07] GenBinaryY  m3 N=145 T= 4 : 250 fit (0.4 min)
+[15:38:19] GenBinaryY  m3 N=145 T=10 : 250 fit (0.6 min)
+[15:38:19] GLMM-native m1 N= 10 T= 4 : 226 fit (0.6 min)
+[15:38:20] GLMM-native m1 N= 10 T=10 : 248 fit (0.6 min)
+[15:38:20] GLMM-native m1 N= 25 T= 4 : 239 fit (0.6 min)
+[15:38:21] GLMM-native m1 N= 25 T=10 : 250 fit (0.7 min)
+[15:38:22] GLMM-native m1 N= 45 T= 4 : 246 fit (0.7 min)
+[15:38:23] GLMM-native m1 N= 45 T=10 : 250 fit (0.7 min)
+[15:38:24] GLMM-native m1 N=145 T= 4 : 250 fit (0.7 min)
+[15:38:27] GLMM-native m1 N=145 T=10 : 250 fit (0.8 min)
+[15:38:28] GLMM-native m3 N= 10 T= 4 : 243 fit (0.8 min)
+[15:38:31] GLMM-native m3 N= 10 T=10 : 248 fit (0.8 min)
+[15:38:32] GLMM-native m3 N= 25 T= 4 : 250 fit (0.8 min)
+[15:38:37] GLMM-native m3 N= 25 T=10 : 250 fit (0.9 min)
+[15:38:40] GLMM-native m3 N= 45 T= 4 : 250 fit (1.0 min)
+[15:38:47] GLMM-native m3 N= 45 T=10 : 250 fit (1.1 min)
+[15:38:53] GLMM-native m3 N=145 T= 4 : 250 fit (1.2 min)
+[15:39:10] GLMM-native m3 N=145 T=10 : 250 fit (1.5 min)
+[15:39:10] GLMM-AR1    m1 N= 10 T= 4 : 215 fit (1.5 min)
+[15:39:11] GLMM-AR1    m1 N= 10 T=10 : 248 fit (1.5 min)
+[15:39:11] GLMM-AR1    m1 N= 25 T= 4 : 249 fit (1.5 min)
+[15:39:12] GLMM-AR1    m1 N= 25 T=10 : 250 fit (1.5 min)
+[15:39:13] GLMM-AR1    m1 N= 45 T= 4 : 247 fit (1.5 min)
+[15:39:15] GLMM-AR1    m1 N= 45 T=10 : 250 fit (1.6 min)
+[15:39:17] GLMM-AR1    m1 N=145 T= 4 : 250 fit (1.6 min)
+[15:39:21] GLMM-AR1    m1 N=145 T=10 : 250 fit (1.7 min)
+[15:39:22] GLMM-AR1    m3 N= 10 T= 4 : 239 fit (1.7 min)
+[15:39:24] GLMM-AR1    m3 N= 10 T=10 : 248 fit (1.7 min)
+[15:39:25] GLMM-AR1    m3 N= 25 T= 4 : 249 fit (1.7 min)
+[15:39:27] GLMM-AR1    m3 N= 25 T=10 : 250 fit (1.8 min)
+[15:39:28] GLMM-AR1    m3 N= 45 T= 4 : 249 fit (1.8 min)
+[15:39:33] GLMM-AR1    m3 N= 45 T=10 : 250 fit (1.9 min)
+[15:39:36] GLMM-AR1    m3 N=145 T= 4 : 250 fit (1.9 min)
+[15:39:48] GLMM-AR1    m3 N=145 T=10 : 250 fit (2.1 min)
+
+===== 0. controllo del seme contro i chunk del run principale =====
+repliche appaiate col chunk c01: 92 | identiche a 1e-8: 92 | max |diff| 0.000e+00
+Key: <rep>
+     rep   est_chunk     est_new
+   <int>       <num>       <num>
+1:     1  0.82433428  0.82433428
+2:     2  0.05811956  0.05811956
+3:     3 16.25397938 16.25397938
+4:     4 -0.87487451 -0.87487451
+
+===== 1. mean.table = model-based, non robusta =====
+fit con mean.table: 11849 ; max |se_tab - sqrt(diag(mod.cov))| = 0.000e+00
+max |se_tab - sqrt(diag(rob.cov))| = 6.600e+06 ; mediana = 1.750e-02
+rob.cov disponibile in 11506 fit su 11849 (97.11%)
+
+tentativi: 12000 ; fit restituiti: 11849 ; est utilizzabile: 11443
+utilizzabili con SE model-based: 10890 (90.75% dei tentativi)
+utilizzabili con SE robusta    : 11237 (93.64% dei tentativi)
+
+===== 2A. LIVELLO (%) per N, FILTRI SEPARATI (convenzione pubblicata) =====
+         dgp   N n_mod lev_mod mcse_mod n_rob lev_rob mcse_rob shift
+    GLMM-AR1  10   696    4.74     0.83   796   20.10     0.77 15.36
+    GLMM-AR1  25   967    6.10     0.70   973   11.20     0.70  5.10
+    GLMM-AR1  45   989    6.57     0.69   993    6.95     0.69  0.38
+    GLMM-AR1 145   998    5.31     0.69  1000    4.90     0.69 -0.41
+ GLMM-native  10   707    6.08     0.82   812   20.94     0.76 14.85
+ GLMM-native  25   963    5.71     0.70   967   10.03     0.70  4.32
+ GLMM-native  45   990    5.45     0.69   987    7.40     0.69  1.94
+ GLMM-native 145  1000    6.20     0.69   999    5.31     0.69 -0.89
+  GenBinaryY  10   644    7.45     0.86   759   22.27     0.79 14.81
+  GenBinaryY  25   947    5.39     0.71   958   11.90     0.70  6.51
+  GenBinaryY  45   992    6.45     0.69   994    8.25     0.69  1.80
+  GenBinaryY 145   997    6.52     0.69   999    6.11     0.69 -0.41
+
+-- pooled per meccanismo, filtri separati --
+         dgp n_mod lev_mod n_rob lev_rob shift
+    GLMM-AR1  3650    5.75  3762   10.29  4.54
+ GLMM-native  3660    5.85  3765   10.44  4.59
+  GenBinaryY  3580    6.37  3710   11.48  5.11
+
+===== 2B. LIVELLO (%) per N, FILTRO CONGIUNTO (confronto appaiato) =====
+fit con ENTRAMBE le SE utilizzabili: 10839 su 12000 tentativi
+         dgp   N   n lev_mod lev_rob shift mcse
+    GLMM-AR1  10 686    4.08   21.14 17.06 0.83
+    GLMM-AR1  25 964    6.02   11.20  5.19 0.70
+    GLMM-AR1  45 988    6.48    6.98  0.51 0.69
+    GLMM-AR1 145 998    5.31    4.91 -0.40 0.69
+ GLMM-native  10 700    6.00   22.29 16.29 0.82
+ GLMM-native  25 959    5.74    9.91  4.17 0.70
+ GLMM-native  45 986    5.27    7.40  2.13 0.69
+ GLMM-native 145 999    6.11    5.31 -0.80 0.69
+  GenBinaryY  10 634    7.41   23.97 16.56 0.87
+  GenBinaryY  25 940    5.43   12.02  6.60 0.71
+  GenBinaryY  45 989    6.37    8.19  1.82 0.69
+  GenBinaryY 145 996    6.43    6.12 -0.30 0.69
+
+-- pooled per meccanismo, filtro congiunto --
+         dgp    n lev_mod lev_rob shift
+  GenBinaryY 3559    6.32   11.44  5.12
+ GLMM-native 3644    5.76   10.35  4.59
+    GLMM-AR1 3636    5.58   10.20  4.62
+
+-- rapporto SE_rob/SE_mod (sui fit con entrambe le SE) --
+         dgp   N   n ratio_mean ratio_med
+    GLMM-AR1  10 686     0.8189    0.7544
+    GLMM-AR1  25 964     0.9288    0.9338
+    GLMM-AR1  45 988     1.0080    0.9864
+    GLMM-AR1 145 998     1.0063    0.9966
+ GLMM-native  10 700     0.8351    0.7387
+ GLMM-native  25 959     0.9276    0.9288
+ GLMM-native  45 986     0.9737    0.9680
+ GLMM-native 145 999     1.0210    0.9928
+  GenBinaryY  10 634     0.7771    0.7286
+  GenBinaryY  25 940     0.9382    0.9203
+  GenBinaryY  45 989     0.9918    0.9775
+  GenBinaryY 145 996     1.0084    0.9961
+a N=10, tutti i meccanismi: rapporto medio 0.8114 (robusta -18.9% rispetto alla model-based, n=2020)
+
+===== 3. WORST CASE (max su N di |tasso - 5|), filtri separati =====
+         dgp worst_mod N_mod worst_rob N_rob
+    GLMM-AR1      1.57    45     15.10    10
+ GLMM-native      1.20   145     15.94    10
+  GenBinaryY      2.45    10     17.27    10
+intervallo fra meccanismi: model-based 1.20-2.45 pp ; robusta 15.10-17.27 pp
+-- lo stesso, filtro congiunto --
+         dgp worst_mod worst_rob
+  GenBinaryY      2.41     18.97
+ GLMM-native      1.11     17.29
+    GLMM-AR1      1.48     16.14
+-- variante per cella (dgp,model,N,T), non aggregata, filtri separati --
+         dgp worst_mod worst_rob
+    GLMM-AR1      5.93     19.27
+ GLMM-native      4.20     20.85
+  GenBinaryY      5.80     22.73
+
+===== 4. M-30: calibrazione a GenBinaryY M3, N=60, T=6, 400 repliche =====
+label=manual : fit 399/400, utilizzabili 398 | SE media (model-based) 0.19638 | SD empirica 0.19298 | rapporto 1.0176
+               robusta: n 398 | SE media 0.18886 | SD empirica 0.19298 | rapporto 0.9786 | SE_rob/SE_mod medio 0.9623
+label=mmlb   : fit 400/400, utilizzabili 399 | SE media (model-based) 0.18532 | SD empirica 0.18409 | rapporto 1.0067
+               robusta: n 399 | SE media 0.17948 | SD empirica 0.18409 | rapporto 0.9750 | SE_rob/SE_mod medio 0.9694
+
+===== 5. worst case dell'MMM: pubblicato, sottogriglia, robusta =====
+         dgp worst_pubblicato worst_sottogriglia worst_ricalcolato_mod
+    GLMM-AR1             1.55               1.60                  1.57
+ GLMM-native             1.50               1.08                  1.20
+  GenBinaryY             2.06               2.46                  2.45
+ worst_ricalcolato_rob
+                 15.10
+                 15.94
+                 17.27
+intervallo fra meccanismi -- pubblicato 1.50-2.06 | sottogriglia 1.08-2.46 | mod ricalcolato 1.20-2.45 | ROBUSTA 15.10-17.27 pp
+
+tempo totale 2.3 min
+DONE_IMPL_MMMROB

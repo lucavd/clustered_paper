@@ -1,0 +1,17 @@
+Warning message:
+In fifelse(scen == "M1c", 1L, as.integer(sub("M", "", scen))) :
+  NAs introduced by coercion
+                                           part     value   pass
+                                         <char>     <num> <lgcl>
+ 1:                          datasets generated 1080.0000     NA
+ 2:                    (a) offset fits compared 2160.0000     NA
+ 3:           (a) glm.fit vs glm, max coef diff    0.0000   TRUE
+ 4:      (a) score = numDeriv, datasets failing        NA     NA
+ 5:                    (b) datasets with centre  943.0000     NA
+ 6:               (b) |sum u| at centre >= 1e-8    1.0000  FALSE
+ 7:                        (b) p at centre != 1  267.0000  FALSE
+ 8:                  reported: finite intervals  544.0000     NA
+ 9: reported: >1 accepted stretch on dense grid   86.0000     NA
+10:                  reported: max |left steps|  567.6667     NA
+11:                 reported: max |right steps|  593.3333     NA
+GG3 FAIL 

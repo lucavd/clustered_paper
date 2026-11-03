@@ -1,0 +1,92 @@
+         re      est        se   var_pt
+     <char>    <num>     <num>    <num>
+1:       id 0.475552 0.1195266       NA
+2: id_slope 1.079819 0.3148381 10.24611
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+fits: 2000 in 1.5 min
+Key: <N>
+       N     n n_old   mean_se mean_se_old    sd_est    sd_old     ok
+   <int> <int> <int>     <num>       <num>     <num>     <num> <lgcl>
+1:    25   483   483 0.3553846   0.3553846 0.5791436 0.5791436   TRUE
+2:    50   500   500 0.2439372   0.2439372 0.3730328 0.3730328   TRUE
+Key: <re>
+         re     N     n mean_se sd_est median_var_pt     P ratio ratio_fpc
+     <char> <num> <int>   <num>  <num>         <num> <int> <num>     <num>
+1:       id    25   483   0.355  0.579            NA   207 0.614     0.575
+2:       id    50   500   0.244  0.373            NA   207 0.654     0.570
+3: id_slope    25   482   1.121  1.444          11.8   207 0.776     0.728
+4: id_slope    50   500   0.726  0.963          11.2   207 0.754     0.657
+   mcse_ratio reproduces_stored full_est full_se full_var_pt
+        <num>            <lgcl>    <num>   <num>       <num>
+1:     0.0198              TRUE    0.476   0.120          NA
+2:     0.0207              TRUE    0.476   0.120          NA
+3:     0.0250             FALSE    1.080   0.315        10.2
+4:     0.0239             FALSE    1.080   0.315        10.2
+all reproduce: TRUE

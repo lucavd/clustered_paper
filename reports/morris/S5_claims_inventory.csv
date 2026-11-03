@@ -1,0 +1,72 @@
+claim_id,section,claim,v3_value,statistic,direction,kind,margin,per_mechanism,notes
+C01,Abstract; 3.1; 4.1,MMM has the smallest worst-case departure from nominal on all three mechanisms,2.06/1.50/1.55 (runner-up GLMM 4.43/1.83/2.18),"min over other 7 methods of WC minus WC(MMM); WC = max over 16 N of |100*sum k/sum n - 5|, rate replicate-weighted within N over the 30 cells of a mechanism",> 0,difference,1 pp,yes,
+C02,Abstract; 3.1,Fay-Graubard has the smallest mean absolute deviation (MAD over the 16 N) on all three mechanisms,1.00/0.52/0.55 (runner-up MD 1.41/0.88/0.97),min over other 7 of MAD minus MAD(FG); MAD = mean over 16 N of |rate_N - 5|,> 0,difference,1 pp,yes,
+C03,Abstract; 4.1,On matched replicates MMM falsely rejects more often than FG,0.797/0.848/1.012 pp,"rate(MMM) - rate(FG) under H0 on replicates usable for both, pooled over the grid",> 0,difference,1 pp,yes,replaces the McNemar test that treated all pairs as independent
+C03b,4.1,"Same on the replicates usable for all eight methods, sign unchanged",0.544/0.577/0.782 pp,as C03 on the intersection set,> 0,difference,1 pp,yes,
+C04,3.1; 4.1,Counts of design points won do not separate MMM and FG,321 vs 308,wins(MMM) - wins(FG); winner = method closest to nominal per design point among 8; ties shared equally (1/k each),~ 0,equivalence,"72 design points (5% of 1,440)",no,v3 broke ties by method order; D-23 shares them
+C05,4.1,Testing each won design point against its runner-up: none significant after multiplicity correction,"24 uncorrected, 0 corrected","count of design points with BH (and BY) adjusted p < 0.05 for |dev(runner-up)| - |dev(winner)|, z from the block bootstrap SE of that difference",= 0,count,none,no,replaces per-cell independent tests
+C06a,3.1,At T = 2 MMM has the smallest MAD of the eight,1.80 (runner-up GEE 2.17),min over other 7 of MAD_T2 minus MAD_T2(MMM); MAD_T = mean over the 240 design points at that T of |rate - 5|,> 0,difference,1 pp,no,
+C06b,3.1,At T = 3 FG has the smallest MAD,1.02 (runner-up MD 1.14),as C06a for FG at T = 3,> 0,difference,1 pp,no,
+C06c,3.1,At T >= 4 FG has the smallest MAD (corrected sandwiches lead),1.18 (runner-up MD 1.60),as C06a for FG at T >= 4,> 0,difference,1 pp,no,
+C06d,3.1,MMM MAD hardly differs between T = 2 and T >= 4,1.80 vs 1.74,MAD_T2(MMM) - MAD_T>=4(MMM),~ 0,equivalence,1 pp,no,the text says < 0.1 pp and only method; judged at the 1 pp margin
+C07,Abstract; Figure 1,Ordering of the methods at T = 2 inversely related to ordering at T = 10,Spearman -0.357,Spearman over the 8 methods between MAD at T = 2 and MAD at T = 10 (240 design points each),< 0,difference,|rho| 0.3,no,
+C08,1; Abstract,Ranking stable across mechanisms,"min pairwise Spearman WC 0.976, MAD 0.833, pooled rate 0.857","min over the 3 mechanism pairs of Spearman over 8 methods, for WC, MAD and pooled rate",high,value,"rho in [0.7, 1]",no,three sub-claims
+C09,2.2; 4.4,GLMM-AR1 is a near-duplicate of GLMM-native,0.217 pp,mean over 8 methods of |pooled rate AR1 - pooled rate native|; plus bootstrap probability of identical ranking on WC and MAD,~ 0,equivalence,1 pp,no,
+C10a,Abstract; 3.2,"Share of method-cells off nominal, BH over the pooled family","47.1% of 11,163","% of method-cells (H0, n >= 1) with BH-adjusted exact binomial p < 0.05; BY reported beside",,descriptive,,no,exact two-sided binomial test as binom.test
+C10b,Abstract; 3.2,FG has the fewest miscalibrated cells (BH within method),23.2% (runner-up MD 28.1%),min over other 7 of % flagged minus % flagged(FG),> 0,difference,5 points of %,no,also with BY
+C10c,Abstract; 3.2,KC has the most miscalibrated cells,87.2% (next LRT 60.6%),% flagged(KC) - max over other 7,> 0,difference,5 points of %,no,also with BY
+C11a,3.3,LRT rejection rate falls on the common (intersection) set,-2.13/-1.78/-1.84,rate_intersection - rate_own for glmer_lrt (oriented: own - intersection),> 0,difference,1 pp,yes,
+C11b,3.3,KC rises on the common set,+0.45/+0.51/+0.48,rate_intersection - rate_own for gee_kc,> 0,difference,1 pp,yes,
+C11c,3.3,The other six move by less than a third of a point,max 0.69,max over the 6 other methods of |rate_intersection - rate_own|,~ 0,equivalence,1 pp,yes,
+C11d,3.3,On the common set LRT rejects more than GLMM Wald on GenBinaryY,8.93 vs 8.48,"rate_LRT - rate_glmer on the intersection, GenBinaryY",> 0,difference,1 pp,no,
+C12a,3.5,Uncorrected GEE strongly anticonservative at N = 10 on GenBinaryY,25.90%,"rate_N10(GEE, GenBinaryY) - 7.5",> 0,value,Bradley upper bound 7.5%,no,
+C12b,3.5,Uncorrected GEE still anticonservative at N = 145 on GenBinaryY,5.51% (z = 3.9),"rate_N145(GEE, GenBinaryY) - 5, judged against the Bradley band",> 0,value,Bradley 2.5 pp,no,
+C12c,3.5,Uncorrected GEE above nominal at every N on every mechanism,min 5.19/5.24 on the mixed mechanisms,min over N of rate_N(GEE) - 5,> 0,value,Bradley 2.5 pp,yes,
+C13a,3.8; Abstract,GLMM Wald with random slopes is unusable at T = 2,"0.0% (3 of 144,000)",usable % of glmer in M3-M5 at T = 2,~ 0,value,1 point of %,no,D-20 already found 0 in v4
+C13b,3.8; Abstract; 4.1,"LRT on the random-intercept pair usable in 99% at T = 2 with random slopes, rejecting 14-19%",98.8-99.0%; 14.26-18.98%,none,,superseded,,no,D-08: in v4 the LRT carries the Wald random slopes in M3-M5 and is not estimable at T = 2 (D-20)
+C13c,3.8,"At T = 2 with a random intercept only, LRT usable far more often than GLMM Wald",98.8 vs 68.6,"usable %(LRT) - usable %(glmer), M1-M2, T = 2",> 0,difference,5 points of %,no,
+C13d,3.8; 4.1,At T = 2 GLMM departs from nominal more than MMM,5.6 vs 1.8,MAD_T2(glmer) - MAD_T2(MMM),> 0,difference,1 pp,no,
+C14a,Abstract; 3.9; 4.1,At N <= 20 the LRT returns a usable result most often,98.7 (next GEE 78.7),"usable %(LRT) - max over other 7; mean over the 270 design points at N <= 20, cells never fitted at 0",> 0,difference,5 points of %,no,
+C14b,Abstract; 3.9; 4.1,At N <= 20 the LRT has the highest unconditional validity,89.3 (next GEE 65.2),as C14a on unconditional validity (n_obs - rejections)/n_den,> 0,difference,5 points of %,no,
+C14c,3.9,At N <= 20 GLMM Wald is the least usable,64.5 (next MMM 66.6),min over other 7 of usable % minus usable %(glmer),> 0,difference,5 points of %,no,
+C14d,3.9,MMM usability within 2.5 points of the three corrected sandwiches at N <= 20,66.6 vs 68.7-69.0,"max over MD, KC, FG of |usable %(MMM) - usable %(X)|",~ 0,equivalence,5 points of %,no,
+C15a,Abstract; 3.10; 4.1,MMM has the smallest MAD in each of the three hardest estimability strata,2.62/1.56/2.00 (runner-up 3.06/1.95/2.47),"per stratum (<50%, 50-80%, 80-95% mean usable share of the 5 marginal methods, right-closed): min over other 7 of MAD minus MAD(MMM); strata recomputed in every bootstrap replicate",> 0,difference,1 pp,no,three sub-claims
+C15b,3.10; 4.1,MD has the smallest MAD where no fit fails,0.61 (next FG 0.63),stratum > 99.9%: min other - MAD(MD),> 0,difference,1 pp,no,
+C15c,3.10,FG has the smallest MAD in the 95-99.9% stratum,1.13 (next MD 1.32),as C15b for FG in 95-99.9%,> 0,difference,1 pp,no,
+C15d,Abstract; 3.10,Signed gap MMM - FG negative in the three hardest strata and positive in the two easiest,-1.27/-1.27/-0.75/+1.21/+0.40,"mean over design points of the stratum of |dev(MMM)| - |dev(FG)|, oriented to the paper sign",> 0,difference,1 pp,no,five sub-claims; replaces the paired Wilcoxon on cells
+C15e,Abstract; 3.10,Usable share and signed gap positively correlated across design points,Spearman 0.245,"Spearman over the 1,440 design points of usable share vs gap MMM - FG",> 0,difference,|rho| 0.1,no,replaces the p-value that treated cells as independent
+C16a,3.11,After size adjustment GLMM has more power than FG,3.79/0.72/2.37 pp,"pooled size-adjusted power(glmer) - (FG), pooled = sum k / sum n over cells",> 0,difference,2 pp,yes,
+C16b,3.11,The GLMM advantage is not uniform across mechanisms,3.79 vs 0.72,gap C16a GenBinaryY - gap C16a GLMM-native,> 0,difference,2 pp,no,
+C16c,3.11,KC has the highest raw power on GenBinaryY,34.57 (next shrink 32.15),"raw power(KC) - max over other 7, GenBinaryY",> 0,difference,2 pp,no,
+C16d,3.11,The raw-power ordering does not survive size adjustment (KC not first),22.96 vs 25.78,"max over other 7 of size-adjusted power minus KC, GenBinaryY",> 0,difference,2 pp,no,
+C16e,3.11,Spread of size-adjusted power across methods,21.53-25.78 (GenBinaryY),max - min over 8 methods,,descriptive,,yes,
+C17a,Abstract; 3.12,A t reference lowers every Wald rejection rate,shift -0.53 to -1.15,"min over the 7 Wald methods of (rate_normal - rate_t), pooled",> 0,difference,1 pp,yes,"t with N - p df, p = 4/5/4/4/5 fixed effects in M1-M5"
+C17b,Abstract; 3.12,Below 25 clusters the t shift is 1.4-3.7 points,1.38-3.71,"min over the 7 Wald methods of (rate_normal - rate_t), N <= 25, pooled over mechanisms",> 0,difference,1 pp,no,
+C17c,Abstract; 3.12; 4.1,"Under t, FG has the smallest worst case on all three mechanisms",FG 0.80/1.08/0.95 (next 2.02/1.16/1.39),min over other 6 Wald methods of WC_t minus WC_t(FG),> 0,difference,1 pp,yes,
+C17d,3.12,Under t FG leads MMM on the worst case,1.22/1.42/1.67,WC_t(MMM) - WC_t(FG),> 0,difference,1 pp,yes,
+C17e,3.12,Under t MD overtakes MMM on the random-effects mechanisms but not on GenBinaryY,MD 3.05/1.16/1.39 vs MMM 2.02/2.50/2.63,"native, AR1: WC_t(MMM) - WC_t(MD); GenBinaryY: WC_t(MD) - WC_t(MMM)",> 0,difference,1 pp,yes,
+C17f,Abstract; 3.12; 4.1,The reference distribution moves rates more than the choice among corrections,0.76 vs 0.26 (GenBinaryY),"|shift(FG)| - |rate(FG) - rate(MD)|, pooled normal reference",> 0,difference,1 pp,yes,"interpretation: FG and MD, the two corrections the paper recommends; KC excluded (7 pp from FG)"
+C18,3.13,Estimand mismatch: share of the GLMM disadvantage due to the scoring convention,43.2%; 27.3%; 1.1 of 3.6 pp,none,,superseded,,no,D-18: no conditional truth for GenBinaryY; the pooled decomposition is not defined in v4
+C19a,3.14,Shrinkage GLM has the lowest RMSE,0.409/0.369/0.392,"min over other methods of RMSE / RMSE(shrink) - 1; RMSE per cell against each method's estimand, averaged over design points where all compared methods have an RMSE",> 0,difference,10% relative,yes,GLMM excluded on GenBinaryY (D-18)
+C19b,3.14,GLMM RMSE higher than MMM,factor 1.33-2.00,"RMSE(glmer)/RMSE(MMM) - 1, native and AR1",> 0,difference,10% relative,yes,
+C19c,3.14,MMM and the three corrected GEEs within 2.3-3.3%,2.3/2.8/3.3%,"max/min - 1 over MMM, MD, KC, FG",~ 0,equivalence,10% relative,yes,
+C20a,Abstract; 3.15,FG coverage closest to 95% on all three mechanisms,94.55/94.83/94.91 (next MD 94.24/94.59/94.64),"min over other methods of |cov - 95| minus |cov(FG) - 95|, pooled sum k_cov / sum n_cov; coverage against each method's estimand (D-12, D-18)",> 0,difference,1 pp,yes,
+C20b,Abstract; 3.15,KC coverage furthest from 95% on all three,86.36/88.94/88.84,|cov(KC) - 95| - max over other methods,> 0,difference,1 pp,yes,
+C21a,Abstract; 4.1,"FG first on the combined rank of level, coverage and usability",2.33 (next MD 3.67),"ranks within mechanism on |pooled rate - 5|, |pooled cov - 95|, mean usable %; mean of 3 ranks, averaged over mechanisms; methods with all three criteria defined in that mechanism; min other - FG",> 0,rank,none (resolution only),no,"LRT has no coverage in v4 and GLMM none on GenBinaryY (D-18, D-23)"
+C21b,4.1,At N <= 25 GLMM and LRT tie first on the combined rank,2.67,none,,superseded,,no,LRT has no coverage in v4; the N <= 25 combined rank is reported descriptively
+C22,4.1,The worst-case argmax moves across 14 of 16 cluster counts under resampling,14 of 16,"number of distinct argmax N of WC(MMM) over the bootstrap, per mechanism",,descriptive,,yes,
+C23a,4.2,LRT maximises unconditional validity up to 35 (GenBinaryY) and 45 (other two) clusters,35/45/45,switch N = largest N such that LRT is the argmax at every N up to it; unconditional validity per N = mean over the 30 design points,= claimed,rank,bootstrap probability >= 0.95,yes,
+C23b,4.2,MD takes over after the switch,45/55/55,method that is argmax at the first N after the switch,= MD,rank,bootstrap probability >= 0.95,yes,
+C23c,4.2,LRT advantage in unconditional validity at N = 10,32.6/32.2/32.5,validity(LRT) - max over other 7 at N = 10,> 0,difference,5 points of %,yes,
+C23d,4.2,"LRT lead in usable share is large below 25, smaller at 25 and 3-5 points at 35",16-33; 10-11; 3-5,"usable %(LRT) - max other at N = 25 and N = 35, per mechanism",> 0,difference,5 points of %,yes,two sub-claims per mechanism
+C23e,4.2,Among the five marginal methods MMM has the smallest worst case below 25 clusters,,"WC over N in {10, 15, 20} among MMM, GEE, MD, KC, FG: min other - MMM",> 0,difference,1 pp,yes,
+C24a,4.3,KC under t attains nominal level at N = 10,5.42/4.06/3.93,rate_t(KC) at N = 10 inside the Bradley band,"inside [2.5, 7.5]",value,Bradley band,yes,
+C24b,4.3,KC under t is far above nominal at N = 145,13.85%,rate_t(KC) at N = 145 pooled over mechanisms - 7.5,> 0,value,Bradley upper bound 7.5%,no,
+C24c,4.3,MD under t inside the 3.6-6.4% band of Mancl and DeRouen,5.24/4.73/4.82,"pooled rate_t(MD) inside [3.6, 6.4]",inside,value,band 3.6-6.4,yes,
+C25a,3.1; 4.1,FG close to exact above 45 clusters on the random-effects mechanisms,<= 0.2 pp,"max over N >= 55 of |rate_N(FG) - 5|, native and AR1",~ 0,equivalence,1 pp,yes,
+C25b,3.1,MMM keeps a residual departure of 0.9-1.7 points above 45 clusters,0.9-1.7,mean over N >= 55 of rate_N(MMM) - 5,> 0,difference,1 pp,yes,
+C25c,4.1,FG and MD departures fall below 0.1 pp above 45-55 clusters and stay there,< 0.1,share of N >= 55 with |dev| < 0.1 and the MCSE of rate_N,,descriptive,,yes,resolution check: a 0.1 pp statement needs MCSE <= 0.05 pp
+C26,Abstract,Series length mattered more than cluster count,,none,,not_operationalized,,no,to be reworded or operationalized in S7
+C27,3.6; 3.7; 4.1,"Numerical behaviour of the geesmv corrections (KC/MD/FG ratios, hand computation)",,none,,out_of_scope,,no,"implementation verification, not a comparison between simulation cells"
+C28,2.5; 3.16,Clinical application,,none,,out_of_scope,,no,not a simulation result
+C29,3.4,Shrinkage and GLMM Wald share the test statistic,,none,,out_of_scope,,no,algebraic identity

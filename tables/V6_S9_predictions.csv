@@ -1,0 +1,10 @@
+code,what,d_min,d_max,a,b,verdict
+PS1,"Table 3 rate and MAD, GEE uncorrected and KC (12 values)",0.00923340576909037,0.0836318322760898,-1,1,confermata
+PS2,"Table 3 worst case, GEE uncorrected and KC (6 values)",0.395306115043601,1.0604255556171,-2.5,2.5,confermata
+PS3,"Table 4 usable share, GEE uncorrected (10 cells)",-0.870923330916696,0,-2.5,2.5,confermata
+PS3 (T >= 4),"same, T from 4 (expected -0.3 to 0)",-0.10244946522991,0,-2.5,2.5,confermata
+PS4,Table S10 power cells (96),0,0.0608350369876014,-2,2,confermata
+PS5,"direct comparison, MAD difference GEE - MMM, 19 regions",-0.0397872155492198,1.48060670606808,-1,1,indeterminata
+PS6,"copula, mean coverage of the GEE strategies (t and normal, 9 strategies)",-0.11718871363361,-0.0193144619805992,-1,1,confermata
+PS7,N - 2: GEE AR(1) FG clearly above = 2; strategy chosen = mmm_cc,1,,1,1,confermata
+PS8,"fewest expected flags: boot=mmm_cc, plugin=mmm_cc, eb=gee_ar1_fg",0,,1,1,smentita

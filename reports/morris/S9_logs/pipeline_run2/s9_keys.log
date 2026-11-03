@@ -1,0 +1,129 @@
+                      key            value   mcse   kind
+                   <char>           <char> <char> <char>
+ 1:    ndp|GLMM-AR1|M1-M5              480           int
+ 2:      ndp|GLMM-AR1|M1c               24           int
+ 3: ndp|GLMM-native|M1-M5              480           int
+ 4:   ndp|GLMM-native|M1c               24           int
+ 5: ndp|GLMM-native|M6-M7              192           int
+ 6:  ndp|GenBinaryY|M1-M5              480           int
+ 7:    ndp|GenBinaryY|M1c               24           int
+ 8:  ndp|GenBinaryY|M6-M7              192           int
+ 9:  ndp|Copula-AR1|M1-M5              480           int
+10:            grid_N_min               10           int
+11:            grid_N_max              145           int
+12:            grid_T_min                2           int
+13:            grid_T_max               10           int
+14:             m1c_N_max               45           int
+15:             m1c_T_max                6           int
+16:               const_n             9711           int
+17:        const_all0_pct 99.9382143960457          sig2
+18:       const_small_pct 91.8443002780352          sig2
+19:            datasets_n          4752000           int
+20:                fgpt|n                2           int
+21:        fgpt|same_cell                1           int
+22:              fgpt|1|N               10           int
+23:              fgpt|1|T                2           int
+24:              fgpt|1|n               61           int
+25:              fgpt|1|k               12           int
+26:           fgpt|1|rate  19.672131147541          sig2
+27:          fgpt|1|n_pre              172           int
+28:          fgpt|1|k_pre               12           int
+29:          fgpt|1|mmm_n               35           int
+30:          fgpt|1|mmm_k                0           int
+31:              fgpt|2|N               10           int
+32:              fgpt|2|T                2           int
+33:              fgpt|2|n               63           int
+34:              fgpt|2|k               11           int
+35:           fgpt|2|rate 17.4603174603175          sig2
+36:          fgpt|2|n_pre              136           int
+37:          fgpt|2|k_pre               11           int
+38:          fgpt|2|mmm_n               38           int
+39:          fgpt|2|mmm_k                0           int
+                      key            value   mcse   kind
+                   <char>           <char> <char> <char>
+                                                 source
+                                                 <char>
+ 1:                           tables/V5_S7f_rule_dp.csv
+ 2:                           tables/V5_S7f_rule_dp.csv
+ 3:                           tables/V5_S7f_rule_dp.csv
+ 4:                           tables/V5_S7f_rule_dp.csv
+ 5:                           tables/V5_S7f_rule_dp.csv
+ 6:                           tables/V5_S7f_rule_dp.csv
+ 7:                           tables/V5_S7f_rule_dp.csv
+ 8:                           tables/V5_S7f_rule_dp.csv
+ 9:                           tables/V5_S7f_rule_dp.csv
+10:                           tables/V5_S7f_rule_dp.csv
+11:                           tables/V5_S7f_rule_dp.csv
+12:                           tables/V5_S7f_rule_dp.csv
+13:                           tables/V5_S7f_rule_dp.csv
+14:                           tables/V5_S7f_rule_dp.csv
+15:                           tables/V5_S7f_rule_dp.csv
+16:                 tables/V6_S9_const_keys_summary.csv
+17:                 tables/V6_S9_const_keys_summary.csv
+18:                 tables/V6_S9_const_keys_summary.csv
+19:                 tables/V6_S9_const_keys_summary.csv
+20:                   tables/V5_S7f_cp_S7d_dp_rates.csv
+21:                   tables/V5_S7f_cp_S7d_dp_rates.csv
+22:                   tables/V5_S7f_cp_S7d_dp_rates.csv
+23:                   tables/V5_S7f_cp_S7d_dp_rates.csv
+24:                   tables/V5_S7f_cp_S7d_dp_rates.csv
+25:                   tables/V5_S7f_cp_S7d_dp_rates.csv
+26:                   tables/V5_S7f_cp_S7d_dp_rates.csv
+27: results_v4/S9/pre/tables/V5_S7f_cp_S7d_dp_rates.csv
+28: results_v4/S9/pre/tables/V5_S7f_cp_S7d_dp_rates.csv
+29:                   tables/V5_S7f_cp_S7d_dp_rates.csv
+30:                   tables/V5_S7f_cp_S7d_dp_rates.csv
+31:                   tables/V5_S7f_cp_S7d_dp_rates.csv
+32:                   tables/V5_S7f_cp_S7d_dp_rates.csv
+33:                   tables/V5_S7f_cp_S7d_dp_rates.csv
+34:                   tables/V5_S7f_cp_S7d_dp_rates.csv
+35:                   tables/V5_S7f_cp_S7d_dp_rates.csv
+36: results_v4/S9/pre/tables/V5_S7f_cp_S7d_dp_rates.csv
+37: results_v4/S9/pre/tables/V5_S7f_cp_S7d_dp_rates.csv
+38:                   tables/V5_S7f_cp_S7d_dp_rates.csv
+39:                   tables/V5_S7f_cp_S7d_dp_rates.csv
+                                                 source
+                                                 <char>
+                                                              how
+                                                           <char>
+ 1:          design points of the mechanism in the scenario group
+ 2:          design points of the mechanism in the scenario group
+ 3:          design points of the mechanism in the scenario group
+ 4:          design points of the mechanism in the scenario group
+ 5:          design points of the mechanism in the scenario group
+ 6:          design points of the mechanism in the scenario group
+ 7:          design points of the mechanism in the scenario group
+ 8:          design points of the mechanism in the scenario group
+ 9:          design points of the mechanism in the scenario group
+10:                                   smallest N of the main grid
+11:                                    largest N of the main grid
+12:                                   smallest T of the main grid
+13:                                    largest T of the main grid
+14:                                              largest N of M1c
+15:                                              largest T of M1c
+16:               non-degenerate datasets with a constant outcome
+17:                                   of which all outcomes 0 (%)
+18:                           of which with T 2-3 and N <= 25 (%)
+19:                           datasets of the 2,376 design points
+20:                 points with GEE AR(1) FG t clearly above 7.5%
+21:                         1 = all at the same scenario, N and T
+22:                                      N of point 1 GLMM-AR1 M2
+23:                                                  T of point 1
+24:                         usable replicates under H0 at point 1
+25:                                         rejections at point 1
+26:                                 rejection rate (%) at point 1
+27: usable replicates before the constant-outcome rule at point 1
+28:                         rejections before the rule at point 1
+29:        usable replicates of the marginalized model at point 1
+30:               rejections of the marginalized model at point 1
+31:                                   N of point 2 GLMM-native M2
+32:                                                  T of point 2
+33:                         usable replicates under H0 at point 2
+34:                                         rejections at point 2
+35:                                 rejection rate (%) at point 2
+36: usable replicates before the constant-outcome rule at point 2
+37:                         rejections before the rule at point 2
+38:        usable replicates of the marginalized model at point 2
+39:               rejections of the marginalized model at point 2
+                                                              how
+                                                           <char>

@@ -1,0 +1,74 @@
+      grp n_strat  sizes
+   <char>   <int> <char>
+1:   main      19   1512
+2:    m67      19    384
+3: copula      19    480
+        strategy  n_dp hi_main hi_m67 hi_copula hi_all lo_all lo_N10 n_N10
+          <char> <int>   <int>  <int>     <int>  <int>  <int>  <int> <int>
+ 1:       mmm_cc  2376       0      0         0      0     42     32   156
+ 2:  gee_ind_unc  2376     223     66        94    383      2      0   156
+ 3:  gee_ind_cr2  2376     131     52        68    251     10      0   156
+ 4: gee_exch_unc  2376     242     69       100    411      1      0   156
+ 5:  gee_ar1_unc  2376     214     64        85    363      1      0   156
+ 6: gee_exch_cr2  2376     133     52        69    254     10      0   156
+ 7:   gee_ind_fg  2376       3      1         1      5    104      7   156
+ 8:   gee_ind_md  2376      18     18        22     58    109      4   156
+ 9:   gee_ind_kc  2376      95     39        55    189     81      3   156
+10:  gee_exch_fg  2376       3      4         8     15    104      3   156
+11:  gee_exch_md  2376      17     18        28     63    101      3   156
+12:   gee_ar1_fg  2376       2      0         0      2    106      5   156
+13:   gee_ar1_md  2376       7      6         7     20    103      4   156
+14:  gee_exch_kc  2376     102     44        61    207     70      3   156
+15:   gee_ar1_kc  2376      62     38        38    138     70      3   156
+16:       shrink  2376     271     93       244    608      6      5   156
+17:        glmer  2376     206     86       223    515     15     12   156
+18:         flip  2376       0      0         0      0      0      0   156
+19:    glmer_lrt  2376     223      0       189    412     13      0   156
+       pu  upow pu_small n_small n_main n_m67 n_copula has_interval eligible
+    <num> <num>    <num>   <int>  <int> <int>    <int>       <lgcl>   <lgcl>
+ 1: 84.01 20.31    27.64     216   1512   384      480         TRUE     TRUE
+ 2: 93.98 22.45    57.31     216   1512   384      480         TRUE    FALSE
+ 3: 93.88 21.16    57.17     216   1512   384      480         TRUE    FALSE
+ 4: 93.78 22.70    56.11     216   1512   384      480         TRUE    FALSE
+ 5: 93.68 22.23    55.96     216   1512   384      480         TRUE    FALSE
+ 6: 93.50 21.39    54.29     216   1512   384      480         TRUE    FALSE
+ 7: 92.11 19.34    44.13     216   1512   384      480         TRUE    FALSE
+ 8: 92.03 19.77    43.85     216   1512   384      480         TRUE    FALSE
+ 9: 92.03 20.84    43.84     216   1512   384      480         TRUE    FALSE
+10: 91.98 19.87    43.90     216   1512   384      480         TRUE    FALSE
+11: 91.91 20.00    43.64     216   1512   384      480         TRUE    FALSE
+12: 91.90 19.36    43.72     216   1512   384      480         TRUE    FALSE
+13: 91.82 19.62    43.47     216   1512   384      480         TRUE    FALSE
+14: 91.80 21.07    42.72     216   1512   384      480         TRUE    FALSE
+15: 91.71 20.65    42.54     216   1512   384      480         TRUE    FALSE
+16: 81.73 23.74    33.68     216   1512   384      480         TRUE    FALSE
+17: 80.36 23.18    28.23     216   1512   384      480         TRUE    FALSE
+18: 96.51 20.91    72.27     216   1512   384      480        FALSE    FALSE
+19: 86.37 24.48    61.90     216   1512   384      480        FALSE    FALSE
+    chosen
+    <lgcl>
+ 1:   TRUE
+ 2:  FALSE
+ 3:  FALSE
+ 4:  FALSE
+ 5:  FALSE
+ 6:  FALSE
+ 7:  FALSE
+ 8:  FALSE
+ 9:  FALSE
+10:  FALSE
+11:  FALSE
+12:  FALSE
+13:  FALSE
+14:  FALSE
+15:  FALSE
+16:  FALSE
+17:  FALSE
+18:  FALSE
+19:  FALSE
+                                                         check value   pass
+                                                        <char> <int> <lgcl>
+1:                    strategies compared with V4_S7e_rule.csv    17   TRUE
+2:            strategies with a usable-share or power mismatch     0   TRUE
+3:                                        same chosen strategy     1   TRUE
+4: sign-flip test: mean usable equal to V4_S7d2_flip_rules.csv     1   TRUE

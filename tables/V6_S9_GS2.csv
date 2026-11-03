@@ -1,0 +1,9 @@
+table,rows_new,rows_old,rows_matched,cells_differing,pass
+V4_S7d_dp_rates (S7d),39816,39816,39816,0,TRUE
+V4_S7e_dp_rates (S7e),7680,7680,7680,0,TRUE
+V4_S7b_rule_dp (S7b),36024,36024,36024,0,TRUE
+V4_S6b_ns_rule_safety_dp (M6-M7),5760,5760,5760,0,TRUE
+variant_nc vs kcfc V4_S6_rule_safety_dp,16632,16632,16632,0,TRUE
+variant_nc vs kcfc V4_perf_all (own set),63504,63504,63504,0,TRUE
+V5_S7f_rule_dp (Table 5 per point),16632,16632,16632,0,TRUE
+V4_S7d2_dp (sign-flip test columns),4752,4752,4752,0,TRUE

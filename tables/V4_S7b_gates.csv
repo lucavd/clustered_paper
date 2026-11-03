@@ -1,0 +1,4 @@
+gate,pass,detail
+GC2,TRUE,"28440 design point x strategy rows compared with the stored tables (22680 study, 5760 new scenarios): n, nd, rate, hi, lo, pu, upow identical: TRUE; normal p recomputed from estimate and SE on 23426614 usable Wald rows, 0 beyond 1e-9 (max deviation 4.9e-15)"
+GC3,TRUE,7 Wald strategies x 1896 design points with the t at N - 2; usable rows with a non-finite statistic: 0
+GC4,TRUE,"12 cells (4 with the largest excess, 8 at random, seed 20261021), 1e6 normal draws each: max deviation from the formula 0.045 points (normal), 0.049 (t)"

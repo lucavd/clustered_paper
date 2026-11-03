@@ -1,0 +1,125 @@
+righe grezze: 42880 ; celle: 18 ; metodi: gee,gee_fg,gee_kc,gee_md,glmer,glmer_lrt,mmm,shrink
+repliche generate per cella (min/mediana/max):  297 / 300 / 300 
+tentativi per cella-metodo: mediana 300.0, intervallo 253-300
+
+===== LIVELLO (%) e MCSE (pp) per metodo e forza di dipendenza =====
+ Dvar    icc    method n_att n_use usable level  mcse   dev rk
+ 0.25 0.0706       mmm  1725  1612  93.45  5.46 0.566  0.46  1
+ 0.25 0.0706    shrink  1783  1659  93.05  5.73 0.570  0.73  2
+ 0.25 0.0706     glmer  1783  1657  92.93  5.73 0.571  0.73  3
+ 0.25 0.0706    gee_fg  1797  1658  92.26  6.57 0.609  1.57  4
+ 0.25 0.0706    gee_kc  1797  1653  91.99  7.02 0.628  2.02  5
+ 0.25 0.0706    gee_md  1797  1654  92.04  7.44 0.645  2.44  6
+ 0.25 0.0706 glmer_lrt  1795  1795 100.00  7.58 0.625  2.58  7
+ 0.25 0.0706       gee  1797  1710  95.16 12.57 0.802  7.57  8
+ 1.00 0.2331       mmm  1757  1627  92.60  4.86 0.533  0.14  1
+ 1.00 0.2331 glmer_lrt  1793  1793 100.00  6.02 0.562  1.02  2
+ 1.00 0.2331    shrink  1783  1654  92.77  6.23 0.594  1.23  3
+ 1.00 0.2331     glmer  1783  1650  92.54  6.24 0.596  1.24  4
+ 1.00 0.2331    gee_fg  1800  1650  91.67  6.73 0.617  1.73  5
+ 1.00 0.2331    gee_md  1800  1644  91.33  7.48 0.649  2.48  6
+ 1.00 0.2331    gee_kc  1800  1649  91.61 10.07 0.741  5.07  7
+ 1.00 0.2331       gee  1800  1711  95.06 12.74 0.806  7.74  8
+ 4.00 0.5487       mmm  1774  1562  88.05  5.25 0.564  0.25  1
+ 4.00 0.5487     glmer  1769  1580  89.32  5.32 0.564  0.32  2
+ 4.00 0.5487    shrink  1769  1594  90.11  5.77 0.584  0.77  3
+ 4.00 0.5487 glmer_lrt  1790  1790 100.00  7.32 0.616  2.32  4
+ 4.00 0.5487    gee_fg  1797  1583  88.09  9.29 0.729  4.29  5
+ 4.00 0.5487    gee_md  1797  1579  87.87 10.39 0.768  5.39  6
+ 4.00 0.5487    gee_kc  1797  1580  87.92 11.58 0.805  6.58  7
+ 4.00 0.5487       gee  1797  1686  93.82 15.95 0.892 10.95  8
+
+===== ORDINAMENTI e correlazione di rango fra livelli di dipendenza =====
+    method rk_D025 rk_D1 rk_D4
+       gee       8     8     8
+    gee_fg       4     5     5
+    gee_kc       5     7     7
+    gee_md       6     6     6
+     glmer       3     4     2
+ glmer_lrt       7     2     4
+       mmm       1     1     1
+    shrink       2     3     3
+Spearman fra ordinamenti: ICC 0.071 vs 0.233 = 0.6190 ; 0.071 vs 0.549 = 0.8095 ; 0.233 vs 0.549 = 0.9048
+Spearman sugli scostamenti |livello-5|: 0.071 vs 0.233 = 0.6190 ; 0.071 vs 0.549 = 0.8095 ; 0.233 vs 0.549 = 0.9048
+
+===== TEST: il livello cambia con la forza della dipendenza? =====
+prop.test a 2 campioni su k/n_use, D=0.25 contro D=4, per metodo
+    method lev_low lev_high delta  p_2camp  p_trend
+    gee_kc    7.02    11.58  4.56 7.52e-06 0.000027
+    gee_md    7.44    10.39  2.95 3.20e-03 0.001120
+    gee_fg    6.57     9.29  2.71 4.22e-03 0.001710
+       gee   12.57    15.95  3.38 4.82e-03 0.002070
+     glmer    5.73     5.32 -0.42 6.04e-01 0.501000
+ glmer_lrt    7.58     7.32 -0.26 7.68e-01 0.959000
+       mmm    5.46     5.25 -0.21 7.93e-01 0.894000
+    shrink    5.73     5.77  0.05 9.56e-01 0.951000
+
+===== confronto: correlazione di rango FRA MECCANISMI (REV_cells.csv) =====
+-- sottoinsieme M1,N<=45,T in {4,10} 
+    method GLMM-AR1 GLMM-native GenBinaryY
+       gee        8           8          8
+    gee_fg        4           3          2
+    gee_kc        7           7          7
+    gee_md        6           6          5
+     glmer        2           4          3
+ glmer_lrt        5           2          6
+       mmm        1           1          1
+    shrink        3           5          4
+   Spearman GLMM-AR1 vs GLMM-native = 0.7857
+   Spearman GLMM-AR1 vs GenBinaryY = 0.9048
+   Spearman GLMM-native vs GenBinaryY = 0.7619
+-- griglia intera 
+    method GLMM-AR1 GLMM-native GenBinaryY
+       gee        6           7          4
+    gee_fg        1           1          1
+    gee_kc        8           8          8
+    gee_md        2           2          2
+     glmer        4           4          5
+ glmer_lrt        7           6          7
+       mmm        3           3          3
+    shrink        5           5          6
+   Spearman GLMM-AR1 vs GLMM-native = 0.9762
+   Spearman GLMM-AR1 vs GenBinaryY = 0.9286
+   Spearman GLMM-native vs GenBinaryY = 0.8571
+
+===== fattori del disegno in run_full.R =====
+N_LEVELS <- c(10, 15, 20, seq(25, 145, 10))
+T_LEVELS <- c(2, 3, 4, 6, 8, 10)
+MODELS   <- if (nzchar(Sys.getenv("MMM_MODELS")))
+LABELS   <- c("mmlb", "manual")
+DGPS     <- c("GenBinaryY", "GLMM-native", "GLMM-AR1")
+N_SIM    <- 1000
+CHUNK    <- 100
+TECHS    <- c("mmm", "gee", "glmer", "gee_ss", "glmer_lrt")
+
+righe di expand.grid che definiscono le celle:
+cells <- expand.grid(dgp = DGPS, model = MODELS, N = N_LEVELS, ntime = T_LEVELS,
+# Order tasks so a cell's 10 chunks run CONSECUTIVELY. expand.grid varies its
+
+menzioni di rho / ICC / varianza fra i fattori: 0 
+
+===== parametri fissi dei generatori (grep sul sorgente) =====
+-- GenBinaryY M1: mmlb = 1, ;; mmlb = 1, | lv.formula = ~1, ; t.formula = ~1,
+-- GenBinaryY M2: mmlb = 1, ;; mmlb = 1, | lv.formula = ~1, ; t.formula = ~1,
+-- GenBinaryY M3: mmlb = c(1, 0.01), ;; mmlb = 1, | lv.formula = ~time, ; t.formula = ~1,
+-- GenBinaryY M4: mmlb = c(1, 0.01), ;; mmlb = c(1, 0.01), | lv.formula = ~time, ; t.formula = ~trt,
+-- GenBinaryY M5: mmlb = c(1, 0.01, 0.01), ;; mmlb = c(1, 0.1, 0.05), | lv.formula = ~time + dose, ; t.formula = ~trt + steroids,
+-- GLMM-native M1: D = D <- 1.0  # random intercept variance
+-- GLMM-native M2: D = D <- 1.0  # random intercept variance
+-- GLMM-native M3: D = D <- matrix(c( 1.0,  0.01, 0.01, 0.001
+-- GLMM-native M4: D = D <- matrix(c( 1.0,  0.01, 0.01, 0.001
+-- GLMM-native M5: D = D <- matrix(c( 1.0,   0.01,  0.01, 0.01,  0.001, 0.0, 0.01,  0.0,   0.001
+-- GLMM-AR1:  AR1_RHO       <- 0.6 ; AR1_SIGMA2    <- 0.5 
+-- GLMM-AR1 D per scenario:
+.ar1_generate(~ time * trt, ~ 1, D = 1.0,
+.ar1_generate(~ time * trt + age, ~ 1, D = 1.0,
+D <- matrix(c(1.0, 0.01,
+0.01, 0.001), nrow = 2, byrow = TRUE)
+D <- matrix(c(1.0, 0.01,
+0.01, 0.001), nrow = 2, byrow = TRUE)
+D <- matrix(c(1.0,  0.01,  0.01,
+0.01, 0.001, 0.0,
+0.01, 0.0,   0.01), nrow = 3, byrow = TRUE) 
+
+tempo totale 6.0 min
+DONE_IMPL_DGRID

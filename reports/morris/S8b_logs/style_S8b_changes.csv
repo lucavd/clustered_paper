@@ -1,0 +1,8 @@
+Location,Tier,Was,Now,Reason
+4.3,2,...best kept the level here; a systematic review...,...best kept the level here. A systematic review...,split 57-word sentence
+4.4,2,...Table S30); the robust standard error...,...Table S30). The robust standard error...,split long sentence
+3.4,2,Never clearly above 7.5% means that no excess was detected.,(deleted),repeats Section 2.6
+4.5,2,"The sign-flip test gives no estimate, and its interval is rarely bounded where it would be most needed.",(deleted),repeats Section 4.1
+4.5,2,"The fourth has only serial dependence, AR(1) on the latent scale, like the working correlation of the GEE strategy; the rule selected the same strategy without it.",The fourth has only serial dependence (Section 4.1).,repeats Section 4.1
+4.5,2,"With exchangeable correlation, Mancl-DeRouen and Fay-Graubard were computed with two implementations that agreed; the AR(1) ... rest on `fewclust` ...",The AR(1) and independence versions ... rest on one implementation (`fewclust`) ...,first half now in Section 2.4
+2.4,2,Its Wald statistic therefore equals that of the mixed model ... rescaled estimate and standard error.,(moved to Section S15),"method detail, length limit"

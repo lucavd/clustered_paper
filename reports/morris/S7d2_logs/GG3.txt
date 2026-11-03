@@ -1,0 +1,36 @@
+Warning message:
+In fifelse(scen == "M1c", 1L, as.integer(sub("M", "", scen))) :
+  NAs introduced by coercion
+                                                                part
+                                                              <char>
+ 1:                                               datasets generated
+ 2:                                         (a) offset fits compared
+ 3:                                (a) glm.fit vs glm, max coef diff
+ 4:                           (a) score = numDeriv, datasets failing
+ 5:                                         (b) datasets with centre
+ 6:                                    (b) |sum u| at centre >= 1e-8
+ 7:                                             (b) p at centre != 1
+ 8:                                             (c) finite intervals
+ 9: (c) rejected run inside the interval at least one walk step wide
+10:          reported: intervals with a narrower rejected run inside
+11:     reported: median share of the interval rejected, among those
+12:                     reported: max share of the interval rejected
+13:                reported: >1 accepted stretch on the dense window
+14:                                        reported: min p at centre
+           value   pass
+           <num> <lgcl>
+ 1: 1080.0000000     NA
+ 2: 2160.0000000     NA
+ 3:    0.0000000   TRUE
+ 4:    0.0000000   TRUE
+ 5:  943.0000000     NA
+ 6:    1.0000000  FALSE
+ 7:  309.0000000  FALSE
+ 8:  570.0000000     NA
+ 9:    0.0000000   TRUE
+10:    0.0000000     NA
+11:    0.0000000     NA
+12:    0.0000000     NA
+13:   90.0000000     NA
+14:    0.8769531     NA
+GG3 FAIL 

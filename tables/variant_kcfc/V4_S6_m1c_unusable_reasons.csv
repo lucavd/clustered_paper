@@ -1,0 +1,81 @@
+grid,method,reason,N,pct
+M1-M2,gee,usable,84777,78.7268421785764
+M1-M2,gee,|estimate| >= 10,18419,17.1045178065654
+M1-M2,gee,p not finite,3807,3.53531132469703
+M1-M2,gee,SE >= 10 or <= 0,682,0.633328690161118
+M1-M2,gee_fg,usable,73886,68.6130844593026
+M1-M2,gee_fg,error / not converged,32821,30.478711055393
+M1-M2,gee_fg,|estimate| >= 10,940,0.872916376468403
+M1-M2,gee_fg,SE >= 10 or <= 0,38,0.0352881088359567
+M1-M2,gee_kc,usable,75348,69.9707480150439
+M1-M2,gee_kc,error / not converged,28236,26.220922134002
+M1-M2,gee_kc,|estimate| >= 10,4091,3.79904350652366
+M1-M2,gee_kc,SE >= 10 or <= 0,10,0.00928634443051493
+M1-M2,gee_md,usable,73571,68.3205646097414
+M1-M2,gee_md,error / not converged,33100,30.7378000650044
+M1-M2,gee_md,|estimate| >= 10,900,0.835770998746344
+M1-M2,gee_md,SE >= 10 or <= 0,114,0.10586432650787
+M1-M2,glmer,usable,73425,70.7220049700449
+M1-M2,glmer,|estimate| >= 10,24540,23.6366088112346
+M1-M2,glmer,SE >= 10 or <= 0,5857,5.6413862187205
+M1-M2,glmer_lrt,usable,106230,100
+M1-M2,mmm,usable,72456,70.601303750475
+M1-M2,mmm,|estimate| >= 10,16526,16.1029748506728
+M1-M2,mmm,SE >= 10 or <= 0,11715,11.4151246747932
+M1-M2,mmm,p not finite,1930,1.88059672405897
+M1-M2,shrink,usable,75518,72.737955346651
+M1-M2,shrink,|estimate| >= 10,21084,20.3078345630021
+M1-M2,shrink,SE >= 10 or <= 0,7220,6.95421009034694
+M1c,gee,usable,31812,88.6844526218951
+M1c,gee,|estimate| >= 10,3377,9.41429009506286
+M1c,gee,p not finite,586,1.63363162443199
+M1c,gee,SE >= 10 or <= 0,96,0.267625658610019
+M1c,gee_fg,usable,30852,86.0081960357949
+M1c,gee_fg,error / not converged,4805,13.3952217668869
+M1c,gee_fg,|estimate| >= 10,207,0.577067826377854
+M1c,gee_fg,SE >= 10 or <= 0,7,0.0195143709403139
+M1c,gee_kc,usable,30345,84.5947980262608
+M1c,gee_kc,error / not converged,5296,14.7640154999861
+M1c,gee_kc,|estimate| >= 10,230,0.641186473753171
+M1c,gee_md,usable,30727,85.6597251261465
+M1c,gee_md,error / not converged,4914,13.6990884001004
+M1c,gee_md,|estimate| >= 10,198,0.551977920883165
+M1c,gee_md,SE >= 10 or <= 0,32,0.0892085528700064
+M1c,glmer,usable,28685,80.4177179702832
+M1c,glmer,|estimate| >= 10,6249,17.5189234650967
+M1c,glmer,SE >= 10 or <= 0,736,2.06335856462013
+M1c,glmer_lrt,usable,35853,100
+M1c,mmm,usable,28317,83.5112657779875
+M1c,mmm,|estimate| >= 10,2809,8.28418072431285
+M1c,mmm,p not finite,1687,4.97522708505368
+M1c,mmm,SE >= 10 or <= 0,1095,3.22932641264598
+M1c,shrink,usable,31327,87.8245023829549
+M1c,shrink,|estimate| >= 10,3270,9.16736753574432
+M1c,shrink,SE >= 10 or <= 0,1073,3.00813008130081
+M3-M5,gee,usable,127392,78.8414407723728
+M3-M5,gee,|estimate| >= 10,26196,16.212402525065
+M3-M5,gee,p not finite,6812,4.21586830053224
+M3-M5,gee,SE >= 10 or <= 0,1180,0.730288402029954
+M3-M5,gee_fg,usable,112065,69.3716224163226
+M3-M5,gee_fg,error / not converged,47803,29.5915019530404
+M3-M5,gee_fg,|estimate| >= 10,1629,1.00840024018373
+M3-M5,gee_fg,SE >= 10 or <= 0,46,0.0284753904533158
+M3-M5,gee_kc,usable,113915,70.5168283367277
+M3-M5,gee_kc,error / not converged,42455,26.2809282977288
+M3-M5,gee_kc,|estimate| >= 10,5165,3.19729112372557
+M3-M5,gee_kc,SE >= 10 or <= 0,8,0.00495224181796797
+M3-M5,gee_md,usable,111606,69.0874875420167
+M3-M5,gee_md,error / not converged,48218,29.8483994973475
+M3-M5,gee_md,|estimate| >= 10,1550,0.959496852231294
+M3-M5,gee_md,SE >= 10 or <= 0,169,0.104616108404573
+M3-M5,glmer,usable,100442,81.6515327648297
+M3-M5,glmer,|estimate| >= 10,15908,12.9319665401218
+M3-M5,glmer,SE >= 10 or <= 0,6663,5.41650069504849
+M3-M5,glmer_lrt,usable,125015,100
+M3-M5,mmm,usable,110777,75.8689413811288
+M3-M5,mmm,|estimate| >= 10,19144,13.1113409263686
+M3-M5,mmm,SE >= 10 or <= 0,13651,9.34929560101636
+M3-M5,mmm,p not finite,2439,1.67042209148626
+M3-M5,shrink,usable,104808,85.2007511401234
+M3-M5,shrink,|estimate| >= 10,11164,9.07546356889109
+M3-M5,shrink,SE >= 10 or <= 0,7041,5.72378529098551

@@ -1,0 +1,48 @@
+[31m
+
+processing file: S7g.qmd
+[39m1/21          
+2/21 [setup]  
+3/21          
+4/21 [inbreve]
+5/21          
+6/21 [rinv]   
+7/21          
+8/21 [gates]  
+9/21          
+10/21 [agq]    
+11/21          
+12/21 [cal]    
+13/21          
+14/21 [flt]    
+15/21          
+16/21 [m67]    
+17/21          
+18/21 [lus]    
+19/21          
+20/21 [fonti]  
+21/21          
+[31moutput file: S7g.knit.md
+
+[39m[1mpandoc [22m
+  to: html
+  output-file: S7g.html
+  standalone: true
+  embed-resources: true
+  section-divs: true
+  html-math-method: mathjax
+  wrap: none
+  default-image-extension: png
+  toc: true
+  
+[1mmetadata[22m
+  document-css: false
+  link-citations: true
+  date-format: long
+  lang: it
+  title: 'S7g: rafforzare il manoscritto v5 prima dell''invio'
+  subtitle: Roadmap Morris 2019, ramo morris-v4
+  date: '2026-11-01'
+  
+Output created: S7g.html
+

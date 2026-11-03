@@ -1,0 +1,6 @@
+gate,controllo,osservato,esito
+GD1,integrita' dei risultati grezzi,28.800 file; md5 prima = dopo = lista di S7b (0 differenze),passa
+GD2,parita' H0/H1,"griglia principale 15/15, M1c 3/3, D-02 8/8",passa
+GD3,stessi dataset del run,"33.448 replicati confrontati, 0 discordanze, scarto massimo 0",passa
+GD4,controprova delle formule,50 dataset; score effettivo contro numDeriv: errore relativo max 1.9e-10; t di Student e di Welch contro t.test: max 1.3e-15; identita' S = n1 n0/N (media_1 - media_0): scarto max 1.97e-10 contro 1e-10 richiesto; l'identita' esatta S - n1/N sum_i r_i = n1 n0/N (media_1 - media_0) tiene entro 1.8e-15,"fallito come scritto (tolleranza), spiegato: lo scarto e' n1/N per il residuo dell'equazione dello score del tempo a convergenza (max |sum_i r_i| = 3.3e-10), non un errore della formula"
+GD5,completezza,"36.000 dataset; 35.928 generati, 72 errori di generazione tutti con disegno degenere (esclusi dal denominatore come nel run); 5 righe per ognuno dei 35.928",passa

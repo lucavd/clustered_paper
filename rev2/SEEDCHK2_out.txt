@@ -1,0 +1,38 @@
+chunk (sim_id 1..4): 0.824334  0.058120  16.253979  -0.874875 
+
+Mersenne-Twister (default --vanilla)       nobs=34,30,34,32  est=-19.007885  -0.000000  18.836008  0.023643
+Warning messages:
+1: In sqrt(diag(mod.cov)[a.i]) : NaNs produced
+2: In sqrt(diag(mod.cov)[a.i]) : NaNs produced
+L'Ecuyer-CMRG (crew/mirai)                 nobs=35,31,39,37  est=0.824334  0.058120  16.253979  -0.874875
+Warning messages:
+1: In sqrt(diag(mod.cov)[m.i]) : NaNs produced
+2: In sqrt(diag(mod.cov)[a.i]) : NaNs produced
+Wichmann-Hill                              nobs=37,28,38,36  est=-0.693579  -1.913255  NA  18.619950
+Warning message:
+In sqrt(diag(mod.cov)[a.i]) : NaNs produced
+Marsaglia-Multicarry                       nobs=34,35,40,32  est=-17.049716  18.913125  19.133102  -16.948326
+Warning messages:
+1: In sqrt(diag(mod.cov)[m.i]) : NaNs produced
+2: In sqrt(diag(mod.cov)[a.i]) : NaNs produced
+3: In sqrt(diag(mod.cov)[a.i]) : NaNs produced
+4: In sqrt(diag(mod.cov)[a.i]) : NaNs produced
+Super-Duper                                nobs=39,33,37,34  est=0.716268  0.325835  -0.387383  -0.420846
+Warning message:
+In sqrt(diag(mod.cov)[a.i]) : NaNs produced
+Knuth-TAOCP-2002                           nobs=39,29,37,38  est=0.840801  16.297545  NA  -1.198884
+Warning message:
+In sqrt(diag(mod.cov)[a.i]) : NaNs produced
+
+-- L'Ecuyer con semi alternativi --
+L'Ecuyer, 20260805+i                       nobs=36,35,27,36  est=0.025940  0.465813  19.218079  0.785674
+L'Ecuyer, 1000+i                           nobs=36,29,37,36  est=-0.053883  -16.873500  -16.947656  -0.457311
+L'Ecuyer, i                                nobs=33,39,38,31  est=NA  18.392893  -17.926260  0.756095
+L'Ecuyer, 20260805+2000+i                  nobs=35,35,37,34  est=0.038792  16.759342  -1.301833  0.321323
+Warning messages:
+1: In sqrt(diag(mod.cov)[a.i]) : NaNs produced
+2: In sqrt(diag(mod.cov)[m.i]) : NaNs produced
+3: In sqrt(diag(mod.cov)[a.i]) : NaNs produced
+
+RNGkind corrente: L'Ecuyer-CMRG / Inversion / Rejection 
+DONE_SEEDCHK2

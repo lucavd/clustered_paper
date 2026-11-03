@@ -1,0 +1,5 @@
+check,value,pass
+strategies compared with V4_S7e_rule.csv,17,TRUE
+strategies with a usable-share or power mismatch,0,TRUE
+same chosen strategy,1,TRUE
+sign-flip test: mean usable equal to V4_S7d2_flip_rules.csv,1,TRUE

@@ -1,0 +1,15 @@
+      part   kind     N
+    <char> <char> <int>
+ 1:    s36   sig2   125
+ 2:    s36   text     4
+ 3:    s36    int     5
+ 4:    s37    int    23
+ 5:    s37   sig2    50
+ 6:    s37   text    24
+ 7:   mdkc    int    17
+ 8:   mdkc   sig2     4
+ 9:    cap   sig2    65
+10:  figS1    int    33
+11:  figS1  plain     1
+12:  figS1   sig2     2
+keys written: 353 

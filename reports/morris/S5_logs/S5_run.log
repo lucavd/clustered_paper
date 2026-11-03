@@ -1,0 +1,29 @@
+agg loaded (B = 2000) 0.1 min
+claims: main 560, bobyqa 560, M1c 93 columns; 2001 replicates | 4.2 min
+  C01|GB   C02|GB  C01|NAT  C02|NAT  C01|AR1  C02|AR1   C03|GB  C03b|GB 
+   1.492    0.423    0.260    0.253    0.240    0.404    0.729    0.472 
+ C03|NAT C03b|NAT  C03|AR1 C03b|AR1  C04|all 
+   0.848    0.577    1.034    0.819  135.417 
+	Command being timed: "Rscript --vanilla R/s5/s5_run.R"
+	User time (seconds): 5843.40
+	System time (seconds): 2037.06
+	Percent of CPU this job got: 3093%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:14.76
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5571932
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 354702742
+	Voluntary context switches: 6667
+	Involuntary context switches: 14831
+	Swaps: 0
+	File system inputs: 8
+	File system outputs: 48048
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

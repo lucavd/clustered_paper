@@ -1,0 +1,13 @@
+GF3a: 3150 numbers, 53 source files, 0 discordances
+verify exit 0
+GF2: 0 violations
+GF2 exit 0
+GF4: 93 tags, 0 not ok; 0 comparative sentences without a tag
+GF4 exit 0
+GF4: 41 tags, 0 not ok; 0 comparative sentences without a tag
+P1: words 6911 + 200 x 6 display items = 8111
+P2: sentences 303, median 21, mean 22.9, p90 39, max 64
+abstract words 200
+em dashes 0, en dashes 0
+manuscript/v5/MMM_v5_supplement.docx | text runs departing: 0
+format exit 0

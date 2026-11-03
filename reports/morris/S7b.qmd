@@ -1,0 +1,241 @@
+---
+title: "S7b: rianalisi senza nuove simulazioni"
+subtitle: "Roadmap Morris 2019, ramo morris-v4"
+date: 2026-10-21
+format:
+  html:
+    embed-resources: true
+    toc: true
+lang: it
+execute:
+  echo: false
+  warning: false
+---
+
+```{r setup}
+.libPaths(path.expand("~/MMM/renv/library/linux-ubuntu-noble/R-4.6/x86_64-pc-linux-gnu"))
+suppressMessages({ library(data.table) })
+REPO <- path.expand("~/MMM"); TAB <- file.path(REPO, "tables")
+md <- function(D) { D <- as.data.frame(D); for (j in seq_along(D)) if (is.numeric(D[[j]])) D[[j]] <- format(signif(D[[j]], 4), trim = TRUE, drop0trailing = TRUE)
+  h <- paste0("| ", paste(names(D), collapse = " | "), " |"); s <- paste0("|", paste(rep("---", ncol(D)), collapse = "|"), "|")
+  b <- apply(D, 1, function(r) paste0("| ", paste(gsub("|", "\\|", r, fixed = TRUE), collapse = " | "), " |")); cat(c(h, s, b, ""), sep = "\n") }
+sec <- function(file, head) {
+  x <- readLines(file.path(REPO, file)); i <- which(x == paste("#", head)); if (!length(i)) return("")
+  nxt <- which(grepl("^# ", x) & seq_along(x) > i); j <- if (length(nxt)) min(nxt) - 1 else length(x)
+  x <- x[(i + 1):j]; x <- x[!grepl("^\\[\\^", x)]
+  x <- gsub("\\]\\(/", "](../../docs/", gsub("\\]\\((\\.\\./)+", "](../../docs/", x))
+  gsub("\\]\\(S([0-9a-z]+)\\.md", "](../../docs/steps/S\\1.md", x) }
+f <- function(x, d = 2) formatC(x, format = "f", digits = d, big.mark = ".", decimal.mark = ",")
+GT <- fread(file.path(TAB, "V4_S7b_gates.csv")); PR <- fread(file.path(TAB, "V4_S7b_preds.csv"))
+SM <- fread(file.path(TAB, "V4_S7b_rule_summary.csv")); SH <- fread(file.path(TAB, "V4_S7b_df_shift.csv")); D <- fread(file.path(TAB, "V4_S7b_rule_dp.csv"))
+NS <- fread(file.path(TAB, "V4_S7b_null_summary.csv")); NSd <- fread(file.path(TAB, "V4_S7b_null_shift.csv")); GC4 <- fread(file.path(TAB, "V4_S7b_null_gc4.csv"))
+US <- fread(file.path(TAB, "V4_S7b_resp_usable.csv")); SR <- fread(file.path(TAB, "V4_S7b_resp_seratio.csv")); BI <- fread(file.path(TAB, "V4_S7b_resp_bias.csv"))
+DG <- fread(file.path(TAB, "V4_S7b_resp_degeneracy.csv")); REF <- fread(file.path(TAB, "V4_S7b_resp_ref.csv")); FPC <- fread(file.path(TAB, "V4_S7b_seratio_fpc.csv")); CMP <- fread(file.path(TAB, "V4_S7b_resp_compare.csv"))
+md5b <- readLines(file.path(REPO, "reports/morris/S7b_logs/md5_before.log")); md5a <- readLines(file.path(REPO, "reports/morris/S7b_logs/md5_after.log"))
+```
+
+```{r inbreve, results='asis'}
+cat(sec("docs/steps/S7b.md", "In breve"), sep = "\n")
+```
+
+## Dubbi rinviati {.unnumbered}
+
+```{r rinv, results='asis'}
+cat(sec("docs/steps/S7b.md", "Dubbi rinviati"), sep = "\n")
+```
+
+## Cancelli e previsioni {.unnumbered}
+
+Le attese sono nel file dello step ([Rianalisi senza nuove simulazioni (S7b)](../../docs/steps/S7b.md)), committate prima dei calcoli (`ed6fd75`). Le bandiere "chiaramente sopra / sotto" contengono gia' la MCSE: i conteggi di punti di disegno si giudicano come interi. Per PC6 e PC7 la MCSE propagata e' quella del SE empirico della cella (excess x 1/sqrt(2(n - 1))).
+
+```{r gates, results='asis'}
+G <- GT[, .(cancello = gate, esito = fifelse(pass, "superato", "FALLITO"), dettaglio = detail)]
+G <- rbind(data.table(cancello = "GC1", esito = "superato", dettaglio = sprintf("results_full/: %s | %s (la riga di differenza con la lista dello step del manoscritto e' il suo timestamp di testa; le somme coincidono con la lista verificata in S6b). Input dello step: md5 identici prima e dopo (results_v4/S7b/md5_inputs_before.txt, md5_inputs_after.txt)", md5b, md5a)), G)
+md(G)
+```
+
+```{r preds, results='asis'}
+P <- PR[, .(codice = code, quantita = quantity, osservato = sprintf("%s +/- %s", signif(observed, 3), signif(2 * mcse, 2)), intervallo = sprintf("%s a %s", rel_lo, rel_hi), esito = verdict, nota = note)]
+md(P)
+```
+
+Spiegazioni delle previsioni non confermate:
+
+- **PC6 (indeterminata).** Il massimo del rifiuto atteso in piu' (1,55 punti) viene dalla cella M7, 10 soggetti, 2 occasioni, stimatore con shrinkage: 2 soli replicati usabili su 971, stime collassate a zero (SE empirico 0,0077 contro 1,2-1,6 degli altri metodi nella stessa cella), tasso osservato 0. La cella non e' valutabile (sotto 20 replicati) e lo shrinkage non e' una strategia raccomandata; escluso quel caso il massimo e' 0,26 punti (PC6b, M7, 145 soggetti, 10 occasioni, modello marginalizzato) e nessuna bandiera cambia (PC8, e 0 cambi su tutte le 696 x 6 celle per entrambi i riferimenti). La previsione sbagliava il SE empirico atteso a 145 soggetti e 10 occasioni (0,05, non 0,03), per questo il valore atteso era 0,5-1,0. Non tocca alcuna conclusione.
+- **PC10 (indeterminata).** Usabili sui restituiti a 10 pazienti, specificazione piena, modello marginalizzato: 74,1% (257 su 347 restituiti), contro un intervallo di rilevanza da 75% in su. Dei 90 restituiti ma non usabili, 77 hanno una stima oltre 10 in valore assoluto (quasi-separazione con 7 coefficienti e 40 righe) e 13 non hanno l'errore standard. La previsione riguardava il meccanismo dei fallimenti, non una frase del paper: la frase del paper (il modello marginalizzato risponde almeno quanto Fay e Graubard con pochi soggetti) vale a maggior ragione (51% contro 23% su 500).
+- **PC11 (indeterminata).** Rapporto SE del modello su deviazione standard delle stime, modello marginalizzato, specificazione piena, 50 pazienti: 1,18 +/- 0,07 contro l'intervallo 0,91-1,14. Spiegato dall'anomalia dei sottocampioni senza reinserimento (appendice A5): con il fattore di popolazione finita sqrt(1 - 50/111) = 0,74 il rapporto e' 0,87. La stessa correzione porta il rapporto della coorte neonatale a 50 pazienti da 1,14 a 0,99. Decisione 1 del riassunto.
+
+## Cosa e' girato {.unnumbered}
+
+- Commit di pre-registrazione `ed6fd75` (cancelli GC1-GC5, previsioni PC1-PC12, decisioni tecniche 1-4, protocollo 1.6). La decisione tecnica 5 (colonna `id` per geesmv) e' stata aggiunta durante il lavoro, prima del run sui sottocampioni, dopo il controllo di appendice A6.
+- Script, in ordine: `R/s7b/s7b_md5.sh before` (GC1) -> `R/s7b/s7b_df.R` (parte 1: t a N - 2, regola, spostamento con bootstrap per blocchi; GC2, GC3; 1,2 minuti, 1 processo) -> `R/s7b/s7b_null.R` (parte 2: rifiuto atteso dal nullo marginale, GC4; meno di un minuto) -> `R/s7b/s7b_resp_run.R` (parte 3: dataset `respiratory`, GC5, 2 specificazioni x 2.500 estrazioni x 6 metodi; circa 4 minuti su 20 processi) -> `R/s7b/s7b_resp_analyse.R` -> `R/s7b/s7b_preds.R` (tabella delle previsioni, fattore di popolazione finita) -> `R/s7b/s7b_md5.sh after`. Log in `reports/morris/S7b_logs/`.
+- Nessun dataset simulato e' stato generato; la parita' H0/H1 non si riesegue (decisione tecnica 4).
+- Input riletti: `results_v4/variant_cc/S4/rows_v4.rds` (23.781.670 righe dei metodi primari), `results_v4/S6b/ns/rows_ns.rds` (6.011.274), `tables/V4_S2_degenerate_designs.csv`, `tables/V4_S6b_ns_dp.csv`, `tables/V4_S4_truth_by_cell.csv`, `tables/V4_S6b_ns_truth.csv`, `rev2/T3_draws.rds`, `rev2/T5_tab316.csv`, `rev2/T5_seratio.csv`, `rev2/T7_bias.csv`.
+- Tabelle prodotte: `tables/V4_S7b_*.csv` (elenco in appendice A8).
+
+## Appendice {.unnumbered}
+
+### A1. Regola della Figura 1 con i tre riferimenti (tutti i 1.896 punti di disegno)
+
+n_hi = punti chiaramente sopra 7,5%; n_lo = chiaramente sotto 2,5%; n_na = non valutabili (meno di 20 replicati usabili); pu = quota usabile media; upow = potenza per tentativo media. `ref` n = normale, t = t a N - p, t2 = t a N - 2.
+
+```{r a1, results='asis'}
+md(SM[src == "tutti" & ref %in% c("t", "t2"), .(strategia = strategy, n_hi, n_lo, n_na, tasso_max = max_rate, pu, upow, ammessa = eligible, scelta = recommended)][order(-ammessa, strategia)])
+```
+
+Per fonte (studio = griglia principale e M1c, 1.512 punti; nuovi = M6-M7, 384 punti), riferimento t a N - 2:
+
+```{r a1b, results='asis'}
+md(SM[src %in% c("studio", "nuovi") & ref == "t2", .(strategia = strategy, fonte = src, n_dp, n_hi, n_lo, tasso_max = max_rate)][order(strategia, fonte)])
+```
+
+A 10 soggetti (126 punti) e fino a 25 soggetti (504 punti), modello marginalizzato con il controllo e Fay-Graubard:
+
+```{r a1c, results='asis'}
+md(SM[src %in% c("tutti N=10", "tutti N<=25") & method %in% c("mmm", "gee_fg") & ref %in% c("t", "t2"), .(strategia = strategy, gruppo = src, n_dp, n_hi, n_lo, tasso_max = max_rate, pu, upow)][order(gruppo, strategia)])
+```
+
+### A2. Spostamento del tasso di errore di I tipo, N - 2 meno N - p
+
+Media sui punti di disegno dei tassi di cella; MCSE dal bootstrap per blocchi di replicato (B = 2000, indici di `results_v4/S4/boot_idx.rds` e `results_v4/S6b/ns/boot_idx_67.rds`).
+
+```{r a2, results='asis'}
+md(dcast(SH, method ~ group, value.var = c("shift", "mcse"))[, .(metodo = method, tutti = sprintf("%s +/- %s", f(`shift_all design points`, 3), f(2 * `mcse_all design points`, 3)), `N = 10` = sprintf("%s +/- %s", f(`shift_N = 10`, 2), f(2 * `mcse_N = 10`, 2)), `N <= 25` = sprintf("%s +/- %s", f(`shift_N <= 25`, 2), f(2 * `mcse_N <= 25`, 2)), `N >= 35` = sprintf("%s +/- %s", f(`shift_N >= 35`, 3), f(2 * `mcse_N >= 35`, 3)))])
+```
+
+Punti di disegno in cui Fay-Graubard con la t e' chiaramente sopra 7,5% (N - p: 2; N - 2: 7):
+
+```{r a2b, results='asis'}
+md(D[strategy %in% c("gee_fg|t", "gee_fg|t2") & hi == TRUE, .(strategia = strategy, meccanismo = dgp, scenario = scen, N, T = ntime, usabili = n, tasso = rate, mcse = mc)][order(strategia, scenario, N, T)])
+```
+
+### A3. Rifiuto atteso in piu' dovuto al valore nullo marginale (GLMM-native, arm H0, metodi marginali)
+
+```{r a3, results='asis'}
+md(NS[method == "all", .(gruppo = group, riferimento = ref, n_celle = n_dp, eccesso_max = max_excess, eccesso_medio = mean_excess, `max |delta/SE|` = max_ratio, n_hi, n_hi_dopo = n_hi_adj, cambi_hi = n_hi_flip, cambi_lo = n_lo_flip)])
+```
+
+Per metodo, riferimento t, tutti i gruppi:
+
+```{r a3b, results='asis'}
+md(NS[group == "all" & ref == "t", .(metodo = method, n_celle = n_dp, eccesso_max = max_excess, eccesso_medio = mean_excess, n_hi, n_hi_dopo = n_hi_adj, cambi = n_hi_flip + n_lo_flip)])
+```
+
+Le 6 celle con eccesso sopra 0,25 punti (riferimento normale):
+
+```{r a3c, results='asis'}
+md(NSd[ref == "n" & excess > 0.25, .(scenario = scen, N, T = ntime, metodo = method, usabili = n, tasso = rate, delta, SE_emp = empse, eccesso = excess)][order(-eccesso)])
+```
+
+Controprova GC4 (12 celle, 10^6 estrazioni normali):
+
+```{r a3d, results='asis'}
+md(GC4[, .(scenario = scen, N, T = ntime, metodo = method, `delta/SE` = ratio, formula_n = excess_n, MC_n = mc_n, formula_t = excess_t, MC_t = mc_t)])
+```
+
+### A4. Studio respiratorio (geepack): dataset completo e sottocampioni
+
+Contrasto trattamento attivo contro placebo (log odds). Specificazione piena: `outcome ~ treat + baseline + visit + age + sex + center`; ridotta: `outcome ~ treat + baseline`.
+
+```{r a4, results='asis'}
+md(REF[, .(specificazione = spec, metodo = method, stima = estimate, SE = se, stato = status)])
+```
+
+Estrazioni con una covariata binaria a un solo livello (su 500 per N):
+
+```{r a4b, results='asis'}
+md(DG[, .(estrazioni = .N, `% una sola modalita'` = 100 * mean(any_one), `% trattamento` = 100 * mean(one_treat), `% sesso` = 100 * mean(one_sex), `% centro` = 100 * mean(one_center), `% basale` = 100 * mean(one_baseline)), by = N])
+```
+
+Fit usabili (stima e SE finiti, |stima| <= 10, SE < 10) su 500 estrazioni, con la MCSE binomiale, e sui restituiti:
+
+```{r a4c, results='asis'}
+md(dcast(US, spec + method ~ N, value.var = "pct_usable_500")[, lapply(.SD, function(x) if (is.numeric(x)) f(x, 1) else x)][, .(specificazione = spec, metodo = method, `10` = `10`, `15` = `15`, `20` = `20`, `25` = `25`, `50` = `50`)])
+cat("\nMCSE massima della quota su 500: ", f(max(US$mcse_usable_500), 2), " punti.\n\n", sep = "")
+md(dcast(US, spec + method ~ N, value.var = "pct_usable_returned")[, .(specificazione = spec, metodo = method, `10` = f(`10`, 1), `15` = f(`15`, 1), `20` = f(`20`, 1), `25` = f(`25`, 1), `50` = f(`50`, 1))])
+```
+
+Modi di fallimento a 10 pazienti:
+
+```{r a4d, results='asis'}
+md(US[N == 10, .(specificazione = spec, metodo = method, restituiti = returned, senza_SE = no_se, separati = sep_with_se, usabili = usable, errori = n_error, timeout = n_timeout)])
+```
+
+Rapporto SE medio del modello / deviazione standard delle stime (grezzo, come nella coorte neonatale):
+
+```{r a4e, results='asis'}
+md(dcast(SR, spec + method ~ N, value.var = "ratio")[, .(specificazione = spec, metodo = method, `10` = f(`10`), `15` = f(`15`), `20` = f(`20`), `25` = f(`25`), `50` = f(`50`))])
+```
+
+Distorsione rispetto alla stima sul dataset completo (le correzioni contro la GEE), con n usabili:
+
+```{r a4f, results='asis'}
+md(dcast(BI, spec + method ~ N, value.var = "bias")[, .(specificazione = spec, metodo = method, `10` = f(`10`, 3), `15` = f(`15`, 3), `20` = f(`20`, 3), `25` = f(`25`, 3), `50` = f(`50`, 3))])
+md(BI[spec == "pieno" & N %in% c(10, 50), .(metodo = method, N, n, stima_media = mean_est, riferimento = ref, distorsione = bias, mcse = mcse_bias, `distorsione/SD` = bias_over_sd)])
+```
+
+Confronto con la coorte neonatale, specificazione piena, 10 e 50 pazienti (stesse definizioni):
+
+```{r a4g, results='asis'}
+md(CMP[spec == "pieno" & N %in% c(10, 50), .(metodo = method, N, `usabili/500 resp` = resp_usable_500, `usabili/500 LUS` = lus_usable_500, `SE/SD resp` = resp_seratio, `SE/SD LUS` = lus_seratio, `bias resp` = resp_bias, `bias LUS` = lus_bias)][order(metodo, N)])
+```
+
+### A5. Sottocampioni senza reinserimento: il fattore di popolazione finita
+
+Le estrazioni di N pazienti su P senza reinserimento hanno una variabilita' fra estrazioni ridotta di circa (1 - N/P) rispetto a campioni indipendenti dalla stessa popolazione (fattore di popolazione finita della media campionaria, esatto per la media, approssimato per un coefficiente di regressione). L'errore standard del modello stima la variabilita' di campioni indipendenti: il rapporto SE/SD grezzo e' quindi gonfiato di 1/sqrt(1 - N/P), cioe' 1,05 a 10 pazienti e 1,35 a 50 nello studio respiratorio (P = 111), 1,03 e 1,15 nella coorte neonatale (P = 207). Rapporto corretto = rapporto grezzo x sqrt(1 - N/P), specificazione piena:
+
+```{r a5, results='asis'}
+md(dcast(FPC[spec == "pieno"], application + method ~ N, value.var = "ratio_fpc")[, .(applicazione = application, metodo = method, `10` = f(`10`), `15` = f(`15`), `20` = f(`20`), `25` = f(`25`), `50` = f(`50`))])
+```
+
+Cosa guardare: il rapporto del modello marginalizzato a 50 pazienti scende sotto 1 in entrambe le applicazioni; quello del modello misto nella coorte neonatale resta fra 0,51 e 0,58.
+
+### A6. Controllo indipendente delle correzioni di geesmv sul dataset respiratorio
+
+Script `R/s7b/s7b_geesmv_check.R`, log `reports/morris/S7b_logs/s7b_geesmv_check.log`. Dataset completo, specificazione piena, SE del coefficiente del trattamento. Con la colonna `id` originale di `respiratory` (paziente entro centro) geesmv usava quella come identificativo dei gruppi: Fay-Graubard 0,6348, Mancl-DeRouen 0,6738, Kauermann-Carroll 0,4509. Con la colonna dei gruppi chiamata `id` (centro x paziente): Fay-Graubard 0,3499, Mancl-DeRouen 0,3679, Kauermann-Carroll 0,3569. Calcolo indipendente sullo stesso fit di geepack (alpha = 0,331): sandwich non corretto 0,3463 (= `clubSandwich` CR0); Mancl-DeRouen 0,3679 a mano = CR3 0,3679; Kauermann-Carroll = CR2 0,3569; Fay-Graubard a mano (b = 0,75) 0,3499. La causa e' nel sorgente di `GEE.var.*`: `if (is.null(data$id)) data$id <- data[, id]`, cioe' l'argomento `id` e' ignorato se una colonna `id` esiste. Nelle simulazioni e nella coorte neonatale la colonna dei gruppi si chiama `id`.
+
+### A7. Da dove vengono i numeri del riassunto
+
+```{r a7, results='asis'}
+g <- function(strat, col, s = "tutti") SM[src == s & strategy == strat][[col]][1]
+src_tab <- data.table(frase = c(
+  "0 situazioni chiaramente sopra 7,5 con N - 2 (modello marginalizzato, t); regola: scelto di nuovo",
+  "meno di un quarto di punto in media (spostamento massimo fra i metodi)",
+  "a 10 soggetti +0,6 (marginalizzato) e +0,9 (Fay-Graubard)",
+  "chiaramente sotto 2,5 a 10 soggetti: 28 su 126 invece di 53",
+  "Fay-Graubard t: 7 situazioni invece di 2; tutte GenBinaryY M6-M7, N <= 25",
+  "eccesso massimo 0,03 (scenari principali) e 0,26 (M6-M7, 145 soggetti, 10 visite)",
+  "nessuna bandiera cambia", "cella shrinkage: 1,5 punti, 2 usabili, tasso 0",
+  "dataset completo: 1,26 (SE 0,35) marginalizzato e GEE; 2,06 (0,54) misto",
+  "10 pazienti, piena: 51 / 47 / 53 / 23 / 23 su 100", "ridotta: circa 8 su 10",
+  "distorsione marginalizzato 0,15 -> 0,00; coorte neonatale 0,16 -> 0,02; misto -0,59 e -0,15",
+  "rapporto SE/SD marginalizzato piena 0,58 -> 1,18; coorte neonatale 0,87 -> 1,14",
+  "fattore 0,74 (50/111) e 0,87 (50/207); rapporti corretti 0,99, 0,87; misto 0,51-0,58",
+  "geesmv: 0,635 contro 0,350", "8,8% estrazioni a 10 pazienti con sesso a un solo livello"),
+  fonte = c("tables/V4_S7b_rule_summary.csv, mmm|t2, src tutti", "tables/V4_S7b_df_shift.csv, group all design points", "tables/V4_S7b_df_shift.csv, group N = 10",
+    "tables/V4_S7b_rule_summary.csv, src tutti N=10, mmm|t e mmm|t2, n_lo", "tables/V4_S7b_rule_summary.csv gee_fg|t2 n_hi; V4_S7b_rule_dp.csv hi == TRUE",
+    "tables/V4_S7b_null_summary.csv, method all, ref n, max_excess", "tables/V4_S7b_null_summary.csv, n_hi_flip, n_lo_flip", "tables/V4_S7b_null_shift.csv, M7 N=10 T=2 shrink",
+    "tables/V4_S7b_resp_ref.csv, spec pieno", "tables/V4_S7b_resp_usable.csv, N=10, pct_usable_500", "tables/V4_S7b_resp_usable.csv, ridotto, N=10",
+    "tables/V4_S7b_resp_bias.csv pieno N=10, 50; tables/V4_S7b_resp_compare.csv lus_bias", "tables/V4_S7b_resp_seratio.csv pieno MMM; V4_S7b_resp_compare.csv lus_seratio",
+    "tables/V4_S7b_seratio_fpc.csv, spec pieno", "R/s7b/s7b_geesmv_check.R, log reports/morris/S7b_logs/s7b_geesmv_check.log (appendice A6)", "tables/V4_S7b_resp_degeneracy.csv, N=10"),
+  valore = c(sprintf("n_hi %d; recommended %s", g("mmm|t2", "n_hi"), g("mmm|t2", "recommended")),
+    sprintf("max shift %s", f(max(SH[group == "all design points", shift]), 3)),
+    sprintf("%s, %s", f(SH[group == "N = 10" & method == "mmm", shift]), f(SH[group == "N = 10" & method == "gee_fg", shift])),
+    sprintf("%d, %d", SM[src == "tutti N=10" & strategy == "mmm|t2", n_lo], SM[src == "tutti N=10" & strategy == "mmm|t", n_lo]),
+    sprintf("%d, %d; N max %d; scenari %s", g("gee_fg|t2", "n_hi"), g("gee_fg|t", "n_hi"), D[strategy == "gee_fg|t2" & hi == TRUE, max(N)], paste(D[strategy == "gee_fg|t2" & hi == TRUE, sort(unique(paste(dgp, scen)))], collapse = ", ")),
+    sprintf("%s; %s", f(NS[method == "all" & ref == "n" & group == "M1-M5", max_excess], 3), f(NSd[ref == "n" & method != "shrink", max(excess)], 3)),
+    sprintf("%d cambi", NS[method == "all", sum(n_hi_flip + n_lo_flip)]),
+    sprintf("eccesso %s, n %d, tasso %s", f(NSd[ref == "n" & scen == "M7" & N == 10 & ntime == 2 & method == "shrink", excess]), NSd[ref == "n" & scen == "M7" & N == 10 & ntime == 2 & method == "shrink", n], f(NSd[ref == "n" & scen == "M7" & N == 10 & ntime == 2 & method == "shrink", rate])),
+    sprintf("MMM %s (%s), GEE %s (%s), GLMM %s (%s)", f(REF[spec == "pieno" & method == "MMM", estimate]), f(REF[spec == "pieno" & method == "MMM", se]), f(REF[spec == "pieno" & method == "GEE", estimate]), f(REF[spec == "pieno" & method == "GEE", se]), f(REF[spec == "pieno" & method == "GLMM", estimate]), f(REF[spec == "pieno" & method == "GLMM", se])),
+    paste(sapply(c("MMM", "GEE", "GLMM", "GEE-FG", "GEE-MD"), function(m) f(US[spec == "pieno" & N == 10 & method == m, pct_usable_500], 1)), collapse = " / "),
+    paste(sapply(c("MMM", "GEE", "GLMM", "GEE-FG"), function(m) f(US[spec == "ridotto" & N == 10 & method == m, pct_usable_500], 1)), collapse = " / "),
+    sprintf("%s -> %s; LUS %s -> %s; GLMM %s, %s", f(BI[spec == "pieno" & method == "MMM" & N == 10, bias]), f(BI[spec == "pieno" & method == "MMM" & N == 50, bias], 3), f(CMP[spec == "pieno" & method == "MMM" & N == 10, lus_bias]), f(CMP[spec == "pieno" & method == "MMM" & N == 50, lus_bias]), f(BI[spec == "pieno" & method == "GLMM" & N == 10, bias]), f(BI[spec == "pieno" & method == "GLMM" & N == 50, bias])),
+    sprintf("%s -> %s; LUS %s -> %s", f(SR[spec == "pieno" & method == "MMM" & N == 10, ratio]), f(SR[spec == "pieno" & method == "MMM" & N == 50, ratio]), f(CMP[spec == "pieno" & method == "MMM" & N == 10, lus_seratio]), f(CMP[spec == "pieno" & method == "MMM" & N == 50, lus_seratio])),
+    sprintf("fpc %s, %s; MMM corretto LUS %s, resp %s; GLMM LUS %s-%s", f(FPC[application == "respiratory" & N == 50, fpc][1]), f(FPC[application == "neonatal cohort" & N == 50, fpc][1]), f(FPC[application == "neonatal cohort" & spec == "pieno" & method == "MMM" & N == 50, ratio_fpc]), f(FPC[application == "respiratory" & spec == "pieno" & method == "MMM" & N == 50, ratio_fpc]), f(FPC[application == "neonatal cohort" & spec == "pieno" & method == "GLMM", min(ratio_fpc)]), f(FPC[application == "neonatal cohort" & spec == "pieno" & method == "GLMM", max(ratio_fpc)])),
+    "0,6348 / 0,3499 (A6)", sprintf("%s%%", f(100 * DG[N == 10, mean(any_one)], 1))))
+md(src_tab)
+```
+
+### A8. Documenti prodotti
+
+`tables/V4_S7b_gates.csv`, `V4_S7b_preds.csv`, `V4_S7b_dp_rates.csv`, `V4_S7b_rule_dp.csv`, `V4_S7b_rule_summary.csv`, `V4_S7b_df_shift.csv`, `V4_S7b_df_flips.csv`, `V4_S7b_null_shift.csv`, `V4_S7b_null_summary.csv`, `V4_S7b_null_flips.csv`, `V4_S7b_null_gc4.csv`, `V4_S7b_resp_ref.csv`, `V4_S7b_resp_fits.csv`, `V4_S7b_resp_degeneracy.csv`, `V4_S7b_resp_usable.csv`, `V4_S7b_resp_seratio.csv`, `V4_S7b_resp_bias.csv`, `V4_S7b_resp_compare.csv`, `V4_S7b_seratio_fpc.csv`; `results_v4/S7b/` (md5, `rows_h0_marg.rds`, `resp_draws.rds`); script `R/s7b/`; log `reports/morris/S7b_logs/`.

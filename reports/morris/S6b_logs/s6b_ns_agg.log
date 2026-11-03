@@ -1,0 +1,115 @@
+     gate   pass
+   <char> <lgcl>
+1:    GB3  FALSE
+                                                                                                                                detail
+                                                                                                                                <char>
+1: 7680 chunk files; 768 cells; 768000 replicates with rows, 767635 with all five analyses, 0 generation failures; 768000 rule records
+fit A of the rule vs MMM row of the study fit, mismatches: 0 
+       strategy         dgp   scen  n_dp  n_hi  n_lo  n_na max_rate
+         <char>      <char> <char> <int> <int> <int> <int>    <num>
+ 1:    gee_fg|t GLMM-native     M6    96     0     6     0     7.00
+ 2:    gee_fg|t GLMM-native     M7    96     0     4     0     6.74
+ 3:    gee_fg|t  GenBinaryY     M6    96     0     6     0     9.09
+ 4:    gee_fg|t  GenBinaryY     M7    96     2     6     0    10.42
+ 5:    gee_fg|t         all    all   384     2    22     0    10.42
+ 6:    gee_md|t GLMM-native     M6    96     0     6     0     9.30
+ 7:    gee_md|t GLMM-native     M7    96     0     6     0     8.99
+ 8:    gee_md|t  GenBinaryY     M6    96     8     7     0    13.29
+ 9:    gee_md|t  GenBinaryY     M7    96    10     6     0    14.14
+10:    gee_md|t         all    all   384    18    25     0    14.14
+11: glmer_lrt|n GLMM-native     M6    96     0     0    15     6.10
+12: glmer_lrt|n GLMM-native     M7    96     0     1    15     6.60
+13: glmer_lrt|n  GenBinaryY     M6    96     0     3    15     7.31
+14: glmer_lrt|n  GenBinaryY     M7    96     0     4    15     7.51
+15: glmer_lrt|n         all    all   384     0     8    60     7.51
+16:  mmm_nocc|t GLMM-native     M6    96     1     2     0     9.96
+17:  mmm_nocc|t GLMM-native     M7    96     6     2     0    11.13
+18:  mmm_nocc|t  GenBinaryY     M6    96     0     3     0     7.47
+19:  mmm_nocc|t  GenBinaryY     M7    96     1     2     0     9.42
+20:  mmm_nocc|t         all    all   384     8     9     0    11.13
+21:       mmm|n GLMM-native     M6    96     0     0     0     7.21
+22:       mmm|n GLMM-native     M7    96     1     0     0    10.61
+23:       mmm|n  GenBinaryY     M6    96     0     2     0     7.10
+24:       mmm|n  GenBinaryY     M7    96     2     1     0     9.70
+25:       mmm|n         all    all   384     3     3     0    10.61
+26:       mmm|t GLMM-native     M6    96     0     1     0     6.90
+27:       mmm|t GLMM-native     M7    96     0     3     0     7.80
+28:       mmm|t  GenBinaryY     M6    96     0     3     0     7.00
+29:       mmm|t  GenBinaryY     M7    96     0     2     0     7.76
+30:       mmm|t         all    all   384     0     9     0     7.80
+       strategy         dgp   scen  n_dp  n_hi  n_lo  n_na max_rate
+         <char>      <char> <char> <int> <int> <int> <int>    <num>
+    n_point_above    pu  upow   band
+            <int> <num> <num> <char>
+ 1:             0  92.3  22.2   <NA>
+ 2:             0  92.3  16.7   <NA>
+ 3:             6  91.2  24.5   <NA>
+ 4:            13  90.8  24.9   <NA>
+ 5:            19  91.7  22.1   <NA>
+ 6:             7  92.2  22.4   <NA>
+ 7:             5  92.3  16.8   <NA>
+ 8:            16  91.2  24.8   <NA>
+ 9:            19  90.8  25.2   <NA>
+10:            47  91.6  22.3   <NA>
+11:             0  83.3  23.9   <NA>
+12:             0  83.3  21.7   <NA>
+13:             0  83.3  29.1   <NA>
+14:             1  83.2  31.1   <NA>
+15:             1  83.3  26.5   <NA>
+16:            10  90.2  22.8   <NA>
+17:            14  90.4  18.1   <NA>
+18:             0  88.8  25.4   <NA>
+19:             4  88.3  26.7   <NA>
+20:            28  89.4  23.2   <NA>
+21:             0  91.5  24.2   <NA>
+22:             6  91.7  19.3   <NA>
+23:             0  90.5  26.7   <NA>
+24:             9  90.1  27.9   <NA>
+25:            15  90.9  24.5   <NA>
+26:             0  91.5  23.0   <NA>
+27:             1  91.7  18.0   <NA>
+28:             0  90.5  25.4   <NA>
+29:             2  90.1  26.6   <NA>
+30:             3  90.9  23.3   <NA>
+    n_point_above    pu  upow   band
+            <int> <num> <num> <char>
+           dgp   scen    arm     n at_boundary used_B nonconv small_slope
+        <char> <char> <char> <int>       <num>  <num>   <num>       <num>
+1:  GenBinaryY     M6     H0 95110       0.458  0.443   0.286       0.236
+2:  GenBinaryY     M6     H1 95125       0.442  0.428   0.262       0.237
+3:  GenBinaryY     M7     H0 95104       0.371  0.356   0.258       0.152
+4:  GenBinaryY     M7     H1 95091       0.354  0.340   0.241       0.150
+5: GLMM-native     M6     H0 94992       0.535  0.514   0.310       0.319
+6: GLMM-native     M6     H1 95030       0.520  0.501   0.286       0.317
+7: GLMM-native     M7     H0 94977       0.456  0.436   0.276       0.246
+8: GLMM-native     M7     H1 95007       0.438  0.421   0.255       0.244
+    rej_B rej_A_kept   band
+    <num>      <num> <char>
+1: 0.0500     0.0498    all
+2: 0.1793     0.3404    all
+3: 0.0518     0.0565    all
+4: 0.1307     0.3625    all
+5: 0.0507     0.0490    all
+6: 0.2058     0.2859    all
+7: 0.0523     0.0553    all
+8: 0.1344     0.2400    all
+        id       scenario expected    est  mcse       outcome
+    <char>         <char>    <num>  <num> <num>        <char>
+ 1:    PB1  GenBinaryY M6     15.0 44.327    NA      smentita
+ 2:    PB4  GenBinaryY M6      5.3  5.272 0.077    confermata
+ 3:    PB5  GenBinaryY M6     -0.3 -0.779 0.069    confermata
+ 4:    PB6  GenBinaryY M6      0.0 -0.235 0.065    confermata
+ 5:    PB1  GenBinaryY M7      5.0 35.608    NA    confermata
+ 6:    PB4  GenBinaryY M7      5.3  5.842 0.081 indeterminata
+ 7:    PB5  GenBinaryY M7     -0.3 -0.593 0.054    confermata
+ 8:    PB6  GenBinaryY M7      0.0 -0.300 0.055    confermata
+ 9:    PB1 GLMM-native M6     35.0 51.365    NA      smentita
+10:    PB4 GLMM-native M6      5.3  5.211 0.080    confermata
+11:    PB5 GLMM-native M6     -0.5 -0.823 0.046    confermata
+12:    PB6 GLMM-native M6      0.0 -0.072 0.055    confermata
+13:    PB1 GLMM-native M7     15.0 43.600    NA      smentita
+14:    PB4 GLMM-native M7      5.3  5.649 0.090    confermata
+15:    PB5 GLMM-native M7     -0.5 -0.886 0.050    confermata
+16:    PB6 GLMM-native M7      0.0 -0.233 0.052    confermata
+17:    PB2       all four      0.0  0.000 0.000    confermata
+18:    PB3       all four      0.0  2.000 0.000      smentita

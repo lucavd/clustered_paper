@@ -1,0 +1,6 @@
+D-90: T34_mmm.rds$keep switched off on 210211 of 210211 rows of the MMM with the check on a no-result key
+D-90: T5_mmm_cc.rds$keep switched off on 318390 of 318390 rows of the MMM with the check on a no-result key
+            file rows_before rows_after removed
+          <char>       <int>      <int>   <int>
+1:   T34_mmm.rds     2634048    2423837  210211
+2: T5_mmm_cc.rds     4332779    4014389  318390

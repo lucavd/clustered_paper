@@ -1,0 +1,322 @@
+part,line,section,id,kind,claimed,recomputed,status,severity,note,source,n_occ
+main,28.0,Abstract,f:t4|flip|pu_small,registry,72,72.2704,MATCH,info,sign-flip with the guards of Section 2.4 (S7d2 p0_guard); the unguarded p_flip of the S7d run gives 97.6,S7d2 rows -> s10t_flip.R,3.0
+main,28.0,Abstract,f:t4|gee_ar1_fg|hi_all,registry,2,2,MATCH,info,"exact Clopper-Pearson, n>=20",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,3.0
+main,28.0,Abstract,f:t4|gee_ar1_fg|pu,registry,92,91.8974,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,3.0
+main,28.0,Abstract,f:t4|mmm_cc|pu,registry,91,90.8948,MATCH,info,"mean over 2,376 points of 100 n/nd under H0 (H0+H1 would give 91.2)",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,3.0
+main,28.0,Abstract,f:x|ndp_all5,registry,"2,376",2376,MATCH,info,design points in the per-replicate rows of the four mechanisms,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,9.0
+main,56.0,2.2 Data-generating mechanisms,f:x|ndp_cop,registry,480,480,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,6.0
+main,56.0,2.2 Data-generating mechanisms,x:n_levels_N,registry,16,16,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,5.0
+main,56.0,2.2 Data-generating mechanisms,x:n_levels_T,registry,6,6,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,3.0
+main,56.0,2.2 Data-generating mechanisms,x:ndp_grid,registry,"1,440",1440,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,4.0
+main,56.0,2.2 Data-generating mechanisms,x:p_full,registry,0.7,0.7,MATCH,info,runif(N) < 0.7,R/v4/rundir generators,1.0
+main,56.0,2.2 Data-generating mechanisms,x:p_trt,registry,0.5,0.5,MATCH,info,"rbinom(N,1,0.5) in every generator",R/v4/rundir generators,1.0
+main,56.0,2.2 Data-generating mechanisms,x:t2_single_hi,registry,31,30.62,MATCH,info,"(2N - n_obs)/N at T=2, max over (dgp, scen, N) cells",replicate records,1.0
+main,56.0,2.2 Data-generating mechanisms,x:t2_single_lo,registry,29,29.3489,MATCH,info,,replicate records,1.0
+main,58.0,2.2 Data-generating mechanisms,x:beta3_m4,registry,0.05,0.05,MATCH,info,M4 also uses time coefficient 0.2 (not 0.1 as M1): see definition note D4,generation_model4.R,1.0
+main,58.0,2.2 Data-generating mechanisms,x:beta_m1,registry,"-2, 0.1, 0.2, 0.2","-2, 0.1, 0.2, 0.2",MATCH,info,,generation_model1.R,2.0
+main,58.0,2.2 Data-generating mechanisms,x:prev_m1_t2,registry,0.14,0.141903,MATCH,info,"realised pooled prevalence, GenBinaryY M1 H1, T=2 (other mechanisms 0.141-0.144)",replicate records sum_y/n_obs,2.0
+main,62.0,2.2 Data-generating mechanisms,x:gby_sigma_m3,registry,0.01,0.01,MATCH,info,"sigma = c(1, 0.01)",generation_model3.R,4.0
+main,63.0,2.2 Data-generating mechanisms,x:glmm_d11,registry,1,1,MATCH,info,,manual/generation_model1.R,3.0
+main,63.0,2.2 Data-generating mechanisms,x:glmm_d22,registry,0.001,0.001,MATCH,info,"D = [1, 0.01; 0.01, 0.001] (covariance 0.01 not stated in main text)",manual/generation_model3.R,3.0
+main,63.0,2.2 Data-generating mechanisms,x:zeger_f,registry,1.16,1.16,MATCH,info,"beta_c = (-2.32, 0.116, 0.232, 0.232); sqrt(1+k^2 D) = 1.160 for D=1; M1c uses 1.492",manual generators,2.0
+main,64.0,2.2 Data-generating mechanisms,x:ar1_rho,registry,0.6,0.6,MATCH,info,,ar1/generation_models_ar1.R,2.0
+main,64.0,2.2 Data-generating mechanisms,x:ar1_s2,registry,0.5,0.5,MATCH,info,,ar1/generation_models_ar1.R,2.0
+main,65.0,2.2 Data-generating mechanisms,f:x|cop_rho,registry,0.6,0.6,MATCH,info,,copula/copula_params.R,2.0
+main,67.0,2.2 Data-generating mechanisms,x:m1c_prev,registry,0.59,0.5945,MATCH,info,M1C_PREV = H0 target; realised M1c prevalence over both arms 0.604-0.609,m1c_params.R; replicate records,2.0
+main,67.0,2.2 Data-generating mechanisms,x:m1c_var,registry,3.5,3.5448,MATCH,info,M1C_VAR; refit of the cohort gives 3.545,m1c_params.R; cohort refit,2.0
+main,67.0,2.2 Data-generating mechanisms,x:ndp_m1c,registry,72,72,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,3.0
+main,67.0,2.2 Data-generating mechanisms,x:ndp_m67,registry,384,384,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,3.0
+main,69.0,2.2 Data-generating mechanisms,x:cum_int_t10,registry,1.8,1.8,MATCH,info,"0.2 x (T-1), time coded 0..T-1",generators,1.0
+main,69.0,2.2 Data-generating mechanisms,x:lus_lateral,registry,1.1,1.05797,MATCH,info,"MMM lv~1, t~1, q=20, full model, lateral vs anterior",cohort refit s10t_clin.R,1.0
+main,69.0,2.2 Data-generating mechanisms,x:lus_prev,registry,0.59,0.594512,MATCH,info,,cohort refit,2.0
+main,69.0,2.2 Data-generating mechanisms,x:lus_var_id,registry,3.5,3.54483,MATCH,info,,cohort refit glmer region+(1|id),2.0
+main,69.0,2.2 Data-generating mechanisms,x:prev_m1_t10,registry,0.28,0.279181,MATCH,info,,replicate records,1.0
+main,71.0,2.2 Data-generating mechanisms,f:s8|deg_m1c,registry,43,43,MATCH,info,,replicate records,1.0
+main,71.0,2.2 Data-generating mechanisms,f:s8|deg_m6,registry,47,47,MATCH,info,,replicate records design_degenerate,1.0
+main,71.0,2.2 Data-generating mechanisms,f:s8|deg_m7,registry,55,55,MATCH,info,,replicate records,1.0
+main,71.0,2.2 Data-generating mechanisms,x:n_degenerate,registry,247,247,MATCH,info,"per hypothesis and mechanism, all four mechanisms",replicate records,1.0
+main,71.0,2.2 Data-generating mechanisms,x:nsim,registry,"1,000",1000,MATCH,info,"1,000 replicate records per cell in every run",replicate records,6.0
+main,71.0,2.2 Data-generating mechanisms,x:seed_rule,registry,20260805 + 1000m + i,20260805 + 1000m + i,MATCH,info,"seed_of() in R/protocol/dgm_common.R, L'Ecuyer-CMRG in set_rep_seed",code,1.0
+main,75.0,2.3 Estimands and true values,f:s8|nat_h1_m1c_max,registry,0.20,0.197849,MATCH,info,,s10 GH computation,1.0
+main,75.0,2.3 Estimands and true values,f:s8|nat_h1_m1c_min,registry,0.19,0.190843,MATCH,info,,"s10 GH computation (M1c, factor 1.492)",1.0
+main,75.0,2.3 Estimands and true values,f:s8|nat_h1_max,registry,0.20,0.201789,MATCH,info,,s10 GH computation,1.0
+main,75.0,2.3 Estimands and true values,f:s8|nat_h1_min,registry,0.044,0.0435821,MATCH,info,,s10 GH computation,1.0
+main,75.0,2.3 Estimands and true values,x:nat_h0_max,registry,-0.0011,-0.00112034,MATCH,info,independent GH quadrature + logistic projection on the expected design; agrees with V4_S2 truth to 1e-7,s10 GH computation,1.0
+main,75.0,2.3 Estimands and true values,x:nat_h0_min,registry,-0.0030,-0.00304491,MATCH,info,,s10 GH computation,1.0
+main,79.0,2.4 Methods compared,f:gq|nodes,registry,10,10,MATCH,info,nAGQ = 10 in S7g rows,S7g rows,1.0
+main,79.0,2.4 Methods compared,f:x|fg_bound,registry,0.75,0.75,MATCH,info,"default of fewclust gee_vcov, fewclust_control and geesmv GEE.var.fg",package formals,1.0
+main,79.0,2.4 Methods compared,x:mm_q,registry,20,20,MATCH,info,q = 20 in analysis_model1-5.R,code,1.0
+main,81.0,2.4 Methods compared,x:cc_thr,registry,0.001,0.001,MATCH,info,"slope_min < 1e-3 (s6b_ns_common.R l.47); my reconstruction of the check reproduces the stored choice in all 3,071,676 fits",code + S6cc/S6b/S7e rows,1.0
+main,81.0,2.4 Methods compared,x:nlm_ok,registry,1 or 2,1 or 2,MATCH,info,"A$code %in% c(1,2)",code,1.0
+main,85.0,2.4 Methods compared,f:x|guard_div,registry,"1,000","1,000",MATCH,info,"CI_DIVERGE = 1e3 in s7d2_ci.R, the guard that produced the sign-flip numbers (S7c/S7d test used COEF_MAX = 10 as a separate filter)",code,1.0
+main,89.0,2.5 Performance measures,f:n9|const_n,registry,"9,711",9711,MATCH,info,"estimable-design datasets only; 9,847 including degenerate designs",replicate records,1.0
+main,89.0,2.5 Performance measures,f:n9|const_small_pct,registry,92,91.8443,MATCH,info,"own constant-outcome flag from sum_y and n_obs; identical to the 9,711 keys of S9",replicate records,1.0
+main,89.0,2.5 Performance measures,f:n9|datasets_n,registry,"4,752,000",4.752e+06,MATCH,info,,replicate records,1.0
+main,89.0,2.5 Performance measures,x:usab_max,registry,10,10,MATCH,info,,"definition, code",3.0
+main,91.0,2.5 Performance measures,f:gt|brad_hi,registry,1.5,1.5,MATCH,info,,definition,1.0
+main,91.0,2.5 Performance measures,f:gt|brad_lo,registry,0.5,0.5,MATCH,info,,definition,1.0
+main,93.0,2.5 Performance measures,x:boot_B,registry,"2,000",2000,MATCH,info,,"code (h2h, S7d)",1.0
+main,93.0,2.5 Performance measures,x:mcse_5pct,registry,0.69,0.689202,MATCH,info,,formula,2.0
+main,93.0,2.5 Performance measures,x:mcse_5pct_2x,registry,1.4,1.3784,MATCH,info,,formula,1.0
+main,97.0,2.6 Decision rule,f:g7|cal_thr1000,registry,9.3,9.3,MATCH,info,,formula,1.0
+main,97.0,2.6 Decision rule,f:g7|cal_thr500,registry,10,10,MATCH,info,"smallest k/n with Clopper-Pearson lower limit > 7.5%, n=500",formula,1.0
+main,101.0,2.7 Clinical applications,x:lus_Ns,registry,"10, 15, 20, 25 and 50","10, 15, 20, 25 and 50",MATCH,info,"N levels of the 33,000 subsample rows",rev2/T3_subsample_rerun.csv,1.0
+main,101.0,2.7 Clinical applications,x:lus_chi2,registry,47,46.7351,MATCH,info,,cohort refit,1.0
+main,101.0,2.7 Clinical applications,x:lus_nmulti,registry,22,22,MATCH,info,,cohort refit,2.0
+main,101.0,2.7 Clinical applications,x:lus_nobs,registry,"2,296",2296,MATCH,info,,cohort refit,1.0
+main,101.0,2.7 Clinical applications,x:lus_npat,registry,207,207,MATCH,info,,cohort refit,2.0
+main,101.0,2.7 Clinical applications,x:lus_npt,registry,230,230,MATCH,info,,cohort refit,1.0
+main,101.0,2.7 Clinical applications,x:lus_nsub,registry,500,500,MATCH,info,500 draws per N,subsample rows,1.0
+main,101.0,2.7 Clinical applications,x:lus_var_pt,registry,3.8,3.78354,MATCH,info,patient variance goes to 4.5e-14 (boundary),cohort refit,1.0
+main,103.0,2.7 Clinical applications,f:rs|P,registry,111,111,MATCH,info,,geepack::respiratory refit,1.0
+main,109.0,3.1 Type I error on the main grid,v:rate|GB|gee,registry,8.4,8.369,MATCH,info,"pooled normal-reference rate, main grid; KC from fewclust",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,109.0,3.1 Type I error on the main grid,v:rate|GB|gee_fg,registry,5.8,5.826,MATCH,info,"pooled normal-reference rate, main grid; KC from fewclust",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,109.0,3.1 Type I error on the main grid,v:rate|GB|gee_kc,registry,6.9,6.9496,MATCH,info,"pooled normal-reference rate, main grid; KC from fewclust",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,109.0,3.1 Type I error on the main grid,v:rate|GB|gee_md,registry,6.1,6.089,MATCH,info,"pooled normal-reference rate, main grid; KC from fewclust",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,109.0,3.1 Type I error on the main grid,v:rate|GB|mmm,registry,5.5,5.54,MATCH,info,"pooled normal-reference rate, main grid; KC from fewclust",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,109.0,3.1 Type I error on the main grid,v:rate|NAT|gee_fg,registry,5.3,5.322,MATCH,info,"pooled normal-reference rate, main grid; KC from fewclust",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,109.0,3.1 Type I error on the main grid,v:rate|NAT|gee_md,registry,5.5,5.507,MATCH,info,"pooled normal-reference rate, main grid; KC from fewclust",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,109.0,3.1 Type I error on the main grid,v:rate|NAT|mmm,registry,5.2,5.226,MATCH,info,"pooled normal-reference rate, main grid; KC from fewclust",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,111.0,3.1 Type I error on the main grid,cl:C01|GB:est,registry,2.8,2.816,MATCH,info,next smallest worst case on GenBinaryY is the LRT (3.65),per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,111.0,3.1 Type I error on the main grid,v:mad|GB|gee_fg,registry,1.0,1.043,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,111.0,3.1 Type I error on the main grid,v:mad|GB|mmm,registry,0.54,0.536,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,111.0,3.1 Type I error on the main grid,v:mad|NAT|gee_fg,registry,0.52,0.519,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,111.0,3.1 Type I error on the main grid,v:mad|NAT|mmm,registry,0.24,0.24,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,111.0,3.1 Type I error on the main grid,v:wc|AR1|mmm,registry,0.56,0.563,MATCH,info,max over 16 N of |replicate-weighted rate - 5|,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,111.0,3.1 Type I error on the main grid,v:wc|GB|mmm,registry,0.83,0.832,MATCH,info,max over 16 N of |replicate-weighted rate - 5|,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,111.0,3.1 Type I error on the main grid,v:wc|NAT|mmm,registry,0.44,0.438,MATCH,info,max over 16 N of |replicate-weighted rate - 5|,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,113.0,3.1 Type I error on the main grid,v:madT|T2|gee_md,registry,2.5,2.52855,MATCH,minor,reproduces only as the mean over DESIGN POINTS of |rate-5|; with the Section 2.5 definition (mean over the 16 cluster counts) the value is 2.52,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,113.0,3.1 Type I error on the main grid,v:madT|T2|glmer,registry,5.6,5.59436,MATCH,minor,reproduces only as the mean over DESIGN POINTS of |rate-5|; with the Section 2.5 definition (mean over the 16 cluster counts) the value is 5.16,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,113.0,3.1 Type I error on the main grid,v:madT|T2|mmm,registry,1.5,1.51933,MATCH,minor,reproduces only as the mean over DESIGN POINTS of |rate-5|; with the Section 2.5 definition (mean over the 16 cluster counts) the value is 1.29,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,2.0
+main,113.0,3.1 Type I error on the main grid,v:madT|T2|shrink,registry,11,10.8274,MATCH,minor,reproduces only as the mean over DESIGN POINTS of |rate-5|; with the Section 2.5 definition (mean over the 16 cluster counts) the value is 10.41,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,113.0,3.1 Type I error on the main grid,v:madT|T4plus|mmm,registry,0.71,0.707791,MATCH,minor,reproduces only as the mean over DESIGN POINTS of |rate-5|; with the Section 2.5 definition (mean over the 16 cluster counts) the value is 0.43,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,117.0,3.2 The convergence check of the marginalized model,s:madT1|mmm|10,registry,2.8,2.767,MATCH,minor,"no-check MMM, mean over the 240 main-grid points at T=10 (M1-M5; M1-M2 have no check). Restricted to M3-M5, where the paragraph sits, the value is 4.2 -> 0.72",s10t_nocheck.R,1.0
+main,117.0,3.2 The convergence check of the marginalized model,v:madT1|mmm|10,registry,0.67,0.673381,MATCH,minor,"mean over design points, all of M1-M5 at T=10 (M3-M5 only: 0.72); the paragraph is about M3-M5",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,117.0,3.2 The convergence check of the marginalized model,x:cc_hi_cc,registry,0,0,MATCH,info,"MMM with check, M3-M5 null points, normal and t",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,117.0,3.2 The convergence check of the marginalized model,x:cc_hi_study,registry,149,149,MATCH,info,"from the original study rows (results_v4/S4/rows_v4.rds, identical estimates and SEs to fit A of S6cc), normal reference",s10t_nocheck.R,1.0
+main,117.0,3.2 The convergence check of the marginalized model,x:cc_hi_study_T810,registry,90,90,MATCH,info,,s10t_nocheck.R,1.0
+main,117.0,3.2 The convergence check of the marginalized model,x:cc_ndp_h0,registry,864,864,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,117.0,3.2 The convergence check of the marginalized model,x:cc_share_study,registry,68,68.2404,DEFINITION_DIVERGENCE,minor,68% is the share of fits DECLARED at the boundary; the share actually REPLACED (refit with finite estimate and SE) is 66.3%. In M6-M7 the text's 'intervened' is the replaced share (see pb1).,S6cc rows,1.0
+main,119.0,3.2 The convergence check of the marginalized model,x:ns_nocc_t_hi,registry,9,9,MATCH,info,"mmm_nocc rows, t reference, 384 points",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,119.0,3.2 The convergence check of the marginalized model,x:nsfb_T23_max,registry,60,59.3,MISMATCH,minor,"share replaced at T 2-3 under H0 per (mechanism, scenario): 58.1, 58.1, 58.8, 59.3 -> '58% to 59%'; with the A-returned denominator 59.3-60.5",S6b ns cc rows,1.0
+main,119.0,3.2 The convergence check of the marginalized model,x:nsfb_T23_min,registry,58,58.1,MATCH,info,,S6b ns cc rows,1.0
+main,119.0,3.2 The convergence check of the marginalized model,x:pb1_g7,registry,36,35.8,MATCH,info,"GenBinaryY M7, H0, share of fits replaced",S6b ns cc rows,1.0
+main,119.0,3.2 The convergence check of the marginalized model,x:pb1_n6,registry,51,51,MATCH,info,,S6b ns cc rows,1.0
+main,123.0,3.3 Availability of a result,v:puT|RI|glmer_lrt|2,registry,99,98.9,MATCH,info,pooled H0 98.94; mean over points similar,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,123.0,3.3 Availability of a result,v:puT|RI|glmer|2,registry,69,68.7,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,123.0,3.3 Availability of a result,v:puT|RS|gee_fg|2,registry,73,73.12,MATCH,info,mean over design points of the H0 usable share (pooled: 73.23),per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,123.0,3.3 Availability of a result,v:puT|RS|glmer_lrt|2,registry,0.14,0.1365,MATCH,minor,"0.1365 as mean over design points; the pooled share (as Table 4, which the paragraph cites) is 0.134 -> 0.13",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,123.0,3.3 Availability of a result,v:puT|RS|glmer|2,registry,0.002,0.0021,MATCH,info,"3 usable fits of 143,769",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,123.0,3.3 Availability of a result,v:puT|RS|mmm|2,registry,71,71,MATCH,info,mean over points 70.995 (pooled 71.10),per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,123.0,3.3 Availability of a result,x:pu_T4_min,registry,90,90.8379,MATCH,info,"smallest pooled H0 usable share at T>=4, Table 4 structures, all eight methods: GLMM Wald, M3-M5, T=4; text says 'more than 90%': satisfied",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,125.0,3.3 Availability of a result,v:val20|glmer,registry,61,61.0733,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,125.0,3.3 Availability of a result,v:val20|glmer_lrt,registry,80,79.9436,MATCH,info,"(n - rejections)/nd under H0, N<=20, normal",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,125.0,3.3 Availability of a result,x:switch_GB,registry,25,25,MATCH,info,argmax unconditional validity is the LRT at N = 10-25 on each of the three mechanisms,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,2.0
+main,129.0,3.4 Reference distribution and the decision rule,v:tsh25|gee,registry,3.8,3.75,MATCH,info,pooled over mechanisms (per mechanism up to 3.86),per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,129.0,3.4 Reference distribution and the decision rule,v:tsh25|glmer,registry,1.4,1.39,MATCH,info,pooled over the three mechanisms at N<=25 (per mechanism 1.26-1.43); the grid-level shift in the same sentence is per mechanism,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,129.0,3.4 Reference distribution and the decision rule,v:tshift|AR1|gee@abs,registry,1.1,1.145,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,129.0,3.4 Reference distribution and the decision rule,v:tshift|NAT|glmer@abs,registry,0.53,0.526,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,129.0,3.4 Reference distribution and the decision rule,x:rs_N10_ndp,registry,102,102,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,129.0,3.4 Reference distribution and the decision rule,x:rs_fgt_N10_lo,registry,4,4,MATCH,info,"study FG (geesmv, exchangeable); fewclust exch FG gives 3",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,129.0,3.4 Reference distribution and the decision rule,x:rs_mmmt_N10_lo,registry,16,16,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,131.0,3.4 Reference distribution and the decision rule,f:gt|flt|gee_ar1_fg|20|hi,registry,6,6,MATCH,info,usability limit 20; with 5 it is 0 and the rule selects the GEE strategy (91.87 vs 90.81),per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,131.0,3.4 Reference distribution and the decision rule,f:gt|lim_hi,registry,20,20,MATCH,info,,definition,1.0
+main,131.0,3.4 Reference distribution and the decision rule,f:gt|lim_lo,registry,5,5,MATCH,info,,definition,1.0
+main,131.0,3.4 Reference distribution and the decision rule,f:n9|fgpt|1|N,registry,10,10,MATCH,info,"GLMM-AR1 (1) and GLMM-native (2), M2, N=10, T=2, t reference",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,131.0,3.4 Reference distribution and the decision rule,f:n9|fgpt|1|T,registry,2,2,MATCH,info,"GLMM-AR1 (1) and GLMM-native (2), M2, N=10, T=2, t reference",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,131.0,3.4 Reference distribution and the decision rule,f:n9|fgpt|1|k,registry,12,12,MATCH,info,"GLMM-AR1 (1) and GLMM-native (2), M2, N=10, T=2, t reference",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,131.0,3.4 Reference distribution and the decision rule,f:n9|fgpt|1|mmm_k,registry,0,0,MATCH,info,"GLMM-AR1 (1) and GLMM-native (2), M2, N=10, T=2, t reference",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,131.0,3.4 Reference distribution and the decision rule,f:n9|fgpt|1|mmm_n,registry,35,35,MATCH,info,"GLMM-AR1 (1) and GLMM-native (2), M2, N=10, T=2, t reference",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,131.0,3.4 Reference distribution and the decision rule,f:n9|fgpt|1|n,registry,61,61,MATCH,info,"GLMM-AR1 (1) and GLMM-native (2), M2, N=10, T=2, t reference",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,131.0,3.4 Reference distribution and the decision rule,f:n9|fgpt|2|k,registry,11,11,MATCH,info,"GLMM-AR1 (1) and GLMM-native (2), M2, N=10, T=2, t reference",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,131.0,3.4 Reference distribution and the decision rule,f:n9|fgpt|2|mmm_k,registry,0,0,MATCH,info,"GLMM-AR1 (1) and GLMM-native (2), M2, N=10, T=2, t reference",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,131.0,3.4 Reference distribution and the decision rule,f:n9|fgpt|2|mmm_n,registry,38,38,MATCH,info,"GLMM-AR1 (1) and GLMM-native (2), M2, N=10, T=2, t reference",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,131.0,3.4 Reference distribution and the decision rule,f:n9|fgpt|2|n,registry,63,63,MATCH,info,"GLMM-AR1 (1) and GLMM-native (2), M2, N=10, T=2, t reference",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,131.0,3.4 Reference distribution and the decision rule,f:t4|gee_ar1_fg|lo_all,registry,106,106,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,131.0,3.4 Reference distribution and the decision rule,f:t4|mmm_cc|lo_N10,registry,18,18,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,131.0,3.4 Reference distribution and the decision rule,f:t4|mmm_cc|lo_all,registry,24,24,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,133.0,3.4 Reference distribution and the decision rule,f:t4|gee_ar1_kc|hi_all,registry,138,138,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,2.0
+main,133.0,3.4 Reference distribution and the decision rule,f:t4|gee_ar1_md|hi_all,registry,20,20,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,133.0,3.4 Reference distribution and the decision rule,f:t4|gee_exch_fg|hi_all,registry,15,15,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,2.0
+main,133.0,3.4 Reference distribution and the decision rule,f:t4|gee_exch_fg|hi_main,registry,3,3,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,133.0,3.4 Reference distribution and the decision rule,f:t4|gee_exch_kc|hi_all,registry,207,207,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,2.0
+main,133.0,3.4 Reference distribution and the decision rule,f:t4|gee_exch_md|hi_all,registry,63,63,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,2.0
+main,133.0,3.4 Reference distribution and the decision rule,f:t4|gee_ind_fg|hi_all,registry,5,5,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,2.0
+main,133.0,3.4 Reference distribution and the decision rule,f:t4|gee_ind_fg|hi_main,registry,3,3,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,133.0,3.4 Reference distribution and the decision rule,f:t4|glmer_lrt|hi_all,registry,412,412,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,2.0
+main,133.0,3.4 Reference distribution and the decision rule,f:t4|glmer|hi_all,registry,515,515,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,133.0,3.4 Reference distribution and the decision rule,f:x|glmer_hi_native,registry,55,55,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,135.0,3.4 Reference distribution and the decision rule,f:t2|gee_ar1_fg|N - 2|n_hi,registry,2,2,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,135.0,3.4 Reference distribution and the decision rule,f:t2|mmm_cc|N - 2|n_lo,registry,8,8,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,135.0,3.4 Reference distribution and the decision rule,f:t2|mmm_cc|N - p|n_lo,registry,23,23,MATCH,info,"1,896 points of the three study mechanisms",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,135.0,3.4 Reference distribution and the decision rule,f:t4|gee_ar1_fg|pu_small,registry,44,43.7203,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,2.0
+main,135.0,3.4 Reference distribution and the decision rule,f:t4|mmm_cc|pu_small,registry,39,39.1642,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,135.0,3.4 Reference distribution and the decision rule,f:x|ndp_three,registry,"1,896",1896,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,2.0
+main,135.0,3.4 Reference distribution and the decision rule,f:x|upow_small_ceiling,registry,2,2,MATCH,info,"max(1.419, 1.443) -> below 2%",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,2.0
+main,137.0,3.4 Reference distribution and the decision rule,f:hb|N10_T3p|mad_gee,registry,1.6,1.64598,MATCH,info,"block bootstrap redone (B=2000, seed 20261015, M1c resampled jointly with M1): MCSE 0.067; project script R/s7f/s7f_h2h_boot.R l.81 resamples M1c separately ('1c') against Sec. 2.5 'jointly across all cells' (MCSE only)",s10t_boot.R,1.0
+main,137.0,3.4 Reference distribution and the decision rule,f:hb|N10_T3p|mad_mmm,registry,2.9,2.9491,MATCH,info,"block bootstrap redone (B=2000, seed 20261015, M1c resampled jointly with M1): MCSE 0.049; project script R/s7f/s7f_h2h_boot.R l.81 resamples M1c separately ('1c') against Sec. 2.5 'jointly across all cells' (MCSE only)",s10t_boot.R,1.0
+main,137.0,3.4 Reference distribution and the decision rule,f:hb|N10_T3p|rate_gee,registry,4.2,4.16749,MATCH,info,"block bootstrap redone (B=2000, seed 20261015, M1c resampled jointly with M1): MCSE 0.077; project script R/s7f/s7f_h2h_boot.R l.81 resamples M1c separately ('1c') against Sec. 2.5 'jointly across all cells' (MCSE only)",s10t_boot.R,1.0
+main,137.0,3.4 Reference distribution and the decision rule,f:hb|N10_T3p|rate_mmm,registry,2.1,2.0509,MATCH,info,"block bootstrap redone (B=2000, seed 20261015, M1c resampled jointly with M1): MCSE 0.051; project script R/s7f/s7f_h2h_boot.R l.81 resamples M1c separately ('1c') against Sec. 2.5 'jointly across all cells' (MCSE only)",s10t_boot.R,1.0
+main,137.0,3.4 Reference distribution and the decision rule,f:hb|N15p_T2|mad_gee_minus_mmm,registry,1.0,1.01131,MATCH,info,"block bootstrap redone (B=2000, seed 20261015, M1c resampled jointly with M1): MCSE 0.040; project script R/s7f/s7f_h2h_boot.R l.81 resamples M1c separately ('1c') against Sec. 2.5 'jointly across all cells' (MCSE only)",s10t_boot.R,1.0
+main,137.0,3.4 Reference distribution and the decision rule,f:hb|N15p_T2|pu_gee_minus_mmm,registry,3.8,3.84827,MATCH,info,"block bootstrap redone (B=2000, seed 20261015, M1c resampled jointly with M1): MCSE 0.035; project script R/s7f/s7f_h2h_boot.R l.81 resamples M1c separately ('1c') against Sec. 2.5 'jointly across all cells' (MCSE only)",s10t_boot.R,1.0
+main,137.0,3.4 Reference distribution and the decision rule,f:hb|N15p_T2|rate_gee,registry,2.5,2.48043,MATCH,info,"block bootstrap redone (B=2000, seed 20261015, M1c resampled jointly with M1): MCSE 0.029; project script R/s7f/s7f_h2h_boot.R l.81 resamples M1c separately ('1c') against Sec. 2.5 'jointly across all cells' (MCSE only)",s10t_boot.R,1.0
+main,137.0,3.4 Reference distribution and the decision rule,f:hb|all|mad_gee,registry,1.1,1.07646,MATCH,info,"block bootstrap redone (B=2000, seed 20261015, M1c resampled jointly with M1): MCSE 0.012; project script R/s7f/s7f_h2h_boot.R l.81 resamples M1c separately ('1c') against Sec. 2.5 'jointly across all cells' (MCSE only)",s10t_boot.R,1.0
+main,137.0,3.4 Reference distribution and the decision rule,f:hb|all|pu_gee_minus_mmm,registry,1.0,1.00267,MATCH,info,"block bootstrap redone (B=2000, seed 20261015, M1c resampled jointly with M1): MCSE 0.008; project script R/s7f/s7f_h2h_boot.R l.81 resamples M1c separately ('1c') against Sec. 2.5 'jointly across all cells' (MCSE only)",s10t_boot.R,1.0
+main,137.0,3.4 Reference distribution and the decision rule,f:hb|all|upow_mmm_minus_gee,registry,1.4,1.43687,MATCH,info,"block bootstrap redone (B=2000, seed 20261015, M1c resampled jointly with M1): MCSE 0.014; project script R/s7f/s7f_h2h_boot.R l.81 resamples M1c separately ('1c') against Sec. 2.5 'jointly across all cells' (MCSE only)",s10t_boot.R,1.0
+main,137.0,3.4 Reference distribution and the decision rule,f:hb|map|10|2|mad_gee,registry,5.4,5.38417,MATCH,info,"block bootstrap redone (B=2000, seed 20261015, M1c resampled jointly with M1): MCSE 0.423; project script R/s7f/s7f_h2h_boot.R l.81 resamples M1c separately ('1c') against Sec. 2.5 'jointly across all cells' (MCSE only)",s10t_boot.R,1.0
+main,137.0,3.4 Reference distribution and the decision rule,f:hb|map|10|2|mad_mmm,registry,4.8,4.75547,MATCH,info,"block bootstrap redone (B=2000, seed 20261015, M1c resampled jointly with M1): MCSE 0.099; project script R/s7f/s7f_h2h_boot.R l.81 resamples M1c separately ('1c') against Sec. 2.5 'jointly across all cells' (MCSE only)",s10t_boot.R,1.0
+main,137.0,3.4 Reference distribution and the decision rule,f:hb|map|10|2|pu_gee,registry,10,10.2063,MATCH,info,"block bootstrap redone (B=2000, seed 20261015, M1c resampled jointly with M1): MCSE 0.203; project script R/s7f/s7f_h2h_boot.R l.81 resamples M1c separately ('1c') against Sec. 2.5 'jointly across all cells' (MCSE only)",s10t_boot.R,1.0
+main,137.0,3.4 Reference distribution and the decision rule,f:hb|map|10|2|pu_mmm,registry,5.3,5.34318,MATCH,info,"block bootstrap redone (B=2000, seed 20261015, M1c resampled jointly with M1): MCSE 0.150; project script R/s7f/s7f_h2h_boot.R l.81 resamples M1c separately ('1c') against Sec. 2.5 'jointly across all cells' (MCSE only)",s10t_boot.R,1.0
+main,141.0,3.5 Working correlation and implementation of the corrections,f:cv|wc_ar1|est,registry,-0.31,-0.309658,MATCH,info,"mean over 1,896 points, t, fewclust; MCSE 0.009 (within 1-point margin)",s10t_boot.R,1.0
+main,141.0,3.5 Working correlation and implementation of the corrections,f:cv|wc_ind|est,registry,-0.29,-0.292621,MATCH,info,MCSE 0.009,s10t_boot.R,1.0
+main,145.0,3.6 The fourth mechanism,f:cv|cop_glmm|est,registry,3.2,3.199,MATCH,info,"per-point difference copula minus mean of the three study mechanisms, averaged over the 418 points where the GLMM rate exists on all four (62 points dropped); the '10%' in the same sentence averages all 480",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,145.0,3.6 The fourth mechanism,f:s7e|gee_ar1_fg|mean_type1,registry,4.6,4.599,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,145.0,3.6 The fourth mechanism,f:s7e|gee_exch_fg|clearly_above,registry,8,8,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,145.0,3.6 The fourth mechanism,f:s7e|glmer|clearly_above,registry,223,223,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,145.0,3.6 The fourth mechanism,f:s7e|glmer|mean_type1,registry,10,10.21,MATCH,info,mean over the 480 copula points (t),per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,145.0,3.6 The fourth mechanism,f:s7e|mmm_cc|mean_type1,registry,5.1,5.125,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,145.0,3.6 The fourth mechanism,f:s8|cop_exfg4_Nmax,registry,25,25,MATCH,info,"gee_exch_fg, t, copula flagged points: T=4 at N 10,15,20,25 (M1) and 15 (M3, M4); N=10 at T=3 and T=6",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,145.0,3.6 The fourth mechanism,f:s8|cop_exfg4_Nmin,registry,10,10,MATCH,info,"gee_exch_fg, t, copula flagged points: T=4 at N 10,15,20,25 (M1) and 15 (M3, M4); N=10 at T=3 and T=6",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,145.0,3.6 The fourth mechanism,f:s8|cop_exfg_oth2_T,registry,6,6,MATCH,info,"gee_exch_fg, t, copula flagged points: T=4 at N 10,15,20,25 (M1) and 15 (M3, M4); N=10 at T=3 and T=6",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,145.0,3.6 The fourth mechanism,f:s8|cop_exfg_oth_N,registry,10,10,MATCH,info,"gee_exch_fg, t, copula flagged points: T=4 at N 10,15,20,25 (M1) and 15 (M3, M4); N=10 at T=3 and T=6",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,145.0,3.6 The fourth mechanism,f:s8|cop_exfg_oth_T,registry,3,3,MATCH,info,"gee_exch_fg, t, copula flagged points: T=4 at N 10,15,20,25 (M1) and 15 (M3, M4); N=10 at T=3 and T=6",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,145.0,3.6 The fourth mechanism,f:s8|cop_exfg_oth_n,registry,2,2,MATCH,info,"gee_exch_fg, t, copula flagged points: T=4 at N 10,15,20,25 (M1) and 15 (M3, M4); N=10 at T=3 and T=6",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,145.0,3.6 The fourth mechanism,f:x|cop_exfg_T,registry,4,4,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,145.0,3.6 The fourth mechanism,f:x|cop_exfg_nT,registry,6,6,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,149.0,3.7 Sign-flip score test,f:ci|PG6,registry,14,13.6574,MATCH,minor,"fragile: 13.7% per estimable dataset (H1, T<=3, N<=25); per dataset WITH an interval 22.3%, mean over points 17.0%",S7d2 rows,1.0
+main,149.0,3.7 Sign-flip score test,f:ci|PG8,registry,96,95.6894,MATCH,info,"GEE AR(1) FG t coverage H1, pooled (95.8 mean over points)",S7d2 rows,1.0
+main,149.0,3.7 Sign-flip score test,f:fl|all|H0|mean_rate,registry,5.4,5.44464,MATCH,info,,S7d2 guarded p,1.0
+main,149.0,3.7 Sign-flip score test,f:fl|small|H0|mean_rate,registry,5.2,5.21146,MATCH,info,,S7d2 guarded p,1.0
+main,149.0,3.7 Sign-flip score test,f:s8|flipci_cov_h1,registry,95,94.9083,MATCH,info,"pooled 94.9, mean over points 95.1",S7d2 rows,1.0
+main,149.0,3.7 Sign-flip score test,f:s8|flipci_lo_h1,registry,97,97,MATCH,info,"H1 non-coverage clearly below 2.5% (exact, n>=20)",S7d2 rows,1.0
+main,149.0,3.7 Sign-flip score test,f:s8|flipci_lo_h1_T2,registry,90,90,MATCH,info,,S7d2 rows,1.0
+main,149.0,3.7 Sign-flip score test,f:t4|flip|pu,registry,97,96.5073,MATCH,info,,S7d2 guarded p,1.0
+main,149.0,3.7 Sign-flip score test,f:t4|flip|upow,registry,21,20.9064,MATCH,info,,S7d2 guarded p,1.0
+main,149.0,3.7 Sign-flip score test,f:x|ci_width_pct,registry,17,16.67,MATCH,minor,"fragile: geometric mean over points of per-point geometric means of width ratio (H1, both finite, 17 zero-width intervals excluded); pooled geometric mean 8.7%, median 4.3%, ratio of means 17.9%",S7d2 rows,1.0
+main,149.0,3.7 Sign-flip score test,f:x|flip_upow_small,registry,4.2,4.15265,MATCH,info,,S7d2 guarded p,2.0
+main,155.0,3.8 Power and coverage,v:cov|GB|gee_kc,registry,93,93.3952,MATCH,info,,cov rows,1.0
+main,155.0,3.8 Power and coverage,v:cov|GB|gee_md,registry,94,94.236,MATCH,info,,cov rows,1.0
+main,155.0,3.8 Power and coverage,v:cov|NAT|gee_fg,registry,95,94.9154,MATCH,info,GLMM-native truth = GH marginal value,cov rows,1.0
+main,155.0,3.8 Power and coverage,v:cov|NAT|gee_kc,registry,94,93.8398,MATCH,info,"fewclust KC, normal, H1 (both arms 93.75); geesmv KC would be 89",cov rows,1.0
+main,159.0,3.9 Scenario anchored to the cohort,m:ratet|AR1|gee_fg,registry,3.5,3.48399,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,159.0,3.9 Scenario anchored to the cohort,m:ratet|GB|gee_fg,registry,3.6,3.61555,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,159.0,3.9 Scenario anchored to the cohort,m:ratet|GB|mmm,registry,5.1,5.13111,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,159.0,3.9 Scenario anchored to the cohort,m:ratet|NAT|mmm,registry,5.0,4.97729,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,159.0,3.9 Scenario anchored to the cohort,m:rate|GB|gee_fg,registry,5.1,5.06904,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,159.0,3.9 Scenario anchored to the cohort,m:rate|GB|mmm,registry,7.0,6.98935,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,159.0,3.9 Scenario anchored to the cohort,m:rate|NAT|gee_fg,registry,5.0,4.96295,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,159.0,3.9 Scenario anchored to the cohort,m:rate|NAT|mmm,registry,6.8,6.75188,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,163.0,3.10 Adaptive quadrature for the mixed model,f:gq|diff_max,registry,4.0,3.96,DEFINITION_DIVERGENCE,minor,"paired difference on replicates usable under BOTH fits (3.07-3.96); with each fit on its own usable replicates, as Section 2.5 prescribes, 2.90-4.47 (2.9 to 4.5)",S7g rows,1.0
+main,163.0,3.10 Adaptive quadrature for the mixed model,f:gq|diff_min,registry,3.1,3.07,DEFINITION_DIVERGENCE,minor,"paired difference on replicates usable under BOTH fits (3.07-3.96); with each fit on its own usable replicates, as Section 2.5 prescribes, 2.90-4.47 (2.9 to 4.5)",S7g rows,1.0
+main,163.0,3.10 Adaptive quadrature for the mixed model,f:gq|hi_agq,registry,8,8,MATCH,info,,S7g rows,1.0
+main,163.0,3.10 Adaptive quadrature for the mixed model,f:gq|hi_agq_T,registry,10,10,MATCH,info,,S7g rows,1.0
+main,163.0,3.10 Adaptive quadrature for the mixed model,f:gq|hi_agq_cop,registry,6,6,MATCH,info,,S7g rows,1.0
+main,163.0,3.10 Adaptive quadrature for the mixed model,f:gq|hi_agq_gb,registry,2,2,MATCH,info,,S7g rows,1.0
+main,163.0,3.10 Adaptive quadrature for the mixed model,f:gq|hi_cop_max,registry,16,15.7,MATCH,info,,S7g rows,1.0
+main,163.0,3.10 Adaptive quadrature for the mixed model,f:gq|hi_cop_min,registry,12,11.7,MATCH,info,,S7g rows,1.0
+main,163.0,3.10 Adaptive quadrature for the mixed model,f:gq|hi_gb_max,registry,9.6,9.6,MATCH,info,,S7g rows,1.0
+main,163.0,3.10 Adaptive quadrature for the mixed model,f:gq|hi_gb_min,registry,9.3,9.3,MATCH,info,,S7g rows,1.0
+main,163.0,3.10 Adaptive quadrature for the mixed model,f:gq|hi_lap,registry,33,33,MATCH,info,,S7g rows,1.0
+main,163.0,3.10 Adaptive quadrature for the mixed model,f:gq|lo_agq,registry,37,37,MATCH,info,,S7g rows,1.0
+main,163.0,3.10 Adaptive quadrature for the mixed model,f:gq|lo_lap,registry,3,3,MATCH,info,,S7g rows,1.0
+main,163.0,3.10 Adaptive quadrature for the mixed model,f:gq|npts,registry,123,123,MATCH,info,,S7g rows,1.0
+main,167.0,3.11 Clinical applications,f:g7|lus_u500_GEE,registry,70,70,MATCH,info,"usable of 500 draws, N=10, full model",rev2 subsample rows,1.0
+main,167.0,3.11 Clinical applications,f:g7|lus_u500_GEE-FG,registry,34,34.2,MATCH,info,"usable of 500 draws, N=10, full model",rev2 subsample rows,1.0
+main,167.0,3.11 Clinical applications,f:g7|lus_u500_GEE-MD,registry,15,15,MATCH,info,"usable of 500 draws, N=10, full model",rev2 subsample rows,1.0
+main,167.0,3.11 Clinical applications,f:g7|lus_u500_GLMM,registry,78,78.2,MATCH,info,"usable of 500 draws, N=10, full model",rev2 subsample rows,1.0
+main,167.0,3.11 Clinical applications,f:g7|lus_u500_MMM,registry,77,77,MATCH,info,"usable of 500 draws, N=10, full model",rev2 subsample rows,1.0
+main,167.0,3.11 Clinical applications,f:s8|rob_neo_max,registry,0.99,0.99,MATCH,info,,S8b subsample rows,1.0
+main,167.0,3.11 Clinical applications,f:s8|rob_neo_min,registry,0.85,0.851,MATCH,info,,S8b subsample rows,1.0
+main,167.0,3.11 Clinical applications,f:sr|neo|GLMM|max,registry,0.58,0.579,MATCH,info,,subsample rows,1.0
+main,167.0,3.11 Clinical applications,f:sr|neo|GLMM|min,registry,0.51,0.508,MATCH,info,,subsample rows,1.0
+main,167.0,3.11 Clinical applications,f:sr|neo|MMM|max,registry,0.62,0.623,MATCH,info,,subsample rows,1.0
+main,167.0,3.11 Clinical applications,f:sr|neo|MMM|min,registry,0.56,0.561,MATCH,info,model-based SE (S8b refit with latent variable),subsample rows,1.0
+main,167.0,3.11 Clinical applications,x:lus_N10,registry,10,10,MATCH,info,,subsample rows,1.0
+main,167.0,3.11 Clinical applications,x:lus_est_gee,registry,0.38,0.38065,MATCH,info,,cohort refit,1.0
+main,167.0,3.11 Clinical applications,x:lus_est_glmm,registry,0.48,0.475552,MATCH,info,,cohort refit,1.0
+main,167.0,3.11 Clinical applications,x:lus_est_mmm,registry,0.35,0.352151,MATCH,info,,cohort refit,1.0
+main,167.0,3.11 Clinical applications,x:lus_inv_none,registry,22,21.8,MATCH,info,draws of 10 patients with no invasive patient (hypergeometric expectation 26.8%),rev2 subsample rows,1.0
+main,167.0,3.11 Clinical applications,x:lus_se_gee,registry,0.17,0.165498,MATCH,info,,cohort refit,1.0
+main,167.0,3.11 Clinical applications,x:lus_se_glmm,registry,0.12,0.119527,MATCH,info,,cohort refit,1.0
+main,167.0,3.11 Clinical applications,x:lus_se_mmm,registry,0.10,0.10216,MATCH,info,model-based SE; robust 0.167,cohort refit,1.0
+main,169.0,3.11 Clinical applications,f:rr|GEE-FG|se,registry,0.35,0.349925,MATCH,info,,trial refit,1.0
+main,169.0,3.11 Clinical applications,f:rr|GEE-MD|se,registry,0.37,0.367867,MATCH,info,geesmv and fewclust agree to 1e-5,trial refit,1.0
+main,169.0,3.11 Clinical applications,f:rr|GEE|estimate,registry,1.3,1.25552,MATCH,info,,trial refit,1.0
+main,169.0,3.11 Clinical applications,f:rr|GEE|se,registry,0.35,0.346327,MATCH,info,,trial refit,1.0
+main,169.0,3.11 Clinical applications,f:rr|GLMM|estimate,registry,2.1,2.05711,MATCH,info,,trial refit,1.0
+main,169.0,3.11 Clinical applications,f:rr|MMM|estimate,registry,1.3,1.26427,MATCH,info,,trial refit,1.0
+main,169.0,3.11 Clinical applications,f:rr|MMM|se,registry,0.34,0.336799,MATCH,info,,trial refit,1.0
+main,169.0,3.11 Clinical applications,f:ru|GEE-FG|10,registry,23,23.4,MATCH,info,"trial, N=10, of 500 draws (MMM with model SE, S8b)",resp subsample rows,1.0
+main,169.0,3.11 Clinical applications,f:ru|GEE-MD|10,registry,23,23,MATCH,info,"trial, N=10, of 500 draws (MMM with model SE, S8b)",resp subsample rows,1.0
+main,169.0,3.11 Clinical applications,f:ru|GEE|10,registry,47,46.8,MATCH,info,"trial, N=10, of 500 draws (MMM with model SE, S8b)",resp subsample rows,1.0
+main,169.0,3.11 Clinical applications,f:ru|GLMM|10,registry,53,53.4,MATCH,info,"trial, N=10, of 500 draws (MMM with model SE, S8b)",resp subsample rows,1.0
+main,169.0,3.11 Clinical applications,f:ru|MMM|10,registry,50,49.8,MATCH,info,"trial, N=10, of 500 draws (MMM with model SE, S8b)",resp subsample rows,1.0
+main,169.0,3.11 Clinical applications,f:ru|Nmin,registry,10,10,MATCH,info,,subsample rows,1.0
+main,175.0,4.1 The recommendation,f:n9|fc|n_cmp,registry,127,not recomputed,NOT_RECOMPUTABLE,info,"value comes from a fewclust 0.3.1 development check (MMM-package@626393b checks_0.3.1/out/c9b_summary.txt); the repository keeps only the 5-line summary, no per-dataset rows; reproducing it needs regenerating and refitting the datasets with that package version",tables/V6_S9_fewclust_coherence.csv,1.0
+main,175.0,4.1 The recommendation,f:n9|fc|n_coh,registry,4,not recomputed,NOT_RECOMPUTABLE,info,"same source; note the summary file lists n_mismatch = 8, not 4: the 4 is a sub-count defined elsewhere",tables/V6_S9_fewclust_coherence.csv,1.0
+main,177.0,4.1 The recommendation,f:t4|gee_exch_fg|hi_copula,registry,8,8,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,177.0,4.1 The recommendation,f:t4|gee_exch_fg|hi_m67,registry,4,4,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,187.0,4.3 Relation to previous work,cl:C24c|GB:est,registry,5.3,5.26371,MATCH,info,"study MD (geesmv exch), t, pooled main grid",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,187.0,4.3 Relation to previous work,cl:C24c|NAT:est,registry,4.7,4.72902,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,187.0,4.3 Relation to previous work,f:cv|kc10_GB|est,registry,12,12.2653,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,187.0,4.3 Relation to previous work,f:cv|kc10_NAT|est,registry,9.4,9.383,MATCH,info,"fewclust KC exch, t, N=10, main grid; geesmv KC would give 4.1",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,187.0,4.3 Relation to previous work,f:t4|gee_exch_md|hi_copula,registry,28,28,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,187.0,4.3 Relation to previous work,f:t4|gee_exch_md|hi_m67,registry,18,18,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,191.0,4.4 The clinical applications and the fourth mechanism,f:x|cop_glmm_ser_max,registry,0.81,0.807,MATCH,info,,copula study rows,1.0
+main,191.0,4.4 The clinical applications and the fourth mechanism,f:x|cop_glmm_ser_min,registry,0.64,0.643,MATCH,info,"sqrt(mean SE^2)/SD of estimates, H0, M1-M2, mean over N>=85 by (scen,T); with mean SE instead of RMS SE 0.59-0.80",copula study rows,1.0
+main,195.0,4.5 Limitations,f:s9|s37|fg_pfail_boot,registry,99,99.4,MATCH,info,,s10t_boot.R,1.0
+main,195.0,4.5 Limitations,f:s9|s37|mmm_pfail_boot,registry,82,83.8,MISMATCH,minor,"independent block bootstrap (B=2000, seed 20261015, M1c joint with M1): 83.8% of resamples with >=1 point clearly above 7.5%; binomial noise of this share ~0.8 points, so 82 vs 84 is beyond resampling noise of a single run but the statement is qualitative",s10t_boot.R,1.0
+main,195.0,4.5 Limitations,f:x|null_exc_m67,registry,0.26,0.259682,MATCH,info,M6-M7 marginal null computed here by GH quadrature (not in the truth file); with the mean model SE 0.58 (KC geesmv) or 0.30 (MMM),cov rows + GH truth,1.0
+main,195.0,4.5 Limitations,f:x|null_exc_main,registry,0.029,0.0291994,MATCH,info,2-sided normal test with SE = empirical SD of the estimates and the GH marginal null (definition not stated); with the mean model SE 0.067,cov rows + GH truth,1.0
+main,195.0,4.5 Limitations,x:m6_gby,registry,0.1,0.1,MATCH,info,,s6b_ns_common.R NS_SCEN,2.0
+main,258.0,Tables and figures,x:n_dp_ns_scen,registry,96,96,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,264.0,Tables and figures,f:n9|ndp|GenBinaryY|M1-M5,registry,480,480,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,264.0,Tables and figures,f:n9|ndp|GenBinaryY|M1c,registry,24,24,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,264.0,Tables and figures,f:n9|ndp|GenBinaryY|M6-M7,registry,192,192,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,265.0,Tables and figures,f:n9|ndp|GLMM-native|M1-M5,registry,480,480,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,265.0,Tables and figures,f:n9|ndp|GLMM-native|M1c,registry,24,24,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,265.0,Tables and figures,f:n9|ndp|GLMM-native|M6-M7,registry,192,192,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,266.0,Tables and figures,f:n9|ndp|GLMM-AR1|M1-M5,registry,480,480,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,266.0,Tables and figures,f:n9|ndp|GLMM-AR1|M1c,registry,24,24,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,275.0,Tables and figures,x:par_GenBinaryY_2_H1_beta,registry,"-2, 0.1, 0.2, 0.01, 0.2","-2, 0.1, 0.2, 0.01, 0.2",MATCH,info,,generation_model2.R,1.0
+main,277.0,Tables and figures,x:par_GenBinaryY_4_H1_beta,registry,"-2, 0.2, 0.2, 0.05","-2, 0.2, 0.2, 0.05",MATCH,info,,generation_model4.R,1.0
+main,278.0,Tables and figures,x:par_GenBinaryY_5_H1_beta,registry,"-2, 0.1, 0.2, 0.05, 0.2","-2, 0.1, 0.2, 0.05, 0.2",MATCH,info,,generation_model5.R,1.0
+main,280.0,Tables and figures,x:m6_nat,registry,0.01,0.01,MATCH,info,,NS_SCEN,1.0
+main,280.0,Tables and figures,x:m7_gby,registry,0.25,0.25,MATCH,info,,NS_SCEN,1.0
+main,280.0,Tables and figures,x:m7_nat,registry,0.04,0.04,MATCH,info,,NS_SCEN,1.0
+main,284.0,Tables and figures,x:t2_mcse_rate,registry,0.047,0.0455905,MATCH,info,bound 'at most 0.047' holds: max bootstrap MCSE 0.046 over 8 methods x 3 mechanisms (independent bootstrap),s10t_boot.R,1.0
+main,284.0,Tables and figures,x:t2_mcse_wc,registry,0.32,0.311555,MATCH,info,bound 'at most 0.32' holds (0.31),s10t_boot.R,1.0
+main,297.0,Tables and figures,x:t3_mcse,registry,0.13,0.130871,MATCH,info,"H0, three study mechanisms",s10t_boot.R,1.0
+main,312.0,Tables and figures,f:s9|cap|t4|pu,registry,0.40,0.40069,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,312.0,Tables and figures,f:s9|cap|t4|pu_small,registry,1.4,1.40863,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,312.0,Tables and figures,f:s9|cap|t4|upow,registry,1.0,1.03389,MATCH,info,"mean over points of binomial SE, max over strategies",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,312.0,Tables and figures,f:t4|gee_ar1_fg|n_N10,registry,156,156,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,312.0,Tables and figures,f:t4|gee_ar1_fg|n_small,registry,216,216,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,312.0,Tables and figures,x:min_obs_dp,registry,20,20,MATCH,info,MIN_OBS in py/s6 and py/s7f figure scripts; n>=20 in the flags,code,2.0
+main,312.0,Tables and figures,x:ndp_new,registry,384,384,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,312.0,Tables and figures,x:ndp_study,registry,"1,512",1512,MATCH,info,main grid + M1c,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,333.0,Tables and figures,f:hh|glmer_lrt|all|all|n_ok,registry,"2,094",2094,MATCH,info,,per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,337.0,Tables and figures,f:s9|cap|fig2|mcse_max,registry,6.4,6.3603,MATCH,info,"shrinkage GLM, GLMM-AR1 M2 N=10 T=2, n=47",per-replicate rows -> s10t_dp.R -> dp_agg.csv.gz,1.0
+main,337.0,Tables and figures,x:nl_trunc,registry,30,30,MATCH,info,"ax.set_ylim(0, 30) in py/s7f/s7f_figures.py (registry reads py/s6/s6_figures.py, same value)",code,1.0
+main,,,lit:2.2_m1c_grid,literal/definition,M1c: N up to 45 and T up to 6,"N {10,15,20,25,35,45}, T {2,3,4,6}",TRUE,info,Section 2.2,rendered text + recompute,
+main,,,lit:2.2_m4,literal/definition,"'M4 uses a smaller interaction (0.05)'; Table 2 'As M1 with a smaller interaction (-2, 0.2, 0.2, 0.05)'",M4 also doubles the time coefficient (0.2 vs 0.1) in all four generators,DEFINITION_DIVERGENCE,minor,Section 2.2 and Table 2(b): 'As M1' is not exact; the listed coefficients are right.,rendered text + recompute,
+main,,,lit:2.2_zeger_m1c,literal/definition,GLMM-native conditional coefficients = marginal x 1.16,M1c on GLMM-native uses factor 1.492 (variance 3.54),DEFINITION_DIVERGENCE,minor,Section 2.2 / Table 2 caption: the 1.16 holds for D11 = 1 only; M1c is not mentioned as an exception.,rendered text + recompute,
+main,,,lit:2.4_check_refit,literal/definition,'Such a fit was replaced by the fit without the time trend ... and kept if that refit failed',"refit used whenever it returns finite estimate and SE, also when nlm did not report convergence for the refit (codes 3-5): 216,199 of 1,139,699 replacements on the main grid (19.0%), 47,440 of 326,987 in M6-M7, 76,484 of 415,941 on Copula-AR1",DEFINITION_DIVERGENCE,major,"Section 2.4 (and D-32): a fit is 'at the boundary' when nlm does not report convergence, but a replacement refit with the same failure is accepted. Quantified in tables/V7_S10_testo_cc_variants.csv: (ii) refit only if it converges, else original fit -> 4 points clearly above 7.5% (3 main grid, 1 Copula-AR1, all M5 with T 2-3) and the rule selects no strategy; (iii) refit only if it converges, else no result -> 0 flags, usable 84.0% (vs 90.9%), 27.6% at T<=3,N<=25 (vs 39.2%), rule still selects the marginalized model.",rendered text + recompute,
+main,,,lit:2.5_const_den,literal/definition,"9,711 constant datasets 'among 4,752,000'","9,711 among estimable designs; 9,847 among all generated (136 more have a degenerate design)",TRUE,info,Section 2.5: denominator mixes the two sets; harmless.,rendered text + recompute,
+main,,,lit:2.5_mad_def,literal/definition,MAD = mean over the 16 cluster counts of the replicate-weighted rate; only the direct comparison averages over design points,"the T-specific MADs of Section 3.1 (1.5, 0.71, 5.6, 11, 2.5) and of Section 3.2 (2.8 -> 0.67) are means over design points; with the stated definition 1.29, 0.43, 5.16, 10.4, 2.52 and 2.6 -> 0.45",DEFINITION_DIVERGENCE,major,Sections 2.5 vs 3.1-3.2 (Table S4): undeclared change of definition; the qualitative statements hold under both.,rendered text + recompute,
+main,,,lit:2.5_margins,literal/definition,"margins 1 point (rates over cells), 2.5 (cell), 2 (power), 2.5 (usable)","MARGIN in the direct-comparison code: mad 1, pu 2.5, upow 2",TRUE,info,Section 2.5,rendered text + recompute,
+main,,,lit:2.5_table4_den,literal/definition,denominator of Table 4 = every replicate with an estimable design,"Table 4 cells reproduce (17/20 exactly) only if degenerate-design replicates stay in the denominator for GenBinaryY and GLMM-native (11/20 with the stated denominator; differences up to 0.2 points). Section 3.3 values are means over design points of H0 shares, not pooled shares",DEFINITION_DIVERGENCE,minor,"Sections 2.5, 3.3, Table 4. Same residue of the denominator bug already fixed elsewhere (DEC-T2).",rendered text + recompute,
+main,,,lit:3.10_grid,literal/definition,"AGQ refit grid N {10,25,55,145} x T {2,4,10} in M1-M2, N {10,25,45} x T {2,4,6} in M1c",same in the S7g records (123 points),TRUE,info,Section 3.10,rendered text + recompute,
+main,,,lit:3.1_about_one,literal/definition,worst case smaller than next method by about one point on the random-effects mechanisms,"1.32 (GLMM-native), 1.28 (GLMM-AR1); next method = LRT",TRUE,info,Section 3.1,rendered text + recompute,
+main,,,lit:3.1_five_marginal,literal/definition,five marginal methods departed by 1.5 to 2.5 points at two occasions,"1.52 (MMM), 2.41 (FG), 2.44 (KC fewclust), 2.53 (MD), 2.60 (uncorrected GEE)",FALSE,minor,Section 3.1: the bounds are registry ids but the upper end is the MD value; the uncorrected GEE (one of the five marginal methods of Table 3) departs by 2.6 (mean over design points). Write '1.5 to 2.6'.,rendered text + recompute,
+main,,,lit:3.1_shrink_conditional,literal/definition,"'The conditional methods departed by 5.6 (mixed model, Wald) to 11 points (shrinkage GLM)'",shrinkage GLM is a marginal estimator in Section 2.3,DEFINITION_DIVERGENCE,minor,"Section 3.1 classes the shrinkage GLM as conditional, Section 2.3 says its estimand is marginal. Numbers 5.6 and 11 reproduce (per design point).",rendered text + recompute,
+main,,,lit:3.4_all_ten,literal/definition,"FG exch/ind: 15 and 5 points, 3 and 3 in the main grid, all with ten clusters","main-grid flags all at N = 10; the other flags include N 15-25 (M7, Copula-AR1)",TRUE,minor,Section 3.4: 'all' is true only for the main-grid points; wording ambiguous.,rendered text + recompute,
+main,,,lit:3.4_fewer_half,literal/definition,"GEE strategy and MMM usable in fewer than half the datasets at T<=3, N<=25",43.7% and 39.2%,TRUE,info,Section 3.4 / 4.1 / Conclusions,rendered text + recompute,
+main,,,lit:3.4_two_points,literal/definition,"both GEE-strategy flags in M2, N=10, T=2, on GLMM-AR1 and GLMM-native","12/61 (GLMM-AR1), 11/63 (GLMM-native); MMM 0/35, 0/38; usable 61 and 63 of 971",TRUE,info,Section 3.4 / 4.1 ('both answered rarely' holds: about 6% usable).,rendered text + recompute,
+main,,,lit:3.6_margin,literal/definition,"copula minus study mechanisms within the one-point margin, MMM and GEE strategy","MMM +0.71 (MCSE 0.04), GEE strategy +0.23 (MCSE 0.04)",TRUE,info,Section 3.6 (block bootstrap redone),rendered text + recompute,
+main,,,lit:3.7_flip_guard,literal/definition,the sign-flip test returned no answer when the reduced model diverged or every score was < 1e-6,"the rule exists only in the S7d2 rerun (p0_guard); the S7d run stored p-values without it, finite for 9,709 of the 9,711 constant-outcome datasets. The paper's sign-flip numbers use the guarded version and reproduce; with the unguarded p the usable share would be 99.8% (97.6% in small designs)",DEFINITION_DIVERGENCE,info,Section 2.4 / 3.7: consistent in the paper; risk only for any table built from the S7d p_flip.,rendered text + recompute,
+main,,,lit:4.1_half_point,literal/definition,working correlation changed FG level by less than half a point on average,-0.29 and -0.31,TRUE,info,Section 4.1,rendered text + recompute,
+main,,,lit:4.2_nlm,literal/definition,in M6-M7 with two or three occasions the more frequent reason was that nlm did not converge,nlm code not 1-2 in 69-75% of boundary declarations at T 2-3 (H0),TRUE,info,Section 4.2,rendered text + recompute,
+main,,,lit:4.4_seven,literal/definition,trial: seven mean-model coefficients,7,TRUE,info,Section 4.4 (refit),rendered text + recompute,
+main,,,lit:abs_agq,literal/definition,with adaptive quadrature the Wald test is anticonservative only with ten occasions,"8 flags, all T = 10",TRUE,info,Abstract / Conclusions,rendered text + recompute,
+main,,,lit:abs_ranges,literal/definition,"10-145 clusters, 2-10 occasions","N 10..145, T 2..10 in the replicate records",TRUE,info,"Abstract, literal",rendered text + recompute,

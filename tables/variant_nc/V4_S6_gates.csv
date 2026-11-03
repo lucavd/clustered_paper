@@ -1,0 +1,5 @@
+gate,pass,result
+G2a,TRUE,"2001 x 560 values, max |diff| 0, NA mismatches 0"
+G2b,TRUE,"93 values, max |diff| over est, se, lo, hi 4.62e-14"
+G2c,TRUE,146 of 146 classes identical
+G5,TRUE,"71 of 71 inventory rows with an outcome or a reason; applicable sub-claims 130, of which 0 below 1,990 finite replicates (all with the reason recorded)"

@@ -1,0 +1,2 @@
+chunks,chunks_expected,recs,recs_unique,gen_errors,gen_errors_nondegenerate,gee3_all,study4_all,study4_missing,study4_missing_nondeg,md5_unchanged,pass
+9600,9600,960000,960000,0,0,TRUE,FALSE,344,0,TRUE,FALSE

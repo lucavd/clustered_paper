@@ -1,0 +1,119 @@
+---
+title: "S2: diagnostica sui chunk esistenti, senza nuove simulazioni"
+subtitle: "Roadmap Morris 2019, ramo morris-v4"
+date: 2026-10-16
+format:
+  html:
+    embed-resources: true
+    toc: true
+lang: it
+---
+
+## In breve (TL;DR) {.unnumbered}
+
+::: {.callout-note appearance="simple"}
+**Domanda.** Senza lanciare nuove simulazioni: i 28.800 chunk esistenti nascondono problemi che possono cambiare le conclusioni?
+
+**Cosa abbiamo fatto.** Riletti tutti i chunk; contati replicati utilizzabili e mancanti; ricalcolati i valori veri; confrontato il modello di simulazione con la coorte LUS reale; provata in piccolo la correzione di GenBinaryY.
+
+**Cosa abbiamo trovato.**
+
+- **Replicati mancanti.** Sono 247 per arm e hanno tutti un disegno in cui l'effetto non si puo' stimare (un solo gruppo di trattamento, oppure un gruppo mai osservato dopo il tempo 0); 219 su 247 sono a N = 10. Non sono fallimenti dei metodi: si tolgono dal denominatore e lo si dichiara (D-11).
+- **Fit con warning.** Escluderli abbassa l'errore di I tipo del glmer di 2,5 punti in media, quindi la selezione dipende dall'esito. Primaria: warning tenuti, come nel v3; sensibilita': warning esclusi (D-04).
+- **Valori veri.** In GLMM-native il valore vero marginale cala con T (in M1 da 0,2018 a 0,1907), mentre il v3 usava 0,200 fisso; sotto H0 non e' esattamente 0 (fino a -0,003). La tabella del v3 per GLMM-AR1 e' sbagliata in M3-M5 e va sostituita (D-12).
+- **Correzione GenBinaryY (pilota).** Non cambia i risultati in modo rilevabile (nessuna differenza oltre 3 MCSE); si applica comunque perche' rende il confronto pulito.
+- **Coorte reale.** Prevalenza 0,595 contro 0,119 del modello simulato, ICC circa 0,52 contro 0,23: la simulazione e' lontana dai dati veri. Aggiunto uno scenario ancorato alla coorte, M1c (D-13).
+
+**Attese non superate.** 5 (Q2.1, Q2.2, Q3.5a, Q3.5b, Q4.4), ognuna spiegata nella sezione 3.
+
+**Cosa cambia per il paper.** Denominatori, valori veri e trattamento dei warning; in piu' il nuovo scenario M1c.
+:::
+
+## 1. Pre-registrazione
+
+Attese Q0-Q7 scritte in `docs/sessions/2026-10-16_S2.md` e committate **prima** di qualsiasi calcolo dello step: commit `aa1c4c0`, 2026-10-16 09:28:04 +0200. Nello stesso commit: D-10b (confronto con la coorte per analoghi, scelta del PI in chat) e protocollo v1.2 (verita' marginale GLMM-native per quadratura esatta). Requisiti Morris toccati: B2, C2, E2, E3, F3 (e B6 tramite D-10).
+
+Riassunto delle attese, con la tolleranza: colonne "attesa" e "tolleranza" della Tabella E in sez. 3. Il testo completo e' nella nota di sessione e non e' stato modificato dopo i risultati.
+
+## 2. Esecuzione
+
+Tutto su lesexp-server, R 4.6.1, `Rscript --vanilla`, libreria `renv/library/linux-ubuntu-noble/R-4.6`, RNGkind `L'Ecuyer-CMRG, Inversion, Rejection` impostato esplicitamente prima di ogni `set.seed()` (D-07). Script in `R/s2/`, md5 in `reports/morris/S2_logs/S2_outputs_md5.txt`; log filtrati in `reports/morris/S2_logs/`.
+
+| script | parte | input | output principali |
+|---|---|---|---|
+| `s2_load.R` | lettura unica dei 28.800 chunk (sola lettura), righe `time:trt` e di fallimento | `results_full/` | `results_v4/S2/rows_timetrt.rds` (22.632.942 righe, md5 `092a5ad6...`) |
+| `s2_ab_usable_missing.R` | (a) Q1, (b) Q2.1-Q2.2 | idem, `tables/O_level_all.csv`, `tables/O_coverage_all.csv` | `V4_S2_usable_by_cell.csv`, `V4_S2_missing_ids.csv`, `V4_S2_unusable_reasons.csv` |
+| `s2_b_rerun_missing.R`, `s2_b_check_partial.R`, `s2_b_degenerate.R` | (b) Q2.2-Q2.3 e verifica di D-11 | codice eseguito `.rundir/` | `V4_S2_missing_rerun.csv`, `V4_S2_partial_rerun.csv`, `V4_S2_degenerate_designs.csv` |
+| `s2_c_truth.R` | (c) Q3 | `V4_dgm_parameters.csv`, `.rundir/` | `V4_S2_truth_values.csv`, `V4_S2_truth_glmmnative.csv`, `V4_S2_truth_ar1_conditional.csv` |
+| `s2_d_series.R` | (d) Q4 | seme e codice di disegno | `V4_S2_series_length.csv`, `V4_S2_series_length_check.csv` |
+| `s2_e_corr.R` | (e) Q5 | `rows_timetrt.rds` | `V4_S2_corr_arms.csv`, `V4_S2_corr_mechanisms.csv` |
+| `s2_f_pilot.R`, `s2_f_parity_recheck.R`, `s2_f_pilot_analysis.R` | (f) Q6 | `.rundir/`, copie in `R/s2/pilot_gen/` | `results_v4/pilot_S2/` (120 chunk), `V4_S2_pilot_*.csv` |
+| `s2_g_lus.R` | (g) Q7 | `ARTICOLO 2026/LURID_bis/lurid_long.rds` | `V4_S2_lus_vs_dgm.csv` (solo aggregati) |
+| `s2_consolidate.R`, `s2_tables.R` | riepiloghi e tabelle di questo report | tabelle sopra | `V4_S2_usable_pooled.csv`, `V4_S2_typeI_U0_vs_U1_*.csv`, `reports/morris/S2_results.md` |
+
+Durate: lettura dei chunk 29,9 s; pilota 120 chunk in 18,2 min su 40 processi; gli altri script meno di 3 min ciascuno.
+
+**Correzioni durante lo step.** Tutte riguardano strumenti di controllo o di formattazione; nessuna ha cambiato un'attesa o la definizione di una misura.
+
+1. `s2_d_series.R`, primo run: la controprova Q4.4 si e' fermata su un errore di generazione AR1 (`singular matrix 'a' in solve`). Aggiunto `tryCatch`, il caso viene registrato come non valutabile.
+2. `s2_c_truth.R`, primo run: `cbind(1)` produce una matrice 1 x 1 invece di n x 1, quindi la varianza era NA dalla seconda riga in poi. Sostituito con `matrix(1, nrow(X), 1)`.
+3. `s2_e_corr.R` e `s2_b_check_partial.R`: un tipo NA incoerente e un nome di colonna duplicato in `dcast`. Nessun numero prodotto prima della correzione.
+4. `s2_g_lus.R`: il profilo di lme4 (`confint(method = "profile")`) fallisce su tutti e tre i modelli (devianza piu' bassa trovata in A, componenti al bordo in B e C). Ho scritto un profilo sulla funzione di devianza di `glmer` (`devFunOnly = TRUE`, L-BFGS-B con SD >= 0). Due correzioni successive: `deviance()` di un GLMM restituisce la devianza condizionale (2020,0 contro -2 logLik = 2552,35 nel modello A), quindi va usato -2 logLik; i passi PIRLS non convergenti vengono penalizzati invece di interrompere il calcolo. Controllo: guadagno di devianza rispetto al fit di glmer = 9 x 10^-13 nel modello A.
+5. **Q6.1, primo controllo di parita' (0/12): strumento difettoso.** `identical()` su una formula confronta anche l'environment, quindi segnalava `mean.formula`, `lv.formula` e `t.formula` come diverse anche fra l'H0 *originale* e H1, che nel sorgente sono uguali. Il secondo controllo confronta le formule con `deparse()`; la sua controprova (l'H0 originale deve differire da H1 esattamente come in S1 P2) passa 12/12. L'esito del primo controllo resta in `S2_logs/S2_f_pilot_run1.log`.
+6. `s2_tables.R`: estrazione dei valori dai log e caratteri `|` nelle celle; corretti prima della lettura del report.
+
+Il server e' rimasto irraggiungibile per circa un'ora durante il pilota (VPN); il job ha completato i 120 chunk senza interruzioni.
+
+## 3. Esito
+
+{{< include S2_results.md >}}
+
+### Come leggere le tabelle
+
+- **Tabella E.** Cosa guardare: la colonna "superato". *Segnale d'errore*: un "si" in una riga la cui colonna "osservato" contraddice la tolleranza; le righe "no" sono discusse sotto, una per una.
+- **A1-A2 (per D-04).** Cosa guardare: lo scarto fra U0 e U1 per glmer, shrink, mmm e LRT, e in A2 il segno della differenza. *Segnale d'errore*: una differenza di I tipo non nulla per le GEE corrette, che non hanno warning (A1: quota quasi 0).
+- **B1-B2.** Cosa guardare: la concentrazione a N = 10 e T = 2. *Segnale d'errore*: replicati mancanti a N grande o con un disegno non degenere.
+- **C1-C3.** Cosa guardare: la deriva di C1 con T e la variabilita' fra replicati di C2. *Segnale d'errore*: un valore H0 di C1 lontano da 0 oltre l'ordine di 10^-3.
+- **E1-E2.** Cosa guardare: E1 alta (stesso disegno ed estrazioni fra arm), E2 vicina a 0. *Segnale d'errore*: E2 vicina a E1, che indicherebbe dataset quasi duplicati fra meccanismi.
+- **F1.** Cosa guardare: la colonna "entro". *Segnale d'errore*: una differenza sistematica dello stesso segno in tutte le celle M3-M4.
+- **G1-G2.** Cosa guardare: la colonna DGM accanto all'IC della coorte.
+
+### Attese non superate o superate solo in parte
+
+- **Q2.1 (no alla lettera).** Contando come "generati" i sim_id con almeno una riga, i design point con meno di 1.000 replicati sono 44, tutti GLMM-AR1, minimo 971. Con la definizione del manoscritto (almeno una riga `time:trt`) diventano 132, 44 per meccanismo, minimo 971: il numero del v3 si riproduce, ma la sua causa non e' quella supposta nell'audit E3. I replicati persi sono 247 chiavi (scenario, N, T, sim_id) per arm, identiche nei tre meccanismi (CRN) e nei due arm. Il loro disegno e' degenere: un solo arm di trattamento (55) oppure un arm mai osservato oltre il tempo 0 (192); 219 su 247 sono a N = 10 (Tabella B2). Su tutte le 480.000 chiavi i disegni degeneri sono esattamente queste 247: 247 in comune, 0 degeneri non persi, 0 persi non degeneri (`V4_S2_degenerate_designs.csv`). In GLMM-AR1 la calibrazione di beta_c fallisce (`qr.solve` su una matrice singolare) e il replicato non esiste; in GenBinaryY e GLMM-native il dataset si genera, ma nessun metodo restituisce `time:trt`.
+- **Q2.2 (no).** 671 sim_id di GenBinaryY e GLMM-native non hanno una riga `time:trt` (ne' di fallimento) per mmm o glmer. Tutti e 671 sono fra le chiavi degeneri di Q2.1. Quelle tecniche hanno restituito righe per gli altri termini: `time:trt` e' stato eliminato dalla matrice di disegno a rango ridotto. Rieseguite senza il `tryCatch` esterno di `run_chunk`, 0 errori su 1.042 esecuzioni, quindi non ci sono fit persi in silenzio. Si tratta di una stima non definita, non di un fallimento del metodo.
+- **Q3.5a (no).** La verita' condizionale di GLMM-AR1 dipende dal replicato: sd fra 50 replicati fino a 0,0048, al massimo l'1,9% del valore sotto H1. E' costante solo dove il disegno e' saturo (T = 2 in M1, M3, M4: 24 combinazioni su 240). Come pre-registrato, la si tabula per replicato; in S4 va ricalcolata per ogni replicato rigenerando solo il disegno.
+- **Q3.5b (no).** `tables/F_truth_ar1.csv` si riproduce esattamente in M1-M2 (scarto 5 x 10^-16), ma non in M3-M5 (fino a 8,6 x 10^-3). Lo script che l'ha prodotto (`R/postrun/truth_ar1_conditional.R`) usa la specifica casuale precedente al ridisegno: `~ 1 + age` in M3-M4, `~ 1 + age + sex` con D[3,3] = 0,01 in M5 e modello medio di M5 senza `dose`. Il codice eseguito usa `~ 1 + time` e `~ 1 + time + dose`. La tabella e' quindi superata in M3-M5 (D-12).
+- **Q4.4 (no alla lettera).** 148/148 casi valutabili identici; 2 casi su 150 non valutabili perche' la generazione AR1 fallisce (M1 e M5, N = 10, T = 2, i = 2 e i = 5: le stesse chiavi degeneri).
+- **Q6.1.** Superata al secondo controllo, dopo la correzione dello strumento (sez. 2, punto 5).
+- **Q7.2.** Criterio applicato: la prevalenza e la varianza dell'intercetta del DGM sono **fuori** dall'IC 95% della coorte (scarto dichiarato). La varianza fra pazienti nel modello con il livello paziente-timepoint (0 [0; 2,32]) e' coerente con 1, ma e' quella al bordo; la varianza al livello paziente-timepoint (3,78 [1,67; 5,14]) non lo e'.
+
+### Rilievi nuovi
+
+1. **Verita' marginale sotto H0 in GLMM-native diversa da 0.** Con beta_c di `time:trt` = 0, il limite marginale della GEE di indipendenza vale da -0,0011 a -0,0030 (Tabella C1). La non linearita' dell'attenuazione introduce una piccola interazione marginale. L'ordine di grandezza e' trascurabile rispetto agli SE, ma va dichiarato: per i metodi marginali su GLMM-native l'H0 e' nulla solo in approssimazione.
+2. **Verita' marginale sotto H1 in GLMM-native.** Deriva con T: da 0,2018 a 0,1907 in M1-M2, da 0,2007 (M3) e 0,2006 (M5) a 0,1828, da 0,0475 a 0,0436 in M4. Il v3 usava 0,200 e 0,050 fissi; la versione pesata col disegno realizzato differisce da quella a griglia bilanciata al massimo di 0,00043.
+3. **Correlazione fra meccanismi quasi nulla** (mediana da 0,001 a 0,023, Tabella E2), mentre fra arm e' alta (mediana da 0,770 a 0,929, Tabella E1). Il seme comune lega fortemente H0 e H1, debolmente GLMM-native e GLMM-AR1 e quasi per nulla GenBinaryY con gli altri. Per S5: il bootstrap per blocchi conta soprattutto per i confronti che combinano H0 e H1 (potenza size-adjusted). La correlazione fra celle con N o T diversi non e' stata misurata (non pre-registrata).
+4. **Pilota D-01.** Rigenerando l'H0 con sigma e gamma di H1, in 12 celle e 1.000 replicati nessuna differenza appaiata supera 3 MCSE (|z| massimo 2,75, M5). Il disegno e' identico e i valori binari coincidono nel 98,95-99,98% delle osservazioni. Su questa griglia la correzione non cambia i risultati in modo rilevabile; resta decisa (D-01) per la parita' del confronto.
+5. **Coorte e DGM.** La coorte ha prevalenza 0,595 contro 0,119 (0,141-0,279 come marginale realizzata), ICC latente circa 0,52-0,53 contro 0,233, e la dipendenza al livello paziente-timepoint, non paziente. I contrasti marginali della coorte sulla scala logit vanno da 0,08 a 2,1 in valore assoluto (MMM e GEE), fino a 2,8 quelli condizionali del GLMM (Tabella G2); l'effetto per occasione 0,2 non ha un analogo diretto (D-10b).
+
+### Decisioni prese in chiusura (PI, in chat, 2026-10-16)
+
+- **D-04 (a)**: primaria con U0 (warning ammessi, come v3); sensibilita' con U1 (esclusi tutti i warning). Motivo: in A2 l'esclusione abbassa l'errore di I tipo del glmer di 2,5 punti in media, con |diff| > 2 MCSE in 693 celle su 1.137. La selezione dipende dall'esito.
+- **D-11**: denominatore = replicati con disegno stimabile (entrambi gli arm osservati oltre il tempo 0); le 247 chiavi per arm si dichiarano come condizionamento del DGM, uguale nei tre meccanismi.
+- **D-13**: scenario ancorato alla coorte (M1c) in S3: modello di M1, prevalenza marginale 0,5945 e varianza latente dell'intercetta 3,545 dalla coorte, tre meccanismi, N da 10 a 45, T da 2 a 6, 1.440 chunk, seme di M1. Parametri dei generatori da pre-registrare all'apertura di S3. Non adottata la replica della struttura della coorte (cambierebbe l'estimando; la copre il plasmode).
+- **D-12 (tecnica)**: valori veri v4 da `tables/V4_S2_truth_values.csv` e `V4_S2_truth_glmmnative.csv`; `F_truth_ar1.csv` (M3-M5) e `F_truth_glmmnative.csv` (griglia bilanciata) sono superati; in S4 la verita' condizionale AR1 si ricalcola per replicato.
+
+## 4. Controprova
+
+- **Integrita'**: `md5sum -c` su `results_full/` 28.800/28.800 OK prima (09:28:35) e dopo (10:58:57). Un fallimento avrebbe significato che lo step ha toccato i chunk grezzi.
+- **Fedelta' della lettura** (Q1.1): i conteggi usabili ricalcolati riproducono senza scarti le colonne `n` di `O_level_all.csv` (11.163 righe) e `O_coverage_all.csv` (9.726). Uno scarto avrebbe smentito che S2 legge gli stessi dati del v3.
+- **Riproduzione dei mancanti** (Q2.3): 494/494 rieseguiti riproducono lo stesso errore, 494/494 vicini si generano. Se i vicini fallissero, la causa non sarebbe il disegno.
+- **Biiezione di D-11**: 247 disegni degeneri e 247 chiavi perse, nessuna in eccesso ne' in difetto.
+- **Banco del pilota** (Q6.2): con il generatore H0 originale riproduce bit per bit 60/60 replicati di `results_full/`. Senza questa prova le differenze del pilota non sarebbero attribuibili alla sola correzione D-01.
+- **Quadratura** (Q3.3): riproduce `F_truth_glmmnative.csv` entro 1,3 x 10^-15. Se fallisse, la nuova verita' marginale non sarebbe confrontabile con la precedente.
+
+## Verdetto
+
+**Chiuso**, con le attese non superate dichiarate e motivate sopra (Q2.1, Q2.2, Q3.5a, Q3.5b, Q4.4) e le decisioni D-04, D-11, D-12, D-13 registrate. Riserve rimandate per roadmap a step futuri: pre-registrazione e calibrazione dello scenario M1c (S3); ricalcolo per replicato della verita' condizionale AR1 e applicazione di D-04, D-11 e D-12 (S4); bootstrap per blocchi (S5); dichiarazioni nel testo (S7).
+
+Requisiti Morris aggiornati in `docs/audit/MORRIS2019_conformita.csv`: B2, C2, E2, E3, F3 (e B6).

@@ -1,0 +1,131 @@
+dgp,model,label,ntime,truth_marginal,truth_marginal_balanced,truth_conditional,conditional_note
+GenBinaryY,1,mmlb,,0.2,0.2,,not a DGM parameter (GLMM target approximate)
+GenBinaryY,1,manual,,0,0,,not a DGM parameter (GLMM target approximate)
+GenBinaryY,2,mmlb,,0.2,0.2,,not a DGM parameter (GLMM target approximate)
+GenBinaryY,2,manual,,0,0,,not a DGM parameter (GLMM target approximate)
+GenBinaryY,3,mmlb,,0.2,0.2,,not a DGM parameter (GLMM target approximate)
+GenBinaryY,3,manual,,0,0,,not a DGM parameter (GLMM target approximate)
+GenBinaryY,4,mmlb,,0.05,0.05,,not a DGM parameter (GLMM target approximate)
+GenBinaryY,4,manual,,0,0,,not a DGM parameter (GLMM target approximate)
+GenBinaryY,5,mmlb,,0.2,0.2,,not a DGM parameter (GLMM target approximate)
+GenBinaryY,5,manual,,0,0,,not a DGM parameter (GLMM target approximate)
+GLMM-native,1,mmlb,2,0.201789406956594,0.201789406956593,0.232,fixed constant
+GLMM-native,1,mmlb,3,0.199455363127681,0.199316527898666,0.232,fixed constant
+GLMM-native,1,mmlb,4,0.197227472124961,0.197020217153588,0.232,fixed constant
+GLMM-native,1,mmlb,6,0.193551452181124,0.193285879105259,0.232,fixed constant
+GLMM-native,1,mmlb,8,0.191318152186398,0.1910757135867,0.232,fixed constant
+GLMM-native,1,mmlb,10,0.190663290646573,0.190515993056688,0.232,fixed constant
+GLMM-native,1,manual,2,-0.00124858895330602,-0.00124858895330599,0,fixed constant
+GLMM-native,1,manual,3,-0.00124183132694975,-0.00124146023494984,0,fixed constant
+GLMM-native,1,manual,4,-0.0012324539303088,-0.00123168044644094,0,fixed constant
+GLMM-native,1,manual,6,-0.00120576272398951,-0.00120394534224193,0,fixed constant
+GLMM-native,1,manual,8,-0.00116837938268988,-0.00116516933311121,0,fixed constant
+GLMM-native,1,manual,10,-0.00112046946956841,-0.00111552731602877,0,fixed constant
+GLMM-native,2,mmlb,2,0.201788894273579,0.201788886195496,0.232,fixed constant
+GLMM-native,2,mmlb,3,0.19945512123473,0.199316292581247,0.232,fixed constant
+GLMM-native,2,mmlb,4,0.197227516357905,0.197020275932387,0.232,fixed constant
+GLMM-native,2,mmlb,6,0.193552016169682,0.193286465791068,0.232,fixed constant
+GLMM-native,2,mmlb,8,0.191319047977741,0.191076630414488,0.232,fixed constant
+GLMM-native,2,mmlb,10,0.19066427404845,0.190516985941085,0.232,fixed constant
+GLMM-native,2,manual,2,-0.00124846908362195,-0.00124846928820132,0,fixed constant
+GLMM-native,2,manual,3,-0.00124170707832949,-0.00124133591143426,0,fixed constant
+GLMM-native,2,manual,4,-0.00123232559714771,-0.00123155193395751,0,fixed constant
+GLMM-native,2,manual,6,-0.00120562772631123,-0.0012038101115503,0,fixed constant
+GLMM-native,2,manual,8,-0.00116824016828589,-0.00116502995713165,0,fixed constant
+GLMM-native,2,manual,10,-0.00112032882577836,-0.0011153866868133,0,fixed constant
+GLMM-native,3,mmlb,2,0.200669651297475,0.200669651297475,0.232,fixed constant
+GLMM-native,3,mmlb,3,0.197651077762538,0.197471485775724,0.232,fixed constant
+GLMM-native,3,mmlb,4,0.194656002681734,0.194378559194621,0.232,fixed constant
+GLMM-native,3,mmlb,6,0.189291295681672,0.188900064593439,0.232,fixed constant
+GLMM-native,3,mmlb,8,0.185266550798487,0.18484097416513,0.232,fixed constant
+GLMM-native,3,mmlb,10,0.182827558192562,0.182436262670643,0.232,fixed constant
+GLMM-native,3,manual,2,-0.00179988749667423,-0.00179988749667445,0,fixed constant
+GLMM-native,3,manual,3,-0.00182598908337686,-0.00182767183772286,0,fixed constant
+GLMM-native,3,manual,4,-0.00184936351061684,-0.00185177945498377,0,fixed constant
+GLMM-native,3,manual,6,-0.00188460923414417,-0.00188754221284135,0,fixed constant
+GLMM-native,3,manual,8,-0.00190233752121848,-0.00190494799719195,0,fixed constant
+GLMM-native,3,manual,10,-0.00190131206148084,-0.00190289590387553,0,fixed constant
+GLMM-native,4,mmlb,2,0.0474958369632174,0.0474958369632174,0.058,fixed constant
+GLMM-native,4,mmlb,3,0.0466782045006252,0.0466292829798319,0.058,fixed constant
+GLMM-native,4,mmlb,4,0.0458950606643669,0.0458215533754282,0.058,fixed constant
+GLMM-native,4,mmlb,6,0.0445959055535057,0.0444995971095457,0.058,fixed constant
+GLMM-native,4,mmlb,8,0.0438021871513272,0.043709523638058,0.058,fixed constant
+GLMM-native,4,mmlb,10,0.0435821148520879,0.0435158913837411,0.058,fixed constant
+GLMM-native,4,manual,2,-0.00304490964568286,-0.00304490964568269,0,fixed constant
+GLMM-native,4,manual,3,-0.00303786897472304,-0.0030380002976024,0,fixed constant
+GLMM-native,4,manual,4,-0.00300533793509086,-0.00300372751572441,0,fixed constant
+GLMM-native,4,manual,6,-0.00286095747829872,-0.00285273762868349,0,fixed constant
+GLMM-native,4,manual,8,-0.00262026420171671,-0.00260256439819925,0,fixed constant
+GLMM-native,4,manual,10,-0.00230701476075862,-0.00227835799213505,0,fixed constant
+GLMM-native,5,mmlb,2,0.200612724394652,0.200612280772886,0.232,fixed constant
+GLMM-native,5,mmlb,3,0.197606079894638,0.197426673982263,0.232,fixed constant
+GLMM-native,5,mmlb,4,0.194623818987297,0.194346897704531,0.232,fixed constant
+GLMM-native,5,mmlb,6,0.189283272301783,0.188892920244672,0.232,fixed constant
+GLMM-native,5,mmlb,8,0.185276402314877,0.184851749285321,0.232,fixed constant
+GLMM-native,5,mmlb,10,0.182847193977472,0.182456632906121,0.232,fixed constant
+GLMM-native,5,manual,2,-0.00179414151921651,-0.00179415442620936,0,fixed constant
+GLMM-native,5,manual,3,-0.00181993168385713,-0.00182160773808377,0,fixed constant
+GLMM-native,5,manual,4,-0.00184301491857821,-0.00184541668224632,0,fixed constant
+GLMM-native,5,manual,6,-0.00187778369400717,-0.00188069843296489,0,fixed constant
+GLMM-native,5,manual,8,-0.00189520398100115,-0.00189780063669698,0,fixed constant
+GLMM-native,5,manual,10,-0.00189405275805834,-0.00189563337141243,0,fixed constant
+GLMM-AR1,1,manual,2,0,,0.00176395837083166,"calibrated per replicate; mean of 50 at N = 145, sd 3.1e-16"
+GLMM-AR1,1,manual,3,0,,0.00176630907780406,"calibrated per replicate; mean of 50 at N = 145, sd 6.8e-06"
+GLMM-AR1,1,manual,4,0,,0.0017709834341625,"calibrated per replicate; mean of 50 at N = 145, sd 1.1e-05"
+GLMM-AR1,1,manual,6,0,,0.00176235302684896,"calibrated per replicate; mean of 50 at N = 145, sd 1.8e-05"
+GLMM-AR1,1,manual,8,0,,0.001737862787171,"calibrated per replicate; mean of 50 at N = 145, sd 3.1e-05"
+GLMM-AR1,1,manual,10,0,,0.00170836267280124,"calibrated per replicate; mean of 50 at N = 145, sd 3.4e-05"
+GLMM-AR1,1,mmlb,2,0.2,,0.243105020375924,"calibrated per replicate; mean of 50 at N = 145, sd 2.8e-16"
+GLMM-AR1,1,mmlb,3,0.2,,0.24634187503942,"calibrated per replicate; mean of 50 at N = 145, sd 4.6e-05"
+GLMM-AR1,1,mmlb,4,0.2,,0.249518116662371,"calibrated per replicate; mean of 50 at N = 145, sd 6.2e-05"
+GLMM-AR1,1,mmlb,6,0.2,,0.254983956528982,"calibrated per replicate; mean of 50 at N = 145, sd 9.6e-05"
+GLMM-AR1,1,mmlb,8,0.2,,0.258686960245292,"calibrated per replicate; mean of 50 at N = 145, sd 0.00012"
+GLMM-AR1,1,mmlb,10,0.2,,0.260186126696265,"calibrated per replicate; mean of 50 at N = 145, sd 7.7e-05"
+GLMM-AR1,2,manual,2,0,,0.00176235444138128,"calibrated per replicate; mean of 50 at N = 145, sd 1.7e-05"
+GLMM-AR1,2,manual,3,0,,0.00176582396635464,"calibrated per replicate; mean of 50 at N = 145, sd 1.5e-05"
+GLMM-AR1,2,manual,4,0,,0.00176756026841648,"calibrated per replicate; mean of 50 at N = 145, sd 2.1e-05"
+GLMM-AR1,2,manual,6,0,,0.00176377858251011,"calibrated per replicate; mean of 50 at N = 145, sd 2.5e-05"
+GLMM-AR1,2,manual,8,0,,0.00175159400326255,"calibrated per replicate; mean of 50 at N = 145, sd 3.4e-05"
+GLMM-AR1,2,manual,10,0,,0.00170636077808419,"calibrated per replicate; mean of 50 at N = 145, sd 4.4e-05"
+GLMM-AR1,2,mmlb,2,0.2,,0.243101855954947,"calibrated per replicate; mean of 50 at N = 145, sd 3.3e-05"
+GLMM-AR1,2,mmlb,3,0.2,,0.246345001861025,"calibrated per replicate; mean of 50 at N = 145, sd 5.4e-05"
+GLMM-AR1,2,mmlb,4,0.2,,0.249504892316166,"calibrated per replicate; mean of 50 at N = 145, sd 9.1e-05"
+GLMM-AR1,2,mmlb,6,0.2,,0.254987513956339,"calibrated per replicate; mean of 50 at N = 145, sd 0.00012"
+GLMM-AR1,2,mmlb,8,0.2,,0.258730286562603,"calibrated per replicate; mean of 50 at N = 145, sd 0.0001"
+GLMM-AR1,2,mmlb,10,0.2,,0.260177013926341,"calibrated per replicate; mean of 50 at N = 145, sd 0.0001"
+GLMM-AR1,3,manual,2,0,,0.0022740089898457,"calibrated per replicate; mean of 50 at N = 145, sd 2.8e-16"
+GLMM-AR1,3,manual,3,0,,0.00231768294905078,"calibrated per replicate; mean of 50 at N = 145, sd 8.1e-06"
+GLMM-AR1,3,manual,4,0,,0.00236240353156328,"calibrated per replicate; mean of 50 at N = 145, sd 1.5e-05"
+GLMM-AR1,3,manual,6,0,,0.00243324078405662,"calibrated per replicate; mean of 50 at N = 145, sd 2.4e-05"
+GLMM-AR1,3,manual,8,0,,0.00249659783719545,"calibrated per replicate; mean of 50 at N = 145, sd 3.9e-05"
+GLMM-AR1,3,manual,10,0,,0.00256110122057284,"calibrated per replicate; mean of 50 at N = 145, sd 5.2e-05"
+GLMM-AR1,3,mmlb,2,0.2,,0.244157860348571,"calibrated per replicate; mean of 50 at N = 145, sd 3.6e-16"
+GLMM-AR1,3,mmlb,3,0.2,,0.248049691654641,"calibrated per replicate; mean of 50 at N = 145, sd 5.3e-05"
+GLMM-AR1,3,mmlb,4,0.2,,0.251978089917184,"calibrated per replicate; mean of 50 at N = 145, sd 9.8e-05"
+GLMM-AR1,3,mmlb,6,0.2,,0.259208487079071,"calibrated per replicate; mean of 50 at N = 145, sd 0.00015"
+GLMM-AR1,3,mmlb,8,0.2,,0.265003829956167,"calibrated per replicate; mean of 50 at N = 145, sd 0.00018"
+GLMM-AR1,3,mmlb,10,0.2,,0.268797773758305,"calibrated per replicate; mean of 50 at N = 145, sd 0.00018"
+GLMM-AR1,4,manual,2,0,,0.00406217642433735,"calibrated per replicate; mean of 50 at N = 145, sd 2.7e-16"
+GLMM-AR1,4,manual,3,0,,0.00411296548753842,"calibrated per replicate; mean of 50 at N = 145, sd 3.7e-05"
+GLMM-AR1,4,manual,4,0,,0.0041546748145766,"calibrated per replicate; mean of 50 at N = 145, sd 6.7e-05"
+GLMM-AR1,4,manual,6,0,,0.00410429639009956,"calibrated per replicate; mean of 50 at N = 145, sd 9.4e-05"
+GLMM-AR1,4,manual,8,0,,0.00396497628182357,"calibrated per replicate; mean of 50 at N = 145, sd 0.00015"
+GLMM-AR1,4,manual,10,0,,0.00366783762999946,"calibrated per replicate; mean of 50 at N = 145, sd 0.00014"
+GLMM-AR1,4,mmlb,2,0.05,,0.064644968232652,"calibrated per replicate; mean of 50 at N = 145, sd 4.1e-16"
+GLMM-AR1,4,mmlb,3,0.05,,0.0657595642184443,"calibrated per replicate; mean of 50 at N = 145, sd 4.9e-05"
+GLMM-AR1,4,mmlb,4,0.05,,0.0668733203619433,"calibrated per replicate; mean of 50 at N = 145, sd 8.4e-05"
+GLMM-AR1,4,mmlb,6,0.05,,0.0687861238457073,"calibrated per replicate; mean of 50 at N = 145, sd 0.00011"
+GLMM-AR1,4,mmlb,8,0.05,,0.0701857379740032,"calibrated per replicate; mean of 50 at N = 145, sd 0.00018"
+GLMM-AR1,4,mmlb,10,0.05,,0.0707908921995915,"calibrated per replicate; mean of 50 at N = 145, sd 0.00016"
+GLMM-AR1,5,manual,2,0,,0.00226463467398705,"calibrated per replicate; mean of 50 at N = 145, sd 0.00078"
+GLMM-AR1,5,manual,3,0,,0.00228558175133381,"calibrated per replicate; mean of 50 at N = 145, sd 0.00045"
+GLMM-AR1,5,manual,4,0,,0.00239538769842763,"calibrated per replicate; mean of 50 at N = 145, sd 0.00027"
+GLMM-AR1,5,manual,6,0,,0.0024883076774217,"calibrated per replicate; mean of 50 at N = 145, sd 0.00017"
+GLMM-AR1,5,manual,8,0,,0.00248080601804456,"calibrated per replicate; mean of 50 at N = 145, sd 0.00014"
+GLMM-AR1,5,manual,10,0,,0.00254612421366651,"calibrated per replicate; mean of 50 at N = 145, sd 0.00011"
+GLMM-AR1,5,mmlb,2,0.2,,0.244419469996601,"calibrated per replicate; mean of 50 at N = 145, sd 0.00081"
+GLMM-AR1,5,mmlb,3,0.2,,0.248293482264702,"calibrated per replicate; mean of 50 at N = 145, sd 0.00053"
+GLMM-AR1,5,mmlb,4,0.2,,0.252276768418369,"calibrated per replicate; mean of 50 at N = 145, sd 0.00031"
+GLMM-AR1,5,mmlb,6,0.2,,0.25957181751279,"calibrated per replicate; mean of 50 at N = 145, sd 0.00026"
+GLMM-AR1,5,mmlb,8,0.2,,0.265278771135922,"calibrated per replicate; mean of 50 at N = 145, sd 0.00029"
+GLMM-AR1,5,mmlb,10,0.2,,0.269042407159521,"calibrated per replicate; mean of 50 at N = 145, sd 0.00019"

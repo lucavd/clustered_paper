@@ -1,0 +1,69 @@
+Key: <dgp, scen, N, ntime, method>
+Empty data.table (0 rows and 10 cols): dgp,scen,N,ntime,method,n_obs...
+       name        est  boot_mean     pct_lo     pct_hi   basic_lo   basic_hi
+     <char>      <num>      <num>      <num>      <num>      <num>      <num>
+1: C10a|raw 49.9818049 53.5151495 52.6654915 54.3998945 45.5637154 47.2981184
+2:  C10a|BH 44.3231441 48.7371780 47.0249887 49.7542084 38.8920799 41.6212995
+3:  C10a|BY 35.3620815 37.5516511 36.8789212 38.2114562 32.5127069 33.8452418
+4:  C10c|BH 33.8529315 30.4430166 28.4800945 32.3555806 35.3502824 39.2257685
+5:  C15d|s3  0.7522897  0.5613654  0.3720216  0.7485912  0.7559883  1.1325578
+6: C15e|all  0.2431095  0.1997013  0.1706083  0.2287610  0.2574581  0.3156107
+      method v3_first v3_share v4_first v4_share
+      <char>    <num>    <num>    <num>    <num>
+1:       mmm      321 337.2833      306 323.3167
+2:       gee      172 154.7000      183 166.2833
+3:    gee_md      210 283.5000      185 251.4000
+4:    gee_kc       57  57.0000       55  55.9500
+5:    gee_fg      308 213.9167      272 187.9000
+6:     glmer      216 147.7833      168 113.9000
+7:    shrink       39 116.7833       27  83.9000
+8: glmer_lrt      117 129.0333      244 257.3500
+v3 design points with ties: 394 | v4: 337 
+                      who     N
+                   <char> <int>
+1:          gee_fg+gee_md   138
+2:           glmer+shrink    95
+3: glmer+glmer_lrt+shrink    14
+4:      gee_fg+gee_md+mmm    11
+5:       gee_md+glmer_lrt     9
+6:             gee_md+mmm     9
+7:          glmer_lrt+mmm     8
+8:          gee+glmer_lrt     7
+                          who     N
+                       <char> <int>
+1:              gee_fg+gee_md   158
+2:               glmer+shrink   136
+3:                 gee_md+mmm     9
+4:              glmer_lrt+mmm     9
+5:              gee+glmer_lrt     9
+6:     glmer+glmer_lrt+shrink     8
+7:          gee_fg+gee_md+mmm     7
+8: gee_fg+gee_md+glmer+shrink     7
+            dgp method  rmse_own cells_own rmse_common cells_common
+         <char> <char>     <num>     <int>       <num>        <int>
+ 1:    GLMM-AR1 gee_kc 0.4370890       480   0.3584248          418
+ 2:    GLMM-AR1 gee_fg 0.4372489       480   0.3595046          418
+ 3:    GLMM-AR1 gee_md 0.4389463       480   0.3605600          418
+ 4:    GLMM-AR1    mmm 0.4499247       480   0.3700176          418
+ 5:    GLMM-AR1 shrink 0.3783875       419   0.3743018          418
+ 6:    GLMM-AR1    gee 0.4761988       480   0.3880935          418
+ 7:    GLMM-AR1  glmer 0.6232620       418   0.6232620          418
+ 8: GLMM-native gee_kc 0.4372602       480   0.3542301          417
+ 9: GLMM-native gee_fg 0.4380046       480   0.3545816          417
+10: GLMM-native gee_md 0.4377983       480   0.3549031          417
+11: GLMM-native    mmm 0.4491122       480   0.3647652          417
+12: GLMM-native shrink 0.3688534       418   0.3688728          417
+13: GLMM-native    gee 0.4771320       480   0.3814326          417
+14: GLMM-native  glmer 0.5876658       417   0.5876658          417
+15:  GenBinaryY gee_kc 0.4372148       480   0.3699757          419
+16:  GenBinaryY gee_md 0.4384114       480   0.3714394          419
+17:  GenBinaryY gee_fg 0.4385527       480   0.3717110          419
+18:  GenBinaryY    mmm 0.4473609       480   0.3751543          419
+19:  GenBinaryY    gee 0.4764230       480   0.3998745          419
+20:  GenBinaryY shrink 0.4075243       419   0.4075243          419
+            dgp method  rmse_own cells_own rmse_common cells_common
+         <char> <char>     <num>     <int>       <num>        <int>
+Error in vecseq(f__, len__, limit) : 
+  Join results in 89304 rows; more than 22683 = nrow(x)+nrow(i). Check for duplicate key values in i each of which join to the same group in x over and over again. If that's ok, try by=.EACHI to run j for each group to avoid the large allocation. If you are sure you wish to proceed, rerun with allow.cartesian=TRUE. Otherwise, please search for this error message in the FAQ, Wiki, Stack Overflow and data.table issue tracker for advice.
+Calls: merge -> merge.data.table -> [ -> [.data.table -> vecseq
+Execution halted

@@ -1,0 +1,5 @@
+gate,pass,detail
+GB1,TRUE,"32 comparisons (4 scenarios x N 10, 55 x T 3, 10 x 2 seeds): H1 vs H0 ok 32, new vs M3 ok 32, slope value ok 32"
+GB2,TRUE,720 study rows and 80 rule fits compared on 4 M3 cells x 20 replicates: 0 and 0 mismatches; fit A vs study MMM row 0 mismatches
+GB4,TRUE,"dp rates: 3072 of 3072 rows matched, 0 mismatches; rule safety: 2880 of 2880 rows, 0 mismatches; GLMM-native M3 truths max |diff| 4.7e-16"
+GB5,TRUE,"k = 1..5 identical to results_v4/S4/boot_idx.rds: TRUE; k = 6, 7 saved"

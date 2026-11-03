@@ -1,0 +1,4 @@
+Error in setkeyv(ans, key) : 
+  some columns are not in the data.table: [thr|t4cv|n, thr|t4cv|changed, thr|t4cv|cited, thr|t4cv|cited_changed, thr|t4cv|mmm_t_hi]
+Calls: data.table -> setkeyv -> stopf -> raise_condition -> signal
+Execution halted

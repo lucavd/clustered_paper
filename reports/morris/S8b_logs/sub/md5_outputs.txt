@@ -1,0 +1,15 @@
+e2d94a9bba3e392eec6b2f5837fe79d0  tables/V5_S8b_sub_cap_checks.csv
+82245343c67a634b37bbe7ace4adf74b  tables/V5_S8b_sub_cap_keys.csv
+178bf375e901148223a0fee166064267  tables/V5_S8b_sub_figS1_checks.csv
+7936f423c97004e686b3eace6f69746c  tables/V5_S8b_sub_figS1_keys.csv
+d69ddcbb40a69ea833ca65b62ae8c098  tables/V5_S8b_sub_keys.csv
+3e692e121fcecef88844f34b54415a72  tables/V5_S8b_sub_mdkc_checks.csv
+1ecc5f929617f376625120a495fd2e89  tables/V5_S8b_sub_mdkc_keys.csv
+351036d3eb164a74e38bed051e68d7cd  tables/V5_S8b_sub_mdkc_s26.csv
+44ef05cc68bbaacb44e38345a1bfe61a  tables/V5_S8b_sub_s36_checks.csv
+910f06747b90ad6b4f30791f132f48da  tables/V5_S8b_sub_s36.csv
+f83ff67820250d94d803f60a574d3c8b  tables/V5_S8b_sub_s36_keys.csv
+74731c143b11f3c6de2c2432554a4311  tables/V5_S8b_sub_s37_checks.csv
+f1a98c3b3b26cb90221360d02a2d1513  tables/V5_S8b_sub_s37.csv
+80ba4b98f900348415ba67e9007a5a91  tables/V5_S8b_sub_s37_keys.csv
+570c4cde94c9c48c413caf04dbda22df  reports/morris/S8b_figures/figS1.png

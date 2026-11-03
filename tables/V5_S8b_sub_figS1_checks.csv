@@ -1,0 +1,10 @@
+check,pass,detail
+every plotted point has a Table 4 flag,True,1920 rows
+per-point flags equal V5_S7f_rule_dp.csv,True,
+assessed = at least x:min_obs_dp usable replicates,True,
+384 points per strategy,True,
+circled points of gee_ar1_fg equal Table 4 f:t4|gee_ar1_fg|hi_m67,True,0 vs 0
+circled points of mmm_cc equal Table 4 f:t4|mmm_cc|hi_m67,True,0 vs 0
+circled points of gee_exch_fg equal Table 4 f:t4|gee_exch_fg|hi_m67,True,4 vs 4
+circled points of gee_exch_md equal Table 4 f:t4|gee_exch_md|hi_m67,True,18 vs 18
+circled points of glmer_lrt equal Table 4 f:t4|glmer_lrt|hi_m67,True,0 vs 0

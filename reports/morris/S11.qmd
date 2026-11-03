@@ -1,0 +1,102 @@
+---
+title: "S11: correzioni dopo la revisione indipendente"
+subtitle: "Roadmap Morris 2019, ramo morris-v4"
+date: 2026-11-03
+format:
+  html:
+    embed-resources: true
+    toc: true
+lang: it
+execute:
+  echo: false
+  warning: false
+---
+
+```{r setup}
+.libPaths(path.expand("~/MMM/renv/library/linux-ubuntu-noble/R-4.6/x86_64-pc-linux-gnu"))
+suppressMessages({ library(data.table) })
+REPO <- path.expand("~/MMM")
+md <- function(D) { D <- as.data.frame(D); for (j in seq_along(D)) if (is.numeric(D[[j]])) D[[j]] <- format(signif(D[[j]], 4), trim = TRUE, drop0trailing = TRUE)
+  h <- paste0("| ", paste(names(D), collapse = " | "), " |"); s <- paste0("|", paste(rep("---", ncol(D)), collapse = "|"), "|")
+  b <- apply(D, 1, function(r) paste0("| ", paste(gsub("|", "\\|", gsub("\n", " ", r), fixed = TRUE), collapse = " | "), " |")); cat(c(h, s, b, ""), sep = "\n") }
+sec <- function(file, head, level = 1) {
+  x <- readLines(file.path(REPO, file)); pat <- paste(strrep("#", level), head); i <- which(x == pat); if (!length(i)) return(""); i <- max(i)
+  nxt <- which(grepl(paste0("^", strrep("#", level), " "), x) & seq_along(x) > i); j <- if (length(nxt)) min(nxt) - 1 else length(x)
+  x <- x[(i + 1):j]; gsub("\\]\\(\\.\\./", "](../../docs/", x) }
+tab <- function(f) fread(file.path(REPO, "tables", f))
+```
+
+```{r inbreve, results = "asis"}
+cat(sec("docs/steps/S11.md", "In breve"), sep = "\n")
+```
+
+# Dubbi rinviati
+
+```{r rinvii, results = "asis"}
+cat(sec("docs/steps/S11.md", "Dubbi rinviati"), sep = "\n")
+```
+
+# Cancelli e previsioni
+
+Pre-registrati nel commit 8d76bec (con la correzione di formato 0e32cec), prima di ogni calcolo dello step.
+
+```{r esiti, results = "asis"}
+cat(sec("docs/steps/S11.md", "Esiti (2026-11-03)"), sep = "\n")
+```
+
+# Cosa e' girato
+
+| lavoro | script | durata | note |
+|---|---|---|---|
+| md5 prima e dopo | `R/s11/s11_md5.sh` | circa 2 minuti ciascuno | 218.512 file; archivio delle tabelle `results_v4/S11/tables_pre_S11.tgz` (md5 3c3875c929c17aca101ea12b1dcd891f, 1.233 voci) |
+| chiavi della regola D-90 | `R/s11/s11_cv_keys.R`, `R/s11/s11_cv.R` | minuti | 402.676 dataset senza risultato per il modello marginalizzato con il controllo (`results_v4/S11/cv_keys.rds`) |
+| catena delle tabelle, variante cv | `R/s11/s11_cv_pipeline.sh` | circa 35 minuti | cambiano solo U0-U2 delle righe mmm di M3-M5 (210.211 righe) |
+| aggregazioni a valle | `R/s11/s11_upstream.sh` e le righe `# D-90` di 7 script | 5 minuti | |
+| catene delle soglie 1e-4 e 1e-2 | `R/s11/s11_thr_pipeline.sh`, `s11_thr_resume.sh`, `R/s5/s5_checks.R`, `R/s11/s11_thr_compare.R` | 36 e 59 minuti, 20 processi | server condiviso con un altro progetto |
+| pipeline di chiusura | `R/s11/s11_pipeline.sh final` | 22 minuti piu' il render | 37 passi |
+| passaggi testo | `R/s11/s11_text_pipeline.sh final2`, `final3` | pochi minuti ciascuno | dopo le ultime frasi e la versione di fewclust |
+| cancelli GC1 e GC3 | `R/s11/probe/s11_gc1_nod90.py`, `R/s11/s11_gc3_summary.R`, `R/s11/s11_gc3_chain.R`, `R/s11/s11_gc2.R` | minuti | |
+| fewclust 0.4.1 e 0.4.2 | sotto-agente sul branch package | | commit 45c7946 e f05c914; test 569, R CMD check 0 errori, 0 warning |
+
+Versioni del software: `reports/morris/S11_logs/sessionInfo.txt`.
+
+# Appendice
+
+## Esiti dei rilievi della revisione
+
+```{r findings, results = "asis"}
+md(tab("V8_S11_findings_outcome.csv"))
+```
+
+## Tabella 5 prima e dopo lo step (modello marginalizzato con il controllo e GEE AR(1) Fay-Graubard)
+
+```{r t5, results = "asis"}
+A <- fread(cmd = paste("tar -xzOf", file.path(REPO, "results_v4/S11/tables_pre_S11.tgz"), "tables/V5_S7f_table4.csv"))[, when := "prima"]
+B <- tab("V5_S7f_table4.csv")[, when := "dopo"]
+md(rbind(A, B)[strategy %in% c("mmm_cc", "gee_ar1_fg"), .(strategy, when, hi_all, lo_all, lo_N10, pu, pu_small, upow, chosen)])
+```
+
+## Quote del controllo di convergenza (sotto l'ipotesi nulla)
+
+```{r shares, results = "asis"}
+md(tab("V8_S11_cc_shares.csv"))
+```
+
+## Sensibilita' alle soglie del controllo
+
+```{r thr, results = "asis"}
+md(tab("V8_S11_thr_summary.csv"))
+```
+
+## Cancello GC3: righe di altri metodi nell'insieme comune
+
+```{r gc3, results = "asis"}
+md(tab("V8_S11_gc3_perf_all_sets.csv"))
+S <- tab("V8_S11_gc3_summary.csv"); md(S[, .N, by = status])
+```
+
+## Da dove vengono i numeri del riassunto
+
+```{r fonti, results = "asis"}
+md(tab("V8_S11_inbreve_sources.csv"))
+```

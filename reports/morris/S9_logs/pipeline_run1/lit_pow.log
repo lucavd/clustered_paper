@@ -1,0 +1,164 @@
+read 47520 files: 4752000 recs, 14254260 gee rows (1.9 min)
+D-82: gee_ar1_fg$use switched off on 9646 of 9711 constant-outcome rows
+D-82: gee_ar1_md$use switched off on 8088 of 9711 constant-outcome rows
+D-82: gee_ar1_kc$use switched off on 8190 of 9711 constant-outcome rows
+D-82: gee_ar1_avg$use switched off on 7903 of 9711 constant-outcome rows
+D-82: gee_ind_fg$use switched off on 9642 of 9711 constant-outcome rows
+D-82: gee_ind_md$use switched off on 8123 of 9711 constant-outcome rows
+D-82: gee_ind_kc$use switched off on 8156 of 9711 constant-outcome rows
+D-82: gee_ind_avg$use switched off on 7893 of 9711 constant-outcome rows
+D-82: gee_exch_fg$use switched off on 9642 of 9711 constant-outcome rows
+D-82: gee_exch_md$use switched off on 8109 of 9711 constant-outcome rows
+D-82: gee_exch_kc$use switched off on 8186 of 9711 constant-outcome rows
+D-82: gee_exch_avg$use switched off on 7903 of 9711 constant-outcome rows
+points: 2376 
+Key: <strategy>
+          strategy points_in_ref n_diff k_diff nd_diff hi_obs lo_obs   pu_obs
+            <char>         <int>  <int>  <int>   <int>  <int>  <int>    <num>
+ 1: chk_gee_ar1_fg          2376      0      0       0      2    106 91.89744
+ 2:    gee_ar1_avg             0      0      0       0     56     86 91.69706
+ 3:     gee_ar1_fg          2376      0      0       0      2    106 91.89744
+ 4:     gee_ar1_kc          2376      0      0       0    138     70 91.71408
+ 5:     gee_ar1_md          2376      0      0       0     20    103 91.82378
+ 6:   gee_exch_avg             0      0      0       0    121     86 91.78304
+ 7:    gee_exch_fg          2376      0      0       0     15    104 91.98364
+ 8:    gee_exch_kc          2376      0      0       0    207     70 91.80124
+ 9:    gee_exch_md          2376      0      0       0     63    101 91.90927
+10:    gee_ind_avg             0      0      0       0    105     95 92.01364
+11:     gee_ind_fg          2376      0      0       0      5    104 92.10767
+12:     gee_ind_kc          2376      0      0       0    189     81 92.02949
+13:     gee_ind_md          2376      0      0       0     58    109 92.03029
+14:         mmm_cc          2376      0      0       0      0     24 90.89477
+    hi_all_t4 lo_all_t4    pu_t4
+        <int>     <int>    <num>
+ 1:        NA        NA       NA
+ 2:        NA        NA       NA
+ 3:         2       106 91.89744
+ 4:       138        70 91.71408
+ 5:        20       103 91.82378
+ 6:        NA        NA       NA
+ 7:        15       104 91.98364
+ 8:       207        70 91.80124
+ 9:        63       101 91.90927
+10:        NA        NA       NA
+11:         5       104 92.10767
+12:       189        81 92.02949
+13:        58       109 92.03029
+14:         0        24 90.89477
+Warning message:
+In ifelse(scen == "M1c", 1L, as.integer(sub("^M", "", scen))) :
+  NAs introduced by coercion
+        strategy p_pass_boot mean_flags_boot q90_flags_boot mean_lo_boot
+          <char>       <num>           <num>          <num>        <num>
+ 1:       mmm_cc      0.1820            1.70              3         45.1
+ 2:   gee_ar1_fg      0.0055            3.73              6        108.0
+ 3:   gee_ind_fg      0.0005            5.74              8        109.6
+ 4:  gee_ar1_avg      0.0000           65.50             72         91.4
+ 5:   gee_ar1_kc      0.0000          141.80            149         77.9
+ 6:   gee_ar1_md      0.0000           28.10             33        109.7
+ 7: gee_exch_avg      0.0000          126.66            134         90.7
+ 8:  gee_exch_fg      0.0000           17.29             21        104.2
+ 9:  gee_exch_kc      0.0000          208.42            217         77.9
+10:  gee_exch_md      0.0000           73.29             80        106.8
+11:  gee_ind_avg      0.0000          111.96            119         97.9
+12:   gee_ind_kc      0.0000          192.95            201         85.0
+13:   gee_ind_md      0.0000           64.31             70        113.0
+    mean_pu_boot hi_obs lo_obs pu_obs max_rate plugin_exp_flags plugin_p_pass
+           <num>  <int>  <int>  <num>    <num>            <num>         <num>
+ 1:         90.9      0     24   90.9     8.44             1.72      1.65e-01
+ 2:         91.9      2    106   91.9    19.67             3.67      5.84e-03
+ 3:         92.1      5    104   92.1    19.30             5.61      3.71e-04
+ 4:         91.7     56     86   91.7    20.75            65.51      3.08e-63
+ 5:         91.7    138     70   91.7    22.45           142.14     8.37e-202
+ 6:         91.8     20    103   91.8    18.97            28.15      1.01e-21
+ 7:         91.8    121     86   91.8    20.75           126.69     2.94e-190
+ 8:         92.0     15    104   92.0    19.67            17.28      2.21e-11
+ 9:         91.8    207     70   91.8    22.45           208.72      0.00e+00
+10:         91.9     63    101   91.9    18.97            73.62      1.08e-85
+11:         92.0    105     95   92.0    20.00           111.95     7.04e-160
+12:         92.0    189     81   92.0    22.64           193.03      0.00e+00
+13:         92.0     58    109   92.0    19.64            64.15      1.39e-71
+    eb_exp_flags eb_p_pass
+           <num>     <num>
+ 1:        0.219  8.03e-01
+ 2:        0.149  8.61e-01
+ 3:        0.818  4.14e-01
+ 4:       37.793  2.26e-29
+ 5:      109.539 1.40e-125
+ 6:       10.847  4.49e-07
+ 7:       97.177 4.90e-125
+ 8:        5.016  3.31e-03
+ 9:      179.976  0.00e+00
+10:       48.856  4.54e-48
+11:       84.485 7.10e-103
+12:      164.134 3.66e-283
+13:       42.129  3.33e-39
+       choice     N  share
+       <char> <int>  <num>
+1:       none  1626 0.8130
+2:     mmm_cc   362 0.1810
+3: gee_ar1_fg    11 0.0055
+4: gee_ind_fg     1 0.0005
+                                       event  share
+                                      <char>  <num>
+1:            FG AR(1) and MMM both eligible 0.0010
+2:                  FG independence eligible 0.0005
+3:                  FG exchangeable eligible 0.0000
+4: FG AR(1) eligible and FG independence not 0.0055
+5: FG independence eligible and FG AR(1) not 0.0005
+6:          pu FG independence > pu FG AR(1) 1.0000
+     label                                            reason
+    <char>                                            <char>
+ 1: manual                                            usable
+ 2: manual                estimate not finite or |est| >= 10
+ 3: manual FG SE: singular information (possible separation)
+ 4: manual                             FG SE outside (0, 10)
+ 5: manual                estimate not finite or |est| >= 10
+ 6: manual                              FG SE: other failure
+ 7: manual FG SE: singular information (possible separation)
+ 8: manual                                            usable
+ 9: manual                             FG SE outside (0, 10)
+10:   mmlb                                            usable
+11:   mmlb                estimate not finite or |est| >= 10
+12:   mmlb FG SE: singular information (possible separation)
+13:   mmlb                             FG SE outside (0, 10)
+14:   mmlb                estimate not finite or |est| >= 10
+15:   mmlb                              FG SE: other failure
+16:   mmlb FG SE: singular information (possible separation)
+17:   mmlb                                            usable
+18:   mmlb                             FG SE outside (0, 10)
+    flip_not_computable      N        share
+                 <lgcl>  <int>        <num>
+ 1:               FALSE  98990 4.603929e-01
+ 2:               FALSE  85564 3.979499e-01
+ 3:               FALSE  29666 1.379737e-01
+ 4:               FALSE    457 2.125463e-03
+ 5:                TRUE    233 1.083660e-03
+ 6:               FALSE     84 3.906759e-04
+ 7:                TRUE     15 6.976355e-05
+ 8:                TRUE      2 9.301806e-06
+ 9:                TRUE      1 4.650903e-06
+10:               FALSE 101329 4.712714e-01
+11:               FALSE  84001 3.906805e-01
+12:               FALSE  28911 1.344623e-01
+13:               FALSE    463 2.153368e-03
+14:                TRUE    225 1.046453e-03
+15:               FALSE     66 3.069596e-04
+16:                TRUE     14 6.511264e-05
+17:                TRUE      2 9.301806e-06
+18:                TRUE      1 4.650903e-06
+    label ntime      n    usable      flip_nc   est_bad   se_sing geeglm_err
+   <char> <int>  <int>     <num>        <num>     <num>     <num>      <num>
+1: manual     2 107241 0.3014892 0.0003543421 0.5295736 0.1654871          0
+2:   mmlb     2 107241 0.3063287 0.0003636669 0.5272517 0.1629787          0
+3: manual     3 107771 0.6185337 0.0019764129 0.2691355 0.1107348          0
+4:   mmlb     3 107771 0.6354214 0.0018836236 0.2568687 0.1062160          0
+    label design_points datasets usable est_bad se_singular se_other geeglm_err
+   <char>         <int>    <int>  <int>   <int>       <int>    <int>      <int>
+1: manual           216   215012  98992   85797       29681      542          0
+2:   mmlb           216   215012 101331   84226       28925      530          0
+   share_sep_signature share_usable
+                 <num>        <num>
+1:           0.5370770    0.4604022
+2:           0.5262543    0.4712807
+done in 6.4 min

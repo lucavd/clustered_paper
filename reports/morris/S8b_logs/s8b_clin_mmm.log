@@ -1,0 +1,25 @@
+   estimate    se_mod   se_rob status  code             app        spec
+      <num>     <num>    <num> <char> <int>          <char>      <char>
+1: 0.352151 0.1021603 0.166845     ok     1 neonatal cohort       pieno
+2: 0.278162 0.0795531 0.126218     ok     1 neonatal cohort     ridotto
+3: 0.284293 0.0803471 0.128292     ok     1 neonatal cohort ridotto_age
+4: 1.264268 0.3367995 0.345254     ok     1     respiratory       pieno
+5: 1.241159 0.3271214 0.327833     ok     1     respiratory     ridotto
+jobs: 10500 
+failed children: 0 
+fits: 10500 in 17.2 min
+               app        spec     n    ok timeout
+            <char>      <char> <int> <int>   <int>
+1: neonatal cohort       pieno  2500  2274       0
+2: neonatal cohort     ridotto  2500  2500       0
+3: neonatal cohort ridotto_age   500   499       0
+4:     respiratory       pieno  2500  2426       0
+5:     respiratory     ridotto  2500  2496       0
+                                  check       value   pass
+                                 <char>       <num> <lgcl>
+1:        trial: rows matched to stored 5.00000e+03   TRUE
+2:        trial: status equal to stored 5.00000e+03   TRUE
+3:       trial: max |estimate - stored| 5.32907e-14   TRUE
+4:   trial: max |robust SE - stored SE| 4.54747e-13   TRUE
+5: trial full data: |estimate - stored| 1.55431e-15   TRUE
+6:   cohort full data (pieno): estimate 3.52151e-01   TRUE

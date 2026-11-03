@@ -1,0 +1,3 @@
+gate,pass,detail
+GB3,FALSE,"7680 chunk files; 768 cells; 768000 replicates with rows, 767635 with all five analyses, 0 generation failures; 768000 rule records"
+GB3b,TRUE,"corrected check: the 365 replicates without a row for some analysis were re-run (516 analyses): every one returns a fit without the time:trt term (collinear design), 0 errors; as in the study these count as not usable"
