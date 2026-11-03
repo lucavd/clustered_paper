@@ -26,7 +26,7 @@ The R package written for the study, *fewclust*, is at <https://github.com/lucav
 
 - The neonatal cohort data are not publicly available (see the data availability statement of the paper);
   the scripts that read them are included, and the plasmode results are in `tables/` and in the supplement.
-- The per-replicate model fits are not in this repository because of their size; they are archived separately on Zenodo (DOI to be added).
+- The per-replicate model fits are not in this repository because of their size; they will be archived separately on Zenodo (DOI to be added).
 
 ## Licence
 
