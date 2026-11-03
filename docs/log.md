@@ -1,5 +1,9 @@
 # Registro delle modifiche
 
+## 2026-11-03 (codice pubblico)
+
+* **Decisione del PI**: [D-92](decisions/D-92.md). Pubblicati `lucavd/clustered_paper` (commit d15be8d, dal commit privato 9237bcc) e `lucavd/fewclust` (commit 2bfaa6e, da fewclust 0.4.2, f05c914) con `tools/public_sync.sh`; controlli superati (nessun file della coorte, nessuna credenziale, nessun file oltre 50 MB).
+
 ## 2026-11-03 (S11 chiuso)
 
 * **Step**: [Correzioni dopo la revisione indipendente (S11)](steps/S11.md): approvato dal PI, che conferma i contributi degli autori della title page (opzione raccomandata). Restano rinviati alla preparazione dell'invio il DOI di Zenodo e l'intestazione di provenienza delle costanti di fewclust.

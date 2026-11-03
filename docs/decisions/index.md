@@ -131,3 +131,7 @@
 # Software
 
 * [fewclust 0.3.1 si chiude accettando le 2 differenze dallo studio, documentate nel pacchetto (D-86)](D-86.md) - Le 2 differenze fra il modello marginalizzato di fewclust 0.3.1 e quello dello studio, su 119 dataset con un risultato usabile, sono accettate come spiegate; la versione 0.3.1 si chiude con una sezione Agreement with the study in NEWS.md (ramo package, commit 626393b).
+
+# Riproducibilita'
+
+* [Codice pubblico in due repository copia, aggiornati in parallelo al repository privato; risultati per replicato su Zenodo (D-92)](D-92.md) - Il repository di lavoro resta privato perche' la sua storia contiene i dati individuali della coorte neonatale; il codice del paper e il pacchetto fewclust si pubblicano in due repository nuovi, lucavd/clustered_paper e lucavd/fewclust, con un elenco di percorsi ammessi e controlli automatici; i risultati per replicato vanno su Zenodo come dataset separato.
