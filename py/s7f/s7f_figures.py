@@ -139,23 +139,25 @@ def figure1(rule_lines, fname, switch_N=None):
     ax.set_xlabel("Clusters (e.g. patients)"); ax.set_ylabel("Design points with false positives\nclearly above 7.5% (%), lower = better")
     # d: mean absolute departure by N, the two strategies, T = 2 (dashed) and T >= 3 (solid)
     BN = pd.read_csv("tables/V5_S7f_fig1_byN.csv")
-    ax = fig.add_subplot(gs[1, 1]); letter(ax, "d"); ends = []
+    ax = fig.add_subplot(gs[1, 1]); letter(ax, "d"); ends = []; dhi = []
     for key, lab, col in [("gee_ar1_fg", "FG, AR(1), t", FOCAL["gee_fg"]), ("mmm_cc", "MMM, t", FOCAL["mmm"])]:
         for tb, ls in [("2", "--"), ("3+", "-")]:
             d = BN[(BN.strategy == key) & (BN.Tb == tb)].sort_values("N")
             ax.plot(d.N, d.mad, color=col, lw=1.4, ls=ls, marker="o", ms=2.2, zorder=3)
             se_ = np.array([SB[(SB.series == f"NT|{int(n_)}|{tb}") & (SB.strategy == key)].mad_se.iloc[0] for n_ in d.N])
             ax.vlines(d.N, d.mad - 2 * se_, d.mad + 2 * se_, color=col, lw=0.7, zorder=2)
+            dhi.append(float(np.nanmax(d.mad + 2 * se_)))
             for r, e_ in zip(d.itertuples(), se_):
                 RECORD.append(("fig1", "d", f"{key}|{tb}", int(r.N), r.mad, r.mad - 2 * e_, r.mad + 2 * e_, f"V5_S7f_fig1_byN:{key}|{int(r.N)}|{tb}|mad"))
             ends.append((float(d.mad.iloc[-1]), ("FG" if key == "gee_ar1_fg" else "MMM") + (", T = 2" if tb == "2" else ", T ≥ 3"), col))
-    ax.set_xlim(5, 150); ax.set_xticks([20, 40, 60, 80, 100, 120, 140]); ax.set_ylim(0, 5.3)
+    ax.set_xlim(5, 150); ax.set_xticks([20, 40, 60, 80, 100, 120, 140]); ax.set_ylim(0, max(5.3, 1.04 * max(dhi)))   # S11: limits from the data (every point and interval visible)
     endlabels(ax, ends, 146, 151, 0.36)
     ax.set_xlabel("Clusters (e.g. patients)"); ax.set_ylabel("Mean absolute departure\nfrom 5% (pp), lower = better")
     # e-f: usable results and power by T
     EF = pd.read_csv("tables/V5_S7f_fig1_ef.csv")
+    elo = float(EF[EF.strategy.isin(["gee_ar1_fg", "mmm_cc", "flip"])].pu.min()); elo = min(65.0, 10 * np.floor((elo - 2) / 10))   # S11: lower limit of e from the data
     S3 = [("gee_ar1_fg", "FG, AR(1), t", FOCAL["gee_fg"], "-"), ("mmm_cc", "MMM, t", FOCAL["mmm"], "-"), ("flip", "Sign-flip", FLIPC, "--")]
-    for pos, col_, lab_y, let, ylim, gap in [(gs[2, 0], "pu", "Datasets with a usable\nresult (%), higher = better", "e", (65, 101), 2.2),
+    for pos, col_, lab_y, let, ylim, gap in [(gs[2, 0], "pu", "Datasets with a usable\nresult (%), higher = better", "e", (elo, 101), 2.2 * (101 - elo) / 36),
                                             (gs[2, 1], "upow", "Effect detected among\nattempted datasets (%)", "f", (0, 58), 3.2)]:
         ax = fig.add_subplot(pos); letter(ax, let); ends = []
         for key, lab, col, ls in S3:
@@ -166,7 +168,7 @@ def figure1(rule_lines, fname, switch_N=None):
                 RECORD.append(("fig1", let, key, int(r.ntime), v_, v_ - 2 * s_, v_ + 2 * s_, f"V5_S7f_fig1_ef:{key}|{int(r.ntime)}|{col_}"))
             ends.append((float(d[col_].iloc[-1]), lab, col))
         ax.set_xticks([2, 3, 4, 6, 8, 10]); ax.set_xlim(1.6, 10.4); ax.set_ylim(*ylim)
-        if let == "e": ax.set_yticks([70, 80, 90, 100])
+        if let == "e": ax.set_yticks(list(range(int(10 * np.ceil(elo / 10)), 101, 10)))
         endlabels(ax, ends, 10.15, 10.9, gap)
         ax.set_xlabel("Occasions per cluster"); ax.set_ylabel(lab_y)
     fig.savefig(f"{OUT}/{fname}.png"); fig.savefig(f"{OUT}/{fname}.pdf")
