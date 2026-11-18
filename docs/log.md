@@ -1,5 +1,9 @@
 # Registro delle modifiche
 
+## 2026-11-18 (Statistics in Medicine: uso dell'intelligenza artificiale nei Metodi)
+
+* **Indicazione del PI**: la dichiarazione sull'uso dell'intelligenza artificiale generativa passa dagli Acknowledgements alla sezione 2.4 (Implementation) del manoscritto, come chiede Statistics in Medicine; testo invariato, sezione Acknowledgements tolta perche' vuota. Conteggio del testo principale da 4.676 a 4.759 parole (+83, le parole del paragrafo). Lettera, PDF, copia unica per la revisione e nota di istruzioni aggiornati in `manuscript/v9/SiM/`. Questo commit e' la base della release 1.1 di `clustered_paper`.
+
 ## 2026-11-18 (invio a Statistics in Medicine; materiale della riscrittura v9)
 
 * **Decisione del PI**: [D-93](decisions/D-93.md). Pacchetto per Statistics in Medicine in `manuscript/v9/SiM/` (manoscritto con autori e dichiarazioni, sei parole chiave, depositi Zenodo come riferimenti 35-37, lettera nuova, PDF unico per la revisione); versione SMMR v9, sorgenti e figure in `manuscript/v9/`.
