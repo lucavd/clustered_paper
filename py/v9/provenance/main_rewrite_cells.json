@@ -1,0 +1,962 @@
+[
+ {
+  "i": 0,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Listing project artifacts",
+  "code": "arts = host.artifacts()\nprint(len(arts))\nfor a in arts[:200]:\n    print(a.get('filename') if isinstance(a,dict) else a)\n"
+ },
+ {
+  "i": 1,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Inspecting project artifacts",
+  "code": "for a in arts:\n    print(a)\n"
+ },
+ {
+  "i": 2,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Printing artifact list entries",
+  "code": "print(arts['count'], arts['truncated'], arts['hint'])\nfor a in arts['artifacts']:\n    print({k:a.get(k) for k in ('filename','version_id','created_at','size','description')})\n"
+ },
+ {
+  "i": 3,
+  "tool": "bash",
+  "lang": "bash",
+  "env": "python",
+  "desc": "Listing MMM project folder",
+  "code": "cd \"/Users/utente/Documents/Projects/MMM\" && ls -lt | head -50 && echo ---- && find . -maxdepth 3 -iname \"*v8*\" | head -40"
+ },
+ {
+  "i": 5,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Extracting v8 manuscript and supplement text",
+  "code": "import subprocess, os, json\nout={}\nfor fn in ['MMM_v8_SMMR_manuscript.docx','MMM_v8_SMMR_supplement.docx','MMM_v8_SMMR_cover_letter.docx']:\n    r = host.artifacts(filename=fn)\n    a = r['artifacts'][0]\n    print(fn, {k:a.get(k) for k in a if k in ('id','artifact_id','version_id','latest_version_id','path')}, list(a.keys())[:20])\n    out[fn]=a\n"
+ },
+ {
+  "i": 6,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Converting docx files to markdown",
+  "code": "import shutil\nos.makedirs('src',exist_ok=True)\nfor fn,a in out.items():\n    p = host.artifact_path(a['latest_version_id'])\n    shutil.copy(p, 'src/'+fn)\nr=subprocess.run('which pandoc; for f in src/*.docx; do pandoc \"$f\" -t markdown -o \"${f%.docx}.md\" --wrap=none; done; wc -w src/*.md',shell=True,capture_output=True,text=True)\nprint(r.stdout, r.stderr[:500])\n"
+ },
+ {
+  "i": 9,
+  "tool": "bash",
+  "lang": "bash",
+  "env": "python",
+  "desc": "Inspecting article folder and result files",
+  "code": "cd \"/Users/utente/Documents/Projects/MMM\" && ls -la \"ARTICOLO 2026\" | head -40; echo ----; ls tables | head -40; echo ----; ls fewclust | head; echo; find . -maxdepth 4 \\( -iname \"*design*point*\" -o -iname \"*per_dp*\" -o -iname \"*perdp*\" -o -iname \"*cell*\" \\) 2>/dev/null | grep -v renv | head -30"
+ },
+ {
+  "i": 10,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Reading S10 common script and change log",
+  "code": "def get(fn):\n    a=host.artifacts(filename=fn)['artifacts'][0]\n    return open(host.artifact_path(a['latest_version_id'])).read()\ns=get('s10_degen_common.R'); print(s[:3500])\nprint('=====')\nprint(get('inbreve.md')[:3000])\n"
+ },
+ {
+  "i": 11,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Searching artifacts for design-point level tables",
+  "code": "import re\nallarts=[]\nfor off in range(0,800,200):\n    r=host.artifacts(offset=off, limit=200)\n    allarts+=r['artifacts']\nprint(len(allarts))\ncsvs=[a for a in allarts if a['filename'].endswith(('.csv','.parquet','.rds','.gz','.tgz','.zip'))]\nfor a in csvs:\n    print(a['created_at'][:10], a['filename'], a['size_bytes'])\n"
+ },
+ {
+  "i": 12,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Inspecting candidate per-design-point files",
+  "code": "import pandas as pd\ndef path(fn, idx=0):\n    a=host.artifacts(filename=fn)['artifacts'][idx]; return host.artifact_path(a['latest_version_id'])\nfor fn in ['V8_S11_findings_outcome.csv','V7_S10_degen_usable.csv','dp_recomputed.csv.gz','const_dp_gee.csv','const_dp_mmm_flip.csv','pow1_exact_flags_by_point.csv.gz','V7_S10_degen_sensitivity.csv']:\n    d=pd.read_csv(path(fn))\n    print('##',fn,d.shape); print(list(d.columns)[:40]); print(d.head(2).to_string()[:800])\n"
+ },
+ {
+  "i": 13,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Checking per-dp files against v8 Table 5",
+  "code": "g=pd.read_csv(path('const_dp_gee.csv')); m=pd.read_csv(path('const_dp_mmm_flip.csv'))\nd=pd.concat([g,m.assign(nconst=None)],ignore_index=True)\nprint(d.strategy.unique(), d.label.unique())\ns=d.groupby('strategy').agg(pu=('pu_corr','mean'),hi=('hi_corr','sum'),lo=('lo_corr','sum'),ndp=('N','size'))\nprint(s.round(1))\ndr=pd.read_csv(path('dp_recomputed.csv.gz'))\nprint(dr.groupby('strategy').agg(pu=('pu','mean'),hi=('hi','sum'),lo=('lo','sum'),n=('N','size')).round(1))\n"
+ },
+ {
+  "i": 14,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Listing S10/S11 session artifacts",
+  "code": "for a in allarts:\n    if a['created_at']>='2026-11-02T22:3':\n        print(a['created_at'][:16], a['filename'], a['size_bytes'])\nt5=pd.read_csv(path('V7_S10_degen_table5_versions.csv')); print(t5.head(30).to_string()[:3000])\n"
+ },
+ {
+  "i": 20,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Testing lesexp-server and locating results",
+  "code": "c = host.compute.get(\"ssh:lesexp-server\") if hasattr(host.compute,'get') else None\nprint(type(c))\ntry:\n    r = c.call_command(\"cd ~/MMM && git log --oneline -n 3 && ls results_v4 && ls results_v4/S10 results_v4/S11 2>/dev/null | head -40 && ls R | head -50\")\n    print(r)\nexcept Exception as e:\n    print('ERR', e)\n"
+ },
+ {
+  "i": 21,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Reading compute API help",
+  "code": "print([x for x in dir(host.compute) if not x.startswith('_')])\nhelp(host.compute)"
+ },
+ {
+  "i": 22,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Listing results_v4 on lesexp-server",
+  "code": "c = host.compute.create(\"ssh:lesexp-server\")\nr = c.call_command(\"cd ~/MMM && git log --oneline -n 2; ls results_v4 | head -40; echo ---; ls results_v4/S10 results_v4/S11 2>/dev/null | head -40; echo ---; ls R | tr '\\\\n' ' '\", intent=\"locate v8 per-replicate results\")\nprint(r)"
+ },
+ {
+  "i": 23,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Finding v8 dp-level tables on server",
+  "code": "cmd = r\"\"\"cd ~/MMM && ls -t tables | head -30; echo ---; ls -t results_v4/S11/degen | head; echo ---; find . -path ./renv -prune -o -path ./results_full -prune -o \\( -name '*.qmd' \\) -newer R/s10 -print 2>/dev/null | head; echo ---; find results_v4/S10 results_v4/S11 results_v4/S7f results_v4/S9 -maxdepth 3 \\( -name '*dp*' -o -name '*point*' \\) | head -30; ls results_v4/S10/tabelle | head -30\"\"\"\nprint(c.call_command(cmd, intent=\"locate tables\").stdout)"
+ },
+ {
+  "i": 24,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Inspecting S11 table5 points and s4 dp tables",
+  "code": "cmd = r\"\"\"cd ~/MMM/results_v4 && for f in S11/degen/table5_points_versions.csv.gz; do echo \"## $f\"; zcat $f | head -3; zcat $f | wc -l; zcat $f | cut -d, -f1 | sort | uniq -c | head; done; for f in S10/tabelle/s4_all_dp.csv S10/testo/cov_dp.csv S10/testo/agq_dp.csv; do echo \"## $f\"; head -3 $f; wc -l < $f; done; zcat S10/testo/dp_agg.csv.gz | head -3\"\"\"\nprint(c.call_command(cmd, intent=\"inspect tables\").stdout[:6000])"
+ },
+ {
+  "i": 27,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Reading submit_job help section",
+  "code": "help(c.submit_job)"
+ },
+ {
+  "i": 28,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Submitting job to copy per-dp tables",
+  "code": "cmd = r\"\"\"set -e\nR=~/MMM/results_v4\nfor f in S11/degen/table5_points_versions.csv.gz S10/testo/cov_dp.csv S10/testo/agq_dp.csv S10/testo/flip_dp.csv S10/testo/nocheck_dp.csv S10/tabelle/s4_all_dp.csv S10/testo/dp_agg.csv.gz S10/tabelle/t5_points.csv; do cp \"$R/$f\" \"./$(echo $f | tr / _)\"; done\nls ~/MMM/docs/steps | tr '\\n' ' ' > steps_list.txt\ncp ~/MMM/docs/steps/S11.md ./doc_S11.md 2>/dev/null || true\ncp ~/MMM/docs/steps/S10.md ./doc_S10.md 2>/dev/null || true\nls ~/MMM/manuscript | tr '\\n' ' ' > manuscript_list.txt\nfind ~/MMM/manuscript -maxdepth 2 -newer ~/MMM/R/s10 -type f | head -50 > manuscript_recent.txt\nfind $R/S10/degen $R/S11 -maxdepth 2 -name '*clin*' > clin_list.txt\nls -la\n\"\"\"\njob = c.submit_job(command=cmd, intent=\"copy v8 per-design-point tables (MMM, small files)\", run_timeout_s=600)\nprint(job)"
+ },
+ {
+  "i": 30,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Checking copy job state",
+  "code": "c = host.compute.create(\"ssh:lesexp-server\")\nj = c.attach_job('68af7d16-141b-4088-a6d7-0d6cbd3fc8de')\nprint(j.state())\ntry:\n    r=j.result(); print(r.exit_code if hasattr(r,'exit_code') else r)\n    print(r)\nexcept Exception as e: print(type(e).__name__, e)"
+ },
+ {
+  "i": 32,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Matching stored versions to v8 Table 5",
+  "code": "import glob, shutil\nH='hpc/68af7d16-141b-4088-a6d7-0d6cbd3fc8de/'\nos.makedirs('data',exist_ok=True)\nfor f in glob.glob(H+'*'): shutil.copy(f,'data/')\nv=pd.read_csv('data/S11_degen_table5_points_versions.csv.gz')\nprint(v.strategy.unique())\ns=v.groupby(['version','strategy']).agg(pu=('pu','mean'),hi=('hi','sum'),lo=('lo','sum'),upow=('upow','mean')).round(1)\nprint(s.loc[(slice(None),['mmm_cc','gee_ar1_fg','glmm_wald','flip']),:] if 'glmm_wald' in v.strategy.unique() else s.unstack(0).loc[['mmm_cc','gee_ar1_fg']])\nprint(open('data/manuscript_list.txt').read()); print(open('data/clin_list.txt').read())"
+ },
+ {
+  "i": 33,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Verifying remaining Table 5 rows",
+  "code": "b=v[v.version=='base'].copy()\nt=b.groupby(['strategy','grp']).hi.sum().unstack()\nt['lo']=b.groupby('strategy').lo.sum(); t['pu']=b.groupby('strategy').pu.mean().round(1); t['upow']=b.groupby('strategy').upow.mean().round(1)\nt['pu_small']=b[b.small].groupby('strategy').pu.mean().round(1)\nt['lo10']=b[b.N==10].groupby('strategy').lo.sum()\nprint(t.sort_values('pu'))\nprint(b.groupby(['grp']).size()/19, b.dgp.unique(), b.scen.unique())\ns4=pd.read_csv('data/S10_tabelle_s4_all_dp.csv'); print(s4.strategy.unique(), s4.label.unique(), s4.grp.unique())\ncov=pd.read_csv('data/S10_testo_cov_dp.csv'); print(cov.strategy.unique(), cov.label.unique()); print(cov.columns.tolist())"
+ },
+ {
+  "i": 34,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Building tidy per-design-point dataset",
+  "code": "import numpy as np\nb=v[v.version=='base'].drop(columns='version').copy()\n# normal-reference rejections from s4 (H0 label manual)\ns4h0=s4[s4.label=='manual'][['dgp','scen','N','ntime','strategy','n','kn','kt']].rename(columns={'n':'n_s4'})\nm=b.merge(s4h0,on=['dgp','scen','N','ntime','strategy'],how='left')\nm['rate_norm']=100*m.kn/m.n_s4\nchk=m.dropna(subset=['kt'])\nprint('n match', (chk.n==chk.n_s4).mean().round(3), 'k match', (chk.k==chk.kt).mean().round(3))\nprint(m.groupby('strategy').apply(lambda d: ((d.n==d.n_s4)&(d.k==d.kt)).mean()).round(3).to_dict())\n"
+ },
+ {
+  "i": 35,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Checking mmm_cc_f matches v8 MMM",
+  "code": "for sname in ['mmm_cc','mmm_cc_f','mmm_nocc','mmm_projrow']:\n    x=s4h0[s4h0.strategy==sname].merge(b[b.strategy=='mmm_cc'],on=['dgp','scen','N','ntime'])\n    print(sname, len(x), ((x.n==x.n_s4)&(x.k==x.kt)).mean().round(3))\n"
+ },
+ {
+  "i": 36,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Saving tidy dataset with region bands",
+  "code": "d=b.copy()\nd['mcse']=np.sqrt(d.rate*(100-d.rate)/d.n.where(d.n>0))\nd['Nband']=pd.cut(d.N,[0,10,25,65,200],labels=['N=10','N=15-25','N=35-65','N=75-145'])\nd['Tband']=pd.cut(d.ntime,[0,2,4,10],labels=['T=2','T=3-4','T=6-10'])\nd['set']=d.grp.map({'main':'main','copula':'main','m67':'M6-M7'})\nd.loc[d.scen=='M1c','set']='M1c'\nprint(d.groupby(['set','dgp']).size()/19)\nd.to_parquet('data/v8_dp_tidy.parquet')\n"
+ },
+ {
+  "i": 37,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Saving tidy dataset as CSV",
+  "code": "d.to_csv('data/v8_dp_tidy.csv.gz',index=False); print(d.shape)"
+ },
+ {
+  "i": 42,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Delegating mechanism results and clinical tracks",
+  "code": "ctx = \"\"\"Project: rewrite of a simulation paper (SMMR manuscript SMM-26-1128, rejected with invitation to resubmit) comparing analyses of clustered/longitudinal binary outcomes with few clusters (N=10..145) and short series (T=2..10): GEE with small-sample sandwich corrections (Mancl-DeRouen MD, Kauermann-Carroll KC, Fay-Graubard FG, CR2), logistic GLMM (lme4 Laplace; Wald and LRT), marginalized multilevel model (MMM, MMLB::mm, with a convergence check), shrinkage GLM, sign-flip score test. Estimand: treatment-by-time interaction (logit). Four data-generating mechanisms: GenBinaryY (MMM's own: latent variable + first-order transition), GLMM-native (normal random intercept var 1, tiny random slopes in M3-M5), GLMM-AR1 (GLMM-native + latent AR(1) process rho=0.6 var 0.5), Copula-AR1 (Gaussian copula, logistic margins, serial correlation 0.6^|lag| only, nothing constant within subject). Scenarios M1-M5 (main grid, all four mechanisms, 96 design points each), M1c (clinical-cohort prevalence 0.59 and between-subject variance 3.5, first three mechanisms, N<=45,T<=6), M6-M7 (steep growth of latent variability/random slope; GenBinaryY and GLMM-native). The editor asked: concisely state the questions, describe key differences between methods, summarise simulation and real-data findings to help understanding, and make clear that different methods perform better under different mechanisms. The author's own verdict: after many revision rounds the paper became a patchwork and is incomprehensible. Wald tests use a t reference with N-p df throughout the new paper.\"\"\"\n\ndataspec = \"\"\"Input per-design-point table: {{artifact:74e1864a-e9ca-4fe6-b8c8-abd2227ccd3a}} (gzip CSV, 45,144 rows = 2,376 design points x 19 strategies; verified to reproduce every row of the published v8 Table 5). Columns: dgp (mechanism), scen, N, ntime (T), strategy, n (usable replicates under H0), k (rejections under H0 at 5%, t reference for Wald strategies, chi2 for glmer_lrt), nd (replicates with estimable design = denominator of pu), rate (=100k/n, type I error %), hi / lo (exact Clopper-Pearson 95% CI lower limit >7.5% / upper limit <2.5%; points with n<20 not assessed -> both False), pu (% usable under H0), upow (% of attempted datasets rejecting under H1 = power per attempted dataset), grp, small (T<=3 & N<=25), mcse, Nband (N=10, N=15-25, N=35-65, N=75-145), Tband (T=2, T=3-4, T=6-10), set (main = M1-M5 all four mechanisms; M1c; M6-M7). Strategy codes: gee_{exch,ind,ar1}_{unc,md,kc,fg,cr2} (working correlation x variance), glmer (GLMM Wald, Laplace), glmer_lrt, shrink, mmm_cc (MMM with convergence check), flip (sign-flip score test, no interval).\"\"\"\n\nt1 = dataspec + \"\"\"\n\nTASK (Mechanism results). Work only from that file; do not simulate. Use python (pandas, matplotlib). Load the `figure-style` skill and call apply_figure_style() before any figure.\nMain-text strategies (7 rows, in this order): gee_exch_unc 'GEE, uncorrected', gee_exch_md 'GEE, Mancl-DeRouen', gee_exch_fg 'GEE, Fay-Graubard', gee_ar1_fg 'GEE AR(1), Fay-Graubard', glmer 'GLMM, Wald', mmm_cc 'MMM (with check)', flip 'Sign-flip test'.\n1. Region summary on set=='main' (M1-M5; 480 design points per mechanism): for each mechanism x Nband x Tband x strategy compute: number of design points; number assessed (n>=20); mean type I error over assessed points; mean absolute departure |rate-5|; number and % of assessed points clearly above 7.5% (hi) and clearly below 2.5% (lo); mean pu; mean upow. Also the same by mechanism over all regions (one row per mechanism x strategy), and for ALL 19 strategies (supplement version). Save as CSVs: region_summary_main7.csv, mechanism_summary_main7.csv, mechanism_summary_all19.csv.\n2. 'Best strategy' per mechanism x region, among strategies WITH an interval (exclude flip, glmer_lrt): a strategy is 'calibrated' in a cell if it has 0 assessed points clearly above 7.5% AND its mean type I error lies in [2.5, 7.5]; among calibrated ones, best = highest mean pu; also list any calibrated strategy within 2.5 points of the best pu as 'equivalent'. If none is calibrated record 'none'. Save best_by_mechanism_region.csv. Report how often the best strategy differs across mechanisms within a region (this is the headline the editor wants).\n3. Robust choice when the mechanism is unknown: for each Nband x Tband, a strategy is robust if calibrated (same definition) under ALL four mechanisms; among robust ones report the one with highest minimum-over-mechanisms pu, and its pu and power range. Save robust_choice.csv.\n4. Sensitivity sets: same region-free summary (per mechanism x strategy: points above/below, mean rate, mean pu) for set=='M1c' and set=='M6-M7'. Save sensitivity_M1c_M67.csv. State whether any conclusion of steps 2-3 would change.\n5. Figures (PDF + PNG 300 dpi, 7 in wide, colour-blind safe):\n   Fig A 'heatmap': 4 panels (one per mechanism, 2x2), rows = 7 strategies, columns = 12 regions (Nband x Tband ordered T then N), cell colour = mean type I error with a diverging palette centred at 5% (clip 0-15%), cell text = mean type I error rounded to 1 decimal; mark cells with >=1 point clearly above 7.5% with a bold outline. A second figure Fig B of the same layout for usable share (pu, sequential palette, text = integer %). Keep text legible (>=6 pt).\n   Fig C 'availability and power': for the 7 strategies, pu and upow by T (lines), averaged over N and mechanisms, two panels.\n6. Write a short results note (results_note.md, <=600 words) giving the key numbers for the manuscript: per mechanism which strategies fail where, best strategy per region, robust choice; every number copied from the CSVs.\nSave every CSV, figure and the note with save_artifacts. Deliverables: the CSVs, figures A-C, results_note.md.\"\"\"\n\nt2 = \"\"\"TASK (Mechanisms and clinical). Three deliverables.\n(1) Mechanism illustration figure. On compute target ssh:lesexp-server (see compute_details notes for that provider: repo ~/MMM, R 4.6.1, project library ~/MMM/renv/library/linux-ubuntu-noble/R-4.6/x86_64-pc-linux-gnu, run Rscript --vanilla and set .libPaths() inside; keep to <=4 cores; call_command has a 60 s cap so use submit_job for anything longer; inputs are staged flat). The generators of the four mechanisms are in the repo: R/s7d/s7d_common.R (GenBinaryY, GLMM-native, GLMM-AR1; see s7d_gen, load_env, RUNDIR_V4) and R/s7e/s7e_common.R (Copula-AR1; load_env_cop, make_all_data). Read these first (read-only; never modify the repo, write only in the job workdir). Generate, for scenario M1 under H0, ONE large dataset per mechanism (e.g. N=2000 subjects, T=10, use the generators' own functions with their own parameters) and compute: (a) empirical correlation of the binary outcome between occasions j and k as a function of lag |j-k| (1..9), separately pooled over subjects; (b) marginal prevalence by occasion. If a generator ignores N>145 or needs grid values, use the largest supported N and replicate several datasets. Produce a 2-panel figure (lag-correlation curves, one line per mechanism; prevalence by occasion) with the figure-style skill (apply_figure_style()), PDF+PNG, plus the CSV of plotted values. Purpose: make visible to a reader that GenBinaryY/GLMM have a component constant within subject (correlation does not decay to zero) while Copula-AR1 decays geometrically. If generation proves impossible, report why; do NOT fabricate curves.\n(2) Method-differences table (markdown + CSV): one row per method family in the new main text (GEE uncorrected; GEE with MD / FG corrections [also mention KC, CR2]; GLMM Wald with Laplace [AGQ note]; MMM with convergence check; sign-flip score test). Columns: target estimand (marginal / conditional), how within-subject dependence is handled, small-sample device, reference distribution used, what it returns (estimate+CI / p-value only), typical failure mode with few clusters or short series (non-convergence, boundary, separation, non-identifiability with random slope at T=2, etc.). Base every entry on the v8 manuscript Methods/Discussion and supplement: {{artifact:a9038696-9a28-481a-98e1-64cd6f3db9d5}} (manuscript markdown) and {{artifact:22c40cfa-9f30-43ec-98de-a33e742df33a}} (supplement markdown). Concise cells (<=20 words).\n(3) Condensed clinical applications: from the same manuscript (Section 2.7, 3.11, 4.4) and supplement (Sections S9, Tables S15, S29, S30 and any clinical tables), build ONE compact table covering both datasets (neonatal lung-ultrasound cohort, 207 patients; geepack respiratory trial, 111 patients): full-data estimate (SE) per method (MMM, GEE exchangeable uncorrected and FG/MD, GLMM on conditional scale), usable share in subsamples of 10/15/20/25/50 patients for MMM, GEE-FG, GEE-MD, GLMM, and the SE/empirical-SD ratio (finite-population corrected) where reported. Copy numbers verbatim from the source; mark any cell not available. Then a ~250-word paragraph linking the clinical findings to the simulation (what the clinical data confirm, what they cannot show). Save clinical_table.csv, clinical_table.md, method_differences.md/.csv, mechanisms figure + CSV, all via save_artifacts.\"\"\"\n\nreqs = [\n {\"name\":\"Mechanism results\",\"task\":t1,\"context_summary\":ctx},\n {\"name\":\"Mechanisms and clinical\",\"task\":t2,\"context_summary\":ctx},\n]\nres = host.delegate(reqs)\nfor r in res:\n    print(r.get('name'), r.get('status'))\n    print((r.get('response') or str(r.get('structured_output')))[:3000])\n    print('ARTS', [ (a.get('filename'),a.get('version_id')) for a in (r.get('artifacts_created') or [])])\n"
+ },
+ {
+  "i": 43,
+  "tool": "bash",
+  "lang": "bash",
+  "env": "python",
+  "desc": "Listing supplement section headings",
+  "code": "grep -nE '^#{1,3} |^\\*\\*Table S[0-9]+\\.|^\\*\\*Figure S[0-9]+\\.' src/MMM_v8_SMMR_supplement.md | cut -c1-160"
+ },
+ {
+  "i": 45,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Auditing region and robust-choice tables",
+  "code": "def ap(vid): return host.artifact_path(vid)\nrs=pd.read_csv(ap('1c6a9544-4fb9-49de-95a6-e8837e6800a1')); rc=pd.read_csv(ap('0b3baf76-2751-432e-bba0-2e532f6e333b'))\nprint(rs.columns.tolist()); print(rc.columns.tolist()); print(rc.to_string()[:3000])"
+ },
+ {
+  "i": 46,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Recomputing robust choice on validity criterion",
+  "code": "main7=['gee_exch_unc','gee_exch_md','gee_exch_fg','gee_ar1_fg','glmer','mmm_cc','flip']\nlab=dict(zip(main7,['GEE unc','GEE MD','GEE FG','GEE-AR1 FG','GLMM','MMM','Flip']))\nr=rs[rs.strategy.isin(main7)].copy()\nr['reg']=r.Tband+' '+r.Nband\ng=r.groupby(['strategy','reg']).agg(above=('n_above','sum'),maxmeanrate=('mean_rate','max'),minmeanrate=('mean_rate','min'),minpu=('min_pu','min'),meanpu=('mean_pu','mean'),pow=('mean_upow','mean')).reset_index()\norder=[f'{t} {n}' for t in ['T=2','T=3-4','T=6-10'] for n in ['N=10','N=15-25','N=35-65','N=75-145']]\nfor col in ['above','meanpu','pow','minmeanrate','maxmeanrate']:\n    p=g.pivot(index='strategy',columns='reg',values=col)[order].rename(index=lab).round(1)\n    print('##',col); print(p.to_string())"
+ },
+ {
+  "i": 47,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Tabulating failures and rates per mechanism",
+  "code": "r['s']=r.strategy.map(lab)\nfor col in ['n_above','mean_rate']:\n    p=r.pivot_table(index=['dgp','s'],columns='reg',values=col)[order]\n    p.columns=[c.replace('T=','').replace(' N=','/') for c in order]\n    print('##',col); print(p.round(1).to_string())"
+ },
+ {
+  "i": 50,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Building validity-based guidance table",
+  "code": "iv=['gee_exch_unc','gee_exch_md','gee_exch_fg','gee_ar1_fg','glmer','mmm_cc']\nrows=[]\nfor reg in order:\n    x=g[g.reg==reg].set_index('strategy')\n    valid=[s for s in iv if x.loc[s,'above']==0]\n    rows.append(dict(region=reg, valid=', '.join(lab[s] for s in valid) or 'none',\n        best_valid=max(valid,key=lambda s:x.loc[s,'meanpu']) if valid else None,\n        **{f'pu_{lab[s]}':x.loc[s,'meanpu'] for s in iv+['flip']},\n        **{f'pow_{lab[s]}':x.loc[s,'pow'] for s in iv+['flip']},\n        **{f'above_{lab[s]}':int(x.loc[s,'above']) for s in iv},\n        **{f'minrate_{lab[s]}':x.loc[s,'minmeanrate'] for s in iv},\n        **{f'maxrate_{lab[s]}':x.loc[s,'maxmeanrate'] for s in iv}))\ngt=pd.DataFrame(rows)\nprint(gt[['region','valid']].to_string())\ngt.to_csv('guidance_by_region.csv',index=False)\n# mechanism-level totals for main text Table\nms=pd.read_csv(ap('49447768-3936-4b1f-be0e-6726f8dc8c78')); print(ms.columns.tolist()); print(ms.round(1).to_string()[:4000])"
+ },
+ {
+  "i": 51,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Reading sensitivity set summaries",
+  "code": "se=pd.read_csv(ap('675eebd0-a370-4f54-a282-6a67ffdf6007')); print(se.columns.tolist())\nprint(se[se.strategy.isin(main7)].round(1).to_string()[:3500])\nprint(open(ap('b018142a-3bba-4d11-91da-ccbfbb3641a5')).read()[-1800:])"
+ },
+ {
+  "i": 52,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Reading method-differences and clinical tables",
+  "code": "print(open(ap('1837afb0-443c-477f-a691-a3b85928341b')).read()[:6000]); print('======'); print(open(ap('d6ecb3c9-8a34-47c3-a10f-47bb03c7fd93')).read()[:7000])"
+ },
+ {
+  "i": 55,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Marking phase 2 steps complete",
+  "code": "print(\"ok\")"
+ },
+ {
+  "i": 63,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Assembling Table 3 and Table 4 numbers",
+  "code": "mechs=['GLMM-native','GLMM-AR1','GenBinaryY','Copula-AR1']\nnames={'gee_exch_unc':'GEE, uncorrected','gee_exch_md':'GEE, Mancl-DeRouen','gee_exch_fg':'GEE, Fay-Graubard','gee_ar1_fg':'GEE AR(1), Fay-Graubard','glmer':'GLMM, Wald (Laplace)','mmm_cc':'MMM with check','flip':'Sign-flip score test'}\ndm=d[d.set=='main']\npool=dm.groupby('strategy').agg(pu=('pu','mean'),pw=('upow','mean'))\nlines=['| Strategy | '+' | '.join(mechs)+' | Usable (%) | Power (%) |','|---|'+'---|'*6]\nfor s in main7:\n    cells=[]\n    for mm in mechs:\n        x=ms[(ms.dgp==mm)&(ms.strategy==s)].iloc[0]\n        cells.append(f\"{int(x.n_above)}/{int(x.n_assessed)}; {x.mean_rate:.1f}\")\n    lines.append(f\"| {names[s]} | \"+' | '.join(cells)+f\" | {pool.loc[s,'pu']:.1f} | {pool.loc[s,'pw']:.1f} |\")\nT3='\\n'.join(lines); print(T3)\n# Table 4\nregs=[('T=2','N=10'),('T=2','N=15-25'),('T=2','N=35-65'),('T=2','N=75-145'),('T=3-4','N=10'),('T=3-4','N=15-25'),('T=3-4','N=35-65'),('T=3-4','N=75-145'),('T=6-10','N=10'),('T=6-10','N=15-25'),('T=6-10','N=35-65'),('T=6-10','N=75-145')]\nL=['| Occasions | Clusters | Strategies with an interval never clearly above 7.5% | Usable (%): GEE AR(1)-FG / MMM / sign-flip | Power (%): GEE AR(1)-FG / MMM / sign-flip |','|---|---|---|---|---|']\nfor t,n in regs:\n    row=gt[gt.region==f'{t} {n}'].iloc[0]\n    L.append(f\"| {t[2:]} | {n[2:]} | {row.valid} | {row['pu_GEE-AR1 FG']:.0f} / {row['pu_MMM']:.0f} / {row['pu_Flip']:.0f} | {row['pow_GEE-AR1 FG']:.1f} / {row['pow_MMM']:.1f} / {row['pow_Flip']:.1f} |\")\nT4='\\n'.join(L); print(T4)\nprint(dm.groupby('strategy').size()/4)\n# small designs main set\nsm=dm[dm.small].groupby('strategy').agg(pu=('pu','mean'),pw=('upow','mean'),rate=('rate','mean')).loc[main7].round(1); print(sm)"
+ },
+ {
+  "i": 64,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Printing remaining sensitivity rows",
+  "code": "x=se[se.strategy.isin(main7)][['set','dgp','strategy','n_points','n_above','n_below','mean_rate','mean_pu']]\nprint(x[(x.set=='M6-M7')|(x.dgp=='GenBinaryY')].round(1).to_string())\nprint(se.groupby(['set','strategy'])[['n_above','n_below','n_points']].sum().loc[(slice(None),main7),:])"
+ },
+ {
+  "i": 65,
+  "tool": "bash",
+  "lang": "bash",
+  "env": "python",
+  "desc": "Creating manuscript folder",
+  "code": "mkdir -p v9 && cp data/guidance_by_region.csv v9/ 2>/dev/null; cp guidance_by_region.csv v9/; ls v9"
+ },
+ {
+  "i": 67,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Verifying availability-by-T and working-correlation numbers",
+  "code": "fc=pd.read_csv(ap('9f3df609-02ae-4c59-84df-589d9916d4c2')); print(fc.round(1).to_string()[:2500])\nw=dm.pivot_table(index=['dgp','scen','N','ntime'],columns='strategy',values='rate')\nfor mm in mechs:\n    x=w.loc[mm]; print(mm, round((x.gee_ar1_fg-x.gee_exch_fg).mean(),2), round((x.gee_ind_fg-x.gee_exch_fg).mean(),2))\nimport re\nsup=open('src/MMM_v8_SMMR_supplement.md').read()\ni=sup.find('## S8. The fourth mechanism'); print(sup[i:i+1500])"
+ },
+ {
+  "i": 68,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Reading S8 SE-ratio passage",
+  "code": "print(sup[i+1400:i+2600])"
+ },
+ {
+  "i": 69,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Applying audited corrections to draft",
+  "code": "p='v9/body.md'; t=open(p).read()\nrep=[\n(\"Availability depended on the design, not the mechanism: with two occasions and 25 or fewer clusters no strategy with an interval answered in more than 26% of datasets.\",\n \"Availability depended on the design, not the mechanism: with two occasions and 25 or fewer clusters no strategy with an interval that kept its level answered in more than 26% of datasets.\"),\n(\"Two features of these evaluations limit their use for short longitudinal series. First, they vary the number of clusters, rarely the number of occasions per cluster; whether their conclusions hold with two or three occasions per subject is not known. Second, most generate the dependence in one way, usually a random intercept, so that the method whose model matches the generator is favoured, and the effect of the dependence mechanism on each method cannot be separated from the effect of sample size.\",\n \"Two features of these evaluations limit their use for short longitudinal series. First, they vary the number of clusters, rarely the number of occasions per cluster. In the original evaluations of the corrections and in the cluster-randomized comparisons [@mancl2001; @fay2001; @li2015; @bie2021; @lu2007], the unit within a cluster is never a subject measured on several occasions, and whether their conclusions hold with two or three occasions per subject is not known. Second, a method whose model matches the data-generating mechanism has an advantage in any comparison, so a conclusion obtained under one mechanism need not transfer to another; to separate the effect of the mechanism from that of sample size, the mechanism itself has to be varied.\"),\n(\"Under serial dependence the excess did not decrease with more clusters: on Copula-AR1 the mean rejection rate was 7.0% to 7.9% with 10 to 25 clusters and 10.5% to 16.7% with 35 to 145 clusters (Figure 2d).\",\n \"Under serial dependence the excess grew with the number of clusters: on Copula-AR1 with two occasions the mean rejection rate rose from 6.8% with 15 to 25 clusters to 16.7% with 75 to 145, and with three or four occasions from 7.0% with ten clusters to 12.2% with 75 to 145 (Figure 2d).\"),\n(\"On Copula-AR1 with 85 or more clusters, its standard error was on average 0.64 to 0.81 times the spread of the estimates under the null (Section S3).\",\n \"On Copula-AR1 with 85 or more clusters and a random intercept, its standard error was on average 0.64 to 0.81 times the spread of its estimates under the null, while the estimates were centred on zero (Section S4).\"),\n(\"but left 6 design points clearly above 7.5% on Copula-AR1, all with ten occasions (Section S3).\",\n \"but left 8 design points clearly above 7.5%, all with ten occasions: 6 on Copula-AR1 and 2 on GenBinaryY (Section S4).\"),\n(\"Under random-intercept mechanisms the choice of working correlation changed the type I error of Fay-Graubard by less than half a percentage point on average (Section S3).\",\n \"Averaged over each mechanism, the AR(1) working correlation lowered the type I error of Fay-Graubard by 0.19 to 0.23 percentage points under the random-intercept mechanisms and by 0.43 under the two serial ones; the difference was concentrated where clusters were few (Figure 2).\"),\n(\"From 35 clusters with three or more occasions, exchangeable Fay-Graubard was also valid, and from 75 clusters every GEE strategy, including the uncorrected one, was valid. The GLMM Wald test with the Laplace approximation was valid only in regions where it rarely answered.\",\n \"Exchangeable Fay-Graubard was also valid from 35 clusters with three or four occasions and from 15 clusters with six or more, and from 75 clusters every GEE strategy, including the uncorrected one, was valid. The GLMM Wald test with the Laplace approximation was valid in only three regions: the two with two occasions and 25 or fewer clusters, where it answered in at most 8% of datasets, and ten clusters with six or more occasions, where it was conservative.\"),\n(\"no strategy with an interval was both valid and informative: the best usable share was 26% and the power 0.3% or less.\",\n \"no strategy with an interval was both valid and informative: among the valid ones the best usable share was 26% and the power 0.4% or less.\"),\n(\"and inverting it gave an interval with both ends finite in only 14% of datasets (Section S5).\",\n \"and with two or three occasions and at most 25 clusters, inverting it gave an interval with both ends finite in only 14% of datasets (Section S5).\"),\n(\"in both datasets the model-based standard errors of the MMM and the GLMM fell short of the spread of their estimates at every subsample size (ratios 0.5 to 0.7), consistent with dependence not captured by their models;\",\n \"in both datasets the model-based standard errors of the MMM and the GLMM fell short of the spread of their estimates with up to 25 patients (ratios 0.5 to 0.7), consistent with dependence not captured by their models;\"),\n(\"With two occasions, half of the small datasets were separated and none of the interval methods answered reliably.\",\n \"With two or three occasions and 25 or fewer clusters, more than half of the datasets were separated, and none of the interval methods answered reliably.\"),\n(\"Our results agree with the anticonservatism of the uncorrected sandwich with few clusters [@mancl2001; @kauermann2001] and with the good performance of the Fay-Graubard correction in stepped-wedge trials with binary outcomes [@thompson2021] and in parallel cluster-randomized trials [@hemming2025].\",\n \"Our results agree with the anticonservatism of the uncorrected sandwich with few clusters [@mancl2001; @kauermann2001] and with the good performance of the Fay-Graubard correction in stepped-wedge trials with binary outcomes [@thompson2021]. A systematic review of parallel cluster-randomized trials recommended Fay-Graubard for continuous outcomes and, for binary outcomes, a mixed model with a between-within correction or Mancl-DeRouen [@hemming2025]; in our longitudinal setting, Mancl-DeRouen with an exchangeable working correlation exceeded the level under serial dependence with few clusters.\"),\n(\"region means rest on 10 to 40 design points and have standard errors below 0.3 points (Section S2).\",\n \"because the datasets are common random numbers across design points, the standard error of a region mean is bounded by the mean of the single-point standard errors rather than reduced as for independent cells (Section S2).\"),\n]\nfor a,b_ in rep:\n    assert t.count(a)==1, a[:60]\n    t=t.replace(a,b_)\nopen(p,'w').write(t); print(len(re.sub(r'\\$[^$]*\\$','x',t).split()))"
+ },
+ {
+  "i": 70,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Building main-text tables and captions",
+  "code": "T1 = \"\"\"**Table 1.** Key differences between the strategies of the main text. N = number of clusters; p = number of mean-model coefficients.\n\n| | GEE, uncorrected | GEE with Mancl-DeRouen or Fay-Graubard | GLMM, Wald test | MMM with convergence check | Sign-flip score test |\n|---|---|---|---|---|---|\n| Estimand | Marginal log odds ratio | Marginal log odds ratio | Conditional on the random effects; larger than marginal | Marginal log odds ratio | Tests zero marginal interaction; no estimate |\n| Within-subject dependence | Working correlation as a nuisance; sandwich variance | As uncorrected GEE | Modelled: random intercept (and slopes); occasions independent given them | Modelled: latent subject effect plus first-order transition | Subjects as independent units; no model for dependence |\n| Small-sample device | None | Leverage-based inflation of the sandwich | None (Laplace approximation) | None; check for boundary fits | Sign-flip distribution of the score |\n| Reference | t, N - p df | t, N - p df | t, N - p df | t, N - p df | Randomization |\n| Returns | Estimate, interval | Estimate, interval | Estimate, interval (conditional scale) | Estimate, interval | p-value only |\n| Typical failure in small designs | Anticonservative with few clusters | Variance not computable; finite estimate on separated data | Random slope not identified at T = 2; misses serial dependence | No result after boundary fit; rarely answers on separated data | Not computable when the null fit diverges; low power |\n\"\"\"\nT2 = \"\"\"**Table 2.** Data-generating mechanisms. All four share the marginal mean model of each scenario. Main grid: scenarios M1-M5, 16 numbers of clusters (10 to 145) and 6 numbers of occasions (2 to 10), 480 design points per mechanism; 1,000 replicates under the null and under the alternative at each. Full parameters in Table S1.\n\n| Mechanism | How the dependence is generated | Constant within-subject component | Serial component | Model it favours | Additional scenarios |\n|---|---|---|---|---|---|\n| GLMM-native | Logistic mixed model, normal random intercept (variance 1), small random slopes in M3-M5 | Yes | No | GLMM | M1c, M6-M7 |\n| GLMM-AR1 | GLMM-native plus latent AR(1) process (\u03c1 = 0.6, variance 0.5) | Yes | Yes (latent) | None | M1c |\n| GenBinaryY | Marginalized model: latent variable plus first-order transition term (*MMLB*) | Yes | Yes (transition) | MMM | M1c, M6-M7 |\n| Copula-AR1 | Gaussian copula with logistic margins, latent correlation 0.6^\\\\|lag\\\\| | No | Yes | None | None |\n\"\"\"\nT3h = \"\"\"**Table 3.** Type I error by mechanism, main grid (scenarios M1-M5, 480 design points per mechanism), Wald tests with a t reference (N - p degrees of freedom). Each mechanism cell: design points clearly above 7.5% / design points assessed (at least 20 usable null replicates); mean type I error (%) over assessed design points. Usable: replicates returning a usable result under the null (%); power: rejections under the alternative per attempted dataset (%); both averaged over the 1,920 design points. Results for all 19 strategies in Table S4.\n\n\"\"\"\nT4h = \"\"\"**Table 4.** Strategies whose type I error was never clearly above 7.5% under any of the four mechanisms, by region of the main grid, and the usable share and power (%) of the three strategies that were valid in most regions. Values are means over the design points and mechanisms of each region. GEE unc = uncorrected; MD = Mancl-DeRouen; FG = Fay-Graubard (exchangeable working correlation unless stated); GEE-AR1 FG = AR(1) working correlation with Fay-Graubard.\n\n\"\"\"\nT5 = \"\"\"**Table 5.** Clinical applications: full-data estimate (standard error) and usable results in 500 subsamples of whole patients at each size (%). GLMM estimates are on the conditional scale. FG and MD: Fay-Graubard and Mancl-DeRouen corrections of exchangeable GEE. SE/SD: mean standard error divided by the standard deviation of the estimates over subsamples, finite-population corrected, range over subsample sizes from 10 to 25 patients. Cohort, 10 patients: 22% of subsamples contained no ventilated patient and could not be fitted by any method; they are in the denominator. Details in Section S6.\n\n| Dataset | Method | Full-data estimate (SE) | Usable, 10 | 15 | 20 | 25 | 50 | SE/SD |\n|---|---|---|---|---|---|---|---|---|\n| Neonatal cohort (207 patients) | MMM | 0.35 (0.10) | 77 | 85 | 95 | 97 | 100 | 0.56-0.62 (robust SE 0.85-0.99)^a^ |\n| | GEE, uncorrected | 0.38 (0.17) | 70 | 81 | 91 | 95 | 100 | n.a. |\n| | GEE, FG | 0.38 | 34 | 61 | 80 | 88 | 100 | n.a. |\n| | GEE, MD | 0.38 | 15 | 37 | 62 | 80 | 99 | n.a. |\n| | GLMM | 0.48 (0.12) | 78 | 85 | 95 | 97 | 100 | 0.51-0.58^a^ |\n| Respiratory trial (111 patients) | MMM | 1.3 (0.34) | 50 | 84 | 94 | 99 | 100 | 0.7 |\n| | GEE, uncorrected | 1.3 (0.35) | 47 | 83 | 94 | 99 | 100 | 0.5-0.7 |\n| | GEE, FG | 1.3 (0.35) | 23 | 68 | 88 | 98 | 100 | 0.9-2.2 |\n| | GEE, MD | 1.3 (0.37) | 23 | 68 | 88 | 97 | 100 | 1.0-2.2 |\n| | GLMM | 2.1 (0.54) | 53 | 88 | 97 | 100 | 100 | 0.6-0.7 |\n\n^a^ Range over all subsample sizes, 10 to 50 patients. n.a. = not computed.\n\"\"\"\ncaps = \"\"\"**Figure 1.** The four data-generating mechanisms, scenario M1 under the null, ten datasets of 2,000 subjects with up to ten occasions per mechanism. (a) Correlation between the binary outcomes of two occasions of the same subject, by lag, computed within treatment arm and occasion pair and averaged; bands: \u00b1 2 Monte Carlo standard errors. (b) Marginal prevalence by occasion.\n\n**Figure 2.** Mean type I error (%) of the seven strategies of Table 3 in each region of the main grid, by mechanism: (a) GenBinaryY, (b) GLMM-native, (c) GLMM-AR1, (d) Copula-AR1. Columns: number of occasions T (top) and of clusters N (bottom). Colour: white at the nominal 5%, red above, blue below, clipped at 0% and 15%. Boxed cells contain at least one design point clearly above 7.5% (lower limit of the exact 95% interval above 7.5%). Wald tests with a t reference; n.a.: no design point with 20 or more usable replicates.\n\n**Figure 3.** (a) Replicates returning a usable result under the null and (b) power per attempted dataset, by number of occasions, averaged over the 16 numbers of clusters, five scenarios and four mechanisms of the main grid. The power of uncorrected GEE and of the GLMM Wald test includes their excess rejections.\n\"\"\"\ntab3=T3h+T3; tab4=T4h+T4\nopen('v9/tables.md','w').write(\"\\n\\n## Tables\\n\\n\"+T1+\"\\n\"+T2+\"\\n\"+tab3+\"\\n\\n\"+tab4+\"\\n\\n\"+T5+\"\\n\\n## Figure legends\\n\\n\"+caps)\nprint('ok')"
+ },
+ {
+  "i": 71,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Numbering references by first appearance",
+  "code": "ms_txt=open('src/MMM_v8_SMMR_manuscript.md').read()\nrefblock=ms_txt[ms_txt.find('## References'):ms_txt.find('## Tables and figures')]\nv8refs={int(m.group(1)):m.group(2).strip() for m in re.finditer(r'^\\s*(\\d+)\\.\\s+(.*)$',refblock,re.M)}\nkeymap={'heagerty1999':1,'heagerty2000':2,'zeger1988':3,'daniel2021':4,'kahan2016':5,'barker2017':6,'mancl2001':7,'kauermann2001':8,'fay2001':9,'pan2002':10,'morel2003':11,'westgate2016':12,'ford2018':13,'gosho2023':14,'li2015':15,'hemming2025':16,'leyrat2018':17,'thompson2021':18,'bie2021':19,'lu2007':20,'morris2019':21,'loi2024':22,'schildcrout2007':23,'mercaldo2017':24,'halekoh2006':25,'wang2015':26,'pustejovsky2018':27,'pustejovsky2023':28,'bates2015':29,'hemerik2020':30,'heinze2002':31,'konis2007':32,'kosmidis':33,'bradley1978':34,'barr2013':35,'matuschek2017':36,'mcneish2016':37,'pepe1994':38,'schildcrout2005':39}\n# sanity check of mapping\nfor k in ['zeger1988','hemerik2020','kosmidis','pepe1994','loi2024']: print(k, v8refs[keymap[k]][:60])\nbody=open('v9/body.md').read()\norder_keys=[]\nfor m in re.finditer(r'\\[(@[^\\]]+)\\]',body):\n    for k in re.findall(r'@([\\w]+)',m.group(1)):\n        if k not in order_keys: order_keys.append(k)\nnum={k:i+1 for i,k in enumerate(order_keys)}\ndef fmt(m):\n    ns=sorted(num[k] for k in re.findall(r'@([\\w]+)',m.group(1)))\n    # compress ranges\n    out=[];s=ns[0];prev=s\n    for n in ns[1:]+[None]:\n        if n is not None and n==prev+1: prev=n; continue\n        out.append(f\"{s}\" if s==prev else (f\"{s},{prev}\" if prev==s+1 else f\"{s}-{prev}\"))\n        if n is not None: s=prev=n\n    return '['+','.join(out)+']'\nbody2=re.sub(r'\\[(@[^\\]]+)\\]',fmt,body)\nreflist='\\n## References\\n\\n'+'\\n'.join(f\"{num[k]}. {v8refs[keymap[k]]}\" for k in order_keys)\nopen('v9/manuscript.md','w').write(body2+'\\n'+reflist+'\\n'+open('v9/tables.md').read())\nprint(len(order_keys), 'refs; unused:', [k for k in keymap if k not in num])"
+ },
+ {
+  "i": 72,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Adding motivation citation and renumbering",
+  "code": "t=open('v9/body.md').read()\na=\"With few clusters, the asymptotic arguments behind all three are weak.\"\nt=t.replace(a,\"Designs with few clusters are common: cluster-randomized trials with ten to thirty clusters are frequent [@kahan2016], and many stepped-wedge trials have fewer than ten [@barker2017]. With few clusters, the asymptotic arguments behind all three methods are weak.\")\nopen('v9/body.md','w').write(t)\nbody=t; order_keys=[]\nfor m in re.finditer(r'\\[(@[^\\]]+)\\]',body):\n    for k in re.findall(r'@([\\w]+)',m.group(1)):\n        if k not in order_keys: order_keys.append(k)\nnum={k:i+1 for i,k in enumerate(order_keys)}\nbody2=re.sub(r'\\[(@[^\\]]+)\\]',fmt,body)\nreflist='\\n## References\\n\\n'+'\\n'.join(f\"{num[k]}. {v8refs[keymap[k]]}\" for k in order_keys)\nopen('v9/manuscript.md','w').write(body2+'\\n'+reflist+'\\n'+open('v9/tables.md').read())\nprint(len(order_keys)); print(re.findall(r'\\[[\\d,\\-]+\\]',body2)[:12])"
+ },
+ {
+  "i": 74,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Running style and results scans",
+  "code": "body=open('v9/body.md').read()\ns=style_scan(body); print(s['counts']); print(s.get('spelling_variants'))\nfor k in ['em_dash','en_dash','marker_words','scaffold_openers','stock_phrases','reader_address','informal','numerals','interference']:\n    for h in s[k][:8]: print(k, '|', h.get('match') if isinstance(h,dict) else h, '|', (h.get('context','') if isinstance(h,dict) else '')[:110])\nres=body[body.find('## 3. Results'):body.find('## 4. Discussion')]\nmeth=body[body.find('## 2. Methods'):body.find('## 3. Results')]\nfor nm,txt in [('RES',res),('METH',meth)]:\n    r=results_scan(txt)\n    for k,v in r.items():\n        if isinstance(v,list):\n            for h in v: print(nm,k,'|',h.get('match'),'|',h.get('context','')[:120])\nprint(sentence_stats(body))"
+ },
+ {
+  "i": 75,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Relocating interpretation out of Results",
+  "code": "t=open('v9/body.md').read()\nrep=[\n(\"Three patterns emerge; they are caused by the number of clusters, by the mechanism, and by the interaction of the two.\",\n \"Three patterns emerged: failures associated with few clusters, with the mechanism, and with the two together.\"),\n(\"*Failures caused by few clusters.*\",\"*Failures associated with few clusters.*\"),\n(\"*Failures caused by the mechanism.*\",\"*Failures associated with the mechanism.*\"),\n(\"*Failures caused by the mechanism with few clusters.*\",\"*Failures associated with the mechanism and few clusters together.*\"),\n(\" This failure is the known downward bias of the sandwich with few clusters [@mancl2001; @kauermann2001] and did not depend materially on the mechanism.\",\n \" Its excess was similar under the four mechanisms.\"),\n(\" A random intercept implies a correlation that does not decay with lag; when the true correlation does, the model-based standard error of a contrast over time is too small, and the error does not shrink with the number of clusters. On Copula-AR1\",\n \" On Copula-AR1\"),\n(\" A second, smaller source of excess was the Laplace approximation, which is inaccurate with few binary observations per cluster [@mcneish2016]: refitting by adaptive quadrature on 123 null design points lowered its rejection rate\",\n \" Refitting the GLMM by adaptive quadrature on 123 null design points lowered its rejection rate\"),\n(\" Its dependence model contains both a constant and a first-order serial component, which may explain why serial dependence did not affect it.\",\"\"),\n(\", mostly because the corrected variance could not be computed.\",\" Most of their failures returned an estimate without a standard error.\"),\n(\"fell short of the spread of their estimates with up to 25 patients (ratios 0.5 to 0.7), consistent with dependence not captured by their models; in the cohort\",\n \"fell short of the spread of their estimates with up to 25 patients (ratios 0.5 to 0.7). In the cohort\"),\n(\" The applications cannot measure type I error, because the truth is unknown, but they show that the availability problems of Section 3.2 arise in real data of this size.\",\"\"),\n(\" In this region the design, not the analysis, limits what can be learned.\",\"\"),\n(\"One reason for the low availability in small designs is that such data often carry no information about the interaction. Of the datasets\",\n \"Separated datasets were common in small designs. Of the datasets\"),\n(\"The GLMM loss came from the random-slope scenarios: with two occasions a random slope is not identified, and the Wald test was essentially never usable there (Table S6).\",\n \"The GLMM loss came from the random-slope scenarios, in which its Wald test was essentially never usable with two occasions (Table S6).\"),\n(\"and the GLMM gave larger values on its conditional scale (0.48 and 2.1), as the estimand difference of Section 2.1 predicts.\",\n \"and the GLMM gave larger values on its conditional scale (0.48 and 2.1).\"),\n# Discussion additions\n(\"Uncorrected GEE failed because of few clusters, whatever the mechanism. The GLMM Wald test failed because of the mechanism: on its own random-intercept model it was nearly calibrated from three occasions, but under serial dependence its model-based standard error was too small, and more clusters made the excess worse rather than better.\",\n \"Uncorrected GEE failed because of few clusters, whatever the mechanism, which is the known downward bias of the sandwich [@mancl2001; @kauermann2001]. The GLMM Wald test failed because of the mechanism. On its own random-intercept model it was nearly calibrated from three occasions. A random intercept, however, implies a correlation that does not decay with lag. When the true correlation does decay, the model-based standard error of a contrast over time is too small, and adding clusters does not correct it: the standard error shrinks while the error in it persists, so the excess grew with the number of clusters. A second, smaller source of excess was the Laplace approximation, which is inaccurate with few binary observations per cluster [@mcneish2016].\"),\n(\"The MMM, whose dependence model has both a constant and a serial part, kept its level under every mechanism but answered less often and was conservative with few clusters.\",\n \"The MMM kept its level under every mechanism, possibly because its dependence model has both a constant and a first-order serial part; it answered less often and was conservative with few clusters. In both clinical datasets the model-based standard errors of the MMM and the GLMM fell short of the spread of their estimates, consistent with dependence that their models did not capture.\"),\n(\"The clinical applications use two datasets with one outcome each.\",\n \"The clinical applications use two datasets with one outcome each; they show that the availability problems arise in real data of this size, but cannot measure type I error, because the truth is unknown.\"),\n]\nfor a,b_ in rep:\n    assert t.count(a)==1, a[:70]\n    t=t.replace(a,b_)\nt=t.replace('  ',' ')\nopen('v9/body.md','w').write(t)\nprint([w for w in re.findall(r'\\b\\w+is(?:e|ed|es|ing|ation)\\b',t) if w.lower() not in ('precise','otherwise','raise','raised','arise','rise','exercise','noise','wise','surprise','concise','promise','premise','arising','raising','comprise','advise','revise','devise','compromise')])\nsents=re.split(r'(?<=[.;])\\s+(?=[A-Z*])',re.sub(r'\\$[^$]*\\$','X',t))\nlong=[x for x in sents if len(x.split())>42 and not x.startswith('|')]\nfor x in long: print(len(x.split()), x[:200],'\\n')"
+ },
+ {
+  "i": 76,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Splitting long sentences and unifying spelling",
+  "code": "t=open('v9/body.md').read()\nrep=[\n(\"against 77% and 50% for the MMM Most of their failures\",\"against 77% and 50% for the MMM. Most of their failures\"),\n(\"We compared six strategies for testing a treatment-by-time interaction (uncorrected GEE, GEE with the Mancl-DeRouen or Fay-Graubard correction, the GLMM Wald test, the MMM and a sign-flip score test) over 10 to 145 clusters and 2 to 10 occasions, under four mechanisms: a random intercept, a random intercept plus serial correlation, a latent-variable transition model and purely serial correlation.\",\n \"We compared six strategies for testing a treatment-by-time interaction: uncorrected GEE, GEE with the Mancl-DeRouen or Fay-Graubard correction, the GLMM Wald test, the MMM and a sign-flip score test. The design covered 10 to 145 clusters and 2 to 10 occasions under four mechanisms: a random intercept, a random intercept plus serial correlation, a latent-variable transition model and purely serial correlation.\"),\n(\"With 1,000 replicates the Monte Carlo standard error of a rejection rate of 5% is 0.69 percentage points at a single design point; because the datasets are common random numbers across design points, the standard error of a region mean is bounded by the mean of the single-point standard errors rather than reduced as for independent cells (Section S2).\",\n \"With 1,000 replicates the Monte Carlo standard error of a rejection rate of 5% is 0.69 percentage points at a single design point. The datasets are common random numbers across design points, so the standard error of a region mean is bounded by the mean of the single-point standard errors and is not reduced as for independent cells (Section S2).\"),\n(\"Its convergence check declared a fit at the boundary when the optimizer did not report convergence or an estimated slope of the latent standard deviation was below 0.001, and replaced it by the fit without the time trend only if that refit converged; otherwise the dataset gave no MMM result (Section S2).\",\n \"Its convergence check declared a fit at the boundary when the optimizer did not report convergence or an estimated slope of the latent standard deviation was below 0.001. Such a fit was replaced by the fit without the time trend only if that refit converged; otherwise the dataset gave no MMM result (Section S2).\"),\n(\"Under serial dependence the excess grew with the number of clusters: on Copula-AR1 with two occasions the mean rejection rate rose from 6.8% with 15 to 25 clusters to 16.7% with 75 to 145, and with three or four occasions from 7.0% with ten clusters to 12.2% with 75 to 145 (Figure 2d).\",\n \"Under serial dependence the excess grew with the number of clusters. On Copula-AR1 with two occasions the mean rejection rate rose from 6.8% with 15 to 25 clusters to 16.7% with 75 to 145; with three or four occasions it rose from 7.0% with ten clusters to 12.2% with 75 to 145 (Figure 2d).\"),\n(\"Refitting the GLMM by adaptive quadrature on 123 null design points lowered its rejection rate by 3.1 to 4.0 percentage points and removed every flag on its own model, but left 8 design points clearly above 7.5%, all with ten occasions: 6 on Copula-AR1 and 2 on GenBinaryY (Section S4).\",\n \"Refitting the GLMM by adaptive quadrature on 123 null design points lowered its rejection rate by 3.1 to 4.0 percentage points and removed every flag on its own model. It left 8 design points clearly above 7.5%, all with ten occasions: 6 on Copula-AR1 and 2 on GenBinaryY (Section S4).\"),\n(\"The sign-flip test answered in 32% to 68% of these datasets with power of 2.0% to 3.5%, and with two or three occasions and at most 25 clusters, inverting it gave an interval with both ends finite in only 14% of datasets (Section S5).\",\n \"The sign-flip test answered in 32% to 68% of these datasets, with power of 2.0% to 3.5%. With two or three occasions and at most 25 clusters, inverting it gave an interval with both ends finite in only 14% of datasets (Section S5).\"),\n(\"In the cohort-anchored scenario M1c, with prevalence 0.59 and between-subject variance 3.5, GEE AR(1) Fay-Graubard and the MMM were never clearly above 7.5% (72 design points), the corrected GEEs were conservative (mean type I error 2.8% to 3.4%), and the GLMM Wald test was clearly above 7.5% at 11 design points.\",\n \"In the cohort-anchored scenario M1c, with prevalence 0.59 and between-subject variance 3.5, GEE AR(1) Fay-Graubard and the MMM were never clearly above 7.5% (72 design points). The corrected GEEs were conservative (mean type I error 2.8% to 3.4%), and the GLMM Wald test was clearly above 7.5% at 11 design points.\"),\n(\"The clinical applications use two datasets with one outcome each; they show that the availability problems arise in real data of this size, but cannot measure type I error, because the truth is unknown.\",\n \"The clinical applications use two datasets with one outcome each. They show that the availability problems arise in real data of this size, but they cannot measure type I error, because the truth is unknown.\"),\n(\"Analysing clustered\",\"Analyzing clustered\"),(\"modelled\",\"modeled\"),(\"favours\",\"favors\"),(\"favoured\",\"favored\"),(\"centre\",\"center\"),\n]\nfor a,b_ in rep:\n    assert a in t, a[:70]\n    t=t.replace(a,b_)\nopen('v9/body.md','w').write(t)\ns=style_scan(t); print(s['spelling_variants'], s['counts']); print(sentence_stats(t))\nprint([h['context'][:80] for h in s['bold_miniheading']])"
+ },
+ {
+  "i": 77,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Re-applying edits tolerating absent words",
+  "code": "t=open('v9/body.md').read()\nfor a,b_ in rep:\n    if a in t: t=t.replace(a,b_)\n    elif len(a)>30: print('MISSING', a[:60])\nopen('v9/body.md','w').write(t)\ns=style_scan(t); print(s['spelling_variants'], s['counts']); print(sentence_stats(t))\nprint([h['context'][:80] for h in s['bold_miniheading']]); print(re.findall(r'\\b\\w*(?:our|ise[ds]?)\\b',t)[:30])"
+ },
+ {
+  "i": 78,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Parsing v8 supplement into blocks",
+  "code": "r=subprocess.run('cd src && pandoc MMM_v8_SMMR_supplement.docx -t markdown --wrap=none --extract-media=supp_media -o supp_full.md && ls supp_media/media | head',shell=True,capture_output=True,text=True); print(r.stdout,r.stderr[:300])\nS=open('src/supp_full.md').read()\n# split into sections\nsecs={}\nparts=re.split(r'^## (S\\d+)\\. (.*)$',S,flags=re.M)\nprint(parts[0][:300])\nfor k in range(1,len(parts),3):\n    secs[parts[k]]=(parts[k+1],parts[k+2])\nprint(list((k,v[0]) for k,v in secs.items()))\ndef split_blocks(txt):\n    # returns list of ('text'|'table'|'figure', num, content)\n    out=[]; pat=re.compile(r'^(\\*\\*(Table|Figure) (S\\d+)\\.\\*\\*.*)$',re.M)\n    pos=0; ms_=list(pat.finditer(txt))\n    for j,m in enumerate(ms_):\n        if m.start()>pos: out.append(('text',None,txt[pos:m.start()]))\n        end=ms_[j+1].start() if j+1<len(ms_) else len(txt)\n        blk=txt[m.start():end]\n        # table body ends at first blank line after a closing table rule; keep trailing prose separate\n        out.append((m.group(2),m.group(3),blk)); pos=end\n    if pos<len(txt): out.append(('text',None,txt[pos:]))\n    return out\nfor k in ['S8','S10','S11','S19']:\n    for typ,n,c in split_blocks(secs[k][1]): print(k,typ,n,len(c), c[:80].replace('\\n',' '))"
+ },
+ {
+  "i": 79,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Inspecting table block endings",
+  "code": "def split_tab(blk):\n    lines=blk.split('\\n'); last=None\n    for i,l in enumerate(lines):\n        if re.match(r'^\\s*[-+=]{5,}[-+= ]*$',l): last=i\n    if last is None: return blk,''\n    return '\\n'.join(lines[:last+1])+'\\n','\\n'.join(lines[last+1:])\ncnt=0\nfor k,(title,txt) in secs.items():\n    for typ,n,c in split_blocks(txt):\n        if typ=='Table':\n            a,b2=split_tab(c)\n            if b2.strip(): print(k,n,'TRAIL:',b2.strip()[:150].replace('\\n',' ')); cnt+=1\n        if typ=='Figure': print(k,n,'FIG', c[:200])\nprint(cnt)"
+ },
+ {
+  "i": 80,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Assembling and renumbering new supplement",
+  "code": "blocks={}  # old table/figure number -> (caption+table, trailing)\ntexts={}   # old section -> list of text pieces (non-table)\nfor k,(title,txt) in secs.items():\n    texts[k]=[]\n    for typ,n,c in split_blocks(txt):\n        if typ=='text': texts[k].append(c.strip())\n        else:\n            a,b2=split_tab(c) if typ=='Table' else (c,'')\n            blocks[(typ,n)]=(a.strip(),b2.strip())\ndef T(n,trail=True):\n    a,b2=blocks[('Table',n)]; return a+('\\n\\n'+b2 if (trail and b2) else '')\ndef X(sec,i=None): \n    p=[x for x in texts[sec] if x]; return '\\n\\n'.join(p if i is None else [p[i]])\n# new Table S4 (all 19 by mechanism)\na19=pd.read_csv(ap('3154ab62-58e6-4824-99bd-4a670067314f'))\nlab19={'gee_exch_unc':'GEE exch., uncorrected','gee_exch_md':'GEE exch., MD','gee_exch_kc':'GEE exch., KC','gee_exch_fg':'GEE exch., FG','gee_exch_cr2':'GEE exch., CR2',\n 'gee_ind_unc':'GEE ind., uncorrected','gee_ind_md':'GEE ind., MD','gee_ind_kc':'GEE ind., KC','gee_ind_fg':'GEE ind., FG','gee_ind_cr2':'GEE ind., CR2',\n 'gee_ar1_unc':'GEE AR(1), uncorrected','gee_ar1_md':'GEE AR(1), MD','gee_ar1_kc':'GEE AR(1), KC','gee_ar1_fg':'GEE AR(1), FG',\n 'glmer':'GLMM, Wald (Laplace)','glmer_lrt':'GLMM, likelihood ratio','shrink':'Shrinkage GLM','mmm_cc':'MMM with check','flip':'Sign-flip score test'}\nL=['| Strategy | '+' | '.join(mechs)+' | Usable (%) | Power (%) |','|---|'+'---|'*6]\npool19=dm.groupby('strategy').agg(pu=('pu','mean'),pw=('upow','mean'))\nfor s_ in lab19:\n    cells=[]\n    for mm in mechs:\n        x=a19[(a19.dgp==mm)&(a19.strategy==s_)].iloc[0]\n        cells.append(f\"{int(x.n_above)}/{int(x.n_assessed)}; {x.mean_rate:.1f}\")\n    L.append(f\"| {lab19[s_]} | \"+' | '.join(cells)+f\" | {pool19.loc[s_,'pu']:.1f} | {pool19.loc[s_,'pw']:.1f} |\")\nnewS4=\"**Table S4.** Type I error by mechanism for all 19 strategies, main grid (scenarios M1-M5, 480 design points per mechanism). Each mechanism cell: design points clearly above 7.5% / design points assessed; mean type I error (%) over assessed design points. Wald tests with a t reference (N - p degrees of freedom), likelihood-ratio test with a chi-squared reference. Usable and power as in Table 3 of the main text. exch. = exchangeable, ind. = independence working correlation; MD = Mancl-DeRouen, KC = Kauermann-Carroll, FG = Fay-Graubard.\\n\\n\"+'\\n'.join(L)\n# new Table S13 (M1c)\nm1=se[se.set=='M1c']; m3=['GLMM-native','GLMM-AR1','GenBinaryY']\nL=['| Strategy | '+' | '.join(m3)+' |','|---|---|---|---|']\nfor s_ in main7:\n    cells=[]\n    for mm in m3:\n        x=m1[(m1.dgp==mm)&(m1.strategy==s_)].iloc[0]\n        cells.append(f\"{int(x.n_above)} / {int(x.n_below)}; {x.mean_rate:.1f}; {x.mean_pu:.0f}\")\n    L.append(f\"| {names[s_]} | \"+' | '.join(cells)+' |')\nnewS13=\"**Table S13.** Scenario M1c (prevalence 0.59, between-subject variance 3.5; 24 design points per mechanism, N up to 45, T up to 6). Each cell: design points clearly above 7.5% / clearly below 2.5%; mean type I error (%); usable share under the null (%). Wald tests with a t reference.\\n\\n\"+'\\n'.join(L)\nfigS1=\"![](figS1_usable.png)\\n\\n**Figure S1.** Replicates returning a usable result under the null (%), mean over the design points of each region of the main grid, by mechanism: (a) GenBinaryY, (b) GLMM-native, (c) GLMM-AR1, (d) Copula-AR1. Layout as Figure 2 of the main text.\"\noldfig=blocks[('Figure','S1')][0]\nprint(oldfig[:300])"
+ },
+ {
+  "i": 81,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Previewing v8 supplement text pieces",
+  "code": "for k in texts:\n    for i,p_ in enumerate([x for x in texts[k] if x]):\n        print(k,i,len(p_.split()),'|',p_[:260].replace('\\n',' '),'\\n')"
+ },
+ {
+  "i": 82,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Reading short v8 supplement text pieces",
+  "code": "for k in ['S3','S5','S6','S10','S18']: print('##',k, X(k),'\\n')\nprint('IMG' , [ (k,'![' in X(k)) for k in texts])\nprint(parts[0][:1500])\nfor (typ,n),(a,b2) in blocks.items():\n    if b2: print('TRAIL',n,b2[:1500],'\\n')"
+ },
+ {
+  "i": 83,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Writing new supplement assembly",
+  "code": "t5=ms_txt[ms_txt.find('**Table 5.**'):ms_txt.find('![](media/rId51.png)')].strip()\nt5_tab=t5[t5.find('\\n'):].strip()\noldT5_cap=\"**Table T5OLD.** Strategies over all 2,376 design points (main grid and M1c, 1,512; scenarios M6-M7, 384; Copula-AR1, 480). Wald tests with a t reference (N - p degrees of freedom); likelihood-ratio test with a $\\\\chi^{2}$ reference. Clearly above 7.5% and clearly below 2.5%: lower limit of the exact 95% interval of the rejection rate under the null above 7.5%, upper limit below 2.5%; design points with fewer than 20 usable replicates are not assessed. Usable: replicates returning a usable result under the null (%), averaged over design points, denominator the replicates with an estimable design; power: rejections of a false null per attempted dataset (%). The column at ten clusters covers 156 design points; the last column covers two or three occasions and at most 25 clusters (216 design points). Monte Carlo standard errors are at most 0.56 points for the usable share, 1.1 for power and 1.4 for the usable share at T \u2264 3 and N \u2264 25 (mean over design points of the binomial standard error).\"\nimg_old=re.search(r'!\\[\\]\\([^)]*\\)(\\{[^}]*\\})?',X('S13')).group(0)\ns13_text=X('S13').replace(img_old,'').strip()\nintro=\"\"\"This supplement accompanies the manuscript. GB = GenBinaryY, NAT = GLMM-native, AR1 = GLMM-AR1, COP = Copula-AR1; MMM = marginalized multilevel model with the convergence check; GEE AR(1)-FG = GEE with AR(1) working correlation, the Fay-Graubard correction and a t reference with N - p degrees of freedom. In every table the Kauermann-Carroll correction is computed with *fewclust* (Section S2). \"Clearly above 7.5%\" and \"clearly below 2.5%\" are defined in Section 2.3 of the main text. Numbers in square brackets refer to the reference list at the end of this supplement.\"\"\"\nmcse=\"\"\"**Monte Carlo error.** With 1,000 usable replicates, the Monte Carlo standard error (MCSE) of a rejection rate of 5% at one design point is 0.69 percentage points. The datasets were common random numbers across design points: replicate i of scenario m used the seed 20260805 + 1000m + i under the L'Ecuyer-CMRG generator, the same for both hypotheses and for every N, T and mechanism. Means over design points are therefore positively correlated across cells, and their MCSE is bounded above by the mean of the single-point MCSEs, which is the bound reported in the tables. Where a summary over cells or a difference between strategies is given with its MCSE, it was obtained by a bootstrap that resamples replicate indices jointly across all cells (2,000 resamples).\"\"\"\ns1_note=\"\"\"**Figure 1 of the main text.** For each mechanism, ten datasets of scenario M1 under the null were generated with the study's own generators and seeds, with 2,000 subjects and up to ten occasions each. The correlation between the binary outcomes at occasions j and k was computed within each treatment arm and pair of occasions, so that differences in prevalence between occasions and arms do not enter it, and then averaged over the pairs with the same lag; bands are \u00b1 2 MCSE over the ten datasets. Lag 9 rests on occasions 0 and 9 only, whose prevalences (0.13 and 0.27) bound the attainable correlation.\"\"\"\ns3_intro=\"\"\"Table S4 extends Table 3 of the main text to all 19 strategies, by mechanism, on the main grid. Table S5 gives, for the same strategies, the counts over all 2,376 design points including scenarios M1c and M6-M7. Figure S1 shows the usable share by region and mechanism: it differs little between mechanisms.\"\"\"\ns4_sep_extra=\"\"\"The two design points at which GEE AR(1)-FG was clearly above 7.5% are both in scenario M2 with N = 10 and T = 2, on GLMM-AR1 and GLMM-native. There it rejected a true null in 12 of 61 and 11 of 63 usable replicates, and the MMM in 0 of 35 and 0 of 38. Every one of these rejections fell on one of the 27 and 26 usable datasets with an infinite estimate of the interaction; on its other usable datasets it rejected 0 of 34 and 0 of 37. On these datasets the GEE estimate is the point at which its iterations stopped: with 200 instead of 25 iterations it moved further from zero in 35 of 53. The MMM returned 4 usable results on separated datasets in the whole study. If separated datasets gave no usable result to the strategies with an interval, GEE AR(1)-FG would be clearly above 7.5% at no design point (Table S18).\"\"\"\nstab_trail=blocks[('Table','S32')][1].split('\\n\\n')\nstab_p1=stab_trail[0]\nusab=[p_ for p_ in stab_trail[1:] if p_.strip()]\nprint(usab)"
+ },
+ {
+  "i": 84,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Concatenating supplement sections",
+  "code": "usab_new=\"The usability limits of Section 2.3 of the main text (|estimate| and standard error below 10) were varied to 5 and 20 for the strategies with an interval, on the stored per-replicate results. With limits of 5 or 20, the MMM was never clearly above 7.5%. GEE AR(1)-FG was never clearly above 7.5% with the limit of 5, and was clearly above 7.5% at 6 design points with the limit of 20. Its two design points with the published limit therefore depend on datasets with an estimate or a standard error between 5 and 10 in absolute value.\"\ns6_text=X('S6').replace(\" (Table S26 gives the three study mechanisms)\",\"\").strip()\nparts_new=[\n\"# Supplementary Material\", intro,\n\"## S1. Data-generating mechanisms\", T('S1'), s1_note, X('S8'),\n\"## S2. Implementation and performance measures\", T('S2'), X('S15'), mcse, \"**Small-sample corrections.**\", X('S4'),\n\"**Convergence check of the marginalized model.**\", X('S16'), X('S20'), T('S39'),\n\"## S3. Results for all strategies\", s3_intro, newS4, oldT5_cap+\"\\n\\n\"+t5_tab, figS1,\nX('S3'), T('S7'), T('S6'), T('S11'), s6_text, T('S26'), T('S10'), X('S18').split('Table S37')[0].strip(), T('S12'), T('S36'),\n\"## S4. Sensitivity analyses\",\n\"**Scenario anchored to the cohort (M1c).** Table S13 gives, for the seven strategies of the main text, the counts of design points clearly above 7.5% and clearly below 2.5%, the mean type I error and the usable share in scenario M1c. \"+X('S5'), newS13,\n\"**Scenarios M6-M7.**\", T('S14'), img_old, blocks[('Figure','S1')][0], s13_text, T('S35'),\n\"**The GLMM under serial dependence.** With a random intercept only and N \u2265 85 on Copula-AR1, the model-based standard error of the GLMM was 0.64 to 0.81 times the standard deviation of its estimates under the null (Section S1). Table S16 gives the performance of every strategy on Copula-AR1.\", T('S28'),\n\"**Adaptive quadrature for the GLMM.**\", X('S12'), T('S34'),\n\"**Separated datasets.**\", X('S19'), s4_sep_extra, T('S38'),\n\"**Replication stability of the counts of design points clearly above 7.5%.** \"+stab_p1, T('S37'), usab_new,\n\"## S5. Sign-flip score test and the interval obtained by inverting it\", X('S7'), T('S27'),\n\"## S6. Clinical applications\", \"**Neonatal cohort.**\", X('S17'), T('S15'), \"**Respiratory trial.**\", X('S9'), T('S29'), T('S30'),\n\"## S7. Previous evaluations of the small-sample corrections\", X('S14'),\n]\nsup_new='\\n\\n'.join(p_.strip() for p_ in parts_new if p_.strip())\n# check the S8 piece duplication of the SE-ratio sentence and old S1 trailing text inclusion\nprint(len(sup_new.split()))\nopen('v9/supp_raw.md','w').write(sup_new)"
+ },
+ {
+  "i": 85,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Renumbering supplement tables and sections",
+  "code": "s=open('v9/supp_raw.md').read()\n# protect new tables S4 and S13 captions (they are already new numbers) and figure S1 new\ns=s.replace('**Table S4.** Type I error by mechanism for all 19','**Table @@N4.** Type I error by mechanism for all 19')\ns=s.replace('Table S4 extends Table 3','Table @@N4 extends Table 3').replace('Table S5 gives, for the same','Table @@N5 gives, for the same')\ns=s.replace('**Table S13.** Scenario M1c','**Table @@N13.** Scenario M1c').replace('Table S13 gives, for the seven','Table @@N13 gives, for the seven')\ns=s.replace('**Table T5OLD.**','**Table @@N5.**')\ns=s.replace('**Figure S1.** Replicates returning','**Figure @@F1.** Replicates returning').replace('Figure S1 shows the usable','Figure @@F1 shows the usable')\ns=s.replace('**Figure S1.** Type I error at every design point of scenarios M6-M7','**Figure @@F2.** Type I error at every design point of scenarios M6-M7')\ns=s.replace('Table S16 gives the performance of every strategy on Copula-AR1','Table @@N16 gives the performance of every strategy on Copula-AR1')\ns=s.replace('(Table S18).\"',' (Table @@N18).').replace('would be clearly above 7.5% at no design point (Table S18).','would be clearly above 7.5% at no design point (Table @@N18).')\ntmap={1:1,2:2,39:3,7:6,6:7,11:8,26:9,10:10,12:11,36:12,14:14,35:15,28:16,34:17,38:18,37:19,27:20,15:21,29:22,30:23}\ndropped=[]\ndef rt(m):\n    n=int(m.group(2))\n    if n in tmap: return f\"{m.group(1)}@@N{tmap[n]}\"\n    dropped.append((n,s[max(0,m.start()-80):m.end()+40].replace('\\n',' '))); return m.group(0)\ns=re.sub(r'(Tables? )S(\\d+)',rt,s)\n# \"Tables S3 and S4\" style second numbers\ns=re.sub(r'(and )S(\\d+)\\b',lambda m: f\"{m.group(1)}@@N{tmap[int(m.group(2))]}\" if int(m.group(2)) in tmap else m.group(0), s)\ns=re.sub(r'Figure S1\\b','Figure @@F2',s)\nsmap={'S1':'S1','S2':'S2','S3':'S3','S4':'S2','S5':'S4','S6':'S3','S7':'S5','S8':'S1','S9':'S6','S10':'S4','S11':'S4','S12':'S4','S13':'S4','S14':'S7','S15':'S2','S16':'S2','S17':'S6','S18':'S3','S19':'S4','S20':'S2'}\ns=re.sub(r'(Sections? )S(\\d+)\\b',lambda m: m.group(1)+'@@S'+smap['S'+m.group(2)][1:],s)\ns=s.replace('@@N','S').replace('@@F','S').replace('@@S','S')\nopen('v9/supp_ren.md','w').write(s)\nfor d_ in dropped: print(d_)"
+ },
+ {
+  "i": 86,
+  "tool": "bash",
+  "lang": "bash",
+  "env": "python",
+  "desc": "Checking remaining 26% statements",
+  "code": "grep -n -o \".\\{160\\}26%.\\{60\\}\" v9/body.md"
+ },
+ {
+  "i": 87,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Listing stale references in supplement",
+  "code": "s=open('v9/supp_ren.md').read()\npats=[r'Table [1-5]\\b',r'Figure [12]\\b',r'Sections? [2-5]\\.\\d',r'\\brule\\b',r'GEE strategy',r'Table S31',r'Table S3\\b',r'Table S13\\b',r'Table S5\\b','registry',r'study mechanisms','Benjamini']\nhits=[]\nfor p_ in pats:\n    for m in re.finditer(p_,s):\n        # skip table rows / captions of tables\n        line=s[s.rfind('\\n',0,m.start())+1:s.find('\\n',m.end())]\n        hits.append((m.start(),p_,s[max(0,m.start()-100):m.end()+60].replace('\\n',' ')))\nhits.sort()\nprint(len(hits))\nfor h in hits: print(h[1],'|',h[2],'\\n')"
+ },
+ {
+  "i": 88,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Inspecting fragments needing rewrites",
+  "code": "for key in ['In the block bootstrap of the direct comparison','**Table S9.**','is the strategy the rule selects','The reading (difference','**Table S18.**','In a separated dataset a linear combination']:\n    i=s.find(key); print('>>>',key,'\\n',s[i-50:i+1400] if 'separated dataset a linear' not in key else s[i:i+3600],'\\n')"
+ },
+ {
+  "i": 89,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Applying cross-reference rewrites in supplement",
+  "code": "s=open('v9/supp_ren.md').read()\nold_s3=X('S3'); p3=[x for x in old_s3.split('\\n\\n') if x.strip()]\nR=[\n(p3[0]+'\\n\\n'+p3[1]+'\\n\\n', ''),\n(p3[2], p3[2].replace('Section 3.5 of the main text compares','Section 3.1 of the main text compares').replace('over the three study mechanisms. Per design point','over the three mechanisms with a constant component (GLMM-native, GLMM-AR1, GenBinaryY; 1,896 design points). Per design point')),\n(\"In the block bootstrap of the direct comparison of the two strategies of the rule (Table S31), scenario M1c, whose seeds are those of M1, was resampled with its own indices rather than jointly with M1; this affects only the Monte Carlo standard errors of that comparison.\\n\\n\",\"\"),\n(\" The reading (difference, similar or about the margin; Section 2.5 of the main text) changed in 0 and 0 of the 156 comparisons of the claim table of the main grid; of the 37 cited in this paper, 0 and 0 changed.\",\"\"),\n(\"these values enter Table 3, Table 4 and Table S10\",\"these values enter the exchangeable GEE rows of the normal-reference main-grid analysis and of Table S10\"),\n(\"Its rejection rates in Table 3 and Table S10 are therefore lower\",\"Its rejection rates in the normal-reference main-grid analysis and in Table S10 are therefore lower\"),\n(\"as in Table 3, so their counts can differ slightly from those of Table 5 and Figure S2\",\"as in the normal-reference main-grid analysis, so their counts can differ slightly from those of Table S5 and Figure S2\"),\n(\"for the strategies of Figure 1, with the corrections from *fewclust* as in Table 5\",\"for GEE AR(1)-FG, exchangeable GEE with Fay-Graubard and Mancl-DeRouen, the MMM and the GLMM likelihood-ratio test, with the corrections from *fewclust* as in Table S5\"),\n(\"as in Table 5: 18 for GEE\",\"as in Table S5: 18 for GEE\"),(\"(Table 5 and Figure S2)\",\"(Table S5 and Figure S2)\"),\n(\"for version (iii) it reproduces Table 5.\",\"for version (iii) it reproduces Table S5.\"),\n(\"so that no strategy with an interval would meet the rule.\",\"so that it would no longer be never clearly above 7.5%.\"),\n(\"Table S3 compares the primary rule with four other versions\",\"Table S3 compares the primary version of the check with four other versions\"),\n(\"under five versions of the rule for a fit at the boundary\",\"under five versions of the check for a fit at the boundary\"),\n(\"**Table S9.** The decision rule with N - p and with N - 2 degrees of freedom\",\"**Table S9.** Design points clearly above 7.5% and clearly below 2.5% with N - p and with N - 2 degrees of freedom\"),\n(\"With both choices the rule selects the marginalized model with the convergence check; GEE with AR(1)\",\"With both choices the MMM with the convergence check is never clearly above 7.5%; GEE with AR(1)\"),\n(\"Table S18 repeats the rule of Table 5 with separated datasets removed\",\"Table S18 repeats the counts of Table S5 with separated datasets removed\"),\n(\"In every version the GEE strategy is no longer clearly above 7.5% at any design point and, answering more often, is the strategy the rule selects; the marginalized model with the check is selected only in the primary analysis.\",\n \"In every version GEE AR(1)-FG is no longer clearly above 7.5% at any design point, and it answers more often than the MMM with the check.\"),\n(\"**Table S18.** The decision rule of Table 5 with separated datasets removed\",\"**Table S18.** The counts of Table S5 with separated datasets removed\"),\n(\"strategies of the rule and the two tests without an interval\",\"strategies with an interval and the two tests without one\"),\n(\"for the eight strategies of Table 5 with a small-sample correction\",\"for the eight strategies of Table S5 with a small-sample correction\"),\n(\"Observed: the count in the study (Table 5)\",\"Observed: the count in the study (Table S5)\"),\n(s4_sep_extra,\"At these two design points the MMM rejected a true null in 0 of 35 and 0 of 38 usable replicates, and GEE AR(1)-FG rejected 0 of 34 and 0 of 37 on its usable datasets that were not separated (Section 3.1 of the main text).\"),\n(\"defined in Section 2.2 of the main text\",\"in which one treatment arm was never observed after the first occasion\"),\n(\"the AR(1) working correlation of Section 2.4 of the main text\",\"the AR(1) working correlation of Section 2.1 of the main text\"),\n(\"Section 2.5 of the main text\",\"Section 2.3 of the main text\"),(\"Section 2.7 of the main text\",\"Section 2.5 of the main text\"),(\"Section 3.11 of the main text\",\"Section 3.5 of the main text\"),\n(\"With the rules of Section 2.4 of the main text the test was not computable\",\"With the rules given at the start of this section the test was not computable\"),\n(\"the GEE strategy\",\"GEE AR(1)-FG\"),(\"The GEE strategy\",\"GEE AR(1)-FG\"),(\"GEE AR(1)-FG's count\",\"the count of GEE AR(1)-FG\"),\n(\"the three study mechanisms\",\"the three mechanisms with a constant component\"),\n]\nfor a,b_ in R:\n    if a not in s: print('MISSING:',a[:80]); continue\n    s=s.replace(a,b_)\n# sign-flip rule sentence at start of S5\ns=s.replace(\"## S5. Sign-flip score test and the interval obtained by inverting it\\n\\n\",\"## S5. Sign-flip score test and the interval obtained by inverting it\\n\\nThe test was declared not computable, and returned no answer, when the model without the interaction diverged (a coefficient of at least 1,000 in absolute value) or every score contribution was below $10^{-6}$ in absolute value, because the interaction is then not identified. With the other coefficients estimated, the effective-score version is asymptotically exact and robust to differences in variance between subjects [@hemerik2020]; it is exact in finite samples only when no nuisance parameter is estimated and the contributions are symmetric.\\n\\n\",1)\nopen('v9/supp_ren.md','w').write(s)\nfor p_ in [r'Table [1-5]\\b',r'\\brule\\b(?! for)',r'Section 2\\.[67]',r'Section 3\\.(?:[2-9]|1\\d)',r'Table S31',r'Table S3[2-9]',r'decision']:\n    for m in re.finditer(p_,s): print(p_,'|',s[max(0,m.start()-90):m.end()+50].replace('\\n',' '))"
+ },
+ {
+  "i": 90,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Renumbering supplement references",
+  "code": "s=open('v9/supp_ren.md').read()\ns=s.replace(\", which an earlier version of this analysis used,\",\"\")\ninv={v:k for k,v in keymap.items()}\ndef to_keys(m):\n    inner=m.group(1); ks=[]\n    for part in inner.split(','):\n        part=part.strip()\n        if '-' in part:\n            a_,b_=map(int,part.split('-')); ks+= [inv[i] for i in range(a_,b_+1)]\n        elif part.isdigit(): ks.append(inv[int(part)])\n        else: return m.group(0)\n    return '[' + '; '.join('@'+k for k in ks) + ']'\ns=re.sub(r'\\\\\\[([\\d,\\- ]+)\\\\\\]',to_keys,s)\nkeys=[]\nfor m in re.finditer(r'\\[(@[^\\]]+)\\]',s):\n    for k in re.findall(r'@(\\w+)',m.group(1)):\n        if k not in keys: keys.append(k)\nnumS={k:i+1 for i,k in enumerate(keys)}\ndef fmtS(m):\n    ns=sorted(numS[k] for k in re.findall(r'@(\\w+)',m.group(1))); return '['+','.join(map(str,ns))+']'\ns=re.sub(r'\\[(@[^\\]]+)\\]',fmtS,s)\ns+= '\\n\\n## References\\n\\n'+'\\n'.join(f\"{numS[k]}. {v8refs[keymap[k]]}\" for k in keys)\nprint(len(keys), re.findall(r'\\\\\\[',s)[:5])\nopen('v9/supplement.md','w').write(s)\nprint(len(s.split()))"
+ },
+ {
+  "i": 91,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Checking leftover escaped brackets",
+  "code": "for m in list(re.finditer(r'\\\\\\[',s))[:12]: print(s[m.start()-60:m.start()+40].replace('\\n',' '))"
+ },
+ {
+  "i": 92,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Finalizing manuscript markdown with figures",
+  "code": "t=open('v9/body.md').read()\na=\"A dataset in which the outcome was constant gave no usable result for any method.\"\nt=t.replace(a,\"Replicates in which one treatment arm was never observed after the first occasion had no estimable design and were excluded from every denominator. A dataset in which the outcome was constant gave no usable result for any method.\")\nopen('v9/body.md','w').write(t)\nfor vid,fn in [('fedd1fd6-1d3e-421f-9ccc-8267cf5ed9f4','fig1_mechanisms.png'),('c784e769-a658-4a9d-8020-ce49cb147af2','fig2_typeI_heatmap.png'),('3156afb3-a4e9-4cfd-91e8-8a6579392f57','fig3_availability_power.png'),('55edc253-9d12-437a-891e-34411abd2405','figS1_usable.png')]:\n    shutil.copy(ap(vid),'v9/'+fn)\nshutil.copy('src/supp_media/media/rId32.png','v9/figS2_m67.png')\nbody=t; order_keys=[]\nfor m in re.finditer(r'\\[(@[^\\]]+)\\]',body):\n    for k in re.findall(r'@([\\w]+)',m.group(1)):\n        if k not in order_keys: order_keys.append(k)\nnum={k:i+1 for i,k in enumerate(order_keys)}\nbody2=re.sub(r'\\[(@[^\\]]+)\\]',fmt,body)\nreflist='\\n## References\\n\\n'+'\\n'.join(f\"{num[k]}. {v8refs[keymap[k]]}\" for k in order_keys)\ntabs=open('v9/tables.md').read()\ncapblock=tabs[tabs.find('## Figure legends'):]\nf1,f2,f3=[c for c in capblock.split('\\n\\n') if c.startswith('**Figure')]\nfigs=f\"\\n\\n## Figures\\n\\n![](fig1_mechanisms.png){{width=6.5in}}\\n\\n{f1}\\n\\n![](fig2_typeI_heatmap.png){{width=6.5in}}\\n\\n{f2}\\n\\n![](fig3_availability_power.png){{width=6.5in}}\\n\\n{f3}\\n\"\nopen('v9/manuscript.md','w').write(body2+'\\n'+reflist+'\\n'+tabs[:tabs.find('## Figure legends')]+figs)\nsp=open('v9/supplement.md').read()\nsp=re.sub(r'!\\[\\]\\(supp_media/media/rId32\\.png\\)(\\{[^}]*\\})?','![](figS2_m67.png){width=6.5in}',sp).replace('![](figS1_usable.png)','![](figS1_usable.png){width=6.5in}')\nopen('v9/supplement.md','w').write(sp)\nr=subprocess.run('cd v9 && pandoc manuscript.md -o MMM_v9_SMMR_manuscript.docx --resource-path=. && pandoc supplement.md -o MMM_v9_SMMR_supplement.docx --resource-path=. && ls -la *.docx',shell=True,capture_output=True,text=True); print(r.stdout,r.stderr[:800])\nbw=len(re.sub(r'\\$[^$]*\\$','x',body2[body2.find('## 1. Introduction'):body2.find('## Code and data')]).split()); print('main text words', bw)"
+ },
+ {
+  "i": 94,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Rendering cover letter and final checks",
+  "code": "r=subprocess.run('cd v9 && pandoc cover_letter.md -o MMM_v9_cover_letter.docx && ls *.docx',shell=True,capture_output=True,text=True); print(r.stdout,r.stderr)\nfor fn in ['v9/manuscript.md','v9/supplement.md','v9/cover_letter.md']:\n    sc=style_scan(open(fn).read()); print(fn, {k:v for k,v in sc['counts'].items() if v})\n# check every supplement reference cited in main text exists\nmt=open('v9/manuscript.md').read(); sp=open('v9/supplement.md').read()\ncited=sorted(set(re.findall(r'(?:Table|Figure) S\\d+',mt))); have=sorted(set(re.findall(r'\\*\\*((?:Table|Figure) S\\d+)\\.\\*\\*',sp)))\nprint(cited); print(have); print('missing', [c for c in cited if c not in have])\nprint(sorted(set(re.findall(r'Section S\\d',mt))), sorted(set(re.findall(r'^## (S\\d)',sp,re.M))))"
+ },
+ {
+  "i": 95,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Inspecting numeral flags in manuscript",
+  "code": "sc=style_scan(open('v9/manuscript.md').read())\nfor h in sc['numerals']: print(h.get('match'),'|',h.get('context','')[:90])"
+ },
+ {
+  "i": 102,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Checking reviewer findings and closing compute",
+  "code": "print(host.findings())\ntry: print(c.close(intent=\"done with MMM rewrite data pulls\"))\nexcept Exception as e: print(e)"
+ },
+ {
+  "i": 103,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Fixing abstract GLMM claim and re-rendering",
+  "code": "a=\"but exceeded the level under serial dependence at every number of clusters, with mean type I error up to 17%.\"\nb_=\"but exceeded the level under serial dependence, increasingly so as clusters were added, with mean type I error up to 17% with 75 to 145 clusters.\"\nfor fn in ['v9/body.md','v9/manuscript.md']:\n    t=open(fn).read(); assert t.count(a)==1; open(fn,'w').write(t.replace(a,b_))\nr=subprocess.run('cd v9 && pandoc manuscript.md -o MMM_v9_SMMR_manuscript.docx --resource-path=.',shell=True,capture_output=True,text=True); print(r.returncode, r.stderr[:200])\nprint(re.findall(r'at every number of clusters',open('v9/manuscript.md').read()))"
+ },
+ {
+  "i": 105,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Marking addressed reviewer findings",
+  "code": "help(host.findings)"
+ },
+ {
+  "i": 106,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Marking two fixed findings addressed",
+  "code": "print(host.findings.mark_addressed(['5a92ec1c-fbf2-4a62-9d00-51939d97fb1f'], \"Abstract now reads 'no strategy with an interval that kept its level answered in more than 26%'; Section 3.3 says 'among the valid ones'.\"))\nprint(host.findings.mark_addressed(['cd8088ca-c3bc-4625-984c-a6a5f2c4dec2'], \"Abstract changed to 'exceeded the level under serial dependence, increasingly so as clusters were added, with mean type I error up to 17% with 75 to 145 clusters'.\"))"
+ },
+ {
+  "i": 109,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Delegating line-by-line supplement audit",
+  "code": "task = \"\"\"AUDIT (read-only; do not rewrite the files). Audit, line by line, the rewritten Supplementary Material {{artifact:fbbf692d-122b-417e-9e4a-d13afd798514}} (markdown) of a simulation paper, against (a) the new main text {{artifact:324da602-5ec1-4438-9053-7414380bca56}} (markdown), (b) the previous supplement it was built from {{artifact:22c40cfa-9f30-43ec-98de-a33e742df33a}} and the previous main text {{artifact:a9038696-9a28-481a-98e1-64cd6f3db9d5}}, and (c) the per-design-point data {{artifact:74e1864a-e9ca-4fe6-b8c8-abd2227ccd3a}} (gzip CSV; columns dgp, scen, N, ntime, strategy, n, k, nd, rate, hi, lo, pu, upow, grp, small, set; 'base' version reproducing the old main Table 5, t reference).\nThe new supplement was assembled by moving old sections/tables and renumbering them. Old->new table map: S1->S1, S2->S2, S39->S3, new S4 (all 19 strategies by mechanism, computed from (c) on set=='main'), old MAIN Table 5->S5, new Figure S1 (usable share heat map), S7->S6, S6->S7, S11->S8, S26->S9, S10->S10, S12->S11, S36->S12, new S13 (M1c, from (c)), S14->S14, old Figure S1->Figure S2, S35->S15, S28->S16, S34->S17, S38->S18, S37->S19, S27->S20, S15->S21, S29->S22, S30->S23. Old sections were merged into new S1-S7. Dropped old tables: S3,S4,S5,S8,S9,S13,S16-S25,S31,S32,S33 and the old 'decision rule'. Old main sections: 2.2 DGM, 2.4 methods, 2.5 performance, 2.6 rule, 2.7 clinical; new main: 2.1 methods & differences, 2.2 DGM, 2.3 performance measures, 2.4 implementation, 2.5 clinical; 3.1 level by mechanism, 3.2 availability/power, 3.3 choice, 3.4 sensitivity, 3.5 clinical.\nCheck and report EVERY instance of:\n1. A cross-reference (Table Sx, Figure Sx, Section Sx, Section x.y of the main text, Table/Figure n of the main text) that points to the wrong content after renumbering, or to something that no longer exists.\n2. Text that still presupposes the dropped decision rule, the dropped tables, 'the GEE strategy', 'the strategy selected', 'the three study mechanisms' without definition, margins of relevance or other concepts not defined in the new main text or supplement.\n3. Any number in new Tables S4, S5, S13 or in supplement text written new (intro, Monte Carlo paragraph, Figure 1 note, separated-data paragraph, usability-limit paragraph, sign-flip opening paragraph, M1c and GLMM-under-serial-dependence paragraphs) that does not match (c) or the previous documents. Recompute from (c) where possible.\n4. Contradictions between the supplement and the new main text (numbers, definitions, method names, abbreviations).\n5. Duplicated paragraphs, orphaned text, broken markdown (image links, tables), references list problems (every [n] in the supplement must point to the right entry of the supplement's own reference list; compare with the old numbering in (b)).\n6. Dashes used as punctuation (em/en dashes).\nFor each finding give: location (section + first words of the sentence), the exact current text (quote), what is wrong, and the exact replacement text to apply (a drop-in string), so that a find-and-replace fixes it. Do not report stylistic preferences. Return structured output.\"\"\"\nschema = {\"type\":\"object\",\"properties\":{\"findings\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"location\":{\"type\":\"string\"},\"current_text\":{\"type\":\"string\"},\"problem\":{\"type\":\"string\"},\"replacement_text\":{\"type\":\"string\"},\"severity\":{\"type\":\"string\",\"enum\":[\"high\",\"medium\",\"low\"]}},\"required\":[\"location\",\"current_text\",\"problem\",\"replacement_text\",\"severity\"]}},\"checked_summary\":{\"type\":\"string\"}},\"required\":[\"findings\",\"checked_summary\"]}\naudit = host.delegate({\"task\":task,\"name\":\"Supplement audit\",\"output_schema\":schema,\n  \"context_summary\":\"Paper: few-cluster clustered binary outcomes; GEE (MD/KC/FG/CR2 corrections), GLMM, marginalized multilevel model (MMM) with convergence check, sign-flip test; four mechanisms GLMM-native, GLMM-AR1, GenBinaryY, Copula-AR1; 2,376 design points. Main text uses t reference (N-p df). Abbreviation 'GEE AR(1)-FG' = GEE with AR(1) working correlation + Fay-Graubard + t reference.\"})\nimport json\njson.dump(audit, open('handoff/supp_audit.json','w'), default=str) if __import__('os').makedirs('handoff',exist_ok=True) is None else None\nprint(audit.get('status'), audit.get('deviations'))\nso=audit.get('structured_output') or {}\nprint(len(so.get('findings',[])), so.get('checked_summary','')[:1500])"
+ },
+ {
+  "i": 110,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Reading v8 title page and cover letter",
+  "code": "print(open('src/MMM_v8_SMMR_cover_letter.md').read()[-1500:])\na=host.artifacts(filename='MMM_v8_SMMR_title_page.docx')['artifacts'][0]; shutil.copy(host.artifact_path(a['latest_version_id']),'src/title_v8.docx')\nr=subprocess.run('pandoc src/title_v8.docx -t markdown --wrap=none',shell=True,capture_output=True,text=True); print(r.stdout[:3000])"
+ },
+ {
+  "i": 111,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Restoring MMM as primary recommendation",
+  "code": "t=open('v9/body.md').read()\nR=[\n(\"GEE with AR(1) working correlation and the Fay-Graubard correction, and the MMM, kept their level under all four mechanisms from three occasions upwards; the GEE answered more often.\",\n \"The MMM was the only strategy with an interval that was never clearly above the nominal level, under any mechanism or design. GEE with AR(1) working correlation and the Fay-Graubard correction kept its level under all four mechanisms from three occasions upwards and answered more often.\"),\n(\"Two clinical datasets, repeatedly subsampled, reproduced these patterns.\",\n \"Two clinical datasets, repeatedly subsampled, reproduced these patterns. We recommend the MMM with a convergence check; GEE with AR(1) working correlation and the Fay-Graubard correction, preceded by a check for separation, is a simpler alternative from three occasions.\"),\n(\"With three or more occasions, two strategies remained valid in every region: GEE with AR(1) working correlation and Fay-Graubard, and the MMM. Of the two, the GEE answered more often with 25 or fewer clusters (40% against 22% of datasets with ten clusters and three or four occasions; 75% against 50% with 15 to 25 clusters) and was closer to nominal, while the MMM was conservative. Their power was similar.\",\n \"The MMM was the only strategy with an interval that remained valid in all twelve regions. With three or more occasions GEE with AR(1) working correlation and Fay-Graubard also remained valid in every region; with ten clusters and two occasions it did not. The GEE answered more often with 25 or fewer clusters (40% against 22% of datasets with ten clusters and three or four occasions; 75% against 50% with 15 to 25 clusters) and was closer to nominal, while the MMM was conservative. Their power was similar.\"),\n(\"2. With three or more occasions, use GEE with an AR(1) working correlation, the Fay-Graubard correction and a t reference with $N - p$ degrees of freedom. It kept its level under all four mechanisms and answered more often than the alternatives. Check for separation first, for example with the *detectseparation* package [@kosmidis], and do not report a Wald test of a separated coefficient.\\n3. The MMM with a convergence check is a valid alternative when a likelihood-based marginal analysis is wanted. It was the only strategy never clearly above 7.5% at any of the 2,376 design points, but it is conservative with ten clusters and returns no result more often. Report how often the check intervened.\",\n \"2. Use the MMM with a convergence check and a t reference with $N - p$ degrees of freedom. It was the only strategy with an interval never clearly above 7.5% at any of the 2,376 design points, under any mechanism. It is conservative with ten clusters and returns no result more often than GEE; report how often the check intervened and how often it left no result.\\n3. GEE with an AR(1) working correlation, the Fay-Graubard correction and a t reference is a simpler alternative from three occasions, and the analysis to use when the MMM returns no result. It kept its level under all four mechanisms from three occasions and answered more often. Check for separation first, for example with the *detectseparation* package [@kosmidis], and do not report a Wald test of a separated coefficient: its only excess rejections came from separated datasets. The R package *fewclust* applies this sequence, fitting the MMM first, GEE when the MMM gives no usable result, and stopping with an explanation when the mean model is separated.\"),\n(\"GEE with an AR(1) working correlation, the Fay-Graubard correction and a t reference, and the marginalized multilevel model, kept their level under all four mechanisms studied; the GEE answered more often.\",\n \"The marginalized multilevel model with a convergence check kept its level under all four mechanisms and at every design studied, and is the analysis we recommend. GEE with an AR(1) working correlation, the Fay-Graubard correction and a t reference kept its level under all four mechanisms from three occasions, answered more often, and is a simpler alternative when preceded by a check for separation.\"),\n]\nfor a,b_ in R:\n    assert t.count(a)==1, a[:60]; t=t.replace(a,b_)\nopen('v9/body.md','w').write(t)\nab=t[t.find('## Abstract')+12:t.find('**Keywords')]; print('abstract words',len(ab.split()))"
+ },
+ {
+  "i": 112,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Rewriting abstract under 250 words",
+  "code": "t=open('v9/body.md').read()\ni=t.find('## Abstract\\n\\n')+len('## Abstract\\n\\n'); j=t.find('\\n\\n**Keywords')\nnew_ab=(\"Small-sample corrections for analyses of clustered binary outcomes have been evaluated mainly by number of clusters, seldom by number of occasions or by how the within-subject dependence is generated. \"\n\"We compared six strategies for testing a treatment-by-time interaction: uncorrected generalized estimating equations (GEE), GEE with the Mancl-DeRouen or Fay-Graubard correction, the Wald test of a generalized linear mixed model (GLMM), a marginalized multilevel model (MMM) and a sign-flip score test. \"\n\"The design covered 10 to 145 clusters and 2 to 10 occasions under four mechanisms: a random intercept, a random intercept plus serial correlation, a latent-variable transition model and purely serial correlation. \"\n\"Whether a method kept its level depended on the mechanism. \"\n\"Uncorrected GEE was anticonservative with 25 or fewer clusters under every mechanism. \"\n\"The GLMM Wald test was close to nominal on its own model but exceeded the level under serial dependence, increasingly so as clusters were added, with mean type I error up to 17%. \"\n\"Exchangeable GEE with a correction failed only with serial dependence and 25 or fewer clusters; an AR(1) working correlation removed this excess. \"\n\"The MMM was the only strategy with an interval never clearly above the nominal level, under any mechanism or design. \"\n\"GEE with AR(1) working correlation and Fay-Graubard kept its level from three occasions upwards and answered more often. \"\n\"Availability depended on the design: with two occasions and 25 or fewer clusters no valid strategy with an interval answered in more than 26% of datasets. \"\n\"Two subsampled clinical datasets reproduced these patterns. \"\n\"We recommend the MMM with a convergence check, and GEE with AR(1) working correlation and Fay-Graubard, after a check for separation, as a simpler alternative.\")\nt=t[:i]+new_ab+t[j:]\nopen('v9/body.md','w').write(t); print(len(new_ab.split()))"
+ },
+ {
+  "i": 113,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Trimming abstract further",
+  "code": "t=open('v9/body.md').read()\ncuts=[(\"Small-sample corrections for analyses of clustered binary outcomes have been evaluated mainly by number of clusters, seldom by number of occasions or by how the within-subject dependence is generated. \",\n       \"Analyses of clustered binary outcomes with few clusters have been evaluated mainly by number of clusters, seldom by number of occasions or by dependence mechanism. \"),\n(\"The design covered 10 to 145 clusters and 2 to 10 occasions under four mechanisms: a random intercept, a random intercept plus serial correlation, a latent-variable transition model and purely serial correlation. \",\n \"We simulated 10 to 145 clusters and 2 to 10 occasions under four mechanisms: random intercept, random intercept plus serial correlation, latent-variable transition model and purely serial correlation. \"),\n(\"The GLMM Wald test was close to nominal on its own model but exceeded the level under serial dependence, increasingly so as clusters were added, with mean type I error up to 17%. \",\n \"The GLMM was close to nominal on its own model but anticonservative under serial dependence, increasingly with more clusters (mean type I error up to 17%). \"),\n(\"Two subsampled clinical datasets reproduced these patterns. \",\"Two subsampled clinical datasets agreed. \"),\n(\"We recommend the MMM with a convergence check, and GEE with AR(1) working correlation and Fay-Graubard, after a check for separation, as a simpler alternative.\",\n \"We recommend the MMM with a convergence check; AR(1) GEE with Fay-Graubard, after a separation check, is a simpler alternative.\"),\n(\"GEE with AR(1) working correlation and Fay-Graubard kept its level from three occasions upwards and answered more often. \",\n \"AR(1) GEE with Fay-Graubard kept its level from three occasions and answered more often. \"),\n]\nfor a,b_ in cuts:\n    assert a in t,a[:50]; t=t.replace(a,b_)\nopen('v9/body.md','w').write(t)\ni=t.find('## Abstract\\n\\n')+13; j=t.find('\\n\\n**Keywords'); print(len(t[i:j].split())); print(t[i:j])"
+ },
+ {
+  "i": 114,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Tightening two abstract claims",
+  "code": "t=open('v9/body.md').read()\nfor a,b_ in [(\"Whether a method kept its level depended on the mechanism.\",\"Validity depended on the mechanism.\"),\n(\"Exchangeable GEE with a correction failed only with serial dependence\",\"Exchangeable GEE with a correction failed mainly with serial dependence\"),\n(\"The MMM was the only strategy with an interval never clearly above the nominal level, under any mechanism or design.\",\"The MMM was the only strategy with an interval never clearly above a 7.5% type I error, under any mechanism or design.\"),\n(\"Exchangeable GEE with a small-sample correction failed only when the two problems met: serial dependence and 25 or fewer clusters.\",\"Exchangeable GEE with a small-sample correction failed mainly when the two problems met: serial dependence and 25 or fewer clusters.\")]:\n    assert t.count(a)==1,a[:50]; t=t.replace(a,b_)\nopen('v9/body.md','w').write(t)\ni=t.find('## Abstract\\n\\n')+13; j=t.find('\\n\\n**Keywords'); print(len(t[i:j].split()))\nprint(re.findall(r'[^.]*\\bonly\\b[^.]*\\.',t)[:20])"
+ },
+ {
+  "i": 115,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Fixing separation claim and cover letter",
+  "code": "t=open('v9/body.md').read()\na=\"do not report a Wald test of a separated coefficient: its only excess rejections came from separated datasets.\"\nt=t.replace(a,\"do not report a Wald test of a separated coefficient: at both design points where it exceeded 7.5%, all its false positives came from separated datasets.\")\nopen('v9/body.md','w').write(t)\ncl=open('v9/cover_letter.md').read()\nR=[(\"4. GEE with AR(1) working correlation and Fay-Graubard, and the marginalized multilevel model, keep their level under all four mechanisms from three occasions upwards.\",\n\"4. the marginalized multilevel model with a convergence check is the only strategy with an interval that never exceeds the level under any mechanism or design, and GEE with AR(1) working correlation and Fay-Graubard keeps its level under all four mechanisms from three occasions upwards and answers more often.\\n\\nOur recommendation is therefore the marginalized multilevel model, with GEE with AR(1) working correlation and the Fay-Graubard correction, preceded by a check for separation, as a simpler alternative from three occasions.\"),\n(\"The manuscript is not under consideration elsewhere, and all authors have approved the resubmission.\",\n \"The manuscript has not been published and is not under consideration elsewhere. All authors have read and approved the resubmitted version. The use of generative artificial intelligence tools is declared on the title page. The manuscript and the supplementary material are anonymized for double-anonymized review; the title page contains the authors, the declarations and the link to the repository.\"),\n(\"Unit of Biostatistics, Epidemiology and Public Health, University of Padova\\n\",\"Unit of Biostatistics, Epidemiology and Public Health, University of Padova\\\\\\ndario.gregori@unipd.it\\n\"),\n(\"Dario Gregori, on behalf of the authors\\n\",\"Dario Gregori, on behalf of the authors\\\\\\n\"),\n(\"The main text has been shortened from about 11,700 to about 4,600 words\",\"The main text has been shortened from about 8,000 to about 4,700 words\")]\nfor a,b_ in R:\n    assert a in cl,a[:50]; cl=cl.replace(a,b_)\nopen('v9/cover_letter.md','w').write(cl)\nmw=len(re.sub(r'\\$[^$]*\\$','x',t[t.find('## 1. Introduction'):t.find('## Code and data')]).split()); print(mw)"
+ },
+ {
+  "i": 116,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Updating title page title and counts",
+  "code": "try:\n    import docx\nexcept ImportError:\n    subprocess.run('pip install -q python-docx',shell=True); import docx\nd_=docx.Document('src/title_v8.docx')\nfor k,p_ in enumerate(d_.paragraphs[:12]): print(k, repr(p_.text[:150]), [r.bold for r in p_.runs][:3])"
+ },
+ {
+  "i": 117,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Writing v9 title page docx",
+  "code": "def set_text(p_, text):\n    runs=p_.runs; runs[0].text=text\n    for r_ in runs[1:]: r_.text=''\ntitle=\"Analyzing clustered binary outcomes with few clusters and short series: which method works under which clustering mechanism? A simulation study and two clinical applications\"\nset_text(d_.paragraphs[0], title)\np9=d_.paragraphs[9]; set_text(p9, \"Word count: abstract 246 words; main text (Introduction to Conclusions) 4,709 words; 5 tables, 3 figures; supplementary material in a separate file.\"); p9.runs[0].bold=True\nd_.save('v9/MMM_v9_SMMR_title_page.docx')\nprint([p_.text[:90] for p_ in docx.Document('v9/MMM_v9_SMMR_title_page.docx').paragraphs[:10] if p_.text][::4])\n# title also in manuscript front matter -> already same; render manuscript & letter\nopen('v9/manuscript.md','w').write(open('v9/manuscript.md').read())  # placeholder"
+ },
+ {
+  "i": 118,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Rebuilding and rendering manuscript and letter",
+  "code": "def build():\n    body=open('v9/body.md').read(); ok=[]\n    for m in re.finditer(r'\\[(@[^\\]]+)\\]',body):\n        for k in re.findall(r'@([\\w]+)',m.group(1)):\n            if k not in ok: ok.append(k)\n    global num; num={k:i+1 for i,k in enumerate(ok)}\n    body2=re.sub(r'\\[(@[^\\]]+)\\]',fmt,body)\n    refl='\\n## References\\n\\n'+'\\n'.join(f\"{num[k]}. {v8refs[keymap[k]]}\" for k in ok)\n    open('v9/manuscript.md','w').write(body2+'\\n'+refl+'\\n'+tabs[:tabs.find('## Figure legends')]+figs)\n    r=subprocess.run('cd v9 && pandoc manuscript.md -o MMM_v9_SMMR_manuscript.docx --resource-path=. && pandoc cover_letter.md -o MMM_v9_cover_letter.docx',shell=True,capture_output=True,text=True)\n    return r.returncode, r.stderr[:300], len(ok)\nprint(build())\nsc=style_scan(open('v9/body.md').read()); print({k:v for k,v in sc['counts'].items() if v})"
+ },
+ {
+  "i": 120,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Loading audit findings",
+  "code": "au=json.load(open('handoff/supp_audit.json'))\nF=au['structured_output']['findings']\nimport collections; print(collections.Counter(f['severity'] for f in F))\nsp=open('v9/supplement.md').read()\nfor n_,f in enumerate(F):\n    present = f['current_text'] in sp\n    print(n_, f['severity'], present, '|', f['location'][:60], '|', f['problem'][:230].replace('\\n',' '))"
+ },
+ {
+  "i": 121,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Reviewing proposed replacement texts",
+  "code": "for n_ in [2,3,8,10,11,12,13,14,17,24,28,29,30,31,37,41,43,44]:\n    f=F[n_]; print(f'## {n_}\\nNOW: {f[\"current_text\"][:400]}\\nNEW: {f[\"replacement_text\"][:700]}\\n')"
+ },
+ {
+  "i": 122,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Applying audit replacements to supplement",
+  "code": "sp=open('v9/supplement.md').read(); applied=[]; skipped=[]\nfor n_,f in enumerate(F):\n    if n_ in (42,43): skipped.append(n_); continue\n    c_=f['current_text']\n    if c_ in sp:\n        cnt=sp.count(c_)\n        sp=sp.replace(c_,f['replacement_text'],1 if cnt>1 else -1); applied.append((n_,cnt))\n    else: skipped.append(n_)\nopen('v9/supplement.md','w').write(sp)\nprint('applied',applied); print('skipped',skipped)\n# main text Table 4 abbreviation\ntb=open('v9/tables.md').read()\ntb=tb.replace(\"GEE-AR1 FG = AR(1) working correlation with Fay-Graubard.\",\"GEE AR(1)-FG = AR(1) working correlation with Fay-Graubard.\").replace(\"GEE-AR1 FG\",\"GEE AR(1)-FG\")\nopen('v9/tables.md','w').write(tb); tabs=tb\nb=open('v9/body.md').read()\nb=b.replace(\"GEE AR(1) Fay-Graubard and the MMM were never clearly above 7.5% (72 design points)\",\"GEE with AR(1) working correlation and Fay-Graubard, and the MMM, were never clearly above 7.5% (72 design points)\")\nb=b.replace(\"In M6-M7, with steep random slopes and growing latent variability, GEE AR(1) Fay-Graubard and the MMM\",\"In M6-M7, with steep random slopes and growing latent variability, the same two strategies\")\nopen('v9/body.md','w').write(b)\nprint(build())\nr=subprocess.run('cd v9 && pandoc supplement.md -o MMM_v9_SMMR_supplement.docx --resource-path=. 2>&1; unzip -l MMM_v9_SMMR_supplement.docx | grep media',shell=True,capture_output=True,text=True); print(r.stdout[-600:])\nprint(sum(f['current_text']==F[i]['current_text'] for i,f in enumerate(F)))"
+ },
+ {
+  "i": 125,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Searching archive for layout requests",
+  "code": "help(host.archive.search)"
+ },
+ {
+  "i": 126,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Searching project sessions for layout notes",
+  "code": "r=host.archive.search(\"impaginazione\", k=10); print(r['total_archived_messages'], [h['snippet'][:200] for h in r['hits']])\nprint([x for x in dir(host.frames) if not x.startswith('_')] if not callable(host.frames) else 'callable')\nhelp(host.frames)"
+ },
+ {
+  "i": 127,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Grepping project sessions for formatting rules",
+  "code": "r=host.frames(pattern=r\"impagina|interlinea|double.spac|line number|numeri di riga|Times New Roman|reference.docx|layout|formattazione\", max_results=40)\nprint(r.get('total_matches'), r.get('searched_frames'), r.get('regex_truncated'))\nfor m in r['matches'][:40]:\n    print('==', m['frame_id'][:8], m.get('name') or '', m.get('status'))\n    for sn in m['snippets'][:6]: print('   -', sn[:300].replace('\\n',' '))"
+ },
+ {
+  "i": 129,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Reading SMMR finalization session formatting",
+  "code": "r=host.frames(frame_id=\"e75b8aa2\", pattern=r\"Times New Roman|line_spacing|line number|lnNum|numer|margin|Arial|interlinea|impagin|double|font|pagin|caption|figure.*end|tabelle\", include_tool_results=False, max_results=200)\nprint(r.get('name'), r.get('total_messages'), r.get('truncated'))\nimport json\nmsgs=r['messages']; print(len(msgs))\nout=[]\nfor m in msgs:\n    c=m.get('content'); s=json.dumps(c)[:3000] if not isinstance(c,str) else c[:3000]\n    out.append(f\"[{m.get('role')}] {s}\")\nopen('handoff/e75.txt','w').write('\\n\\n'.join(out)); print(sum(len(x) for x in out))"
+ },
+ {
+  "i": 130,
+  "tool": "bash",
+  "lang": "bash",
+  "env": "python",
+  "desc": "Extracting user formatting requests",
+  "code": "cd handoff && grep -n \"^\\[user\\]\" e75.txt | cut -c1-1500 | head -40"
+ },
+ {
+  "i": 131,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Collecting user messages from SMMR session",
+  "code": "def user_texts(fid):\n    res=[]; off=0\n    while True:\n        r=host.frames(frame_id=fid, include_tool_results=False, max_results=500, offset=off)\n        for m in r['messages']:\n            if m.get('role')!='user': continue\n            c=m.get('content')\n            blocks=c if isinstance(c,list) else [{'type':'text','text':c}]\n            for b in blocks:\n                if isinstance(b,dict) and b.get('type')=='text':\n                    t=b['text']\n                    # strip system preambles\n                    parts=[p for p in t.split('\\n\\n') if not p.startswith('[System]') and not p.startswith('Reference material') and not p.startswith('Keyword pre-scan') and not p.startswith('- ') and not p.startswith('Previously loaded')]\n                    tt='\\n'.join(parts).strip()\n                    if tt and not tt.startswith('{') and not tt.startswith('<'): res.append(tt[:1500])\n        if not r.get('truncated'): break\n        off+=len(r['messages'])\n    return res\nfor fid in ['e75b8aa2','7d0f5c96']:\n    u=user_texts(fid); print('#####',fid,len(u))\n    for x in u: print('---',x[:1200])"
+ },
+ {
+  "i": 132,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Grepping repo decisions for formatting rules",
+  "code": "c = host.compute.create(\"ssh:lesexp-server\")\ncmd = r\"\"\"cd ~/MMM && git log --oneline -n 3; grep -il -E 'docx|Arial|font|interline|line.number|numer[ai] di riga|TIFF|impagina|reference.docx|formato|format' docs/decisions/*.md | tr '\\n' ' '; echo; for f in $(grep -il -E 'Arial|font|interline|line.number|TIFF|impagina|reference.docx' docs/decisions/*.md); do echo \"#### $f\"; sed -n '1,60p' $f | grep -v '^\\s*$' | head -40; done\"\"\"\nr=c.call_command(cmd, intent=\"read formatting decisions\")\nopen('handoff/dec_fmt.txt','w').write(r.stdout); print(len(r.stdout)); print(r.stdout[:6000])"
+ },
+ {
+  "i": 133,
+  "tool": "bash",
+  "lang": "bash",
+  "env": "python",
+  "desc": "Reading other format-related decisions",
+  "code": "cd handoff && python3 - <<'E'\nt=open('dec_fmt.txt').read()\nimport re\nfor blk in t.split('#### ')[1:]:\n    name=blk.split('\\n')[0]\n    if name.endswith(('D-38.md','D-41.md','D-42.md')): continue\n    title=re.search(r'title: \"(.*)\"',blk); dec=blk.split('# Decisione')[-1][:1100] if '# Decisione' in blk else ''\n    print('####',name, '|', title.group(1) if title else ''); print(dec.strip()[:1100]); print()\nE"
+ },
+ {
+  "i": 134,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Fetching reference docx, tools and decisions",
+  "code": "cmd = r\"\"\"cd ~/MMM && for f in D-00b D-22 D-39 D-78 D-84; do echo \"#### $f\"; grep -m1 '^title' docs/decisions/$f.md; awk '/^# Decisione/{p=1} p' docs/decisions/$f.md | head -12; done; ls -la manuscript/v5/reference.docx tools/s7_check_docx_format.py tools/s7_make_reference_docx.py R/s9/s9_ref_style.py 2>&1; ls manuscript/v5 | head -50; grep -rn -i -E 'lnNum|line.?number|double|spacing|Figure[0-9]\\.tif|tiff' R/s9 R/s10 R/s11 py tools 2>/dev/null | head -20\"\"\"\nr=c.call_command(cmd, intent=\"read formatting decisions and tools\")\nprint(r.stdout[:9000])"
+ },
+ {
+  "i": 135,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Reading D-28 and Nov 4 log entries",
+  "code": "cmd = r\"\"\"cd ~/MMM && awk '/^title/{print} /^# Decisione/{p=1} p' docs/decisions/D-28.md | head -40; echo ======; git log --since=2026-11-03 --format='%h %ad %s' --date=iso -- manuscript/v5/reference.docx R/ tools/ | head -20; echo =====; sed -n '1,60p' docs/log.md\"\"\"\nr=c.call_command(cmd, intent=\"read D-28 and log\")\nprint(r.stdout[:12000])"
+ },
+ {
+  "i": 136,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Finding Nov 4 sessions and requests",
+  "code": "r=host.frames(after='2026-11-03T12:00', before='2026-11-08T12:00')\nfor f in r['frames']: print(f['id'][:8], f['created_at'][:16], f['status'], f.get('name'), f.get('artifact_count'))"
+ },
+ {
+  "i": 137,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Listing recent project sessions",
+  "code": "r=host.frames(max_results=30)\nfor f in r['frames'][:30]: print(f['id'][:8], f.get('created_at','')[:16], f.get('updated_at','')[:16], f['status'], f.get('name'))\nprint(r.get('sealed_sessions'))\na=[x for x in __import__('json').loads(__import__('json').dumps(host.frames(pattern=r\"Figure1\\.tif|tiff|TIFF\", max_results=20)))['matches']]\nfor m in a: print('TIF', m['frame_id'][:8], m.get('name'), [s[:250] for s in m['snippets'][:3]])"
+ },
+ {
+  "i": 138,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Extracting user requests from S11 session",
+  "code": "u=user_texts('04e5fdd5')\nprint(len(u))\nfor x in u: print('---',x[:1400])"
+ },
+ {
+  "i": 139,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Reading later S11 messages on figures",
+  "code": "r=host.frames(frame_id='04e5fdd5', include_tool_results=False, max_results=500, offset=500)\nmsgs=r['messages']; print(len(msgs), r.get('truncated'))\n# print user texts and last assistant messages mentioning figure/word format\nfor m in msgs:\n    c=m.get('content'); blocks=c if isinstance(c,list) else [{'type':'text','text':c}]\n    for b in blocks:\n        if isinstance(b,dict) and b.get('type')=='text':\n            t=b['text']\n            if m['role']=='user' and not t.startswith('[System]') and 'skill_discovery' not in t[:200]:\n                print('USER>>', t[:800]); \n            if m['role']=='assistant' and re.search(r'TIFF|Word|docx|figur|Figure', t) and len(t)>300:\n                print('ASSIST>>', t[:2500]); print()"
+ },
+ {
+  "i": 140,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Reading later S11 messages on figures",
+  "code": "import re\nout=[]\nfor m in msgs:\n    c=m.get('content'); blocks=c if isinstance(c,list) else [{'type':'text','text':c}]\n    for b in blocks:\n        if isinstance(b,dict) and b.get('type')=='text':\n            t=b['text']\n            if m['role']=='user' and not t.startswith('[System]') and 'skill_discovery' not in t[:200] and 'Auditor' not in t[:20]:\n                out.append('USER>> '+t[:800])\n            if m['role']=='assistant' and re.search(r'TIFF|Word|docx|figur|Figure', t) and len(t)>300:\n                out.append('ASSIST>> '+t[:2500])\nprint('\\n\\n'.join(out[-14:]))"
+ },
+ {
+  "i": 141,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Fetching reference docx and format checker",
+  "code": "job=c.submit_job(command=\"cp ~/MMM/manuscript/v5/reference.docx ./reference.docx && cp ~/MMM/tools/s7_check_docx_format.py ./s7_check_docx_format.py && cp ~/MMM/R/s9/s9_ref_style.py ./s9_ref_style.py && grep -n -E 'check_docx_format|reference-doc|pandoc' ~/MMM/R/s11/*.sh ~/MMM/R/s9/*.sh 2>/dev/null | head -20 > pipeline_grep.txt; true\",\n  intent=\"copy MMM reference.docx and format check script (small files)\", outputs=[\"reference.docx\",\"s7_check_docx_format.py\",\"s9_ref_style.py\",\"pipeline_grep.txt\"], run_timeout_s=300)\nprint(job)"
+ },
+ {
+  "i": 142,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Restoring v9 sources from artifacts",
+  "code": "import os, shutil, re, subprocess\nos.makedirs('v9',exist_ok=True)\ndef latest(fn): return host.artifacts(filename=fn)['artifacts'][0]['latest_version_id']\nfor fn in ['manuscript.md','supplement.md','MMM_v9_SMMR_title_page.docx','MMM_v9_cover_letter.docx','fig1_mechanisms.png','fig2_typeI_heatmap.png','fig3_availability_power.png','figS1_usable.png']:\n    shutil.copy(host.artifact_path(latest(fn)),'v9/'+fn)\n# vector PDFs from sub-agents\nfor vid,fn in [('dabdd3b8-228f-4876-9377-2bd44efbd5b8','fig1_mechanisms.pdf'),('8426cf86-eb13-4f6a-aece-f9d19d7d90ae','fig2_typeI_heatmap.pdf'),('5c15bf60-9086-4f44-a900-345fc1f86dae','fig3_availability_power.pdf'),('847b4e46-f347-4b54-9fae-00fb4dc41c36','figS1_usable.pdf')]:\n    shutil.copy(host.artifact_path(vid),'v9/'+fn)\n# old v8 supplement figure S2 (M6-M7)\na=host.artifacts(filename='MMM_v8_SMMR_supplement.docx')['artifacts'][0]\nos.makedirs('src',exist_ok=True); shutil.copy(host.artifact_path(a['latest_version_id']),'src/supp_v8.docx')\nsubprocess.run('cd src && rm -rf m && pandoc supp_v8.docx -t markdown --extract-media=m -o /dev/null && cp m/media/rId32.png ../v9/figS2_m67.png',shell=True)\na=host.artifacts(filename='MMM_v8_SMMR_manuscript.docx')['artifacts'][0]; shutil.copy(host.artifact_path(a['latest_version_id']),'src/ms_v8.docx')\nprint(sorted(os.listdir('v9')))"
+ },
+ {
+  "i": 143,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Fetching reference docx and checker",
+  "code": "cc = host.compute.create(\"ssh:lesexp-server\")\njob=cc.submit_job(command=\"cp ~/MMM/manuscript/v5/reference.docx ./reference.docx && cp ~/MMM/tools/s7_check_docx_format.py ./s7_check_docx_format.py && cp ~/MMM/R/s9/s9_ref_style.py ./s9_ref_style.py && (grep -rn -E 'check_docx_format|reference-doc|lnNum|tif' ~/MMM/R/s11 ~/MMM/R/s9 ~/MMM/py 2>/dev/null | head -30 > pipeline_grep.txt); true\",\n  intent=\"copy MMM reference.docx and format check script (small files)\", outputs=[\"reference.docx\",\"s7_check_docx_format.py\",\"s9_ref_style.py\",\"pipeline_grep.txt\"], run_timeout_s=300)\nprint(job)"
+ },
+ {
+  "i": 144,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Inspecting v8 docx layout properties",
+  "code": "import docx, zipfile\nd=docx.Document('src/ms_v8.docx')\ns=d.sections[0]; print('page', s.page_width.cm if s.page_width else None, s.page_height.cm if s.page_height else None, 'margins', [x.cm if x else None for x in (s.left_margin,s.right_margin,s.top_margin,s.bottom_margin)])\nz=zipfile.ZipFile('src/ms_v8.docx'); doc_xml=z.read('word/document.xml').decode()\nprint('lnNumType' in doc_xml, 'w:pgNumType' in doc_xml, 'footer' in str(z.namelist()))\nprint([n for n in z.namelist() if 'footer' in n or 'header' in n])\nfor p in d.paragraphs[:8]: print(p.style.name,'|',p.text[:80])\nprint(sorted(set(p.style.name for p in d.paragraphs)))\n# where are tables relative to headings\nidx=[(i,p.style.name,p.text[:50]) for i,p in enumerate(d.paragraphs) if p.style.name.startswith('Heading')]\nprint(idx[-6:]); print(len(d.tables), len(d.inline_shapes))\nsty=d.styles['Normal']; print(sty.font.name, sty.font.size, sty.paragraph_format.line_spacing)"
+ },
+ {
+  "i": 145,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Scanning text for excess significant figures",
+  "code": "for fn in ['v9/manuscript.md','v9/supplement.md']:\n    t=open(fn).read()\n    cut=t.find('## References'); body=t[:cut] if fn.endswith('manuscript.md') else t\n    lines=[l for l in body.split('\\n') if not l.lstrip().startswith('|') and not re.match(r'^\\s*[-=]{3,}',l) and not l.startswith('  ')]\n    txt='\\n'.join(lines)\n    hits=[]\n    for m in re.finditer(r'(?<![\\w.])(\\d+\\.\\d+)(?![\\w.])',txt):\n        v=m.group(1); digits=v.replace('.','').lstrip('0')\n        if len(digits)>=3:\n            hits.append((v, txt[max(0,m.start()-60):m.end()+25].replace('\\n',' ')))\n    print('###',fn,len(hits))\n    for h in hits[:80]: print(h[0],'|',h[1])"
+ },
+ {
+  "i": 146,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Applying two-significant-figure fixes",
+  "code": "t=open('v9/manuscript.md').read()\nR=[(\"to 16.7% with 75 to 145;\",\"to 17% with 75 to 145;\"),(\"to 12.2% with 75 to 145\",\"to 12% with 75 to 145\"),\n(\"had similar power, 19.5% to 20.9% per attempted dataset\",\"had similar power, 20% to 21% per attempted dataset\"),\n(\"of the GLMM (22.7% and 23.1%) reflects\",\"of the GLMM (23% for both) reflects\")]\nfor a,b in R: assert t.count(a)==1,a; t=t.replace(a,b)\n# merge Tables / Figures headings as in v8\nt=t.replace('\\n## Tables\\n','\\n## Tables and figures\\n').replace('\\n## Figures\\n','\\n')\nopen('v9/manuscript.md','w').write(t)\ns=open('v9/supplement.md').read(); s=s.replace('about 52.1 million model fits','about 52 million model fits'); open('v9/supplement.md','w').write(s)\n# double spaces between sentences\nfor fn in ['v9/manuscript.md','v9/supplement.md','v9/cover_letter.md' ]:\n    if not os.path.exists(fn): continue\n    x=open(fn).read(); n=len(re.findall(r'(?<=[.;:,)]) {2,}(?=\\S)',x)); print(fn,'double spaces',n)\nprint(t.count('## Tables and figures'))"
+ },
+ {
+  "i": 147,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Inspecting supplement double spaces",
+  "code": "x=open('v9/supplement.md').read()\nms=list(re.finditer(r'(?<=[.;:,)]) {2,}(?=\\S)',x))\nfor m in ms[:8]: print(repr(x[m.start()-50:m.end()+30]))\n# how many are inside table lines?\ninside=sum(1 for m in ms if x[x.rfind('\\n',0,m.start())+1:].startswith('  '))\nprint(len(ms), 'in table/indented lines:', inside)"
+ },
+ {
+  "i": 149,
+  "tool": "bash",
+  "lang": "bash",
+  "env": "python",
+  "desc": "Reading format checker and pipeline usage",
+  "code": "H=hpc/b170319e-bbd9-4736-a7cf-82e0de11e321; cp $H/reference.docx $H/s7_check_docx_format.py v9/; cat $H/pipeline_grep.txt | cut -c1-250; echo ====; sed -n 1,200p $H/s7_check_docx_format.py | head -90"
+ },
+ {
+  "i": 150,
+  "tool": "bash",
+  "lang": "bash",
+  "env": "python",
+  "desc": "Rendering with reference docx and checking format",
+  "code": "cd v9 && pandoc manuscript.md -o MMM_v9_SMMR_manuscript.docx --reference-doc=reference.docx --resource-path=. && pandoc supplement.md -o MMM_v9_SMMR_supplement.docx --reference-doc=reference.docx --resource-path=. && pandoc cover_letter.md -o MMM_v9_cover_letter.docx --reference-doc=reference.docx 2>&1; ls cover_letter.md 2>&1; python3 -B s7_check_docx_format.py MMM_v9_SMMR_manuscript.docx MMM_v9_SMMR_supplement.docx MMM_v9_cover_letter.docx MMM_v9_SMMR_title_page.docx; echo \"exit $?\""
+ },
+ {
+  "i": 151,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Fixing image links, letter source, title size",
+  "code": "for fn in ['v9/manuscript.md','v9/supplement.md']:\n    t=open(fn).read()\n    print(fn, re.findall(r'!\\[[^\\]]*\\]\\([^)]*\\)',t))\nmp={'caf50544-6c23-4520-9e9d-4a2582cdc075':'fig1_mechanisms.png','8f565bb6-3625-4d6b-a262-e04329534a6a':'fig2_typeI_heatmap.png','87b2b623-700c-45cb-8bf3-fa408f26a0c6':'fig3_availability_power.png','2409d01b-e357-4647-8913-1d94acdda255':'figS1_usable.png'}\nfor fn in ['v9/manuscript.md','v9/supplement.md']:\n    t=open(fn).read()\n    t=re.sub(r'\\{\\{artifact:art_([0-9a-f\\-]+)\\}\\}', lambda m: mp[m.group(1)], t)\n    open(fn,'w').write(t); print(fn, re.findall(r'!\\[[^\\]]*\\]\\([^)]*\\)',t))\nsubprocess.run('cd v9 && pandoc MMM_v9_cover_letter.docx -t markdown --wrap=none -o cover_letter.md',shell=True)\nprint(open('v9/cover_letter.md').read()[:400])\ntp=docx.Document('v9/MMM_v9_SMMR_title_page.docx'); p0=tp.paragraphs[0]\nprint(p0.style.name, p0.alignment, p0.style.font.size, [r.font.size for r in p0.runs])"
+ },
+ {
+  "i": 152,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Comparing v8 letter header and fixing",
+  "code": "a=host.artifacts(filename='MMM_v8_SMMR_cover_letter.docx')['artifacts'][0]; shutil.copy(host.artifact_path(a['latest_version_id']),'src/cl_v8.docx')\nv8cl=subprocess.run('pandoc src/cl_v8.docx -t markdown --wrap=none',shell=True,capture_output=True,text=True).stdout\nprint(v8cl[:700])"
+ },
+ {
+  "i": 153,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Applying v8 letter header and title size",
+  "code": "cl=open('v9/cover_letter.md').read()\ncl=cl.replace(\"Dr Chris Metcalfe Statistical Methods in Medical Research\\n\\n\",\"Padova, 10 November 2026\\n\\nDr Chris Metcalfe\\\\\\n*Statistical Methods in Medical Research*\\n\\n\",1)\nassert cl.startswith('Padova')\nopen('v9/cover_letter.md','w').write(cl)\nfrom docx.shared import Pt\ntp=docx.Document('v9/MMM_v9_SMMR_title_page.docx'); p0=tp.paragraphs[0]\nfor r in p0.runs: r.font.size=Pt(18)\ntp.save('v9/MMM_v9_SMMR_title_page.docx')\nr=subprocess.run('cd v9 && pandoc manuscript.md -o MMM_v9_SMMR_manuscript.docx --reference-doc=reference.docx --resource-path=. && pandoc supplement.md -o MMM_v9_SMMR_supplement.docx --reference-doc=reference.docx --resource-path=. && pandoc cover_letter.md -o MMM_v9_cover_letter.docx --reference-doc=reference.docx && python3 -B s7_check_docx_format.py MMM_v9_SMMR_manuscript.docx MMM_v9_SMMR_supplement.docx MMM_v9_cover_letter.docx; echo exit $?; unzip -l MMM_v9_SMMR_manuscript.docx | grep -c media; unzip -l MMM_v9_SMMR_supplement.docx | grep -c media',shell=True,capture_output=True,text=True)\nprint(r.stdout, r.stderr[-500:])"
+ },
+ {
+  "i": 154,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Exporting Figure 1-3 TIFF and PDF",
+  "code": "from PIL import Image\npairs=[('fig1_mechanisms','Figure1'),('fig2_typeI_heatmap','Figure2'),('fig3_availability_power','Figure3')]\nfor src,dst in pairs:\n    im=Image.open(f'v9/{src}.png'); print(src, im.size, im.info.get('dpi'), im.mode)\n    im.convert('RGB').save(f'v9/{dst}.tif', compression='tiff_lzw', dpi=(300,300))\n    shutil.copy(f'v9/{src}.pdf', f'v9/{dst}.pdf')\n    chk=Image.open(f'v9/{dst}.tif'); print(dst, chk.size, chk.info.get('dpi'), chk.info.get('compression'))\nprint(subprocess.run('which soffice libreoffice; pdffonts v9/Figure1.pdf | head -5',shell=True,capture_output=True,text=True).stdout)"
+ },
+ {
+  "i": 158,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Extracting tracked changes and comments",
+  "code": "import os, re, shutil, subprocess, zipfile\nos.makedirs('rev',exist_ok=True)\nshutil.copy(host.artifact_path('4026989e-64bf-4250-8b20-3cd4eac7e37b'),'rev/corr.docx')\nz=zipfile.ZipFile('rev/corr.docx'); names=z.namelist()\nx=z.read('word/document.xml').decode()\nprint('ins',len(re.findall(r'<w:ins ',x)),'del',len(re.findall(r'<w:del ',x)),'comments' ,'word/comments.xml' in names)\nif 'word/comments.xml' in names:\n    cx=z.read('word/comments.xml').decode()\n    for m in re.finditer(r'<w:comment [^>]*w:author=\"([^\"]*)\"[^>]*>(.*?)</w:comment>',cx,re.S):\n        print('COMMENT', m.group(1), '|', re.sub(r'<[^>]+>','',m.group(2))[:400])\nsubprocess.run('cd rev && pandoc corr.docx -t markdown --wrap=none --track-changes=all -o corr_tc.md && pandoc corr.docx -t markdown --wrap=none --track-changes=accept -o corr_acc.md',shell=True)\nprint(len(open('rev/corr_acc.md').read()))"
+ },
+ {
+  "i": 159,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Listing tracked insertions and deletions",
+  "code": "tc=open('rev/corr_tc.md').read()\nfor m in re.finditer(r'\\[([^\\]]*)\\]\\{\\.(insertion|deletion)[^}]*\\}',tc):\n    print(m.group(2).upper(), repr(m.group(1)[:300]), '| ctx:', repr(tc[max(0,m.start()-120):m.start()][-120:]))"
+ },
+ {
+  "i": 160,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Diffing corrected doc against v9",
+  "code": "import difflib\nsubprocess.run('cd rev && pandoc ../v9/MMM_v9_SMMR_manuscript.docx -t markdown --wrap=none -o v9_orig.md',shell=True)\na=open('rev/v9_orig.md').read(); b=open('rev/corr_acc.md').read()\ndef sents(t): return [s for s in re.split(r'(?<=[.!?])\\s+|\\n+',t) if s.strip()]\nd=list(difflib.unified_diff(sents(a),sents(b),lineterm='',n=0))\nprint(len(d)); print('\\n'.join(d)[:6000])\n# style of the new 3.1 lines\nimport docx\nD=docx.Document('rev/corr.docx')\nfor p in D.paragraphs:\n    if p.text.startswith(('Failures associated','Strategies that kept')) or p.text.startswith('GEE and the MMM target'):\n        print(p.style.name,'|',p.text[:90],'|',[ (r.italic,r.bold) for r in p.runs][:3])"
+ },
+ {
+  "i": 161,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Checking remaining diff beyond table layout",
+  "code": "def norm_tab(t):\n    # collapse table whitespace and rule lines for comparison\n    out=[]\n    for l in t.split('\\n'):\n        if re.match(r'^\\s*[-=+ ]{8,}$',l): continue\n        out.append(re.sub(r'\\s{2,}',' | ',l.strip()))\n    return out\nA=[l for l in norm_tab(a) if l]; B=[l for l in norm_tab(b) if l]\ndd=[l for l in difflib.unified_diff(A,B,lineterm='',n=0) if l[:1] in '+-' and not l.startswith(('+++','---'))]\nprint(len(dd))\nfor l in dd: print(l[:220])"
+ },
+ {
+  "i": 162,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Reading merged 2.1 paragraph structure",
+  "code": "i=b.find('### 2.1'); j=b.find('### 2.2')\nparas=[p for p in b[i:j].split('\\n\\n') if p.strip()]\nfor p in paras: print(len(p.split()),'|',p[:120],'...',p[-80:],'\\n')"
+ },
+ {
+  "i": 163,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Applying PI edits to v9 source",
+  "code": "t=open('v9/manuscript.md').read()\nleads=['*What they estimate.* ','*How they treat the dependence.* ','*How they handle few clusters.* ','*How they fail.* ']\nfor L in leads: assert t.count(L)==1, L\n# merge paragraphs: dependence and few-clusters paragraphs join the previous one\nt=t.replace('\\n\\n*How they treat the dependence.* ',' ').replace('\\n\\n*How they handle few clusters.* ',' ')\nt=t.replace('*What they estimate.* ','').replace('*How they fail.* ','')\nfor h in ['Failures associated with few clusters','Failures associated with the mechanism','Failures associated with the mechanism and few clusters together','Strategies that kept their level under every mechanism']:\n    old=f'*{h}.* '; assert t.count(old)==1, old; t=t.replace(old,f'*{h}*\\n\\n')\nfor a_,b_ in [('The R package *fewclust* implements the corrections','The companion R package *fewclust* implements the corrections'),\n              ('The respiratory trial is distributed with *geepack*.','The respiratory trial is distributed with the R package *geepack*.')]:\n    assert t.count(a_)==1,a_; t=t.replace(a_,b_)\nopen('v9/manuscript.md','w').write(t)\nr=subprocess.run('cd v9 && pandoc manuscript.md -o MMM_v9_SMMR_manuscript.docx --reference-doc=reference.docx --resource-path=. && python3 -B s7_check_docx_format.py MMM_v9_SMMR_manuscript.docx; pandoc MMM_v9_SMMR_manuscript.docx -t markdown --wrap=none -o ../rev/v9_new.md',shell=True,capture_output=True,text=True); print(r.stdout,r.stderr[-300:])\nN=[l for l in norm_tab(open('rev/v9_new.md').read()) if l]\ndd=[l for l in difflib.unified_diff(N,B,lineterm='',n=0) if l[:1] in '+-' and not l.startswith(('+++','---'))]\nprint('residual differences vs your file:', len(dd)); print('\\n'.join(x[:160] for x in dd))"
+ },
+ {
+  "i": 164,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Updating word count on title page",
+  "code": "t=open('v9/manuscript.md').read()\nmw=len(re.sub(r'\\$[^$]*\\$','x',re.sub(r'\\[[\\d,\\-]+\\]','',t[t.find('## 1. Introduction'):t.find('## Code and data')])).split())\nab=t[t.find('## Abstract')+11:t.find('**Keywords')]; aw=len(ab.split())\nprint(mw, aw)\ntp=docx.Document('v9/MMM_v9_SMMR_title_page.docx')\np=[p for p in tp.paragraphs if p.text.startswith('Word count')][0]; print(p.text)\nnew=f\"Word count: abstract {aw} words; main text (Introduction to Conclusions) {mw:,} words; 5 tables, 3 figures; supplementary material in a separate file.\"\np.runs[0].text=new\nfor r_ in p.runs[1:]: r_.text=''\ntp.save('v9/MMM_v9_SMMR_title_page.docx'); print(new)\ncl=open('v9/cover_letter.md').read(); print(re.findall(r'about [\\d,]+ words',cl))"
+ },
+ {
+  "i": 165,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Recounting words with same convention",
+  "code": "mw2=len(re.sub(r'\\$[^$]*\\$','x',t[t.find('## 1. Introduction'):t.find('## Code and data')]).split()); print(mw2)\ntp=docx.Document('v9/MMM_v9_SMMR_title_page.docx')\np=[p for p in tp.paragraphs if p.text.startswith('Word count')][0]\np.runs[0].text=f\"Word count: abstract 246 words; main text (Introduction to Conclusions) {mw2:,} words; 5 tables, 3 figures; supplementary material in a separate file.\"\ntp.save('v9/MMM_v9_SMMR_title_page.docx'); print(p.text)\nr=subprocess.run('cd v9 && python3 -B s7_check_docx_format.py MMM_v9_SMMR_manuscript.docx MMM_v9_SMMR_supplement.docx MMM_v9_cover_letter.docx; echo exit $?',shell=True,capture_output=True,text=True); print(r.stdout)"
+ },
+ {
+  "i": 166,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Checking anonymization before zipping",
+  "code": "pat=r'Vedovelli|Gregori|Azzolina|Bhuyan|Sabbatini|Iannaco|De Luca|Baldi|Padova|Padua|unipd|lucavd|github|zenodo\\.\\d|10\\.5281|Loi B'\nfor fn in ['v9/MMM_v9_SMMR_manuscript.docx','v9/MMM_v9_SMMR_supplement.docx']:\n    txt=subprocess.run(['pandoc',fn,'-t','plain','--wrap=none'],capture_output=True,text=True).stdout\n    hits=[(m.group(0), txt[max(0,m.start()-60):m.end()+40].replace('\\n',' ')) for m in re.finditer(pat,txt)]\n    print(fn,len(hits))\n    for h in hits[:10]: print('  ',h)\n    core=zipfile.ZipFile(fn).read('docProps/core.xml').decode() if 'docProps/core.xml' in zipfile.ZipFile(fn).namelist() else ''\n    print('  core:', re.findall(r'<dc:creator>(.*?)</dc:creator>|<cp:lastModifiedBy>(.*?)</cp:lastModifiedBy>',core))"
+ },
+ {
+  "i": 167,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Building submission zip",
+  "code": "files=['MMM_v9_SMMR_manuscript.docx','MMM_v9_SMMR_supplement.docx','MMM_v9_SMMR_title_page.docx','MMM_v9_cover_letter.docx','Figure1.tif','Figure1.pdf','Figure2.tif','Figure2.pdf','Figure3.tif','Figure3.pdf']\nfor f in files: assert os.path.exists('v9/'+f), f\nzp='MMM_v9_SMMR_submission.zip'\nwith zipfile.ZipFile(zp,'w',zipfile.ZIP_DEFLATED) as Z:\n    for f in files: Z.write('v9/'+f, arcname='MMM_v9_SMMR_submission/'+f)\nwith zipfile.ZipFile(zp) as Z:\n    for i in Z.infolist(): print(i.filename, i.file_size)\n    print(Z.testzip())"
+ }
+]

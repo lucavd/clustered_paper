@@ -1,0 +1,84 @@
+generated: 40 datasets
+GenBinaryY rep 1: 0.3 s, n_subj 2000
+GenBinaryY rep 2: 0.3 s, n_subj 2000
+GenBinaryY rep 3: 0.3 s, n_subj 2000
+GenBinaryY rep 4: 0.3 s, n_subj 2000
+GenBinaryY rep 5: 0.4 s, n_subj 2000
+GenBinaryY rep 6: 0.3 s, n_subj 2000
+GenBinaryY rep 7: 0.3 s, n_subj 2000
+GenBinaryY rep 8: 0.3 s, n_subj 2000
+GenBinaryY rep 9: 0.4 s, n_subj 2000
+GenBinaryY rep 10: 0.4 s, n_subj 2000
+GLMM-native rep 1: 0.1 s, n_subj 2000
+GLMM-native rep 2: 0.1 s, n_subj 2000
+GLMM-native rep 3: 0.0 s, n_subj 2000
+GLMM-native rep 4: 0.1 s, n_subj 2000
+GLMM-native rep 5: 0.1 s, n_subj 2000
+GLMM-native rep 6: 0.0 s, n_subj 2000
+GLMM-native rep 7: 0.1 s, n_subj 2000
+GLMM-native rep 8: 0.0 s, n_subj 2000
+GLMM-native rep 9: 0.1 s, n_subj 2000
+GLMM-native rep 10: 0.1 s, n_subj 2000
+GLMM-AR1 rep 1: 1.3 s, n_subj 2000
+GLMM-AR1 rep 2: 1.4 s, n_subj 2000
+GLMM-AR1 rep 3: 1.4 s, n_subj 2000
+GLMM-AR1 rep 4: 1.4 s, n_subj 2000
+GLMM-AR1 rep 5: 1.3 s, n_subj 2000
+GLMM-AR1 rep 6: 1.4 s, n_subj 2000
+GLMM-AR1 rep 7: 1.3 s, n_subj 2000
+GLMM-AR1 rep 8: 1.4 s, n_subj 2000
+GLMM-AR1 rep 9: 1.4 s, n_subj 2000
+GLMM-AR1 rep 10: 1.4 s, n_subj 2000
+Copula-AR1 rep 1: 0.3 s, n_subj 2000
+Copula-AR1 rep 2: 0.3 s, n_subj 2000
+Copula-AR1 rep 3: 0.3 s, n_subj 2000
+Copula-AR1 rep 4: 0.3 s, n_subj 2000
+Copula-AR1 rep 5: 0.3 s, n_subj 2000
+Copula-AR1 rep 6: 0.3 s, n_subj 2000
+Copula-AR1 rep 7: 0.3 s, n_subj 2000
+Copula-AR1 rep 8: 0.3 s, n_subj 2000
+Copula-AR1 rep 9: 0.3 s, n_subj 2000
+Copula-AR1 rep 10: 0.3 s, n_subj 2000
+params GenBinaryY none NA 
+params GLMM-native none NA 
+params GLMM-AR1 rho 0.6 sigma2 0.5 
+params Copula-AR1 rho 0.6 floor 0 
+pairs rows 3600  NA r: 0 
+     mechanism lag           r
+1   Copula-AR1   1 0.369211459
+2   GenBinaryY   1 0.315105532
+3     GLMM-AR1   1 0.156482297
+4  GLMM-native   1 0.130772329
+5   Copula-AR1   2 0.197690237
+6   GenBinaryY   2 0.193731310
+7     GLMM-AR1   2 0.135655204
+8  GLMM-native   2 0.127783787
+9   Copula-AR1   3 0.115527607
+10  GenBinaryY   3 0.166849574
+11    GLMM-AR1   3 0.127574557
+12 GLMM-native   3 0.132729230
+13  Copula-AR1   4 0.068629272
+14  GenBinaryY   4 0.163187502
+15    GLMM-AR1   4 0.121376276
+16 GLMM-native   4 0.133790459
+17  Copula-AR1   5 0.035316650
+18  GenBinaryY   5 0.163156356
+19    GLMM-AR1   5 0.123103793
+20 GLMM-native   5 0.128180169
+21  Copula-AR1   6 0.016193938
+22  GenBinaryY   6 0.159825545
+23    GLMM-AR1   6 0.125007746
+24 GLMM-native   6 0.121887130
+25  Copula-AR1   7 0.009459153
+26  GenBinaryY   7 0.161082044
+27    GLMM-AR1   7 0.114579235
+28 GLMM-native   7 0.128529474
+29  Copula-AR1   8 0.008691125
+30  GenBinaryY   8 0.161330355
+31    GLMM-AR1   8 0.119424959
+32 GLMM-native   8 0.131085051
+33  Copula-AR1   9 0.017728782
+34  GenBinaryY   9 0.156126020
+35    GLMM-AR1   9 0.088067892
+36 GLMM-native   9 0.109769020
+MMLB version 1.0  R R version 4.6.2 (2026-10-29) 

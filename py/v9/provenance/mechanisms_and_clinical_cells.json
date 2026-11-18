@@ -1,0 +1,210 @@
+[
+ {
+  "i": 4,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Reading s7d and s7e common R files",
+  "code": "c = host.compute.create('ssh:lesexp-server')\nr = c.call_command('cd ~/MMM && git log --oneline -n 1 && wc -l R/s7d/s7d_common.R R/s7e/s7e_common.R && cat R/s7d/s7d_common.R', intent='Read MMM generator code (read-only)')\nopen('s7d_common.R.txt','w').write(r.stdout)\nr2 = c.call_command('cat ~/MMM/R/s7e/s7e_common.R', intent='Read copula generator code (read-only)')\nopen('s7e_common.R.txt','w').write(r2.stdout)\nprint(r.exit_code, r2.exit_code, len(r.stdout), len(r2.stdout))\nprint(r.stdout[:300])"
+ },
+ {
+  "i": 7,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Listing rundir generator files",
+  "code": "r = c.call_command('cd ~/MMM && grep -n \"RUNDIR_V4\\\\|^load_env\\\\|^DGPS\\\\|^N_LEVELS\\\\|^T_LEVELS\\\\|^set_rep_seed\\\\|ANALYSIS_FILES\\\\|^dgp_tag\\\\|^N_M1C\\\\|^T_M1C\\\\|^REPO\" R/s3/s3_common.R R/s6b/s6b_ns_common.R | head -40; echo ---; ls -R R/v4/rundir | head -80', intent='Locate generator functions (read-only)')\nprint(r.stdout[-6000:])"
+ },
+ {
+  "i": 8,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Reading s3_common and model1 generator files",
+  "code": "cmd = '''cd ~/MMM && sed -n 1,60p R/s3/s3_common.R; echo =====MAKE_ALL; cat R/v4/rundir/make_all_data.R; echo =====MAN_MAKE_ALL; cat R/v4/rundir/manual/make_all_data.R; echo =====AR1_MAKE_ALL; cat R/v4/rundir/ar1/make_all_data.R; echo =====GEN1; cat R/v4/rundir/generation_model1.R; echo =====MAN_GEN1; cat R/v4/rundir/manual/generation_model1.R'''\nr = c.call_command(cmd, intent='Read generator code for model 1 (read-only)')\nopen('gen_code1.txt','w').write(r.stdout); print(r.exit_code, len(r.stdout))"
+ },
+ {
+  "i": 10,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Reading AR1 and copula generator files",
+  "code": "cmd = '''cd ~/MMM && cat R/protocol/dgm_common.R; echo =====GENDATA_MAN; cat R/v4/rundir/manual/generate_data.R | head -40; echo =====AR1MODELS; sed -n 1,80p R/v4/rundir/ar1/generation_models_ar1.R; echo =====GENAR1; cat R/v4/rundir/gen_ar1_data.R; echo =====COPPAR; cat R/v4/rundir/copula/copula_params.R; echo =====COPGEN; cat R/v4/rundir/copula/gen_copula_data.R; echo =====COPMOD; sed -n 1,80p R/v4/rundir/copula/generation_models_copula.R'''\nr = c.call_command(cmd, intent='Read AR1/copula generator code (read-only)')\nopen('gen_code2.txt','w').write(r.stdout); print(r.exit_code, len(r.stdout))"
+ },
+ {
+  "i": 12,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Checking s3_common for side effects",
+  "code": "r = c.call_command('cd ~/MMM && grep -n \"dir.create\\\\|saveRDS\\\\|writeLines\\\\|fwrite\\\\|source(\" R/s3/s3_common.R; grep -n \"GenBinaryY\\\\|sigma\\\\|gamma\" R/v4/rundir/generate_data.R | head; nproc; uptime; ls ~/R/s7d_lib | head', intent='Check generator sourcing side effects (read-only)')\nprint(r.stdout)"
+ },
+ {
+  "i": 13,
+  "tool": "bash",
+  "lang": "bash",
+  "env": "python",
+  "desc": "Writing mechanism generation R script",
+  "code": "mkdir -p mech && cat > mech/mech_corr.R <<'EOF'\n# Mechanism illustration: lag correlation and prevalence by occasion, scenario M1, H0 (\"manual\"),\n# one large dataset per replicate per mechanism, generators of the study used unchanged (read-only repo).\n.libPaths(\"~/MMM/renv/library/linux-ubuntu-noble/R-4.6/x86_64-pc-linux-gnu\")\nSys.setenv(OMP_NUM_THREADS = \"1\", OPENBLAS_NUM_THREADS = \"1\")\nsource(path.expand(\"~/MMM/R/s3/s3_common.R\"))          # load_env, set_rep_seed, RUNDIR_V4, DGPS (no writes at source time)\nCOP_DIR <- file.path(RUNDIR_V4, \"copula\")\nload_env_cop <- function() {                             # verbatim file list of R/s7e/s7e_common.R::load_env_cop\n  env <- new.env(parent = globalenv())\n  for (f in c(\"copula_params.R\", \"gen_copula_data.R\", \"generation_models_copula.R\")) sys.source(file.path(COP_DIR, f), envir = env)\n  for (f in c(\"manual/generate_data.R\", \"ar1/make_all_data.R\")) sys.source(file.path(RUNDIR_V4, f), envir = env)\n  env\n}\nN <- 2000L; TT <- 10L; NREP <- 10L; MODEL <- 1L; LABEL <- \"manual\"\nMECH <- c(\"GenBinaryY\", \"GLMM-native\", \"GLMM-AR1\", \"Copula-AR1\")\ngen_one <- function(m, i) {\n  env <- if (m == \"Copula-AR1\") load_env_cop() else load_env(m, RUNDIR_V4)\n  set_rep_seed(MODEL, i)\n  t0 <- proc.time()[[3]]\n  d <- as.data.frame(env$make_all_data(N, TT, i, MODEL, LABEL))\n  d <- d[order(d$id, d$time), c(\"id\", \"time\", \"trt\", \"binY\")]\n  list(m = m, i = i, d = d, secs = proc.time()[[3]] - t0,\n       par = if (m == \"Copula-AR1\") c(rho = env$COPULA_RHO, floor = env$COPULA_FLOOR)\n             else if (m == \"GLMM-AR1\") c(rho = env$AR1_RHO, sigma2 = env$AR1_SIGMA2) else NA)\n}\njobs <- expand.grid(i = seq_len(NREP), m = MECH, stringsAsFactors = FALSE)\nres <- parallel::mclapply(seq_len(nrow(jobs)), function(k) tryCatch(gen_one(jobs$m[k], jobs$i[k]), error = function(e) list(m = jobs$m[k], i = jobs$i[k], err = conditionMessage(e))),\n                          mc.cores = 4L, mc.preschedule = FALSE)\nerrs <- Filter(function(x) !is.null(x$err), res)\nif (length(errs)) { for (e in errs) cat(\"GEN ERROR\", e$m, e$i, e$err, \"\\n\") }\nres <- Filter(function(x) is.null(x$err), res)\ncat(\"generated:\", length(res), \"datasets; secs per dataset:\", paste(sprintf(\"%s=%.1f\", sapply(res, `[[`, \"m\"), sapply(res, `[[`, \"secs\")), collapse = \" \"), \"\\n\")\nfor (x in res[!duplicated(sapply(res, `[[`, \"m\"))]) cat(\"params\", x$m, paste(names(x$par), x$par, collapse = \" \"), \"\\n\")\n\npair_rows <- list(); prev_rows <- list(); pool_rows <- list(); info <- list()\nfor (x in res) {\n  d <- x$d\n  W <- matrix(NA_integer_, N, TT); W[cbind(d$id, d$time + 1L)] <- d$binY\n  arm <- d$trt[!duplicated(d$id)][order(unique(d$id))]\n  info[[length(info) + 1]] <- data.frame(mechanism = x$m, rep = x$i, n_subj = length(unique(d$id)), n_obs = nrow(d), mean_y = mean(d$binY))\n  for (j in 1:TT) for (a in 0:1) { y <- W[arm == a, j]; y <- y[!is.na(y)]\n    prev_rows[[length(prev_rows) + 1]] <- data.frame(mechanism = x$m, rep = x$i, occasion = j - 1L, arm = a, n = length(y), y1 = sum(y)) }\n  for (L in 1:(TT - 1)) {\n    pa <- c(); pb <- c()\n    for (j in 1:(TT - L)) { k <- j + L\n      for (a in 0:1) { ok <- arm == a & !is.na(W[, j]) & !is.na(W[, k])\n        ya <- W[ok, j]; yb <- W[ok, k]\n        r <- if (sd(ya) > 0 && sd(yb) > 0) cor(ya, yb) else NA_real_\n        pair_rows[[length(pair_rows) + 1]] <- data.frame(mechanism = x$m, rep = x$i, lag = L, occ_j = j - 1L, occ_k = k - 1L, arm = a, n = sum(ok), r = r) }\n      ok <- !is.na(W[, j]) & !is.na(W[, k]); pa <- c(pa, W[ok, j]); pb <- c(pb, W[ok, k]) }\n    pool_rows[[length(pool_rows) + 1]] <- data.frame(mechanism = x$m, rep = x$i, lag = L, n_pairs = length(pa), r_pooled = cor(pa, pb))\n  }\n}\npairs <- do.call(rbind, pair_rows); prev <- do.call(rbind, prev_rows); pool <- do.call(rbind, pool_rows); info <- do.call(rbind, info)\nwrite.csv(pairs, \"mech_pair_corr.csv\", row.names = FALSE)\nwrite.csv(prev, \"mech_prev_counts.csv\", row.names = FALSE)\nwrite.csv(pool, \"mech_pooled_corr.csv\", row.names = FALSE)\nwrite.csv(info, \"mech_dataset_info.csv\", row.names = FALSE)\ncat(\"pairs rows\", nrow(pairs), \" NA r:\", sum(is.na(pairs$r)), \"\\n\")\nprint(aggregate(r ~ mechanism + lag, data = pairs, FUN = mean))\nsessionInfo()$otherPkgs$MMLB$Version |> cat(\"MMLB version\", ..., \"\\n\")\nEOF\nsed -i '' 's/sessionInfo()$otherPkgs$MMLB$Version |> cat(\"MMLB version\", ..., \"\\\\n\")/cat(\"MMLB version\", as.character(packageVersion(\"MMLB\")), \"\\\\n\")/' mech/mech_corr.R; tail -2 mech/mech_corr.R"
+ },
+ {
+  "i": 14,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Writing mechanism generation R script",
+  "code": "import os\nos.makedirs('mech', exist_ok=True)\nscript = r'''# Mechanism illustration: lag correlation and prevalence by occasion, scenario M1, H0 (\"manual\"),\n# large datasets per mechanism, generators of the study used unchanged (repo read-only).\n.libPaths(\"~/MMM/renv/library/linux-ubuntu-noble/R-4.6/x86_64-pc-linux-gnu\")\nSys.setenv(OMP_NUM_THREADS = \"1\", OPENBLAS_NUM_THREADS = \"1\")\nsource(path.expand(\"~/MMM/R/s3/s3_common.R\"))   # load_env, set_rep_seed, RUNDIR_V4 (no writes at source time)\nCOP_DIR <- file.path(RUNDIR_V4, \"copula\")\nload_env_cop <- function() {                      # file list of R/s7e/s7e_common.R::load_env_cop (generation part)\n  env <- new.env(parent = globalenv())\n  for (f in c(\"copula_params.R\", \"gen_copula_data.R\", \"generation_models_copula.R\")) sys.source(file.path(COP_DIR, f), envir = env)\n  for (f in c(\"manual/generate_data.R\", \"ar1/make_all_data.R\")) sys.source(file.path(RUNDIR_V4, f), envir = env)\n  env\n}\nN <- 2000L; TT <- 10L; NREP <- 10L; MODEL <- 1L; LABEL <- \"manual\"\nMECH <- c(\"GenBinaryY\", \"GLMM-native\", \"GLMM-AR1\", \"Copula-AR1\")\ngen_one <- function(m, i) {\n  env <- if (m == \"Copula-AR1\") load_env_cop() else load_env(m, RUNDIR_V4)\n  set_rep_seed(MODEL, i)\n  t0 <- proc.time()[[3]]\n  d <- as.data.frame(env$make_all_data(N, TT, i, MODEL, LABEL))\n  d <- d[order(d$id, d$time), c(\"id\", \"time\", \"trt\", \"binY\")]\n  par <- if (m == \"Copula-AR1\") c(rho = env$COPULA_RHO, floor = env$COPULA_FLOOR) else if (m == \"GLMM-AR1\") c(rho = env$AR1_RHO, sigma2 = env$AR1_SIGMA2) else c(none = NA)\n  list(m = m, i = i, d = d, secs = proc.time()[[3]] - t0, par = par)\n}\njobs <- expand.grid(i = seq_len(NREP), m = MECH, stringsAsFactors = FALSE)\nres <- parallel::mclapply(seq_len(nrow(jobs)), function(k) tryCatch(gen_one(jobs$m[k], jobs$i[k]),\n          error = function(e) list(m = jobs$m[k], i = jobs$i[k], err = conditionMessage(e))), mc.cores = 4L, mc.preschedule = FALSE)\nfor (x in res) if (!is.null(x$err)) cat(\"GEN ERROR\", x$m, x$i, x$err, \"\\n\")\nres <- Filter(function(x) is.null(x$err), res)\ncat(\"generated:\", length(res), \"datasets\\n\")\nfor (x in res) cat(sprintf(\"%s rep %d: %.1f s, n_subj %d\\n\", x$m, x$i, x$secs, length(unique(x$d$id))))\nfor (x in res[!duplicated(sapply(res, `[[`, \"m\"))]) cat(\"params\", x$m, paste(names(x$par), x$par, collapse = \" \"), \"\\n\")\n\npair_rows <- list(); prev_rows <- list(); pool_rows <- list(); info <- list()\nfor (x in res) {\n  d <- x$d\n  W <- matrix(NA_integer_, N, TT); W[cbind(d$id, d$time + 1L)] <- d$binY\n  first <- !duplicated(d$id); arm <- integer(N); arm[d$id[first]] <- d$trt[first]\n  info[[length(info) + 1]] <- data.frame(mechanism = x$m, rep = x$i, n_subj = length(unique(d$id)), n_obs = nrow(d), mean_y = mean(d$binY))\n  for (j in 1:TT) for (a in 0:1) { y <- W[arm == a, j]; y <- y[!is.na(y)]\n    prev_rows[[length(prev_rows) + 1]] <- data.frame(mechanism = x$m, rep = x$i, occasion = j - 1L, arm = a, n = length(y), y1 = sum(y)) }\n  for (L in 1:(TT - 1)) {\n    pa <- c(); pb <- c()\n    for (j in 1:(TT - L)) { k <- j + L\n      for (a in 0:1) { ok <- arm == a & !is.na(W[, j]) & !is.na(W[, k])\n        ya <- W[ok, j]; yb <- W[ok, k]\n        r <- if (length(ya) > 2 && sd(ya) > 0 && sd(yb) > 0) cor(ya, yb) else NA_real_\n        pair_rows[[length(pair_rows) + 1]] <- data.frame(mechanism = x$m, rep = x$i, lag = L, occ_j = j - 1L, occ_k = k - 1L, arm = a, n = sum(ok), r = r) }\n      ok <- !is.na(W[, j]) & !is.na(W[, k]); pa <- c(pa, W[ok, j]); pb <- c(pb, W[ok, k]) }\n    pool_rows[[length(pool_rows) + 1]] <- data.frame(mechanism = x$m, rep = x$i, lag = L, n_pairs = length(pa), r_pooled = cor(pa, pb))\n  }\n}\npairs <- do.call(rbind, pair_rows); prev <- do.call(rbind, prev_rows); pool <- do.call(rbind, pool_rows); info <- do.call(rbind, info)\nwrite.csv(pairs, \"mech_pair_corr.csv\", row.names = FALSE)\nwrite.csv(prev, \"mech_prev_counts.csv\", row.names = FALSE)\nwrite.csv(pool, \"mech_pooled_corr.csv\", row.names = FALSE)\nwrite.csv(info, \"mech_dataset_info.csv\", row.names = FALSE)\ncat(\"pairs rows\", nrow(pairs), \" NA r:\", sum(is.na(pairs$r)), \"\\n\")\nprint(aggregate(r ~ mechanism + lag, data = pairs, FUN = mean))\ncat(\"MMLB version\", as.character(packageVersion(\"MMLB\")), \" R\", R.version.string, \"\\n\")\n'''\nopen('mech/mech_corr.R','w').write(script); print(len(script))"
+ },
+ {
+  "i": 15,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Submitting mechanism generation job",
+  "code": "job = c.submit_job(\n    intent='MMM mechanism illustration: generate 4 mechanisms x 10 datasets (M1, H0, N=2000, T=10) with study generators, 4 cores, ~5-10 min',\n    command='''export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1\nRscript --vanilla mech_corr.R > mech_log.txt 2>&1 || { tail -40 mech_log.txt; exit 1; }\ntail -60 mech_log.txt\nls -lh *.csv || true''',\n    inputs=['mech/mech_corr.R'],\n    outputs=['*.csv', 'mech_log.txt'],\n    run_timeout_s=2400)\nprint(job)"
+ },
+ {
+  "i": 16,
+  "tool": "bash",
+  "lang": "bash",
+  "env": "python",
+  "desc": "Indexing manuscript and supplement headings",
+  "code": "M=/Users/utente/.claude-science/orgs/8ef7b99f-0db6-4f39-9db4-aa2bf2f215a5/artifacts/proj_e2ae7c14bbc2/8b3caf41-a6e8-40dd-8b44-1b18a5b51bde/va9038696_MMM_v8_SMMR_manuscript.md\nS=/Users/utente/.claude-science/orgs/8ef7b99f-0db6-4f39-9db4-aa2bf2f215a5/artifacts/proj_e2ae7c14bbc2/6ba5391a-e184-4a69-b083-cbd5893cc4a2/v22c40cfa_MMM_v8_SMMR_supplement.md\ncp \"$M\" ms.md; cp \"$S\" sup.md; wc -l ms.md sup.md; grep -n \"^#\" ms.md | head -80"
+ },
+ {
+  "i": 19,
+  "tool": "bash",
+  "lang": "bash",
+  "env": "python",
+  "desc": "Locating clinical sections in supplement",
+  "code": "grep -n \"^#\\|Table S15\\|Table S29\\|Table S30\\|Table S14\\|Table S16\\|Table S28\" sup.md | head -120"
+ },
+ {
+  "i": 23,
+  "tool": "bash",
+  "lang": "bash",
+  "env": "python",
+  "desc": "Searching cohort SE ratios and full-data SEs",
+  "code": "grep -n \"0\\.51\\|0\\.58\\|0\\.56\\|0\\.62\\|0\\.38\\|0\\.35 (\\|posterior\\|cohort\" sup.md | cut -c1-260 | head -40; echo ---; grep -n \"Table 3\\b\\|^\\*\\*Table 3\\|^\\*\\*Table 1\\|^\\*\\*Table 2\\|^\\*\\*Table [0-9]\" ms.md | cut -c1-200"
+ },
+ {
+  "i": 25,
+  "tool": "bash",
+  "lang": "bash",
+  "env": "python",
+  "desc": "Extracting S4, S7, S15, S12 text",
+  "code": "sed -n '493,500p;777,790p;1089,1095p;1159,1182p' sup.md | cut -c1-2500"
+ },
+ {
+  "i": 27,
+  "tool": "bash",
+  "lang": "bash",
+  "env": "python",
+  "desc": "Reading generation job log",
+  "code": "cd hpc/bd4c4d3b-c029-4ae2-a73b-4513a1b65561 && grep -v \"rep [0-9]*:\" mech_log.txt | head -70; grep \"rep [0-9]*:\" mech_log.txt | head -4; grep -c \"rep [0-9]*:\" mech_log.txt"
+ },
+ {
+  "i": 29,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Aggregating lag correlations and prevalence",
+  "code": "import pandas as pd, numpy as np\nd='hpc/bd4c4d3b-c029-4ae2-a73b-4513a1b65561/'\npairs=pd.read_csv(d+'mech_pair_corr.csv'); prev=pd.read_csv(d+'mech_prev_counts.csv'); pool=pd.read_csv(d+'mech_pooled_corr.csv'); info=pd.read_csv(d+'mech_dataset_info.csv')\n# per replicate: n-weighted mean of pair/arm-specific correlations at each lag\nrep=pairs.groupby(['mechanism','rep','lag']).apply(lambda g: pd.Series({'r':np.average(g.r,weights=g.n),'n_pairs':g.n.sum()})).reset_index()\nlagt=rep.groupby(['mechanism','lag']).agg(r_mean=('r','mean'),r_sd=('r','std'),n_rep=('r','size'),n_pairs_total=('n_pairs','sum')).reset_index()\nlagt['mcse']=lagt.r_sd/np.sqrt(lagt.n_rep); lagt['lo']=lagt.r_mean-2*lagt.mcse; lagt['hi']=lagt.r_mean+2*lagt.mcse\npl=pool.groupby(['mechanism','lag']).r_pooled.mean().reset_index()\nlagt=lagt.merge(pl,on=['mechanism','lag'])\npr=prev.groupby(['mechanism','rep','occasion'])[['n','y1']].sum().reset_index(); pr['p']=pr.y1/pr.n\nprt=pr.groupby(['mechanism','occasion']).agg(prev_mean=('p','mean'),prev_sd=('p','std'),n_rep=('p','size'),n_obs_total=('n','sum')).reset_index()\nprt['mcse']=prt.prev_sd/np.sqrt(prt.n_rep); prt['lo']=prt.prev_mean-2*prt.mcse; prt['hi']=prt.prev_mean+2*prt.mcse\n# by arm too\npa=prev.groupby(['mechanism','occasion','arm'])[['n','y1']].sum().reset_index(); pa['p']=pa.y1/pa.n\nprint(lagt.pivot(index='lag',columns='mechanism',values='r_mean').round(3))\nprint(lagt.mcse.max().round(4), (lagt.r_mean-lagt.r_pooled).abs().max().round(3))\nprint(prt.pivot(index='occasion',columns='mechanism',values='prev_mean').round(3))\nprint(info.groupby('mechanism')[['n_subj','n_obs','mean_y']].mean())"
+ },
+ {
+  "i": 30,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Plotting two-panel mechanisms figure",
+  "code": "import matplotlib as mpl, matplotlib.pyplot as plt\napply_figure_style(sizes=(8,7,6))\norder=['GenBinaryY','GLMM-native','GLMM-AR1','Copula-AR1']\ncol={'GenBinaryY':'#08306b','GLMM-native':'#2171b5','GLMM-AR1':'#6baed6','Copula-AR1':'#d95f02'}\nmk={'GenBinaryY':'o','GLMM-native':'s','GLMM-AR1':'^','Copula-AR1':'D'}\nfig,axs=plt.subplots(1,2,figsize=(7.0,3.0),gridspec_kw={'wspace':0.62})\nax=axs[0]\nfor m in order:\n    s=lagt[lagt.mechanism==m]\n    ax.fill_between(s.lag,s.lo,s.hi,color=col[m],alpha=0.18,lw=0)\n    ax.plot(s.lag,s.r_mean,color=col[m],marker=mk[m],ms=3.5,lw=1.6 if m=='Copula-AR1' else 1.2)\nax.axhline(0,color='0.6',lw=0.6,ls=':')\nax.set_xlabel('Lag between occasions |j \u2212 k|'); ax.set_ylabel('Correlation of binary outcome')\nax.set_xticks(range(1,10)); ax.set_xlim(0.6,9.4); ax.set_ylim(-0.02,0.40)\nax.set_title('Serial-only dependence decays to zero;\\na constant within-subject component does not',loc='left')\n# direct labels at right end, staggered to avoid overlap\nends={m:lagt[(lagt.mechanism==m)&(lagt.lag==9)].r_mean.item() for m in order}\nypos={'GenBinaryY':0.168,'GLMM-native':0.122,'GLMM-AR1':0.084,'Copula-AR1':0.018}\nfor m in order:\n    ax.annotate(m,xy=(9,ends[m]),xytext=(9.5,ypos[m]),color=col[m],fontsize=7,va='center',annotation_clip=False)\npanel_letter(ax,'a')\nax=axs[1]\nfor m in order:\n    s=prt[prt.mechanism==m]\n    ax.plot(s.occasion,s.prev_mean,color=col[m],marker=mk[m],ms=3.5,lw=1.2,label=m)\nax.set_xlabel('Occasion (time)'); ax.set_ylabel('Marginal prevalence')\nax.set_xticks(range(0,10)); ax.set_xlim(-0.4,9.4); ax.set_ylim(0.10,0.30)\nax.set_title('Same marginal mean under all four mechanisms',loc='left')\nax.legend(frameon=False,loc='upper left',fontsize=7,handlelength=1.6)\npanel_letter(ax,'b')\nfig.savefig('mechanisms_lag_correlation.png',dpi=300,bbox_inches='tight'); fig.savefig('mechanisms_lag_correlation.pdf',bbox_inches='tight')\nr=fig.canvas.get_renderer()\ntexts=[(t,t.get_window_extent(r)) for t in fig.findobj(mpl.text.Text) if t.get_text().strip() and t.get_visible()]\ntl={a:set(a.get_xticklabels()+a.get_yticklabels()) for a in fig.axes}\nov=[(a.get_text(),b.get_text()) for i,(a,ba) in enumerate(texts) for b,bb in texts[i+1:] if ba.overlaps(bb)]\nprint(ov)"
+ },
+ {
+  "i": 31,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Retitling panel b and writing CSV",
+  "code": "axs[1].set_title('Nearly identical marginal prevalence\\nunder all four mechanisms',loc='left')\nfig.savefig('mechanisms_lag_correlation.png',dpi=300,bbox_inches='tight'); fig.savefig('mechanisms_lag_correlation.pdf',bbox_inches='tight')\na=lagt.rename(columns={'lag':'x','r_mean':'value','lo':'lo_2mcse','hi':'hi_2mcse','n_pairs_total':'n_total'})[['mechanism','x','value','mcse','lo_2mcse','hi_2mcse','n_rep','n_total','r_pooled']]\na.insert(0,'panel','a_lag_correlation')\nb=prt.rename(columns={'occasion':'x','prev_mean':'value','lo':'lo_2mcse','hi':'hi_2mcse','n_obs_total':'n_total'})[['mechanism','x','value','mcse','lo_2mcse','hi_2mcse','n_rep','n_total']]\nb.insert(0,'panel','b_prevalence'); b['r_pooled']=np.nan\nout=pd.concat([a,b]); out['scenario']='M1'; out['hypothesis']='H0'; out['N_per_dataset']=2000; out['T']=10\nout.to_csv('mechanisms_lag_correlation.csv',index=False,float_format='%.5g')\nprint(out.shape, out.groupby('panel').size().to_dict())"
+ },
+ {
+  "i": 32,
+  "tool": "bash",
+  "lang": "bash",
+  "env": "python",
+  "desc": "Copying job script and log into workspace",
+  "code": "cp mech/mech_corr.R mechanisms_generate.R; cp hpc/bd4c4d3b-c029-4ae2-a73b-4513a1b65561/mech_log.txt mechanisms_generate_log.txt; cp hpc/bd4c4d3b-c029-4ae2-a73b-4513a1b65561/mech_pair_corr.csv mechanisms_pair_corr_raw.csv; ls -la mechanisms_*"
+ },
+ {
+  "i": 37,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Building method-differences table",
+  "code": "cols=['Method family','Target estimand','Within-subject dependence','Small-sample device','Reference distribution','Returns','Typical failure with few clusters / short series','Source (v8)']\nrows=[\n['GEE, uncorrected sandwich',\n 'Marginal (population-averaged) log odds ratio',\n 'Working correlation (exchangeable, independence or AR(1)) as nuisance; robust sandwich variance',\n 'None',\n 't with N - p df (normal in Table 3)',\n 'Estimate + Wald CI',\n 'Anticonservative: clearly above 7.5% at 242 main/M1c, 69 M6-M7, 100 Copula-AR1 design points',\n 'Ms 2.4; Table 5; S14'],\n['GEE + Mancl-DeRouen (MD) or Fay-Graubard (FG); also Kauermann-Carroll (KC), CR2',\n 'Marginal (population-averaged) log odds ratio',\n 'As uncorrected GEE; level of FG changed <0.5 points across working correlations',\n 'Leverage-adjusted sandwich: MD (I-H)^-1, KC/CR2 (I-H)^-1/2, FG bounded inflation (b = 0.75)',\n 't with N - p df (CR2 not with Satterthwaite df)',\n 'Estimate + Wald CI',\n 'Separated data: plausible estimate, no warning (FG-AR(1) at N = 10, T = 2); KC, MD stay anticonservative; SE missing in sparse subsamples',\n 'Ms 2.4, 3.4, 3.5, 3.11, 4.1, 4.3; S4'],\n['GLMM, Wald test, Laplace approximation (lme4)',\n 'Conditional (subject-specific); larger than marginal by about (1 + k^2 sigma^2)^1/2',\n 'Normal random intercept, random slopes in M3-M5; conditional independence given random effects',\n 'None in main run; adaptive quadrature (10 nodes) examined post hoc, random intercept only',\n 't with N - p df; LRT against chi-square(1)',\n 'Estimate + Wald CI on conditional scale',\n 'Laplace anticonservative (515 points); random slope at T = 2 not identifiable (usable 0.002%); misses serial dependence (Copula-AR1)',\n 'Ms 1, 2.4, 3.3, 3.4, 3.6, 3.10, 4.1, 4.4; S12'],\n['Marginalized multilevel model (MMLB::mm) with convergence check',\n 'Marginal (population-averaged) log odds ratio',\n 'Likelihood: latent variable (SD may trend over time) plus first-order transition term',\n 'Check: boundary fit (nlm code not 1/2, or latent-SD slope < 0.001) replaced by converged fit without trend',\n 't with N - p df',\n 'Estimate + Wald CI (model-based SE)',\n 'Boundary non-convergence: no result in 16% of M3-M5 fits (32% at T <= 3); conservative at N = 10',\n 'Ms 2.4, 3.2, 3.4, 4.2; S16, S20'],\n['Sign-flip score test',\n 'No estimate; tests zero marginal interaction via effective score of logistic model without interaction',\n 'Subjects treated as independent units; dependence absorbed in per-subject score sums',\n 'Randomization: all sign flips up to 12 subjects, else 1,999 random plus identity',\n 'Sign-flip (randomization) distribution',\n 'p-value only; inverted interval often unbounded at T <= 3',\n 'Not computable if null fit diverges or scores vanish (e.g. one arm all zero); power 4.2% at T <= 3, N <= 25',\n 'Ms 2.4, 3.7, 4.1; S7'],\n]\nmd=pd.DataFrame(rows,columns=cols)\nwc=md.iloc[:,1:7].map(lambda s: len(s.replace('/',' / ').split()))\nprint(wc.max().to_dict(), wc.values.max())"
+ },
+ {
+  "i": 38,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Tightening cells and saving method table",
+  "code": "F='Typical failure with few clusters / short series'\nmd.loc[0,F]='Anticonservative: clearly above 7.5% at 242 main/M1c, 69 M6-M7 and 100 Copula-AR1 design points'\nmd.loc[1,F]='Separated data: plausible estimate, no warning (FG-AR(1) fails at N = 10, T = 2); KC, MD exceed 7.5% at 138-207, 20-63 points'\nmd.loc[2,F]='Laplace anticonservative (above 7.5% at 515 points); random slope unidentifiable at T = 2 (usable 0.002%); ignores serial dependence'\nmd.loc[3,F]='Boundary non-convergence: no result in 16% of M3-M5 fits (32% at T <= 3); conservative at N = 10; rarely answers when separated'\nmd.loc[4,F]='Not computable if null fit diverges or scores vanish (one arm all zero); power 4.2% at T <= 3, N <= 25'\nwc=md.iloc[:,1:7].map(lambda s: len(s.split()))\nprint(wc.values.max(), wc.max().to_dict())\nmd.to_csv('method_differences.csv',index=False)\ndef esc(s): return s.replace('|','\\\\|')\nlines=['# Key differences between the method families (v8 manuscript and supplement)','',\n '| '+' | '.join(cols)+' |','|'+'---|'*len(cols)]\nfor _,r in md.iterrows(): lines.append('| '+' | '.join(esc(x) for x in r)+' |')\nlines+=['','Notes. N = number of clusters (subjects); p = number of mean-model coefficients; T = maximum number of occasions; df = degrees of freedom; k = 16\u221a3/(15\u03c0), \u03c3\u00b2 = random-intercept variance. \"Clearly above 7.5%\": lower limit of the exact 95% interval of the null rejection rate above 7.5%, counted over the 2,376 design points with a t reference (Table 5); for GEE corrections, the range spans the three working correlations. Kauermann-Carroll counts use *fewclust* (published formula); *geesmv* computes a different quantity (S4). The shrinkage GLM (rescaled GLMM) and the GLMM likelihood-ratio test (no interval; above 7.5% at 412 design points) are not separate rows. Adaptive quadrature lowered the GLMM null rejection rate by 3.1-4.0 points but left excess at T = 10, mainly on Copula-AR1 (\u00a73.10). \"Rarely answers when separated\": 4 usable MMM results on datasets with an infinite interaction estimate in the whole study (\u00a73.4).']\nopen('method_differences.md','w').write('\\n'.join(lines)+'\\n')\nprint('\\n'.join(lines[:4]))"
+ },
+ {
+  "i": 39,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Shortening over-length failure cells",
+  "code": "print(wc[F].to_dict())\nmd.loc[1,F]='Separated data: plausible estimate, no warning (FG-AR(1) failure, N = 10, T = 2); KC, MD exceed 7.5% often'\nmd.loc[2,F]='Laplace anticonservative (515 points above 7.5%); random slope unidentifiable at T = 2; ignores serial dependence'\nmd.loc[3,F]='Boundary non-convergence: no result in 16% of M3-M5 fits (32% at T <= 3); conservative at N = 10'\nmd.loc[4,F]='Not computable if null fit diverges or scores vanish (one arm all zero); power 4.2% at T <= 3, N <= 25'\nwc=md.iloc[:,1:7].map(lambda s: len(s.split())); print(wc.values.max(), wc[F].to_dict())\nmd.to_csv('method_differences.csv',index=False)\nlines=lines[:4]\nfor _,r in md.iterrows(): lines.append('| '+' | '.join(esc(x) for x in r)+' |')\nnote=('Notes. N = number of clusters (subjects); p = number of mean-model coefficients; T = maximum number of occasions; df = degrees of freedom; k = 16\u221a3/(15\u03c0), \u03c3\u00b2 = random-intercept variance. '\n '\"Clearly above 7.5%\": lower limit of the exact 95% interval of the null rejection rate above 7.5%, over the 2,376 design points with a t reference (Table 5). '\n 'With a t reference KC was clearly above 7.5% at 138-207 and MD at 20-63 design points across working correlations; FG with exchangeable correlation at 15 (\u00a73.4, \u00a74.3). KC counts use *fewclust* (published formula); *geesmv* computes a different quantity (S4). '\n 'GLMM with random slopes at T = 2: usable Wald test in 0.002% of attempts (Table 4). Adaptive quadrature lowered the GLMM null rejection rate by 3.1-4.0 points but left excess at T = 10, mainly on Copula-AR1 (\u00a73.10). '\n 'MMM returned 4 usable results on separated datasets (infinite interaction estimate) in the whole study (\u00a73.4). '\n 'The shrinkage GLM (rescaled GLMM) and the GLMM likelihood-ratio test (no interval; above 7.5% at 412 design points) are not separate rows.')\nopen('method_differences.md','w').write('\\n'.join(lines)+'\\n\\n'+note+'\\n')"
+ },
+ {
+  "i": 40,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Final trim and save of method table",
+  "code": "md.loc[4,F]='Not computable when null fit diverges or scores vanish (one arm all zero); power 4.2% at T <= 3, N <= 25'\nmd.loc[4,F]='Not computable when null fit diverges or scores vanish; power 4.2% at T <= 3, N <= 25'\nwc=md.iloc[:,1:7].map(lambda s: len(s.split())); print(wc.values.max())\nmd.to_csv('method_differences.csv',index=False)\nlines=lines[:4]\nfor _,r in md.iterrows(): lines.append('| '+' | '.join(esc(x) for x in r)+' |')\nnote2=note+' Sign-flip test not computable e.g. when one arm has only zero outcomes (S7).'\nopen('method_differences.md','w').write('\\n'.join(lines)+'\\n\\n'+note2+'\\n')"
+ },
+ {
+  "i": 44,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Building clinical applications table",
+  "code": "NA='n.a.'\nC='Neonatal lung-ultrasound cohort (207 patients; posterior vs anterior zones)'\nR='geepack respiratory trial (111 patients; treatment effect, full mean model)'\nrows=[\n # dataset, method, scale, est(SE), usable 10..50, ratio 10..50, ratio as reported, source\n [C,'Marginalized model (MMM)','Marginal','0.35 (0.10)', '77.2','85.4','94.6','96.6','100.0', NA,NA,NA,NA,NA,'0.56 to 0.62 (robust SE: 0.85 to 0.99)','Ms 3.11; S9; Table S15'],\n [C,'GEE exchangeable, uncorrected','Marginal','0.38 (0.17)', '70.0','80.8','91.0','95.4','100.0', NA,NA,NA,NA,NA,NA,'Ms 3.11; Table S15'],\n [C,'GEE exchangeable, Fay-Graubard','Marginal','n.a. (same fit as uncorrected; corrected SE not reported)', '34.2','61.2','80.0','88.4','99.8', NA,NA,NA,NA,NA,NA,'Table S15'],\n [C,'GEE exchangeable, Mancl-DeRouen','Marginal','n.a. (same fit as uncorrected; corrected SE not reported)', '15.0','37.2','62.2','80.0','98.8', NA,NA,NA,NA,NA,NA,'Table S15'],\n [C,'GLMM (random intercept)','Conditional','0.48 (0.12)', '78.2','85.4','94.6','96.6','100.0', NA,NA,NA,NA,NA,'0.51 to 0.58','Ms 3.11; Table S15'],\n [R,'Marginalized model (MMM)','Marginal','1.3 (0.34)', '50','84','94','99.2','100.0', '0.7','0.7','0.7','0.7','0.9','0.70 at 10, 0.85 at 50 (robust SE: 0.55 to 0.87)','Table S29; Table S30; S9'],\n [R,'GEE exchangeable, uncorrected','Marginal','1.3 (0.35)', '47','83','94','99.2','100.0', '0.5','0.6','0.7','0.7','0.9',NA,'Table S29; Table S30'],\n [R,'GEE exchangeable, Fay-Graubard','Marginal','1.3 (0.35)', '23','68','88','98','100.0', '2.2','1.3','1.0','0.9','0.9',NA,'Table S29; Table S30'],\n [R,'GEE exchangeable, Mancl-DeRouen','Marginal','1.3 (0.37)', '23','68','88','97','100.0', '2.2','1.4','1.2','1.0','1.0',NA,'Table S29; Table S30'],\n [R,'GLMM (random intercept)','Conditional','2.1 (0.54)', '53','88','97','100.0','100.0', '0.7','0.7','0.6','0.7','0.7',NA,'Table S29; Table S30'],\n]\nNs=[10,15,20,25,50]\ncols=['Dataset','Method','Scale','Full-data estimate (SE)']+[f'Usable % N={n}' for n in Ns]+[f'SE/SD ratio (FPC) N={n}' for n in Ns]+['SE/SD ratio as reported in text','Source (v8)']\nct=pd.DataFrame(rows,columns=cols); ct.to_csv('clinical_table.csv',index=False)\nprint(ct.shape)"
+ },
+ {
+  "i": 45,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Verifying clinical numbers against supplement",
+  "code": "import re\nsup=open('sup.md').read().split('\\n')\ndef parse(lo,hi,ncol):\n    out={}; cur=None\n    for l in sup[lo:hi]:\n        t=l.split()\n        if not t or t[0].startswith('-') or t[0]=='Method': continue\n        nums=[x for x in t if re.fullmatch(r'-?\\d+(\\.\\d+)?',x)]\n        name=' '.join(x for x in t if not re.fullmatch(r'-?\\d+(\\.\\d+)?',x))\n        if name: cur=name\n        out[(cur,nums[0])]=nums[1:]\n    return out\ns15=parse(428,491,4); s30=parse(900,963,6)\nmapC={'Marginalized model (MMM)':'Marginalized model','GEE exchangeable, uncorrected':'GEE, uncorrected','GEE exchangeable, Fay-Graubard':'GEE, Fay-Graubard','GEE exchangeable, Mancl-DeRouen':'GEE, Mancl-DeRouen','GLMM (random intercept)':'GLMM'}\nbad=[]\nfor _,r in ct.iterrows():\n    src=s15 if r.Dataset==C else s30\n    for n in Ns:\n        v=src[(mapC[r.Method],str(n))]\n        if r[f'Usable % N={n}']!=v[3]: bad.append((r.Method,n,'usable',r[f'Usable % N={n}'],v[3]))\n        if r.Dataset==R and r[f'SE/SD ratio (FPC) N={n}']!=v[5]: bad.append((r.Method,n,'ratio',r[f'SE/SD ratio (FPC) N={n}'],v[5]))\nprint(bad, len(s15), len(s30))"
+ },
+ {
+  "i": 46,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Writing clinical markdown and paragraph",
+  "code": "para=(\"In both datasets the two marginal methods agree on the full data (cohort: 0.35 by the marginalized model, 0.38 by GEE; trial: 1.3 and 1.3). \"\n\"The mixed model returns a larger coefficient on its conditional scale (0.48; 2.1). This is the estimand gap of Section 1, not a disagreement about the data: \"\n\"with a patient variance of 3.5 the attenuation factor is about 1.5, the factor used to build scenario M1c. \"\n\"The subsamples reproduce three features of the simulation. Availability falls as patients become fewer, for every method. \"\n\"The uncorrected sandwich understates the spread of the estimates at 10 to 15 patients (trial ratio 0.5 to 0.6), the anticonservatism seen on the grid. \"\n\"The Fay-Graubard and Mancl-DeRouen corrections overstate it at 10 patients (ratio 2.2), the direction of their conservatism in the simulation. \"\n\"The clinical data also expose what the simulation underplays. With richer mean models (seven coefficients in the trial; disease, ventilation and gestational age in the cohort), \"\n\"the corrections often returned an estimate without a standard error. They were usable in 15% to 34% of 10-patient draws, against about 50% to 78% for the other methods; \"\n\"in the simulation, with four or five coefficients, they lost little availability (Table 4). \"\n\"The model-based standard errors of the marginalized and mixed models fell short of the spread in both datasets. In the cohort part of this comes from between-patient heterogeneity of the zone contrast \"\n\"(random-slope variance 10), which none of the four mechanisms contains. The robust standard error of the marginalized model was close to the spread there (0.85 to 0.99). \"\n\"The applications cannot show type I error or coverage. The reference is the full-data estimate, not a known truth, and the generating mechanism is unknown. \"\n\"Nor can they test the separation failure of GEE: the trial had 365 of 5,000 subsamples with an infinite contrast and the cohort none, but without a known null the false positives of Section 3.4 cannot be counted. \"\n\"Each rests on one dataset with one outcome.\")\nprint(len(para.split()))"
+ },
+ {
+  "i": 47,
+  "tool": "python",
+  "lang": "python",
+  "env": "python",
+  "desc": "Trimming paragraph and saving clinical table",
+  "code": "para=(\"In both datasets the two marginal methods agree on the full data (cohort: 0.35 by the marginalized model, 0.38 by GEE; trial: 1.3 by both), \"\n\"while the mixed model returns a larger coefficient on its conditional scale (0.48; 2.1). This is the estimand gap of Section 1, not a disagreement about the data; \"\n\"with a patient variance of 3.5 the attenuation factor is about 1.5, as built into scenario M1c. \"\n\"The subsamples reproduce three simulation features: availability falls with fewer patients for every method; \"\n\"the uncorrected sandwich understates the spread at 10 to 15 patients (trial ratio 0.5 to 0.6); \"\n\"and the Fay-Graubard and Mancl-DeRouen corrections overstate it at 10 patients (ratio 2.2), the direction of their conservatism on the grid. \"\n\"The applications also expose what the simulation underplays. With richer mean models, the corrections often returned an estimate without a standard error \"\n\"and were usable in only 15% to 34% of 10-patient draws, against 47% to 78% for the other methods; with four or five coefficients in the simulation they lost little availability (Table 4). \"\n\"Model-based standard errors of the marginalized and mixed models fell short of the spread in both datasets; in the cohort, part of this reflects between-patient heterogeneity of the zone contrast \"\n\"(random-slope variance 10), which no simulated mechanism contains, and the robust standard error of the marginalized model was close (0.85 to 0.99). \"\n\"The applications cannot show type I error or coverage: the reference is the full-data estimate, not a known truth, and the mechanism is unknown. \"\n\"Nor can they count the separated-data false positives of GEE (Section 3.4), although 365 of 5,000 trial subsamples had an infinite contrast.\")\nprint(len(para.split()))\ndef row_md(r): return '| '+' | '.join(str(x) for x in r)+' |'\nshort=ct.copy()\nshort['Dataset']=short.Dataset.map({C:'Neonatal cohort (207)',R:'Respiratory trial (111)'})\nmdcols=['Dataset','Method','Scale','Full-data estimate (SE)']+[f'Usable % {n}' for n in Ns]+[f'SE/SD {n}' for n in Ns]+['SE/SD as reported','Source (v8)']\nL=['# Clinical applications: full-data estimates, usable share and SE calibration in subsamples','',\n'Subsamples: 500 draws of whole patients at each size N = 10, 15, 20, 25, 50 patients. Usable % = draws returning a finite estimate and SE with |estimate| and SE \u2264 10 (all draws in the denominator). SE/SD = mean standard error (model-based for MMM and GLMM, sandwich for GEE) divided by the empirical SD of the estimates over subsamples, multiplied by \u221a(1 \u2212 N/P) (finite-population correction, P = patients in the full dataset).','',\nrow_md(mdcols),'|'+'---|'*len(mdcols)]\nfor _,r in short.iterrows(): L.append(row_md(r.values))\nL+=['','Notes.',\n'1. Cohort contrast: posterior vs anterior zones, adjusted for disease, invasive ventilation and gestational age; trial contrast: treatment effect adjusted for baseline status, visit, age, sex and centre (full mean model, Table S29; reduced-model estimates in Table S29).',\n'2. GLMM estimates are on the conditional (subject-specific) scale and are not comparable in size with the marginal estimates.',\n'3. Cohort, N = 10: 22% of draws contained no invasively ventilated patient, so no method could fit the mean model; these draws are in the denominator (S17). Among returned fits, usable: GLMM 100%, MMM 100%, uncorrected GEE 92%, FG 45%, MD 20%.',\n'4. Cohort SE/SD ratios are reported in v8 only as ranges over subsample sizes (\u00a73.11, S9); per-N values are n.a. Cohort SE ratios for the GEEs and full-data SEs of the corrected GEEs are not reported in v8 (n.a.). With a patient-timepoint random intercept the GLMM ratio was 0.50 to 0.57; with a random slope for posterior zones 0.66 to 0.73 at \u226525 patients (S17).',\n'5. Most failures of the corrections were an estimate without a standard error (Tables S15, S30). In the cohort FG and MD were computed with geesmv and agreed with fewclust within 1% in 99% of draws (S9). Kauermann-Carroll (not shown): cohort usable 11.2/34.8/61.2/79.6/98.8%; trial 1.3 (0.36), usable 22/69/89/97/100.0%.',\n'6. Monte Carlo SE: at most 2.2 points for usable shares; at most 0.15 for the trial SE ratio (Table S30).',\n'7. Trial: 365 of 5,000 subsamples had an infinite treatment contrast; cohort 0 (S19).',\n'','## Linking the clinical findings to the simulation','',para,'']\nopen('clinical_table.md','w').write('\\n'.join(L))"
+ },
+ {
+  "i": 50,
+  "tool": "repl",
+  "lang": "repl",
+  "env": null,
+  "desc": "Closing compute session and checking findings",
+  "code": "print(c.close(intent='mechanism figure job done'))\nprint(host.findings())"
+ }
+]

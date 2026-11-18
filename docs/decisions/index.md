@@ -135,3 +135,4 @@
 # Riproducibilita'
 
 * [Codice pubblico in due repository copia, aggiornati in parallelo al repository privato; risultati per replicato su Zenodo (D-92)](D-92.md) - Il repository di lavoro resta privato perche' la sua storia contiene i dati individuali della coorte neonatale; il codice del paper e il pacchetto fewclust si pubblicano in due repository nuovi, lucavd/clustered_paper e lucavd/fewclust, con un elenco di percorsi ammessi e controlli automatici; i risultati per replicato vanno su Zenodo come dataset separato.
+* [Invio a Statistics in Medicine; codice, tabelle e manoscritti della riscrittura v9 nel repository (D-93)](D-93.md) - Dopo il secondo rifiuto di SMMR il manoscritto v9 si invia a Statistics in Medicine con un pacchetto adattato alla rivista; il codice e le tabelle della riscrittura v9, finora solo nella sessione che li ha prodotti, entrano nel repository e nella copia pubblica.

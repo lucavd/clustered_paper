@@ -1,5 +1,11 @@
 # Registro delle modifiche
 
+## 2026-11-18 (invio a Statistics in Medicine; materiale della riscrittura v9)
+
+* **Decisione del PI**: [D-93](decisions/D-93.md). Pacchetto per Statistics in Medicine in `manuscript/v9/SiM/` (manoscritto con autori e dichiarazioni, sei parole chiave, depositi Zenodo come riferimenti 35-37, lettera nuova, PDF unico per la revisione); versione SMMR v9, sorgenti e figure in `manuscript/v9/`.
+* **Codice della riscrittura v9** in `py/v9/`, `R/v9/` e `tables/v9/`: rieseguito dalla radice del repository, riproduce identici i 17 file delle Tabelle 1, 3, 4, 5 e delle Figure 1-3; il generatore della Figura 1 rilanciato sul server da' le stesse correlazioni (md5).
+* **Da fare prima dell'invio**: nuova release di `clustered_paper` con DOI (rilascio del PI), poi aggiornare riferimento 35 e dichiarazione sui dati.
+
 ## 2026-11-03 (risultati per replicato su Zenodo)
 
 * Dataset dei risultati per replicato pubblicato su Zenodo, DOI 10.5281/zenodo.23917763 ([D-92](decisions/D-92.md)): `results_full/` (28.800 file, 1,83 GB) e i file per replicato di `results_v4/` letti dalla catena delle tabelle (7,82 GB); md5 verificati sul server e su Zenodo. DOI nella title page e nel README pubblico.
