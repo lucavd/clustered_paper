@@ -1,5 +1,9 @@
 # Registro delle modifiche
 
+## 2026-11-18 (release 1.1 del codice)
+
+* **Rilascio del PI**: `lucavd/clustered_paper` release 1.1 (tag su c366825, dal commit privato 0ce5306), DOI 10.5281/zenodo.24345879, con il codice della riscrittura v9 ([D-93](decisions/D-93.md)). Riferimento 35 e dichiarazione sui dati del manoscritto per Statistics in Medicine aggiornati alla release 1.1; README pubblico aggiornato; PDF, copia unica per la revisione e nota di istruzioni rigenerati in `manuscript/v9/SiM/`.
+
 ## 2026-11-18 (Statistics in Medicine: uso dell'intelligenza artificiale nei Metodi)
 
 * **Indicazione del PI**: la dichiarazione sull'uso dell'intelligenza artificiale generativa passa dagli Acknowledgements alla sezione 2.4 (Implementation) del manoscritto, come chiede Statistics in Medicine; testo invariato, sezione Acknowledgements tolta perche' vuota. Conteggio del testo principale da 4.676 a 4.759 parole (+83, le parole del paragrafo). Lettera, PDF, copia unica per la revisione e nota di istruzioni aggiornati in `manuscript/v9/SiM/`. Questo commit e' la base della release 1.1 di `clustered_paper`.
